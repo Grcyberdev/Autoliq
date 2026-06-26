@@ -1,0 +1,55 @@
+# ==========================================
+# Liquor Bond Automation - Requirements
+# ==========================================
+
+# --- Automation Core (Web Scraping & OCR) ---
+selenium==4.36.0
+selenium-wire
+webdriver-manager>=4.0.0
+pytesseract
+Pillow
+ddddocr
+opencv-python-headless
+trio==0.31.0
+trio-websocket==0.12.2
+websocket-client==1.9.0
+wsproto==1.2.0
+
+# --- Google Sheets & Data Processing ---
+gspread==6.2.1
+google-auth==2.41.1
+google-auth-oauthlib==1.2.2
+openpyxl==3.1.5
+pandas==2.3.3
+numpy<2.0.0
+et_xmlfile==2.0.0
+
+# --- Web Server Dashboard ---
+fastapi>=0.100.0
+uvicorn>=0.20.0
+websockets>=11.0
+
+# --- HTTP Clients & Networking ---
+requests==2.32.5
+requests-oauthlib==2.0.0
+urllib3==2.5.0
+PySocks==1.7.1
+
+# --- Miscellaneous Utilities ---
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+attrs==25.4.0
+cachetools==6.2.1
+certifi==2025.10.5
+charset-normalizer==3.4.3
+idna==3.11
+oauthlib==3.3.1
+outcome==1.3.0.post0
+pyasn1==0.6.1
+pyasn1_modules==0.4.2
+rsa==4.9.1
+six==1.17.0
+sniffio==1.3.1
+sortedcontainers==2.4.0
+typing_extensions==4.15.0

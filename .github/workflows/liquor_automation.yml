@@ -1,0 +1,158 @@
+name: run-automation
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: 'Which automation to run?'
+        required: true
+        type: choice
+        options:
+          - Auto
+          - IMFL
+          - CS
+      start_date:
+        description: 'Start date (DD-MM-YYYY) - Optional'
+        required: false
+        type: string
+        default: ''
+      end_date:
+        description: 'End date (DD-MM-YYYY) - Optional'
+        required: false
+        type: string
+        default: ''
+      yesterday:
+        description: 'Generate report for yesterday'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  run-automation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Xvfb (Virtual Framebuffer)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install and Configure Tor (Indian IP Masking)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tor netcat-openbsd
+          
+          # Configure Tor to strictly use Indian Exit Nodes (to bypass Assam Portal regional locks)
+          echo "ControlPort 9051" | sudo tee -a /etc/tor/torrc
+          echo "CookieAuthentication 0" | sudo tee -a /etc/tor/torrc
+          echo "ExitNodes {in}" | sudo tee -a /etc/tor/torrc
+          echo "StrictNodes 1" | sudo tee -a /etc/tor/torrc
+          
+          sudo service tor restart
+          
+          # Robust wait for Tor to bootstrap
+          echo "Waiting for Tor to bootstrap SOCKS5 port..."
+          for i in {1..20}; do
+            if nc -z localhost 9050; then
+              echo "✅ Tor SOCKS5 port is open!"
+              break
+            fi
+            sleep 1
+          done
+          
+          # Verify Tor connection and ensure we have an Indian IP
+          echo "Verifying Tor IP location..."
+          curl --socks5-hostname 127.0.0.1:9050 -s https://ipapi.co/json/ || echo "⚠️ Could not verify IP location, continuing..."
+
+      - name: Determine Run Mode
+        id: mode
+        run: |
+          # If triggered by schedule, use 'Auto'
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            echo "mode=Auto" >> $GITHUB_OUTPUT
+            echo "Running in AUTO scheduled mode."
+          else
+            echo "mode=${{ github.event.inputs.run_mode }}" >> $GITHUB_OUTPUT
+            echo "Running in MANUAL mode: ${{ github.event.inputs.run_mode }}"
+          fi
+
+      - name: Determine Date Arguments
+        id: dates
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.start_date }}" ]; then
+            ARGS="$ARGS --start_date ${{ github.event.inputs.start_date }}"
+          fi
+          if [ -n "${{ github.event.inputs.end_date }}" ]; then
+            ARGS="$ARGS --end_date ${{ github.event.inputs.end_date }}"
+          fi
+          if [ "${{ github.event.inputs.yesterday }}" = "true" ]; then
+            ARGS="$ARGS --yesterday"
+          fi
+          echo "args=$ARGS" >> $GITHUB_OUTPUT
+          echo "Determined extra arguments: $ARGS"
+
+      - name: Create Service Account Key
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          SERVICE_ACCOUNT_B64: ${{ secrets.SERVICE_ACCOUNT_B64 }}
+        run: |
+          mkdir -p keys
+          if [ -n "$GCP_SA_KEY" ]; then
+            echo "$GCP_SA_KEY" > keys/liquorbond-service.json
+          elif [ -n "$SERVICE_ACCOUNT_B64" ]; then
+            echo "$SERVICE_ACCOUNT_B64" | base64 -d > keys/liquorbond-service.json
+          else
+            echo "❌ No service account key secret found!"
+            exit 1
+          fi
+
+      - name: Run IMFL Automation
+        if: steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'IMFL'
+        env:
+          PORTAL_URL: ${{ secrets.PORTAL_URL }}
+          IMFL_USERNAME: ${{ secrets.IMFL_USERNAME }}
+          IMFL_PASSWORD: ${{ secrets.IMFL_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+          USE_TOR_PROXY: "true"
+        run: |
+          xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
+
+      - name: Run CS Automation
+        if: steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'CS'
+        env:
+          PORTAL_URL: ${{ secrets.PORTAL_URL }}
+          CS_USERNAME: ${{ secrets.CS_USERNAME }}
+          CS_PASSWORD: ${{ secrets.CS_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+          USE_TOR_PROXY: "true"
+        run: |
+          xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
+
+      - name: Upload Debug Screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-screenshots
+          path: |
+            *.png
+            *.html
