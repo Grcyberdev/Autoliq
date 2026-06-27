@@ -654,7 +654,7 @@ try:
 
                 # --- NEW: Reset Checkpoint Logic for this Truck ---
                 t_date_chk = row_data[7]
-                t_num_chk = row_data[6]
+                t_num_chk = "".join(row_data[6].split()).upper()
                 
                 if t_date_chk not in incoming_checkpoint: 
                     incoming_checkpoint[t_date_chk] = {}
@@ -678,7 +678,7 @@ try:
                 current_supplier_info = { 
                     "Supplier": short_supplier_name, 
                     "TelegramSupplier": telegram_supplier_name,
-                    "TruckNumber": row_data[6], 
+                    "TruckNumber": t_num_chk, 
                     "DateofEndorsement": row_data[7] 
                 }
                 liquor_types_for_current_truck = []
