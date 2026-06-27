@@ -873,4 +873,35 @@ def get_bifurcation_string(date_raw, truck_val, incoming_checkpoint):
     return "; ".join(parts_list)
 
 
+def subtract_checkpoint_details(new_details, old_details):
+    """
+    Subtracts the old checkpoint details from the new checkpoint details
+    to isolate only the new items and quantities for the second permit.
+    """
+    diff_details = {}
+    if not new_details:
+        return diff_details
+
+    for liquor, sizes in new_details.items():
+        if liquor == "_TelegramSupplier":
+            continue
+        old_sizes = old_details.get(liquor, {})
+        diff_sizes = {}
+        for size, qty in sizes.items():
+            old_qty = old_sizes.get(size, 0)
+            diff_qty = qty - old_qty
+            if diff_qty > 0:
+                diff_sizes[size] = diff_qty
+        if diff_sizes:
+            diff_details[liquor] = diff_sizes
+
+    if "_TelegramSupplier" in new_details:
+        diff_details["_TelegramSupplier"] = new_details["_TelegramSupplier"]
+    elif "_TelegramSupplier" in old_details:
+        diff_details["_TelegramSupplier"] = old_details["_TelegramSupplier"]
+
+    return diff_details
+
+
+
 

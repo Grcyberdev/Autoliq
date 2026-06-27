@@ -265,7 +265,8 @@ def load_existing_data():
             truck_val = str(record.get('TruckNumber', '')).strip()
             
             if date_val and truck_val:
-                k = f"{date_val}|{truck_val}"
+                clean_truck = "".join(truck_val.split()).upper()
+                k = f"{date_val}|{clean_truck}"
                 existing_data[k] = {
                     'row': i + 2, # 1-based index (Header is 1, so indices start at 2)
                     'quantity': record.get('TotalQuantity', 0),
@@ -300,6 +301,8 @@ def save_incoming_checkpoint(data):
         print(f"⚠️ Failed to save incoming checkpoint: {e}")
 
 incoming_checkpoint = load_incoming_checkpoint()
+import copy
+old_incoming_checkpoint = copy.deepcopy(incoming_checkpoint)
 
 
 # ----------------------------
@@ -785,7 +788,9 @@ try:
     for record in scraped_data:
         # record is [date, supplier, truck_number, liquor_types_str, quantity_str, telegram_supplier]
         date, supplier, truck_number, liquor_types_str, quantity_str, telegram_supplier = record
-        key = (normalize_date_string(date), truck_number) # Use normalized date for merging key
+        # Normalize truck number to handle spacing/casing inconsistencies
+        clean_truck = "".join(truck_number.split()).upper()
+        key = (normalize_date_string(date), clean_truck) # Use normalized date and truck for merging key
 
         try:
             # Quantity string is already cleaned of commas
@@ -799,7 +804,7 @@ try:
                 'DateofEndorsement': date,
                 'Supplier': supplier,
                 'TelegramSupplier': telegram_supplier,
-                'TruckNumber': truck_number,
+                'TruckNumber': clean_truck, # Use clean truck number for consistency
                 'LiqourTypes': set(t.strip() for t in liquor_types_str.split(',') if t.strip()),
                 'TotalQuantity': 0
             }
@@ -831,6 +836,7 @@ try:
     
     new_rows = []
     updates_to_push = [] # List of gspread.Cell objects
+    updated_permit_messages_to_send = [] # Track diffs for Telegram updates
 
     # Map headers to column indices (1-based)
     # EXPECTED_HEADERS = ["DateofEndorsement", "Supplier", "TruckNumber", "LiqourTypes", "TotalQuantity", ...]
@@ -846,7 +852,8 @@ try:
     for r in processed_data:
         date_val = normalize_date_string(r[0])
         truck_val = str(r[2]).strip()
-        key = f"{date_val}|{truck_val}"
+        clean_truck = "".join(truck_val.split()).upper()
+        key = f"{date_val}|{clean_truck}"
         
         scraped_qty = int(r[4])
         scraped_liquor = r[3]
@@ -867,10 +874,27 @@ try:
                 print(f"   📝 Updating Row {existing_entry['row']} for {truck_val}: Qty {existing_qty} -> {scraped_qty}")
                 
                 # Add Cell objects for batch update
-                # Row, Col, Value
                 updates_to_push.append(gspread.Cell(existing_entry['row'], LIQUOR_COL_IDX, scraped_liquor))
                 updates_to_push.append(gspread.Cell(existing_entry['row'], QTY_COL_IDX, scraped_qty))
                 updates_to_push.append(gspread.Cell(existing_entry['row'], BIFURCATION_COL_IDX, r[8]))
+
+                # Calculate the diff for Telegram: only send the new permit's quantity and brand breakdown
+                diff_qty = scraped_qty - existing_qty
+                if diff_qty > 0:
+                    diff_record = list(r)
+                    diff_record[4] = str(diff_qty)
+                    
+                    # Compute subtraction checkpoint for this specific truck update
+                    diff_checkpoint = {}
+                    diff_details = automation_utils.subtract_checkpoint_details(
+                        incoming_checkpoint.get(date_val, {}).get(truck_val, {}),
+                        old_incoming_checkpoint.get(date_val, {}).get(truck_val, {})
+                    )
+                    if date_val not in diff_checkpoint:
+                        diff_checkpoint[date_val] = {}
+                    diff_checkpoint[date_val][truck_val] = diff_details
+                    
+                    updated_permit_messages_to_send.append((diff_record, diff_checkpoint))
         else:
             new_rows.append(r)
             sheet_rows_to_insert.append(sheet_row_to_insert)
@@ -966,8 +990,8 @@ try:
             today_str = datetime.now().strftime('%Y-%m-%d')
             data_to_summary = [r for r in processed_data if normalize_date_string(r[0]) == today_str]
             report_date_title = datetime.now().strftime('%d-%b-%Y') + " (Daily Summary)"
-        elif new_rows:
-            print("   - Auto-Mode: Generating report for NEWLY added rows.")
+        elif new_rows or updated_permit_messages_to_send:
+            print("   - Auto-Mode: Generating report for NEWLY added or updated rows.")
             data_to_summary = new_rows
             report_date_title = datetime.now().strftime('%d-%b-%Y') + " (New Data)"
         else:
@@ -976,7 +1000,7 @@ try:
             data_to_summary = [r for r in processed_data if normalize_date_string(r[0]) == today_str]
             report_date_title = datetime.now().strftime('%d-%b-%Y')
     
-    if data_to_summary or (run_auto_mode and not args.daily):
+    if data_to_summary or (run_auto_mode and not args.daily) or updated_permit_messages_to_send:
         # In Auto-Mode, we might want to report even if 'data_to_summary' (new rows) is empty, 
         # specifically for the 23:00 Buffer Flush of the day's total data.
         
@@ -993,26 +1017,17 @@ try:
 
         if run_auto_mode and not (args.day or args.yesterday or args.daily):
              # Auto-Mode Logic
-             # Target Flush Time: 21:30 (9:30 PM)
-             
-             # Logic:
-             # 1. Any time: If NEW data -> Send CUMULATIVE Report immediately.
-             # 2. 21:30 Slot: Force Send CUMULATIVE Report (Daily Summary).
-             
-             # Note: The schedule runs at 21:30, so current_minute should be around 30-40.
-             is_flush_window = (current_hour == 21 and 30 <= current_minute < 55)
              has_new_data = (len(new_rows) > 0)
-             has_any_data_today = (len(today_full_data) > 0)
+             has_updates = (len(updated_permit_messages_to_send) > 0)
              
-             if has_new_data:
-                 print(f"🔔 Auto-Mode: New data found at {current_hour}:{current_minute}. Sending Individual Updates.")
+             if has_new_data or has_updates:
+                 print(f"🔔 Auto-Mode: New/updated data found at {current_hour}:{current_minute}. Sending Individual Updates.")
                  should_send = True
              else:
-                 print(f"⏳ Auto-Mode: No new data. Silent.")
+                 print(f"⏳ Auto-Mode: No new/updated data. Silent.")
                  should_send = False
                  
-             # If sending, send ONLY the new rows individually
-             # This ensures next-day runs successfully send late-night trucks via Telegram
+             # If sending, send ONLY the new rows individually and standard messages for updated permits
              final_data_to_send = new_rows
              final_header = f"New Liqour Endorsement"
 
@@ -1022,48 +1037,69 @@ try:
              final_data_to_send = data_to_summary
              final_header = f"Liqour Endorsements - {report_date_title}"
 
-        if should_send and final_data_to_send:
-            # --- NEW: Sort deterministically to keep truck order consistent ---
-            # User wants New rows at the BOTTOM.
-            # Within Old/New, sort by Sheet Row Index, then by original scraped/sheet index to PREVENT alphabetical jumping
-            new_trucks_set = set(r[2] for r in new_rows) if new_rows else set()
+        if should_send:
+            summary_texts = []
             
-            enum_data = list(enumerate(final_data_to_send))
-            
-            def sort_key(item):
-                orig_idx, r = item
-                # r = [Date, Supplier, TruckNumber, ...]
-                is_new = 1 if r[2] in new_trucks_set else 0
-                date_val = normalize_date_string(r[0])
-                key = f"{date_val}|{r[2]}"
-                row_idx = existing_data.get(key, {}).get('row', float('inf'))
-                return (is_new, row_idx, orig_idx)
+            # 1. Process standard new rows in Auto-Mode or manual data
+            if final_data_to_send:
+                # Sort deterministically
+                new_trucks_set = set(r[2] for r in new_rows) if new_rows else set()
+                enum_data = list(enumerate(final_data_to_send))
+                def sort_key(item):
+                    orig_idx, r = item
+                    is_new = 1 if r[2] in new_trucks_set else 0
+                    date_val = normalize_date_string(r[0])
+                    key = f"{date_val}|{r[2]}"
+                    row_idx = existing_data.get(key, {}).get('row', float('inf'))
+                    return (is_new, row_idx, orig_idx)
+                enum_data.sort(key=sort_key)
+                sorted_new_data = [item[1] for item in enum_data]
                 
-            enum_data.sort(key=sort_key)
-            final_data_to_send = [item[1] for item in enum_data]
+                print("\n📋 Generating WhatsApp Summary for standard new/filtered rows...")
+                new_reports = automation_utils.generate_whatsapp_reports(sorted_new_data, incoming_checkpoint, final_header)
+                summary_texts.extend(new_reports)
+
+            # 2. Process updated permits separately as normal new notifications containing only diff data
+            if run_auto_mode and not (args.day or args.yesterday or args.daily) and updated_permit_messages_to_send:
+                print("\n📋 Generating WhatsApp Summary for updated permits (diff reports)...")
+                # Sort updated permits for consistent order
+                enum_updated = list(enumerate(updated_permit_messages_to_send))
+                def sort_key_updated(item):
+                    orig_idx, (r, _) = item
+                    date_val = normalize_date_string(r[0])
+                    key = f"{date_val}|{r[2]}"
+                    row_idx = existing_data.get(key, {}).get('row', float('inf'))
+                    return (row_idx, orig_idx)
+                enum_updated.sort(key=sort_key_updated)
+                sorted_updated_list = [item[1] for item in enum_updated]
+                
+                for diff_record, diff_checkpoint in sorted_updated_list:
+                    # Generate report as standard 'New Liqour Endorsement' with the diff info
+                    update_reports = automation_utils.generate_whatsapp_reports([diff_record], diff_checkpoint, "New Liqour Endorsement")
+                    summary_texts.extend(update_reports)
             
-            print("\n📋 Generating WhatsApp Summary...")
-            summary_texts = automation_utils.generate_whatsapp_reports(final_data_to_send, incoming_checkpoint, final_header)
-            
-            if not args.headless and pyperclip:
-                try:
-                    pyperclip.copy("\n\n".join(summary_texts))
-                    print("✅ WhatsApp summary copied to clipboard!")
-                except: pass
-            
-            for summary_text in summary_texts:
-                print("-" * 20)
-                print(summary_text)
-                print("-" * 20)
-            
-            # --- SEND VIA TELEGRAM API ---
-            if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID and not args.no_telegram:
-                time.sleep(2)
+            if summary_texts:
+                if not args.headless and pyperclip:
+                    try:
+                        pyperclip.copy("\n\n".join(summary_texts))
+                        print("✅ WhatsApp summary copied to clipboard!")
+                    except: pass
+                
                 for summary_text in summary_texts:
-                    automation_utils.send_telegram_message(summary_text, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
-                    time.sleep(1) # Small delay to avoid rate limiting
+                    print("-" * 20)
+                    print(summary_text)
+                    print("-" * 20)
+                
+                # --- SEND VIA TELEGRAM API ---
+                if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID and not args.no_telegram:
+                    time.sleep(2)
+                    for summary_text in summary_texts:
+                        automation_utils.send_telegram_message(summary_text, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
+                        time.sleep(1) # Small delay to avoid rate limiting
+                else:
+                    print("ℹ️ Telegram auto-send skipped (keys missing or disabled).")
             else:
-                print("ℹ️ Telegram auto-send skipped (keys missing or disabled).")
+                print("ℹ️ Report triggered but no summary messages generated.")
         elif should_send and not final_data_to_send:
              print("ℹ️ Report triggered but no data found to report.")
 
