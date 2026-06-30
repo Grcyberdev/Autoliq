@@ -232,6 +232,7 @@ LIQUOR_NAME_MAPPING = {
     "SIX FIELDS PILSNER BEST HOPS BEER": "Six Fields Pilsner",
     "SIX FIELDS PILSNER RICH HOPS BEER": "Six Fields Pilsner",
     "GOLDFLOW SUPER STRONG PREMIUM BEER": "Goldflow Strong",
+    "BRO CODE ORIGINAL XV": "Bro Code XV",
 
 
 
@@ -398,6 +399,8 @@ LIQUOR_NAME_MAPPING = {
     "GROVER ONE TREE HILL RED": "Grover One Tree Hill Red",
     "GROVER LA RESERVE RED": "Grover La Reserve Red",
     "GROVER ART COLLECTION NU CABERNET SHIRAZ RED WINE": "Grover Art Collection Nu Red Wine",
+    "BROSE AMOR BRUT ROSE": "Brose Amor Brut Rose",
+
 
 
     # --- New Variations found in logs ---
