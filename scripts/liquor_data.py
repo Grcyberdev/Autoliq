@@ -159,6 +159,8 @@ LIQUOR_NAME_MAPPING = {
     "CASTLE HILL DARK KNIGHT SMALL BATCH WHISKEY": "Castle Hill Dark Knight Whiskey",
     "STERLING RESERVE B10 PREMIUM BLENDED WHISKY": "Sterling Reserve Whiskey",
     "TEACHER`S HIGHLAND CREAM RESERVE BLENDED SCOTCH WHISKY": "Teachers Highland Cream",
+    "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY SELECT": "Laphroig Islay Single Malt",
+    
     
     
     # --- Rums ---
