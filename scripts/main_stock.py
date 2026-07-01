@@ -210,6 +210,20 @@ def scrape_data_for_user(driver_args, username, password, start_date, end_date, 
 
         for attempt in range(max_login_retries):
             try:
+                # Wait for interactive state / JS to settle
+                time.sleep(2)
+                
+                # Toggle login modal if fields are hidden (Redesigned UI support)
+                try:
+                    temp_user_box = driver.find_element(By.ID, "LoginForm_username")
+                    if not temp_user_box.is_displayed():
+                        print("   - Login form is hidden. Clicking header Login button...")
+                        login_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'header-login-btn') or contains(text(), 'Login')]")))
+                        driver.execute_script("arguments[0].click();", login_btn)
+                        time.sleep(2) # Wait for animation/modal
+                except Exception as e_toggle:
+                    print(f"   - (Info) Header login button toggle check/click skipped or failed: {e_toggle}")
+
                 print(f"🔐 Logging in as {username} (Attempt {attempt+1}/{max_login_retries})...")
                 wait.until(EC.presence_of_element_located((By.ID, "LoginForm_username"))).clear()
                 driver.find_element(By.ID, "LoginForm_username").send_keys(username)
@@ -227,7 +241,7 @@ def scrape_data_for_user(driver_args, username, password, start_date, end_date, 
                 if attempt >= 2: # On 3rd attempt (0, 1, 2)
                     print("⚠️ OCR struggling. Switch to Manual Input.")
                     try:
-                        c_img = driver.find_element(By.ID, "LoginForm_verifyCode_image") 
+                        c_img = driver.find_element(By.ID, "loginCaptcha") 
                     except:
                         c_img = driver.find_element(By.XPATH, "//img[contains(@src, 'captcha')]")
                     
@@ -294,7 +308,8 @@ def scrape_data_for_user(driver_args, username, password, start_date, end_date, 
             stock_dispatch_tile.click()
         except:
             print("   - Tile click failed, trying direct URL...")
-            driver.get("https://excise.assam.gov.in/wholesaledealer/Wholesale/stockDispatch?active=stock")
+            fallback_url = PORTAL_URL.replace("/site/login", "/Retailer/Retailer/Indentlist?param=stockdispatch")
+            driver.get(fallback_url)
         
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, 
             "//input[@id='datepicker'] | //button[contains(., 'Search')]"

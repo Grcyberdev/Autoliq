@@ -13377,9 +13377,9 @@
         },
         "AS01KC3359": {
             "McDowell's Rum": {
-                "750ml": 300,
+                "180ml": 500,
                 "375ml": 100,
-                "180ml": 500
+                "750ml": 300
             }
         },
         "NL01AF2095": {
@@ -13388,19 +13388,19 @@
             }
         },
         "AS01QC4009": {
-            "Absolut": {
-                "750ml": 5
-            },
             "Ballantines": {
-                "750ml": 3,
+                "375ml": 10,
                 "Quarter": 5,
-                "375ml": 10
+                "750ml": 3
             },
             "Chivas Regal 12 Yrs": {
                 "750ml": 2
             },
             "Jameson": {
                 "750ml": 25
+            },
+            "Absolut": {
+                "750ml": 5
             }
         }
     },
@@ -13984,17 +13984,17 @@
             }
         },
         "AS01RC4909": {
-            "The Glenwalk Whisky": {
-                "JQ": 18
-            },
-            "Peach Soju": {
-                "SA": 5
+            "Grape Soju": {
+                "SA": 1
             },
             "Blueberry Soju": {
                 "SA": 1
             },
-            "Grape Soju": {
-                "SA": 1
+            "Peach Soju": {
+                "SA": 5
+            },
+            "The Glenwalk Whisky": {
+                "JQ": 18
             }
         },
         "WB11D6863": {
@@ -14003,28 +14003,28 @@
             }
         },
         "AS01PC9781": {
-            "Blender's Pride Exclusive": {
-                "180ml": 45,
-                "750ml": 15,
-                "375ml": 25
+            "Oaken Glow": {
+                "375ml": 15,
+                "180ml": 35
             },
-            "Royal Stag": {
-                "375ml": 100,
-                "180ml": 200,
-                "750ml": 25
+            "Blender's Pride Exclusive": {
+                "375ml": 25,
+                "750ml": 15,
+                "180ml": 45
             },
             "Blender's Pride Reserve": {
                 "375ml": 20,
                 "180ml": 30,
                 "750ml": 15
             },
+            "Royal Stag": {
+                "180ml": 200,
+                "375ml": 100,
+                "750ml": 25
+            },
             "Royal Stag Barrel": {
                 "180ml": 15,
                 "375ml": 10
-            },
-            "Oaken Glow": {
-                "375ml": 15,
-                "180ml": 35
             }
         },
         "AS01RC8683": {
@@ -14033,14 +14033,14 @@
                 "375ml": 50,
                 "180ml": 60
             },
-            "Royal Stag Double Dark": {
-                "375ml": 20,
-                "180ml": 30
-            },
             "Royal Stag": {
                 "180ml": 200,
                 "750ml": 50,
                 "375ml": 100
+            },
+            "Royal Stag Double Dark": {
+                "375ml": 20,
+                "180ml": 30
             }
         },
         "AS01FC3252": {
@@ -14050,23 +14050,23 @@
         },
         "AS01JC1967": {
             "Magic Moments Green Apple": {
+                "750ml": 5,
                 "180ml": 40,
-                "375ml": 5,
-                "750ml": 5
-            },
-            "Magic Moments": {
-                "750ml": 20,
-                "375ml": 30,
-                "180ml": 125
-            },
-            "After Dark": {
-                "750ml": 25,
-                "180ml": 200,
-                "375ml": 50
+                "375ml": 5
             },
             "8 PM Premium Black": {
                 "375ml": 5,
                 "180ml": 15
+            },
+            "Magic Moments": {
+                "180ml": 125,
+                "375ml": 30,
+                "750ml": 20
+            },
+            "After Dark": {
+                "180ml": 200,
+                "750ml": 25,
+                "375ml": 50
             },
             "Magic Moments Lemon": {
                 "180ml": 30
@@ -14556,7 +14556,15 @@
         "AS01DC2251": {
             "Budweiser Magnum": {
                 "Bottle": 500
-            },
+            }
+        },
+        "AS03BC8122": {
+            "Masti": {
+                "CA": 700
+            }
+        },
+        "AS01HC2251": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
             "Budweiser": {
                 "Bottle": 400
             },
@@ -14566,22 +14574,17 @@
             "Hoegaarden Witbier": {
                 "Pint": 40
             }
-        },
-        "AS03BC8122": {
-            "Masti": {
-                "CA": 700
-            }
         }
     },
     "26-Jun-2026": {
         "AS01HC6690": {
+            "Kingfisher Ultra Max": {
+                "Can": 60
+            },
             "Kingfisher Ultra": {
                 "Can": 100,
                 "Bottle": 200,
                 "Pint": 170
-            },
-            "Kingfisher Ultra Max": {
-                "Can": 60
             },
             "Kingfisher Original Strong": {
                 "Bottle": 150
@@ -14593,12 +14596,529 @@
             }
         },
         "AS01KC8177": {
-            "Imperial Blue": {
-                "375ml": 25,
-                "180ml": 275
-            },
             "Imperial Black": {
                 "180ml": 250
+            },
+            "Imperial Blue": {
+                "180ml": 275,
+                "375ml": 25
+            }
+        },
+        "RJ14GG0072": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg Malt": {
+                "Can": 1200
+            }
+        },
+        "NL01AF9997": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 150,
+                "180ml": 700,
+                "375ml": 250
+            }
+        },
+        "AS01NC7526": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 50,
+                "375ml": 100,
+                "180ml": 400
+            }
+        },
+        "AS28AC1511": {
+            "_TelegramSupplier": "United Spirits Limited Tieup Holder Of NEDPL",
+            "Director's Special Regal": {
+                "180ml": 25,
+                "375ml": 50,
+                "750ml": 50
+            }
+        },
+        "AS01GC7525": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice": {
+                "750ml": 50
+            },
+            "Officer's Choice pet": {
+                "180ml": 400,
+                "375ml": 50
+            }
+        },
+        "AS02CC8299": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "180ml": 550
+            }
+        },
+        "AS01UC3451": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "750ml": 100,
+                "375ml": 150,
+                "180ml": 650
+            }
+        },
+        "AS01HC0109": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 500
+            }
+        },
+        "AS01KC9631": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
+                "375ml": 100,
+                "750ml": 50,
+                "180ml": 400
+            }
+        },
+        "AS02CC8463": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
+                "375ml": 100,
+                "750ml": 50,
+                "180ml": 400
+            }
+        },
+        "AS01PC8521": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 500
+            }
+        },
+        "AS01NC8666": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser Magnum": {
+                "Bottle": 500
+            }
+        }
+    },
+    "27-Jun-2026": {
+        "AS03BC8401": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "NL01AE2253": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "375ml": 100,
+                "180ml": 450
+            }
+        },
+        "AS01FC0045": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Sterling Reserve B7 Blended": {
+                "750ml": 15,
+                "375ml": 15
+            },
+            "Sterling B7": {
+                "180ml": 20
+            },
+            "Officer's Choice Blue": {
+                "180ml": 20,
+                "750ml": 10,
+                "375ml": 20
+            },
+            "Iconiq Hippy": {
+                "180ml": 250
+            },
+            "Iconiq Vodka": {
+                "750ml": 25,
+                "375ml": 75
+            },
+            "Officer's Choice pet": {
+                "375ml": 50
+            }
+        },
+        "AS07AC6943": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "180ml": 250,
+                "375ml": 200,
+                "750ml": 100
+            }
+        },
+        "AS01TC4767": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Director's Special Black": {
+                "180ml": 125,
+                "375ml": 25
+            },
+            "Royal Challenge": {
+                "750ml": 50,
+                "180ml": 250,
+                "375ml": 100
+            }
+        },
+        "AS17C2024": {
+            "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Fastflow Dealer Pvt. Ltd.",
+            "All Seasons Sir-E-Taj": {
+                "180ml": 50,
+                "375ml": 50,
+                "750ml": 50
+            }
+        },
+        "AS01MC3483": {
+            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse",
+            "Oaksmith Gold": {
+                "750ml": 25,
+                "180ml": 15,
+                "375ml": 20
+            },
+            "Oaksmith International": {
+                "375ml": 200,
+                "750ml": 100
+            },
+            "Jim Beam": {
+                "180ml": 2,
+                "750ml": 4
+            },
+            "Teachers Highland Cream": {
+                "750ml": 12,
+                "180ml": 5,
+                "375ml": 5
+            },
+            "Teachers Golden Thistle": {
+                "750ml": 2
+            },
+            "Teachers 50": {
+                "375ml": 3,
+                "180ml": 2,
+                "750ml": 5
+            }
+        }
+    },
+    "28-Jun-2026": {
+        "RJ05GA7942": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "AS01UC3810": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag Barrel": {
+                "750ml": 25,
+                "375ml": 25,
+                "180ml": 75
+            },
+            "Oaken Glow": {
+                "750ml": 5,
+                "180ml": 15,
+                "375ml": 5
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 10,
+                "180ml": 20,
+                "750ml": 20
+            },
+            "Blender's Pride Exclusive": {
+                "180ml": 35,
+                "750ml": 20,
+                "375ml": 20
+            },
+            "Royal Stag": {
+                "375ml": 50,
+                "750ml": 50,
+                "180ml": 175
+            }
+        },
+        "AS01UC8611": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "180ml": 300,
+                "375ml": 50
+            },
+            "Imperial Black": {
+                "180ml": 200
+            }
+        },
+        "AS01SC7031": {
+            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse",
+            "Oaksmith International": {
+                "180ml": 90
+            }
+        }
+    },
+    "29-Jun-2026": {
+        "AS01GC0455": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "AS02CC9561": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice pet": {
+                "180ml": 400
+            },
+            "Officer's Choice": {
+                "750ml": 100
+            }
+        },
+        "AS01PC9104": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "750ml": 600,
+                "180ml": 1000,
+                "375ml": 200
+            }
+        },
+        "AS26C9025": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "180ml": 600,
+                "375ml": 200,
+                "750ml": 100
+            }
+        },
+        "AS01NC1686": {
+            "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Seven Sisters",
+            "All Seasons Connoisseur": {
+                "375ml": 200,
+                "180ml": 250,
+                "750ml": 100
+            }
+        },
+        "NL01AF3277": {
+            "_TelegramSupplier": "Indospirit Beverages Pvt. Ltd. IMFL Wholesale Warehouse",
+            "Wingman": {
+                "750ml": 20
+            },
+            "Eden Whisky": {
+                "750ml": 2
+            },
+            "Brose Amor Brut Rose": {
+                "Pint": 13
+            },
+            "Bro Code XV": {
+                "ZA": 265
+            }
+        }
+    },
+    "30-Jun-2026": {
+        "NL01AF3277": {
+            "_TelegramSupplier": "Axis Enterprises",
+            "Carlo Rossi California White Wine": {
+                "750ml": 3
+            },
+            "Jagermeister": {
+                "750ml": 1
+            },
+            "Jack Daniel's Honey": {
+                "750ml": 1
+            },
+            "Jack Daniel's Cinnamon": {
+                "750ml": 2
+            },
+            "Jack Daniel's Apple": {
+                "750ml": 1
+            },
+            "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY SELECT": {
+                "Full": 2
+            },
+            "Toki Suntory": {
+                "Full": 3
+            },
+            "Glenmorangie 12": {
+                "Full": 3
+            },
+            "Jack Daniel's": {
+                "750ml": 15
+            }
+        },
+        "AS09C2656": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "AS01RC7759": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "180ml": 400,
+                "375ml": 100,
+                "750ml": 50
+            }
+        },
+        "AS23BC6826": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Blender's Pride Reserve": {
+                "180ml": 20,
+                "750ml": 10,
+                "375ml": 10
+            },
+            "100 Pipers 12 Yrs": {
+                "750ml": 5
+            },
+            "Oaken Glow": {
+                "750ml": 10,
+                "375ml": 15,
+                "180ml": 15
+            },
+            "Royal Stag": {
+                "375ml": 200,
+                "180ml": 200,
+                "750ml": 65
+            }
+        },
+        "ML05AC9377": {
+            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
+            "Old Monk Gold Reserve": {
+                "750ml": 35,
+                "375ml": 10
+            },
+            "Old Monk Vatted": {
+                "375ml": 100,
+                "750ml": 150,
+                "180ml": 300
+            },
+            "Old Monk Amber": {
+                "750ml": 5
+            }
+        },
+        "AS01UC3451": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "180ml": 700,
+                "750ml": 100,
+                "375ml": 100
+            }
+        },
+        "AS01RC5347": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "Magic Moments Jamun": {
+                "180ml": 180,
+                "375ml": 100,
+                "750ml": 20
+            },
+            "Magic Moments": {
+                "375ml": 20,
+                "180ml": 110,
+                "750ml": 20
+            },
+            "After Dark": {
+                "375ml": 75,
+                "750ml": 25,
+                "180ml": 225
+            },
+            "Magic Moments Lemon": {
+                "375ml": 10,
+                "180ml": 25,
+                "750ml": 5
+            },
+            "Magic Moments Green Apple": {
+                "180ml": 25,
+                "375ml": 10
+            }
+        },
+        "AS01HC0109": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "750ml": 550
+            }
+        },
+        "AS01UC5621": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
+                "180ml": 200,
+                "375ml": 100,
+                "750ml": 50
+            },
+            "Imperial Blue": {
+                "180ml": 200
+            }
+        },
+        "AS26SC1397": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 450,
+                "750ml": 50
+            }
+        },
+        "AS01SC2397": {
+            "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Fastflow Dealer Pvt. Ltd.",
+            "All Seasons Sir-E-Taj": {
+                "180ml": 50,
+                "750ml": 20,
+                "375ml": 30
+            }
+        },
+        "AS01DD3578": {
+            "_TelegramSupplier": "Bacardi India Pvt. Ltd.",
+            "Bacardi Mango Chilli Rum": {
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Black By Bacardi Rum": {
+                "750ml": 10,
+                "375ml": 5,
+                "180ml": 30
+            },
+            "Bacardi Limon Rum": {
+                "375ml": 10,
+                "180ml": 5
+            },
+            "Bacardi White Rum": {
+                "750ml": 2,
+                "375ml": 3,
+                "180ml": 5
+            },
+            "Breezer Mango Peach": {
+                "Stubby": 15
+            },
+            "Breezer Blueberry": {
+                "Stubby": 15
+            },
+            "Breezer Cranberry": {
+                "Stubby": 60
+            },
+            "Breezer Blackberry": {
+                "Stubby": 50
+            },
+            "Breezer Jamaican": {
+                "Stubby": 60
+            },
+            "Aberfeldy 12 Yrs": {
+                "Full": 1
+            },
+            "Bombay Sapphire Gin": {
+                "Quarter": 3,
+                "750ml": 3
+            },
+            "Teeling Whiskey": {
+                "Full": 3
+            },
+            "Dewar's White Label": {
+                "750ml": 5
+            }
+        },
+        "AS03CC8606": {
+            "_TelegramSupplier": "Modi Distillery IMFL Wholesale Warehouse",
+            "Rockford Reserve": {
+                "180ml": 15,
+                "375ml": 20,
+                "750ml": 30
+            },
+            "Rockford": {
+                "750ml": 10
+            }
+        },
+        "AS06AC7251": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser": {
+                "Can": 450
+            },
+            "Corona": {
+                "Pint": 50
+            },
+            "Budweiser Magnum": {
+                "Bottle": 1000
             }
         }
     }

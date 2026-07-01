@@ -464,6 +464,18 @@ try:
         try:
              # Wait for interactive state (clickable) not just presence
             time.sleep(2) # Allow JS to settle
+            
+            # Toggle login modal if fields are hidden (Redesigned UI support)
+            try:
+                temp_user_box = driver.find_element(By.ID, "LoginForm_username")
+                if not temp_user_box.is_displayed():
+                    print("   - Login form is hidden. Clicking header Login button...")
+                    login_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'header-login-btn') or contains(text(), 'Login')]")))
+                    driver.execute_script("arguments[0].click();", login_btn)
+                    time.sleep(2) # Wait for animation/modal
+            except Exception as e_toggle:
+                print(f"   - (Info) Header login button toggle check/click skipped or failed: {e_toggle}")
+
             username_box = wait.until(EC.element_to_be_clickable((By.ID, "LoginForm_username")))
             username_box.clear()
             username_box.send_keys(USERNAME)
@@ -550,25 +562,19 @@ try:
         driver.quit()
         sys.exit(1)
     
-    try:
-        reports_tab = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(@href, 'Wholesale/reports/evcdet')]")))
-        print("✅ Login form submitted successfully.")
-    except TimeoutException:
-        try:
-            error_msg = driver.find_element(By.CSS_SELECTOR, ".alert-danger").text
-            print(f"❌ Login Failed for user {USERNAME}. Reason: {error_msg}")
-        except:
-            print(f"❌ Login Failed for user {USERNAME}. Unknown error or bad CAPTCHA.")
-        driver.quit()
-        sys.exit(1)
-
+    print("✅ Login form submitted successfully.")
 
     print("📄 Navigating to Permits & Pass Reports...")
-    reports_tab.click()
-    time.sleep(2)
-    child_link = wait.until(EC.presence_of_element_located((By.XPATH, "//a[contains(@href,'/index.php/Wholesale/reports/tpdet_stockrec')]")))
-    driver.execute_script("arguments[0].click();", child_link)
-    time.sleep(3)
+    try:
+        reports_index_url = PORTAL_URL.replace("/site/login", "/report/index")
+        driver.get(reports_index_url)
+        time.sleep(2)
+        child_link = wait.until(EC.presence_of_element_located((By.XPATH, "//a[contains(@href,'Wholesale/reports/tpdet_stockrec')]")))
+        driver.execute_script("arguments[0].click();", child_link)
+        time.sleep(3)
+    except Exception as e_nav:
+        print(f"❌ Could not find reports tab or navigate after login: {e_nav}") 
+        sys.exit(1)
 
     today = datetime.now()
     

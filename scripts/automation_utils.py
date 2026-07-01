@@ -359,13 +359,19 @@ def setup_driver(headless=False):
                      print(f"      ⚠️ System Driver failed: {sys_err}. This should not happen on Server.")
                      raise sys_err # Don't fall back, fail fast to debug
 
-            # 2. Fallback to WebDriverManager (Mac/Local Only)
+            # 2. Fallback to WebDriverManager (Mac/Local Only) with native Selenium Manager fallback
             print("      ⚠️ Linux System Driver not found/used. Using WebDriverManager (Mac/Local)...")
-            
-            if proxy_options:
-                driver = wire_webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options, seleniumwire_options=proxy_options)
-            else:
-                driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+            try:
+                if proxy_options:
+                    driver = wire_webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options, seleniumwire_options=proxy_options)
+                else:
+                    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+            except Exception as manager_err:
+                print(f"      ⚠️ WebDriverManager failed ({manager_err}). Falling back to native Selenium Manager...")
+                if proxy_options:
+                    driver = wire_webdriver.Chrome(options=chrome_options, seleniumwire_options=proxy_options)
+                else:
+                    driver = webdriver.Chrome(options=chrome_options)
                 
             driver.set_page_load_timeout(300)
             return driver
@@ -380,7 +386,7 @@ def setup_driver(headless=False):
     print("❌ Failed to initialize Chrome Driver after multiple attempts.")
     sys.exit(1)
 
-def solve_captcha_ocr(driver, captcha_element_id="yw0"):
+def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
     """
     Attempts to solve the captcha using OCR.
     Returns the solved text if it's strictly 5 or 6 digits.
@@ -406,7 +412,7 @@ def solve_captcha_ocr(driver, captcha_element_id="yw0"):
         from selenium.webdriver.support.ui import WebDriverWait
         from selenium.webdriver.support import expected_conditions as EC
         
-        # Updated Selector based on User Screenshot: <img id="yw0" ...>
+        # Updated Selector based on User Screenshot: <img id="loginCaptcha" ...>
         try:
             wait = WebDriverWait(driver, 30) # Wait up to 30s for captcha to appear
             captcha_img = wait.until(EC.presence_of_element_located((By.ID, captcha_element_id)))
@@ -415,7 +421,7 @@ def solve_captcha_ocr(driver, captcha_element_id="yw0"):
             try:
                 captcha_img = driver.find_element(By.XPATH, "//img[contains(@src, 'captcha')]")
             except:
-                 print("⚠️ Could not locate Captcha Image element (id='yw0' or src='captcha') for OCR.")
+                 print("⚠️ Could not locate Captcha Image element (id='loginCaptcha' or src='captcha') for OCR.")
                  return None
 
         # Save screenshot of the element
