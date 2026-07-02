@@ -678,6 +678,7 @@ SUPPLIER_NAME_MAPPING = {
     "ALLIED BLENDERS AND DISTILLERS LIMITED TIEUP WITH SAARAN INDUSTRIES": "Allied Blenders",
     "DEVANS MORDERN BREWERIES LTD. TIEUP WITH SUNIT BREWERIES": "Devans",
     "Devans Mordern Breweries Ltd. Tieup With Sunit Breweries": "Devans",
+    "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)": "Pragati",
 }
 
 unmapped_suppliers = set()
@@ -701,13 +702,17 @@ def get_short_supplier_name(long_name):
     if long_name in SUPPLIER_NAME_MAPPING.values():
         return long_name
         
-    # 3. Substring Match (Case Insensitive for robustness)
+    # 3. Substring Match (Case Insensitive and ignoring punctuation for robustness)
+    def clean_punc(s):
+        import re
+        return re.sub(r'[^a-zA-Z0-9]', '', s).lower()
+
+    norm_long = clean_punc(long_name)
     best_match = ''
-    norm_long = long_name.lower()
     
     for key in SUPPLIER_NAME_MAPPING:
-        # Check if key is inside long_name (case insensitive)
-        if key.lower() in norm_long:
+        norm_key = clean_punc(key)
+        if norm_key and norm_key in norm_long:
             # We want the longest key match to be specific
             if len(key) > len(best_match):
                 best_match = key

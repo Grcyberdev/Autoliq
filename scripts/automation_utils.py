@@ -691,6 +691,89 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
                 # Try simple strip
                 return d.strip()
 
+    # Helper to clean/shorten/resolve the supplier name
+    def get_clean_short_supplier(supplier):
+        if not supplier:
+            return ""
+        import re
+        
+        # 1. Strip parentheses/volume details
+        clean_val = re.sub(r'\(.*?\)', '', supplier).strip()
+        clean_val = " ".join(clean_val.split())
+        
+        # Brand-to-Supplier Mapping
+        BRAND_TO_SUPPLIER_MAPPING = {
+            "He Man 9000": "Rhino",
+            "He Man 9000 Bottle": "Rhino",
+            "Budweiser": "Anheuser Busch",
+            "Budweiser Magnum": "Anheuser Busch",
+            "Corona": "Anheuser Busch",
+            "Hoegaarden": "Anheuser Busch",
+            "Hoegaarden Witbier": "Anheuser Busch",
+            "Tuborg": "Carlsberg",
+            "Carlsberg": "Carlsberg",
+            "Kingfisher": "Sunit",
+            "Kingfisher Lager": "Sunit",
+            "Kingfisher Original Strong": "Sunit",
+            "Kingfisher Strong": "Sunit",
+            "Royal Stag": "Pernod Ricard",
+            "Blenders Pride": "Pernod Ricard",
+            "Imperial Blue": "Pernod Ricard",
+            "100 Pipers": "Pernod Ricard",
+            "McDowell's": "United Spirits",
+            "Celebration Rum": "United Spirits",
+            "Signature": "United Spirits",
+            "Royal Challenge": "United Spirits",
+            "Old Monk": "Mohan Meakin",
+            "Sterling Reserve": "Allied Blenders",
+            # Country Spirit Brands -> Suppliers
+            "Masti": "Pragati",
+            "Masti Special": "Pragati",
+            "Masti No. 1": "Pragati",
+            "Rhino Tango": "Rhino",
+            "Rhino No 1": "Rhino",
+            "Rhino Whiskey": "Rhino",
+        }
+        
+        # Check if clean_val matches a brand name to resolve to its supplier
+        for brand, sup in BRAND_TO_SUPPLIER_MAPPING.items():
+            if brand.lower() in clean_val.lower():
+                return sup
+                
+        # 2. Try standard get_short_supplier_name if imported/available
+        try:
+            from liquor_data import get_short_supplier_name
+            short_name = get_short_supplier_name(supplier)
+            if short_name and short_name != supplier:
+                return short_name
+        except Exception:
+            pass
+            
+        # 3. Clean up the unmapped name by stripping common suffixes (avoiding '...')
+        cleaned = clean_val
+        suffixes = [
+            r'\bPVT\.?\s*LTD\.?\b',
+            r'\bLTD\.?\b',
+            r'\bPVT\.?\b',
+            r'\bLLP\b',
+            r'\bPRIVATE\b',
+            r'\bLIMITED\b',
+            r'\bINDIA\b',
+            r'\bCO\.?\b',
+            r'\bCOMPANY\b',
+            r'\bDISTILLERY\b',
+            r'\bDISTILLERIES\b',
+            r'\bBREWERIES\b',
+            r'\bBREWERY\b',
+            r'\bMANUFACTURERS\b',
+            r'\bINDUSTRIES\b',
+        ]
+        for pattern in suffixes:
+            cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE).strip()
+        
+        cleaned = " ".join(cleaned.split()).rstrip(",- ").strip()
+        return cleaned
+
     reports = []
 
     for idx, row in enumerate(data_rows, 1):
@@ -731,7 +814,14 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
         # Layout requirements for mobile:
         # Supplier name, then immediately Truck Number, Cases, slight spacing, then Details.
         
-        line = f"📅 *Date:* {clean_md(date_raw)}\n*{supplier_val}*\n🚛 *Truck:* `{truck_val}`\n📦 *Total Cases:* {qty_val}\n"
+        # Clean and shorten the supplier name for the body
+        short_supplier = get_clean_short_supplier(supplier_val)
+        
+        line = f"📅 *Date:* {clean_md(date_raw)}\n"
+        if short_supplier:
+            line += f"🏢 *Supplier:* {short_supplier}\n"
+        line += f"🚛 *Truck:* `{truck_val}`\n"
+        line += f"📦 *Total Cases:* {qty_val}\n"
         
         if detailed_data:
             # User requested 1 consistent order. Alphabetical sort on liquor names prevents random jumping.
@@ -773,92 +863,6 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
             liquor_val = row[3]
             line += f"\nDetails:\n• *{liquor_val}*"
             
-        # --- NEW: Build Dynamic Header ---
-        # Helper to clean/shorten/resolve the supplier name
-        def get_clean_short_supplier(supplier):
-            if not supplier:
-                return ""
-            import re
-            
-            # 1. Strip parentheses/volume details
-            clean_val = re.sub(r'\(.*?\)', '', supplier).strip()
-            clean_val = " ".join(clean_val.split())
-            
-            # Brand-to-Supplier Mapping
-            BRAND_TO_SUPPLIER_MAPPING = {
-                "He Man 9000": "Rhino",
-                "He Man 9000 Bottle": "Rhino",
-                "Budweiser": "Anheuser Busch",
-                "Budweiser Magnum": "Anheuser Busch",
-                "Corona": "Anheuser Busch",
-                "Hoegaarden": "Anheuser Busch",
-                "Hoegaarden Witbier": "Anheuser Busch",
-                "Tuborg": "Carlsberg",
-                "Carlsberg": "Carlsberg",
-                "Kingfisher": "Sunit",
-                "Kingfisher Lager": "Sunit",
-                "Kingfisher Original Strong": "Sunit",
-                "Kingfisher Strong": "Sunit",
-                "Royal Stag": "Pernod Ricard",
-                "Blenders Pride": "Pernod Ricard",
-                "Imperial Blue": "Pernod Ricard",
-                "100 Pipers": "Pernod Ricard",
-                "McDowell's": "United Spirits",
-                "Celebration Rum": "United Spirits",
-                "Signature": "United Spirits",
-                "Royal Challenge": "United Spirits",
-                "Old Monk": "Mohan Meakin",
-                "Sterling Reserve": "Allied Blenders",
-                # Country Spirit Brands -> Suppliers
-                "Masti": "Pragati",
-                "Masti Special": "Pragati",
-                "Masti No. 1": "Pragati",
-                "Rhino Tango": "Rhino",
-                "Rhino No 1": "Rhino",
-                "Rhino Whiskey": "Rhino",
-            }
-            
-            # Check if clean_val matches a brand name to resolve to its supplier
-            for brand, sup in BRAND_TO_SUPPLIER_MAPPING.items():
-                if brand.lower() in clean_val.lower():
-                    return sup
-                    
-            # 2. Try standard get_short_supplier_name if imported/available
-            try:
-                from liquor_data import get_short_supplier_name
-                short_name = get_short_supplier_name(supplier)
-                if short_name and short_name != supplier:
-                    return short_name
-            except Exception:
-                pass
-                
-            # 3. Clean up the unmapped name by stripping common suffixes (avoiding '...')
-            cleaned = clean_val
-            suffixes = [
-                r'\bPVT\.?\s*LTD\.?\b',
-                r'\bLTD\.?\b',
-                r'\bPVT\.?\b',
-                r'\bLLP\b',
-                r'\bPRIVATE\b',
-                r'\bLIMITED\b',
-                r'\bINDIA\b',
-                r'\bCO\.?\b',
-                r'\bCOMPANY\b',
-                r'\bDISTILLERY\b',
-                r'\bDISTILLERIES\b',
-                r'\bBREWERIES\b',
-                r'\bBREWERY\b',
-                r'\bMANUFACTURERS\b',
-                r'\bINDUSTRIES\b',
-            ]
-            for pattern in suffixes:
-                cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE).strip()
-            
-            cleaned = " ".join(cleaned.split()).rstrip(",- ").strip()
-            return cleaned
-
-        short_supplier = get_clean_short_supplier(supplier_val)
-
         # Check if we are doing a Country Spirit endorsement
         is_cs = report_header and ("Country Spirit" in report_header or "CS" in report_header)
         prefix = "CS: " if is_cs else ""
