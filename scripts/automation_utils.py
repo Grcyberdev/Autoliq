@@ -814,12 +814,12 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
         # Layout requirements for mobile:
         # Supplier name, then immediately Truck Number, Cases, slight spacing, then Details.
         
-        # Clean and shorten the supplier name for the body
+        # Clean and shorten the supplier name for the header, keep full mapped name for the body
         short_supplier = get_clean_short_supplier(supplier_val)
         
         line = f"📅 *Date:* {clean_md(date_raw)}\n"
-        if short_supplier:
-            line += f"🏢 *Supplier:* {short_supplier}\n"
+        if supplier_val:
+            line += f"🏢 *Supplier:* {supplier_val}\n"
         line += f"🚛 *Truck:* `{truck_val}`\n"
         line += f"📦 *Total Cases:* {qty_val}\n"
         

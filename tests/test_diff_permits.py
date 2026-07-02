@@ -90,7 +90,7 @@ def run_test():
     # Assert message contents
     assert "*Anheuser Busch (500 Cases) - Budweiser, Corona, ...*" in reports[0], "Telegram message dynamic header mismatch"
     assert "📅 *Date:* 25-Jun-2026" in reports[0], "Date line layout mismatch"
-    assert "🏢 *Supplier:* Anheuser Busch" in reports[0], "Short supplier name layout mismatch"
+    assert "🏢 *Supplier:* Anheuser Busch Inbev India Limited" in reports[0], "Full supplier name layout mismatch"
     assert "🚛 *Truck:* `AS01DC2251`" in reports[0], "Truck line layout mismatch"
     assert "📦 *Total Cases:* 500" in reports[0], "Total Cases line layout mismatch"
     assert "Budweiser" in reports[0] and "Corona" in reports[0] and "Hoegaarden Witbier" in reports[0], "Second permit brands missing"
