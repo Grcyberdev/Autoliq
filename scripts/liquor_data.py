@@ -671,7 +671,13 @@ SUPPLIER_NAME_MAPPING = {
     "AETHER BREWERIES LLP": "Aether Breweries LLP",
     "RAIZEL INDUSTRIES": "Raizel Industries",
     "OMSONS MARKETING PVT LTD TIE UP WITH FASTFLOW DEALER PVT LTD": "Omsons Marketing",
-
+    "ANHEUSER BUSCH INBEV INDIA LIMITED": "Anheuser Busch",
+    "ANHEUSER BUSCH INBEV INDIA LTD. IMFL WHOLESALE WAREHOUSE": "Anheuser Busch",
+    "CARLSBERG INDIA PRIVATE LIMITED, TIE UP UNIT: CMJ BREWERIES PVT. LTD.": "Carlsberg",
+    "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.": "Carlsberg",
+    "ALLIED BLENDERS AND DISTILLERS LIMITED TIEUP WITH SAARAN INDUSTRIES": "Allied Blenders",
+    "DEVANS MORDERN BREWERIES LTD. TIEUP WITH SUNIT BREWERIES": "Devans",
+    "Devans Mordern Breweries Ltd. Tieup With Sunit Breweries": "Devans",
 }
 
 unmapped_suppliers = set()

@@ -88,6 +88,7 @@ def run_test():
     print(reports[0])
     
     # Assert message contents
+    assert "*Anheuser Busch (500 Cases) - Budweiser, Corona, ...*" in reports[0], "Telegram message dynamic header mismatch"
     assert "*Total Cases:* 500" in reports[0], "Telegram message quantity should be the diff (500)"
     assert "Budweiser" in reports[0] and "Corona" in reports[0] and "Hoegaarden Witbier" in reports[0], "Second permit brands missing"
     assert "Budweiser Magnum" not in reports[0], "Old permit brand should not be in the second permit report"

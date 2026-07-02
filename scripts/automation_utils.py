@@ -773,11 +773,166 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
             liquor_val = row[3]
             line += f"\nDetails:\n• *{liquor_val}*"
             
+        # --- NEW: Build Dynamic Header ---
+        # Helper to clean/shorten/resolve the supplier name
+        def get_clean_short_supplier(supplier):
+            if not supplier:
+                return ""
+            import re
+            
+            # 1. Strip parentheses/volume details
+            clean_val = re.sub(r'\(.*?\)', '', supplier).strip()
+            clean_val = " ".join(clean_val.split())
+            
+            # Brand-to-Supplier Mapping
+            BRAND_TO_SUPPLIER_MAPPING = {
+                "He Man 9000": "Rhino",
+                "He Man 9000 Bottle": "Rhino",
+                "Budweiser": "Anheuser Busch",
+                "Budweiser Magnum": "Anheuser Busch",
+                "Corona": "Anheuser Busch",
+                "Hoegaarden": "Anheuser Busch",
+                "Hoegaarden Witbier": "Anheuser Busch",
+                "Tuborg": "Carlsberg",
+                "Carlsberg": "Carlsberg",
+                "Kingfisher": "Sunit",
+                "Kingfisher Lager": "Sunit",
+                "Kingfisher Original Strong": "Sunit",
+                "Kingfisher Strong": "Sunit",
+                "Royal Stag": "Pernod Ricard",
+                "Blenders Pride": "Pernod Ricard",
+                "Imperial Blue": "Pernod Ricard",
+                "100 Pipers": "Pernod Ricard",
+                "McDowell's": "United Spirits",
+                "Celebration Rum": "United Spirits",
+                "Signature": "United Spirits",
+                "Royal Challenge": "United Spirits",
+                "Old Monk": "Mohan Meakin",
+                "Sterling Reserve": "Allied Blenders",
+                # Country Spirit Brands -> Suppliers
+                "Masti": "Pragati",
+                "Masti Special": "Pragati",
+                "Masti No. 1": "Pragati",
+                "Rhino Tango": "Rhino",
+                "Rhino No 1": "Rhino",
+                "Rhino Whiskey": "Rhino",
+            }
+            
+            # Check if clean_val matches a brand name to resolve to its supplier
+            for brand, sup in BRAND_TO_SUPPLIER_MAPPING.items():
+                if brand.lower() in clean_val.lower():
+                    return sup
+                    
+            # 2. Try standard get_short_supplier_name if imported/available
+            try:
+                from liquor_data import get_short_supplier_name
+                short_name = get_short_supplier_name(supplier)
+                if short_name and short_name != supplier:
+                    return short_name
+            except Exception:
+                pass
+                
+            # 3. Clean up the unmapped name by stripping common suffixes (avoiding '...')
+            cleaned = clean_val
+            suffixes = [
+                r'\bPVT\.?\s*LTD\.?\b',
+                r'\bLTD\.?\b',
+                r'\bPVT\.?\b',
+                r'\bLLP\b',
+                r'\bPRIVATE\b',
+                r'\bLIMITED\b',
+                r'\bINDIA\b',
+                r'\bCO\.?\b',
+                r'\bCOMPANY\b',
+                r'\bDISTILLERY\b',
+                r'\bDISTILLERIES\b',
+                r'\bBREWERIES\b',
+                r'\bBREWERY\b',
+                r'\bMANUFACTURERS\b',
+                r'\bINDUSTRIES\b',
+            ]
+            for pattern in suffixes:
+                cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE).strip()
+            
+            cleaned = " ".join(cleaned.split()).rstrip(",- ").strip()
+            return cleaned
+
+        short_supplier = get_clean_short_supplier(supplier_val)
+
+        # Check if we are doing a Country Spirit endorsement
+        is_cs = report_header and ("Country Spirit" in report_header or "CS" in report_header)
+        prefix = "CS: " if is_cs else ""
+
+        # Gather unique brand names from detailed checkpoint data or row types
+        brands_list = []
+        if detailed_data:
+            brands_list = sorted([k for k in detailed_data.keys() if k != '_TelegramSupplier'])
+        else:
+            raw_types = row[3] if len(row) > 3 else ""
+            if raw_types:
+                brands_list = [b.strip() for b in raw_types.split(',') if b.strip()]
+
+        cleaned_brands = []
+        for b in brands_list:
+            cb = b
+            for suffix in ["Bottle", "Can", "Pint", "Half", "Quarter", "Stubby", "Keg"]:
+                if cb.endswith(" " + suffix):
+                    cb = cb[:-len(suffix)-1].strip()
+                elif cb.endswith(suffix):
+                    cb = cb[:-len(suffix)].strip()
+            cleaned_brands.append(cb)
+
+        seen_b = set()
+        uniq_b = []
+        for cb in cleaned_brands:
+            if cb not in seen_b:
+                seen_b.add(cb)
+                # Omit brand name if it's already redundant with supplier name or 'CS'
+                if cb.lower() not in short_supplier.lower() and short_supplier.lower() not in cb.lower():
+                    uniq_b.append(cb)
+
+        # Apply a length budget for brand listing to prevent shabbiness
+        brands_part = ""
+        if uniq_b:
+            char_budget = 35
+            current_brands = []
+            current_len = 0
+            for brand in uniq_b:
+                brand_len = len(brand)
+                added_len = brand_len + (2 if current_brands else 0)
+                if current_len + added_len <= char_budget:
+                    current_brands.append(brand)
+                    current_len += added_len
+                else:
+                    current_brands.append("...")
+                    break
+            
+            if current_brands:
+                if current_brands[-1] == "...":
+                    brands_part = ", ".join(current_brands[:-1]) + ", ..."
+                else:
+                    brands_part = ", ".join(current_brands)
+
+        # Build dynamic title info
+        display_header = report_header
+        if short_supplier or qty_val is not None:
+            parts = []
+            if short_supplier:
+                parts.append(f"{prefix}{short_supplier}")
+            if qty_val is not None:
+                parts.append(f"({qty_val} Cases)")
+            
+            display_header = " ".join(parts)
+            if brands_part:
+                display_header += f" - {brands_part}"
+
         final_text = []
-        final_text.append("═══ ❖ ═══")
-        if report_header:
-            final_text.append(f"🥃 *{clean_md(report_header)}*")
+        if display_header:
+            final_text.append(f"🥃 *{clean_md(display_header)}*")
             final_text.append("──────────────")
+        else:
+            final_text.append("═══ ❖ ═══")
+            
         final_text.append(line)
         final_text.append("═══ ❖ ═══")
         
