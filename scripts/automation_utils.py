@@ -199,16 +199,6 @@ def setup_driver(headless=False):
     chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36")
     chrome_options.add_argument("--ignore-certificate-errors")
 
-    # TOR PROXY CONFIGURATION
-    if config.get("USE_TOR_PROXY") == "true":
-        print("🧅 TOR PROXY ENABLED: Configuring Chrome to use SOCKS5 127.0.0.1:9050")
-        chrome_options.add_argument("--proxy-server=socks5://127.0.0.1:9050")
-        # Ensure DNS resolution happens through the proxy to prevent leaks/failures
-        # CRITICAL: Force remote DNS resolution
-        chrome_options.add_argument("--host-resolver-rules=MAP * ~NOTFOUND , EXCLUDE 127.0.0.1")
-        # CRITICAL: Bypass proxy for localhost to allow ChromeDriver to talk to Chrome!
-        chrome_options.add_argument("--proxy-bypass-list=<-loopback>")
-
     # SCRAPER_API_KEY CONFIGURATION
     proxy_options = None
     wire_webdriver = None
@@ -223,11 +213,21 @@ def setup_driver(headless=False):
         if wire_webdriver:
             proxy_options = {
                 'proxy': {
-                    'http': f'http://scraperapi:{scraper_api_key}@proxy-server.scraperapi.com:8001',
-                    'https': f'http://scraperapi:{scraper_api_key}@proxy-server.scraperapi.com:8001',
+                    'http': f'http://scraperapi.country_code=in:{scraper_api_key}@proxy-server.scraperapi.com:8001',
+                    'https': f'http://scraperapi.country_code=in:{scraper_api_key}@proxy-server.scraperapi.com:8001',
                     'no_proxy': 'localhost,127.0.0.1'
                 }
             }
+
+    # TOR PROXY CONFIGURATION (Fallback only if ScraperAPI is not active)
+    elif config.get("USE_TOR_PROXY") == "true":
+        print("🧅 TOR PROXY ENABLED: Configuring Chrome to use SOCKS5 127.0.0.1:9050")
+        chrome_options.add_argument("--proxy-server=socks5://127.0.0.1:9050")
+        # Ensure DNS resolution happens through the proxy to prevent leaks/failures
+        # CRITICAL: Force remote DNS resolution
+        chrome_options.add_argument("--host-resolver-rules=MAP * ~NOTFOUND , EXCLUDE 127.0.0.1")
+        # CRITICAL: Bypass proxy for localhost to allow ChromeDriver to talk to Chrome!
+        chrome_options.add_argument("--proxy-bypass-list=<-loopback>")
     
     # PAGE LOAD STRATEGY: Eager (Waits for DOM only, ignores slow images/styles)
     # This is critical for slow portals to avoid timeouts
@@ -268,25 +268,7 @@ def setup_driver(headless=False):
     chrome_options.add_argument("--disable-client-side-phishing-detection")
     chrome_options.add_argument("--disable-default-apps")
 
-    # SCRAPER_API_KEY CONFIGURATION
-    proxy_options = None
-    wire_webdriver = None
-    scraper_api_key = config.get("SCRAPER_API_KEY")
-    if scraper_api_key:
-        print("🕵️‍♂️ SCAPER API DETECTED: Routing traffic through ScraperAPI Proxy Tunnel.")
-        try:
-            from seleniumwire import webdriver as wire_webdriver
-        except ImportError:
-            print("⚠️ seleniumwire not installed. Falling back to standard selenium (ScraperAPI proxy disabled).")
-            wire_webdriver = None
-        if wire_webdriver:
-            proxy_options = {
-                'proxy': {
-                    'http': f'http://scraperapi:{scraper_api_key}@proxy-server.scraperapi.com:8001',
-                    'https': f'http://scraperapi:{scraper_api_key}@proxy-server.scraperapi.com:8001',
-                    'no_proxy': 'localhost,127.0.0.1'
-                }
-            }
+    # (ScraperAPI configuration cleaned up from here to remove duplication)
 
     # RETRY LOGIC (For slow free-tier servers)
     import socket
@@ -305,16 +287,23 @@ def setup_driver(headless=False):
                     subprocess.run(["pkill", "-f", "chromium"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                 except: pass
 
-            # 0. CI/CD Environment (Github Actions) - Use WebDriverManager
+            # 0. CI/CD Environment (Github Actions) - Use WebDriverManager with native Selenium Manager fallback
             # Github Actions sets 'CI' env var. We want standard manager there.
             if os.environ.get('CI'):
                 print("      🌍 CI Environment detected (Github Actions). Using WebDriverManager...")
                 
-                # If proxy_options exist, wire_webdriver injects them. Otherwise it works exactly like standard selenium.
-                if proxy_options:
-                     driver = wire_webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options, seleniumwire_options=proxy_options)
-                else:
-                     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+                try:
+                    # If proxy_options exist, wire_webdriver injects them. Otherwise it works exactly like standard selenium.
+                    if proxy_options:
+                         driver = wire_webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options, seleniumwire_options=proxy_options)
+                    else:
+                         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+                except Exception as manager_err:
+                    print(f"      ⚠️ WebDriverManager failed on CI ({manager_err}). Falling back to native Selenium Manager...")
+                    if proxy_options:
+                         driver = wire_webdriver.Chrome(options=chrome_options, seleniumwire_options=proxy_options)
+                    else:
+                         driver = webdriver.Chrome(options=chrome_options)
                 
                 # CRITICAL: INCREASE TIMEOUTS FOR TOR / CI
                 driver.set_page_load_timeout(600)
