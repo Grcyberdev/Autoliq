@@ -922,7 +922,6 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
         final_text = []
         if display_header:
             final_text.append(f"🥃 *{clean_md(display_header)}*")
-            final_text.append("──────────────")
         else:
             final_text.append("═══ ❖ ═══")
             
