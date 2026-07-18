@@ -15124,19 +15124,16 @@
     },
     "01-Jul-2026": {
         "AS01GC5541": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "NL01AA3667": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Can": 1400
             }
         },
         "NL01N8572": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
@@ -15144,25 +15141,21 @@
     },
     "02-Jul-2026": {
         "NL01L6374": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg": {
                 "Bottle": 1200
             }
         },
         "AS01RC2282": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Can": 1400
             }
         },
         "AS01MC3444": {
-            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse",
             "Oaksmith International": {
                 "180ml": 500
             }
         },
         "AS03BC8344": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti No. 1": {
                 "CA": 100
             },
@@ -15173,25 +15166,22 @@
     },
     "03-Jul-2026": {
         "RJ52GA4500": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "RJ14GG5202": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "AS12BC7223": {
-            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Rhino No 1": {
                 "CA": 170
             }
@@ -15199,27 +15189,18 @@
     },
     "04-Jul-2026": {
         "RJ14GG0072": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
-            "Tuborg": {
-                "Bottle": 1196
-            },
             "Carlsberg Strong": {
                 "Can": 1,
                 "Bottle": 3
+            },
+            "Tuborg": {
+                "Bottle": 1196
             }
         },
         "AS17C1213": {
-            "_TelegramSupplier": "Pernod Ricard India Private Limited",
-            "Xclamation Rum": {
-                "180ml": 1,
-                "375ml": 1
-            },
-            "Xclamation Vodka": {
-                "180ml": 3
-            },
             "Jacob's Creek Shiraz Cabernet": {
-                "NQ": 1,
-                "750ml": 5
+                "750ml": 5,
+                "NQ": 1
             },
             "Ballantines": {
                 "750ml": 4
@@ -15227,12 +15208,18 @@
             "Jameson": {
                 "750ml": 30
             },
+            "Xclamation Vodka": {
+                "180ml": 3
+            },
             "Jameson Caskmates": {
                 "750ml": 5
+            },
+            "Xclamation Rum": {
+                "180ml": 1,
+                "375ml": 1
             }
         },
         "AS01HC0109": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 400,
                 "CS": 300
@@ -15241,7 +15228,6 @@
     },
     "06-Jul-2026": {
         "AS01NC7526": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Oaken Glow": {
                 "750ml": 25,
                 "180ml": 35,
@@ -15274,13 +15260,11 @@
             }
         },
         "AS01FC3252": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "AS01TC2295": {
-            "_TelegramSupplier": "United Spirits Limited",
             "Royal Challenge American Pride": {
                 "180ml": 5,
                 "375ml": 5,
@@ -15324,46 +15308,40 @@
             }
         },
         "AS01KC8177": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti Special": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         }
     },
     "07-Jul-2026": {
         "AS01KC6808": {
-            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Aether Breweries Llp",
             "Godfather Select": {
                 "Can": 680
             }
         },
         "AS03BC5273": {
-            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
                 "750ml": 200,
                 "375ml": 150
             }
         },
         "AS01LC5953": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
-            "Signature": {
-                "750ml": 15,
-                "180ml": 15
-            },
             "McDowell's Rum": {
-                "180ml": 400,
-                "750ml": 470
+                "750ml": 470,
+                "180ml": 400
+            },
+            "Signature": {
+                "180ml": 15,
+                "750ml": 15
             }
         },
         "AS01GC5541": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Can": 1400
             }
         },
         "AS03BC8122": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 700
             }
@@ -15371,69 +15349,60 @@
     },
     "08-Jul-2026": {
         "AS02CC8463": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
                 "750ml": 300,
                 "180ml": 600
             }
         },
         "AS03BC8344": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti Special": {
                 "CA": 700
             }
         },
         "AS01KC9113": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         }
     },
     "09-Jul-2026": {
         "NL01AG4960": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
-            "Tuborg Malt": {
-                "Can": 900
-            },
             "Tuborg": {
                 "Bottle": 300
+            },
+            "Tuborg Malt": {
+                "Can": 900
             }
         },
         "AS01GC7525": {
-            "_TelegramSupplier": "Saaran Industries",
             "KD 50 Whiskey": {
                 "375ml": 250,
                 "180ml": 150
             }
         },
         "AS01KC7915": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
-            "Royal Challenge": {
-                "750ml": 75,
-                "180ml": 200,
-                "375ml": 125
-            },
             "Director's Special Black": {
                 "180ml": 110,
                 "375ml": 40
+            },
+            "Royal Challenge": {
+                "375ml": 125,
+                "180ml": 200,
+                "750ml": 75
             }
         },
         "UP21DT1708": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "AS02AC7187": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "AS03BC8122": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti Special": {
                 "CA": 500,
                 "CS": 200
@@ -15442,37 +15411,32 @@
     },
     "10-Jul-2026": {
         "ML05Z2050": {
-            "_TelegramSupplier": "Aether Breweries Llp",
             "Goldflow Strong": {
                 "Can": 850
             }
         },
         "HR73A9070": {
-            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Aether Breweries Llp",
             "Godfather Select": {
                 "Bottle": 1360
             }
         },
         "NL01L6374": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg": {
                 "Bottle": 1200
             }
         },
         "RJ52GA1035": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg": {
                 "Bottle": 1200
             }
         },
         "AS24AC3190": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
             "Sterling B7": {
                 "180ml": 30
             },
             "Iconiq Vodka": {
-                "750ml": 25,
-                "375ml": 75
+                "375ml": 75,
+                "750ml": 25
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 20
@@ -15482,30 +15446,26 @@
             }
         },
         "AS01NC1686": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
-                "180ml": 200,
+                "750ml": 500,
                 "375ml": 200,
-                "750ml": 500
+                "180ml": 200
             }
         },
         "AS01RC2284": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "AS03BC8344": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         }
     },
     "11-Jul-2026": {
         "AS02CC9204": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "Signature": {
                 "180ml": 75,
                 "750ml": 50,
@@ -15521,20 +15481,17 @@
             }
         },
         "NL01L6386": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Can": 1400
             }
         },
         "AS25FC8224": {
-            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse",
             "Oaksmith International": {
                 "750ml": 75,
                 "375ml": 125
             }
         },
         "AS03BC8122": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 700
             }
@@ -15542,39 +15499,33 @@
     },
     "13-Jul-2026": {
         "AS28C9886": {
-            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Aether Breweries Llp",
             "Godfather Select": {
                 "Can": 680
             }
         },
         "AS04CC0758": {
-            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
-                "180ml": 100,
                 "750ml": 100,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 100
             }
         },
         "NL01AF2095": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Can": 1400
             }
         },
         "NL01G7465": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "WB29A9469": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "WB51A5511": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
@@ -15582,47 +15533,581 @@
     },
     "14-Jul-2026": {
         "NL01AG0287": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Aether Breweries Llp",
             "Kingfisher Original Strong": {
                 "Can": 1400
             }
         },
         "RJ05GA7942": {
-            "_TelegramSupplier": "Rhino Agencies Ltd.",
             "He Man 9000": {
                 "Bottle": 1400
             }
         },
         "AS01QC2373": {
-            "_TelegramSupplier": "Rhino Agencies Ltd.",
             "He Man 9000": {
                 "Bottle": 1400
             }
         },
         "AS01PC0693": {
-            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
             "McDowell's Rum": {
                 "180ml": 600,
-                "375ml": 100,
-                "750ml": 200
+                "750ml": 200,
+                "375ml": 100
             }
         },
         "AS01KC7913": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
-            "Director's Special Black": {
-                "375ml": 50,
-                "180ml": 175,
-                "750ml": 75
-            },
             "Royal Challenge": {
                 "375ml": 100,
                 "180ml": 150
+            },
+            "Director's Special Black": {
+                "375ml": 50,
+                "750ml": 75,
+                "180ml": 175
             }
         },
         "UP38BT1504": {
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01NC0392": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Xclamation Whiskey": {
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 50,
+                "750ml": 25,
+                "180ml": 50
+            },
+            "Royal Stag": {
+                "750ml": 65,
+                "180ml": 100
+            },
+            "Oaken Glow": {
+                "375ml": 20,
+                "180ml": 30
+            },
+            "Royal Stag Barrel": {
+                "180ml": 75,
+                "375ml": 75
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 50
+            }
+        },
+        "AS02CC8645": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "750ml": 150,
+                "375ml": 300,
+                "180ml": 50
+            },
+            "McDowell's Double Oak Barrel": {
+                "750ml": 50
+            }
+        },
+        "AS01QC3237": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "Magic Moments Lemon": {
+                "180ml": 35,
+                "375ml": 15
+            },
+            "Magic Moments Green Apple": {
+                "180ml": 50
+            },
+            "8 PM Premium Black": {
+                "180ml": 25
+            },
+            "Magic Moments": {
+                "180ml": 175
+            }
+        },
+        "AS01FC6139": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Hoegaarden Witbier": {
+                "Pint": 25
+            },
+            "Budweiser Magnum": {
+                "Bottle": 275
+            },
+            "Corona": {
+                "Pint": 25,
+                "Can": 25
+            },
+            "Budweiser": {
+                "Can": 150
+            }
+        },
+        "WB25G3435": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser Magnum": {
+                "Can": 1000
+            }
+        }
+    },
+    "15-Jul-2026": {
+        "RJ14GG0801": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg Malt": {
+                "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
+            }
+        },
+        "AS03AC9944": {
+            "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
+            "White Magic Orange Gin": {
+                "180ml": 125
+            },
+            "Aristocrat Premium": {
+                "180ml": 10
+            }
+        },
+        "AS01KC2111": {
+            "_TelegramSupplier": "Saaran Industries",
+            "KD 50 Whiskey": {
+                "750ml": 280,
+                "375ml": 120
+            }
+        },
+        "NL01AF2095": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "AS25FC8224": {
+            "_TelegramSupplier": "United Spirits Limited",
+            "Black Dog Centenary": {
+                "375ml": 1,
+                "750ml": 2,
+                "180ml": 1
+            },
+            "Black Dog Triple Gold": {
+                "375ml": 2,
+                "180ml": 2
+            },
+            "Royal Challenge American Pride": {
+                "750ml": 3,
+                "180ml": 7
+            },
+            "Tanqueray Gin": {
+                "750ml": 1
+            },
+            "J & B": {
+                "750ml": 5
+            },
+            "JW Black Label": {
+                "Quarter": 1,
+                "750ml": 6
+            },
+            "JW Red Label": {
+                "Quarter": 5,
+                "375ml": 10,
+                "750ml": 15
+            },
+            "JW Blonde": {
+                "Quarter": 2,
+                "JQ": 3
+            },
+            "Singleton 12 Yrs": {
+                "Full": 2
+            },
+            "Black & White": {
+                "180ml": 12,
+                "750ml": 10,
+                "375ml": 5
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 35,
+                "750ml": 10
+            },
+            "Smirnoff": {
+                "180ml": 10,
+                "750ml": 5,
+                "375ml": 5
+            }
+        },
+        "AS01NC9289": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser": {
+                "Bottle": 250,
+                "Can": 250
+            }
+        }
+    },
+    "16-Jul-2026": {
+        "HR55AC3167": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Aether Breweries Llp",
+            "Kingfisher Original Strong": {
+                "Can": 1400
+            }
+        },
+        "ML10B9355": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Aether Breweries Llp",
+            "Kingfisher Original Strong": {
+                "Can": 100
+            },
+            "Kingfisher Ultra Max": {
+                "Bottle": 200,
+                "Can": 80
+            },
+            "Kingfisher Ultra": {
+                "Bottle": 200,
+                "Can": 100
+            }
+        },
+        "NL01AE7811": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Aether Breweries Llp",
+            "Godfather Select": {
+                "Bottle": 680
+            }
+        },
+        "HR61E5056": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "AS01PC0693": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "180ml": 550
+            }
+        },
+        "AS25CC3966": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "180ml": 550
+            }
+        },
+        "WB11D8550": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01FC3252": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "UP21BN4801": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "NL01AF6343": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "WB271666": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01GC6796": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "180ml": 800,
+                "375ml": 50,
+                "750ml": 50
+            }
+        },
+        "AS01UC9277": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "After Dark": {
+                "375ml": 100,
+                "180ml": 375,
+                "750ml": 75
+            }
+        },
+        "AS01DD1759": {
+            "_TelegramSupplier": "Pernod Ricard India Private Limited",
+            "Absolut": {
+                "750ml": 5
+            },
+            "Ballantines": {
+                "750ml": 5,
+                "375ml": 5
+            },
+            "Chivas Regal 12 Yrs": {
+                "750ml": 2
+            },
+            "Jacob's Creek Shiraz Cabernet": {
+                "750ml": 5
+            },
+            "Jameson": {
+                "750ml": 38
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CS": 300,
+                "CA": 400
+            }
+        },
+        "AS04AC1429": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino No 1": {
+                "CA": 120
+            },
+            "Rhino Limon": {
+                "CA": 50
+            }
+        }
+    },
+    "17-Jul-2026": {
+        "HR61F6916": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "AS01NC7526": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Xclamation Whiskey": {
+                "180ml": 20,
+                "750ml": 15,
+                "375ml": 15
+            },
+            "Blender's Pride Four Elements": {
+                "180ml": 5,
+                "750ml": 5
+            },
+            "Blender's Pride Reserve": {
+                "750ml": 25,
+                "180ml": 20
+            },
+            "Royal Stag Barrel": {
+                "180ml": 45
+            },
+            "Royal Stag": {
+                "180ml": 200,
+                "750ml": 75
+            },
+            "Royal Stag Double Dark": {
+                "180ml": 25
+            },
+            "Blender's Pride Exclusive": {
+                "750ml": 20,
+                "375ml": 40,
+                "180ml": 40
+            }
+        },
+        "AS01EC6746": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Sterling Reserve B7 Blended": {
+                "375ml": 20
+            },
+            "Iconiq Vodka": {
+                "375ml": 50
+            },
+            "Officer's Choice": {
+                "750ml": 150
+            },
+            "Iconiq Hippy": {
+                "180ml": 250
+            },
+            "Sterling B7": {
+                "180ml": 30
+            }
+        },
+        "AS01KC7529": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "375ml": 175,
+                "750ml": 75,
+                "180ml": 50
+            },
+            "McDowell's Double Oak Barrel": {
+                "375ml": 75,
+                "180ml": 175
+            }
+        },
+        "AS01LC5952": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Royal Challenge": {
+                "750ml": 50,
+                "180ml": 200
+            },
+            "McDowell's Rum": {
+                "750ml": 125,
+                "180ml": 100
+            },
+            "Director's Special Black": {
+                "180ml": 45
+            },
+            "Antiquity Blue Ultra": {
+                "750ml": 10,
+                "180ml": 20
+            }
+        },
+        "AS01QC7751": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "180ml": 350,
+                "375ml": 150,
+                "750ml": 400
+            }
+        },
+        "HR55AC8095": {
+            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
+            "Simba": {
+                "Bottle": 1160,
+                "Can": 200
+            }
+        },
+        "AS12AC2059": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01RC4767": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "Magic Moments Green Apple": {
+                "180ml": 30,
+                "375ml": 20
+            },
+            "8 PM Premium Black": {
+                "375ml": 10
+            },
+            "Magic Moments Lemon": {
+                "180ml": 45,
+                "375ml": 30
+            },
+            "Magic Moments": {
+                "180ml": 65
+            },
+            "After Dark": {
+                "180ml": 100
+            }
+        },
+        "AS01KC9113": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CA": 450,
+                "CS": 200
+            },
+            "Masti No. 1": {
+                "CS": 50
+            }
+        },
+        "AS04AC1429": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino Whiskey": {
+                "CA": 75
+            },
+            "Rhino No 1": {
+                "CA": 75
+            }
+        }
+    },
+    "18-Jul-2026": {
+        "UP78CT2791": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "WB23E0962": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "WB19G8663": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "AS25BC3499": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "NL01N6289": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "ML05Z2050": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Brahmaputra Breweries Llp",
+            "Godfather Select": {
+                "Can": 680
+            }
+        },
+        "AS01MC3440": {
+            "_TelegramSupplier": "Bacardi India Pvt. Ltd.",
+            "Breezer Cranberry": {
+                "Stubby": 85
+            },
+            "Breezer Watermelon": {
+                "Stubby": 25
+            },
+            "Breezer Mango Peach": {
+                "Stubby": 15
+            },
+            "Bacardi White Rum": {
+                "180ml": 4,
+                "375ml": 1,
+                "750ml": 5
+            },
+            "Bacardi Limon Rum": {
+                "180ml": 15,
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Bacardi Mango Chilli Rum": {
+                "180ml": 12,
+                "375ml": 5
+            },
+            "Breezer Blueberry": {
+                "Stubby": 50
+            },
+            "William Lawson": {
+                "180ml": 2,
+                "750ml": 7
+            },
+            "Dewar's White Label": {
+                "180ml": 2,
+                "375ml": 4,
+                "750ml": 2
+            },
+            "Breezer Jamaican": {
+                "Stubby": 100
+            },
+            "Breezer Blackberry": {
+                "Stubby": 50
+            },
+            "Bombay Sapphire Gin": {
+                "Quarter": 2,
+                "750ml": 5
+            },
+            "Camino Real Gold Tequila": {
+                "750ml": 2
+            },
+            "Grey Goose": {
+                "Full": 3
+            },
+            "Aberfeldy 12 Yrs": {
+                "Full": 1
+            },
+            "Dewar's Portuguese Smooth": {
+                "Full": 5
             }
         }
     }
