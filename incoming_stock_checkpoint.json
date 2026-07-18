@@ -16007,14 +16007,11 @@
             }
         },
         "AS01MC3440": {
+            "Breezer Blackberry": {
+                "Stubby": 50
+            },
             "Breezer Cranberry": {
                 "Stubby": 85
-            },
-            "Breezer Watermelon": {
-                "Stubby": 25
-            },
-            "Breezer Mango Peach": {
-                "Stubby": 15
             },
             "Bacardi White Rum": {
                 "180ml": 4,
@@ -16042,11 +16039,14 @@
                 "375ml": 4,
                 "750ml": 2
             },
+            "Breezer Watermelon": {
+                "Stubby": 25
+            },
             "Breezer Jamaican": {
                 "Stubby": 100
             },
-            "Breezer Blackberry": {
-                "Stubby": 50
+            "Breezer Mango Peach": {
+                "Stubby": 15
             },
             "Bombay Sapphire Gin": {
                 "Quarter": 2,
@@ -16063,6 +16063,12 @@
             },
             "Dewar's Portuguese Smooth": {
                 "Full": 5
+            }
+        },
+        "AS01FC3252": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
