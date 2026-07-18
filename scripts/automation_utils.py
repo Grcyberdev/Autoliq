@@ -1056,5 +1056,28 @@ def subtract_checkpoint_details(new_details, old_details):
     return diff_details
 
 
-
-
+def get_checkpoint_details(checkpoint, date_raw, truck_val):
+    """
+    Safely retrieves detailed information from the checkpoint for a given date
+    and truck, checking for both direct raw-date match and normalized date match.
+    """
+    if not checkpoint:
+        return {}
+    if date_raw in checkpoint and truck_val in checkpoint[date_raw]:
+        return checkpoint[date_raw][truck_val]
+    
+    from datetime import datetime
+    def norm(d):
+        if not d: return ""
+        try: 
+            return datetime.strptime(d, '%d-%b-%Y').strftime('%Y-%m-%d')
+        except: 
+            try: return datetime.strptime(d, '%Y-%m-%d').strftime('%Y-%m-%d')
+            except: return d.strip()
+            
+    target_norm = norm(date_raw)
+    for cp_date in checkpoint:
+        if norm(cp_date) == target_norm:
+            if truck_val in checkpoint[cp_date]:
+                return checkpoint[cp_date][truck_val]
+    return {}

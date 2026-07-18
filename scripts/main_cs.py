@@ -907,8 +907,8 @@ try:
                     # Compute subtraction checkpoint for this specific truck update
                     diff_checkpoint = {}
                     diff_details = automation_utils.subtract_checkpoint_details(
-                        incoming_checkpoint.get(date_val, {}).get(truck_val, {}),
-                        old_incoming_checkpoint.get(date_val, {}).get(truck_val, {})
+                        automation_utils.get_checkpoint_details(incoming_checkpoint, r[0], truck_val),
+                        automation_utils.get_checkpoint_details(old_incoming_checkpoint, r[0], truck_val)
                     )
                     if date_val not in diff_checkpoint:
                         diff_checkpoint[date_val] = {}
