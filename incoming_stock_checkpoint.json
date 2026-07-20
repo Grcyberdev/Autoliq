@@ -15571,21 +15571,14 @@
             }
         },
         "AS01NC0392": {
-            "Blender's Pride Reserve": {
-                "375ml": 50,
-                "180ml": 50,
-                "750ml": 25
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 50
-            },
-            "Royal Stag Barrel": {
-                "375ml": 75,
-                "180ml": 75
-            },
             "Oaken Glow": {
-                "180ml": 30,
-                "375ml": 20
+                "375ml": 20,
+                "180ml": 30
+            },
+            "Blender's Pride Reserve": {
+                "180ml": 50,
+                "750ml": 25,
+                "375ml": 50
             },
             "Xclamation Whiskey": {
                 "375ml": 5,
@@ -15594,13 +15587,20 @@
             "Royal Stag": {
                 "750ml": 65,
                 "180ml": 100
+            },
+            "Royal Stag Barrel": {
+                "180ml": 75,
+                "375ml": 75
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 50
             }
         },
         "AS02CC8645": {
             "McDowell's Luxury": {
-                "750ml": 150,
+                "180ml": 50,
                 "375ml": 300,
-                "180ml": 50
+                "750ml": 150
             },
             "McDowell's Double Oak Barrel": {
                 "750ml": 50
@@ -15611,20 +15611,17 @@
                 "180ml": 35,
                 "375ml": 15
             },
-            "Magic Moments Green Apple": {
-                "180ml": 50
-            },
             "8 PM Premium Black": {
                 "180ml": 25
+            },
+            "Magic Moments Green Apple": {
+                "180ml": 50
             },
             "Magic Moments": {
                 "180ml": 175
             }
         },
         "AS01FC6139": {
-            "Hoegaarden Witbier": {
-                "Pint": 25
-            },
             "Budweiser Magnum": {
                 "Bottle": 275
             },
@@ -15632,7 +15629,10 @@
                 "Can": 150
             },
             "Corona": {
-                "Can": 25,
+                "Pint": 25,
+                "Can": 25
+            },
+            "Hoegaarden Witbier": {
                 "Pint": 25
             }
         },
@@ -16111,6 +16111,33 @@
             "Godfather Select": {
                 "Can": 680,
                 "Bottle": 680
+            }
+        },
+        "RJ14GG0801": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 800
+            },
+            "Tuborg Malt": {
+                "Can": 400
+            }
+        },
+        "AS01KC5889": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Royal Challenge": {
+                "180ml": 50,
+                "375ml": 50,
+                "750ml": 25
+            },
+            "Signature": {
+                "375ml": 20
+            },
+            "McDowell's Rum": {
+                "375ml": 100,
+                "180ml": 250
+            },
+            "Director's Special Black": {
+                "180ml": 55
             }
         }
     }
