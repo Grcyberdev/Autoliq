@@ -16084,8 +16084,8 @@
         },
         "AS02E5991": {
             "Simba": {
-                "Can": 400,
-                "Bottle": 960
+                "Bottle": 960,
+                "Can": 400
             }
         },
         "AS02AC7187": {
@@ -16114,28 +16114,34 @@
             }
         },
         "RJ14GG0801": {
-            "Tuborg": {
-                "Bottle": 800
-            },
             "Tuborg Malt": {
                 "Can": 400
+            },
+            "Tuborg": {
+                "Bottle": 800
             }
         },
         "AS01KC5889": {
-            "Royal Challenge": {
-                "180ml": 50,
-                "375ml": 50,
-                "750ml": 25
-            },
-            "Signature": {
-                "375ml": 20
-            },
             "McDowell's Rum": {
                 "375ml": 100,
                 "180ml": 250
             },
+            "Royal Challenge": {
+                "375ml": 50,
+                "750ml": 25,
+                "180ml": 50
+            },
             "Director's Special Black": {
                 "180ml": 55
+            },
+            "Signature": {
+                "375ml": 20
+            }
+        },
+        "AS12AC2059": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
