@@ -15431,12 +15431,12 @@
             }
         },
         "AS24AC3190": {
+            "Iconiq Vodka": {
+                "750ml": 25,
+                "375ml": 75
+            },
             "Sterling B7": {
                 "180ml": 30
-            },
-            "Iconiq Vodka": {
-                "375ml": 75,
-                "750ml": 25
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 20
@@ -15447,8 +15447,8 @@
         },
         "AS01NC1686": {
             "McDowell's Rum": {
-                "750ml": 500,
                 "375ml": 200,
+                "750ml": 500,
                 "180ml": 200
             }
         },
@@ -15550,19 +15550,19 @@
         "AS01PC0693": {
             "McDowell's Rum": {
                 "180ml": 600,
-                "750ml": 200,
-                "375ml": 100
+                "375ml": 100,
+                "750ml": 200
             }
         },
         "AS01KC7913": {
+            "Director's Special Black": {
+                "375ml": 50,
+                "180ml": 175,
+                "750ml": 75
+            },
             "Royal Challenge": {
                 "375ml": 100,
                 "180ml": 150
-            },
-            "Director's Special Black": {
-                "375ml": 50,
-                "750ml": 75,
-                "180ml": 175
             }
         },
         "UP38BT1504": {
@@ -15571,36 +15571,36 @@
             }
         },
         "AS01NC0392": {
-            "Xclamation Whiskey": {
-                "375ml": 5,
-                "750ml": 5
+            "Blender's Pride Exclusive": {
+                "375ml": 50
+            },
+            "Royal Stag Barrel": {
+                "375ml": 75,
+                "180ml": 75
+            },
+            "Oaken Glow": {
+                "180ml": 30,
+                "375ml": 20
+            },
+            "Royal Stag": {
+                "180ml": 100,
+                "750ml": 65
             },
             "Blender's Pride Reserve": {
                 "375ml": 50,
                 "750ml": 25,
                 "180ml": 50
             },
-            "Royal Stag": {
-                "750ml": 65,
-                "180ml": 100
-            },
-            "Oaken Glow": {
-                "375ml": 20,
-                "180ml": 30
-            },
-            "Royal Stag Barrel": {
-                "180ml": 75,
-                "375ml": 75
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 50
+            "Xclamation Whiskey": {
+                "750ml": 5,
+                "375ml": 5
             }
         },
         "AS02CC8645": {
             "McDowell's Luxury": {
                 "750ml": 150,
-                "375ml": 300,
-                "180ml": 50
+                "180ml": 50,
+                "375ml": 300
             },
             "McDowell's Double Oak Barrel": {
                 "750ml": 50
@@ -15614,23 +15614,23 @@
             "Magic Moments Green Apple": {
                 "180ml": 50
             },
-            "8 PM Premium Black": {
-                "180ml": 25
-            },
             "Magic Moments": {
                 "180ml": 175
+            },
+            "8 PM Premium Black": {
+                "180ml": 25
             }
         },
         "AS01FC6139": {
+            "Corona": {
+                "Pint": 25,
+                "Can": 25
+            },
             "Hoegaarden Witbier": {
                 "Pint": 25
             },
             "Budweiser Magnum": {
                 "Bottle": 275
-            },
-            "Corona": {
-                "Pint": 25,
-                "Can": 25
             },
             "Budweiser": {
                 "Can": 150
@@ -16067,6 +16067,20 @@
         },
         "AS01FC3252": {
             "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        }
+    },
+    "20-Jul-2026": {
+        "WB23C5518": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "WB23L7019": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
                 "Bottle": 1400
             }
         }
