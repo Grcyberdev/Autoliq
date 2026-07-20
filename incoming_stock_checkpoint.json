@@ -15431,12 +15431,12 @@
             }
         },
         "AS24AC3190": {
-            "Iconiq Vodka": {
-                "750ml": 25,
-                "375ml": 75
-            },
             "Sterling B7": {
                 "180ml": 30
+            },
+            "Iconiq Vodka": {
+                "375ml": 75,
+                "750ml": 25
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 20
@@ -15447,8 +15447,8 @@
         },
         "AS01NC1686": {
             "McDowell's Rum": {
-                "375ml": 200,
                 "750ml": 500,
+                "375ml": 200,
                 "180ml": 200
             }
         },
@@ -15549,20 +15549,20 @@
         },
         "AS01PC0693": {
             "McDowell's Rum": {
-                "180ml": 600,
+                "750ml": 200,
                 "375ml": 100,
-                "750ml": 200
+                "180ml": 600
             }
         },
         "AS01KC7913": {
-            "Director's Special Black": {
-                "375ml": 50,
-                "180ml": 175,
-                "750ml": 75
-            },
             "Royal Challenge": {
-                "375ml": 100,
-                "180ml": 150
+                "180ml": 150,
+                "375ml": 100
+            },
+            "Director's Special Black": {
+                "750ml": 75,
+                "180ml": 175,
+                "375ml": 50
             }
         },
         "UP38BT1504": {
@@ -15571,6 +15571,11 @@
             }
         },
         "AS01NC0392": {
+            "Blender's Pride Reserve": {
+                "375ml": 50,
+                "180ml": 50,
+                "750ml": 25
+            },
             "Blender's Pride Exclusive": {
                 "375ml": 50
             },
@@ -15582,25 +15587,20 @@
                 "180ml": 30,
                 "375ml": 20
             },
-            "Royal Stag": {
-                "180ml": 100,
-                "750ml": 65
-            },
-            "Blender's Pride Reserve": {
-                "375ml": 50,
-                "750ml": 25,
-                "180ml": 50
-            },
             "Xclamation Whiskey": {
-                "750ml": 5,
-                "375ml": 5
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Royal Stag": {
+                "750ml": 65,
+                "180ml": 100
             }
         },
         "AS02CC8645": {
             "McDowell's Luxury": {
                 "750ml": 150,
-                "180ml": 50,
-                "375ml": 300
+                "375ml": 300,
+                "180ml": 50
             },
             "McDowell's Double Oak Barrel": {
                 "750ml": 50
@@ -15614,18 +15614,14 @@
             "Magic Moments Green Apple": {
                 "180ml": 50
             },
-            "Magic Moments": {
-                "180ml": 175
-            },
             "8 PM Premium Black": {
                 "180ml": 25
+            },
+            "Magic Moments": {
+                "180ml": 175
             }
         },
         "AS01FC6139": {
-            "Corona": {
-                "Pint": 25,
-                "Can": 25
-            },
             "Hoegaarden Witbier": {
                 "Pint": 25
             },
@@ -15634,6 +15630,10 @@
             },
             "Budweiser": {
                 "Can": 150
+            },
+            "Corona": {
+                "Can": 25,
+                "Pint": 25
             }
         },
         "WB25G3435": {
@@ -16080,6 +16080,35 @@
         "WB23L7019": {
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "AS02E5991": {
+            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
+            "Simba": {
+                "Can": 400,
+                "Bottle": 960
+            }
+        },
+        "AS02AC7187": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1400
+            }
+        },
+        "AS03CC9600": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 200
+            },
+            "Kingfisher Lager": {
+                "Bottle": 200,
+                "Can": 280
+            }
+        },
+        "WB41E9975": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1400
             }
         }
     }
