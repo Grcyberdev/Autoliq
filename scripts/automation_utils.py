@@ -68,8 +68,11 @@ def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10):
             try:
                 page_src = driver.page_source
                 if "Copyright 2017 The Chromium Authors" in page_src or "ERR_" in page_src or "This site can’t be reached" in page_src:
-                     print(f"   ⚠️ Chrome Error Page Detected (Validation Failed).")
-                     raise WebDriverException("Chrome Error Page Detected (Chromium Authors / ERR_ / Site Unreachable)")
+                     import re
+                     err_match = re.search(r'ERR_[A-Z_]+', page_src)
+                     err_code = err_match.group(0) if err_match else "UNKNOWN_ERROR"
+                     print(f"   ⚠️ Chrome Error Page Detected (Validation Failed). Title: '{driver.title}', Code: {err_code}")
+                     raise WebDriverException(f"Chrome Error Page Detected (Code: {err_code}, Title: {driver.title})")
             except Exception as valid_e:
                 # If we raised above, re-raise to trigger retry
                 if "Chrome Error Page" in str(valid_e): raise valid_e

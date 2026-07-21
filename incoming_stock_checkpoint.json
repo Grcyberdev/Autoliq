@@ -15549,20 +15549,20 @@
         },
         "AS01PC0693": {
             "McDowell's Rum": {
-                "750ml": 200,
+                "180ml": 600,
                 "375ml": 100,
-                "180ml": 600
+                "750ml": 200
             }
         },
         "AS01KC7913": {
-            "Royal Challenge": {
-                "180ml": 150,
-                "375ml": 100
-            },
             "Director's Special Black": {
-                "750ml": 75,
+                "375ml": 50,
                 "180ml": 175,
-                "375ml": 50
+                "750ml": 75
+            },
+            "Royal Challenge": {
+                "375ml": 100,
+                "180ml": 150
             }
         },
         "UP38BT1504": {
@@ -15571,36 +15571,36 @@
             }
         },
         "AS01NC0392": {
-            "Oaken Glow": {
-                "375ml": 20,
-                "180ml": 30
-            },
-            "Blender's Pride Reserve": {
-                "180ml": 50,
-                "750ml": 25,
-                "375ml": 50
-            },
-            "Xclamation Whiskey": {
-                "375ml": 5,
-                "750ml": 5
-            },
-            "Royal Stag": {
-                "750ml": 65,
-                "180ml": 100
-            },
-            "Royal Stag Barrel": {
-                "180ml": 75,
-                "375ml": 75
-            },
             "Blender's Pride Exclusive": {
                 "375ml": 50
+            },
+            "Royal Stag Barrel": {
+                "375ml": 75,
+                "180ml": 75
+            },
+            "Oaken Glow": {
+                "180ml": 30,
+                "375ml": 20
+            },
+            "Royal Stag": {
+                "180ml": 100,
+                "750ml": 65
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 50,
+                "750ml": 25,
+                "180ml": 50
+            },
+            "Xclamation Whiskey": {
+                "750ml": 5,
+                "375ml": 5
             }
         },
         "AS02CC8645": {
             "McDowell's Luxury": {
+                "750ml": 150,
                 "180ml": 50,
-                "375ml": 300,
-                "750ml": 150
+                "375ml": 300
             },
             "McDowell's Double Oak Barrel": {
                 "750ml": 50
@@ -15611,29 +15611,29 @@
                 "180ml": 35,
                 "375ml": 15
             },
-            "8 PM Premium Black": {
-                "180ml": 25
-            },
             "Magic Moments Green Apple": {
                 "180ml": 50
             },
             "Magic Moments": {
                 "180ml": 175
+            },
+            "8 PM Premium Black": {
+                "180ml": 25
             }
         },
         "AS01FC6139": {
-            "Budweiser Magnum": {
-                "Bottle": 275
-            },
-            "Budweiser": {
-                "Can": 150
-            },
             "Corona": {
                 "Pint": 25,
                 "Can": 25
             },
             "Hoegaarden Witbier": {
                 "Pint": 25
+            },
+            "Budweiser Magnum": {
+                "Bottle": 275
+            },
+            "Budweiser": {
+                "Can": 150
             }
         },
         "WB25G3435": {
@@ -16007,11 +16007,36 @@
             }
         },
         "AS01MC3440": {
-            "Breezer Blackberry": {
+            "Breezer Jamaican": {
+                "Stubby": 100
+            },
+            "Dewar's White Label": {
+                "375ml": 4,
+                "180ml": 2,
+                "750ml": 2
+            },
+            "William Lawson": {
+                "750ml": 7,
+                "180ml": 2
+            },
+            "Breezer Blueberry": {
                 "Stubby": 50
+            },
+            "Bacardi Mango Chilli Rum": {
+                "375ml": 5,
+                "180ml": 12
+            },
+            "Breezer Watermelon": {
+                "Stubby": 25
             },
             "Breezer Cranberry": {
                 "Stubby": 85
+            },
+            "Breezer Blackberry": {
+                "Stubby": 50
+            },
+            "Breezer Mango Peach": {
+                "Stubby": 15
             },
             "Bacardi White Rum": {
                 "180ml": 4,
@@ -16023,40 +16048,15 @@
                 "375ml": 5,
                 "750ml": 5
             },
-            "Bacardi Mango Chilli Rum": {
-                "180ml": 12,
-                "375ml": 5
-            },
-            "Breezer Blueberry": {
-                "Stubby": 50
-            },
-            "William Lawson": {
-                "180ml": 2,
-                "750ml": 7
-            },
-            "Dewar's White Label": {
-                "180ml": 2,
-                "375ml": 4,
-                "750ml": 2
-            },
-            "Breezer Watermelon": {
-                "Stubby": 25
-            },
-            "Breezer Jamaican": {
-                "Stubby": 100
-            },
-            "Breezer Mango Peach": {
-                "Stubby": 15
-            },
             "Bombay Sapphire Gin": {
                 "Quarter": 2,
                 "750ml": 5
             },
-            "Camino Real Gold Tequila": {
-                "750ml": 2
-            },
             "Grey Goose": {
                 "Full": 3
+            },
+            "Camino Real Gold Tequila": {
+                "750ml": 2
             },
             "Aberfeldy 12 Yrs": {
                 "Full": 1
@@ -16151,29 +16151,28 @@
     },
     "21-Jul-2026": {
         "AS05AC4345": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
-            "Iconiq Vodka": {
-                "750ml": 25,
-                "375ml": 25
-            },
-            "Officer's Choice Blue": {
-                "375ml": 10,
-                "180ml": 15
-            },
-            "Iconiq Hippy": {
-                "180ml": 150
-            },
-            "Officer's Choice pet": {
-                "375ml": 150
+            "Officer's Choice": {
+                "750ml": 100
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 15
             },
-            "Officer's Choice": {
-                "750ml": 100
+            "Officer's Choice Blue": {
+                "180ml": 15,
+                "375ml": 10
+            },
+            "Officer's Choice pet": {
+                "375ml": 150
+            },
+            "Iconiq Vodka": {
+                "375ml": 25,
+                "750ml": 25
             },
             "Sterling B7": {
                 "180ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
             }
         },
         "AS03BC8344": {
@@ -16181,6 +16180,30 @@
             "Masti": {
                 "CS": 300,
                 "CA": 400
+            }
+        },
+        "AS01RC7791": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "100 Pipers": {
+                "180ml": 5,
+                "375ml": 5
+            },
+            "Royal Stag": {
+                "750ml": 60,
+                "180ml": 200,
+                "375ml": 190
+            },
+            "Xclamation Whiskey": {
+                "750ml": 10,
+                "180ml": 15,
+                "375ml": 15
+            },
+            "Oaken Glow": {
+                "375ml": 10,
+                "180ml": 15
+            },
+            "Royal Stag Barrel": {
+                "180ml": 25
             }
         }
     }
