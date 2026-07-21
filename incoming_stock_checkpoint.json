@@ -15644,11 +15644,11 @@
     },
     "15-Jul-2026": {
         "RJ14GG0801": {
-            "Tuborg": {
-                "Bottle": 600
-            },
             "Tuborg Malt": {
                 "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
             }
         },
         "AS03AC9944": {
@@ -15671,31 +15671,14 @@
             }
         },
         "AS25FC8224": {
-            "Black Dog Triple Gold": {
-                "375ml": 2,
-                "180ml": 2
-            },
-            "Singleton 12 Yrs": {
-                "Full": 2
-            },
-            "Smirnoff": {
-                "375ml": 5,
-                "750ml": 5,
-                "180ml": 10
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "750ml": 10,
-                "180ml": 35
-            },
-            "Black & White": {
-                "375ml": 5,
-                "750ml": 10,
-                "180ml": 12
-            },
             "Black Dog Centenary": {
                 "375ml": 1,
                 "750ml": 2,
                 "180ml": 1
+            },
+            "Black Dog Triple Gold": {
+                "375ml": 2,
+                "180ml": 2
             },
             "Royal Challenge American Pride": {
                 "750ml": 3,
@@ -15719,6 +15702,23 @@
             "JW Blonde": {
                 "Quarter": 2,
                 "JQ": 3
+            },
+            "Singleton 12 Yrs": {
+                "Full": 2
+            },
+            "Black & White": {
+                "180ml": 12,
+                "750ml": 10,
+                "375ml": 5
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 35,
+                "750ml": 10
+            },
+            "Smirnoff": {
+                "180ml": 10,
+                "750ml": 5,
+                "375ml": 5
             }
         },
         "AS01NC9289": {
@@ -16007,16 +16007,24 @@
             }
         },
         "AS01MC3440": {
+            "Breezer Cranberry": {
+                "Stubby": 85
+            },
             "Breezer Blackberry": {
                 "Stubby": 50
             },
-            "Breezer Cranberry": {
-                "Stubby": 85
+            "Breezer Mango Peach": {
+                "Stubby": 15
             },
             "Bacardi White Rum": {
                 "180ml": 4,
                 "375ml": 1,
                 "750ml": 5
+            },
+            "Dewar's White Label": {
+                "375ml": 4,
+                "180ml": 2,
+                "750ml": 2
             },
             "Bacardi Limon Rum": {
                 "180ml": 15,
@@ -16034,19 +16042,11 @@
                 "180ml": 2,
                 "750ml": 7
             },
-            "Dewar's White Label": {
-                "180ml": 2,
-                "375ml": 4,
-                "750ml": 2
-            },
             "Breezer Watermelon": {
                 "Stubby": 25
             },
             "Breezer Jamaican": {
                 "Stubby": 100
-            },
-            "Breezer Mango Peach": {
-                "Stubby": 15
             },
             "Bombay Sapphire Gin": {
                 "Quarter": 2,
@@ -16165,14 +16165,14 @@
                 "375ml": 15
             },
             "Officer's Choice Blue": {
-                "375ml": 10,
-                "180ml": 15
-            },
-            "Iconiq Hippy": {
-                "180ml": 150
+                "180ml": 15,
+                "375ml": 10
             },
             "Officer's Choice pet": {
                 "375ml": 150
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
             }
         },
         "AS03BC8344": {
@@ -16205,7 +16205,6 @@
             }
         },
         "AS01GC6794": {
-            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
             "AC Black Luxury": {
                 "375ml": 50,
                 "750ml": 50,
@@ -16213,13 +16212,19 @@
             }
         },
         "AS12BC9324": {
-            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Rhino Whiskey": {
                 "CS": 70
             },
             "Rhino No 1": {
                 "CS": 70,
                 "CA": 30
+            }
+        },
+        "AS02CC8299": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Rum": {
+                "750ml": 300,
+                "180ml": 600
             }
         }
     }
