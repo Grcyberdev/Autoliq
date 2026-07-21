@@ -15644,11 +15644,11 @@
     },
     "15-Jul-2026": {
         "RJ14GG0801": {
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "AS03AC9944": {
@@ -15671,14 +15671,31 @@
             }
         },
         "AS25FC8224": {
+            "Black Dog Triple Gold": {
+                "375ml": 2,
+                "180ml": 2
+            },
+            "Singleton 12 Yrs": {
+                "Full": 2
+            },
+            "Smirnoff": {
+                "375ml": 5,
+                "750ml": 5,
+                "180ml": 10
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 10,
+                "180ml": 35
+            },
+            "Black & White": {
+                "375ml": 5,
+                "750ml": 10,
+                "180ml": 12
+            },
             "Black Dog Centenary": {
                 "375ml": 1,
                 "750ml": 2,
                 "180ml": 1
-            },
-            "Black Dog Triple Gold": {
-                "375ml": 2,
-                "180ml": 2
             },
             "Royal Challenge American Pride": {
                 "750ml": 3,
@@ -15702,23 +15719,6 @@
             "JW Blonde": {
                 "Quarter": 2,
                 "JQ": 3
-            },
-            "Singleton 12 Yrs": {
-                "Full": 2
-            },
-            "Black & White": {
-                "180ml": 12,
-                "750ml": 10,
-                "375ml": 5
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "180ml": 35,
-                "750ml": 10
-            },
-            "Smirnoff": {
-                "180ml": 10,
-                "750ml": 5,
-                "375ml": 5
             }
         },
         "AS01NC9289": {
@@ -16007,24 +16007,16 @@
             }
         },
         "AS01MC3440": {
-            "Breezer Cranberry": {
-                "Stubby": 85
-            },
             "Breezer Blackberry": {
                 "Stubby": 50
             },
-            "Breezer Mango Peach": {
-                "Stubby": 15
+            "Breezer Cranberry": {
+                "Stubby": 85
             },
             "Bacardi White Rum": {
                 "180ml": 4,
                 "375ml": 1,
                 "750ml": 5
-            },
-            "Dewar's White Label": {
-                "375ml": 4,
-                "180ml": 2,
-                "750ml": 2
             },
             "Bacardi Limon Rum": {
                 "180ml": 15,
@@ -16042,11 +16034,19 @@
                 "180ml": 2,
                 "750ml": 7
             },
+            "Dewar's White Label": {
+                "180ml": 2,
+                "375ml": 4,
+                "750ml": 2
+            },
             "Breezer Watermelon": {
                 "Stubby": 25
             },
             "Breezer Jamaican": {
                 "Stubby": 100
+            },
+            "Breezer Mango Peach": {
+                "Stubby": 15
             },
             "Bombay Sapphire Gin": {
                 "Quarter": 2,
@@ -16151,6 +16151,9 @@
     },
     "21-Jul-2026": {
         "AS05AC4345": {
+            "Iconiq Hippy": {
+                "180ml": 150
+            },
             "Sterling B7": {
                 "180ml": 10
             },
@@ -16158,21 +16161,18 @@
                 "375ml": 25,
                 "750ml": 25
             },
-            "Officer's Choice": {
-                "750ml": 100
-            },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 15
+            "Officer's Choice pet": {
+                "375ml": 150
             },
             "Officer's Choice Blue": {
                 "180ml": 15,
                 "375ml": 10
             },
-            "Officer's Choice pet": {
-                "375ml": 150
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15
             },
-            "Iconiq Hippy": {
-                "180ml": 150
+            "Officer's Choice": {
+                "750ml": 100
             }
         },
         "AS03BC8344": {
@@ -16183,18 +16183,18 @@
         },
         "AS01RC7791": {
             "Xclamation Whiskey": {
+                "375ml": 15,
                 "750ml": 10,
-                "180ml": 15,
-                "375ml": 15
+                "180ml": 15
             },
             "Royal Stag": {
+                "750ml": 60,
                 "180ml": 200,
-                "375ml": 190,
-                "750ml": 60
+                "375ml": 190
             },
             "100 Pipers": {
-                "375ml": 5,
-                "180ml": 5
+                "180ml": 5,
+                "375ml": 5
             },
             "Oaken Glow": {
                 "375ml": 10,
@@ -16206,9 +16206,9 @@
         },
         "AS01GC6794": {
             "AC Black Luxury": {
-                "375ml": 50,
+                "180ml": 800,
                 "750ml": 50,
-                "180ml": 800
+                "375ml": 50
             }
         },
         "AS12BC9324": {
@@ -16221,10 +16221,31 @@
             }
         },
         "AS02CC8299": {
-            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
             "McDowell's Rum": {
                 "750ml": 300,
                 "180ml": 600
+            }
+        },
+        "AS27C7022": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Royal Challenge": {
+                "180ml": 50,
+                "750ml": 50,
+                "375ml": 50
+            },
+            "Director's Special Black": {
+                "180ml": 50,
+                "375ml": 25
+            },
+            "McDowell's Rum": {
+                "180ml": 200,
+                "375ml": 125
+            }
+        },
+        "NL01N6289": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1400
             }
         }
     }
