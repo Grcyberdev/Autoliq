@@ -127,12 +127,6 @@ jobs:
 
       - name: Run IMFL Automation
         if: steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'IMFL'
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 15
-          max_attempts: 3
-          retry_wait_seconds: 60
-          command: xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
         env:
           PORTAL_URL: ${{ secrets.PORTAL_URL }}
           IMFL_USERNAME: ${{ secrets.IMFL_USERNAME }}
@@ -141,15 +135,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           USE_TOR_PROXY: "true"
+        run: |
+          xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
 
       - name: Run CS Automation
         if: steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'CS'
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 15
-          max_attempts: 3
-          retry_wait_seconds: 60
-          command: xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
         env:
           PORTAL_URL: ${{ secrets.PORTAL_URL }}
           CS_USERNAME: ${{ secrets.CS_USERNAME }}
@@ -158,6 +148,8 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           USE_TOR_PROXY: "true"
+        run: |
+          xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
 
       - name: Commit and Push Checkpoint Changes
         if: always() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'IMFL' || steps.mode.outputs.mode == 'CS')
