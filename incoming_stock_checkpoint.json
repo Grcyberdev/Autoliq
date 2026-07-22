@@ -16325,28 +16325,36 @@
             }
         },
         "AS02CC9561": {
+            "Officer's Choice": {
+                "750ml": 75
+            },
             "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 250
+                "180ml": 250,
+                "375ml": 50
             },
             "Iconiq Vodka": {
-                "750ml": 20,
-                "375ml": 30
+                "375ml": 30,
+                "750ml": 20
             },
             "Iconiq Hippy": {
                 "180ml": 50
             },
-            "Officer's Choice": {
-                "750ml": 75
-            },
             "Officer's Choice Blue": {
-                "180ml": 15,
-                "375ml": 10
+                "375ml": 10,
+                "180ml": 15
             }
         },
         "NL01N5864": {
             "Godfather Select": {
                 "Bottle": 1360
+            }
+        },
+        "AS02CC8645": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "375ml": 100,
+                "180ml": 400,
+                "750ml": 50
             }
         }
     }
