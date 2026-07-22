@@ -16325,23 +16325,23 @@
             }
         },
         "AS02CC9561": {
-            "Officer's Choice": {
-                "750ml": 75
-            },
             "Iconiq Vodka": {
                 "375ml": 30,
                 "750ml": 20
-            },
-            "Iconiq Hippy": {
-                "180ml": 50
             },
             "Officer's Choice pet": {
                 "375ml": 50,
                 "180ml": 250
             },
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Iconiq Hippy": {
+                "180ml": 50
+            },
             "Officer's Choice Blue": {
-                "180ml": 15,
-                "375ml": 10
+                "375ml": 10,
+                "180ml": 15
             }
         },
         "NL01N5864": {
@@ -16351,9 +16351,9 @@
         },
         "AS02CC8645": {
             "Royal Stag": {
-                "180ml": 400,
                 "750ml": 50,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 400
             }
         },
         "AS251923": {
@@ -16380,6 +16380,12 @@
         "AS02BC0186": {
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "HR47D5518": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
             }
         }
     }
