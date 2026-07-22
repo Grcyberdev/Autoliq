@@ -15404,8 +15404,8 @@
         },
         "AS03BC8122": {
             "Masti Special": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         }
     },
@@ -15459,8 +15459,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         }
     },
@@ -15831,11 +15831,11 @@
             }
         },
         "AS04AC1429": {
-            "Rhino Limon": {
-                "CA": 50
-            },
             "Rhino No 1": {
                 "CA": 120
+            },
+            "Rhino Limon": {
+                "CA": 50
             }
         }
     },
@@ -15958,12 +15958,12 @@
             }
         },
         "AS01KC9113": {
+            "Masti No. 1": {
+                "CS": 50
+            },
             "Masti Special": {
                 "CS": 200,
                 "CA": 450
-            },
-            "Masti No. 1": {
-                "CS": 50
             }
         },
         "AS04AC1429": {
@@ -16177,8 +16177,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         },
         "AS01RC7791": {
@@ -16216,8 +16216,8 @@
                 "CS": 70
             },
             "Rhino No 1": {
-                "CS": 70,
-                "CA": 30
+                "CA": 30,
+                "CS": 70
             }
         },
         "AS02CC8299": {
@@ -16306,6 +16306,18 @@
                 "375ml": 100,
                 "180ml": 50,
                 "750ml": 200
+            }
+        }
+    },
+    "22-Jul-2026": {
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CS": 200,
+                "CA": 400
+            },
+            "Masti No. 1": {
+                "CA": 100
             }
         }
     }
