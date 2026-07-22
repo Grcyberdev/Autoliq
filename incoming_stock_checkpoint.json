@@ -16325,23 +16325,23 @@
             }
         },
         "AS02CC9561": {
+            "Officer's Choice": {
+                "750ml": 75
+            },
             "Iconiq Vodka": {
                 "375ml": 30,
                 "750ml": 20
             },
-            "Officer's Choice pet": {
-                "180ml": 250,
-                "375ml": 50
-            },
             "Iconiq Hippy": {
                 "180ml": 50
+            },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 250
             },
             "Officer's Choice Blue": {
                 "180ml": 15,
                 "375ml": 10
-            },
-            "Officer's Choice": {
-                "750ml": 75
             }
         },
         "NL01N5864": {
@@ -16357,10 +16357,33 @@
             }
         },
         "AS251923": {
-            "_TelegramSupplier": "Mount Everest Breweries Ltd. Tie Up With Sunit Breweries",
             "Stok Strong": {
                 "Bottle": 400,
                 "Can": 280
+            }
+        },
+        "NL01AG7229": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "OD01S0226": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "NL01K7782": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS02BC0186": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
