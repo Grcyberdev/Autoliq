@@ -15846,36 +15846,42 @@
             }
         },
         "AS01NC7526": {
-            "Royal Stag Barrel": {
-                "180ml": 45
-            },
-            "Blender's Pride Reserve": {
-                "750ml": 25,
-                "180ml": 20
-            },
             "Xclamation Whiskey": {
+                "375ml": 15,
                 "750ml": 15,
-                "180ml": 20,
-                "375ml": 15
-            },
-            "Royal Stag": {
-                "180ml": 200,
-                "750ml": 75
-            },
-            "Royal Stag Double Dark": {
-                "180ml": 25
-            },
-            "Blender's Pride Exclusive": {
-                "750ml": 20,
-                "375ml": 40,
-                "180ml": 40
+                "180ml": 20
             },
             "Blender's Pride Four Elements": {
                 "750ml": 5,
                 "180ml": 5
+            },
+            "Royal Stag": {
+                "750ml": 75,
+                "180ml": 200
+            },
+            "Blender's Pride Exclusive": {
+                "180ml": 40,
+                "375ml": 40,
+                "750ml": 20
+            },
+            "Blender's Pride Reserve": {
+                "180ml": 20,
+                "750ml": 25
+            },
+            "Royal Stag Double Dark": {
+                "180ml": 25
+            },
+            "Royal Stag Barrel": {
+                "180ml": 45
             }
         },
         "AS01EC6746": {
+            "Sterling B7": {
+                "180ml": 30
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 20
+            },
             "Iconiq Vodka": {
                 "375ml": 50
             },
@@ -15884,19 +15890,13 @@
             },
             "Iconiq Hippy": {
                 "180ml": 250
-            },
-            "Sterling B7": {
-                "180ml": 30
-            },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 20
             }
         },
         "AS01KC7529": {
             "McDowell's Luxury": {
+                "375ml": 175,
                 "750ml": 75,
-                "180ml": 50,
-                "375ml": 175
+                "180ml": 50
             },
             "McDowell's Double Oak Barrel": {
                 "375ml": 75,
@@ -15904,13 +15904,13 @@
             }
         },
         "AS01LC5952": {
-            "Antiquity Blue Ultra": {
-                "180ml": 20,
-                "750ml": 10
-            },
             "McDowell's Rum": {
                 "180ml": 100,
                 "750ml": 125
+            },
+            "Antiquity Blue Ultra": {
+                "180ml": 20,
+                "750ml": 10
             },
             "Royal Challenge": {
                 "180ml": 200,
@@ -15922,9 +15922,9 @@
         },
         "AS01QC7751": {
             "McDowell's Rum": {
-                "750ml": 400,
+                "375ml": 150,
                 "180ml": 350,
-                "375ml": 150
+                "750ml": 400
             }
         },
         "HR55AC8095": {
@@ -15939,9 +15939,11 @@
             }
         },
         "AS01RC4767": {
-            "Magic Moments Green Apple": {
-                "375ml": 20,
-                "180ml": 30
+            "Magic Moments": {
+                "180ml": 65
+            },
+            "After Dark": {
+                "180ml": 100
             },
             "Magic Moments Lemon": {
                 "180ml": 45,
@@ -15950,11 +15952,9 @@
             "8 PM Premium Black": {
                 "375ml": 10
             },
-            "Magic Moments": {
-                "180ml": 65
-            },
-            "After Dark": {
-                "180ml": 100
+            "Magic Moments Green Apple": {
+                "180ml": 30,
+                "375ml": 20
             }
         },
         "AS01KC9113": {
@@ -16395,41 +16395,70 @@
             }
         },
         "AS01RC8137": {
-            "SAN MICHE PIEMONTE BARBERA": {
-                "Full": 1
-            },
-            "Hendrick's Gin": {
-                "Full": 1
-            },
-            "Amalfi Limoncello Russo": {
+            "Balvenie Doublewood 12 Yrs": {
                 "Full": 2
-            },
-            "Glenfiddich Original 12": {
-                "JQ": 11
-            },
-            "Glenfiddich Solera 15": {
-                "JQ": 5
-            },
-            "Grant's Triple Wood": {
-                "750ml": 5
-            },
-            "Monkey Shoulder": {
-                "Full": 6
-            },
-            "Wild Turkey Bourbon": {
-                "750ml": 1
             },
             "Glenfiddich 18": {
                 "JQ": 1
             },
-            "Balvenie Doublewood 12 Yrs": {
+            "Wild Turkey Bourbon": {
+                "750ml": 1
+            },
+            "Monkey Shoulder": {
+                "Full": 6
+            },
+            "Grant's Triple Wood": {
+                "750ml": 5
+            },
+            "Glenfiddich Solera 15": {
+                "JQ": 5
+            },
+            "Glenfiddich Original 12": {
+                "JQ": 11
+            },
+            "Amalfi Limoncello Russo": {
                 "Full": 2
+            },
+            "Hendrick's Gin": {
+                "Full": 1
+            },
+            "SAN MICHE PIEMONTE BARBERA": {
+                "Full": 1
             }
         },
         "AS01RC2284": {
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01RC2283": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "AS01JC1967": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "After Dark": {
+                "375ml": 50,
+                "180ml": 250
+            },
+            "Magic Moments": {
+                "375ml": 30,
+                "180ml": 95
+            },
+            "Magic Moments Green Apple": {
+                "180ml": 30,
+                "375ml": 10
+            },
+            "8 PM Premium Black": {
+                "375ml": 15,
+                "180ml": 25,
+                "750ml": 20
+            },
+            "Magic Moments Lemon": {
+                "375ml": 5,
+                "180ml": 20
             }
         }
     }
