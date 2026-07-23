@@ -16393,6 +16393,39 @@
             "Masti": {
                 "CA": 700
             }
+        },
+        "AS01RC8137": {
+            "_TelegramSupplier": "Northern Spirits Ltd.",
+            "SAN MICHE PIEMONTE BARBERA": {
+                "Full": 1
+            },
+            "Hendrick's Gin": {
+                "Full": 1
+            },
+            "Amalfi Limoncello Russo": {
+                "Full": 2
+            },
+            "Glenfiddich Original 12": {
+                "JQ": 11
+            },
+            "Balvenie Doublewood 12 Yrs": {
+                "Full": 2
+            },
+            "Grant's Triple Wood": {
+                "750ml": 5
+            },
+            "Monkey Shoulder": {
+                "Full": 6
+            },
+            "Wild Turkey Bourbon": {
+                "750ml": 1
+            },
+            "Glenfiddich 18": {
+                "JQ": 1
+            },
+            "Glenfiddich Solera 15": {
+                "JQ": 5
+            }
         }
     }
 }
