@@ -16407,8 +16407,8 @@
             "Glenfiddich Original 12": {
                 "JQ": 11
             },
-            "Balvenie Doublewood 12 Yrs": {
-                "Full": 2
+            "Glenfiddich Solera 15": {
+                "JQ": 5
             },
             "Grant's Triple Wood": {
                 "750ml": 5
@@ -16422,8 +16422,14 @@
             "Glenfiddich 18": {
                 "JQ": 1
             },
-            "Glenfiddich Solera 15": {
-                "JQ": 5
+            "Balvenie Doublewood 12 Yrs": {
+                "Full": 2
+            }
+        },
+        "AS01RC2284": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
