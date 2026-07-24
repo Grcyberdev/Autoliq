@@ -1,0 +1,19 @@
+﻿2026-07-21T10:25:18.5332239Z ##[group]Run # If triggered by schedule, use 'Auto'
+2026-07-21T10:25:18.5333258Z [36;1m# If triggered by schedule, use 'Auto'[0m
+2026-07-21T10:25:18.5333739Z [36;1mif [[ "workflow_dispatch" == "schedule" ]]; then[0m
+2026-07-21T10:25:18.5334189Z [36;1m  echo "mode=Auto" >> $GITHUB_OUTPUT[0m
+2026-07-21T10:25:18.5334618Z [36;1m  echo "Running in AUTO scheduled mode."[0m
+2026-07-21T10:25:18.5335011Z [36;1melse[0m
+2026-07-21T10:25:18.5335328Z [36;1m  echo "mode=IMFL" >> $GITHUB_OUTPUT[0m
+2026-07-21T10:25:18.5335735Z [36;1m  echo "Running in MANUAL mode: IMFL"[0m
+2026-07-21T10:25:18.5336108Z [36;1mfi[0m
+2026-07-21T10:25:18.5407666Z shell: /usr/bin/bash -e ***0***
+2026-07-21T10:25:18.5408125Z env:
+2026-07-21T10:25:18.5408526Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.5409138Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-21T10:25:18.5409700Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.5410210Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.5410758Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.5411246Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-21T10:25:18.5411682Z ##[endgroup]
+2026-07-21T10:25:18.5508485Z Running in MANUAL mode: IMFL

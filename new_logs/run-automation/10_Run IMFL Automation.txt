@@ -1,0 +1,97 @@
+﻿2026-07-21T10:25:18.6207782Z ##[group]Run xvfb-run -a python -u scripts/main_imfl.py --auto 
+2026-07-21T10:25:18.6208400Z [36;1mxvfb-run -a python -u scripts/main_imfl.py --auto [0m
+2026-07-21T10:25:18.6273445Z shell: /usr/bin/bash -e ***0***
+2026-07-21T10:25:18.6273844Z env:
+2026-07-21T10:25:18.6274233Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.6274804Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-21T10:25:18.6275351Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.6275862Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.6276350Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.6276848Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-21T10:25:18.6277414Z   PORTAL_URL: ***
+2026-07-21T10:25:18.6277761Z   IMFL_USERNAME: ***
+2026-07-21T10:25:18.6278107Z   IMFL_PASSWORD: ***
+2026-07-21T10:25:18.6278561Z   TELEGRAM_BOT_TOKEN: ***
+2026-07-21T10:25:18.6278963Z   TELEGRAM_CHAT_ID: ***
+2026-07-21T10:25:18.6279304Z   SCRAPER_API_KEY: 
+2026-07-21T10:25:18.6279626Z   USE_TOR_PROXY: true
+2026-07-21T10:25:18.6279957Z ##[endgroup]
+2026-07-21T10:25:21.1885045Z [0;93m2026-07-21 10:25:21.188021735 [W:onnxruntime:Default, device_discovery.cc:133 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+2026-07-21T10:25:21.2210302Z ✅ Using service account JSON: /home/runner/work/Autoliq/Autoliq/keys/liquorbond-service.json
+2026-07-21T10:25:21.2211245Z 🔐 Using Environment Variable for: portal_url (Value: https://...)
+2026-07-21T10:25:21.2212040Z 🔐 Using Environment Variable for: IMFL_USERNAME (Value: ***)
+2026-07-21T10:25:21.2213035Z 🔐 Using Environment Variable for: IMFL_PASSWORD (Value: Ad****)
+2026-07-21T10:25:21.2213620Z ⚠️ Environment Variable CS_USERNAME is missing.
+2026-07-21T10:25:21.2214152Z ⚠️ Environment Variable CS_PASSWORD is missing.
+2026-07-21T10:25:21.2214725Z 🔐 Using Environment Variable for: TELEGRAM_BOT_TOKEN (Value: 79****)
+2026-07-21T10:25:21.2215412Z 🔐 Using Environment Variable for: TELEGRAM_CHAT_ID (Value: ***)
+2026-07-21T10:25:21.2216034Z 🔐 Using Environment Variable for: USE_TOR_PROXY (Value: true)
+2026-07-21T10:25:21.2681676Z 📄 Connecting to Google Sheets (Attempt 1/3)...
+2026-07-21T10:25:22.2038303Z ✅ Connected to spreadsheet 'Liqour Stock Data' → worksheet 'Truck Endorsements'
+2026-07-21T10:25:22.2039063Z 🎨 Setting up conditional formatting rules...
+2026-07-21T10:25:22.2039537Z    - Clearing old conditional formatting rules...
+2026-07-21T10:25:22.6536199Z    - ✅ Old rules cleared.
+2026-07-21T10:25:22.6536972Z    - Applying new conditional formatting rules...
+2026-07-21T10:25:22.8740167Z ✅ Conditional formatting rules applied successfully.
+2026-07-21T10:25:22.8749108Z 🔐 Using Environment Variable for: portal_url (Value: https://...)
+2026-07-21T10:25:22.8750337Z 🔐 Using Environment Variable for: IMFL_USERNAME (Value: ***)
+2026-07-21T10:25:22.8751222Z 🔐 Using Environment Variable for: IMFL_PASSWORD (Value: Ad****)
+2026-07-21T10:25:22.8752101Z ⚠️ Environment Variable CS_USERNAME is missing.
+2026-07-21T10:25:22.8753137Z ⚠️ Environment Variable CS_PASSWORD is missing.
+2026-07-21T10:25:22.8754021Z 🔐 Using Environment Variable for: TELEGRAM_BOT_TOKEN (Value: 79****)
+2026-07-21T10:25:22.8755406Z 🔐 Using Environment Variable for: TELEGRAM_CHAT_ID (Value: ***)
+2026-07-21T10:25:22.8756290Z 🔐 Using Environment Variable for: USE_TOR_PROXY (Value: true)
+2026-07-21T10:25:22.8757198Z 🧅 TOR PROXY ENABLED: Configuring Chrome to use SOCKS5 127.0.0.1:9050
+2026-07-21T10:25:22.8758056Z 🔧 Using Chrome Binary: /usr/bin/chromium-browser
+2026-07-21T10:25:22.8758758Z    🚀 Launching Chrome (Attempt 1/3)...
+2026-07-21T10:25:22.9071381Z       🌍 CI Environment detected (Github Actions). Using WebDriverManager...
+2026-07-21T10:25:40.1994045Z 🧼 Auto-Cleaning Sheet Data...
+2026-07-21T10:25:40.7292745Z ✅ Sheet already clean, no updates needed.
+2026-07-21T10:25:40.7299831Z 🚀 Opening portal: ***
+2026-07-21T10:26:11.0301625Z    🚀 Navigating to *** (Attempt 1/10)...
+2026-07-21T10:26:11.0303066Z    ⚠️ Chrome Error Page Detected (Validation Failed). Title: 'stateexcise.assam.gov.in', Code: ERR_TIMED_OUT
+2026-07-21T10:26:11.0333591Z    ⚠️ Navigation failed: Message: Chrome Error Page Detected (Code: ERR_TIMED_OUT, Title: stateexcise.assam.gov.in)
+2026-07-21T10:26:11.0334292Z 
+2026-07-21T10:26:11.0334556Z 🧅 Requesting new Tor identity (IP rotation)...
+2026-07-21T10:26:11.0336264Z ✅ Tor identity reset successful.
+2026-07-21T10:26:14.0340563Z    ♻️ Retrying in 10s...
+2026-07-21T10:26:54.0764723Z    🚀 Navigating to *** (Attempt 2/10)...
+2026-07-21T10:27:24.1282362Z    ⚠️ Chrome Error Page Detected (Validation Failed). Title: 'stateexcise.assam.gov.in', Code: ERR_TIMED_OUT
+2026-07-21T10:27:24.1326433Z    ⚠️ Navigation failed: Message: Chrome Error Page Detected (Code: ERR_TIMED_OUT, Title: stateexcise.assam.gov.in)
+2026-07-21T10:27:24.1327289Z 
+2026-07-21T10:27:24.1327678Z 🧅 Requesting new Tor identity (IP rotation)...
+2026-07-21T10:27:24.1333350Z ✅ Tor identity reset successful.
+2026-07-21T10:27:27.1336355Z    ♻️ Retrying in 10s...
+2026-07-21T10:27:50.4680432Z    🚀 Navigating to *** (Attempt 3/10)...
+2026-07-21T10:27:54.8342344Z 🔐 Filling login fields for user: ***...
+2026-07-21T10:27:56.8568376Z    - Login form is hidden. Clicking header Login button...
+2026-07-21T10:27:59.2976706Z 🤖 ddddocr Final Decision: '232877'
+2026-07-21T10:27:59.2998941Z    - Attempt 1/15: Trying OCR code: '232877'
+2026-07-21T10:28:03.5704150Z ✅ Login successful (Dashboard or Reports found).
+2026-07-21T10:28:03.5744029Z 📄 Navigating to Permits & Pass Reports...
+2026-07-21T10:28:24.2564095Z 🤖 Automating date selection for range: 2026-07-01 to 2026-07-21
+2026-07-21T10:28:28.5125929Z 🔎 Search clicked — waiting for results...
+2026-07-21T10:28:37.5992218Z 📊 Scraping supplier, liquor types, and subtotal for each truck...
+2026-07-21T10:28:37.6315475Z Found 460 data rows to process.
+2026-07-21T10:28:55.2781540Z ✅ Scraped 108 initial truck entries.
+2026-07-21T10:28:55.2947533Z 💾 Incoming stock checkpoint saved.
+2026-07-21T10:28:55.2950381Z 🔄 Merging entries for duplicate trucks on the same day...
+2026-07-21T10:28:55.3006654Z ✅ Data processed into 100 final merged entries.
+2026-07-21T10:28:55.5233285Z ... Loading existing data from Google Sheet to check for updates...
+2026-07-21T10:28:55.5233995Z ... Using 'Date|TruckNumber' for duplicate/update checking.
+2026-07-21T10:28:55.8096165Z ... Found 1793 existing entries.
+2026-07-21T10:28:55.8098491Z 🔄 Comparing scraped data with existing sheet data...
+2026-07-21T10:28:55.8108920Z ✅ No new rows to append.
+2026-07-21T10:28:55.8109219Z 
+2026-07-21T10:28:55.8109465Z --- WhatsApp Report Generation ---
+2026-07-21T10:28:55.8110236Z 🤖 Automation Mode: Defaulting to Today/New Rows (No User Input)
+2026-07-21T10:28:55.8110765Z    - Auto-Mode: No new rows. Generating report for TODAY's data.
+2026-07-21T10:28:55.8126419Z ⏳ Auto-Mode: No new/updated data. Silent.
+2026-07-21T10:28:55.8126855Z 
+2026-07-21T10:28:55.8127092Z --- ACTION REQUIRED ---
+2026-07-21T10:28:55.8127665Z New liquor names were found. Add these to LIQUOR_NAME_MAPPING:
+2026-07-21T10:28:55.8128142Z "Delivered": "Your Short Name Here",
+2026-07-21T10:28:55.8128561Z "Your Short Name Here": "Your Short Name Here",
+2026-07-21T10:28:55.8128831Z 
+2026-07-21T10:28:55.8129426Z -----------------------
+2026-07-21T10:28:55.8129669Z 

@@ -1,0 +1,23 @@
+﻿2026-07-21T10:25:18.5568430Z ##[group]Run ARGS=""
+2026-07-21T10:25:18.5568836Z [36;1mARGS=""[0m
+2026-07-21T10:25:18.5569160Z [36;1mif [ -n "" ]; then[0m
+2026-07-21T10:25:18.5569540Z [36;1m  ARGS="$ARGS --start_date "[0m
+2026-07-21T10:25:18.5569916Z [36;1mfi[0m
+2026-07-21T10:25:18.5570217Z [36;1mif [ -n "" ]; then[0m
+2026-07-21T10:25:18.5570565Z [36;1m  ARGS="$ARGS --end_date "[0m
+2026-07-21T10:25:18.5570921Z [36;1mfi[0m
+2026-07-21T10:25:18.5571252Z [36;1mif [ "false" = "true" ]; then[0m
+2026-07-21T10:25:18.5571637Z [36;1m  ARGS="$ARGS --yesterday"[0m
+2026-07-21T10:25:18.5571995Z [36;1mfi[0m
+2026-07-21T10:25:18.5572313Z [36;1mecho "args=$ARGS" >> $GITHUB_OUTPUT[0m
+2026-07-21T10:25:18.5573005Z [36;1mecho "Determined extra arguments: $ARGS"[0m
+2026-07-21T10:25:18.5637563Z shell: /usr/bin/bash -e ***0***
+2026-07-21T10:25:18.5637950Z env:
+2026-07-21T10:25:18.5638343Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.5638918Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-21T10:25:18.5639521Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.5640010Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.5640513Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:18.5641012Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-21T10:25:18.5641453Z ##[endgroup]
+2026-07-21T10:25:18.5766030Z Determined extra arguments: 

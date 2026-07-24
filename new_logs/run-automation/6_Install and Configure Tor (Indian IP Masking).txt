@@ -1,0 +1,129 @@
+﻿2026-07-21T10:25:11.7411057Z ##[group]Run sudo apt-get update
+2026-07-21T10:25:11.7411529Z [36;1msudo apt-get update[0m
+2026-07-21T10:25:11.7411951Z [36;1msudo apt-get install -y tor netcat-openbsd[0m
+2026-07-21T10:25:11.7412370Z [36;1m[0m
+2026-07-21T10:25:11.7413184Z [36;1m# Configure Tor to strictly use Indian Exit Nodes (to bypass Assam Portal regional locks)[0m
+2026-07-21T10:25:11.7413843Z [36;1mecho "ControlPort 9051" | sudo tee -a /etc/tor/torrc[0m
+2026-07-21T10:25:11.7414394Z [36;1mecho "CookieAuthentication 0" | sudo tee -a /etc/tor/torrc[0m
+2026-07-21T10:25:11.7414994Z [36;1mecho "ExitNodes ***in***" | sudo tee -a /etc/tor/torrc[0m
+2026-07-21T10:25:11.7415497Z [36;1mecho "StrictNodes 1" | sudo tee -a /etc/tor/torrc[0m
+2026-07-21T10:25:11.7415913Z [36;1m[0m
+2026-07-21T10:25:11.7416217Z [36;1msudo service tor restart[0m
+2026-07-21T10:25:11.7416565Z [36;1m[0m
+2026-07-21T10:25:11.7416877Z [36;1m# Robust wait for Tor to bootstrap[0m
+2026-07-21T10:25:11.7417548Z [36;1mecho "Waiting for Tor to bootstrap SOCKS5 port..."[0m
+2026-07-21T10:25:11.7418037Z [36;1mfor i in ***1..20***; do[0m
+2026-07-21T10:25:11.7418409Z [36;1m  if nc -z localhost 9050; then[0m
+2026-07-21T10:25:11.7418821Z [36;1m    echo "✅ Tor SOCKS5 port is open!"[0m
+2026-07-21T10:25:11.7419252Z [36;1m    break[0m
+2026-07-21T10:25:11.7419567Z [36;1m  fi[0m
+2026-07-21T10:25:11.7419862Z [36;1m  sleep 1[0m
+2026-07-21T10:25:11.7420162Z [36;1mdone[0m
+2026-07-21T10:25:11.7420445Z [36;1m[0m
+2026-07-21T10:25:11.7420823Z [36;1m# Verify Tor connection and ensure we have an Indian IP[0m
+2026-07-21T10:25:11.7421304Z [36;1mecho "Verifying Tor IP location..."[0m
+2026-07-21T10:25:11.7422018Z [36;1mcurl --socks5-hostname 127.0.0.1:9050 -s https://ipapi.co/json/ || echo "⚠️ Could not verify IP location, continuing..."[0m
+2026-07-21T10:25:11.7486671Z shell: /usr/bin/bash -e ***0***
+2026-07-21T10:25:11.7487051Z env:
+2026-07-21T10:25:11.7487429Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:11.7488008Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-21T10:25:11.7488565Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:11.7489056Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:11.7489535Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-21T10:25:11.7490009Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-21T10:25:11.7490442Z ##[endgroup]
+2026-07-21T10:25:11.8320766Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-07-21T10:25:11.8684284Z Hit:6 https://packages.microsoft.com/repos/azure-cli noble InRelease
+2026-07-21T10:25:11.8685726Z Hit:7 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease
+2026-07-21T10:25:11.8686811Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-07-21T10:25:11.8694811Z Hit:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease
+2026-07-21T10:25:11.8706502Z Hit:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease
+2026-07-21T10:25:11.8723525Z Hit:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease
+2026-07-21T10:25:11.8860196Z Hit:8 https://dl.google.com/linux/chrome-stable/deb stable InRelease
+2026-07-21T10:25:13.1774940Z Reading package lists...
+2026-07-21T10:25:13.2101853Z Reading package lists...
+2026-07-21T10:25:13.4371209Z Building dependency tree...
+2026-07-21T10:25:13.4379284Z Reading state information...
+2026-07-21T10:25:13.6601277Z netcat-openbsd is already the newest version (1.226-1ubuntu2).
+2026-07-21T10:25:13.6602274Z netcat-openbsd set to manually installed.
+2026-07-21T10:25:13.6603259Z The following additional packages will be installed:
+2026-07-21T10:25:13.6613245Z   libevent-2.1-7t64 tor-geoipdb torsocks
+2026-07-21T10:25:13.6628932Z Suggested packages:
+2026-07-21T10:25:13.6629507Z   mixmaster torbrowser-launcher socat apparmor-utils nyx obfs4proxy
+2026-07-21T10:25:13.6906166Z The following NEW packages will be installed:
+2026-07-21T10:25:13.6914166Z   libevent-2.1-7t64 tor tor-geoipdb torsocks
+2026-07-21T10:25:13.7124060Z 0 upgraded, 4 newly installed, 0 to remove and 65 not upgraded.
+2026-07-21T10:25:13.7124665Z Need to get 2833 kB of archives.
+2026-07-21T10:25:13.7125146Z After this operation, 15.4 MB of additional disk space will be used.
+2026-07-21T10:25:13.7125701Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-07-21T10:25:13.7614421Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libevent-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [145 kB]
+2026-07-21T10:25:13.7858862Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 tor amd64 0.4.8.10-1build2 [1367 kB]
+2026-07-21T10:25:13.8305831Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 torsocks amd64 2.4.0-1 [69.9 kB]
+2026-07-21T10:25:13.8534444Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 tor-geoipdb all 0.4.8.10-1build2 [1252 kB]
+2026-07-21T10:25:14.1528985Z Fetched 2833 kB in 0s (17.0 MB/s)
+2026-07-21T10:25:14.1766415Z Selecting previously unselected package libevent-2.1-7t64:amd64.
+2026-07-21T10:25:14.1975418Z (Reading database ... 
+2026-07-21T10:25:14.1976015Z (Reading database ... 5%
+2026-07-21T10:25:14.1976485Z (Reading database ... 10%
+2026-07-21T10:25:14.1977019Z (Reading database ... 15%
+2026-07-21T10:25:14.1977537Z (Reading database ... 20%
+2026-07-21T10:25:14.1978009Z (Reading database ... 25%
+2026-07-21T10:25:14.1978470Z (Reading database ... 30%
+2026-07-21T10:25:14.1978955Z (Reading database ... 35%
+2026-07-21T10:25:14.1979439Z (Reading database ... 40%
+2026-07-21T10:25:14.1979914Z (Reading database ... 45%
+2026-07-21T10:25:14.1980393Z (Reading database ... 50%
+2026-07-21T10:25:14.2011877Z (Reading database ... 55%
+2026-07-21T10:25:14.3514546Z (Reading database ... 60%
+2026-07-21T10:25:14.5496519Z (Reading database ... 65%
+2026-07-21T10:25:14.7546556Z (Reading database ... 70%
+2026-07-21T10:25:14.8520983Z (Reading database ... 75%
+2026-07-21T10:25:15.0982298Z (Reading database ... 80%
+2026-07-21T10:25:15.2472993Z (Reading database ... 85%
+2026-07-21T10:25:15.4937165Z (Reading database ... 90%
+2026-07-21T10:25:15.7081028Z (Reading database ... 95%
+2026-07-21T10:25:15.7081536Z (Reading database ... 100%
+2026-07-21T10:25:15.7082012Z (Reading database ... 202507 files and directories currently installed.)
+2026-07-21T10:25:15.7129194Z Preparing to unpack .../libevent-2.1-7t64_2.1.12-stable-9ubuntu2_amd64.deb ...
+2026-07-21T10:25:15.7161109Z Unpacking libevent-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+2026-07-21T10:25:15.7412129Z Selecting previously unselected package tor.
+2026-07-21T10:25:15.7548196Z Preparing to unpack .../tor_0.4.8.10-1build2_amd64.deb ...
+2026-07-21T10:25:15.7623229Z Unpacking tor (0.4.8.10-1build2) ...
+2026-07-21T10:25:15.8183315Z Selecting previously unselected package torsocks.
+2026-07-21T10:25:15.8320044Z Preparing to unpack .../torsocks_2.4.0-1_amd64.deb ...
+2026-07-21T10:25:15.8459578Z Unpacking torsocks (2.4.0-1) ...
+2026-07-21T10:25:15.8802993Z Selecting previously unselected package tor-geoipdb.
+2026-07-21T10:25:15.8939893Z Preparing to unpack .../tor-geoipdb_0.4.8.10-1build2_all.deb ...
+2026-07-21T10:25:15.8947505Z Unpacking tor-geoipdb (0.4.8.10-1build2) ...
+2026-07-21T10:25:15.9700450Z Setting up libevent-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+2026-07-21T10:25:15.9719052Z Setting up tor (0.4.8.10-1build2) ...
+2026-07-21T10:25:16.1021427Z Something or somebody made /var/lib/tor disappear.
+2026-07-21T10:25:16.1022066Z Creating one for you again.
+2026-07-21T10:25:16.1035131Z Something or somebody made /var/log/tor disappear.
+2026-07-21T10:25:16.1035685Z Creating one for you again.
+2026-07-21T10:25:16.2706236Z Created symlink /etc/systemd/system/multi-user.target.wants/tor.service → /usr/lib/systemd/system/tor.service.
+2026-07-21T10:25:16.2706855Z 
+2026-07-21T10:25:16.6103686Z Setting up torsocks (2.4.0-1) ...
+2026-07-21T10:25:16.6221235Z Setting up tor-geoipdb (0.4.8.10-1build2) ...
+2026-07-21T10:25:16.6246164Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-07-21T10:25:16.6266928Z Not building database; man-db/auto-update is not 'true'.
+2026-07-21T10:25:16.6282951Z Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+2026-07-21T10:25:17.2598537Z 
+2026-07-21T10:25:17.2599306Z Running kernel seems to be up-to-date.
+2026-07-21T10:25:17.2599779Z 
+2026-07-21T10:25:17.2599956Z No services need to be restarted.
+2026-07-21T10:25:17.2600226Z 
+2026-07-21T10:25:17.2600391Z No containers need to be restarted.
+2026-07-21T10:25:17.2600651Z 
+2026-07-21T10:25:17.2600842Z No user sessions are running outdated binaries.
+2026-07-21T10:25:17.2601137Z 
+2026-07-21T10:25:17.2601412Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-07-21T10:25:18.4624011Z ControlPort 9051
+2026-07-21T10:25:18.4700867Z CookieAuthentication 0
+2026-07-21T10:25:18.4786073Z ExitNodes ***in***
+2026-07-21T10:25:18.4871132Z StrictNodes 1
+2026-07-21T10:25:18.5160029Z Waiting for Tor to bootstrap SOCKS5 port...
+2026-07-21T10:25:18.5183817Z Connection to localhost (127.0.0.1) 9050 port [tcp/*] succeeded!
+2026-07-21T10:25:18.5192914Z ✅ Tor SOCKS5 port is open!
+2026-07-21T10:25:18.5193640Z Verifying Tor IP location...
+2026-07-21T10:25:18.5270560Z ⚠️ Could not verify IP location, continuing...

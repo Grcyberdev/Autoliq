@@ -402,6 +402,7 @@ LIQUOR_NAME_MAPPING = {
     "GROVER LA RESERVE RED": "Grover La Reserve Red",
     "GROVER ART COLLECTION NU CABERNET SHIRAZ RED WINE": "Grover Art Collection Nu Red Wine",
     "BROSE AMOR BRUT ROSE": "Brose Amor Brut Rose",
+    "SAN MICHE PIEMONTE BARBERA": "San Mische Piemonte Barbera Wine",
 
 
 
