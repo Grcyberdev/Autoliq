@@ -15156,11 +15156,11 @@
             }
         },
         "AS03BC8344": {
-            "Masti No. 1": {
-                "CA": 100
-            },
             "Masti Special": {
                 "CA": 600
+            },
+            "Masti No. 1": {
+                "CA": 100
             }
         }
     },
@@ -15361,8 +15361,8 @@
         },
         "AS01KC9113": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         }
     },
@@ -15459,8 +15459,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         }
     },
@@ -15826,16 +15826,16 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         },
         "AS04AC1429": {
-            "Rhino No 1": {
-                "CA": 120
-            },
             "Rhino Limon": {
                 "CA": 50
+            },
+            "Rhino No 1": {
+                "CA": 120
             }
         }
     },
@@ -15958,19 +15958,19 @@
             }
         },
         "AS01KC9113": {
+            "Masti Special": {
+                "CS": 200,
+                "CA": 450
+            },
             "Masti No. 1": {
                 "CS": 50
-            },
-            "Masti Special": {
-                "CA": 450,
-                "CS": 200
             }
         },
         "AS04AC1429": {
-            "Rhino No 1": {
+            "Rhino Whiskey": {
                 "CA": 75
             },
-            "Rhino Whiskey": {
+            "Rhino No 1": {
                 "CA": 75
             }
         }
@@ -16212,11 +16212,11 @@
             }
         },
         "AS12BC9324": {
-            "Rhino Whiskey": {
-                "CS": 70
-            },
             "Rhino No 1": {
-                "CA": 30,
+                "CS": 70,
+                "CA": 30
+            },
+            "Rhino Whiskey": {
                 "CS": 70
             }
         },
@@ -16501,19 +16501,19 @@
             "Jinro Chamisul Soju": {
                 "SA": 7
             },
-            "JINRO GRAPEFRUIT WINE": {
+            "Jinro Grapefruit Wine": {
                 "SA": 3
             },
-            "19:59 SHIRAZ WINE": {
+            "19:59 Shiraz Wine": {
                 "750ml": 2
             },
-            "JINRO STRAWBERRY WINE": {
+            "Jinro Strawberry Wine": {
                 "SA": 3
             },
-            "JINRO PEACH WINE": {
+            "Jinro Peach Wine": {
                 "SA": 10
             },
-            "JINRO PLUM WINE": {
+            "Jinro Plum Wine": {
                 "SA": 3
             },
             "Belenkaya Vodka": {
@@ -16525,12 +16525,11 @@
             "Bushmills Original": {
                 "Full": 40
             },
-            "BUSHMILLS BLACK BUSH IRISH WHISKY": {
+            "Bushmills Black Bush Whisky": {
                 "Full": 2
             }
         },
         "AS09AC6285": {
-            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
             "Simba": {
                 "Can": 400,
                 "Bottle": 960
