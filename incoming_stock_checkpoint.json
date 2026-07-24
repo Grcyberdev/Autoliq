@@ -15156,11 +15156,11 @@
             }
         },
         "AS03BC8344": {
-            "Masti Special": {
-                "CA": 600
-            },
             "Masti No. 1": {
                 "CA": 100
+            },
+            "Masti Special": {
+                "CA": 600
             }
         }
     },
@@ -15361,8 +15361,8 @@
         },
         "AS01KC9113": {
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         }
     },
@@ -15459,8 +15459,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         }
     },
@@ -15826,16 +15826,16 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         },
         "AS04AC1429": {
-            "Rhino Limon": {
-                "CA": 50
-            },
             "Rhino No 1": {
                 "CA": 120
+            },
+            "Rhino Limon": {
+                "CA": 50
             }
         }
     },
@@ -15958,19 +15958,19 @@
             }
         },
         "AS01KC9113": {
-            "Masti Special": {
-                "CS": 200,
-                "CA": 450
-            },
             "Masti No. 1": {
                 "CS": 50
+            },
+            "Masti Special": {
+                "CA": 450,
+                "CS": 200
             }
         },
         "AS04AC1429": {
-            "Rhino Whiskey": {
+            "Rhino No 1": {
                 "CA": 75
             },
-            "Rhino No 1": {
+            "Rhino Whiskey": {
                 "CA": 75
             }
         }
@@ -16212,11 +16212,11 @@
             }
         },
         "AS12BC9324": {
-            "Rhino No 1": {
-                "CS": 70,
-                "CA": 30
-            },
             "Rhino Whiskey": {
+                "CS": 70
+            },
+            "Rhino No 1": {
+                "CA": 30,
                 "CS": 70
             }
         },
@@ -16536,7 +16536,6 @@
             }
         },
         "AS01PC8901": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Luxury": {
                 "375ml": 75,
                 "180ml": 400,
