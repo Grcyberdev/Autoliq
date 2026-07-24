@@ -160,6 +160,7 @@ LIQUOR_NAME_MAPPING = {
     "STERLING RESERVE B10 PREMIUM BLENDED WHISKY": "Sterling Reserve Whiskey",
     "TEACHER`S HIGHLAND CREAM RESERVE BLENDED SCOTCH WHISKY": "Teachers Highland Cream",
     "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY SELECT": "Laphroig Islay Single Malt",
+    "BUSHMILLS BLACK BUSH IRISH WHISKY": "Bushmills Black Bush Whisky",
     
     
     
@@ -403,6 +404,11 @@ LIQUOR_NAME_MAPPING = {
     "GROVER ART COLLECTION NU CABERNET SHIRAZ RED WINE": "Grover Art Collection Nu Red Wine",
     "BROSE AMOR BRUT ROSE": "Brose Amor Brut Rose",
     "SAN MICHE PIEMONTE BARBERA": "San Mische Piemonte Barbera Wine",
+    "19:59 SHIRAZ WINE": "19:59 Shiraz Wine",
+    "JINRO GRAPEFRUIT WINE": "Jinro Grapefruit Wine",
+    "JINRO PEACH WINE": "Jinro Peach Wine",
+    "JINRO PLUM WINE": "Jinro Plum Wine",
+    "JINRO STRAWBERRY WINE": "Jinro Strawberry Wine",
 
 
 
