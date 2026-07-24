@@ -16501,9 +16501,6 @@
             "Jinro Chamisul Soju": {
                 "SA": 7
             },
-            "Jinro Grapefruit Wine": {
-                "SA": 3
-            },
             "19:59 Shiraz Wine": {
                 "750ml": 2
             },
@@ -16522,17 +16519,20 @@
             "Bushmills Black Bush Whisky": {
                 "Full": 2
             },
-            "Belenkaya Vodka": {
-                "Full": 2
-            },
             "Jinro Plum Wine": {
                 "SA": 3
+            },
+            "Jinro Grapefruit Wine": {
+                "SA": 3
+            },
+            "Belenkaya Vodka": {
+                "Full": 2
             }
         },
         "AS09AC6285": {
             "Simba": {
-                "Can": 400,
-                "Bottle": 960
+                "Bottle": 960,
+                "Can": 400
             }
         },
         "AS01PC8901": {
@@ -16545,8 +16545,8 @@
         "AS01JC3625": {
             "McDowell's Luxury": {
                 "375ml": 50,
-                "750ml": 50,
-                "180ml": 350
+                "180ml": 350,
+                "750ml": 50
             },
             "McDowell's Double Oak Barrel": {
                 "180ml": 75,
@@ -16568,6 +16568,12 @@
                 "750ml": 10,
                 "375ml": 3,
                 "180ml": 2
+            }
+        },
+        "AS01TC6107": {
+            "_TelegramSupplier": "Mdh Beverages Private Limited",
+            "Cherrapunji Gin": {
+                "750ml": 10
             }
         }
     }
