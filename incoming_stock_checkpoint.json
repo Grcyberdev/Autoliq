@@ -16498,8 +16498,20 @@
             }
         },
         "HR38Z9718": {
+            "Jinro Chamisul Soju": {
+                "SA": 7
+            },
+            "Jinro Grapefruit Wine": {
+                "SA": 3
+            },
+            "19:59 Shiraz Wine": {
+                "750ml": 2
+            },
             "Jinro Strawberry Wine": {
                 "SA": 3
+            },
+            "Jinro Peach Wine": {
+                "SA": 10
             },
             "Lucifer's Gold": {
                 "Full": 6
@@ -16513,44 +16525,50 @@
             "Belenkaya Vodka": {
                 "Full": 2
             },
-            "Jinro Chamisul Soju": {
-                "SA": 7
-            },
-            "Jinro Grapefruit Wine": {
-                "SA": 3
-            },
-            "19:59 Shiraz Wine": {
-                "750ml": 2
-            },
-            "Jinro Peach Wine": {
-                "SA": 10
-            },
             "Jinro Plum Wine": {
                 "SA": 3
             }
         },
         "AS09AC6285": {
             "Simba": {
-                "Bottle": 960,
-                "Can": 400
+                "Can": 400,
+                "Bottle": 960
             }
         },
         "AS01PC8901": {
             "McDowell's Luxury": {
-                "375ml": 75,
                 "180ml": 400,
-                "750ml": 75
+                "750ml": 75,
+                "375ml": 75
             }
         },
         "AS01JC3625": {
             "McDowell's Luxury": {
-                "180ml": 350,
+                "375ml": 50,
                 "750ml": 50,
-                "375ml": 50
+                "180ml": 350
             },
             "McDowell's Double Oak Barrel": {
-                "375ml": 25,
-                "180ml": 75
+                "180ml": 75,
+                "375ml": 25
+            }
+        },
+        "AS01MC3483": {
+            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse",
+            "Oaksmith International": {
+                "375ml": 50,
+                "750ml": 150,
+                "180ml": 315
+            },
+            "Teachers Highland Cream": {
+                "750ml": 10,
+                "375ml": 5,
+                "180ml": 5
+            },
+            "Teachers 50": {
+                "750ml": 10,
+                "375ml": 3,
+                "180ml": 2
             }
         }
     }
