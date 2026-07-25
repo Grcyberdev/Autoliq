@@ -16579,15 +16579,15 @@
     "25-Jul-2026": {
         "AS04CC0758": {
             "Lords Whiskey": {
+                "375ml": 100,
                 "750ml": 100,
-                "180ml": 150,
-                "375ml": 100
+                "180ml": 150
             }
         },
         "AS02CC9561": {
             "Officer's Choice pet": {
-                "180ml": 350,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 350
             },
             "Officer's Choice": {
                 "750ml": 100
@@ -16614,11 +16614,28 @@
             }
         },
         "AS01NC1686": {
-            "Imperial Blue": {
-                "375ml": 150
-            },
             "Imperial Black": {
                 "180ml": 400
+            },
+            "Imperial Blue": {
+                "375ml": 150
+            }
+        },
+        "AS17B4164": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser": {
+                "Bottle": 175,
+                "Can": 100
+            },
+            "Corona": {
+                "Can": 25,
+                "Pint": 75
+            },
+            "Budweiser Magnum": {
+                "Bottle": 200
+            },
+            "Hoegaarden Witbier": {
+                "Can": 25
             }
         }
     }
