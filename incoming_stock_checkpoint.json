@@ -16575,5 +16575,15 @@
                 "750ml": 10
             }
         }
+    },
+    "25-Jul-2026": {
+        "AS04CC0758": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Lords Whiskey": {
+                "750ml": 100,
+                "180ml": 150,
+                "375ml": 100
+            }
+        }
     }
 }
