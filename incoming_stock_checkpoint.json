@@ -16585,12 +16585,12 @@
             }
         },
         "AS02CC9561": {
+            "Officer's Choice": {
+                "750ml": 100
+            },
             "Officer's Choice pet": {
                 "180ml": 350,
                 "375ml": 50
-            },
-            "Officer's Choice": {
-                "750ml": 100
             }
         },
         "AS01LC5953": {
@@ -16601,10 +16601,17 @@
             }
         },
         "AS03BC8344": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CS": 300,
                 "CA": 400
+            }
+        },
+        "AS01PC0693": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "180ml": 450,
+                "375ml": 50,
+                "750ml": 50
             }
         }
     }
