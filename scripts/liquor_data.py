@@ -686,6 +686,7 @@ SUPPLIER_NAME_MAPPING = {
     "DEVANS MORDERN BREWERIES LTD. TIEUP WITH SUNIT BREWERIES": "Devans",
     "Devans Mordern Breweries Ltd. Tieup With Sunit Breweries": "Devans",
     "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)": "Pragati",
+    "MONIKA ALCOBEV LIMITED": "Monika AlcoBev",
 }
 
 unmapped_suppliers = set()
