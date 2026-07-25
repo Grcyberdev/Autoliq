@@ -16579,25 +16579,25 @@
     "25-Jul-2026": {
         "AS04CC0758": {
             "Lords Whiskey": {
-                "375ml": 100,
                 "750ml": 100,
-                "180ml": 150
+                "180ml": 150,
+                "375ml": 100
             }
         },
         "AS02CC9561": {
-            "Officer's Choice": {
-                "750ml": 100
-            },
             "Officer's Choice pet": {
                 "180ml": 350,
                 "375ml": 50
+            },
+            "Officer's Choice": {
+                "750ml": 100
             }
         },
         "AS01LC5953": {
             "McDowell's Rum": {
-                "375ml": 150,
+                "180ml": 500,
                 "750ml": 250,
-                "180ml": 500
+                "375ml": 150
             }
         },
         "AS03BC8344": {
@@ -16608,9 +16608,18 @@
         },
         "AS01PC0693": {
             "Royal Stag": {
+                "750ml": 50,
                 "180ml": 450,
-                "375ml": 50,
-                "750ml": 50
+                "375ml": 50
+            }
+        },
+        "AS01NC1686": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "375ml": 150
+            },
+            "Imperial Black": {
+                "180ml": 400
             }
         }
     }
