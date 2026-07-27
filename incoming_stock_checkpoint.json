@@ -16645,20 +16645,10 @@
             }
         },
         "AS01SC2794": {
-            "Smirnoff": {
-                "750ml": 5,
-                "180ml": 10
-            },
-            "Singleton 12 Yrs": {
-                "Full": 2
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "180ml": 10
-            },
             "Black & White": {
-                "375ml": 10,
+                "180ml": 5,
                 "750ml": 10,
-                "180ml": 5
+                "375ml": 10
             },
             "Black Dog Triple Gold": {
                 "750ml": 3,
@@ -16683,6 +16673,40 @@
             "JW Blonde": {
                 "Quarter": 1,
                 "JQ": 1
+            },
+            "Singleton 12 Yrs": {
+                "Full": 2
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 10
+            },
+            "Smirnoff": {
+                "180ml": 10,
+                "750ml": 5
+            }
+        },
+        "HR61F2067": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 900
+            },
+            "Tuborg Malt": {
+                "Can": 300
+            }
+        },
+        "AS01JC3625": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "375ml": 250,
+                "750ml": 250,
+                "180ml": 400
+            }
+        },
+        "NL01N5864": {
+            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
+            "Simba": {
+                "Bottle": 1000,
+                "Can": 360
             }
         }
     }
