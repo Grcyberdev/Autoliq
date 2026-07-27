@@ -15826,16 +15826,16 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         },
         "AS04AC1429": {
-            "Rhino Limon": {
-                "CA": 50
-            },
             "Rhino No 1": {
                 "CA": 120
+            },
+            "Rhino Limon": {
+                "CA": 50
             }
         }
     },
@@ -15967,10 +15967,10 @@
             }
         },
         "AS04AC1429": {
-            "Rhino No 1": {
+            "Rhino Whiskey": {
                 "CA": 75
             },
-            "Rhino Whiskey": {
+            "Rhino No 1": {
                 "CA": 75
             }
         }
@@ -16602,8 +16602,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         },
         "AS01PC0693": {
@@ -16635,6 +16635,14 @@
             },
             "Hoegaarden Witbier": {
                 "Can": 25
+            }
+        }
+    },
+    "27-Jul-2026": {
+        "AS03CC8667": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino No 1": {
+                "CA": 170
             }
         }
     }
