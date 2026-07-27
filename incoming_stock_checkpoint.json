@@ -16315,8 +16315,8 @@
                 "CA": 100
             },
             "Masti Special": {
-                "CS": 200,
-                "CA": 400
+                "CA": 400,
+                "CS": 200
             }
         },
         "AS01JC3328": {
@@ -16707,7 +16707,6 @@
             }
         },
         "AS01RC7971": {
-            "_TelegramSupplier": "Pernod Ricard India Private Limited",
             "Glenlivet 12 Yrs": {
                 "Full": 2
             },
@@ -16732,6 +16731,13 @@
                 "750ml": 3,
                 "180ml": 3,
                 "375ml": 3
+            }
+        },
+        "AS01JC5345": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CA": 500,
+                "CS": 200
             }
         }
     }
