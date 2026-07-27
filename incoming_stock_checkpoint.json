@@ -16695,9 +16695,9 @@
         },
         "AS01JC3625": {
             "McDowell's Rum": {
+                "180ml": 400,
                 "750ml": 250,
-                "375ml": 250,
-                "180ml": 400
+                "375ml": 250
             }
         },
         "NL01N5864": {
@@ -16734,10 +16734,15 @@
             }
         },
         "AS01JC5345": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti Special": {
                 "CA": 500,
                 "CS": 200
+            }
+        },
+        "AS01LC7060": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "180ml": 550
             }
         }
     }
