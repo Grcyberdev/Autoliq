@@ -16151,19 +16151,12 @@
     },
     "21-Jul-2026": {
         "AS05AC4345": {
-            "Iconiq Vodka": {
-                "750ml": 25,
-                "375ml": 25
-            },
-            "Officer's Choice Blue": {
-                "375ml": 10,
-                "180ml": 15
-            },
-            "Iconiq Hippy": {
-                "180ml": 150
-            },
             "Officer's Choice pet": {
                 "375ml": 150
+            },
+            "Officer's Choice Blue": {
+                "180ml": 15,
+                "375ml": 10
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 15
@@ -16171,8 +16164,15 @@
             "Officer's Choice": {
                 "750ml": 100
             },
+            "Iconiq Vodka": {
+                "750ml": 25,
+                "375ml": 25
+            },
             "Sterling B7": {
                 "180ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
             }
         },
         "AS03BC8344": {
@@ -16183,22 +16183,22 @@
         },
         "AS01RC7791": {
             "Royal Stag": {
-                "375ml": 190,
                 "180ml": 200,
+                "375ml": 190,
                 "750ml": 60
             },
-            "Oaken Glow": {
-                "375ml": 10,
-                "180ml": 15
+            "100 Pipers": {
+                "375ml": 5,
+                "180ml": 5
             },
             "Xclamation Whiskey": {
                 "180ml": 15,
                 "750ml": 10,
                 "375ml": 15
             },
-            "100 Pipers": {
-                "375ml": 5,
-                "180ml": 5
+            "Oaken Glow": {
+                "375ml": 10,
+                "180ml": 15
             },
             "Royal Stag Barrel": {
                 "180ml": 25
@@ -16206,8 +16206,8 @@
         },
         "AS01GC6794": {
             "AC Black Luxury": {
-                "180ml": 800,
                 "375ml": 50,
+                "180ml": 800,
                 "750ml": 50
             }
         },
@@ -16232,13 +16232,13 @@
                 "180ml": 50,
                 "750ml": 50
             },
+            "McDowell's Rum": {
+                "375ml": 125,
+                "180ml": 200
+            },
             "Director's Special Black": {
                 "375ml": 25,
                 "180ml": 50
-            },
-            "McDowell's Rum": {
-                "180ml": 200,
-                "375ml": 125
             }
         },
         "NL01N6289": {
@@ -16253,9 +16253,9 @@
                 "375ml": 225
             },
             "Oaksmith Gold": {
-                "180ml": 20,
+                "375ml": 15,
                 "750ml": 15,
-                "375ml": 15
+                "180ml": 20
             }
         },
         "RJ14GG0072": {
@@ -16264,28 +16264,28 @@
             }
         },
         "AS01MC1854": {
-            "Teachers 50": {
-                "180ml": 2,
-                "750ml": 5,
-                "375ml": 3
-            },
-            "Oaksmith International": {
-                "180ml": 275,
-                "750ml": 65,
-                "375ml": 100
-            },
-            "Oaksmith Gold": {
-                "180ml": 5,
-                "750ml": 10,
-                "375ml": 5
-            },
-            "Teachers Highland Cream": {
-                "180ml": 5,
-                "375ml": 5,
-                "750ml": 10
-            },
             "Jim Beam": {
                 "750ml": 10
+            },
+            "Teachers 50": {
+                "375ml": 3,
+                "750ml": 5,
+                "180ml": 2
+            },
+            "Teachers Highland Cream": {
+                "375ml": 5,
+                "180ml": 5,
+                "750ml": 10
+            },
+            "Oaksmith Gold": {
+                "375ml": 5,
+                "180ml": 5,
+                "750ml": 10
+            },
+            "Oaksmith International": {
+                "375ml": 100,
+                "750ml": 65,
+                "180ml": 275
             }
         },
         "AS01KC9068": {
@@ -16304,8 +16304,8 @@
         "AS03BC5273": {
             "Lords Whiskey": {
                 "375ml": 100,
-                "180ml": 50,
-                "750ml": 200
+                "750ml": 200,
+                "180ml": 50
             }
         }
     },
@@ -16748,8 +16748,8 @@
     "28-Jul-2026": {
         "AS01LC5952": {
             "McDowell's Rum": {
-                "180ml": 700,
-                "750ml": 200
+                "750ml": 200,
+                "180ml": 700
             }
         },
         "AS03BC8344": {
@@ -16761,24 +16761,24 @@
             }
         },
         "AS02CC9561": {
-            "Sterling Reserve B7 Blended": {
-                "375ml": 7
-            },
-            "Officer's Choice": {
-                "750ml": 50
-            },
             "Sterling B7": {
                 "180ml": 18
+            },
+            "Iconiq Hippy": {
+                "180ml": 100
             },
             "Officer's Choice pet": {
                 "180ml": 275,
                 "375ml": 35
             },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 7
+            },
             "Officer's Choice Blue": {
                 "180ml": 15
             },
-            "Iconiq Hippy": {
-                "180ml": 100
+            "Officer's Choice": {
+                "750ml": 50
             }
         },
         "AS01KC8905": {
@@ -16793,11 +16793,11 @@
             }
         },
         "BR01GE1895": {
-            "Tuborg Malt": {
-                "Can": 700
-            },
             "Tuborg": {
                 "Bottle": 500
+            },
+            "Tuborg Malt": {
+                "Can": 700
             }
         },
         "AS01KC7529": {
@@ -16823,6 +16823,26 @@
             },
             "Imperial Black": {
                 "180ml": 100
+            }
+        },
+        "AS01LC5955": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Signature": {
+                "375ml": 15,
+                "180ml": 5,
+                "750ml": 5
+            },
+            "Royal Challenge": {
+                "180ml": 150,
+                "750ml": 50,
+                "375ml": 50
+            },
+            "McDowell's Rum": {
+                "750ml": 125
+            },
+            "Director's Special Black": {
+                "180ml": 125,
+                "375ml": 25
             }
         }
     }
