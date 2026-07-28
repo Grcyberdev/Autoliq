@@ -16114,28 +16114,28 @@
             }
         },
         "RJ14GG0801": {
-            "Tuborg": {
-                "Bottle": 800
-            },
             "Tuborg Malt": {
                 "Can": 400
+            },
+            "Tuborg": {
+                "Bottle": 800
             }
         },
         "AS01KC5889": {
-            "Signature": {
-                "375ml": 20
-            },
             "McDowell's Rum": {
                 "375ml": 100,
                 "180ml": 250
             },
+            "Royal Challenge": {
+                "375ml": 50,
+                "180ml": 50,
+                "750ml": 25
+            },
+            "Signature": {
+                "375ml": 20
+            },
             "Director's Special Black": {
                 "180ml": 55
-            },
-            "Royal Challenge": {
-                "750ml": 25,
-                "180ml": 50,
-                "375ml": 50
             }
         },
         "AS12AC2059": {
@@ -16325,23 +16325,23 @@
             }
         },
         "AS02CC9561": {
+            "Officer's Choice": {
+                "750ml": 75
+            },
             "Iconiq Vodka": {
                 "375ml": 30,
                 "750ml": 20
+            },
+            "Iconiq Hippy": {
+                "180ml": 50
             },
             "Officer's Choice pet": {
                 "375ml": 50,
                 "180ml": 250
             },
-            "Officer's Choice": {
-                "750ml": 75
-            },
-            "Iconiq Hippy": {
-                "180ml": 50
-            },
             "Officer's Choice Blue": {
-                "375ml": 10,
-                "180ml": 15
+                "180ml": 15,
+                "375ml": 10
             }
         },
         "NL01N5864": {
@@ -16351,15 +16351,15 @@
         },
         "AS02CC8645": {
             "Royal Stag": {
-                "750ml": 50,
                 "375ml": 100,
-                "180ml": 400
+                "180ml": 400,
+                "750ml": 50
             }
         },
         "AS251923": {
             "Stok Strong": {
-                "Bottle": 400,
-                "Can": 280
+                "Can": 280,
+                "Bottle": 400
             }
         },
         "NL01AG7229": {
@@ -16761,25 +16761,31 @@
             }
         },
         "AS02CC9561": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
-            "Officer's Choice Blue": {
-                "180ml": 15
+            "Officer's Choice": {
+                "750ml": 50
             },
             "Officer's Choice pet": {
                 "180ml": 275,
                 "375ml": 35
             },
-            "Officer's Choice": {
-                "750ml": 50
-            },
-            "Iconiq Hippy": {
-                "180ml": 100
+            "Sterling B7": {
+                "180ml": 18
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 7
             },
-            "Sterling B7": {
-                "180ml": 18
+            "Iconiq Hippy": {
+                "180ml": 100
+            },
+            "Officer's Choice Blue": {
+                "180ml": 15
+            }
+        },
+        "AS01KC8905": {
+            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
+            "Simba": {
+                "Bottle": 500,
+                "Can": 180
             }
         }
     }
