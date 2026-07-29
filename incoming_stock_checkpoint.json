@@ -16862,57 +16862,62 @@
             }
         },
         "AS01KC7529": {
-            "Toki Suntory": {
-                "Full": 2
+            "Mateus Original Rose Wine": {
+                "750ml": 3
             },
-            "JAGERMEISTER LIQUEUR BRAZIL 2026 EDITION": {
-                "750ml": 8
-            },
-            "WOODFORD RESERVE KENTUCKY STRAIGHT BOURBON WHISKEY": {
-                "Full": 3
-            },
-            "Jack Daniel's": {
-                "750ml": 7,
-                "375ml": 2,
-                "Quarter": 3
+            "Jim Beam Honey": {
+                "750ml": 2
             },
             "Carlo Rossi California White Wine": {
                 "750ml": 6
             },
-            "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY AGED 10 YEARS": {
+            "Jim Beam Orange": {
+                "750ml": 2
+            },
+            "Jack Daniel's Honey": {
                 "750ml": 2
             },
             "JAGERMEISTER LIQUEUR ARGENTINA 2026 EDITION": {
                 "750ml": 8
             },
-            "Jack Daniel's Honey": {
+            "JAGERMEISTER LIQUEUR BRAZIL 2026 EDITION": {
+                "750ml": 8
+            },
+            "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY AGED 10 YEARS": {
                 "750ml": 2
             },
-            "Jim Beam Orange": {
-                "750ml": 2
+            "Toki Suntory": {
+                "Full": 2
             },
-            "Jim Beam Honey": {
-                "750ml": 2
+            "Jack Daniel's": {
+                "Quarter": 3,
+                "375ml": 2,
+                "750ml": 7
             },
-            "Mateus Original Rose Wine": {
-                "750ml": 3
+            "WOODFORD RESERVE KENTUCKY STRAIGHT BOURBON WHISKEY": {
+                "Full": 3
             }
         },
         "AS01LC0437": {
             "McDowell's Luxury": {
+                "375ml": 100,
                 "750ml": 100,
-                "180ml": 350,
-                "375ml": 100
+                "180ml": 350
             }
         },
         "AS01KC2111": {
             "KD 50 Whiskey": {
-                "750ml": 200,
                 "375ml": 100,
-                "180ml": 100
+                "180ml": 100,
+                "750ml": 200
             }
         },
         "WB73D5395": {
+            "Royal Stag": {
+                "180ml": 650,
+                "750ml": 125,
+                "375ml": 125
+            },
             "100 Pipers": {
                 "750ml": 7,
                 "180ml": 3
@@ -16921,35 +16926,30 @@
                 "375ml": 20,
                 "180ml": 30
             },
-            "Royal Stag": {
-                "750ml": 125,
-                "375ml": 125,
-                "180ml": 650
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 10,
-                "180ml": 20
+            "Blender's Pride Reserve": {
+                "750ml": 10,
+                "375ml": 15,
+                "180ml": 15
             },
             "Royal Stag Double Dark": {
                 "180ml": 20,
                 "375ml": 25
             },
-            "Blender's Pride Reserve": {
-                "750ml": 10,
-                "180ml": 15,
-                "375ml": 15
+            "Blender's Pride Exclusive": {
+                "375ml": 10,
+                "180ml": 20
             },
             "Oaken Glow": {
                 "180ml": 25
             }
         },
         "AS05AC4345": {
-            "Officer's Choice pet": {
-                "375ml": 75,
-                "180ml": 325
-            },
             "Officer's Choice": {
                 "750ml": 100
+            },
+            "Officer's Choice pet": {
+                "180ml": 325,
+                "375ml": 75
             }
         },
         "AS01NC3619": {
@@ -16957,11 +16957,43 @@
                 "Can": 250
             },
             "Budweiser": {
-                "Bottle": 100,
-                "Pint": 50
+                "Pint": 50,
+                "Bottle": 100
             },
             "Hoegaarden Witbier": {
                 "Pint": 50
+            }
+        },
+        "WB61B6116": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Royal Challenge": {
+                "180ml": 100,
+                "375ml": 50,
+                "750ml": 25
+            },
+            "Antiquity Blue Ultra": {
+                "375ml": 5,
+                "180ml": 5
+            },
+            "Director's Special Black": {
+                "180ml": 90,
+                "375ml": 25
+            },
+            "McDowell's Rum": {
+                "180ml": 250
+            },
+            "McDowell's Luxury": {
+                "180ml": 450,
+                "375ml": 100
+            }
+        },
+        "AS12AC3528": {
+            "_TelegramSupplier": "Mount Everest Breweries Ltd. Tie Up With Sunit Breweries",
+            "DABANG PREMIUM STRONG BEER": {
+                "Can": 500
+            },
+            "Stok Strong": {
+                "Bottle": 180
             }
         }
     }
