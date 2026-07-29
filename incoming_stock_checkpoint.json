@@ -16851,8 +16851,8 @@
                 "750ml": 2
             },
             "AC Black Luxury": {
-                "180ml": 800,
                 "750ml": 50,
+                "180ml": 800,
                 "375ml": 50
             }
         },
@@ -16862,19 +16862,8 @@
             }
         },
         "AS01KC7529": {
-            "Mateus Original Rose Wine": {
-                "750ml": 3
-            },
-            "Jack Daniel's": {
-                "Quarter": 3,
-                "750ml": 7,
-                "375ml": 2
-            },
             "Toki Suntory": {
                 "Full": 2
-            },
-            "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY AGED 10 YEARS": {
-                "750ml": 2
             },
             "JAGERMEISTER LIQUEUR BRAZIL 2026 EDITION": {
                 "750ml": 8
@@ -16882,53 +16871,98 @@
             "WOODFORD RESERVE KENTUCKY STRAIGHT BOURBON WHISKEY": {
                 "Full": 3
             },
+            "Jack Daniel's": {
+                "750ml": 7,
+                "375ml": 2,
+                "Quarter": 3
+            },
             "Carlo Rossi California White Wine": {
                 "750ml": 6
             },
-            "Jim Beam Honey": {
+            "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY AGED 10 YEARS": {
+                "750ml": 2
+            },
+            "JAGERMEISTER LIQUEUR ARGENTINA 2026 EDITION": {
+                "750ml": 8
+            },
+            "Jack Daniel's Honey": {
                 "750ml": 2
             },
             "Jim Beam Orange": {
                 "750ml": 2
             },
-            "Jack Daniel's Honey": {
+            "Jim Beam Honey": {
                 "750ml": 2
             },
-            "JAGERMEISTER LIQUEUR ARGENTINA 2026 EDITION": {
-                "750ml": 8
+            "Mateus Original Rose Wine": {
+                "750ml": 3
             }
         },
         "AS01LC0437": {
             "McDowell's Luxury": {
                 "750ml": 100,
-                "375ml": 100,
-                "180ml": 350
-            }
-        },
-        "AS01KC2111": {
-            "_TelegramSupplier": "Saaran Industries",
-            "KD 50 Whiskey": {
-                "750ml": 200,
-                "180ml": 100,
+                "180ml": 350,
                 "375ml": 100
             }
         },
+        "AS01KC2111": {
+            "KD 50 Whiskey": {
+                "750ml": 200,
+                "375ml": 100,
+                "180ml": 100
+            }
+        },
         "WB73D5395": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "100 Pipers": {
+                "750ml": 7,
+                "180ml": 3
+            },
+            "Royal Stag Barrel": {
+                "375ml": 20,
+                "180ml": 30
+            },
             "Royal Stag": {
-                "750ml": 75,
-                "375ml": 75,
-                "180ml": 400
+                "750ml": 125,
+                "375ml": 125,
+                "180ml": 650
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 10,
+                "180ml": 20
+            },
+            "Royal Stag Double Dark": {
+                "180ml": 20,
+                "375ml": 25
+            },
+            "Blender's Pride Reserve": {
+                "750ml": 10,
+                "180ml": 15,
+                "375ml": 15
+            },
+            "Oaken Glow": {
+                "180ml": 25
             }
         },
         "AS05AC4345": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice pet": {
+                "375ml": 75,
+                "180ml": 325
+            },
             "Officer's Choice": {
                 "750ml": 100
+            }
+        },
+        "AS01NC3619": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser Magnum": {
+                "Can": 250
             },
-            "Officer's Choice pet": {
-                "180ml": 325,
-                "375ml": 75
+            "Budweiser": {
+                "Bottle": 100,
+                "Pint": 50
+            },
+            "Hoegaarden Witbier": {
+                "Pint": 50
             }
         }
     }
