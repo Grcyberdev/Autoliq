@@ -16325,23 +16325,23 @@
             }
         },
         "AS02CC9561": {
-            "Officer's Choice": {
-                "750ml": 75
-            },
             "Iconiq Vodka": {
                 "375ml": 30,
                 "750ml": 20
-            },
-            "Iconiq Hippy": {
-                "180ml": 50
             },
             "Officer's Choice pet": {
                 "375ml": 50,
                 "180ml": 250
             },
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Iconiq Hippy": {
+                "180ml": 50
+            },
             "Officer's Choice Blue": {
-                "180ml": 15,
-                "375ml": 10
+                "375ml": 10,
+                "180ml": 15
             }
         },
         "NL01N5864": {
@@ -16351,15 +16351,15 @@
         },
         "AS02CC8645": {
             "Royal Stag": {
+                "750ml": 50,
                 "375ml": 100,
-                "180ml": 400,
-                "750ml": 50
+                "180ml": 400
             }
         },
         "AS251923": {
             "Stok Strong": {
-                "Can": 280,
-                "Bottle": 400
+                "Bottle": 400,
+                "Can": 280
             }
         },
         "NL01AG7229": {
@@ -16395,26 +16395,20 @@
             }
         },
         "AS01RC8137": {
-            "Balvenie Doublewood 12 Yrs": {
-                "Full": 2
-            },
-            "Glenfiddich 18": {
-                "JQ": 1
-            },
             "Wild Turkey Bourbon": {
                 "750ml": 1
             },
             "Monkey Shoulder": {
                 "Full": 6
             },
-            "San Mische Piemonte Barbera Wine": {
-                "Full": 1
+            "Grant's Triple Wood": {
+                "750ml": 5
             },
             "Glenfiddich Solera 15": {
                 "JQ": 5
             },
-            "Glenfiddich Original 12": {
-                "JQ": 11
+            "Balvenie Doublewood 12 Yrs": {
+                "Full": 2
             },
             "Amalfi Limoncello Russo": {
                 "Full": 2
@@ -16422,8 +16416,14 @@
             "Hendrick's Gin": {
                 "Full": 1
             },
-            "Grant's Triple Wood": {
-                "750ml": 5
+            "San Mische Piemonte Barbera Wine": {
+                "Full": 1
+            },
+            "Glenfiddich 18": {
+                "JQ": 1
+            },
+            "Glenfiddich Original 12": {
+                "JQ": 11
             }
         },
         "AS01RC2284": {
@@ -16437,14 +16437,18 @@
             }
         },
         "AS01JC1967": {
-            "Magic Moments Lemon": {
-                "180ml": 20,
-                "375ml": 5
-            },
             "8 PM Premium Black": {
-                "375ml": 15,
                 "750ml": 20,
-                "180ml": 25
+                "180ml": 25,
+                "375ml": 15
+            },
+            "Magic Moments": {
+                "180ml": 95,
+                "375ml": 30
+            },
+            "Magic Moments Lemon": {
+                "375ml": 5,
+                "180ml": 20
             },
             "After Dark": {
                 "180ml": 250,
@@ -16453,25 +16457,21 @@
             "Magic Moments Green Apple": {
                 "180ml": 30,
                 "375ml": 10
-            },
-            "Magic Moments": {
-                "375ml": 30,
-                "180ml": 95
             }
         },
         "AS01TC8925": {
-            "Blender's Pride Reserve": {
-                "375ml": 15,
-                "750ml": 15,
-                "180ml": 20
+            "Royal Stag": {
+                "750ml": 25,
+                "180ml": 300
             },
             "Oaken Glow": {
                 "750ml": 10,
                 "375ml": 15
             },
-            "Royal Stag": {
-                "750ml": 25,
-                "180ml": 300
+            "Blender's Pride Reserve": {
+                "750ml": 15,
+                "375ml": 15,
+                "180ml": 20
             },
             "Xclamation Whiskey": {
                 "180ml": 20,
@@ -16851,9 +16851,9 @@
                 "750ml": 2
             },
             "AC Black Luxury": {
-                "375ml": 50,
                 "180ml": 800,
-                "750ml": 50
+                "750ml": 50,
+                "375ml": 50
             }
         },
         "NL01AF2095": {
@@ -16862,13 +16862,22 @@
             }
         },
         "AS01KC7529": {
-            "Jim Beam Orange": {
-                "750ml": 2
+            "Mateus Original Rose Wine": {
+                "750ml": 3
             },
             "Jack Daniel's": {
                 "Quarter": 3,
                 "750ml": 7,
                 "375ml": 2
+            },
+            "Toki Suntory": {
+                "Full": 2
+            },
+            "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY AGED 10 YEARS": {
+                "750ml": 2
+            },
+            "JAGERMEISTER LIQUEUR BRAZIL 2026 EDITION": {
+                "750ml": 8
             },
             "WOODFORD RESERVE KENTUCKY STRAIGHT BOURBON WHISKEY": {
                 "Full": 3
@@ -16876,10 +16885,10 @@
             "Carlo Rossi California White Wine": {
                 "750ml": 6
             },
-            "Mateus Original Rose Wine": {
-                "750ml": 3
-            },
             "Jim Beam Honey": {
+                "750ml": 2
+            },
+            "Jim Beam Orange": {
                 "750ml": 2
             },
             "Jack Daniel's Honey": {
@@ -16887,22 +16896,39 @@
             },
             "JAGERMEISTER LIQUEUR ARGENTINA 2026 EDITION": {
                 "750ml": 8
-            },
-            "JAGERMEISTER LIQUEUR BRAZIL 2026 EDITION": {
-                "750ml": 8
-            },
-            "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY AGED 10 YEARS": {
-                "750ml": 2
-            },
-            "Toki Suntory": {
-                "Full": 2
             }
         },
         "AS01LC0437": {
             "McDowell's Luxury": {
+                "750ml": 100,
                 "375ml": 100,
-                "180ml": 350,
+                "180ml": 350
+            }
+        },
+        "AS01KC2111": {
+            "_TelegramSupplier": "Saaran Industries",
+            "KD 50 Whiskey": {
+                "750ml": 200,
+                "180ml": 100,
+                "375ml": 100
+            }
+        },
+        "WB73D5395": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 75,
+                "375ml": 75,
+                "180ml": 400
+            }
+        },
+        "AS05AC4345": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice": {
                 "750ml": 100
+            },
+            "Officer's Choice pet": {
+                "180ml": 325,
+                "375ml": 75
             }
         }
     }
