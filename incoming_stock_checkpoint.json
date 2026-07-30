@@ -16151,17 +16151,6 @@
     },
     "21-Jul-2026": {
         "AS05AC4345": {
-            "Officer's Choice Blue": {
-                "180ml": 15,
-                "375ml": 10
-            },
-            "Iconiq Hippy": {
-                "180ml": 150
-            },
-            "Iconiq Vodka": {
-                "375ml": 25,
-                "750ml": 25
-            },
             "Sterling B7": {
                 "180ml": 10
             },
@@ -16171,8 +16160,19 @@
             "Sterling Reserve B7 Blended": {
                 "375ml": 15
             },
+            "Officer's Choice Blue": {
+                "180ml": 15,
+                "375ml": 10
+            },
             "Officer's Choice pet": {
                 "375ml": 150
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
+            },
+            "Iconiq Vodka": {
+                "375ml": 25,
+                "750ml": 25
             }
         },
         "AS03BC8344": {
@@ -16182,23 +16182,23 @@
             }
         },
         "AS01RC7791": {
-            "Royal Stag": {
-                "375ml": 190,
-                "180ml": 200,
-                "750ml": 60
+            "100 Pipers": {
+                "180ml": 5,
+                "375ml": 5
             },
-            "Oaken Glow": {
-                "375ml": 10,
-                "180ml": 15
+            "Royal Stag": {
+                "750ml": 60,
+                "375ml": 190,
+                "180ml": 200
             },
             "Xclamation Whiskey": {
+                "375ml": 15,
                 "180ml": 15,
-                "750ml": 10,
-                "375ml": 15
+                "750ml": 10
             },
-            "100 Pipers": {
-                "375ml": 5,
-                "180ml": 5
+            "Oaken Glow": {
+                "180ml": 15,
+                "375ml": 10
             },
             "Royal Stag Barrel": {
                 "180ml": 25
@@ -16206,9 +16206,9 @@
         },
         "AS01GC6794": {
             "AC Black Luxury": {
+                "180ml": 800,
                 "375ml": 50,
-                "750ml": 50,
-                "180ml": 800
+                "750ml": 50
             }
         },
         "AS12BC9324": {
@@ -16227,14 +16227,14 @@
             }
         },
         "AS27C7022": {
+            "Royal Challenge": {
+                "180ml": 50,
+                "750ml": 50,
+                "375ml": 50
+            },
             "Director's Special Black": {
                 "180ml": 50,
                 "375ml": 25
-            },
-            "Royal Challenge": {
-                "750ml": 50,
-                "180ml": 50,
-                "375ml": 50
             },
             "McDowell's Rum": {
                 "180ml": 200,
@@ -16264,15 +16264,10 @@
             }
         },
         "AS01MC1854": {
-            "Oaksmith Gold": {
-                "750ml": 10,
-                "180ml": 5,
-                "375ml": 5
-            },
             "Oaksmith International": {
-                "375ml": 100,
                 "750ml": 65,
-                "180ml": 275
+                "180ml": 275,
+                "375ml": 100
             },
             "Teachers 50": {
                 "180ml": 2,
@@ -16280,6 +16275,11 @@
                 "375ml": 3
             },
             "Teachers Highland Cream": {
+                "750ml": 10,
+                "375ml": 5,
+                "180ml": 5
+            },
+            "Oaksmith Gold": {
                 "180ml": 5,
                 "750ml": 10,
                 "375ml": 5
@@ -16303,9 +16303,9 @@
         },
         "AS03BC5273": {
             "Lords Whiskey": {
-                "180ml": 50,
+                "375ml": 100,
                 "750ml": 200,
-                "375ml": 100
+                "180ml": 50
             }
         }
     },
@@ -17008,9 +17008,9 @@
         },
         "AS03CC8606": {
             "Lords Whiskey": {
-                "180ml": 100,
                 "750ml": 100,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 100
             }
         },
         "AS01RC7791": {
@@ -17021,8 +17021,8 @@
             },
             "Blender's Pride Exclusive": {
                 "180ml": 40,
-                "375ml": 20,
-                "750ml": 20
+                "750ml": 20,
+                "375ml": 20
             },
             "Royal Stag": {
                 "375ml": 75,
@@ -17063,6 +17063,16 @@
             "Masti": {
                 "CS": 250,
                 "CA": 400
+            }
+        },
+        "AS01UC9175": {
+            "_TelegramSupplier": "Pernod Ricard India Private Limited",
+            "Jameson": {
+                "750ml": 25
+            },
+            "Ballantines": {
+                "375ml": 5,
+                "750ml": 5
             }
         }
     }
