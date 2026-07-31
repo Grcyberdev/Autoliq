@@ -17121,9 +17121,6 @@
     },
     "31-Jul-2026": {
         "AS01KC7529": {
-            "Sterling Reserve B7 Blended": {
-                "375ml": 10
-            },
             "Officer's Choice pet": {
                 "180ml": 225
             },
@@ -17131,11 +17128,14 @@
                 "750ml": 25,
                 "375ml": 50
             },
-            "Sterling B7": {
-                "180ml": 15
-            },
             "Iconiq Hippy": {
                 "180ml": 175
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 10
+            },
+            "Sterling B7": {
+                "180ml": 15
             }
         },
         "RJ52GA4500": {
@@ -17145,8 +17145,8 @@
         },
         "WB23D6368": {
             "Imperial Blue": {
-                "180ml": 350,
-                "375ml": 200
+                "375ml": 200,
+                "180ml": 350
             },
             "Imperial Black": {
                 "180ml": 400,
@@ -17154,35 +17154,83 @@
             }
         },
         "AS01PC3391": {
-            "McDowell's Luxury": {
-                "750ml": 25,
-                "375ml": 125,
-                "180ml": 200
-            },
             "McDowell's Double Oak Barrel": {
                 "750ml": 20,
-                "180ml": 150,
-                "375ml": 30
+                "375ml": 30,
+                "180ml": 150
+            },
+            "McDowell's Luxury": {
+                "180ml": 200,
+                "375ml": 125,
+                "750ml": 25
             }
         },
         "AS01JC3625": {
-            "Royal Challenge": {
-                "180ml": 100,
-                "750ml": 30,
-                "375ml": 70
+            "Director's Special Black": {
+                "180ml": 20,
+                "375ml": 20,
+                "750ml": 10
             },
             "McDowell's Rum": {
                 "180ml": 300
             },
-            "Director's Special Black": {
-                "375ml": 20,
-                "750ml": 10,
-                "180ml": 20
+            "Royal Challenge": {
+                "180ml": 100,
+                "750ml": 30,
+                "375ml": 70
             }
         },
         "AS03BC8401": {
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "NL01AG1757": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01PC0734": {
+            "_TelegramSupplier": "United Spirits Limited",
+            "Smirnoff": {
+                "375ml": 5,
+                "180ml": 18,
+                "750ml": 5
+            },
+            "JW Red Label": {
+                "750ml": 17,
+                "375ml": 7
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 10,
+                "180ml": 25
+            },
+            "Black & White": {
+                "375ml": 10,
+                "750ml": 2,
+                "180ml": 10
+            },
+            "Vat 69": {
+                "375ml": 3,
+                "750ml": 2,
+                "180ml": 3
+            },
+            "Royal Challenge American Pride": {
+                "180ml": 5
+            },
+            "Baileys": {
+                "750ml": 4
+            },
+            "J & B": {
+                "750ml": 8
+            },
+            "JW Black Label": {
+                "Quarter": 3,
+                "750ml": 3
+            },
+            "JW Double Black": {
+                "750ml": 5
             }
         }
     }
