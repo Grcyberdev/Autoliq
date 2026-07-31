@@ -17121,10 +17121,6 @@
     },
     "31-Jul-2026": {
         "AS01KC7529": {
-            "Iconiq Vodka": {
-                "375ml": 50,
-                "750ml": 25
-            },
             "Iconiq Hippy": {
                 "180ml": 175
             },
@@ -17134,8 +17130,18 @@
             "Sterling B7": {
                 "180ml": 15
             },
+            "Iconiq Vodka": {
+                "750ml": 25,
+                "375ml": 50
+            },
             "Sterling Reserve B7 Blended": {
                 "375ml": 10
+            }
+        },
+        "RJ52GA4500": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
             }
         }
     }
