@@ -16114,17 +16114,17 @@
             }
         },
         "RJ14GG0801": {
-            "Tuborg Malt": {
-                "Can": 400
-            },
             "Tuborg": {
                 "Bottle": 800
+            },
+            "Tuborg Malt": {
+                "Can": 400
             }
         },
         "AS01KC5889": {
             "McDowell's Rum": {
-                "375ml": 100,
-                "180ml": 250
+                "180ml": 250,
+                "375ml": 100
             },
             "Royal Challenge": {
                 "375ml": 50,
@@ -16325,23 +16325,23 @@
             }
         },
         "AS02CC9561": {
-            "Officer's Choice": {
-                "750ml": 75
-            },
             "Iconiq Vodka": {
                 "375ml": 30,
                 "750ml": 20
-            },
-            "Iconiq Hippy": {
-                "180ml": 50
             },
             "Officer's Choice pet": {
                 "375ml": 50,
                 "180ml": 250
             },
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Iconiq Hippy": {
+                "180ml": 50
+            },
             "Officer's Choice Blue": {
-                "180ml": 15,
-                "375ml": 10
+                "375ml": 10,
+                "180ml": 15
             }
         },
         "NL01N5864": {
@@ -16351,15 +16351,15 @@
         },
         "AS02CC8645": {
             "Royal Stag": {
+                "750ml": 50,
                 "375ml": 100,
-                "180ml": 400,
-                "750ml": 50
+                "180ml": 400
             }
         },
         "AS251923": {
             "Stok Strong": {
-                "Can": 280,
-                "Bottle": 400
+                "Bottle": 400,
+                "Can": 280
             }
         },
         "NL01AG7229": {
@@ -17121,21 +17121,21 @@
     },
     "31-Jul-2026": {
         "AS01KC7529": {
-            "Officer's Choice pet": {
-                "180ml": 225
-            },
-            "Iconiq Vodka": {
-                "750ml": 25,
-                "375ml": 50
-            },
             "Iconiq Hippy": {
                 "180ml": 175
             },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 10
+            "Iconiq Vodka": {
+                "375ml": 50,
+                "750ml": 25
+            },
+            "Officer's Choice pet": {
+                "180ml": 225
             },
             "Sterling B7": {
                 "180ml": 15
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 10
             }
         },
         "RJ52GA4500": {
@@ -17156,8 +17156,8 @@
         "AS01PC3391": {
             "McDowell's Double Oak Barrel": {
                 "750ml": 20,
-                "375ml": 30,
-                "180ml": 150
+                "180ml": 150,
+                "375ml": 30
             },
             "McDowell's Luxury": {
                 "180ml": 200,
@@ -17166,18 +17166,18 @@
             }
         },
         "AS01JC3625": {
-            "Director's Special Black": {
-                "180ml": 20,
-                "375ml": 20,
-                "750ml": 10
-            },
             "McDowell's Rum": {
                 "180ml": 300
             },
             "Royal Challenge": {
                 "180ml": 100,
-                "750ml": 30,
-                "375ml": 70
+                "375ml": 70,
+                "750ml": 30
+            },
+            "Director's Special Black": {
+                "375ml": 20,
+                "750ml": 10,
+                "180ml": 20
             }
         },
         "AS03BC8401": {
@@ -17191,14 +17191,17 @@
             }
         },
         "AS01PC0734": {
-            "Smirnoff": {
-                "375ml": 5,
-                "180ml": 18,
+            "JW Red Label": {
+                "375ml": 7,
+                "750ml": 17
+            },
+            "JW Double Black": {
                 "750ml": 5
             },
-            "JW Red Label": {
-                "750ml": 17,
-                "375ml": 7
+            "Smirnoff": {
+                "375ml": 5,
+                "750ml": 5,
+                "180ml": 18
             },
             "Smirnoff Minty Jamun Vodka": {
                 "750ml": 10,
@@ -17226,9 +17229,25 @@
             "JW Black Label": {
                 "Quarter": 3,
                 "750ml": 3
+            }
+        },
+        "AS01AC6239": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "180ml": 450,
+                "375ml": 100
+            }
+        },
+        "AS03CC8606": {
+            "_TelegramSupplier": "Indospirit Beverages Pvt. Ltd. IMFL Wholesale Warehouse",
+            "Eden Whisky": {
+                "750ml": 3
             },
-            "JW Double Black": {
-                "750ml": 5
+            "Wingman Reserve": {
+                "180ml": 17
+            },
+            "Bro Code XV": {
+                "ZA": 280
             }
         }
     }
