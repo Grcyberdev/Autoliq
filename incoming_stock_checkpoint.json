@@ -17330,8 +17330,8 @@
         "AS01JC9433": {
             "McDowell's Rum": {
                 "750ml": 100,
-                "180ml": 500,
-                "375ml": 300
+                "375ml": 300,
+                "180ml": 500
             }
         }
     },
@@ -17355,6 +17355,27 @@
         "RJ14GG0135": {
             "Tuborg": {
                 "Bottle": 1200
+            }
+        }
+    },
+    "04-Aug-2026": {
+        "MH04MR1121": {
+            "_TelegramSupplier": "Fratelli Wines Pvt. Ltd.",
+            "ZIVA RED WINE": {
+                "750ml": 2
+            },
+            "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
+                "750ml": 2
+            },
+            "Kyra Red Wine": {
+                "750ml": 25,
+                "375ml": 15
+            },
+            "FRATELLI WINES SHIRAZ ROSE": {
+                "750ml": 2
+            },
+            "Sidus Premium Port Wine": {
+                "750ml": 4
             }
         }
     }
