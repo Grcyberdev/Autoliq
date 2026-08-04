@@ -17329,8 +17329,8 @@
     "01-Aug-2026": {
         "AS01JC9433": {
             "McDowell's Rum": {
-                "750ml": 100,
                 "180ml": 500,
+                "750ml": 100,
                 "375ml": 300
             }
         }
@@ -17360,10 +17360,10 @@
     },
     "04-Aug-2026": {
         "MH04MR1121": {
-            "ZIVA RED WINE": {
+            "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
                 "750ml": 2
             },
-            "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
+            "ZIVA RED WINE": {
                 "750ml": 2
             },
             "Sidus Premium Port Wine": {
@@ -17392,16 +17392,16 @@
             }
         },
         "AS25DC9946": {
+            "Iconiq Vodka": {
+                "750ml": 30,
+                "375ml": 50
+            },
             "Officer's Choice Blue": {
                 "375ml": 10
             },
             "Officer's Choice pet": {
-                "180ml": 175,
-                "375ml": 75
-            },
-            "Iconiq Vodka": {
-                "750ml": 30,
-                "375ml": 50
+                "375ml": 75,
+                "180ml": 175
             },
             "Sterling B7": {
                 "180ml": 10
@@ -17419,28 +17419,57 @@
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "375ml": 200,
                 "180ml": 650,
-                "750ml": 50
+                "750ml": 50,
+                "375ml": 200
             }
         },
         "AS01UC7073": {
-            "Magic Moments": {
-                "180ml": 90,
-                "375ml": 30,
-                "750ml": 30
+            "8 PM Premium Black": {
+                "750ml": 5,
+                "180ml": 15,
+                "375ml": 10
             },
             "Magic Moments Lemon": {
                 "375ml": 20,
                 "180ml": 20
             },
-            "8 PM Premium Black": {
-                "180ml": 15,
-                "375ml": 10,
-                "750ml": 5
+            "Magic Moments": {
+                "375ml": 30,
+                "180ml": 90,
+                "750ml": 30
             },
             "After Dark": {
                 "180ml": 80
+            }
+        },
+        "AS01LC7060": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Signature": {
+                "375ml": 10,
+                "180ml": 10
+            },
+            "Royal Challenge": {
+                "180ml": 75,
+                "375ml": 50,
+                "750ml": 25
+            },
+            "Antiquity Blue Ultra": {
+                "750ml": 5,
+                "375ml": 5,
+                "180ml": 5
+            },
+            "McDowell's Luxury": {
+                "750ml": 25
+            },
+            "Director's Special Black": {
+                "750ml": 20,
+                "375ml": 40,
+                "180ml": 55
+            },
+            "McDowell's Rum": {
+                "180ml": 125,
+                "375ml": 100
             }
         }
     }
