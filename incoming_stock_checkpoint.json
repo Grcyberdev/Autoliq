@@ -17330,8 +17330,8 @@
         "AS01JC9433": {
             "McDowell's Rum": {
                 "750ml": 100,
-                "375ml": 300,
-                "180ml": 500
+                "180ml": 500,
+                "375ml": 300
             }
         }
     },
@@ -17360,20 +17360,20 @@
     },
     "04-Aug-2026": {
         "MH04MR1121": {
-            "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
+            "FRATELLI WINES SHIRAZ ROSE": {
                 "750ml": 2
             },
-            "ZIVA RED WINE": {
-                "750ml": 2
+            "Kyra Red Wine": {
+                "375ml": 15,
+                "750ml": 25
             },
             "Sidus Premium Port Wine": {
                 "750ml": 4
             },
-            "Kyra Red Wine": {
-                "750ml": 25,
-                "375ml": 15
+            "ZIVA RED WINE": {
+                "750ml": 2
             },
-            "FRATELLI WINES SHIRAZ ROSE": {
+            "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
                 "750ml": 2
             }
         },
@@ -17392,13 +17392,19 @@
             }
         },
         "AS25DC9946": {
-            "Officer's Choice pet": {
-                "180ml": 175,
-                "375ml": 75
+            "Sterling B7": {
+                "180ml": 10
+            },
+            "Officer's Choice": {
+                "750ml": 75
             },
             "Iconiq Vodka": {
                 "750ml": 30,
                 "375ml": 50
+            },
+            "Officer's Choice pet": {
+                "180ml": 175,
+                "375ml": 75
             },
             "Officer's Choice Blue": {
                 "375ml": 10
@@ -17406,88 +17412,127 @@
             "Iconiq Hippy": {
                 "180ml": 50
             },
-            "Sterling B7": {
-                "180ml": 10
-            },
             "Sterling Reserve B7 Blended": {
                 "750ml": 10,
                 "375ml": 15
-            },
-            "Officer's Choice": {
-                "750ml": 75
             }
         },
         "AS01GC6796": {
             "AC Black Luxury": {
                 "750ml": 50,
-                "180ml": 650,
-                "375ml": 200
+                "375ml": 200,
+                "180ml": 650
             }
         },
         "AS01UC7073": {
-            "After Dark": {
-                "180ml": 80
-            },
-            "8 PM Premium Black": {
-                "180ml": 15,
-                "375ml": 10,
-                "750ml": 5
-            },
-            "Magic Moments Lemon": {
-                "375ml": 20,
-                "180ml": 20
-            },
             "Magic Moments": {
                 "375ml": 30,
                 "180ml": 90,
                 "750ml": 30
+            },
+            "8 PM Premium Black": {
+                "375ml": 10,
+                "180ml": 15,
+                "750ml": 5
+            },
+            "Magic Moments Lemon": {
+                "180ml": 20,
+                "375ml": 20
+            },
+            "After Dark": {
+                "180ml": 80
             }
         },
         "AS01LC7060": {
-            "Royal Challenge": {
-                "180ml": 75,
-                "375ml": 50,
-                "750ml": 25
+            "McDowell's Rum": {
+                "180ml": 125,
+                "375ml": 100
             },
             "Signature": {
                 "375ml": 10,
                 "180ml": 10
             },
+            "Director's Special Black": {
+                "375ml": 40,
+                "750ml": 20,
+                "180ml": 55
+            },
+            "Royal Challenge": {
+                "750ml": 25,
+                "180ml": 75,
+                "375ml": 50
+            },
             "Antiquity Blue Ultra": {
                 "750ml": 5,
-                "375ml": 5,
-                "180ml": 5
+                "180ml": 5,
+                "375ml": 5
             },
             "McDowell's Luxury": {
                 "750ml": 25
-            },
-            "Director's Special Black": {
-                "750ml": 20,
-                "375ml": 40,
-                "180ml": 55
-            },
-            "McDowell's Rum": {
-                "180ml": 125,
-                "375ml": 100
             }
         }
     },
     "05-Aug-2026": {
         "AS09C1182": {
-            "White Magic Orange Gin": {
-                "180ml": 105,
-                "375ml": 35,
-                "750ml": 5
-            },
             "Vinho Porto Port Wine": {
                 "375ml": 5
+            },
+            "White Magic Orange Gin": {
+                "750ml": 5,
+                "180ml": 105,
+                "375ml": 35
             }
         },
         "AS01PC0693": {
             "McDowell's Rum": {
-                "750ml": 300,
                 "180ml": 500,
-                "375ml": 100
+                "375ml": 100,
+                "750ml": 300
+            }
+        },
+        "AS07CC2717": {
+            "_TelegramSupplier": "Bacardi India Pvt. Ltd.",
+            "Breezer Cranberry": {
+                "Stubby": 40
+            },
+            "Bacardi Limon Rum": {
+                "180ml": 20,
+                "375ml": 5
+            },
+            "Bacardi Mango Chilli Rum": {
+                "180ml": 5
+            },
+            "William Lawson": {
+                "750ml": 2
+            },
+            "Camino Tequila": {
+                "750ml": 5
+            },
+            "Bombay Sapphire Gin": {
+                "750ml": 2
+            },
+            "Teeling Whiskey": {
+                "Full": 5
+            },
+            "Grey Goose": {
+                "Quarter": 2,
+                "Full": 3
+            },
+            "Aberfeldy 12 Yrs": {
+                "Full": 3
+            },
+            "Dewar's White Label": {
+                "750ml": 3
+            },
+            "Dewar's Portuguese Smooth": {
+                "Full": 5
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 500,
+                "CS": 200
             }
         }
     }
