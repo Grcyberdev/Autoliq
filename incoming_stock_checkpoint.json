@@ -17329,9 +17329,9 @@
     "01-Aug-2026": {
         "AS01JC9433": {
             "McDowell's Rum": {
-                "750ml": 100,
                 "375ml": 300,
-                "180ml": 500
+                "180ml": 500,
+                "750ml": 100
             }
         }
     },
@@ -17392,13 +17392,13 @@
             }
         },
         "AS25DC9946": {
-            "Officer's Choice pet": {
-                "180ml": 175,
-                "375ml": 75
-            },
             "Iconiq Vodka": {
                 "750ml": 30,
                 "375ml": 50
+            },
+            "Officer's Choice pet": {
+                "180ml": 175,
+                "375ml": 75
             },
             "Officer's Choice Blue": {
                 "375ml": 10
@@ -17420,24 +17420,24 @@
         "AS01GC6796": {
             "AC Black Luxury": {
                 "750ml": 50,
-                "180ml": 650,
-                "375ml": 200
+                "375ml": 200,
+                "180ml": 650
             }
         },
         "AS01UC7073": {
-            "8 PM Premium Black": {
-                "750ml": 5,
-                "375ml": 10,
-                "180ml": 15
-            },
             "Magic Moments": {
                 "750ml": 30,
                 "375ml": 30,
                 "180ml": 90
             },
+            "8 PM Premium Black": {
+                "750ml": 5,
+                "375ml": 10,
+                "180ml": 15
+            },
             "Magic Moments Lemon": {
-                "375ml": 20,
-                "180ml": 20
+                "180ml": 20,
+                "375ml": 20
             },
             "After Dark": {
                 "180ml": 80
@@ -17450,8 +17450,8 @@
                 "750ml": 25
             },
             "Signature": {
-                "375ml": 10,
-                "180ml": 10
+                "180ml": 10,
+                "375ml": 10
             },
             "Antiquity Blue Ultra": {
                 "750ml": 5,
@@ -17474,57 +17474,57 @@
     },
     "05-Aug-2026": {
         "AS09C1182": {
+            "White Magic Orange Gin": {
+                "375ml": 35,
+                "750ml": 5,
+                "180ml": 105
+            },
             "Vinho Porto Port Wine": {
                 "375ml": 5
-            },
-            "White Magic Orange Gin": {
-                "750ml": 5,
-                "180ml": 105,
-                "375ml": 35
             }
         },
         "AS01PC0693": {
             "McDowell's Rum": {
-                "750ml": 300,
                 "180ml": 500,
-                "375ml": 100
+                "375ml": 100,
+                "750ml": 300
             }
         },
         "AS07CC2717": {
             "Breezer Cranberry": {
                 "Stubby": 40
             },
-            "Bacardi Limon Rum": {
-                "180ml": 20,
-                "375ml": 5
+            "William Lawson": {
+                "750ml": 2
             },
             "Bacardi Mango Chilli Rum": {
                 "180ml": 5
             },
-            "William Lawson": {
-                "750ml": 2
-            },
-            "Teeling Whiskey": {
-                "Full": 5
-            },
-            "Dewar's Portuguese Smooth": {
-                "Full": 5
-            },
-            "Dewar's White Label": {
-                "750ml": 3
-            },
-            "Aberfeldy 12 Yrs": {
-                "Full": 3
+            "Bacardi Limon Rum": {
+                "375ml": 5,
+                "180ml": 20
             },
             "Grey Goose": {
-                "Full": 3,
-                "Quarter": 2
+                "Quarter": 2,
+                "Full": 3
+            },
+            "Camino Tequila": {
+                "750ml": 5
             },
             "Bombay Sapphire Gin": {
                 "750ml": 2
             },
-            "Camino Tequila": {
-                "750ml": 5
+            "Aberfeldy 12 Yrs": {
+                "Full": 3
+            },
+            "Dewar's White Label": {
+                "750ml": 3
+            },
+            "Dewar's Portuguese Smooth": {
+                "Full": 5
+            },
+            "Teeling Whiskey": {
+                "Full": 5
             }
         },
         "AS03BC8344": {
@@ -17538,8 +17538,8 @@
                 "Can": 500
             },
             "Budweiser": {
-                "Can": 250,
-                "Bottle": 125
+                "Bottle": 125,
+                "Can": 250
             },
             "Corona": {
                 "Can": 25,
@@ -17559,7 +17559,6 @@
             }
         },
         "RJ52GA3015": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg Malt": {
                 "Can": 600
             },
@@ -17568,7 +17567,26 @@
             }
         },
         "AS01QC4009": {
-            "_TelegramSupplier": "Pernod Ricard India Private Limited",
+            "Absolut": {
+                "Quarter": 1
+            },
+            "Ballantines": {
+                "Quarter": 15,
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Jameson Black Barrel": {
+                "Full": 5
+            },
+            "Glenlivet 12 Yrs": {
+                "Full": 2
+            },
+            "Jameson": {
+                "750ml": 10
+            },
+            "Chivas Regal 12 Yrs": {
+                "750ml": 3
+            },
             "Xclamation Rum": {
                 "180ml": 5,
                 "375ml": 5,
@@ -17584,26 +17602,19 @@
             },
             "Beefeater": {
                 "750ml": 5
-            },
-            "Ballantines": {
-                "750ml": 5,
-                "375ml": 5,
-                "Quarter": 15
-            },
-            "Chivas Regal 12 Yrs": {
-                "750ml": 3
-            },
-            "Jameson": {
-                "750ml": 10
-            },
-            "Glenlivet 12 Yrs": {
-                "Full": 2
-            },
-            "Jameson Black Barrel": {
-                "Full": 5
-            },
-            "Absolut": {
-                "Quarter": 1
+            }
+        },
+        "AS01FC3252": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1400
+            }
+        },
+        "AS01KC8177": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CA": 500,
+                "CS": 200
             }
         }
     }
