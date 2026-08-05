@@ -17330,8 +17330,8 @@
         "AS01JC9433": {
             "McDowell's Rum": {
                 "750ml": 100,
-                "180ml": 500,
-                "375ml": 300
+                "375ml": 300,
+                "180ml": 500
             }
         }
     },
@@ -17360,20 +17360,20 @@
     },
     "04-Aug-2026": {
         "MH04MR1121": {
-            "FRATELLI WINES SHIRAZ ROSE": {
+            "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
                 "750ml": 2
-            },
-            "Kyra Red Wine": {
-                "375ml": 15,
-                "750ml": 25
-            },
-            "Sidus Premium Port Wine": {
-                "750ml": 4
             },
             "ZIVA RED WINE": {
                 "750ml": 2
             },
-            "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
+            "Sidus Premium Port Wine": {
+                "750ml": 4
+            },
+            "Kyra Red Wine": {
+                "750ml": 25,
+                "375ml": 15
+            },
+            "FRATELLI WINES SHIRAZ ROSE": {
                 "750ml": 2
             }
         },
@@ -17392,29 +17392,29 @@
             }
         },
         "AS25DC9946": {
-            "Sterling Reserve B7 Blended": {
-                "375ml": 15,
-                "750ml": 10
-            },
-            "Officer's Choice": {
-                "750ml": 75
-            },
-            "Sterling B7": {
-                "180ml": 10
-            },
-            "Iconiq Hippy": {
-                "180ml": 50
-            },
             "Officer's Choice pet": {
-                "375ml": 75,
-                "180ml": 175
-            },
-            "Officer's Choice Blue": {
-                "375ml": 10
+                "180ml": 175,
+                "375ml": 75
             },
             "Iconiq Vodka": {
                 "750ml": 30,
                 "375ml": 50
+            },
+            "Officer's Choice Blue": {
+                "375ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 50
+            },
+            "Sterling B7": {
+                "180ml": 10
+            },
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 10,
+                "375ml": 15
             }
         },
         "AS01GC6796": {
@@ -17485,18 +17485,18 @@
         },
         "AS01PC0693": {
             "McDowell's Rum": {
-                "375ml": 100,
                 "750ml": 300,
-                "180ml": 500
+                "180ml": 500,
+                "375ml": 100
             }
         },
         "AS07CC2717": {
+            "Breezer Cranberry": {
+                "Stubby": 40
+            },
             "Bacardi Limon Rum": {
                 "180ml": 20,
                 "375ml": 5
-            },
-            "Breezer Cranberry": {
-                "Stubby": 40
             },
             "Bacardi Mango Chilli Rum": {
                 "180ml": 5
@@ -17504,27 +17504,27 @@
             "William Lawson": {
                 "750ml": 2
             },
+            "Teeling Whiskey": {
+                "Full": 5
+            },
+            "Dewar's Portuguese Smooth": {
+                "Full": 5
+            },
+            "Dewar's White Label": {
+                "750ml": 3
+            },
+            "Aberfeldy 12 Yrs": {
+                "Full": 3
+            },
+            "Grey Goose": {
+                "Full": 3,
+                "Quarter": 2
+            },
             "Bombay Sapphire Gin": {
                 "750ml": 2
             },
             "Camino Tequila": {
                 "750ml": 5
-            },
-            "Grey Goose": {
-                "Quarter": 2,
-                "Full": 3
-            },
-            "Aberfeldy 12 Yrs": {
-                "Full": 3
-            },
-            "Dewar's White Label": {
-                "750ml": 3
-            },
-            "Dewar's Portuguese Smooth": {
-                "Full": 5
-            },
-            "Teeling Whiskey": {
-                "Full": 5
             }
         },
         "AS03BC8344": {
@@ -17538,25 +17538,72 @@
                 "Can": 500
             },
             "Budweiser": {
-                "Bottle": 125,
-                "Can": 250
-            },
-            "Hoegaarden Witbier": {
-                "Pint": 30,
-                "Can": 20
+                "Can": 250,
+                "Bottle": 125
             },
             "Corona": {
                 "Can": 25,
                 "Pint": 50
+            },
+            "Hoegaarden Witbier": {
+                "Can": 20,
+                "Pint": 30
             }
         },
         "RJ14GG0360": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg": {
                 "Bottle": 600
             },
             "Tuborg Malt": {
                 "Can": 600
+            }
+        },
+        "RJ52GA3015": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg Malt": {
+                "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
+            }
+        },
+        "AS01QC4009": {
+            "_TelegramSupplier": "Pernod Ricard India Private Limited",
+            "Xclamation Rum": {
+                "180ml": 5,
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Xclamation Vodka": {
+                "180ml": 5,
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Jacob's Creek Shiraz Cabernet": {
+                "750ml": 7
+            },
+            "Beefeater": {
+                "750ml": 5
+            },
+            "Ballantines": {
+                "750ml": 5,
+                "375ml": 5,
+                "Quarter": 15
+            },
+            "Chivas Regal 12 Yrs": {
+                "750ml": 3
+            },
+            "Jameson": {
+                "750ml": 10
+            },
+            "Glenlivet 12 Yrs": {
+                "Full": 2
+            },
+            "Jameson Black Barrel": {
+                "Full": 5
+            },
+            "Absolut": {
+                "Quarter": 1
             }
         }
     }
