@@ -17396,42 +17396,38 @@
                 "375ml": 15,
                 "750ml": 10
             },
-            "Iconiq Vodka": {
-                "750ml": 30,
-                "375ml": 50
+            "Officer's Choice": {
+                "750ml": 75
             },
             "Sterling B7": {
                 "180ml": 10
             },
-            "Officer's Choice Blue": {
-                "375ml": 10
+            "Iconiq Hippy": {
+                "180ml": 50
             },
             "Officer's Choice pet": {
                 "375ml": 75,
                 "180ml": 175
             },
-            "Iconiq Hippy": {
-                "180ml": 50
+            "Officer's Choice Blue": {
+                "375ml": 10
             },
-            "Officer's Choice": {
-                "750ml": 75
+            "Iconiq Vodka": {
+                "750ml": 30,
+                "375ml": 50
             }
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "180ml": 650,
                 "750ml": 50,
+                "180ml": 650,
                 "375ml": 200
             }
         },
         "AS01UC7073": {
-            "Magic Moments Lemon": {
-                "180ml": 20,
-                "375ml": 20
-            },
             "8 PM Premium Black": {
-                "375ml": 10,
                 "750ml": 5,
+                "375ml": 10,
                 "180ml": 15
             },
             "Magic Moments": {
@@ -17439,32 +17435,36 @@
                 "375ml": 30,
                 "180ml": 90
             },
+            "Magic Moments Lemon": {
+                "375ml": 20,
+                "180ml": 20
+            },
             "After Dark": {
                 "180ml": 80
             }
         },
         "AS01LC7060": {
-            "Director's Special Black": {
-                "180ml": 55,
-                "375ml": 40,
-                "750ml": 20
-            },
             "Royal Challenge": {
-                "375ml": 50,
                 "180ml": 75,
+                "375ml": 50,
                 "750ml": 25
             },
+            "Signature": {
+                "375ml": 10,
+                "180ml": 10
+            },
             "Antiquity Blue Ultra": {
-                "180ml": 5,
+                "750ml": 5,
                 "375ml": 5,
-                "750ml": 5
+                "180ml": 5
             },
             "McDowell's Luxury": {
                 "750ml": 25
             },
-            "Signature": {
-                "180ml": 10,
-                "375ml": 10
+            "Director's Special Black": {
+                "750ml": 20,
+                "375ml": 40,
+                "180ml": 55
             },
             "McDowell's Rum": {
                 "180ml": 125,
@@ -17485,31 +17485,24 @@
         },
         "AS01PC0693": {
             "McDowell's Rum": {
+                "375ml": 100,
                 "750ml": 300,
-                "180ml": 500,
-                "375ml": 100
+                "180ml": 500
             }
         },
         "AS07CC2717": {
-            "William Lawson": {
-                "750ml": 2
-            },
-            "Breezer Cranberry": {
-                "Stubby": 40
-            },
             "Bacardi Limon Rum": {
                 "180ml": 20,
                 "375ml": 5
             },
+            "Breezer Cranberry": {
+                "Stubby": 40
+            },
             "Bacardi Mango Chilli Rum": {
                 "180ml": 5
             },
-            "Grey Goose": {
-                "Quarter": 2,
-                "Full": 3
-            },
-            "Teeling Whiskey": {
-                "Full": 5
+            "William Lawson": {
+                "750ml": 2
             },
             "Bombay Sapphire Gin": {
                 "750ml": 2
@@ -17517,14 +17510,21 @@
             "Camino Tequila": {
                 "750ml": 5
             },
-            "Dewar's Portuguese Smooth": {
-                "Full": 5
+            "Grey Goose": {
+                "Quarter": 2,
+                "Full": 3
+            },
+            "Aberfeldy 12 Yrs": {
+                "Full": 3
             },
             "Dewar's White Label": {
                 "750ml": 3
             },
-            "Aberfeldy 12 Yrs": {
-                "Full": 3
+            "Dewar's Portuguese Smooth": {
+                "Full": 5
+            },
+            "Teeling Whiskey": {
+                "Full": 5
             }
         },
         "AS03BC8344": {
@@ -17534,21 +17534,29 @@
             }
         },
         "AS25EC4977": {
-            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
             "Budweiser Magnum": {
                 "Can": 500
-            },
-            "Hoegaarden Witbier": {
-                "Pint": 30,
-                "Can": 20
             },
             "Budweiser": {
                 "Bottle": 125,
                 "Can": 250
             },
+            "Hoegaarden Witbier": {
+                "Pint": 30,
+                "Can": 20
+            },
             "Corona": {
                 "Can": 25,
                 "Pint": 50
+            }
+        },
+        "RJ14GG0360": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         }
     }
