@@ -17625,8 +17625,8 @@
         },
         "AS03BC5273": {
             "Lords Whiskey": {
-                "750ml": 200,
-                "375ml": 150
+                "375ml": 150,
+                "750ml": 200
             }
         },
         "NL01N5863": {
@@ -17641,6 +17641,28 @@
             },
             "Kingfisher Lager": {
                 "Bottle": 200
+            }
+        },
+        "UP38BT0941": {
+            "_TelegramSupplier": "Great Galleon Ventures Limited",
+            "V21 Original Vodka": {
+                "375ml": 20,
+                "750ml": 15,
+                "180ml": 25
+            },
+            "V21 ULTRA SMOOTH VODKA LEMON": {
+                "375ml": 20,
+                "750ml": 5,
+                "180ml": 20
+            },
+            "V21 ULTRA SMOOTH VODKA JAMUN": {
+                "180ml": 40,
+                "375ml": 20,
+                "750ml": 10
+            },
+            "V21 Green Apple Vodka": {
+                "375ml": 10,
+                "180ml": 15
             }
         }
     }
