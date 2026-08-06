@@ -17619,8 +17619,8 @@
     "06-Aug-2026": {
         "AS01NC1686": {
             "Imperial Blue": {
-                "375ml": 50,
-                "180ml": 500
+                "180ml": 500,
+                "375ml": 50
             }
         },
         "AS03BC5273": {
@@ -17644,6 +17644,11 @@
             }
         },
         "UP38BT0941": {
+            "V21 ULTRA SMOOTH VODKA JAMUN": {
+                "180ml": 40,
+                "750ml": 10,
+                "375ml": 20
+            },
             "V21 Original Vodka": {
                 "375ml": 20,
                 "750ml": 15,
@@ -17654,14 +17659,25 @@
                 "750ml": 5,
                 "180ml": 20
             },
-            "V21 ULTRA SMOOTH VODKA JAMUN": {
-                "180ml": 40,
-                "375ml": 20,
-                "750ml": 10
-            },
             "V21 Green Apple Vodka": {
                 "375ml": 10,
                 "180ml": 15
+            }
+        },
+        "AS01UC9175": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd.",
+            "Six Fields Pilsner": {
+                "Keg": 25
+            },
+            "Six Fields Blanche": {
+                "Keg": 25
+            },
+            "Six Fields Brute": {
+                "Can": 25,
+                "Bottle": 25
+            },
+            "Six Fields Cult": {
+                "Can": 25
             }
         }
     }
