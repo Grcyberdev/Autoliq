@@ -17329,9 +17329,9 @@
     "01-Aug-2026": {
         "AS01JC9433": {
             "McDowell's Rum": {
+                "750ml": 100,
                 "375ml": 300,
-                "180ml": 500,
-                "750ml": 100
+                "180ml": 500
             }
         }
     },
@@ -17343,8 +17343,8 @@
         },
         "AS01FC6159": {
             "McDowell's Rum": {
-                "750ml": 300,
-                "180ml": 600
+                "180ml": 600,
+                "750ml": 300
             }
         },
         "AS01DD0037": {
@@ -17392,13 +17392,13 @@
             }
         },
         "AS25DC9946": {
-            "Iconiq Vodka": {
-                "750ml": 30,
-                "375ml": 50
-            },
             "Officer's Choice pet": {
                 "180ml": 175,
                 "375ml": 75
+            },
+            "Iconiq Vodka": {
+                "750ml": 30,
+                "375ml": 50
             },
             "Officer's Choice Blue": {
                 "375ml": 10
@@ -17420,24 +17420,24 @@
         "AS01GC6796": {
             "AC Black Luxury": {
                 "750ml": 50,
-                "375ml": 200,
-                "180ml": 650
+                "180ml": 650,
+                "375ml": 200
             }
         },
         "AS01UC7073": {
-            "Magic Moments": {
-                "750ml": 30,
-                "375ml": 30,
-                "180ml": 90
-            },
             "8 PM Premium Black": {
                 "750ml": 5,
                 "375ml": 10,
                 "180ml": 15
             },
+            "Magic Moments": {
+                "750ml": 30,
+                "375ml": 30,
+                "180ml": 90
+            },
             "Magic Moments Lemon": {
-                "180ml": 20,
-                "375ml": 20
+                "375ml": 20,
+                "180ml": 20
             },
             "After Dark": {
                 "180ml": 80
@@ -17450,8 +17450,8 @@
                 "750ml": 25
             },
             "Signature": {
-                "180ml": 10,
-                "375ml": 10
+                "375ml": 10,
+                "180ml": 10
             },
             "Antiquity Blue Ultra": {
                 "750ml": 5,
@@ -17475,9 +17475,9 @@
     "05-Aug-2026": {
         "AS09C1182": {
             "White Magic Orange Gin": {
+                "180ml": 105,
                 "375ml": 35,
-                "750ml": 5,
-                "180ml": 105
+                "750ml": 5
             },
             "Vinho Porto Port Wine": {
                 "375ml": 5
@@ -17486,36 +17486,30 @@
         "AS01PC0693": {
             "McDowell's Rum": {
                 "180ml": 500,
-                "375ml": 100,
-                "750ml": 300
+                "750ml": 300,
+                "375ml": 100
             }
         },
         "AS07CC2717": {
-            "Breezer Cranberry": {
-                "Stubby": 40
-            },
             "William Lawson": {
                 "750ml": 2
-            },
-            "Bacardi Mango Chilli Rum": {
-                "180ml": 5
             },
             "Bacardi Limon Rum": {
                 "375ml": 5,
                 "180ml": 20
             },
-            "Grey Goose": {
-                "Quarter": 2,
-                "Full": 3
+            "Bacardi Mango Chilli Rum": {
+                "180ml": 5
             },
-            "Camino Tequila": {
-                "750ml": 5
+            "Breezer Cranberry": {
+                "Stubby": 40
+            },
+            "Grey Goose": {
+                "Full": 3,
+                "Quarter": 2
             },
             "Bombay Sapphire Gin": {
                 "750ml": 2
-            },
-            "Aberfeldy 12 Yrs": {
-                "Full": 3
             },
             "Dewar's White Label": {
                 "750ml": 3
@@ -17525,6 +17519,12 @@
             },
             "Teeling Whiskey": {
                 "Full": 5
+            },
+            "Aberfeldy 12 Yrs": {
+                "Full": 3
+            },
+            "Camino Tequila": {
+                "750ml": 5
             }
         },
         "AS03BC8344": {
@@ -17537,6 +17537,10 @@
             "Budweiser Magnum": {
                 "Can": 500
             },
+            "Hoegaarden Witbier": {
+                "Pint": 30,
+                "Can": 20
+            },
             "Budweiser": {
                 "Bottle": 125,
                 "Can": 250
@@ -17544,18 +17548,14 @@
             "Corona": {
                 "Can": 25,
                 "Pint": 50
-            },
-            "Hoegaarden Witbier": {
-                "Can": 20,
-                "Pint": 30
             }
         },
         "RJ14GG0360": {
-            "Tuborg": {
-                "Bottle": 600
-            },
             "Tuborg Malt": {
                 "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
             }
         },
         "RJ52GA3015": {
@@ -17567,13 +17567,13 @@
             }
         },
         "AS01QC4009": {
-            "Absolut": {
-                "Quarter": 1
-            },
             "Ballantines": {
                 "Quarter": 15,
-                "375ml": 5,
-                "750ml": 5
+                "750ml": 5,
+                "375ml": 5
+            },
+            "Chivas Regal 12 Yrs": {
+                "750ml": 3
             },
             "Jameson Black Barrel": {
                 "Full": 5
@@ -17584,8 +17584,8 @@
             "Jameson": {
                 "750ml": 10
             },
-            "Chivas Regal 12 Yrs": {
-                "750ml": 3
+            "Absolut": {
+                "Quarter": 1
             },
             "Xclamation Rum": {
                 "180ml": 5,
@@ -17613,6 +17613,15 @@
             "Masti Special": {
                 "CA": 500,
                 "CS": 200
+            }
+        }
+    },
+    "06-Aug-2026": {
+        "AS01NC1686": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 500
             }
         }
     }
