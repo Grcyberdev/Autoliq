@@ -17619,8 +17619,8 @@
     "06-Aug-2026": {
         "AS01NC1686": {
             "Imperial Blue": {
-                "180ml": 500,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 500
             }
         },
         "AS03BC5273": {
@@ -17633,6 +17633,15 @@
             "Simba": {
                 "Can": 360,
                 "Bottle": 1000
+            }
+        },
+        "WB23C5237": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1200
+            },
+            "Kingfisher Lager": {
+                "Bottle": 200
             }
         }
     }
