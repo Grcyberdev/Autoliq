@@ -17665,6 +17665,9 @@
             }
         },
         "AS01UC9175": {
+            "Six Fields Blanche": {
+                "Keg": 25
+            },
             "Six Fields Cult": {
                 "Can": 25
             },
@@ -17673,9 +17676,6 @@
                 "Bottle": 25
             },
             "Six Fields Pilsner": {
-                "Keg": 25
-            },
-            "Six Fields Blanche": {
                 "Keg": 25
             }
         }
@@ -17707,10 +17707,22 @@
             }
         },
         "AS01KC7022": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Imperial Black": {
                 "180ml": 400,
                 "375ml": 150
+            }
+        },
+        "WB23E7199": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "375ml": 175,
+                "180ml": 700,
+                "750ml": 75
+            },
+            "McDowell's Double Oak Barrel": {
+                "375ml": 55,
+                "180ml": 75,
+                "750ml": 20
             }
         }
     }
