@@ -17636,19 +17636,14 @@
             }
         },
         "WB23C5237": {
-            "Kingfisher Original Strong": {
-                "Bottle": 1200
-            },
             "Kingfisher Lager": {
                 "Bottle": 200
+            },
+            "Kingfisher Original Strong": {
+                "Bottle": 1200
             }
         },
         "UP38BT0941": {
-            "V21 ULTRA SMOOTH VODKA JAMUN": {
-                "180ml": 40,
-                "750ml": 10,
-                "375ml": 20
-            },
             "V21 Original Vodka": {
                 "375ml": 20,
                 "750ml": 15,
@@ -17659,6 +17654,11 @@
                 "750ml": 5,
                 "180ml": 20
             },
+            "V21 ULTRA SMOOTH VODKA JAMUN": {
+                "180ml": 40,
+                "375ml": 20,
+                "750ml": 10
+            },
             "V21 Green Apple Vodka": {
                 "375ml": 10,
                 "180ml": 15
@@ -17668,15 +17668,43 @@
             "Six Fields Pilsner": {
                 "Keg": 25
             },
-            "Six Fields Blanche": {
-                "Keg": 25
-            },
             "Six Fields Brute": {
                 "Can": 25,
                 "Bottle": 25
             },
+            "Six Fields Blanche": {
+                "Keg": 25
+            },
             "Six Fields Cult": {
                 "Can": 25
+            }
+        }
+    },
+    "07-Aug-2026": {
+        "AS01SC5417": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "Magic Moments": {
+                "375ml": 20,
+                "750ml": 20,
+                "180ml": 85
+            },
+            "Magic Moments Green Apple": {
+                "180ml": 45,
+                "375ml": 20,
+                "750ml": 10
+            },
+            "8 PM Premium Black": {
+                "750ml": 10,
+                "180ml": 25,
+                "375ml": 20
+            },
+            "After Dark": {
+                "375ml": 70,
+                "180ml": 175
+            },
+            "Magic Moments Lemon": {
+                "375ml": 20,
+                "180ml": 30
             }
         }
     }
