@@ -17636,11 +17636,11 @@
             }
         },
         "WB23C5237": {
-            "Kingfisher Original Strong": {
-                "Bottle": 1200
-            },
             "Kingfisher Lager": {
                 "Bottle": 200
+            },
+            "Kingfisher Original Strong": {
+                "Bottle": 1200
             }
         },
         "UP38BT0941": {
@@ -17665,36 +17665,36 @@
             }
         },
         "AS01UC9175": {
+            "Six Fields Pilsner": {
+                "Keg": 25
+            },
             "Six Fields Blanche": {
                 "Keg": 25
             },
-            "Six Fields Cult": {
+            "Six Fields Brute": {
+                "Bottle": 25,
                 "Can": 25
             },
-            "Six Fields Brute": {
-                "Can": 25,
-                "Bottle": 25
-            },
-            "Six Fields Pilsner": {
-                "Keg": 25
+            "Six Fields Cult": {
+                "Can": 25
             }
         }
     },
     "07-Aug-2026": {
         "AS01SC5417": {
+            "Magic Moments Lemon": {
+                "375ml": 20,
+                "180ml": 30
+            },
             "Magic Moments": {
-                "180ml": 85,
                 "750ml": 20,
+                "180ml": 85,
                 "375ml": 20
             },
             "Magic Moments Green Apple": {
                 "375ml": 20,
                 "180ml": 45,
                 "750ml": 10
-            },
-            "Magic Moments Lemon": {
-                "180ml": 30,
-                "375ml": 20
             },
             "After Dark": {
                 "375ml": 70,
@@ -17714,14 +17714,38 @@
         },
         "WB23E7199": {
             "McDowell's Luxury": {
+                "750ml": 75,
                 "375ml": 175,
-                "180ml": 700,
-                "750ml": 75
+                "180ml": 700
             },
             "McDowell's Double Oak Barrel": {
-                "375ml": 55,
                 "180ml": 75,
+                "375ml": 55,
                 "750ml": 20
+            }
+        },
+        "AS25EC4423": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice": {
+                "750ml": 115
+            },
+            "Sterling B7": {
+                "180ml": 15
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 10,
+                "375ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 100
+            },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 150
+            },
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 30
             }
         }
     }
