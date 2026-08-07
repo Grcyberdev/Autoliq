@@ -17636,11 +17636,11 @@
             }
         },
         "WB23C5237": {
-            "Kingfisher Lager": {
-                "Bottle": 200
-            },
             "Kingfisher Original Strong": {
                 "Bottle": 1200
+            },
+            "Kingfisher Lager": {
+                "Bottle": 200
             }
         },
         "UP38BT0941": {
@@ -17665,15 +17665,15 @@
             }
         },
         "AS01UC9175": {
+            "Six Fields Brute": {
+                "Bottle": 25,
+                "Can": 25
+            },
             "Six Fields Pilsner": {
                 "Keg": 25
             },
             "Six Fields Blanche": {
                 "Keg": 25
-            },
-            "Six Fields Brute": {
-                "Bottle": 25,
-                "Can": 25
             },
             "Six Fields Cult": {
                 "Can": 25
@@ -17708,43 +17708,65 @@
         },
         "AS01KC7022": {
             "Imperial Black": {
-                "180ml": 400,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 400
             }
         },
         "WB23E7199": {
+            "McDowell's Double Oak Barrel": {
+                "375ml": 55,
+                "180ml": 75,
+                "750ml": 20
+            },
             "McDowell's Luxury": {
                 "750ml": 75,
-                "375ml": 175,
-                "180ml": 700
-            },
-            "McDowell's Double Oak Barrel": {
-                "180ml": 75,
-                "375ml": 55,
-                "750ml": 20
+                "180ml": 700,
+                "375ml": 175
             }
         },
         "AS25EC4423": {
-            "Officer's Choice": {
-                "750ml": 115
-            },
             "Sterling B7": {
                 "180ml": 15
-            },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 10,
-                "375ml": 10
             },
             "Iconiq Hippy": {
                 "180ml": 100
             },
             "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 150
+                "180ml": 150,
+                "375ml": 50
             },
             "Iconiq Vodka": {
                 "750ml": 20,
                 "375ml": 30
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 10,
+                "750ml": 10
+            },
+            "Officer's Choice": {
+                "750ml": 115
+            }
+        },
+        "BR01GE1867": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "RJ52GA1125": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg Malt": {
+                "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 500,
+                "CS": 200
             }
         }
     }
