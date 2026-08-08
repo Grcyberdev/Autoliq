@@ -17360,13 +17360,6 @@
     },
     "04-Aug-2026": {
         "MH04MR1121": {
-            "Kyra Red Wine": {
-                "750ml": 25,
-                "375ml": 15
-            },
-            "FRATELLI WINES SHIRAZ ROSE": {
-                "750ml": 2
-            },
             "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
                 "750ml": 2
             },
@@ -17375,6 +17368,13 @@
             },
             "Sidus Premium Port Wine": {
                 "750ml": 4
+            },
+            "Kyra Red Wine": {
+                "750ml": 25,
+                "375ml": 15
+            },
+            "FRATELLI WINES SHIRAZ ROSE": {
+                "750ml": 2
             }
         },
         "AS04CC0758": {
@@ -17392,83 +17392,83 @@
             }
         },
         "AS25DC9946": {
-            "Sterling Reserve B7 Blended": {
-                "750ml": 10,
-                "375ml": 15
-            },
-            "Officer's Choice": {
-                "750ml": 75
+            "Officer's Choice pet": {
+                "180ml": 175,
+                "375ml": 75
             },
             "Iconiq Vodka": {
                 "750ml": 30,
                 "375ml": 50
             },
-            "Officer's Choice pet": {
-                "180ml": 175,
-                "375ml": 75
-            },
             "Officer's Choice Blue": {
                 "375ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 50
             },
             "Sterling B7": {
                 "180ml": 10
             },
-            "Iconiq Hippy": {
-                "180ml": 50
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 10,
+                "375ml": 15
             }
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "180ml": 650,
                 "750ml": 50,
+                "180ml": 650,
                 "375ml": 200
             }
         },
         "AS01UC7073": {
+            "8 PM Premium Black": {
+                "750ml": 5,
+                "375ml": 10,
+                "180ml": 15
+            },
             "Magic Moments": {
-                "180ml": 90,
+                "750ml": 30,
                 "375ml": 30,
-                "750ml": 30
+                "180ml": 90
             },
             "Magic Moments Lemon": {
                 "375ml": 20,
                 "180ml": 20
-            },
-            "8 PM Premium Black": {
-                "180ml": 15,
-                "750ml": 5,
-                "375ml": 10
             },
             "After Dark": {
                 "180ml": 80
             }
         },
         "AS01LC7060": {
-            "Antiquity Blue Ultra": {
-                "180ml": 5,
-                "375ml": 5,
-                "750ml": 5
-            },
             "Royal Challenge": {
                 "180ml": 75,
-                "750ml": 25,
-                "375ml": 50
+                "375ml": 50,
+                "750ml": 25
             },
             "Signature": {
-                "180ml": 10,
-                "375ml": 10
+                "375ml": 10,
+                "180ml": 10
             },
-            "McDowell's Rum": {
-                "375ml": 100,
-                "180ml": 125
-            },
-            "Director's Special Black": {
-                "180ml": 55,
-                "375ml": 40,
-                "750ml": 20
+            "Antiquity Blue Ultra": {
+                "750ml": 5,
+                "375ml": 5,
+                "180ml": 5
             },
             "McDowell's Luxury": {
                 "750ml": 25
+            },
+            "Director's Special Black": {
+                "750ml": 20,
+                "375ml": 40,
+                "180ml": 55
+            },
+            "McDowell's Rum": {
+                "180ml": 125,
+                "375ml": 100
             }
         }
     },
@@ -17619,14 +17619,14 @@
     "06-Aug-2026": {
         "AS01NC1686": {
             "Imperial Blue": {
-                "180ml": 500,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 500
             }
         },
         "AS03BC5273": {
             "Lords Whiskey": {
-                "750ml": 200,
-                "375ml": 150
+                "375ml": 150,
+                "750ml": 200
             }
         },
         "NL01N5863": {
@@ -17636,28 +17636,28 @@
             }
         },
         "WB23C5237": {
-            "Kingfisher Lager": {
-                "Bottle": 200
-            },
             "Kingfisher Original Strong": {
                 "Bottle": 1200
+            },
+            "Kingfisher Lager": {
+                "Bottle": 200
             }
         },
         "UP38BT0941": {
+            "V21 Original Vodka": {
+                "375ml": 20,
+                "750ml": 15,
+                "180ml": 25
+            },
             "V21 ULTRA SMOOTH VODKA LEMON": {
                 "375ml": 20,
                 "750ml": 5,
                 "180ml": 20
             },
             "V21 ULTRA SMOOTH VODKA JAMUN": {
-                "750ml": 10,
                 "180ml": 40,
-                "375ml": 20
-            },
-            "V21 Original Vodka": {
                 "375ml": 20,
-                "750ml": 15,
-                "180ml": 25
+                "750ml": 10
             },
             "V21 Green Apple Vodka": {
                 "375ml": 10,
@@ -17668,12 +17668,12 @@
             "Six Fields Pilsner": {
                 "Keg": 25
             },
-            "Six Fields Cult": {
+            "Six Fields Brute": {
+                "Bottle": 25,
                 "Can": 25
             },
-            "Six Fields Brute": {
-                "Can": 25,
-                "Bottle": 25
+            "Six Fields Cult": {
+                "Can": 25
             },
             "Six Fields Blanche": {
                 "Keg": 25
@@ -17770,21 +17770,58 @@
     "08-Aug-2026": {
         "BR01GE6309": {
             "Simba": {
-                "Can": 380,
-                "Bottle": 980
+                "Bottle": 980,
+                "Can": 380
             }
         },
         "NL01N5863": {
             "Simba": {
-                "Bottle": 1000,
-                "Can": 360
+                "Can": 360,
+                "Bottle": 1000
             }
         },
         "AS23DC1348": {
-            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
             "Simba": {
-                "Can": 200,
-                "Bottle": 480
+                "Bottle": 480,
+                "Can": 200
+            }
+        },
+        "AS01JC1967": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Blender's Pride Exclusive": {
+                "375ml": 25,
+                "750ml": 25,
+                "180ml": 25
+            },
+            "Oaken Glow": {
+                "180ml": 20,
+                "375ml": 10,
+                "750ml": 10
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 20,
+                "180ml": 30,
+                "750ml": 20
+            },
+            "Royal Stag": {
+                "750ml": 50,
+                "180ml": 250,
+                "375ml": 50
+            },
+            "Blender's Pride Four Elements": {
+                "750ml": 5,
+                "180ml": 5
+            },
+            "100 Pipers": {
+                "750ml": 2,
+                "180ml": 3
+            }
+        },
+        "AS01PC8901": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "180ml": 700,
+                "375ml": 200
             }
         }
     }
