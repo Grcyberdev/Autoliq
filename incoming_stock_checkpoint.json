@@ -17769,10 +17769,16 @@
     },
     "08-Aug-2026": {
         "BR01GE6309": {
+            "Simba": {
+                "Bottle": 980,
+                "Can": 380
+            }
+        },
+        "NL01N5863": {
             "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
             "Simba": {
-                "Can": 380,
-                "Bottle": 980
+                "Can": 360,
+                "Bottle": 1000
             }
         }
     }
