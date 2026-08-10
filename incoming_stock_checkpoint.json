@@ -17843,6 +17843,18 @@
                 "Bottle": 400,
                 "Can": 280
             }
+        },
+        "AS03BC8401": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "AS01KC8177": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CA": 700
+            }
         }
     }
 }
