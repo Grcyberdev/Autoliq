@@ -17830,13 +17830,12 @@
     },
     "10-Aug-2026": {
         "WB23D5167": {
-            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
             "Simba": {
-                "Can": 110,
-                "Bottle": 500
+                "Bottle": 1000,
+                "Can": 260
             },
             "Simba Wild Jungle": {
-                "Can": 70
+                "Can": 100
             }
         }
     }
