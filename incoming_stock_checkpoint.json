@@ -17857,16 +17857,39 @@
     },
     "11-Aug-2026": {
         "AS01RC4909": {
-            "AMRUT FUSION SINGLE MALT WHISKY": {
-                "750ml": 3
+            "PEDRERA MONASTRELL RED WINE": {
+                "750ml": 5
+            },
+            "LACHICA TEQUILA BLANCO": {
+                "JQ": 5
+            },
+            "CAVICCHIOLI LAMBRUSCO ROSSO WINE": {
+                "750ml": 5
+            },
+            "AG 47 MALBEC SHIRAZ": {
+                "750ml": 5
+            },
+            "AG 47 CHARDONNAY": {
+                "750ml": 2
             },
             "AMRUT`S MAQINTOSH SPECIAL EDITION WHISKY": {
                 "750ml": 27
+            },
+            "AMRUT FUSION SINGLE MALT WHISKY": {
+                "750ml": 3
             }
         },
         "AS25FC2182": {
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "AS01UC8440": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "375ml": 100,
+                "750ml": 125,
+                "180ml": 675
             }
         }
     }
