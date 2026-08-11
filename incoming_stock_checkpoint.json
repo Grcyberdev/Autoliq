@@ -17906,10 +17906,9 @@
             }
         },
         "AS01FC3845": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
             "Officer's Choice pet": {
-                "375ml": 25,
-                "180ml": 250
+                "180ml": 250,
+                "375ml": 25
             },
             "Iconiq Hippy": {
                 "180ml": 115
@@ -17927,6 +17926,15 @@
             "Iconiq Vodka": {
                 "750ml": 20,
                 "375ml": 20
+            }
+        },
+        "RJ52GA1800": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg Malt": {
+                "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
             }
         }
     }
