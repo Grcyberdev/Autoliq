@@ -161,6 +161,12 @@ LIQUOR_NAME_MAPPING = {
     "TEACHER`S HIGHLAND CREAM RESERVE BLENDED SCOTCH WHISKY": "Teachers Highland Cream",
     "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY SELECT": "Laphroig Islay Single Malt",
     "BUSHMILLS BLACK BUSH IRISH WHISKY": "Bushmills Black Bush Whisky",
+    "AMRUT FUSION SINGLE MALT WHISKY": "Amrut Fusion",
+    "AMRUT`S MAQINTOSH SPECIAL EDITION WHISKY": "Amrut's Maqintosh",
+    "JAGERMEISTER LIQUEUR ARGENTINA 2026 EDITION": "Jager Liqeur Argentina 2026 Edition",
+    "JAGERMEISTER LIQUEUR BRAZIL 2026 EDITION": "Jager Liqeur Brazil 2026 Edition",
+    "LAPHROAIG ISLAY SINGLE MALT SCOTCH WHISKY AGED 10 YEARS": "Laphroig Islay Single Malt 10 Yrs",
+    "WOODFORD RESERVE KENTUCKY STRAIGHT BOURBON WHISKEY": "Woodford Reserve Kentucky",
     
     
     
@@ -236,6 +242,7 @@ LIQUOR_NAME_MAPPING = {
     "SIX FIELDS PILSNER RICH HOPS BEER": "Six Fields Pilsner",
     "GOLDFLOW SUPER STRONG PREMIUM BEER": "Goldflow Strong",
     "BRO CODE ORIGINAL XV": "Bro Code XV",
+    "DABANG PREMIUM STRONG BEER": "Dabang Strong",
 
 
 
@@ -318,6 +325,9 @@ LIQUOR_NAME_MAPPING = {
     "V21 ULTRA SMOOTH VODKA GREEN APPLE": "V21 Green Apple Vodka",
     "V21 ULTRA SMOOTH VODKA ORIGINAL": "V21 Original Vodka",
     "SMIRNOFF MIRCHI MANGO TRIPLE DISTILLED FLAVOURED VODKA": "Smirnoff Mirchi Mango",
+    "LACHICA TEQUILA BLANCO": "LaChica Tequila Blanco",
+    "V21 ULTRA SMOOTH VODKA JAMUN": "V21 Jamun Vodka",
+    "V21 ULTRA SMOOTH VODKA LEMON": "V21 Lemon Vodka",
 
 
 
@@ -409,6 +419,13 @@ LIQUOR_NAME_MAPPING = {
     "JINRO PEACH WINE": "Jinro Peach Wine",
     "JINRO PLUM WINE": "Jinro Plum Wine",
     "JINRO STRAWBERRY WINE": "Jinro Strawberry Wine",
+    "AG 47 CHARDONNAY": "Ag 47 Chardonnay",
+    "AG 47 MALBEC SHIRAZ": "Ag 47 Malbec Shiraz",
+    "CAVICCHIOLI LAMBRUSCO ROSSO WINE": "Cavicchioli Lambrusco Rosso Wine",
+    "FRATELLI MASTER SELECTION SHIRAZ CABERNET": "Fratelli Master Selection Shiraz Cabernet",
+    "FRATELLI WINES SHIRAZ ROSE": "Fratelli Shiraz Rose",
+    "PEDRERA MONASTRELL RED WINE": "Pedrera Monastrell Red Wine",
+    "ZIVA RED WINE": "Ziva Red Wine",
 
 
 
