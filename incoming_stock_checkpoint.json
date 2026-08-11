@@ -17858,11 +17858,11 @@
     },
     "11-Aug-2026": {
         "AS01RC4909": {
-            "Cavicchioli Lambrusco Rosso Wine": {
-                "750ml": 5
-            },
             "LaChica Tequila Blanco": {
                 "JQ": 5
+            },
+            "Cavicchioli Lambrusco Rosso Wine": {
+                "750ml": 5
             },
             "Pedrera Monastrell Red Wine": {
                 "750ml": 5
@@ -17887,15 +17887,15 @@
         },
         "AS01UC8440": {
             "AC Black Luxury": {
-                "375ml": 100,
                 "750ml": 125,
+                "375ml": 100,
                 "180ml": 675
             }
         },
         "AS01TC6107": {
             "Rockford Reserve": {
-                "750ml": 20,
                 "375ml": 15,
+                "750ml": 20,
                 "180ml": 15
             }
         },
@@ -17903,6 +17903,30 @@
             "Masti": {
                 "CA": 600,
                 "CS": 100
+            }
+        },
+        "AS01FC3845": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice pet": {
+                "375ml": 25,
+                "180ml": 250
+            },
+            "Iconiq Hippy": {
+                "180ml": 115
+            },
+            "Sterling B7": {
+                "180ml": 20
+            },
+            "Officer's Choice": {
+                "750ml": 25
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 10
+            },
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 20
             }
         }
     }
