@@ -17529,8 +17529,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         },
         "AS25EC4977": {
@@ -17762,8 +17762,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         }
     },
@@ -17857,13 +17857,13 @@
     },
     "11-Aug-2026": {
         "AS01RC4909": {
-            "PEDRERA MONASTRELL RED WINE": {
+            "CAVICCHIOLI LAMBRUSCO ROSSO WINE": {
                 "750ml": 5
             },
             "LACHICA TEQUILA BLANCO": {
                 "JQ": 5
             },
-            "CAVICCHIOLI LAMBRUSCO ROSSO WINE": {
+            "PEDRERA MONASTRELL RED WINE": {
                 "750ml": 5
             },
             "AG 47 MALBEC SHIRAZ": {
@@ -17889,6 +17889,21 @@
                 "375ml": 100,
                 "750ml": 125,
                 "180ml": 675
+            }
+        },
+        "AS01TC6107": {
+            "_TelegramSupplier": "Modi Distillery IMFL Wholesale Warehouse",
+            "Rockford Reserve": {
+                "750ml": 20,
+                "375ml": 15,
+                "180ml": 15
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 600,
+                "CS": 100
             }
         }
     }
