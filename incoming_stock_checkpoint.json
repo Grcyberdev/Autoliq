@@ -17333,43 +17333,38 @@
                 "750ml": 100,
                 "375ml": 300,
                 "180ml": 500
-            },
-            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
+            }
         }
     },
     "03-Aug-2026": {
         "HR38AK0064": {
             "Kingfisher Original Strong": {
                 "Bottle": 1400
-            },
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
+            }
         },
         "AS01FC6159": {
             "McDowell's Rum": {
                 "750ml": 300,
                 "180ml": 600
-            },
-            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
+            }
         },
         "AS01DD0037": {
             "Kingfisher Original Strong": {
                 "Bottle": 1400
-            },
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
+            }
         },
         "RJ14GG0135": {
             "Tuborg": {
                 "Bottle": 1200
-            },
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd."
+            }
         }
     },
     "04-Aug-2026": {
         "MH04MR1121": {
-            "FRATELLI MASTER SELECTION SHIRAZ CABERNET": {
+            "Fratelli Master Selection Shiraz Cabernet": {
                 "750ml": 2
             },
-            "ZIVA RED WINE": {
+            "Ziva Red Wine": {
                 "750ml": 2
             },
             "Sidus Premium Port Wine": {
@@ -17379,10 +17374,9 @@
                 "750ml": 25,
                 "375ml": 15
             },
-            "FRATELLI WINES SHIRAZ ROSE": {
+            "Fratelli Shiraz Rose": {
                 "750ml": 2
-            },
-            "_TelegramSupplier": "Fratelli Wines Pvt. Ltd."
+            }
         },
         "AS04CC0758": {
             "Rhino No 1": {
@@ -17391,14 +17385,12 @@
             },
             "Rhino Whiskey": {
                 "CA": 100
-            },
-            "_TelegramSupplier": "Associated Alcohol And Beverages Company"
+            }
         },
         "WB51A5511": {
             "He Man 9000": {
                 "Bottle": 1400
-            },
-            "_TelegramSupplier": "Rhino Agencies Ltd."
+            }
         },
         "AS25DC9946": {
             "Officer's Choice pet": {
@@ -17424,16 +17416,14 @@
             "Sterling Reserve B7 Blended": {
                 "750ml": 10,
                 "375ml": 15
-            },
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries"
+            }
         },
         "AS01GC6796": {
             "AC Black Luxury": {
                 "750ml": 50,
                 "180ml": 650,
                 "375ml": 200
-            },
-            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL"
+            }
         },
         "AS01UC7073": {
             "8 PM Premium Black": {
@@ -17452,8 +17442,7 @@
             },
             "After Dark": {
                 "180ml": 80
-            },
-            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries"
+            }
         },
         "AS01LC7060": {
             "Royal Challenge": {
@@ -17481,8 +17470,7 @@
             "McDowell's Rum": {
                 "180ml": 125,
                 "375ml": 100
-            },
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL"
+            }
         }
     },
     "05-Aug-2026": {
@@ -17494,16 +17482,14 @@
             },
             "Vinho Porto Port Wine": {
                 "375ml": 5
-            },
-            "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)"
+            }
         },
         "AS01PC0693": {
             "McDowell's Rum": {
                 "180ml": 500,
                 "750ml": 300,
                 "375ml": 100
-            },
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL"
+            }
         },
         "AS07CC2717": {
             "William Lawson": {
@@ -17540,15 +17526,13 @@
             },
             "Camino Tequila": {
                 "750ml": 5
-            },
-            "_TelegramSupplier": "Bacardi India Pvt. Ltd."
+            }
         },
         "AS03BC8344": {
             "Masti": {
                 "CS": 200,
                 "CA": 500
-            },
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
+            }
         },
         "AS25EC4977": {
             "Budweiser Magnum": {
@@ -17565,8 +17549,7 @@
             "Corona": {
                 "Can": 25,
                 "Pint": 50
-            },
-            "_TelegramSupplier": "Anheuser Busch Inbev India Limited"
+            }
         },
         "RJ14GG0360": {
             "Tuborg Malt": {
@@ -17574,8 +17557,7 @@
             },
             "Tuborg": {
                 "Bottle": 600
-            },
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd."
+            }
         },
         "RJ52GA3015": {
             "Tuborg Malt": {
@@ -17583,8 +17565,7 @@
             },
             "Tuborg": {
                 "Bottle": 600
-            },
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd."
+            }
         },
         "AS01QC4009": {
             "Ballantines": {
@@ -17622,21 +17603,18 @@
             },
             "Beefeater": {
                 "750ml": 5
-            },
-            "_TelegramSupplier": "Pernod Ricard India Private Limited"
+            }
         },
         "AS01FC3252": {
             "Kingfisher Original Strong": {
                 "Can": 1400
-            },
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
+            }
         },
         "AS01KC8177": {
             "Masti Special": {
                 "CA": 500,
                 "CS": 200
-            },
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
+            }
         }
     },
     "06-Aug-2026": {
@@ -17644,22 +17622,19 @@
             "Imperial Blue": {
                 "375ml": 50,
                 "180ml": 500
-            },
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd."
+            }
         },
         "AS03BC5273": {
             "Lords Whiskey": {
                 "375ml": 150,
                 "750ml": 200
-            },
-            "_TelegramSupplier": "Associated Alcohol And Beverages Company"
+            }
         },
         "NL01N5863": {
             "Simba": {
                 "Can": 360,
                 "Bottle": 1000
-            },
-            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries"
+            }
         },
         "WB23C5237": {
             "Kingfisher Original Strong": {
@@ -17667,8 +17642,7 @@
             },
             "Kingfisher Lager": {
                 "Bottle": 200
-            },
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
+            }
         },
         "UP38BT0941": {
             "V21 Original Vodka": {
@@ -17676,12 +17650,12 @@
                 "750ml": 15,
                 "180ml": 25
             },
-            "V21 ULTRA SMOOTH VODKA LEMON": {
+            "V21 Lemon Vodka": {
                 "375ml": 20,
                 "750ml": 5,
                 "180ml": 20
             },
-            "V21 ULTRA SMOOTH VODKA JAMUN": {
+            "V21 Jamun Vodka": {
                 "180ml": 40,
                 "375ml": 20,
                 "750ml": 10
@@ -17689,8 +17663,7 @@
             "V21 Green Apple Vodka": {
                 "375ml": 10,
                 "180ml": 15
-            },
-            "_TelegramSupplier": "Great Galleon Ventures Limited"
+            }
         },
         "AS01UC9175": {
             "Six Fields Pilsner": {
@@ -17705,8 +17678,7 @@
             },
             "Six Fields Blanche": {
                 "Keg": 25
-            },
-            "_TelegramSupplier": "Devans Modern Breweries Ltd."
+            }
         }
     },
     "07-Aug-2026": {
@@ -17733,15 +17705,13 @@
             "Magic Moments Lemon": {
                 "375ml": 20,
                 "180ml": 30
-            },
-            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries"
+            }
         },
         "AS01KC7022": {
             "Imperial Black": {
                 "180ml": 400,
                 "375ml": 150
-            },
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd."
+            }
         },
         "WB23E7199": {
             "McDowell's Double Oak Barrel": {
@@ -17753,8 +17723,7 @@
                 "375ml": 175,
                 "180ml": 700,
                 "750ml": 75
-            },
-            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
+            }
         },
         "AS25EC4423": {
             "Iconiq Vodka": {
@@ -17777,14 +17746,12 @@
             },
             "Officer's Choice": {
                 "750ml": 115
-            },
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries"
+            }
         },
         "BR01GE1867": {
             "Tuborg": {
                 "Bottle": 1200
-            },
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd."
+            }
         },
         "RJ52GA1125": {
             "Tuborg Malt": {
@@ -17792,15 +17759,13 @@
             },
             "Tuborg": {
                 "Bottle": 600
-            },
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd."
+            }
         },
         "AS03BC8344": {
             "Masti": {
                 "CS": 200,
                 "CA": 500
-            },
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
+            }
         }
     },
     "08-Aug-2026": {
@@ -17808,22 +17773,19 @@
             "Simba": {
                 "Bottle": 980,
                 "Can": 380
-            },
-            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries"
+            }
         },
         "NL01N5863": {
             "Simba": {
                 "Can": 360,
                 "Bottle": 1000
-            },
-            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries"
+            }
         },
         "AS23DC1348": {
             "Simba": {
                 "Bottle": 480,
                 "Can": 200
-            },
-            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries"
+            }
         },
         "AS01JC1967": {
             "Blender's Pride Exclusive": {
@@ -17853,21 +17815,18 @@
             "100 Pipers": {
                 "750ml": 2,
                 "180ml": 3
-            },
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
+            }
         },
         "AS01PC8901": {
             "McDowell's Rum": {
                 "180ml": 700,
                 "375ml": 200
-            },
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL"
+            }
         },
         "AS01EC6089": {
             "Budweiser Magnum": {
                 "Bottle": 500
-            },
-            "_TelegramSupplier": "Anheuser Busch Inbev India Limited"
+            }
         }
     },
     "10-Aug-2026": {
@@ -17899,25 +17858,25 @@
     },
     "11-Aug-2026": {
         "AS01RC4909": {
-            "CAVICCHIOLI LAMBRUSCO ROSSO WINE": {
+            "Cavicchioli Lambrusco Rosso Wine": {
                 "750ml": 5
             },
-            "LACHICA TEQUILA BLANCO": {
+            "LaChica Tequila Blanco": {
                 "JQ": 5
             },
-            "PEDRERA MONASTRELL RED WINE": {
+            "Pedrera Monastrell Red Wine": {
                 "750ml": 5
             },
-            "AG 47 MALBEC SHIRAZ": {
+            "Ag 47 Malbec Shiraz": {
                 "750ml": 5
             },
-            "AG 47 CHARDONNAY": {
+            "Ag 47 Chardonnay": {
                 "750ml": 2
             },
-            "AMRUT`S MAQINTOSH SPECIAL EDITION WHISKY": {
+            "Amrut's Maqintosh": {
                 "750ml": 27
             },
-            "AMRUT FUSION SINGLE MALT WHISKY": {
+            "Amrut Fusion": {
                 "750ml": 3
             }
         },
@@ -17934,7 +17893,6 @@
             }
         },
         "AS01TC6107": {
-            "_TelegramSupplier": "Modi Distillery IMFL Wholesale Warehouse",
             "Rockford Reserve": {
                 "750ml": 20,
                 "375ml": 15,
@@ -17942,7 +17900,6 @@
             }
         },
         "AS03BC8344": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 600,
                 "CS": 100
