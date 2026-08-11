@@ -17857,11 +17857,17 @@
     },
     "11-Aug-2026": {
         "AS01RC4909": {
-            "AMRUT`S MAQINTOSH SPECIAL EDITION WHISKY": {
-                "750ml": 27
-            },
             "AMRUT FUSION SINGLE MALT WHISKY": {
                 "750ml": 3
+            },
+            "AMRUT`S MAQINTOSH SPECIAL EDITION WHISKY": {
+                "750ml": 27
+            }
+        },
+        "AS25FC2182": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
             }
         }
     }
