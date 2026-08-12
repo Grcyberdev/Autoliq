@@ -17858,8 +17858,8 @@
     },
     "11-Aug-2026": {
         "AS01RC4909": {
-            "Ag 47 Chardonnay": {
-                "750ml": 2
+            "LaChica Tequila Blanco": {
+                "JQ": 5
             },
             "Cavicchioli Lambrusco Rosso Wine": {
                 "750ml": 5
@@ -17870,14 +17870,14 @@
             "Ag 47 Malbec Shiraz": {
                 "750ml": 5
             },
-            "LaChica Tequila Blanco": {
-                "JQ": 5
-            },
-            "Amrut's Maqintosh": {
-                "750ml": 27
+            "Ag 47 Chardonnay": {
+                "750ml": 2
             },
             "Amrut Fusion": {
                 "750ml": 3
+            },
+            "Amrut's Maqintosh": {
+                "750ml": 27
             }
         },
         "AS25FC2182": {
@@ -17888,15 +17888,15 @@
         "AS01UC8440": {
             "AC Black Luxury": {
                 "750ml": 125,
-                "375ml": 100,
-                "180ml": 675
+                "180ml": 675,
+                "375ml": 100
             }
         },
         "AS01TC6107": {
             "Rockford Reserve": {
-                "750ml": 20,
+                "180ml": 15,
                 "375ml": 15,
-                "180ml": 15
+                "750ml": 20
             }
         },
         "AS03BC8344": {
@@ -17906,17 +17906,9 @@
             }
         },
         "AS01FC3845": {
-            "Iconiq Vodka": {
-                "375ml": 20,
-                "750ml": 20
-            },
             "Sterling Reserve B7 Blended": {
-                "375ml": 15,
-                "750ml": 10
-            },
-            "Officer's Choice pet": {
-                "375ml": 25,
-                "180ml": 250
+                "750ml": 10,
+                "375ml": 15
             },
             "Officer's Choice": {
                 "750ml": 25
@@ -17924,19 +17916,36 @@
             "Sterling B7": {
                 "180ml": 20
             },
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 20
+            },
+            "Officer's Choice pet": {
+                "180ml": 250,
+                "375ml": 25
+            },
             "Iconiq Hippy": {
                 "180ml": 115
             }
         },
         "RJ52GA1800": {
-            "Tuborg": {
-                "Bottle": 600
-            },
             "Tuborg Malt": {
                 "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
             }
         },
         "AS01TC4767": {
+            "Signature": {
+                "180ml": 10,
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Director's Special Black": {
+                "375ml": 25,
+                "180ml": 90
+            },
             "Signature Rare": {
                 "750ml": 2,
                 "180ml": 3,
@@ -17954,15 +17963,6 @@
                 "750ml": 50,
                 "180ml": 140,
                 "375ml": 50
-            },
-            "Director's Special Black": {
-                "180ml": 90,
-                "375ml": 25
-            },
-            "Signature": {
-                "750ml": 5,
-                "375ml": 10,
-                "180ml": 10
             }
         },
         "AS01KC5889": {
@@ -17973,8 +17973,8 @@
         },
         "AS01KC7913": {
             "McDowell's Luxury": {
-                "180ml": 400,
                 "750ml": 75,
+                "180ml": 400,
                 "375ml": 75
             }
         },
@@ -17992,17 +17992,17 @@
                 "Can": 25
             },
             "Budweiser Magnum": {
-                "Can": 100,
-                "Bottle": 350
+                "Bottle": 350,
+                "Can": 100
             }
         }
     },
     "12-Aug-2026": {
         "AS25EC2957": {
             "Vat 69": {
-                "180ml": 5,
+                "375ml": 4,
                 "750ml": 6,
-                "375ml": 4
+                "180ml": 5
             },
             "Black Dog Centenary": {
                 "180ml": 1,
@@ -18032,6 +18032,10 @@
             "Baileys": {
                 "750ml": 4
             },
+            "JW Black Label": {
+                "Quarter": 2,
+                "750ml": 8
+            },
             "JW Blonde": {
                 "JQ": 2
             },
@@ -18041,10 +18045,6 @@
             },
             "JW Blue Label": {
                 "Full": 2
-            },
-            "JW Black Label": {
-                "750ml": 8,
-                "Quarter": 2
             },
             "Royal Challenge American Pride": {
                 "375ml": 3,
@@ -18062,24 +18062,24 @@
             }
         },
         "NL01L6323": {
-            "Royal Stag": {
-                "180ml": 550,
-                "750ml": 150,
-                "375ml": 250
+            "Blender's Pride Exclusive": {
+                "375ml": 20,
+                "180ml": 30
             },
             "Royal Stag Barrel": {
                 "750ml": 20,
                 "375ml": 15,
                 "180ml": 15
             },
-            "Blender's Pride Exclusive": {
-                "180ml": 30,
-                "375ml": 20
-            },
             "Oaken Glow": {
                 "750ml": 10,
                 "180ml": 20,
                 "375ml": 10
+            },
+            "Royal Stag": {
+                "180ml": 550,
+                "750ml": 150,
+                "375ml": 250
             },
             "Royal Stag Double Dark": {
                 "750ml": 10
@@ -18087,12 +18087,11 @@
         },
         "AS01NC0696": {
             "Imperial Blue": {
-                "180ml": 450,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 450
             }
         },
         "WB23E7099": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
                 "375ml": 100,
                 "180ml": 800,
@@ -18107,6 +18106,25 @@
                 "750ml": 15,
                 "375ml": 25,
                 "180ml": 10
+            }
+        },
+        "AS01KC2111": {
+            "_TelegramSupplier": "Saaran Industries",
+            "KD 50 Whiskey": {
+                "375ml": 200,
+                "750ml": 200
+            }
+        },
+        "UP21CT4743": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS18C7825": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
