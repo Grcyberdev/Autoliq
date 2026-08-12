@@ -17683,10 +17683,19 @@
     },
     "07-Aug-2026": {
         "AS01SC5417": {
-            "Magic Moments Green Apple": {
-                "180ml": 45,
+            "After Dark": {
+                "180ml": 175,
+                "375ml": 70
+            },
+            "Magic Moments": {
                 "375ml": 20,
-                "750ml": 10
+                "750ml": 20,
+                "180ml": 85
+            },
+            "Magic Moments Green Apple": {
+                "750ml": 10,
+                "180ml": 45,
+                "375ml": 20
             },
             "8 PM Premium Black": {
                 "750ml": 10,
@@ -17696,15 +17705,6 @@
             "Magic Moments Lemon": {
                 "375ml": 20,
                 "180ml": 30
-            },
-            "Magic Moments": {
-                "750ml": 20,
-                "180ml": 85,
-                "375ml": 20
-            },
-            "After Dark": {
-                "180ml": 175,
-                "375ml": 70
             }
         },
         "AS01KC7022": {
@@ -17714,35 +17714,35 @@
             }
         },
         "WB23E7199": {
-            "McDowell's Luxury": {
-                "750ml": 75,
-                "180ml": 700,
-                "375ml": 175
-            },
             "McDowell's Double Oak Barrel": {
-                "180ml": 75,
                 "375ml": 55,
+                "180ml": 75,
                 "750ml": 20
+            },
+            "McDowell's Luxury": {
+                "375ml": 175,
+                "180ml": 700,
+                "750ml": 75
             }
         },
         "AS25EC4423": {
-            "Sterling B7": {
-                "180ml": 15
-            },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 10,
-                "375ml": 10
-            },
-            "Iconiq Hippy": {
-                "180ml": 100
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 30
             },
             "Officer's Choice pet": {
                 "180ml": 150,
                 "375ml": 50
             },
-            "Iconiq Vodka": {
-                "750ml": 20,
-                "375ml": 30
+            "Sterling Reserve B7 Blended": {
+                "375ml": 10,
+                "750ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 100
+            },
+            "Sterling B7": {
+                "180ml": 15
             },
             "Officer's Choice": {
                 "750ml": 115
@@ -17754,11 +17754,11 @@
             }
         },
         "RJ52GA1125": {
-            "Tuborg": {
-                "Bottle": 600
-            },
             "Tuborg Malt": {
                 "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
             }
         },
         "AS03BC8344": {
@@ -17999,30 +17999,6 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
-            "JW Black Label": {
-                "Quarter": 2,
-                "750ml": 8
-            },
-            "JW Blue Label": {
-                "Full": 2
-            },
-            "JW Red Label": {
-                "375ml": 5,
-                "750ml": 10
-            },
-            "JW Blonde": {
-                "JQ": 2
-            },
-            "Baileys": {
-                "750ml": 4
-            },
-            "Tanqueray Gin": {
-                "750ml": 2
-            },
-            "Royal Challenge American Pride": {
-                "375ml": 3,
-                "180ml": 7
-            },
             "Vat 69": {
                 "180ml": 5,
                 "750ml": 6,
@@ -18047,8 +18023,32 @@
             },
             "Smirnoff": {
                 "180ml": 10,
-                "375ml": 5,
-                "750ml": 10
+                "750ml": 10,
+                "375ml": 5
+            },
+            "Tanqueray Gin": {
+                "750ml": 2
+            },
+            "Baileys": {
+                "750ml": 4
+            },
+            "JW Blonde": {
+                "JQ": 2
+            },
+            "JW Red Label": {
+                "750ml": 10,
+                "375ml": 5
+            },
+            "JW Blue Label": {
+                "Full": 2
+            },
+            "JW Black Label": {
+                "750ml": 8,
+                "Quarter": 2
+            },
+            "Royal Challenge American Pride": {
+                "375ml": 3,
+                "180ml": 7
             }
         },
         "WB23E0100": {
@@ -18062,34 +18062,51 @@
             }
         },
         "NL01L6323": {
+            "Royal Stag": {
+                "180ml": 550,
+                "750ml": 150,
+                "375ml": 250
+            },
+            "Royal Stag Barrel": {
+                "750ml": 20,
+                "375ml": 15,
+                "180ml": 15
+            },
             "Blender's Pride Exclusive": {
                 "180ml": 30,
                 "375ml": 20
             },
-            "Royal Stag Barrel": {
-                "375ml": 15,
-                "750ml": 20,
-                "180ml": 15
-            },
             "Oaken Glow": {
+                "750ml": 10,
                 "180ml": 20,
-                "375ml": 10,
-                "750ml": 10
+                "375ml": 10
             },
             "Royal Stag Double Dark": {
                 "750ml": 10
-            },
-            "Royal Stag": {
-                "750ml": 150,
-                "375ml": 250,
-                "180ml": 550
             }
         },
         "AS01NC0696": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Imperial Blue": {
                 "180ml": 450,
                 "375ml": 100
+            }
+        },
+        "WB23E7099": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "375ml": 100,
+                "180ml": 800,
+                "750ml": 325
+            },
+            "Royal Challenge": {
+                "375ml": 75,
+                "180ml": 75,
+                "750ml": 25
+            },
+            "Director's Special Black": {
+                "750ml": 15,
+                "375ml": 25,
+                "180ml": 10
             }
         }
     }
