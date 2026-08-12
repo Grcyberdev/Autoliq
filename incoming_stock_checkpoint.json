@@ -17999,9 +17999,14 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
+            "Smirnoff": {
+                "180ml": 10,
+                "375ml": 5,
+                "750ml": 10
+            },
             "Smirnoff Minty Jamun Vodka": {
-                "180ml": 35,
-                "750ml": 5
+                "750ml": 5,
+                "180ml": 35
             },
             "Smirnoff Mirchi Mango": {
                 "750ml": 7,
@@ -18044,11 +18049,6 @@
             },
             "JW Blonde": {
                 "JQ": 2
-            },
-            "Smirnoff": {
-                "180ml": 10,
-                "375ml": 5,
-                "750ml": 10
             }
         },
         "WB23E0100": {
@@ -18063,21 +18063,21 @@
         },
         "NL01L6323": {
             "Royal Stag": {
-                "750ml": 150,
                 "180ml": 550,
+                "750ml": 150,
                 "375ml": 250
             },
             "Oaken Glow": {
-                "375ml": 10,
                 "180ml": 20,
-                "750ml": 10
-            },
-            "Royal Stag Double Dark": {
+                "375ml": 10,
                 "750ml": 10
             },
             "Blender's Pride Exclusive": {
                 "375ml": 20,
                 "180ml": 30
+            },
+            "Royal Stag Double Dark": {
+                "750ml": 10
             },
             "Royal Stag Barrel": {
                 "180ml": 15,
@@ -18093,25 +18093,25 @@
         },
         "WB23E7099": {
             "McDowell's Rum": {
+                "375ml": 100,
                 "750ml": 325,
-                "180ml": 800,
-                "375ml": 100
-            },
-            "Royal Challenge": {
-                "750ml": 25,
-                "375ml": 75,
-                "180ml": 75
+                "180ml": 800
             },
             "Director's Special Black": {
                 "180ml": 10,
                 "375ml": 25,
                 "750ml": 15
+            },
+            "Royal Challenge": {
+                "375ml": 75,
+                "750ml": 25,
+                "180ml": 75
             }
         },
         "AS01KC2111": {
             "KD 50 Whiskey": {
-                "750ml": 200,
-                "375ml": 200
+                "375ml": 200,
+                "750ml": 200
             }
         },
         "UP21CT4743": {
@@ -18125,17 +18125,37 @@
             }
         },
         "AS32C4703": {
-            "_TelegramSupplier": "Devans Modern Breweries Ltd.",
-            "Six Fields Brute": {
-                "Can": 25,
-                "Bottle": 65
-            },
             "Six Fields Pilsner": {
-                "Bottle": 10,
-                "Can": 10
+                "Can": 10,
+                "Bottle": 10
             },
             "Six Fields Cult": {
                 "Can": 20
+            },
+            "Six Fields Brute": {
+                "Can": 25,
+                "Bottle": 65
+            }
+        },
+        "AS01QC0147": {
+            "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries",
+            "Calenter Premium": {
+                "750ml": 15,
+                "180ml": 85
+            }
+        },
+        "AS25EC7464": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "375ml": 100,
+                "180ml": 450
+            }
+        },
+        "AS01HC6690": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Brahmaputra Breweries Llp",
+            "Godfather Select": {
+                "Can": 300,
+                "Bottle": 380
             }
         }
     }
