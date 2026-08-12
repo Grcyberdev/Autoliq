@@ -17683,15 +17683,15 @@
     },
     "07-Aug-2026": {
         "AS01SC5417": {
+            "Magic Moments Green Apple": {
+                "375ml": 20,
+                "750ml": 10,
+                "180ml": 45
+            },
             "Magic Moments": {
                 "180ml": 85,
                 "750ml": 20,
                 "375ml": 20
-            },
-            "Magic Moments Green Apple": {
-                "375ml": 20,
-                "180ml": 45,
-                "750ml": 10
             },
             "Magic Moments Lemon": {
                 "180ml": 30,
@@ -17715,9 +17715,9 @@
         },
         "WB23E7199": {
             "McDowell's Luxury": {
-                "375ml": 175,
+                "750ml": 75,
                 "180ml": 700,
-                "750ml": 75
+                "375ml": 175
             },
             "McDowell's Double Oak Barrel": {
                 "180ml": 75,
@@ -17726,23 +17726,23 @@
             }
         },
         "AS25EC4423": {
+            "Iconiq Vodka": {
+                "375ml": 30,
+                "750ml": 20
+            },
+            "Officer's Choice": {
+                "750ml": 115
+            },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 150
+            },
             "Sterling B7": {
                 "180ml": 15
             },
             "Sterling Reserve B7 Blended": {
                 "750ml": 10,
                 "375ml": 10
-            },
-            "Iconiq Vodka": {
-                "750ml": 20,
-                "375ml": 30
-            },
-            "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 150
-            },
-            "Officer's Choice": {
-                "750ml": 115
             },
             "Iconiq Hippy": {
                 "180ml": 100
@@ -17754,11 +17754,11 @@
             }
         },
         "RJ52GA1125": {
-            "Tuborg": {
-                "Bottle": 600
-            },
             "Tuborg Malt": {
                 "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
             }
         },
         "AS03BC8344": {
@@ -17994,6 +17994,62 @@
             "Budweiser Magnum": {
                 "Can": 100,
                 "Bottle": 350
+            }
+        }
+    },
+    "12-Aug-2026": {
+        "AS25EC2957": {
+            "_TelegramSupplier": "United Spirits Limited",
+            "Smirnoff": {
+                "375ml": 5,
+                "180ml": 10,
+                "750ml": 10
+            },
+            "JW Blonde": {
+                "JQ": 2
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 5,
+                "180ml": 35
+            },
+            "Smirnoff Mirchi Mango": {
+                "750ml": 7,
+                "180ml": 20
+            },
+            "Black & White": {
+                "375ml": 5,
+                "750ml": 20,
+                "180ml": 5
+            },
+            "Black Dog Centenary": {
+                "750ml": 2,
+                "180ml": 1
+            },
+            "Vat 69": {
+                "375ml": 4,
+                "750ml": 6,
+                "180ml": 5
+            },
+            "Royal Challenge American Pride": {
+                "180ml": 7,
+                "375ml": 3
+            },
+            "Tanqueray Gin": {
+                "750ml": 2
+            },
+            "Baileys": {
+                "750ml": 4
+            },
+            "JW Black Label": {
+                "Quarter": 2,
+                "750ml": 8
+            },
+            "JW Blue Label": {
+                "Full": 2
+            },
+            "JW Red Label": {
+                "375ml": 5,
+                "750ml": 10
             }
         }
     }
