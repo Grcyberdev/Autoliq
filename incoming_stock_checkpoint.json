@@ -17361,6 +17361,9 @@
     },
     "04-Aug-2026": {
         "MH04MR1121": {
+            "Fratelli Shiraz Rose": {
+                "750ml": 2
+            },
             "Fratelli Master Selection Shiraz Cabernet": {
                 "750ml": 2
             },
@@ -17373,18 +17376,15 @@
             "Kyra Red Wine": {
                 "750ml": 25,
                 "375ml": 15
-            },
-            "Fratelli Shiraz Rose": {
-                "750ml": 2
             }
         },
         "AS04CC0758": {
+            "Rhino Whiskey": {
+                "CA": 100
+            },
             "Rhino No 1": {
                 "CS": 70,
                 "CA": 170
-            },
-            "Rhino Whiskey": {
-                "CA": 100
             }
         },
         "WB51A5511": {
@@ -17393,16 +17393,16 @@
             }
         },
         "AS25DC9946": {
-            "Officer's Choice pet": {
-                "180ml": 175,
-                "375ml": 75
-            },
-            "Iconiq Vodka": {
-                "750ml": 30,
-                "375ml": 50
-            },
             "Officer's Choice Blue": {
                 "375ml": 10
+            },
+            "Officer's Choice pet": {
+                "375ml": 75,
+                "180ml": 175
+            },
+            "Iconiq Vodka": {
+                "375ml": 50,
+                "750ml": 30
             },
             "Iconiq Hippy": {
                 "180ml": 50
@@ -17414,8 +17414,8 @@
                 "750ml": 75
             },
             "Sterling Reserve B7 Blended": {
-                "750ml": 10,
-                "375ml": 15
+                "375ml": 15,
+                "750ml": 10
             }
         },
         "AS01GC6796": {
@@ -17428,13 +17428,13 @@
         "AS01UC7073": {
             "8 PM Premium Black": {
                 "750ml": 5,
-                "375ml": 10,
-                "180ml": 15
+                "180ml": 15,
+                "375ml": 10
             },
             "Magic Moments": {
                 "750ml": 30,
-                "375ml": 30,
-                "180ml": 90
+                "180ml": 90,
+                "375ml": 30
             },
             "Magic Moments Lemon": {
                 "375ml": 20,
@@ -17445,14 +17445,14 @@
             }
         },
         "AS01LC7060": {
-            "Royal Challenge": {
-                "180ml": 75,
-                "375ml": 50,
-                "750ml": 25
-            },
             "Signature": {
                 "375ml": 10,
                 "180ml": 10
+            },
+            "Royal Challenge": {
+                "180ml": 75,
+                "750ml": 25,
+                "375ml": 50
             },
             "Antiquity Blue Ultra": {
                 "750ml": 5,
@@ -17464,31 +17464,31 @@
             },
             "Director's Special Black": {
                 "750ml": 20,
-                "375ml": 40,
-                "180ml": 55
+                "180ml": 55,
+                "375ml": 40
             },
             "McDowell's Rum": {
-                "180ml": 125,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 125
             }
         }
     },
     "05-Aug-2026": {
         "AS09C1182": {
-            "White Magic Orange Gin": {
-                "180ml": 105,
-                "375ml": 35,
-                "750ml": 5
-            },
             "Vinho Porto Port Wine": {
                 "375ml": 5
+            },
+            "White Magic Orange Gin": {
+                "750ml": 5,
+                "180ml": 105,
+                "375ml": 35
             }
         },
         "AS01PC0693": {
             "McDowell's Rum": {
-                "180ml": 500,
+                "375ml": 100,
                 "750ml": 300,
-                "375ml": 100
+                "180ml": 500
             }
         },
         "AS07CC2717": {
@@ -17496,42 +17496,42 @@
                 "750ml": 2
             },
             "Bacardi Limon Rum": {
-                "375ml": 5,
-                "180ml": 20
+                "180ml": 20,
+                "375ml": 5
+            },
+            "Breezer Cranberry": {
+                "Stubby": 40
             },
             "Bacardi Mango Chilli Rum": {
                 "180ml": 5
             },
-            "Breezer Cranberry": {
-                "Stubby": 40
+            "Aberfeldy 12 Yrs": {
+                "Full": 3
+            },
+            "Teeling Whiskey": {
+                "Full": 5
+            },
+            "Dewar's Portuguese Smooth": {
+                "Full": 5
+            },
+            "Dewar's White Label": {
+                "750ml": 3
             },
             "Grey Goose": {
                 "Full": 3,
                 "Quarter": 2
             },
-            "Bombay Sapphire Gin": {
-                "750ml": 2
-            },
-            "Dewar's White Label": {
-                "750ml": 3
-            },
-            "Dewar's Portuguese Smooth": {
-                "Full": 5
-            },
-            "Teeling Whiskey": {
-                "Full": 5
-            },
-            "Aberfeldy 12 Yrs": {
-                "Full": 3
-            },
             "Camino Tequila": {
                 "750ml": 5
+            },
+            "Bombay Sapphire Gin": {
+                "750ml": 2
             }
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         },
         "AS25EC4977": {
@@ -17552,41 +17552,41 @@
             }
         },
         "RJ14GG0360": {
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "RJ52GA3015": {
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "AS01QC4009": {
+            "Jameson Black Barrel": {
+                "Full": 5
+            },
+            "Absolut": {
+                "Quarter": 1
+            },
             "Ballantines": {
-                "Quarter": 15,
                 "750ml": 5,
-                "375ml": 5
+                "375ml": 5,
+                "Quarter": 15
             },
             "Chivas Regal 12 Yrs": {
                 "750ml": 3
             },
-            "Jameson Black Barrel": {
-                "Full": 5
-            },
-            "Glenlivet 12 Yrs": {
-                "Full": 2
-            },
             "Jameson": {
                 "750ml": 10
             },
-            "Absolut": {
-                "Quarter": 1
+            "Glenlivet 12 Yrs": {
+                "Full": 2
             },
             "Xclamation Rum": {
                 "180ml": 5,
@@ -17637,28 +17637,28 @@
             }
         },
         "WB23C5237": {
-            "Kingfisher Lager": {
-                "Bottle": 200
-            },
             "Kingfisher Original Strong": {
                 "Bottle": 1200
+            },
+            "Kingfisher Lager": {
+                "Bottle": 200
             }
         },
         "UP38BT0941": {
-            "V21 Lemon Vodka": {
-                "375ml": 20,
-                "750ml": 5,
-                "180ml": 20
-            },
-            "V21 Jamun Vodka": {
-                "750ml": 10,
-                "180ml": 40,
-                "375ml": 20
-            },
             "V21 Original Vodka": {
                 "375ml": 20,
                 "750ml": 15,
                 "180ml": 25
+            },
+            "V21 Jamun Vodka": {
+                "180ml": 40,
+                "750ml": 10,
+                "375ml": 20
+            },
+            "V21 Lemon Vodka": {
+                "375ml": 20,
+                "750ml": 5,
+                "180ml": 20
             },
             "V21 Green Apple Vodka": {
                 "375ml": 10,
@@ -17669,15 +17669,15 @@
             "Six Fields Pilsner": {
                 "Keg": 25
             },
-            "Six Fields Cult": {
-                "Can": 25
+            "Six Fields Blanche": {
+                "Keg": 25
             },
             "Six Fields Brute": {
                 "Can": 25,
                 "Bottle": 25
             },
-            "Six Fields Blanche": {
-                "Keg": 25
+            "Six Fields Cult": {
+                "Can": 25
             }
         }
     },
@@ -17703,20 +17703,20 @@
             },
             "8 PM Premium Black": {
                 "750ml": 10,
-                "180ml": 25,
-                "375ml": 20
+                "375ml": 20,
+                "180ml": 25
             }
         },
         "AS01KC7022": {
             "Imperial Black": {
-                "180ml": 400,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 400
             }
         },
         "WB23E7199": {
             "McDowell's Luxury": {
-                "375ml": 175,
                 "180ml": 700,
+                "375ml": 175,
                 "750ml": 75
             },
             "McDowell's Double Oak Barrel": {
@@ -17726,26 +17726,26 @@
             }
         },
         "AS25EC4423": {
-            "Sterling B7": {
-                "180ml": 15
-            },
             "Sterling Reserve B7 Blended": {
                 "750ml": 10,
                 "375ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 100
+            },
+            "Officer's Choice pet": {
+                "180ml": 150,
+                "375ml": 50
             },
             "Iconiq Vodka": {
                 "750ml": 20,
                 "375ml": 30
             },
-            "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 150
+            "Sterling B7": {
+                "180ml": 15
             },
             "Officer's Choice": {
                 "750ml": 115
-            },
-            "Iconiq Hippy": {
-                "180ml": 100
             }
         },
         "BR01GE1867": {
@@ -17763,8 +17763,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         }
     },
@@ -17777,21 +17777,29 @@
         },
         "NL01N5863": {
             "Simba": {
-                "Can": 360,
-                "Bottle": 1000
+                "Bottle": 1000,
+                "Can": 360
             }
         },
         "AS23DC1348": {
             "Simba": {
-                "Bottle": 480,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 480
             }
         },
         "AS01JC1967": {
-            "Blender's Pride Exclusive": {
-                "375ml": 25,
-                "750ml": 25,
-                "180ml": 25
+            "Blender's Pride Four Elements": {
+                "180ml": 5,
+                "750ml": 5
+            },
+            "100 Pipers": {
+                "750ml": 2,
+                "180ml": 3
+            },
+            "Royal Stag": {
+                "375ml": 50,
+                "750ml": 50,
+                "180ml": 250
             },
             "Oaken Glow": {
                 "180ml": 20,
@@ -17800,21 +17808,13 @@
             },
             "Blender's Pride Reserve": {
                 "375ml": 20,
-                "180ml": 30,
-                "750ml": 20
+                "750ml": 20,
+                "180ml": 30
             },
-            "Royal Stag": {
-                "750ml": 50,
-                "180ml": 250,
-                "375ml": 50
-            },
-            "Blender's Pride Four Elements": {
-                "750ml": 5,
-                "180ml": 5
-            },
-            "100 Pipers": {
-                "750ml": 2,
-                "180ml": 3
+            "Blender's Pride Exclusive": {
+                "180ml": 25,
+                "375ml": 25,
+                "750ml": 25
             }
         },
         "AS01PC8901": {
@@ -17832,8 +17832,8 @@
     "10-Aug-2026": {
         "WB23D5167": {
             "Simba": {
-                "Bottle": 1000,
-                "Can": 260
+                "Can": 260,
+                "Bottle": 1000
             },
             "Simba Wild Jungle": {
                 "Can": 100
@@ -17841,8 +17841,8 @@
         },
         "AS12CC2304": {
             "Stok Strong": {
-                "Bottle": 400,
-                "Can": 280
+                "Can": 280,
+                "Bottle": 400
             }
         },
         "AS03BC8401": {
@@ -17861,23 +17861,23 @@
             "Ag 47 Chardonnay": {
                 "750ml": 2
             },
-            "Cavicchioli Lambrusco Rosso Wine": {
+            "Ag 47 Malbec Shiraz": {
                 "750ml": 5
             },
             "Pedrera Monastrell Red Wine": {
                 "750ml": 5
             },
-            "Ag 47 Malbec Shiraz": {
+            "Cavicchioli Lambrusco Rosso Wine": {
                 "750ml": 5
             },
             "LaChica Tequila Blanco": {
                 "JQ": 5
             },
-            "Amrut's Maqintosh": {
-                "750ml": 27
-            },
             "Amrut Fusion": {
                 "750ml": 3
+            },
+            "Amrut's Maqintosh": {
+                "750ml": 27
             }
         },
         "AS25FC2182": {
@@ -17887,16 +17887,16 @@
         },
         "AS01UC8440": {
             "AC Black Luxury": {
+                "180ml": 675,
                 "750ml": 125,
-                "375ml": 100,
-                "180ml": 675
+                "375ml": 100
             }
         },
         "AS01TC6107": {
             "Rockford Reserve": {
+                "180ml": 15,
                 "750ml": 20,
-                "375ml": 15,
-                "180ml": 15
+                "375ml": 15
             }
         },
         "AS03BC8344": {
@@ -17906,26 +17906,26 @@
             }
         },
         "AS01FC3845": {
+            "Iconiq Hippy": {
+                "180ml": 115
+            },
+            "Officer's Choice pet": {
+                "180ml": 250,
+                "375ml": 25
+            },
             "Iconiq Vodka": {
                 "375ml": 20,
                 "750ml": 20
             },
             "Sterling Reserve B7 Blended": {
-                "375ml": 15,
-                "750ml": 10
-            },
-            "Officer's Choice pet": {
-                "375ml": 25,
-                "180ml": 250
+                "750ml": 10,
+                "375ml": 15
             },
             "Officer's Choice": {
                 "750ml": 25
             },
             "Sterling B7": {
                 "180ml": 20
-            },
-            "Iconiq Hippy": {
-                "180ml": 115
             }
         },
         "RJ52GA1800": {
@@ -17938,31 +17938,31 @@
         },
         "AS01TC4767": {
             "Signature Rare": {
-                "750ml": 2,
+                "375ml": 3,
                 "180ml": 3,
-                "375ml": 3
+                "750ml": 2
             },
-            "McDowell's Rum": {
-                "750ml": 150
-            },
-            "Antiquity Blue Ultra": {
-                "375ml": 5,
-                "750ml": 3,
-                "180ml": 4
+            "Signature": {
+                "375ml": 10,
+                "750ml": 5,
+                "180ml": 10
             },
             "Royal Challenge": {
-                "750ml": 50,
+                "375ml": 50,
                 "180ml": 140,
-                "375ml": 50
+                "750ml": 50
+            },
+            "Antiquity Blue Ultra": {
+                "750ml": 3,
+                "375ml": 5,
+                "180ml": 4
             },
             "Director's Special Black": {
                 "180ml": 90,
                 "375ml": 25
             },
-            "Signature": {
-                "750ml": 5,
-                "375ml": 10,
-                "180ml": 10
+            "McDowell's Rum": {
+                "750ml": 150
             }
         },
         "AS01KC5889": {
@@ -17974,27 +17974,26 @@
         "AS01KC7913": {
             "McDowell's Luxury": {
                 "180ml": 400,
-                "750ml": 75,
-                "375ml": 75
+                "375ml": 75,
+                "750ml": 75
             }
         },
         "AS25EC4977": {
-            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
-            "Budweiser": {
-                "Can": 250,
-                "Bottle": 200
-            },
             "Corona": {
                 "Can": 25,
                 "Pint": 25
+            },
+            "Budweiser": {
+                "Can": 250,
+                "Bottle": 200
             },
             "Hoegaarden Witbier": {
                 "Pint": 25,
                 "Can": 25
             },
             "Budweiser Magnum": {
-                "Can": 100,
-                "Bottle": 350
+                "Bottle": 350,
+                "Can": 100
             }
         }
     }
