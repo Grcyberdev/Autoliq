@@ -17999,13 +17999,9 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
-            "Smirnoff Minty Jamun Vodka": {
-                "750ml": 5,
-                "180ml": 35
-            },
             "Smirnoff Mirchi Mango": {
-                "750ml": 7,
-                "180ml": 20
+                "180ml": 20,
+                "750ml": 7
             },
             "Black & White": {
                 "375ml": 5,
@@ -18045,6 +18041,10 @@
             "JW Blonde": {
                 "JQ": 2
             },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 35,
+                "750ml": 5
+            },
             "Smirnoff": {
                 "180ml": 10,
                 "375ml": 5,
@@ -18052,15 +18052,21 @@
             }
         },
         "WB23E0100": {
-            "_TelegramSupplier": "Rhino Agencies Ltd.",
             "He Man 9000": {
                 "Bottle": 1400
             }
         },
         "WB11B8563": {
-            "_TelegramSupplier": "Rhino Agencies Ltd.",
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "NL01L6323": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 75,
+                "375ml": 125,
+                "180ml": 350
             }
         }
     }
