@@ -357,7 +357,6 @@ LIQUOR_NAME_MAPPING = {
 
 
 
-
     # --- Wines ---
     "DIA RED WINE": "Dia Red Wine",
     "JACOB`S CREEK CLASSIC SHIRAZ CABERNET": "Jacob's Creek Shiraz Cabernet",
@@ -704,6 +703,7 @@ SUPPLIER_NAME_MAPPING = {
     "Devans Mordern Breweries Ltd. Tieup With Sunit Breweries": "Devans",
     "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)": "Pragati",
     "MONIKA ALCOBEV LIMITED": "Monika AlcoBev",
+    "PARSAN BROTHERS": "Parsan Brothers",
 }
 
 unmapped_suppliers = set()
