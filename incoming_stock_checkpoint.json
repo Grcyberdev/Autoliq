@@ -17858,8 +17858,8 @@
     },
     "11-Aug-2026": {
         "AS01RC4909": {
-            "LaChica Tequila Blanco": {
-                "JQ": 5
+            "Ag 47 Chardonnay": {
+                "750ml": 2
             },
             "Cavicchioli Lambrusco Rosso Wine": {
                 "750ml": 5
@@ -17870,14 +17870,14 @@
             "Ag 47 Malbec Shiraz": {
                 "750ml": 5
             },
-            "Ag 47 Chardonnay": {
-                "750ml": 2
-            },
-            "Amrut Fusion": {
-                "750ml": 3
+            "LaChica Tequila Blanco": {
+                "JQ": 5
             },
             "Amrut's Maqintosh": {
                 "750ml": 27
+            },
+            "Amrut Fusion": {
+                "750ml": 3
             }
         },
         "AS25FC2182": {
@@ -17888,15 +17888,15 @@
         "AS01UC8440": {
             "AC Black Luxury": {
                 "750ml": 125,
-                "180ml": 675,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 675
             }
         },
         "AS01TC6107": {
             "Rockford Reserve": {
-                "180ml": 15,
+                "750ml": 20,
                 "375ml": 15,
-                "750ml": 20
+                "180ml": 15
             }
         },
         "AS03BC8344": {
@@ -17906,9 +17906,17 @@
             }
         },
         "AS01FC3845": {
+            "Iconiq Vodka": {
+                "375ml": 20,
+                "750ml": 20
+            },
             "Sterling Reserve B7 Blended": {
-                "750ml": 10,
-                "375ml": 15
+                "375ml": 15,
+                "750ml": 10
+            },
+            "Officer's Choice pet": {
+                "375ml": 25,
+                "180ml": 250
             },
             "Officer's Choice": {
                 "750ml": 25
@@ -17916,36 +17924,19 @@
             "Sterling B7": {
                 "180ml": 20
             },
-            "Iconiq Vodka": {
-                "750ml": 20,
-                "375ml": 20
-            },
-            "Officer's Choice pet": {
-                "180ml": 250,
-                "375ml": 25
-            },
             "Iconiq Hippy": {
                 "180ml": 115
             }
         },
         "RJ52GA1800": {
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "AS01TC4767": {
-            "Signature": {
-                "180ml": 10,
-                "750ml": 5,
-                "375ml": 10
-            },
-            "Director's Special Black": {
-                "375ml": 25,
-                "180ml": 90
-            },
             "Signature Rare": {
                 "750ml": 2,
                 "180ml": 3,
@@ -17963,6 +17954,15 @@
                 "750ml": 50,
                 "180ml": 140,
                 "375ml": 50
+            },
+            "Director's Special Black": {
+                "180ml": 90,
+                "375ml": 25
+            },
+            "Signature": {
+                "750ml": 5,
+                "375ml": 10,
+                "180ml": 10
             }
         },
         "AS01KC5889": {
@@ -17973,8 +17973,8 @@
         },
         "AS01KC7913": {
             "McDowell's Luxury": {
-                "750ml": 75,
                 "180ml": 400,
+                "750ml": 75,
                 "375ml": 75
             }
         },
@@ -17992,8 +17992,8 @@
                 "Can": 25
             },
             "Budweiser Magnum": {
-                "Bottle": 350,
-                "Can": 100
+                "Can": 100,
+                "Bottle": 350
             }
         }
     },
@@ -18190,8 +18190,8 @@
         "AS01EC6089": {
             "McDowell's Double Oak Barrel": {
                 "750ml": 15,
-                "375ml": 35,
-                "180ml": 150
+                "180ml": 150,
+                "375ml": 35
             },
             "McDowell's Luxury": {
                 "750ml": 50,
@@ -18203,6 +18203,20 @@
             "Masti": {
                 "CA": 400,
                 "CS": 300
+            }
+        },
+        "AS11BC0569": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "750ml": 100,
+                "375ml": 100,
+                "180ml": 700
+            }
+        },
+        "AS01LC5954": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Luxury": {
+                "180ml": 550
             }
         }
     }
