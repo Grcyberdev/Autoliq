@@ -17379,12 +17379,12 @@
             }
         },
         "AS04CC0758": {
-            "Rhino Whiskey": {
-                "CA": 100
-            },
             "Rhino No 1": {
                 "CS": 70,
                 "CA": 170
+            },
+            "Rhino Whiskey": {
+                "CA": 100
             }
         },
         "WB51A5511": {
@@ -17530,8 +17530,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         },
         "AS25EC4977": {
@@ -18177,8 +18177,8 @@
     "13-Aug-2026": {
         "AS04CC0758": {
             "Rhino No 1": {
-                "CA": 150,
-                "CS": 50
+                "CS": 50,
+                "CA": 150
             },
             "Rhino Limon": {
                 "CA": 50
@@ -18189,14 +18189,14 @@
         },
         "AS01EC6089": {
             "McDowell's Double Oak Barrel": {
-                "750ml": 15,
                 "180ml": 150,
-                "375ml": 35
+                "375ml": 35,
+                "750ml": 15
             },
             "McDowell's Luxury": {
+                "180ml": 200,
                 "750ml": 50,
-                "375ml": 100,
-                "180ml": 200
+                "375ml": 100
             }
         },
         "AS03BC8122": {
@@ -18206,17 +18206,29 @@
             }
         },
         "AS11BC0569": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
                 "750ml": 100,
-                "375ml": 100,
-                "180ml": 700
+                "180ml": 700,
+                "375ml": 100
             }
         },
         "AS01LC5954": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Luxury": {
                 "180ml": 550
+            }
+        },
+        "NL01AF6660": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "180ml": 400,
+                "375ml": 100,
+                "750ml": 50
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CA": 700
             }
         }
     }
