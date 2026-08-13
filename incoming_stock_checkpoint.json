@@ -18186,6 +18186,19 @@
             "Rhino Limon": {
                 "CA": 50
             }
+        },
+        "AS01EC6089": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Double Oak Barrel": {
+                "750ml": 15,
+                "375ml": 35,
+                "180ml": 150
+            },
+            "McDowell's Luxury": {
+                "750ml": 50,
+                "375ml": 100,
+                "180ml": 200
+            }
         }
     }
 }
