@@ -17771,14 +17771,14 @@
     "08-Aug-2026": {
         "BR01GE6309": {
             "Simba": {
-                "Bottle": 980,
-                "Can": 380
+                "Can": 380,
+                "Bottle": 980
             }
         },
         "NL01N5863": {
             "Simba": {
-                "Can": 360,
-                "Bottle": 1000
+                "Bottle": 1000,
+                "Can": 360
             }
         },
         "AS23DC1348": {
@@ -17788,39 +17788,39 @@
             }
         },
         "AS01JC1967": {
+            "Blender's Pride Reserve": {
+                "180ml": 30,
+                "750ml": 20,
+                "375ml": 20
+            },
+            "Royal Stag": {
+                "180ml": 250,
+                "750ml": 50,
+                "375ml": 50
+            },
             "Blender's Pride Exclusive": {
                 "375ml": 25,
                 "750ml": 25,
                 "180ml": 25
             },
+            "100 Pipers": {
+                "750ml": 2,
+                "180ml": 3
+            },
             "Oaken Glow": {
-                "180ml": 20,
                 "375ml": 10,
+                "180ml": 20,
                 "750ml": 10
-            },
-            "Blender's Pride Reserve": {
-                "375ml": 20,
-                "180ml": 30,
-                "750ml": 20
-            },
-            "Royal Stag": {
-                "750ml": 50,
-                "180ml": 250,
-                "375ml": 50
             },
             "Blender's Pride Four Elements": {
                 "750ml": 5,
                 "180ml": 5
-            },
-            "100 Pipers": {
-                "750ml": 2,
-                "180ml": 3
             }
         },
         "AS01PC8901": {
             "McDowell's Rum": {
-                "180ml": 700,
-                "375ml": 200
+                "375ml": 200,
+                "180ml": 700
             }
         },
         "AS01EC6089": {
@@ -17999,56 +17999,56 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
-            "JW Blonde": {
-                "JQ": 2
+            "Black & White": {
+                "750ml": 20,
+                "180ml": 5,
+                "375ml": 5
+            },
+            "Black Dog Centenary": {
+                "750ml": 2,
+                "180ml": 1
+            },
+            "Vat 69": {
+                "375ml": 4,
+                "750ml": 6,
+                "180ml": 5
+            },
+            "Royal Challenge American Pride": {
+                "180ml": 7,
+                "375ml": 3
+            },
+            "Tanqueray Gin": {
+                "750ml": 2
+            },
+            "Baileys": {
+                "750ml": 4
             },
             "JW Black Label": {
                 "Quarter": 2,
                 "750ml": 8
             },
-            "Baileys": {
-                "750ml": 4
-            },
-            "Smirnoff": {
-                "375ml": 5,
-                "750ml": 10,
-                "180ml": 10
-            },
-            "Tanqueray Gin": {
-                "750ml": 2
-            },
-            "Royal Challenge American Pride": {
-                "375ml": 3,
-                "180ml": 7
+            "JW Blue Label": {
+                "Full": 2
             },
             "JW Red Label": {
                 "375ml": 5,
                 "750ml": 10
             },
-            "JW Blue Label": {
-                "Full": 2
+            "JW Blonde": {
+                "JQ": 2
             },
-            "Vat 69": {
-                "180ml": 5,
-                "750ml": 6,
-                "375ml": 4
-            },
-            "Black Dog Centenary": {
-                "180ml": 1,
-                "750ml": 2
-            },
-            "Black & White": {
-                "180ml": 5,
-                "750ml": 20,
-                "375ml": 5
+            "Smirnoff": {
+                "180ml": 10,
+                "375ml": 5,
+                "750ml": 10
             },
             "Smirnoff Mirchi Mango": {
                 "180ml": 20,
                 "750ml": 7
             },
             "Smirnoff Minty Jamun Vodka": {
-                "180ml": 35,
-                "750ml": 5
+                "750ml": 5,
+                "180ml": 35
             }
         },
         "WB23E0100": {
@@ -18062,27 +18062,27 @@
             }
         },
         "NL01L6323": {
-            "Royal Stag Barrel": {
-                "750ml": 20,
-                "375ml": 15,
-                "180ml": 15
-            },
-            "Blender's Pride Exclusive": {
-                "180ml": 30,
-                "375ml": 20
-            },
             "Oaken Glow": {
                 "750ml": 10,
                 "375ml": 10,
                 "180ml": 20
             },
+            "Royal Stag Barrel": {
+                "180ml": 15,
+                "375ml": 15,
+                "750ml": 20
+            },
             "Royal Stag": {
-                "375ml": 250,
                 "750ml": 150,
-                "180ml": 550
+                "180ml": 550,
+                "375ml": 250
             },
             "Royal Stag Double Dark": {
                 "750ml": 10
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 20,
+                "180ml": 30
             }
         },
         "AS01NC0696": {
@@ -18093,19 +18093,19 @@
         },
         "WB23E7099": {
             "McDowell's Rum": {
+                "750ml": 325,
                 "180ml": 800,
-                "375ml": 100,
-                "750ml": 325
-            },
-            "Director's Special Black": {
-                "180ml": 10,
-                "375ml": 25,
-                "750ml": 15
+                "375ml": 100
             },
             "Royal Challenge": {
+                "180ml": 75,
                 "375ml": 75,
-                "750ml": 25,
-                "180ml": 75
+                "750ml": 25
+            },
+            "Director's Special Black": {
+                "750ml": 15,
+                "180ml": 10,
+                "375ml": 25
             }
         },
         "AS01KC2111": {
@@ -18145,14 +18145,14 @@
         },
         "AS25EC7464": {
             "Imperial Blue": {
-                "180ml": 450,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 450
             }
         },
         "AS01HC6690": {
             "Godfather Select": {
-                "Can": 300,
-                "Bottle": 380
+                "Bottle": 380,
+                "Can": 300
             }
         },
         "RJ52GA1125": {
@@ -18189,14 +18189,14 @@
         },
         "AS01EC6089": {
             "McDowell's Luxury": {
-                "375ml": 100,
                 "180ml": 200,
+                "375ml": 100,
                 "750ml": 50
             },
             "McDowell's Double Oak Barrel": {
+                "375ml": 35,
                 "180ml": 150,
-                "750ml": 15,
-                "375ml": 35
+                "750ml": 15
             }
         },
         "AS03BC8122": {
@@ -18207,9 +18207,9 @@
         },
         "AS11BC0569": {
             "McDowell's Rum": {
-                "750ml": 100,
+                "180ml": 700,
                 "375ml": 100,
-                "180ml": 700
+                "750ml": 100
             }
         },
         "AS01LC5954": {
@@ -18220,8 +18220,8 @@
         "NL01AF6660": {
             "Royal Stag": {
                 "180ml": 400,
-                "750ml": 50,
-                "375ml": 100
+                "375ml": 100,
+                "750ml": 50
             }
         },
         "AS03BC8344": {
@@ -18230,9 +18230,21 @@
             }
         },
         "AS01RC2281": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Can": 1400
+            }
+        },
+        "AS01PC1501": {
+            "_TelegramSupplier": "Chokki Liquors India Pvt. Ltd. Tie Up With SSTDPL",
+            "Royal Parrys Reserve": {
+                "180ml": 45,
+                "375ml": 30,
+                "750ml": 45
+            },
+            "Old Blenders Aged & Rare": {
+                "180ml": 5,
+                "750ml": 15,
+                "375ml": 10
             }
         }
     }
