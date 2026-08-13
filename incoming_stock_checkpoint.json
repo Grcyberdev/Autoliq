@@ -17612,8 +17612,8 @@
         },
         "AS01KC8177": {
             "Masti Special": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         }
     },
@@ -17763,8 +17763,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         }
     },
@@ -17901,8 +17901,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 600,
-                "CS": 100
+                "CS": 100,
+                "CA": 600
             }
         },
         "AS01FC3845": {
@@ -18171,6 +18171,21 @@
             },
             "Jameson": {
                 "750ml": 25
+            }
+        }
+    },
+    "13-Aug-2026": {
+        "AS04CC0758": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino Tango": {
+                "CA": 30
+            },
+            "Rhino No 1": {
+                "CA": 150,
+                "CS": 50
+            },
+            "Rhino Limon": {
+                "CA": 50
             }
         }
     }
