@@ -17683,6 +17683,16 @@
     },
     "07-Aug-2026": {
         "AS01SC5417": {
+            "Magic Moments Green Apple": {
+                "750ml": 10,
+                "180ml": 45,
+                "375ml": 20
+            },
+            "8 PM Premium Black": {
+                "375ml": 20,
+                "180ml": 25,
+                "750ml": 10
+            },
             "After Dark": {
                 "180ml": 175,
                 "375ml": 70
@@ -17692,16 +17702,6 @@
                 "750ml": 20,
                 "180ml": 85
             },
-            "Magic Moments Green Apple": {
-                "750ml": 10,
-                "180ml": 45,
-                "375ml": 20
-            },
-            "8 PM Premium Black": {
-                "750ml": 10,
-                "180ml": 25,
-                "375ml": 20
-            },
             "Magic Moments Lemon": {
                 "375ml": 20,
                 "180ml": 30
@@ -17709,34 +17709,34 @@
         },
         "AS01KC7022": {
             "Imperial Black": {
-                "180ml": 400,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 400
             }
         },
         "WB23E7199": {
-            "McDowell's Double Oak Barrel": {
-                "375ml": 55,
-                "180ml": 75,
-                "750ml": 20
-            },
             "McDowell's Luxury": {
-                "375ml": 175,
                 "180ml": 700,
+                "375ml": 175,
                 "750ml": 75
+            },
+            "McDowell's Double Oak Barrel": {
+                "180ml": 75,
+                "375ml": 55,
+                "750ml": 20
             }
         },
         "AS25EC4423": {
-            "Iconiq Vodka": {
-                "750ml": 20,
-                "375ml": 30
-            },
             "Officer's Choice pet": {
-                "180ml": 150,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 150
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 10,
                 "750ml": 10
+            },
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 30
             },
             "Iconiq Hippy": {
                 "180ml": 100
@@ -17754,11 +17754,11 @@
             }
         },
         "RJ52GA1125": {
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "AS03BC8344": {
@@ -17771,14 +17771,14 @@
     "08-Aug-2026": {
         "BR01GE6309": {
             "Simba": {
-                "Can": 380,
-                "Bottle": 980
+                "Bottle": 980,
+                "Can": 380
             }
         },
         "NL01N5863": {
             "Simba": {
-                "Bottle": 1000,
-                "Can": 360
+                "Can": 360,
+                "Bottle": 1000
             }
         },
         "AS23DC1348": {
@@ -17788,39 +17788,39 @@
             }
         },
         "AS01JC1967": {
-            "Blender's Pride Reserve": {
-                "180ml": 30,
-                "750ml": 20,
-                "375ml": 20
-            },
-            "Royal Stag": {
-                "180ml": 250,
-                "750ml": 50,
-                "375ml": 50
-            },
             "Blender's Pride Exclusive": {
                 "375ml": 25,
                 "750ml": 25,
                 "180ml": 25
             },
-            "100 Pipers": {
-                "750ml": 2,
-                "180ml": 3
-            },
             "Oaken Glow": {
-                "375ml": 10,
                 "180ml": 20,
+                "375ml": 10,
                 "750ml": 10
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 20,
+                "180ml": 30,
+                "750ml": 20
+            },
+            "Royal Stag": {
+                "750ml": 50,
+                "180ml": 250,
+                "375ml": 50
             },
             "Blender's Pride Four Elements": {
                 "750ml": 5,
                 "180ml": 5
+            },
+            "100 Pipers": {
+                "750ml": 2,
+                "180ml": 3
             }
         },
         "AS01PC8901": {
             "McDowell's Rum": {
-                "375ml": 200,
-                "180ml": 700
+                "180ml": 700,
+                "375ml": 200
             }
         },
         "AS01EC6089": {
@@ -18189,9 +18189,9 @@
         },
         "AS01EC6089": {
             "McDowell's Luxury": {
+                "750ml": 50,
                 "180ml": 200,
-                "375ml": 100,
-                "750ml": 50
+                "375ml": 100
             },
             "McDowell's Double Oak Barrel": {
                 "375ml": 35,
@@ -18208,8 +18208,8 @@
         "AS11BC0569": {
             "McDowell's Rum": {
                 "180ml": 700,
-                "375ml": 100,
-                "750ml": 100
+                "750ml": 100,
+                "375ml": 100
             }
         },
         "AS01LC5954": {
@@ -18219,9 +18219,9 @@
         },
         "NL01AF6660": {
             "Royal Stag": {
-                "180ml": 400,
                 "375ml": 100,
-                "750ml": 50
+                "750ml": 50,
+                "180ml": 400
             }
         },
         "AS03BC8344": {
@@ -18235,16 +18235,47 @@
             }
         },
         "AS01PC1501": {
-            "_TelegramSupplier": "Chokki Liquors India Pvt. Ltd. Tie Up With SSTDPL",
-            "Royal Parrys Reserve": {
-                "180ml": 45,
-                "375ml": 30,
-                "750ml": 45
-            },
             "Old Blenders Aged & Rare": {
-                "180ml": 5,
                 "750ml": 15,
+                "180ml": 5,
                 "375ml": 10
+            },
+            "Royal Parrys Reserve": {
+                "750ml": 45,
+                "180ml": 45,
+                "375ml": 30
+            }
+        },
+        "BR01GE1895": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "AS01SC5417": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "Magic Moments": {
+                "750ml": 15,
+                "375ml": 15,
+                "180ml": 75
+            },
+            "Magic Moments Lemon": {
+                "180ml": 35,
+                "375ml": 20,
+                "750ml": 20
+            },
+            "Magic Moments Green Apple": {
+                "375ml": 5,
+                "750ml": 5,
+                "180ml": 10
+            },
+            "After Dark": {
+                "375ml": 75,
+                "180ml": 200,
+                "750ml": 65
+            },
+            "8 PM Premium Black": {
+                "180ml": 10
             }
         }
     }
