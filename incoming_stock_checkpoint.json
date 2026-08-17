@@ -18291,5 +18291,46 @@
                 "CA": 500
             }
         }
+    },
+    "17-Aug-2026": {
+        "AS01FC0035": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Sterling B7": {
+                "180ml": 15
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
+            },
+            "Officer's Choice Blue": {
+                "375ml": 10,
+                "180ml": 20
+            },
+            "Iconiq Vodka": {
+                "375ml": 50,
+                "750ml": 15
+            },
+            "Officer's Choice pet": {
+                "375ml": 100
+            },
+            "Officer's Choice": {
+                "750ml": 120
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
+            }
+        },
+        "HP38H6771": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01RC2283": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        }
     }
 }
