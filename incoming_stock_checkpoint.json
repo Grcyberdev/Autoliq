@@ -17999,29 +17999,6 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
-            "Black Dog Centenary": {
-                "180ml": 1,
-                "750ml": 2
-            },
-            "Vat 69": {
-                "375ml": 4,
-                "750ml": 6,
-                "180ml": 5
-            },
-            "Royal Challenge American Pride": {
-                "180ml": 7,
-                "375ml": 3
-            },
-            "Tanqueray Gin": {
-                "750ml": 2
-            },
-            "Baileys": {
-                "750ml": 4
-            },
-            "JW Black Label": {
-                "Quarter": 2,
-                "750ml": 8
-            },
             "JW Blue Label": {
                 "Full": 2
             },
@@ -18031,6 +18008,34 @@
             },
             "JW Blonde": {
                 "JQ": 2
+            },
+            "Black Dog Centenary": {
+                "750ml": 2,
+                "180ml": 1
+            },
+            "JW Black Label": {
+                "750ml": 8,
+                "Quarter": 2
+            },
+            "Baileys": {
+                "750ml": 4
+            },
+            "Tanqueray Gin": {
+                "750ml": 2
+            },
+            "Royal Challenge American Pride": {
+                "375ml": 3,
+                "180ml": 7
+            },
+            "Vat 69": {
+                "180ml": 5,
+                "375ml": 4,
+                "750ml": 6
+            },
+            "Smirnoff": {
+                "375ml": 5,
+                "750ml": 10,
+                "180ml": 10
             },
             "Black & White": {
                 "180ml": 5,
@@ -18044,11 +18049,6 @@
             "Smirnoff Minty Jamun Vodka": {
                 "180ml": 35,
                 "750ml": 5
-            },
-            "Smirnoff": {
-                "180ml": 10,
-                "375ml": 5,
-                "750ml": 10
             }
         },
         "WB23E0100": {
@@ -18098,14 +18098,14 @@
                 "375ml": 100
             },
             "Director's Special Black": {
-                "180ml": 10,
+                "750ml": 15,
                 "375ml": 25,
-                "750ml": 15
+                "180ml": 10
             },
             "Royal Challenge": {
+                "180ml": 75,
                 "750ml": 25,
-                "375ml": 75,
-                "180ml": 75
+                "375ml": 75
             }
         },
         "AS01KC2111": {
@@ -18125,34 +18125,34 @@
             }
         },
         "AS32C4703": {
-            "Six Fields Brute": {
-                "Can": 25,
-                "Bottle": 65
-            },
             "Six Fields Cult": {
                 "Can": 20
             },
             "Six Fields Pilsner": {
-                "Bottle": 10,
-                "Can": 10
+                "Can": 10,
+                "Bottle": 10
+            },
+            "Six Fields Brute": {
+                "Can": 25,
+                "Bottle": 65
             }
         },
         "AS01QC0147": {
             "Calenter Premium": {
-                "180ml": 85,
-                "750ml": 15
+                "750ml": 15,
+                "180ml": 85
             }
         },
         "AS25EC7464": {
             "Imperial Blue": {
-                "375ml": 100,
-                "180ml": 450
+                "180ml": 450,
+                "375ml": 100
             }
         },
         "AS01HC6690": {
             "Godfather Select": {
-                "Bottle": 380,
-                "Can": 300
+                "Can": 300,
+                "Bottle": 380
             }
         },
         "RJ52GA1125": {
@@ -18424,11 +18424,26 @@
             }
         },
         "AS01JC3625": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
                 "750ml": 300,
                 "375ml": 100,
                 "180ml": 500
+            }
+        },
+        "AS01NC1686": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Director's Special Black": {
+                "180ml": 75,
+                "375ml": 50,
+                "750ml": 25
+            },
+            "Royal Challenge": {
+                "180ml": 125,
+                "375ml": 50,
+                "750ml": 25
+            },
+            "McDowell's Rum": {
+                "180ml": 200
             }
         }
     }
