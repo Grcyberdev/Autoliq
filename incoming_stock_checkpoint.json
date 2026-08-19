@@ -18613,16 +18613,6 @@
             }
         },
         "AS01NC0393": {
-            "Royal Stag Barrel": {
-                "375ml": 50,
-                "750ml": 50,
-                "180ml": 50
-            },
-            "Oaken Glow": {
-                "375ml": 50,
-                "750ml": 50,
-                "180ml": 50
-            },
             "Royal Stag Double Dark": {
                 "750ml": 15,
                 "375ml": 15,
@@ -18636,6 +18626,16 @@
             "Blender's Pride Exclusive": {
                 "180ml": 50,
                 "750ml": 50,
+                "375ml": 50
+            },
+            "Oaken Glow": {
+                "750ml": 50,
+                "375ml": 50,
+                "180ml": 50
+            },
+            "Royal Stag Barrel": {
+                "750ml": 50,
+                "180ml": 50,
                 "375ml": 50
             }
         },
@@ -18659,6 +18659,12 @@
         "AS11FC1933": {
             "Godfather Select": {
                 "Bottle": 680
+            }
+        },
+        "RJ14GG0072": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
             }
         }
     }
