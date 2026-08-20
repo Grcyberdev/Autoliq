@@ -17379,12 +17379,12 @@
             }
         },
         "AS04CC0758": {
-            "Rhino Whiskey": {
-                "CA": 100
-            },
             "Rhino No 1": {
                 "CS": 70,
                 "CA": 170
+            },
+            "Rhino Whiskey": {
+                "CA": 100
             }
         },
         "WB51A5511": {
@@ -18176,15 +18176,15 @@
     },
     "13-Aug-2026": {
         "AS04CC0758": {
-            "Rhino Tango": {
-                "CA": 30
-            },
             "Rhino Limon": {
                 "CA": 50
             },
             "Rhino No 1": {
-                "CA": 150,
-                "CS": 50
+                "CS": 50,
+                "CA": 150
+            },
+            "Rhino Tango": {
+                "CA": 30
             }
         },
         "AS01EC6089": {
@@ -18287,8 +18287,8 @@
     "16-Aug-2026": {
         "AS03BC8344": {
             "Masti Special": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         }
     },
@@ -18394,11 +18394,11 @@
             }
         },
         "AS03BC8122": {
-            "Masti Special": {
-                "CA": 650
-            },
             "Masti No. 1": {
                 "CS": 50
+            },
+            "Masti Special": {
+                "CA": 650
             }
         },
         "AS01UC8611": {
@@ -18716,8 +18716,8 @@
     "20-Aug-2026": {
         "AS03BC8344": {
             "Masti Special": {
-                "CS": 250,
-                "CA": 450
+                "CA": 450,
+                "CS": 250
             }
         },
         "AS03AC0999": {
@@ -18757,7 +18757,6 @@
             }
         },
         "NL01AF6253": {
-            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
             "Golden Oak": {
                 "375ml": 10,
                 "180ml": 10,
@@ -18778,6 +18777,17 @@
             },
             "Old Monk The Legend": {
                 "750ml": 5
+            }
+        },
+        "AS03CC8606": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino No 1": {
+                "CS": 70,
+                "CA": 120
+            },
+            "Rhino Limon": {
+                "CS": 30,
+                "CA": 60
             }
         }
     }
