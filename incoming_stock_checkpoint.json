@@ -17858,8 +17858,8 @@
     },
     "11-Aug-2026": {
         "AS01RC4909": {
-            "LaChica Tequila Blanco": {
-                "JQ": 5
+            "Ag 47 Chardonnay": {
+                "750ml": 2
             },
             "Cavicchioli Lambrusco Rosso Wine": {
                 "750ml": 5
@@ -17870,14 +17870,14 @@
             "Ag 47 Malbec Shiraz": {
                 "750ml": 5
             },
-            "Ag 47 Chardonnay": {
-                "750ml": 2
-            },
-            "Amrut Fusion": {
-                "750ml": 3
+            "LaChica Tequila Blanco": {
+                "JQ": 5
             },
             "Amrut's Maqintosh": {
                 "750ml": 27
+            },
+            "Amrut Fusion": {
+                "750ml": 3
             }
         },
         "AS25FC2182": {
@@ -17888,15 +17888,15 @@
         "AS01UC8440": {
             "AC Black Luxury": {
                 "750ml": 125,
-                "180ml": 675,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 675
             }
         },
         "AS01TC6107": {
             "Rockford Reserve": {
-                "180ml": 15,
+                "750ml": 20,
                 "375ml": 15,
-                "750ml": 20
+                "180ml": 15
             }
         },
         "AS03BC8344": {
@@ -17906,9 +17906,17 @@
             }
         },
         "AS01FC3845": {
+            "Iconiq Vodka": {
+                "375ml": 20,
+                "750ml": 20
+            },
             "Sterling Reserve B7 Blended": {
-                "750ml": 10,
-                "375ml": 15
+                "375ml": 15,
+                "750ml": 10
+            },
+            "Officer's Choice pet": {
+                "375ml": 25,
+                "180ml": 250
             },
             "Officer's Choice": {
                 "750ml": 25
@@ -17916,36 +17924,19 @@
             "Sterling B7": {
                 "180ml": 20
             },
-            "Iconiq Vodka": {
-                "750ml": 20,
-                "375ml": 20
-            },
-            "Officer's Choice pet": {
-                "180ml": 250,
-                "375ml": 25
-            },
             "Iconiq Hippy": {
                 "180ml": 115
             }
         },
         "RJ52GA1800": {
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "AS01TC4767": {
-            "Signature": {
-                "180ml": 10,
-                "750ml": 5,
-                "375ml": 10
-            },
-            "Director's Special Black": {
-                "375ml": 25,
-                "180ml": 90
-            },
             "Signature Rare": {
                 "750ml": 2,
                 "180ml": 3,
@@ -17963,6 +17954,15 @@
                 "750ml": 50,
                 "180ml": 140,
                 "375ml": 50
+            },
+            "Director's Special Black": {
+                "180ml": 90,
+                "375ml": 25
+            },
+            "Signature": {
+                "750ml": 5,
+                "375ml": 10,
+                "180ml": 10
             }
         },
         "AS01KC5889": {
@@ -17973,8 +17973,8 @@
         },
         "AS01KC7913": {
             "McDowell's Luxury": {
-                "750ml": 75,
                 "180ml": 400,
+                "750ml": 75,
                 "375ml": 75
             }
         },
@@ -17992,8 +17992,8 @@
                 "Can": 25
             },
             "Budweiser Magnum": {
-                "Bottle": 350,
-                "Can": 100
+                "Can": 100,
+                "Bottle": 350
             }
         }
     },
@@ -18294,12 +18294,16 @@
     },
     "17-Aug-2026": {
         "AS01FC0035": {
-            "Iconiq Hippy": {
-                "180ml": 150
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
             },
             "Officer's Choice Blue": {
                 "180ml": 20,
                 "375ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
             },
             "Iconiq Vodka": {
                 "750ml": 15,
@@ -18310,10 +18314,6 @@
             },
             "Sterling B7": {
                 "180ml": 15
-            },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 5,
-                "375ml": 15
             },
             "Officer's Choice pet": {
                 "375ml": 100
@@ -18330,67 +18330,67 @@
             }
         },
         "AS01LC6508": {
+            "Antiquity Blue Ultra": {
+                "180ml": 15,
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Signature": {
+                "180ml": 20,
+                "375ml": 15,
+                "750ml": 15
+            },
             "Director's Special Black": {
                 "180ml": 80,
                 "375ml": 40
             },
             "Royal Challenge": {
-                "750ml": 50,
+                "180ml": 150,
                 "375ml": 150,
-                "180ml": 150
-            },
-            "Antiquity Blue Ultra": {
-                "375ml": 10,
-                "180ml": 15,
-                "750ml": 5
-            },
-            "Signature": {
-                "375ml": 15,
-                "180ml": 20,
-                "750ml": 15
+                "750ml": 50
             }
         },
         "AS01UC8440": {
             "AC Black Luxury": {
+                "375ml": 150,
                 "750ml": 150,
-                "180ml": 600,
-                "375ml": 150
+                "180ml": 600
             }
         },
         "AS01LC6322": {
             "100 Pipers": {
                 "750ml": 4,
-                "180ml": 3,
-                "375ml": 3
-            },
-            "Royal Stag Double Dark": {
-                "180ml": 10,
-                "750ml": 10,
-                "375ml": 10
+                "375ml": 3,
+                "180ml": 3
             },
             "Oaken Glow": {
                 "750ml": 10,
-                "375ml": 5,
-                "180ml": 5
+                "180ml": 5,
+                "375ml": 5
             },
             "Blender's Pride Reserve": {
                 "750ml": 20,
-                "375ml": 15,
-                "180ml": 20
+                "180ml": 20,
+                "375ml": 15
             },
             "Blender's Pride Exclusive": {
                 "375ml": 25,
                 "750ml": 25,
                 "180ml": 25
             },
+            "Royal Stag Barrel": {
+                "750ml": 20,
+                "375ml": 25,
+                "180ml": 50
+            },
+            "Royal Stag Double Dark": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 10
+            },
             "Royal Stag": {
                 "375ml": 150,
                 "750ml": 115
-            },
-            "Royal Stag Barrel": {
-                "180ml": 50,
-                "375ml": 25,
-                "750ml": 20
             }
         },
         "AS03BC8122": {
@@ -18402,13 +18402,13 @@
             }
         },
         "AS01UC8611": {
+            "Imperial Black": {
+                "375ml": 50,
+                "180ml": 200
+            },
             "Blue Lagoon Orange Gin": {
                 "375ml": 75,
                 "180ml": 225
-            },
-            "Imperial Black": {
-                "180ml": 200,
-                "375ml": 50
             }
         }
     },
@@ -18734,19 +18734,19 @@
             }
         },
         "AS05AC4345": {
-            "Sterling B7": {
-                "180ml": 10
+            "Officer's Choice pet": {
+                "180ml": 200,
+                "375ml": 25
+            },
+            "Iconiq Hippy": {
+                "180ml": 100
             },
             "Iconiq Vodka": {
                 "375ml": 50,
                 "750ml": 20
             },
-            "Iconiq Hippy": {
-                "180ml": 100
-            },
-            "Officer's Choice pet": {
-                "180ml": 200,
-                "375ml": 25
+            "Sterling B7": {
+                "180ml": 10
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 10,
@@ -18757,30 +18757,29 @@
             }
         },
         "NL01AF6253": {
-            "Golden Oak": {
-                "375ml": 10,
-                "180ml": 10,
-                "750ml": 15
-            },
             "Old Monk Spiced": {
                 "750ml": 5
+            },
+            "Golden Oak": {
+                "180ml": 10,
+                "375ml": 10,
+                "750ml": 15
             },
             "OLD MONK LEMON PREMIUM ORIGINAL CITRUS RUM": {
                 "750ml": 10,
                 "180ml": 10
-            },
-            "Old Monk Amber": {
-                "750ml": 5
             },
             "Old Monk Mango & Chilli": {
                 "180ml": 10
             },
             "Old Monk The Legend": {
                 "750ml": 5
+            },
+            "Old Monk Amber": {
+                "750ml": 5
             }
         },
         "AS03CC8606": {
-            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Rhino No 1": {
                 "CS": 70,
                 "CA": 120
@@ -18788,6 +18787,28 @@
             "Rhino Limon": {
                 "CS": 30,
                 "CA": 60
+            }
+        },
+        "AS01TC6874": {
+            "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
+            "White Magic Orange Gin": {
+                "375ml": 50,
+                "180ml": 100,
+                "750ml": 5
+            },
+            "Vinho Porto Port Wine": {
+                "375ml": 20,
+                "750ml": 10
+            },
+            "Vinho Porto Cranberry Wine": {
+                "750ml": 5
+            }
+        },
+        "AS01LC5953": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "750ml": 300,
+                "180ml": 600
             }
         }
     }
