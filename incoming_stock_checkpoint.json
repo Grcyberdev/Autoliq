@@ -17379,12 +17379,12 @@
             }
         },
         "AS04CC0758": {
+            "Rhino Whiskey": {
+                "CA": 100
+            },
             "Rhino No 1": {
                 "CS": 70,
                 "CA": 170
-            },
-            "Rhino Whiskey": {
-                "CA": 100
             }
         },
         "WB51A5511": {
@@ -17530,8 +17530,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         },
         "AS25EC4977": {
@@ -17612,8 +17612,8 @@
         },
         "AS01KC8177": {
             "Masti Special": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         }
     },
@@ -17901,8 +17901,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 600,
-                "CS": 100
+                "CS": 100,
+                "CA": 600
             }
         },
         "AS01FC3845": {
@@ -18176,15 +18176,15 @@
     },
     "13-Aug-2026": {
         "AS04CC0758": {
-            "Rhino No 1": {
-                "CS": 50,
-                "CA": 150
-            },
             "Rhino Tango": {
                 "CA": 30
             },
             "Rhino Limon": {
                 "CA": 50
+            },
+            "Rhino No 1": {
+                "CA": 150,
+                "CS": 50
             }
         },
         "AS01EC6089": {
@@ -18287,8 +18287,8 @@
     "16-Aug-2026": {
         "AS03BC8344": {
             "Masti Special": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         }
     },
@@ -18710,6 +18710,15 @@
             },
             "Jameson": {
                 "750ml": 25
+            }
+        }
+    },
+    "20-Aug-2026": {
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CS": 250,
+                "CA": 450
             }
         }
     }
