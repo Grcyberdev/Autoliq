@@ -17379,12 +17379,12 @@
             }
         },
         "AS04CC0758": {
+            "Rhino Whiskey": {
+                "CA": 100
+            },
             "Rhino No 1": {
                 "CS": 70,
                 "CA": 170
-            },
-            "Rhino Whiskey": {
-                "CA": 100
             }
         },
         "WB51A5511": {
@@ -17530,8 +17530,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         },
         "AS25EC4977": {
@@ -17763,8 +17763,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         }
     },
@@ -17999,10 +17999,23 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
+            "Smirnoff": {
+                "375ml": 5,
+                "750ml": 10,
+                "180ml": 10
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 5,
+                "180ml": 35
+            },
+            "Smirnoff Mirchi Mango": {
+                "750ml": 7,
+                "180ml": 20
+            },
             "Black & White": {
-                "180ml": 5,
+                "375ml": 5,
                 "750ml": 20,
-                "375ml": 5
+                "180ml": 5
             },
             "Black Dog Centenary": {
                 "750ml": 2,
@@ -18036,19 +18049,6 @@
             },
             "JW Blonde": {
                 "JQ": 2
-            },
-            "Smirnoff Mirchi Mango": {
-                "180ml": 20,
-                "750ml": 7
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "180ml": 35,
-                "750ml": 5
-            },
-            "Smirnoff": {
-                "180ml": 10,
-                "375ml": 5,
-                "750ml": 10
             }
         },
         "WB23E0100": {
@@ -18062,27 +18062,27 @@
             }
         },
         "NL01L6323": {
-            "Royal Stag": {
-                "750ml": 150,
-                "180ml": 550,
-                "375ml": 250
-            },
-            "Oaken Glow": {
-                "375ml": 10,
-                "180ml": 20,
-                "750ml": 10
-            },
             "Royal Stag Double Dark": {
                 "750ml": 10
+            },
+            "Royal Stag": {
+                "180ml": 550,
+                "750ml": 150,
+                "375ml": 250
             },
             "Blender's Pride Exclusive": {
                 "375ml": 20,
                 "180ml": 30
             },
+            "Oaken Glow": {
+                "180ml": 20,
+                "375ml": 10,
+                "750ml": 10
+            },
             "Royal Stag Barrel": {
-                "750ml": 20,
+                "180ml": 15,
                 "375ml": 15,
-                "180ml": 15
+                "750ml": 20
             }
         },
         "AS01NC0696": {
@@ -18093,25 +18093,25 @@
         },
         "WB23E7099": {
             "McDowell's Rum": {
-                "750ml": 325,
+                "375ml": 100,
                 "180ml": 800,
-                "375ml": 100
+                "750ml": 325
             },
             "Royal Challenge": {
-                "750ml": 25,
                 "375ml": 75,
-                "180ml": 75
+                "180ml": 75,
+                "750ml": 25
             },
             "Director's Special Black": {
+                "750ml": 15,
                 "375ml": 25,
-                "180ml": 10,
-                "750ml": 15
+                "180ml": 10
             }
         },
         "AS01KC2111": {
             "KD 50 Whiskey": {
-                "375ml": 200,
-                "750ml": 200
+                "750ml": 200,
+                "375ml": 200
             }
         },
         "UP21CT4743": {
@@ -18125,16 +18125,16 @@
             }
         },
         "AS32C4703": {
+            "Six Fields Pilsner": {
+                "Can": 10,
+                "Bottle": 10
+            },
             "Six Fields Brute": {
-                "Can": 25,
-                "Bottle": 65
+                "Bottle": 65,
+                "Can": 25
             },
             "Six Fields Cult": {
                 "Can": 20
-            },
-            "Six Fields Pilsner": {
-                "Bottle": 10,
-                "Can": 10
             }
         },
         "AS01QC0147": {
@@ -18145,14 +18145,14 @@
         },
         "AS25EC7464": {
             "Imperial Blue": {
-                "375ml": 100,
-                "180ml": 450
+                "180ml": 450,
+                "375ml": 100
             }
         },
         "AS01HC6690": {
             "Godfather Select": {
-                "Bottle": 380,
-                "Can": 300
+                "Can": 300,
+                "Bottle": 380
             }
         },
         "RJ52GA1125": {
@@ -18176,15 +18176,15 @@
     },
     "13-Aug-2026": {
         "AS04CC0758": {
-            "Rhino Limon": {
-                "CA": 50
+            "Rhino Tango": {
+                "CA": 30
             },
             "Rhino No 1": {
                 "CS": 50,
                 "CA": 150
             },
-            "Rhino Tango": {
-                "CA": 30
+            "Rhino Limon": {
+                "CA": 50
             }
         },
         "AS01EC6089": {
@@ -18201,8 +18201,8 @@
         },
         "AS03BC8122": {
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         },
         "AS11BC0569": {
@@ -18729,7 +18729,7 @@
             "He Man 9000": {
                 "Bottle": 1100
             },
-            "DZI PREMIUM STRONG BEER": {
+            "Dzi Strong": {
                 "Bottle": 300
             }
         },
@@ -18757,7 +18757,7 @@
             }
         },
         "NL01AF6253": {
-            "OLD MONK LEMON PREMIUM ORIGINAL CITRUS RUM": {
+            "Old Monk Lemon Rum": {
                 "180ml": 10,
                 "750ml": 10
             },
@@ -18840,6 +18840,21 @@
             "Imperial Blue": {
                 "180ml": 150,
                 "375ml": 150
+            }
+        }
+    },
+    "21-Aug-2026": {
+        "WB23D2036": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CS": 300,
+                "CA": 400
             }
         }
     }
