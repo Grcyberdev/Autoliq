@@ -197,6 +197,7 @@ LIQUOR_NAME_MAPPING = {
     "JOLLY ROGER PREMIUM XXX RUM": "Jolly Roger Rum",
     "MCDOWELL`S NO.1 CELEBRATION RUM MATURED XXX RUM": "McDowell's Rum Old",
     "XCLAMATION RESERVE RUM": "Xclamation Rum",
+    "OLD MONK LEMON PREMIUM ORIGINAL CITRUS RUM": "Old Monk Lemon Rum",
 
     
 
@@ -243,6 +244,7 @@ LIQUOR_NAME_MAPPING = {
     "GOLDFLOW SUPER STRONG PREMIUM BEER": "Goldflow Strong",
     "BRO CODE ORIGINAL XV": "Bro Code XV",
     "DABANG PREMIUM STRONG BEER": "Dabang Strong",
+    "DZI PREMIUM STRONG BEER": "Dzi Strong",
 
 
 
