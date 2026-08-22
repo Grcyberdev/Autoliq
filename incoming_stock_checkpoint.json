@@ -18916,30 +18916,37 @@
             }
         },
         "AS01TC0947": {
-            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
             "Magic Moments": {
-                "750ml": 10,
                 "180ml": 120,
+                "750ml": 10,
                 "375ml": 25
             },
-            "After Dark": {
-                "750ml": 40,
-                "375ml": 60,
-                "180ml": 200
-            },
             "8 PM Premium Black": {
-                "180ml": 20,
                 "750ml": 5,
-                "375ml": 10
+                "375ml": 10,
+                "180ml": 20
             },
             "Magic Moments Green Apple": {
                 "180ml": 20,
                 "375ml": 5
             },
             "Magic Moments Lemon": {
+                "375ml": 10,
                 "180ml": 20,
-                "750ml": 5,
-                "375ml": 10
+                "750ml": 5
+            },
+            "After Dark": {
+                "375ml": 60,
+                "180ml": 200,
+                "750ml": 40
+            }
+        },
+        "AS02CC8299": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 100,
+                "375ml": 200,
+                "180ml": 250
             }
         }
     }
