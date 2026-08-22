@@ -18916,15 +18916,6 @@
             }
         },
         "AS01TC0947": {
-            "Magic Moments Green Apple": {
-                "180ml": 20,
-                "375ml": 5
-            },
-            "Magic Moments": {
-                "375ml": 25,
-                "180ml": 120,
-                "750ml": 10
-            },
             "Magic Moments Lemon": {
                 "375ml": 10,
                 "180ml": 20,
@@ -18937,8 +18928,17 @@
             },
             "8 PM Premium Black": {
                 "375ml": 10,
-                "180ml": 20,
-                "750ml": 5
+                "750ml": 5,
+                "180ml": 20
+            },
+            "Magic Moments Green Apple": {
+                "375ml": 5,
+                "180ml": 20
+            },
+            "Magic Moments": {
+                "375ml": 25,
+                "750ml": 10,
+                "180ml": 120
             }
         },
         "AS02CC8299": {
@@ -18949,6 +18949,12 @@
             }
         },
         "AS01FC7435": {
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01GC8997": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
