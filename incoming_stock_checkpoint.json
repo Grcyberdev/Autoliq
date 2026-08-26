@@ -19137,10 +19137,9 @@
             }
         },
         "AS01RC7759": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Blender's Pride Exclusive": {
-                "375ml": 70,
                 "180ml": 75,
+                "375ml": 70,
                 "750ml": 55
             },
             "Blender's Pride Four Elements": {
@@ -19160,30 +19159,35 @@
             }
         },
         "AS05AC7304": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
             "Officer's Choice Blue": {
-                "750ml": 10,
                 "375ml": 15,
+                "750ml": 10,
                 "180ml": 25
             },
             "Iconiq Vodka": {
-                "180ml": 50,
                 "375ml": 50,
+                "180ml": 50,
                 "750ml": 25
-            },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 15,
-                "750ml": 10
-            },
-            "Officer's Choice pet": {
-                "180ml": 150,
-                "375ml": 25
             },
             "Sterling B7": {
                 "180ml": 25
             },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 10,
+                "375ml": 15
+            },
+            "Officer's Choice pet": {
+                "375ml": 25,
+                "180ml": 150
+            },
             "Iconiq Hippy": {
                 "180ml": 100
+            }
+        },
+        "AS01GC8997": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
