@@ -17999,18 +17999,9 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
-            "Smirnoff": {
-                "375ml": 5,
-                "750ml": 10,
-                "180ml": 10
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "750ml": 5,
-                "180ml": 35
-            },
             "Smirnoff Mirchi Mango": {
-                "750ml": 7,
-                "180ml": 20
+                "180ml": 20,
+                "750ml": 7
             },
             "Black & White": {
                 "375ml": 5,
@@ -18049,6 +18040,15 @@
             },
             "JW Blonde": {
                 "JQ": 2
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 35,
+                "750ml": 5
+            },
+            "Smirnoff": {
+                "180ml": 10,
+                "375ml": 5,
+                "750ml": 10
             }
         },
         "WB23E0100": {
@@ -18094,18 +18094,18 @@
         "WB23E7099": {
             "McDowell's Rum": {
                 "375ml": 100,
-                "180ml": 800,
-                "750ml": 325
+                "750ml": 325,
+                "180ml": 800
             },
             "Royal Challenge": {
-                "375ml": 75,
                 "180ml": 75,
+                "375ml": 75,
                 "750ml": 25
             },
             "Director's Special Black": {
-                "750ml": 15,
+                "180ml": 10,
                 "375ml": 25,
-                "180ml": 10
+                "750ml": 15
             }
         },
         "AS01KC2111": {
@@ -18125,16 +18125,16 @@
             }
         },
         "AS32C4703": {
-            "Six Fields Pilsner": {
-                "Can": 10,
-                "Bottle": 10
-            },
             "Six Fields Brute": {
                 "Bottle": 65,
                 "Can": 25
             },
             "Six Fields Cult": {
                 "Can": 20
+            },
+            "Six Fields Pilsner": {
+                "Bottle": 10,
+                "Can": 10
             }
         },
         "AS01QC0147": {
@@ -18151,8 +18151,8 @@
         },
         "AS01HC6690": {
             "Godfather Select": {
-                "Can": 300,
-                "Bottle": 380
+                "Bottle": 380,
+                "Can": 300
             }
         },
         "RJ52GA1125": {
@@ -19205,9 +19205,6 @@
                 "180ml": 4,
                 "750ml": 1
             },
-            "Black Dog Centenary": {
-                "180ml": 2
-            },
             "Vat 69": {
                 "375ml": 2,
                 "750ml": 2,
@@ -19226,8 +19223,17 @@
             },
             "Black & White": {
                 "375ml": 5,
-                "180ml": 15,
-                "750ml": 5
+                "750ml": 5,
+                "180ml": 15
+            },
+            "Black Dog Centenary": {
+                "180ml": 2
+            }
+        },
+        "AS02AC7187": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
