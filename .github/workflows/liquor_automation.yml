@@ -134,7 +134,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
-          USE_TOR_PROXY: "true"
+          USE_TOR_PROXY: "false"
         run: |
           xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
 
@@ -147,7 +147,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
-          USE_TOR_PROXY: "true"
+          USE_TOR_PROXY: "false"
         run: |
           xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
 
