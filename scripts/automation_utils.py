@@ -287,40 +287,8 @@ def setup_driver(headless=False):
                     subprocess.run(["pkill", "-f", "chromium"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                 except: pass
 
-            # 1. Try System Driver (Ubuntu/Server/CI - Best Stability)
-            # We check both standard Ubuntu and GitHub Actions pre-installed paths
-            possible_driver_paths = ["/usr/bin/chromedriver", "/usr/local/bin/chromedriver"]
-            system_driver_path = next((p for p in possible_driver_paths if os.path.exists(p)), None)
-            if sys.platform == "linux" and system_driver_path:
-                try:
-                    print(f"      🔧 Using Hardcoded System Driver: {system_driver_path}")
-                    # CRITICAL: Snap Chromium needs no-sandbox in some envs
-                    chrome_options.add_argument("--no-sandbox")
-                    chrome_options.add_argument("--disable-dev-shm-usage")
-                    
-                    service = Service(executable_path=system_driver_path)
-                    
-                    # TIMEOUT FIX + ScraperAPI Logic
-                    if proxy_options:
-                        driver = wire_webdriver.Chrome(service=service, options=chrome_options, seleniumwire_options=proxy_options)
-                    else:
-                        driver = webdriver.Chrome(service=service, options=chrome_options)
-
-                    driver.set_page_load_timeout(600) 
-                    driver.set_script_timeout(600)
-                    
-                    # FORCE Selenium HTTP Timeout to 600s (default is 120s)
-                    # This prevents 'Read timed out' during heavy commands
-                    try:
-                        driver.command_executor.set_timeout(600)
-                    except: pass
-                    
-                    # Note: We do NOT use driver.implicitly_wait because explicit WebDriverWait is used throughout.
-                    return driver
-                except Exception as sys_err:
-                     print(f"      ⚠️ System Driver failed: {sys_err}.")
-
-            # 2. CI/CD Environment (Github Actions) Fallback - Use WebDriverManager with native Selenium Manager fallback
+            # 0. CI/CD Environment (Github Actions) - Use WebDriverManager with native Selenium Manager fallback
+            # Github Actions sets 'CI' env var. We want standard manager there.
             if os.environ.get('CI'):
                 print("      🌍 CI Environment detected (Github Actions). Using WebDriverManager...")
                 
@@ -346,6 +314,34 @@ def setup_driver(headless=False):
                 
                 return driver
 
+            # 1. Try System Driver (Ubuntu/Server - Best Stability)
+            # We check both standard Ubuntu and GitHub Actions pre-installed paths
+            possible_driver_paths = ["/usr/bin/chromedriver", "/usr/local/bin/chromedriver"]
+            system_driver_path = next((p for p in possible_driver_paths if os.path.exists(p)), None)
+            if sys.platform == "linux" and system_driver_path:
+                try:
+                    print(f"      🔧 Using Hardcoded System Driver: {system_driver_path}")
+                    chrome_options.add_argument("--no-sandbox")
+                    chrome_options.add_argument("--disable-dev-shm-usage")
+                    
+                    service = Service(executable_path=system_driver_path)
+                    
+                    if proxy_options:
+                        driver = wire_webdriver.Chrome(service=service, options=chrome_options, seleniumwire_options=proxy_options)
+                    else:
+                        driver = webdriver.Chrome(service=service, options=chrome_options)
+
+                    driver.set_page_load_timeout(600) 
+                    driver.set_script_timeout(600)
+                    
+                    try:
+                        driver.command_executor.set_timeout(600)
+                    except: pass
+                    
+                    return driver
+                except Exception as sys_err:
+                     print(f"      ⚠️ System Driver failed: {sys_err}.")
+
             # 2. Fallback to WebDriverManager (Mac/Local Only) with native Selenium Manager fallback
             print("      ⚠️ Linux System Driver not found/used. Using WebDriverManager (Mac/Local)...")
             try:
@@ -369,14 +365,12 @@ def setup_driver(headless=False):
             import time
             time.sleep(10) # Wait before retrying
             
-    # If all retries fail
-    print("❌ Failed to initialize Chrome Driver after multiple attempts.")
-    sys.exit(1)
+    raise Exception(f"❌ Failed to launch Chrome after {max_retries} attempts.")
 
 def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
     """
-    Attempts to solve the captcha using OCR.
-    Returns the solved text if it's strictly 5 or 6 digits.
+    Solves the captcha using ddddocr (pure-python OCR library).
+    Returns the solved captcha string if successful.
     Returns None otherwise.
     Cleans up debug images automatically.
     """
@@ -394,45 +388,31 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
     screenshot_path = "captcha_temp.png"
     
     try:
-        # Strategy: Find element -> Screenshot element -> OCR
-        # Robust Wait for slow servers (required for page_load_strategy='none')
         from selenium.webdriver.support.ui import WebDriverWait
         from selenium.webdriver.support import expected_conditions as EC
         
-        # Updated Selector based on User Screenshot: <img id="loginCaptcha" ...>
         try:
-            wait = WebDriverWait(driver, 30) # Wait up to 30s for captcha to appear
+            wait = WebDriverWait(driver, 30)
             captcha_img = wait.until(EC.presence_of_element_located((By.ID, captcha_element_id)))
         except:
-            # Fallback patterns
             try:
                 captcha_img = driver.find_element(By.XPATH, "//img[contains(@src, 'captcha')]")
             except:
                  print("⚠️ Could not locate Captcha Image element (id='loginCaptcha' or src='captcha') for OCR.")
                  return None
 
-        # Save screenshot of the element
-        # Custom Logic for safer screenshotting 
-        # Strategy: 1. Try Element Screenshot (Best for Local/Mac) -> 2. Fallback to Full Page Crop (Best for Headless/Linux)
-        
         try:
             captcha_img.screenshot(screenshot_path)
-            # Verify file size/validity
             if not os.path.exists(screenshot_path) or os.path.getsize(screenshot_path) < 100:
                 raise Exception("Screenshot file missing or too small")
         except Exception as e_ss:
             print(f"   ⚠️ Element screenshot failed: {e_ss}. Using Full Page Crop fallback...")
-            
             full_screenshot_path = "full_page_debug.png"
             driver.save_screenshot(full_screenshot_path)
-            
             image = Image.open(full_screenshot_path)
-            
-            # Use fixed crop if element location failed
             try:
                 location = captcha_img.location
                 size = captcha_img.size
-                # Add padding to crop
                 left = location['x'] - 5
                 top = location['y'] - 5
                 right = location['x'] + size['width'] + 5
@@ -440,10 +420,8 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
                 image = image.crop((left, int(top), int(right), int(bottom)))
             except:
                 print("   ⚠️ Dynamic crop failed. Using fixed fallback box.")
-                image = image.crop((700, 300, 900, 400)) # Guess coordinates
+                image = image.crop((700, 300, 900, 400))
             image.save(screenshot_path)
-            
-            # Clean up full page
             try: os.remove(full_screenshot_path) 
             except: pass
         
@@ -456,7 +434,6 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
             manual_code = input("   ⌨️  Please enter the CAPTCHA code shown in the image (or blank to retry): ")
             return manual_code.strip() if manual_code.strip() else None
 
-        # Process image with ddddocr
         ocr = ddddocr.DdddOcr(show_ad=False)
         with open(screenshot_path, 'rb') as f:
             image_bytes = f.read()
@@ -475,7 +452,6 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
         return None
     
     finally:
-        # CLEANUP: Remove temp and debug images
         try:
             if os.path.exists(screenshot_path):
                 os.remove(screenshot_path)
@@ -491,25 +467,19 @@ def is_logged_in(driver):
     """
     try:
         url = (driver.current_url or "").lower()
-        
-        # If currently on the login page URL, we are definitely NOT logged in
         if "site/login" in url or "site%2flogin" in url:
             return False
             
-        # If login form input fields are present in the DOM, we are NOT logged in
         if driver.find_elements(By.ID, "LoginForm_username") or driver.find_elements(By.ID, "LoginForm_password"):
             return False
 
-        # Authenticated URL paths
         if "/dashboard" in url or "wholesaledealer" in url or "param=stockdispatch" in url or "tpdet_stockrec" in url or "/report/index" in url:
             return True
             
-        # Presence of explicit logout mechanism (only visible when authenticated)
         logout_elements = driver.find_elements(By.XPATH, "//a[contains(@href, 'site/logout') or contains(@href, 'logout') or normalize-space(text())='Logout' or normalize-space(text())='Sign Out'] | //form[contains(@action, 'logout')]")
         if logout_elements:
             return True
 
-        # Check page title for dashboard when not on login page
         title = (driver.title or "").lower()
         if "dashboard" in title:
             return True
@@ -517,170 +487,76 @@ def is_logged_in(driver):
         pass
     return False
 
-def login_to_portal(driver, portal_url, username, password, max_retries=15):
+def login_to_portal(driver, portal_url, username, password, max_retries=10):
     """
-    Robust login implementation for Assam Excise Portal.
-    Handles hidden modal login form, captcha OCR with ddddocr,
-    accurate submit detection, fast error polling, and prevention of already-logged-in timeout loops.
+    Proven login implementation matching working Permit_Scraper_Dashboard.
     """
     from selenium.webdriver.common.by import By
-    from selenium.webdriver.common.keys import Keys
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.support import expected_conditions as EC
-    from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
-    wait = WebDriverWait(driver, 15)
-    print(f"🔐 Logging in for user: {username}...")
+    wait = WebDriverWait(driver, 20)
+    login_success = False
 
     for attempt in range(max_retries):
+        if is_logged_in(driver):
+            print(f"✅ Already logged in / Session active on {driver.current_url}.")
+            return True
+
+        print(f"🔐 Login attempt {attempt + 1}/{max_retries} for user: {username}...")
+        navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=3)
+        time.sleep(2)
+
+        if is_logged_in(driver):
+            print(f"✅ Session active on {driver.current_url}.")
+            return True
+        
         try:
-            # 1. First check if we are ALREADY logged in (from a previous session, redirect, or previous attempt submission)
-            if is_logged_in(driver):
-                print(f"✅ Already logged in / Session active on {driver.current_url}.")
-                return True
-
-            # 2. Ensure we are on the login page
-            current_url = (driver.current_url or "").lower()
-            if "site/login" not in current_url and "login" not in current_url:
-                print(f"   - Not on login page (Current: {driver.current_url}). Navigating to portal URL...")
-                navigate_to_url_with_retry(driver, portal_url, max_retries=3)
-                time.sleep(2)
-
-            # Re-check login state after navigation
-            if is_logged_in(driver):
-                print("✅ Login session active.")
-                return True
-
-            # 3. Check if login form is hidden behind a modal/button (redesigned UI support)
-            try:
-                temp_boxes = driver.find_elements(By.ID, "LoginForm_username")
-                if not temp_boxes or not temp_boxes[0].is_displayed():
-                    header_btns = driver.find_elements(By.XPATH, "//button[contains(@class, 'header-login-btn') or (contains(text(), 'Login') and not(ancestor::form))] | //a[contains(@class, 'header-login') or contains(text(), 'Login')]")
-                    if header_btns and header_btns[0].is_displayed():
-                        print("   - Login form is hidden. Clicking header Login button...")
-                        driver.execute_script("arguments[0].click();", header_btns[0])
-                        time.sleep(2)
-            except Exception as e_toggle:
-                print(f"   - (Info) Header login button toggle skipped: {e_toggle}")
-
-            # 4. Find and fill Username
-            username_box = wait.until(EC.element_to_be_clickable((By.ID, "LoginForm_username")))
-            username_box.clear()
-            username_box.send_keys(username)
-
-            # 5. Find and fill Password (remove readonly if present)
-            password_box = wait.until(EC.presence_of_element_located((By.ID, "LoginForm_password")))
-            try:
-                driver.execute_script("arguments[0].removeAttribute('readonly')", password_box)
-            except:
-                pass
-            password_box.clear()
-            password_box.send_keys(password)
-
-            # 6. Find and fill Captcha
-            captcha_box = wait.until(EC.presence_of_element_located((By.ID, "LoginForm_verifyCode")))
-            captcha_box.clear()
-
-            captcha_text = solve_captcha_ocr(driver)
-            if captcha_text:
-                print(f"   - Attempt {attempt+1}/{max_retries}: Trying OCR code: '{captcha_text}'")
-                captcha_box.send_keys(captcha_text)
-            else:
-                print(f"   - Attempt {attempt+1}/{max_retries}: OCR failed to read code. Reloading login page...")
-                navigate_to_url_with_retry(driver, portal_url, max_retries=2)
-                time.sleep(2)
-                continue
-
-            # 7. Submit Login Form
-            submitted = False
-            submit_selectors = [
-                "//form[@id='login-form']//button",
-                "//form[@id='login-form']//input[@type='submit']",
-                "//form[contains(@action, 'login')]//button",
-                "//form[contains(@action, 'login')]//input[@type='submit']",
-                "//button[@type='submit']",
-                "//input[@type='submit' and contains(@value, 'Login')]",
-                "//button[contains(text(),'Login') and not(contains(@class, 'header-login-btn'))]"
-            ]
-
-            for sel in submit_selectors:
-                elements = driver.find_elements(By.XPATH, sel)
-                for elem in elements:
-                    if elem.is_displayed():
-                        driver.execute_script("arguments[0].click();", elem)
-                        submitted = True
-                        break
-                if submitted:
-                    break
-
-            if not submitted:
+            temp_user = driver.find_elements(By.ID, "LoginForm_username")
+            if not temp_user or not temp_user[0].is_displayed():
                 try:
-                    captcha_box.send_keys(Keys.ENTER)
-                    submitted = True
-                except:
-                    driver.execute_script("document.querySelector('form#login-form, form')?.submit();")
-
-            # 8. Poll for login success or error message (up to 25 seconds, 1s intervals)
-            start_poll = time.time()
-            while time.time() - start_poll < 25:
-                time.sleep(1)
-
-                # Check if logged in
-                if is_logged_in(driver):
-                    print("✅ Login successful (Dashboard / Portal accessed).")
-                    return True
-
-                # Check for explicit error alerts on page
-                error_elements = driver.find_elements(By.CSS_SELECTOR, ".alert-danger, .alert-error, .errorMessage, .alert")
-                found_error = False
-                for err_el in error_elements:
-                    try:
-                        if err_el.is_displayed() and err_el.text.strip():
-                            err_txt = err_el.text.strip()
-                            print(f"⚠️ Login Warning: {err_txt}")
-                            found_error = True
-                            break
-                    except:
-                        pass
-
-                if found_error:
-                    print("   - Refreshing login page for next attempt...")
-                    navigate_to_url_with_retry(driver, portal_url, max_retries=2)
+                    login_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'header-login-btn') or contains(text(), 'Login')]")))
+                    driver.execute_script("arguments[0].click();", login_btn)
                     time.sleep(2)
-                    break
+                except: pass
+        except: pass
 
-            # If loop finished and we are logged in
-            if is_logged_in(driver):
-                print("✅ Login successful.")
-                return True
-
-            print(f"   - Attempt {attempt+1} did not confirm login. Checking page status...")
-            if not is_logged_in(driver):
-                navigate_to_url_with_retry(driver, portal_url, max_retries=2)
-                time.sleep(2)
-
-        except Exception as e:
-            print(f"⚠️ Error during login attempt {attempt+1}: {e}")
-            print(f"   🔍 Debug: Current URL: {driver.current_url}")
-            try:
-                print(f"   🔍 Debug: Page Title: {driver.title}")
-            except:
-                pass
+        try:
+            user_elem = wait.until(EC.presence_of_element_located((By.ID, "LoginForm_username")))
+            user_elem.clear()
+            user_elem.send_keys(username)
             
-            # Check if error occurred while actually on dashboard
-            if is_logged_in(driver):
-                print("✅ Recovered: Session is active on Dashboard.")
-                return True
+            pwd_box = driver.find_element(By.ID, "LoginForm_password")
+            try: driver.execute_script("arguments[0].removeAttribute('readonly')", pwd_box)
+            except: pass
+            pwd_box.clear()
+            pwd_box.send_keys(password)
+            
+            code = solve_captcha_ocr(driver)
+            if code:
+                captcha_box = driver.find_element(By.ID, "LoginForm_verifyCode")
+                captcha_box.clear()
+                captcha_box.send_keys(code)
+                print(f"   - Attempt {attempt+1}/{max_retries}: Trying OCR code: '{code}'")
+            else:
+                print(f"   - Attempt {attempt+1}/{max_retries}: OCR failed to read code. Retrying...")
+                continue
+                
+            driver.find_element(By.XPATH, "//button[contains(text(),'Login')]").click()
+            time.sleep(5)
+            
+            if ("Login" not in driver.title and len(driver.find_elements(By.ID, "LoginForm_username")) == 0) or is_logged_in(driver):
+                print(f"✅ Login successful for {username}!")
+                login_success = True
+                break
+            else:
+                err_elems = driver.find_elements(By.CSS_SELECTOR, ".errorMessage, .alert-danger, #LoginForm_verifyCode_em_")
+                err_txt = " | ".join([e.text for e in err_elems if e.text])
+                print(f"⚠️ Login attempt {attempt + 1} did not succeed. (Title: {driver.title}, Msg: {err_txt or 'Invalid captcha/credentials'})")
+        except Exception as e:
+            print(f"⚠️ Error during login: {e} (Current URL: {driver.current_url})")
 
-            try:
-                driver.save_screenshot(f"login_failed_attempt_{attempt+1}.png")
-            except:
-                pass
-
-            navigate_to_url_with_retry(driver, portal_url, max_retries=2)
-            time.sleep(2)
-
-    return is_logged_in(driver)
+    return login_success
 
 def manual_login_fallback(driver, username, password):
     """
