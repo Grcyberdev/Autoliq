@@ -64,7 +64,7 @@ jobs:
           echo "ControlPort 9051" | sudo tee -a /etc/tor/torrc
           echo "CookieAuthentication 0" | sudo tee -a /etc/tor/torrc
           echo "ExitNodes {in}" | sudo tee -a /etc/tor/torrc
-          echo "StrictNodes 1" | sudo tee -a /etc/tor/torrc
+          echo "StrictNodes 0" | sudo tee -a /etc/tor/torrc
           
           sudo service tor restart
           

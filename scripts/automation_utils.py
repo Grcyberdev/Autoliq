@@ -226,11 +226,8 @@ def setup_driver(headless=False):
     elif config.get("USE_TOR_PROXY") == "true":
         print("🧅 TOR PROXY ENABLED: Configuring Chrome to use SOCKS5 127.0.0.1:9050")
         chrome_options.add_argument("--proxy-server=socks5://127.0.0.1:9050")
-        # Ensure DNS resolution happens through the proxy to prevent leaks/failures
-        # CRITICAL: Force remote DNS resolution
-        chrome_options.add_argument("--host-resolver-rules=MAP * ~NOTFOUND , EXCLUDE 127.0.0.1")
-        # CRITICAL: Bypass proxy for localhost to allow ChromeDriver to talk to Chrome!
-        chrome_options.add_argument("--proxy-bypass-list=<-loopback>")
+        # CRITICAL: Bypass proxy for localhost to allow ChromeDriver to talk to Chrome
+        chrome_options.add_argument("--proxy-bypass-list=127.0.0.1;localhost")
     
     # PAGE LOAD STRATEGY: Eager (Waits for DOM only, ignores slow images/styles)
     # This is critical for slow portals to avoid timeouts
@@ -290,34 +287,7 @@ def setup_driver(headless=False):
                     subprocess.run(["pkill", "-f", "chromium"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                 except: pass
 
-            # 0. CI/CD Environment (Github Actions) - Use WebDriverManager with native Selenium Manager fallback
-            # Github Actions sets 'CI' env var. We want standard manager there.
-            if os.environ.get('CI'):
-                print("      🌍 CI Environment detected (Github Actions). Using WebDriverManager...")
-                
-                try:
-                    # If proxy_options exist, wire_webdriver injects them. Otherwise it works exactly like standard selenium.
-                    if proxy_options:
-                         driver = wire_webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options, seleniumwire_options=proxy_options)
-                    else:
-                         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-                except Exception as manager_err:
-                    print(f"      ⚠️ WebDriverManager failed on CI ({manager_err}). Falling back to native Selenium Manager...")
-                    if proxy_options:
-                         driver = wire_webdriver.Chrome(options=chrome_options, seleniumwire_options=proxy_options)
-                    else:
-                         driver = webdriver.Chrome(options=chrome_options)
-                
-                # CRITICAL: INCREASE TIMEOUTS FOR TOR / CI
-                driver.set_page_load_timeout(600)
-                driver.set_script_timeout(600)
-                try:
-                    driver.command_executor.set_timeout(600)
-                except: pass
-                
-                return driver
-
-            # 1. Try System Driver (Ubuntu/Server - Best Stability)
+            # 1. Try System Driver (Ubuntu/Server/CI - Best Stability)
             # We check both standard Ubuntu and GitHub Actions pre-installed paths
             possible_driver_paths = ["/usr/bin/chromedriver", "/usr/local/bin/chromedriver"]
             system_driver_path = next((p for p in possible_driver_paths if os.path.exists(p)), None)
@@ -348,8 +318,33 @@ def setup_driver(headless=False):
                     driver.implicitly_wait(30)
                     return driver
                 except Exception as sys_err:
-                     print(f"      ⚠️ System Driver failed: {sys_err}. This should not happen on Server.")
-                     raise sys_err # Don't fall back, fail fast to debug
+                     print(f"      ⚠️ System Driver failed: {sys_err}.")
+
+            # 2. CI/CD Environment (Github Actions) Fallback - Use WebDriverManager with native Selenium Manager fallback
+            if os.environ.get('CI'):
+                print("      🌍 CI Environment detected (Github Actions). Using WebDriverManager...")
+                
+                try:
+                    # If proxy_options exist, wire_webdriver injects them. Otherwise it works exactly like standard selenium.
+                    if proxy_options:
+                         driver = wire_webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options, seleniumwire_options=proxy_options)
+                    else:
+                         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+                except Exception as manager_err:
+                    print(f"      ⚠️ WebDriverManager failed on CI ({manager_err}). Falling back to native Selenium Manager...")
+                    if proxy_options:
+                         driver = wire_webdriver.Chrome(options=chrome_options, seleniumwire_options=proxy_options)
+                    else:
+                         driver = webdriver.Chrome(options=chrome_options)
+                
+                # CRITICAL: INCREASE TIMEOUTS FOR TOR / CI
+                driver.set_page_load_timeout(600)
+                driver.set_script_timeout(600)
+                try:
+                    driver.command_executor.set_timeout(600)
+                except: pass
+                
+                return driver
 
             # 2. Fallback to WebDriverManager (Mac/Local Only) with native Selenium Manager fallback
             print("      ⚠️ Linux System Driver not found/used. Using WebDriverManager (Mac/Local)...")
