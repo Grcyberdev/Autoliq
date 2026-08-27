@@ -17861,23 +17861,23 @@
             "Ag 47 Chardonnay": {
                 "750ml": 2
             },
-            "Ag 47 Malbec Shiraz": {
+            "Cavicchioli Lambrusco Rosso Wine": {
                 "750ml": 5
             },
             "Pedrera Monastrell Red Wine": {
                 "750ml": 5
             },
-            "Cavicchioli Lambrusco Rosso Wine": {
+            "Ag 47 Malbec Shiraz": {
                 "750ml": 5
             },
             "LaChica Tequila Blanco": {
                 "JQ": 5
             },
-            "Amrut Fusion": {
-                "750ml": 3
-            },
             "Amrut's Maqintosh": {
                 "750ml": 27
+            },
+            "Amrut Fusion": {
+                "750ml": 3
             }
         },
         "AS25FC2182": {
@@ -17887,16 +17887,16 @@
         },
         "AS01UC8440": {
             "AC Black Luxury": {
-                "180ml": 675,
+                "750ml": 125,
                 "375ml": 100,
-                "750ml": 125
+                "180ml": 675
             }
         },
         "AS01TC6107": {
             "Rockford Reserve": {
-                "180ml": 15,
                 "750ml": 20,
-                "375ml": 15
+                "375ml": 15,
+                "180ml": 15
             }
         },
         "AS03BC8344": {
@@ -17906,23 +17906,23 @@
             }
         },
         "AS01FC3845": {
+            "Iconiq Vodka": {
+                "375ml": 20,
+                "750ml": 20
+            },
             "Sterling Reserve B7 Blended": {
                 "375ml": 15,
                 "750ml": 10
             },
-            "Iconiq Vodka": {
-                "375ml": 20,
-                "750ml": 20
+            "Officer's Choice pet": {
+                "375ml": 25,
+                "180ml": 250
             },
             "Officer's Choice": {
                 "750ml": 25
             },
             "Sterling B7": {
                 "180ml": 20
-            },
-            "Officer's Choice pet": {
-                "180ml": 250,
-                "375ml": 25
             },
             "Iconiq Hippy": {
                 "180ml": 115
@@ -17937,25 +17937,6 @@
             }
         },
         "AS01TC4767": {
-            "Signature": {
-                "375ml": 10,
-                "180ml": 10,
-                "750ml": 5
-            },
-            "Antiquity Blue Ultra": {
-                "180ml": 4,
-                "375ml": 5,
-                "750ml": 3
-            },
-            "Royal Challenge": {
-                "750ml": 50,
-                "375ml": 50,
-                "180ml": 140
-            },
-            "Director's Special Black": {
-                "375ml": 25,
-                "180ml": 90
-            },
             "Signature Rare": {
                 "750ml": 2,
                 "180ml": 3,
@@ -17963,37 +17944,56 @@
             },
             "McDowell's Rum": {
                 "750ml": 150
+            },
+            "Antiquity Blue Ultra": {
+                "375ml": 5,
+                "750ml": 3,
+                "180ml": 4
+            },
+            "Royal Challenge": {
+                "750ml": 50,
+                "180ml": 140,
+                "375ml": 50
+            },
+            "Director's Special Black": {
+                "180ml": 90,
+                "375ml": 25
+            },
+            "Signature": {
+                "750ml": 5,
+                "375ml": 10,
+                "180ml": 10
             }
         },
         "AS01KC5889": {
             "McDowell's Rum": {
-                "750ml": 300,
-                "180ml": 600
+                "180ml": 600,
+                "750ml": 300
             }
         },
         "AS01KC7913": {
             "McDowell's Luxury": {
-                "375ml": 75,
+                "180ml": 400,
                 "750ml": 75,
-                "180ml": 400
+                "375ml": 75
             }
         },
         "AS25EC4977": {
-            "Corona": {
-                "Pint": 25,
-                "Can": 25
-            },
             "Budweiser": {
-                "Bottle": 200,
-                "Can": 250
+                "Can": 250,
+                "Bottle": 200
+            },
+            "Corona": {
+                "Can": 25,
+                "Pint": 25
             },
             "Hoegaarden Witbier": {
                 "Pint": 25,
                 "Can": 25
             },
             "Budweiser Magnum": {
-                "Bottle": 350,
-                "Can": 100
+                "Can": 100,
+                "Bottle": 350
             }
         }
     },
@@ -18425,24 +18425,24 @@
         },
         "AS01JC3625": {
             "McDowell's Rum": {
-                "750ml": 300,
+                "180ml": 500,
                 "375ml": 100,
-                "180ml": 500
+                "750ml": 300
             }
         },
         "AS01NC1686": {
+            "McDowell's Rum": {
+                "180ml": 200
+            },
             "Royal Challenge": {
                 "180ml": 125,
                 "750ml": 25,
                 "375ml": 50
             },
             "Director's Special Black": {
-                "180ml": 75,
                 "750ml": 25,
-                "375ml": 50
-            },
-            "McDowell's Rum": {
-                "180ml": 200
+                "375ml": 50,
+                "180ml": 75
             }
         },
         "WB23C5237": {
@@ -18452,15 +18452,15 @@
         },
         "AS26AC1140": {
             "Royal Stag": {
-                "375ml": 150,
                 "180ml": 300,
+                "375ml": 150,
                 "750ml": 100
             }
         },
         "AS25BC9705": {
             "Officer's Choice pet": {
-                "180ml": 400,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 400
             },
             "Officer's Choice": {
                 "750ml": 50
@@ -18470,69 +18470,48 @@
             "All Seasons Connoisseur": {
                 "180ml": 130
             },
-            "London High Lemon Vodka": {
-                "180ml": 5
-            },
             "London High Vodka": {
                 "375ml": 5,
                 "180ml": 10
+            },
+            "London High Lemon Vodka": {
+                "180ml": 5
             }
         },
         "AS01PC9781": {
-            "Magic Moments": {
-                "180ml": 30,
-                "750ml": 10,
-                "375ml": 20
-            },
             "After Dark": {
                 "180ml": 195,
-                "375ml": 30,
-                "750ml": 15
+                "750ml": 15,
+                "375ml": 30
+            },
+            "Magic Moments": {
+                "750ml": 10,
+                "180ml": 30,
+                "375ml": 20
             }
         },
         "AS01EC8141": {
             "McDowell's Double Oak Barrel": {
                 "750ml": 15,
-                "180ml": 125,
-                "375ml": 60
+                "375ml": 60,
+                "180ml": 125
             },
             "McDowell's Luxury": {
-                "750ml": 150,
                 "180ml": 450,
+                "750ml": 150,
                 "375ml": 300
             }
         },
         "AS01HC0109": {
             "Imperial Black": {
-                "375ml": 150,
-                "180ml": 400
+                "180ml": 400,
+                "375ml": 150
             }
         },
         "AS01UC4973": {
-            "Smirnoff": {
-                "180ml": 5,
-                "750ml": 10,
-                "375ml": 10
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "180ml": 20,
-                "750ml": 10
-            },
-            "Smirnoff Mirchi Mango": {
-                "180ml": 13
-            },
-            "Black & White": {
-                "375ml": 7,
-                "750ml": 10,
-                "180ml": 3
-            },
-            "Black Dog Centenary": {
-                "375ml": 2,
-                "750ml": 2
-            },
             "Black Dog Triple Gold": {
-                "750ml": 5,
-                "180ml": 2
+                "180ml": 2,
+                "750ml": 5
             },
             "J & B": {
                 "750ml": 5
@@ -18548,6 +18527,27 @@
             },
             "Singleton 12 Yrs": {
                 "Full": 1
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 20,
+                "750ml": 10
+            },
+            "Smirnoff": {
+                "180ml": 5,
+                "750ml": 10,
+                "375ml": 10
+            },
+            "Black Dog Centenary": {
+                "750ml": 2,
+                "375ml": 2
+            },
+            "Black & White": {
+                "180ml": 3,
+                "750ml": 10,
+                "375ml": 7
+            },
+            "Smirnoff Mirchi Mango": {
+                "180ml": 13
             }
         },
         "AS01NC0427": {
@@ -18562,14 +18562,14 @@
         },
         "AS01EC6746": {
             "Imperial Blue": {
-                "375ml": 100,
-                "180ml": 450
+                "180ml": 450,
+                "375ml": 100
             }
         },
         "AS04CC0758": {
             "Lords Whiskey": {
-                "750ml": 150,
-                "375ml": 200
+                "375ml": 200,
+                "750ml": 150
             }
         }
     },
@@ -19298,14 +19298,32 @@
         },
         "AS01NC0393": {
             "Royal Stag": {
-                "180ml": 350,
+                "375ml": 150,
                 "750ml": 50,
-                "375ml": 150
+                "180ml": 350
             }
         },
         "WB271666": {
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "AS12CC2304": {
+            "_TelegramSupplier": "Mount Everest Breweries Ltd. Tie Up With Sunit Breweries",
+            "Dabang Strong": {
+                "Can": 400
+            },
+            "Stok Strong": {
+                "Can": 80,
+                "Bottle": 200
+            }
+        },
+        "AS01UC8610": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Black": {
+                "180ml": 300,
+                "375ml": 125,
+                "750ml": 125
             }
         }
     }
