@@ -315,7 +315,7 @@ def setup_driver(headless=False):
                         driver.command_executor.set_timeout(600)
                     except: pass
                     
-                    driver.implicitly_wait(30)
+                    # Note: We do NOT use driver.implicitly_wait because explicit WebDriverWait is used throughout.
                     return driver
                 except Exception as sys_err:
                      print(f"      ⚠️ System Driver failed: {sys_err}.")
@@ -483,6 +483,192 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
                 os.remove(f)
         except Exception as cleanup_err:
              print(f"   ⚠️ Cleanup warning: {cleanup_err}")
+
+def is_logged_in(driver):
+    """
+    Checks if the current session is authenticated/logged in.
+    """
+    try:
+        url = (driver.current_url or "").lower()
+        if "dashboard" in url or "report" in url or "tpdet" in url or "indent" in url or "stockdispatch" in url:
+            return True
+        # Check if logout or wholesale/report links are present
+        if driver.find_elements(By.XPATH, "//a[contains(@href, 'logout') or contains(@href, 'Wholesale') or contains(@href, 'report') or contains(text(), 'Logout')]"):
+            return True
+        # Check if we are on internal page with title but no login form
+        if not driver.find_elements(By.ID, "LoginForm_username") and not driver.find_elements(By.ID, "LoginForm_password"):
+            title = (driver.title or "").lower()
+            if "dashboard" in title or "assam excise" in title:
+                if "site/login" not in url:
+                    return True
+    except:
+        pass
+    return False
+
+def login_to_portal(driver, portal_url, username, password, max_retries=15):
+    """
+    Robust login implementation for Assam Excise Portal.
+    Handles hidden modal login form, captcha OCR with ddddocr,
+    accurate submit detection, fast error polling, and prevention of already-logged-in timeout loops.
+    """
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.common.keys import Keys
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.common.exceptions import TimeoutException, NoSuchElementException
+
+    wait = WebDriverWait(driver, 15)
+    print(f"🔐 Logging in for user: {username}...")
+
+    for attempt in range(max_retries):
+        try:
+            # 1. First check if we are ALREADY logged in (from a previous session, redirect, or previous attempt submission)
+            if is_logged_in(driver):
+                print(f"✅ Already logged in / Session active on {driver.current_url}.")
+                return True
+
+            # 2. Ensure we are on the login page
+            current_url = (driver.current_url or "").lower()
+            if "site/login" not in current_url and "login" not in current_url:
+                print(f"   - Not on login page (Current: {driver.current_url}). Navigating to portal URL...")
+                navigate_to_url_with_retry(driver, portal_url, max_retries=3)
+                time.sleep(2)
+
+            # Re-check login state after navigation
+            if is_logged_in(driver):
+                print("✅ Login session active.")
+                return True
+
+            # 3. Check if login form is hidden behind a modal/button (redesigned UI support)
+            try:
+                temp_boxes = driver.find_elements(By.ID, "LoginForm_username")
+                if not temp_boxes or not temp_boxes[0].is_displayed():
+                    header_btns = driver.find_elements(By.XPATH, "//button[contains(@class, 'header-login-btn') or (contains(text(), 'Login') and not(ancestor::form))] | //a[contains(@class, 'header-login') or contains(text(), 'Login')]")
+                    if header_btns and header_btns[0].is_displayed():
+                        print("   - Login form is hidden. Clicking header Login button...")
+                        driver.execute_script("arguments[0].click();", header_btns[0])
+                        time.sleep(2)
+            except Exception as e_toggle:
+                print(f"   - (Info) Header login button toggle skipped: {e_toggle}")
+
+            # 4. Find and fill Username
+            username_box = wait.until(EC.element_to_be_clickable((By.ID, "LoginForm_username")))
+            username_box.clear()
+            username_box.send_keys(username)
+
+            # 5. Find and fill Password (remove readonly if present)
+            password_box = wait.until(EC.presence_of_element_located((By.ID, "LoginForm_password")))
+            try:
+                driver.execute_script("arguments[0].removeAttribute('readonly')", password_box)
+            except:
+                pass
+            password_box.clear()
+            password_box.send_keys(password)
+
+            # 6. Find and fill Captcha
+            captcha_box = wait.until(EC.presence_of_element_located((By.ID, "LoginForm_verifyCode")))
+            captcha_box.clear()
+
+            captcha_text = solve_captcha_ocr(driver)
+            if captcha_text:
+                print(f"   - Attempt {attempt+1}/{max_retries}: Trying OCR code: '{captcha_text}'")
+                captcha_box.send_keys(captcha_text)
+            else:
+                print(f"   - Attempt {attempt+1}/{max_retries}: OCR failed to read code. Reloading login page...")
+                navigate_to_url_with_retry(driver, portal_url, max_retries=2)
+                time.sleep(2)
+                continue
+
+            # 7. Submit Login Form
+            submitted = False
+            submit_selectors = [
+                "//form[@id='login-form']//button",
+                "//form[@id='login-form']//input[@type='submit']",
+                "//form[contains(@action, 'login')]//button",
+                "//form[contains(@action, 'login')]//input[@type='submit']",
+                "//button[@type='submit']",
+                "//input[@type='submit' and contains(@value, 'Login')]",
+                "//button[contains(text(),'Login') and not(contains(@class, 'header-login-btn'))]"
+            ]
+
+            for sel in submit_selectors:
+                elements = driver.find_elements(By.XPATH, sel)
+                for elem in elements:
+                    if elem.is_displayed():
+                        driver.execute_script("arguments[0].click();", elem)
+                        submitted = True
+                        break
+                if submitted:
+                    break
+
+            if not submitted:
+                try:
+                    captcha_box.send_keys(Keys.ENTER)
+                    submitted = True
+                except:
+                    driver.execute_script("document.querySelector('form#login-form, form')?.submit();")
+
+            # 8. Poll for login success or error message (up to 25 seconds, 1s intervals)
+            start_poll = time.time()
+            while time.time() - start_poll < 25:
+                time.sleep(1)
+
+                # Check if logged in
+                if is_logged_in(driver):
+                    print("✅ Login successful (Dashboard / Portal accessed).")
+                    return True
+
+                # Check for explicit error alerts on page
+                error_elements = driver.find_elements(By.CSS_SELECTOR, ".alert-danger, .alert-error, .errorMessage, .alert")
+                found_error = False
+                for err_el in error_elements:
+                    try:
+                        if err_el.is_displayed() and err_el.text.strip():
+                            err_txt = err_el.text.strip()
+                            print(f"⚠️ Login Warning: {err_txt}")
+                            found_error = True
+                            break
+                    except:
+                        pass
+
+                if found_error:
+                    print("   - Refreshing login page for next attempt...")
+                    navigate_to_url_with_retry(driver, portal_url, max_retries=2)
+                    time.sleep(2)
+                    break
+
+            # If loop finished and we are logged in
+            if is_logged_in(driver):
+                print("✅ Login successful.")
+                return True
+
+            print(f"   - Attempt {attempt+1} did not confirm login. Checking page status...")
+            if not is_logged_in(driver):
+                navigate_to_url_with_retry(driver, portal_url, max_retries=2)
+                time.sleep(2)
+
+        except Exception as e:
+            print(f"⚠️ Error during login attempt {attempt+1}: {e}")
+            print(f"   🔍 Debug: Current URL: {driver.current_url}")
+            try:
+                print(f"   🔍 Debug: Page Title: {driver.title}")
+            except:
+                pass
+            
+            # Check if error occurred while actually on dashboard
+            if is_logged_in(driver):
+                print("✅ Recovered: Session is active on Dashboard.")
+                return True
+
+            try:
+                driver.save_screenshot(f"login_failed_attempt_{attempt+1}.png")
+            except:
+                pass
+
+            navigate_to_url_with_retry(driver, portal_url, max_retries=2)
+            time.sleep(2)
+
+    return is_logged_in(driver)
 
 def manual_login_fallback(driver, username, password):
     """
