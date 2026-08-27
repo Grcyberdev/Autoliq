@@ -19298,9 +19298,15 @@
         },
         "AS01NC0393": {
             "Royal Stag": {
-                "375ml": 150,
+                "180ml": 350,
                 "750ml": 50,
-                "180ml": 350
+                "375ml": 150
+            }
+        },
+        "WB271666": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
             }
         }
     }
