@@ -486,21 +486,33 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
 
 def is_logged_in(driver):
     """
-    Checks if the current session is authenticated/logged in.
+    Strictly checks if the current session is authenticated/logged in.
+    Guarantees NO false positives on the login page.
     """
     try:
         url = (driver.current_url or "").lower()
-        if "dashboard" in url or "report" in url or "tpdet" in url or "indent" in url or "stockdispatch" in url:
+        
+        # If currently on the login page URL, we are definitely NOT logged in
+        if "site/login" in url or "site%2flogin" in url:
+            return False
+            
+        # If login form input fields are present in the DOM, we are NOT logged in
+        if driver.find_elements(By.ID, "LoginForm_username") or driver.find_elements(By.ID, "LoginForm_password"):
+            return False
+
+        # Authenticated URL paths
+        if "/dashboard" in url or "wholesaledealer" in url or "param=stockdispatch" in url or "tpdet_stockrec" in url or "/report/index" in url:
             return True
-        # Check if logout or wholesale/report links are present
-        if driver.find_elements(By.XPATH, "//a[contains(@href, 'logout') or contains(@href, 'Wholesale') or contains(@href, 'report') or contains(text(), 'Logout')]"):
+            
+        # Presence of explicit logout mechanism (only visible when authenticated)
+        logout_elements = driver.find_elements(By.XPATH, "//a[contains(@href, 'site/logout') or contains(@href, 'logout') or normalize-space(text())='Logout' or normalize-space(text())='Sign Out'] | //form[contains(@action, 'logout')]")
+        if logout_elements:
             return True
-        # Check if we are on internal page with title but no login form
-        if not driver.find_elements(By.ID, "LoginForm_username") and not driver.find_elements(By.ID, "LoginForm_password"):
-            title = (driver.title or "").lower()
-            if "dashboard" in title or "assam excise" in title:
-                if "site/login" not in url:
-                    return True
+
+        # Check page title for dashboard when not on login page
+        title = (driver.title or "").lower()
+        if "dashboard" in title:
+            return True
     except:
         pass
     return False
