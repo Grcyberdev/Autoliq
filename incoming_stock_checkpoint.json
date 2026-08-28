@@ -19368,13 +19368,12 @@
         },
         "AS01UC3711": {
             "Royal Stag": {
-                "180ml": 200,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 200
             },
-            "100 Pipers": {
-                "750ml": 8,
-                "180ml": 7,
-                "375ml": 5
+            "Royal Stag Double Dark": {
+                "375ml": 10,
+                "180ml": 20
             },
             "Blender's Pride Reserve": {
                 "180ml": 30,
@@ -19384,13 +19383,14 @@
             "Blender's Pride Exclusive": {
                 "180ml": 20
             },
-            "Royal Stag Double Dark": {
-                "375ml": 10,
-                "180ml": 20
-            },
             "Royal Stag Barrel": {
-                "180ml": 35,
-                "375ml": 15
+                "375ml": 15,
+                "180ml": 35
+            },
+            "100 Pipers": {
+                "750ml": 8,
+                "180ml": 7,
+                "375ml": 5
             }
         },
         "AS01UC3451": {
@@ -19407,17 +19407,17 @@
         },
         "AS03CC8606": {
             "Magic Moments Mango": {
-                "180ml": 13,
-                "750ml": 6
-            },
-            "M2 MAGIC MOMENTS REMIX CRANBERRY VIVID FLAVOURED VODKA": {
-                "375ml": 15,
-                "180ml": 20,
-                "750ml": 11
+                "750ml": 6,
+                "180ml": 13
             },
             "Magic Moments Jamun": {
                 "750ml": 15,
                 "375ml": 20
+            },
+            "M2 MAGIC MOMENTS REMIX CRANBERRY VIVID FLAVOURED VODKA": {
+                "180ml": 20,
+                "750ml": 11,
+                "375ml": 15
             }
         },
         "AS01LC5954": {
@@ -19451,14 +19451,14 @@
             }
         },
         "AS01PC8521": {
+            "Imperial Blue": {
+                "375ml": 50,
+                "750ml": 100,
+                "180ml": 350
+            },
             "Blue Lagoon Orange Gin": {
                 "750ml": 25,
                 "375ml": 25
-            },
-            "Imperial Blue": {
-                "750ml": 100,
-                "375ml": 50,
-                "180ml": 350
             }
         },
         "AS03BC8122": {
@@ -19473,6 +19473,12 @@
             },
             "Oaksmith International": {
                 "375ml": 150
+            }
+        },
+        "NL01L6374": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
             }
         }
     }
