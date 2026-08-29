@@ -330,8 +330,7 @@ LIQUOR_NAME_MAPPING = {
     "LACHICA TEQUILA BLANCO": "LaChica Tequila Blanco",
     "V21 ULTRA SMOOTH VODKA JAMUN": "V21 Jamun Vodka",
     "V21 ULTRA SMOOTH VODKA LEMON": "V21 Lemon Vodka",
-
-
+    "M2 MAGIC MOMENTS REMIX CRANBERRY VIVID FLAVOURED VODKA": "Magic Moments Remix Cranberry",
 
 
     # --- Gin ---
@@ -427,8 +426,7 @@ LIQUOR_NAME_MAPPING = {
     "FRATELLI WINES SHIRAZ ROSE": "Fratelli Shiraz Rose",
     "PEDRERA MONASTRELL RED WINE": "Pedrera Monastrell Red Wine",
     "ZIVA RED WINE": "Ziva Red Wine",
-
-
+    "HOLLONG9 TEA WINE CLASSIC": "Hollong9 Tea Wine",
 
     # --- New Variations found in logs ---
     "SEAGRAMS IMPERIAL BLACK MASTERS SELECT GRAIN BLENDED WHISKY": "IB Black",
@@ -706,6 +704,8 @@ SUPPLIER_NAME_MAPPING = {
     "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)": "Pragati",
     "MONIKA ALCOBEV LIMITED": "Monika AlcoBev",
     "PARSAN BROTHERS": "Parsan Brothers",
+    "TASTAROMA FOOD AND BEVERAGES UNIT L": "Tastaroma",
+
 }
 
 unmapped_suppliers = set()
