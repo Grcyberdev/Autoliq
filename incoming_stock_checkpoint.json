@@ -17999,23 +17999,10 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
-            "Smirnoff": {
-                "375ml": 5,
-                "750ml": 10,
-                "180ml": 10
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "750ml": 5,
-                "180ml": 35
-            },
-            "Smirnoff Mirchi Mango": {
-                "750ml": 7,
-                "180ml": 20
-            },
             "Black & White": {
-                "375ml": 5,
                 "750ml": 20,
-                "180ml": 5
+                "180ml": 5,
+                "375ml": 5
             },
             "Black Dog Centenary": {
                 "750ml": 2,
@@ -18049,6 +18036,19 @@
             },
             "JW Blonde": {
                 "JQ": 2
+            },
+            "Smirnoff": {
+                "180ml": 10,
+                "375ml": 5,
+                "750ml": 10
+            },
+            "Smirnoff Mirchi Mango": {
+                "180ml": 20,
+                "750ml": 7
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 5,
+                "180ml": 35
             }
         },
         "WB23E0100": {
@@ -18062,50 +18062,50 @@
             }
         },
         "NL01L6323": {
-            "Royal Stag Double Dark": {
-                "750ml": 10
-            },
-            "Royal Stag": {
-                "180ml": 550,
-                "750ml": 150,
-                "375ml": 250
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 20,
-                "180ml": 30
-            },
             "Oaken Glow": {
-                "180ml": 20,
+                "750ml": 10,
                 "375ml": 10,
-                "750ml": 10
+                "180ml": 20
             },
             "Royal Stag Barrel": {
                 "180ml": 15,
                 "375ml": 15,
                 "750ml": 20
+            },
+            "Royal Stag": {
+                "750ml": 150,
+                "180ml": 550,
+                "375ml": 250
+            },
+            "Royal Stag Double Dark": {
+                "750ml": 10
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 20,
+                "180ml": 30
             }
         },
         "AS01NC0696": {
             "Imperial Blue": {
-                "375ml": 100,
-                "180ml": 450
+                "180ml": 450,
+                "375ml": 100
             }
         },
         "WB23E7099": {
             "McDowell's Rum": {
-                "375ml": 100,
+                "750ml": 325,
                 "180ml": 800,
-                "750ml": 325
+                "375ml": 100
             },
             "Royal Challenge": {
-                "375ml": 75,
                 "180ml": 75,
+                "375ml": 75,
                 "750ml": 25
             },
             "Director's Special Black": {
                 "750ml": 15,
-                "375ml": 25,
-                "180ml": 10
+                "180ml": 10,
+                "375ml": 25
             }
         },
         "AS01KC2111": {
@@ -18145,14 +18145,14 @@
         },
         "AS25EC7464": {
             "Imperial Blue": {
-                "180ml": 450,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 450
             }
         },
         "AS01HC6690": {
             "Godfather Select": {
-                "Can": 300,
-                "Bottle": 380
+                "Bottle": 380,
+                "Can": 300
             }
         },
         "RJ52GA1125": {
@@ -18188,15 +18188,15 @@
             }
         },
         "AS01EC6089": {
+            "McDowell's Double Oak Barrel": {
+                "750ml": 15,
+                "180ml": 150,
+                "375ml": 35
+            },
             "McDowell's Luxury": {
                 "750ml": 50,
-                "180ml": 200,
-                "375ml": 100
-            },
-            "McDowell's Double Oak Barrel": {
-                "375ml": 35,
-                "180ml": 150,
-                "750ml": 15
+                "375ml": 100,
+                "180ml": 200
             }
         },
         "AS03BC8122": {
@@ -18207,9 +18207,9 @@
         },
         "AS11BC0569": {
             "McDowell's Rum": {
+                "375ml": 100,
                 "180ml": 700,
-                "750ml": 100,
-                "375ml": 100
+                "750ml": 100
             }
         },
         "AS01LC5954": {
@@ -18219,8 +18219,8 @@
         },
         "NL01AF6660": {
             "Royal Stag": {
-                "375ml": 100,
                 "750ml": 50,
+                "375ml": 100,
                 "180ml": 400
             }
         },
@@ -18252,28 +18252,28 @@
             }
         },
         "AS01SC5417": {
-            "Magic Moments": {
-                "750ml": 15,
-                "375ml": 15,
-                "180ml": 75
-            },
-            "Magic Moments Lemon": {
-                "180ml": 35,
-                "375ml": 20,
-                "750ml": 20
+            "After Dark": {
+                "180ml": 200,
+                "375ml": 75,
+                "750ml": 65
             },
             "Magic Moments Green Apple": {
+                "180ml": 10,
                 "375ml": 5,
-                "750ml": 5,
-                "180ml": 10
-            },
-            "After Dark": {
-                "375ml": 75,
-                "180ml": 200,
-                "750ml": 65
+                "750ml": 5
             },
             "8 PM Premium Black": {
                 "180ml": 10
+            },
+            "Magic Moments": {
+                "180ml": 75,
+                "750ml": 15,
+                "375ml": 15
+            },
+            "Magic Moments Lemon": {
+                "750ml": 20,
+                "375ml": 20,
+                "180ml": 35
             }
         }
     },
@@ -19501,33 +19501,33 @@
             }
         },
         "AS01TC3986": {
-            "Smirnoff Minty Jamun Vodka": {
-                "750ml": 15,
-                "180ml": 25
-            },
-            "Black & White": {
-                "375ml": 10,
-                "750ml": 15,
-                "180ml": 7
-            },
-            "JW Red Label": {
-                "750ml": 10,
+            "Black Dog Triple Gold": {
+                "180ml": 2,
+                "750ml": 2,
                 "375ml": 1
             },
-            "Black Dog Triple Gold": {
+            "JW Red Label": {
                 "375ml": 1,
-                "750ml": 2,
-                "180ml": 2
+                "750ml": 10
             },
             "Black Dog Centenary": {
                 "750ml": 2
+            },
+            "Black & White": {
+                "180ml": 7,
+                "750ml": 15,
+                "375ml": 10
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 15,
+                "180ml": 25
             }
         },
         "AS03BC9029": {
             "Lords Whiskey": {
                 "750ml": 200,
-                "375ml": 100,
-                "180ml": 50
+                "180ml": 50,
+                "375ml": 100
             }
         },
         "AS03BC8344": {
@@ -19543,16 +19543,84 @@
             }
         },
         "AS01UC8610": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
-            "Imperial Blue": {
-                "750ml": 75,
-                "375ml": 75,
-                "180ml": 300
-            },
             "Imperial Black": {
-                "375ml": 25,
                 "750ml": 25,
-                "180ml": 50
+                "180ml": 50,
+                "375ml": 25
+            },
+            "Imperial Blue": {
+                "180ml": 300,
+                "375ml": 75,
+                "750ml": 75
+            }
+        },
+        "NL03AA7527": {
+            "_TelegramSupplier": "Sula Vineyards Limited",
+            "Sula Shiraz Cabernet Red": {
+                "Full": 80
+            },
+            "Sula Dindori Reserve Red": {
+                "750ml": 5
+            },
+            "Sula Brut Sparkling White Wine": {
+                "750ml": 5
+            },
+            "Sula Chenin Blanc White Wine": {
+                "Full": 40
+            },
+            "Dia White Wine Sparkler": {
+                "750ml": 5
+            },
+            "Dia Red Sparkler Wine": {
+                "750ml": 25
+            }
+        },
+        "AS26AC1046": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 50,
+                "180ml": 400,
+                "375ml": 100
+            }
+        },
+        "AS15AC5702": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "375ml": 75,
+                "180ml": 300,
+                "750ml": 75
+            },
+            "McDowell's Double Oak Barrel": {
+                "180ml": 50,
+                "375ml": 30,
+                "750ml": 20
+            }
+        },
+        "AS26AC1049": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "Magic Moments Lemon": {
+                "375ml": 5,
+                "180ml": 20
+            },
+            "Magic Moments Green Apple": {
+                "375ml": 5,
+                "180ml": 35
+            },
+            "After Dark": {
+                "750ml": 40,
+                "375ml": 60,
+                "180ml": 235
+            },
+            "Magic Moments": {
+                "375ml": 30,
+                "180ml": 120
+            }
+        },
+        "AS01QC4009": {
+            "_TelegramSupplier": "Pernod Ricard India Private Limited",
+            "Jameson": {
+                "750ml": 60,
+                "Quarter": 20
             }
         }
     }
