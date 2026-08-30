@@ -18294,29 +18294,29 @@
     },
     "17-Aug-2026": {
         "AS01FC0035": {
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
+            },
             "Officer's Choice Blue": {
-                "375ml": 10,
-                "180ml": 20
+                "180ml": 20,
+                "375ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
             },
             "Iconiq Vodka": {
-                "375ml": 50,
-                "750ml": 15
-            },
-            "Officer's Choice pet": {
-                "375ml": 100
-            },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 5,
-                "375ml": 15
-            },
-            "Sterling B7": {
-                "180ml": 15
+                "750ml": 15,
+                "375ml": 50
             },
             "Officer's Choice": {
                 "750ml": 120
             },
-            "Iconiq Hippy": {
-                "180ml": 150
+            "Sterling B7": {
+                "180ml": 15
+            },
+            "Officer's Choice pet": {
+                "375ml": 100
             }
         },
         "HP38H6771": {
@@ -18330,24 +18330,24 @@
             }
         },
         "AS01LC6508": {
+            "Antiquity Blue Ultra": {
+                "180ml": 15,
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Signature": {
+                "180ml": 20,
+                "375ml": 15,
+                "750ml": 15
+            },
+            "Director's Special Black": {
+                "180ml": 80,
+                "375ml": 40
+            },
             "Royal Challenge": {
                 "180ml": 150,
                 "375ml": 150,
                 "750ml": 50
-            },
-            "Signature": {
-                "375ml": 15,
-                "180ml": 20,
-                "750ml": 15
-            },
-            "Director's Special Black": {
-                "375ml": 40,
-                "180ml": 80
-            },
-            "Antiquity Blue Ultra": {
-                "375ml": 10,
-                "750ml": 5,
-                "180ml": 15
             }
         },
         "AS01UC8440": {
@@ -18360,13 +18360,8 @@
         "AS01LC6322": {
             "100 Pipers": {
                 "750ml": 4,
-                "180ml": 3,
-                "375ml": 3
-            },
-            "Blender's Pride Exclusive": {
-                "180ml": 25,
-                "375ml": 25,
-                "750ml": 25
+                "375ml": 3,
+                "180ml": 3
             },
             "Oaken Glow": {
                 "750ml": 10,
@@ -18377,6 +18372,11 @@
                 "750ml": 20,
                 "180ml": 20,
                 "375ml": 15
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 25,
+                "750ml": 25,
+                "180ml": 25
             },
             "Royal Stag Barrel": {
                 "750ml": 20,
@@ -19623,8 +19623,8 @@
         "AS01UC3708": {
             "Royal Stag": {
                 "750ml": 50,
-                "180ml": 400,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 400
             },
             "Blender's Pride Exclusive": {
                 "180ml": 20,
@@ -19641,6 +19641,23 @@
             },
             "Masti No. 1": {
                 "CA": 100
+            }
+        },
+        "AS01JC3625": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser Magnum": {
+                "Bottle": 200,
+                "Can": 110
+            },
+            "Budweiser": {
+                "Pint": 100,
+                "Can": 100
+            },
+            "Corona": {
+                "Pint": 70
+            },
+            "Hoegaarden Witbier": {
+                "Pint": 20
             }
         }
     }
