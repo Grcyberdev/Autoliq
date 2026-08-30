@@ -18176,15 +18176,15 @@
     },
     "13-Aug-2026": {
         "AS04CC0758": {
-            "Rhino No 1": {
-                "CS": 50,
-                "CA": 150
+            "Rhino Limon": {
+                "CA": 50
             },
             "Rhino Tango": {
                 "CA": 30
             },
-            "Rhino Limon": {
-                "CA": 50
+            "Rhino No 1": {
+                "CS": 50,
+                "CA": 150
             }
         },
         "AS01EC6089": {
@@ -18287,8 +18287,8 @@
     "16-Aug-2026": {
         "AS03BC8344": {
             "Masti Special": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         }
     },
@@ -18983,8 +18983,8 @@
         },
         "AS03BC8122": {
             "Masti Special": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         },
         "AS01JC3625": {
@@ -19532,8 +19532,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         },
         "AS01PC0693": {
@@ -19621,7 +19621,6 @@
     },
     "30-Aug-2026": {
         "AS01UC3708": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
                 "750ml": 50,
                 "180ml": 400,
@@ -19634,6 +19633,15 @@
             },
             "Oaken Glow": {
                 "180ml": 10
+            }
+        },
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CA": 600
+            },
+            "Masti No. 1": {
+                "CA": 100
             }
         }
     }
