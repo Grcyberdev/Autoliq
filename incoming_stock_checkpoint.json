@@ -17999,23 +17999,10 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
-            "Smirnoff": {
-                "375ml": 5,
-                "750ml": 10,
-                "180ml": 10
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "750ml": 5,
-                "180ml": 35
-            },
-            "Smirnoff Mirchi Mango": {
-                "750ml": 7,
-                "180ml": 20
-            },
             "Black & White": {
-                "375ml": 5,
                 "750ml": 20,
-                "180ml": 5
+                "180ml": 5,
+                "375ml": 5
             },
             "Black Dog Centenary": {
                 "750ml": 2,
@@ -18049,6 +18036,19 @@
             },
             "JW Blonde": {
                 "JQ": 2
+            },
+            "Smirnoff": {
+                "180ml": 10,
+                "375ml": 5,
+                "750ml": 10
+            },
+            "Smirnoff Mirchi Mango": {
+                "180ml": 20,
+                "750ml": 7
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 5,
+                "180ml": 35
             }
         },
         "WB23E0100": {
@@ -18062,50 +18062,50 @@
             }
         },
         "NL01L6323": {
-            "Royal Stag Double Dark": {
-                "750ml": 10
-            },
-            "Royal Stag": {
-                "180ml": 550,
-                "750ml": 150,
-                "375ml": 250
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 20,
-                "180ml": 30
-            },
             "Oaken Glow": {
-                "180ml": 20,
+                "750ml": 10,
                 "375ml": 10,
-                "750ml": 10
+                "180ml": 20
             },
             "Royal Stag Barrel": {
                 "180ml": 15,
                 "375ml": 15,
                 "750ml": 20
+            },
+            "Royal Stag": {
+                "750ml": 150,
+                "180ml": 550,
+                "375ml": 250
+            },
+            "Royal Stag Double Dark": {
+                "750ml": 10
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 20,
+                "180ml": 30
             }
         },
         "AS01NC0696": {
             "Imperial Blue": {
-                "375ml": 100,
-                "180ml": 450
+                "180ml": 450,
+                "375ml": 100
             }
         },
         "WB23E7099": {
             "McDowell's Rum": {
-                "375ml": 100,
+                "750ml": 325,
                 "180ml": 800,
-                "750ml": 325
+                "375ml": 100
             },
             "Royal Challenge": {
-                "375ml": 75,
                 "180ml": 75,
+                "375ml": 75,
                 "750ml": 25
             },
             "Director's Special Black": {
                 "750ml": 15,
-                "375ml": 25,
-                "180ml": 10
+                "180ml": 10,
+                "375ml": 25
             }
         },
         "AS01KC2111": {
@@ -18145,14 +18145,14 @@
         },
         "AS25EC7464": {
             "Imperial Blue": {
-                "180ml": 450,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 450
             }
         },
         "AS01HC6690": {
             "Godfather Select": {
-                "Can": 300,
-                "Bottle": 380
+                "Bottle": 380,
+                "Can": 300
             }
         },
         "RJ52GA1125": {
@@ -18425,16 +18425,16 @@
         },
         "AS01JC3625": {
             "McDowell's Rum": {
+                "180ml": 500,
                 "750ml": 300,
-                "375ml": 100,
-                "180ml": 500
+                "375ml": 100
             }
         },
         "AS01NC1686": {
             "Royal Challenge": {
-                "180ml": 125,
                 "750ml": 25,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 125
             },
             "Director's Special Black": {
                 "180ml": 75,
@@ -18452,87 +18452,66 @@
         },
         "AS26AC1140": {
             "Royal Stag": {
-                "375ml": 150,
+                "750ml": 100,
                 "180ml": 300,
-                "750ml": 100
+                "375ml": 150
             }
         },
         "AS25BC9705": {
+            "Officer's Choice": {
+                "750ml": 50
+            },
             "Officer's Choice pet": {
                 "180ml": 400,
                 "375ml": 50
-            },
-            "Officer's Choice": {
-                "750ml": 50
             }
         },
         "NL01AK0451": {
             "All Seasons Connoisseur": {
                 "180ml": 130
             },
-            "London High Lemon Vodka": {
-                "180ml": 5
-            },
             "London High Vodka": {
                 "375ml": 5,
                 "180ml": 10
+            },
+            "London High Lemon Vodka": {
+                "180ml": 5
             }
         },
         "AS01PC9781": {
-            "Magic Moments": {
-                "180ml": 30,
-                "750ml": 10,
-                "375ml": 20
-            },
             "After Dark": {
                 "180ml": 195,
-                "375ml": 30,
-                "750ml": 15
+                "750ml": 15,
+                "375ml": 30
+            },
+            "Magic Moments": {
+                "750ml": 10,
+                "180ml": 30,
+                "375ml": 20
             }
         },
         "AS01EC8141": {
             "McDowell's Double Oak Barrel": {
+                "375ml": 60,
                 "750ml": 15,
-                "180ml": 125,
-                "375ml": 60
+                "180ml": 125
             },
             "McDowell's Luxury": {
-                "750ml": 150,
+                "375ml": 300,
                 "180ml": 450,
-                "375ml": 300
+                "750ml": 150
             }
         },
         "AS01HC0109": {
             "Imperial Black": {
-                "375ml": 150,
-                "180ml": 400
+                "180ml": 400,
+                "375ml": 150
             }
         },
         "AS01UC4973": {
-            "Smirnoff": {
-                "180ml": 5,
-                "750ml": 10,
-                "375ml": 10
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "180ml": 20,
-                "750ml": 10
-            },
-            "Smirnoff Mirchi Mango": {
-                "180ml": 13
-            },
-            "Black & White": {
-                "375ml": 7,
-                "750ml": 10,
-                "180ml": 3
-            },
-            "Black Dog Centenary": {
-                "375ml": 2,
-                "750ml": 2
-            },
             "Black Dog Triple Gold": {
-                "750ml": 5,
-                "180ml": 2
+                "180ml": 2,
+                "750ml": 5
             },
             "J & B": {
                 "750ml": 5
@@ -18548,6 +18527,27 @@
             },
             "Singleton 12 Yrs": {
                 "Full": 1
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 20,
+                "750ml": 10
+            },
+            "Smirnoff": {
+                "180ml": 5,
+                "750ml": 10,
+                "375ml": 10
+            },
+            "Black Dog Centenary": {
+                "750ml": 2,
+                "375ml": 2
+            },
+            "Black & White": {
+                "180ml": 3,
+                "750ml": 10,
+                "375ml": 7
+            },
+            "Smirnoff Mirchi Mango": {
+                "180ml": 13
             }
         },
         "AS01NC0427": {
@@ -18562,14 +18562,14 @@
         },
         "AS01EC6746": {
             "Imperial Blue": {
-                "375ml": 100,
-                "180ml": 450
+                "180ml": 450,
+                "375ml": 100
             }
         },
         "AS04CC0758": {
             "Lords Whiskey": {
-                "750ml": 150,
-                "375ml": 200
+                "375ml": 200,
+                "750ml": 150
             }
         }
     },
@@ -19702,14 +19702,14 @@
             }
         },
         "AS25DC9946": {
-            "Imperial Blue": {
-                "180ml": 350,
-                "750ml": 25,
-                "375ml": 50
-            },
             "Imperial Black": {
+                "180ml": 100,
+                "750ml": 25
+            },
+            "Imperial Blue": {
+                "375ml": 50,
                 "750ml": 25,
-                "180ml": 100
+                "180ml": 350
             }
         },
         "AS01GC6029": {
@@ -19736,6 +19736,27 @@
             },
             "Officer's Choice Blue": {
                 "180ml": 20
+            }
+        },
+        "UP21CT6958": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Royal Challenge": {
+                "750ml": 35,
+                "375ml": 75,
+                "180ml": 125
+            },
+            "Director's Special Black": {
+                "750ml": 20,
+                "375ml": 40,
+                "180ml": 90
+            },
+            "McDowell's Luxury": {
+                "180ml": 150
+            },
+            "Antiquity Blue Ultra": {
+                "180ml": 5,
+                "375ml": 5,
+                "750ml": 5
             }
         }
     }
