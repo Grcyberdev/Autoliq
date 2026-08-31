@@ -17999,23 +17999,10 @@
     },
     "12-Aug-2026": {
         "AS25EC2957": {
-            "Smirnoff": {
-                "375ml": 5,
-                "750ml": 10,
-                "180ml": 10
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "750ml": 5,
-                "180ml": 35
-            },
-            "Smirnoff Mirchi Mango": {
-                "750ml": 7,
-                "180ml": 20
-            },
             "Black & White": {
-                "375ml": 5,
                 "750ml": 20,
-                "180ml": 5
+                "180ml": 5,
+                "375ml": 5
             },
             "Black Dog Centenary": {
                 "750ml": 2,
@@ -18049,6 +18036,19 @@
             },
             "JW Blonde": {
                 "JQ": 2
+            },
+            "Smirnoff": {
+                "180ml": 10,
+                "375ml": 5,
+                "750ml": 10
+            },
+            "Smirnoff Mirchi Mango": {
+                "180ml": 20,
+                "750ml": 7
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 5,
+                "180ml": 35
             }
         },
         "WB23E0100": {
@@ -18062,50 +18062,50 @@
             }
         },
         "NL01L6323": {
-            "Royal Stag Double Dark": {
-                "750ml": 10
-            },
-            "Royal Stag": {
-                "180ml": 550,
-                "750ml": 150,
-                "375ml": 250
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 20,
-                "180ml": 30
-            },
             "Oaken Glow": {
-                "180ml": 20,
+                "750ml": 10,
                 "375ml": 10,
-                "750ml": 10
+                "180ml": 20
             },
             "Royal Stag Barrel": {
                 "180ml": 15,
                 "375ml": 15,
                 "750ml": 20
+            },
+            "Royal Stag": {
+                "750ml": 150,
+                "180ml": 550,
+                "375ml": 250
+            },
+            "Royal Stag Double Dark": {
+                "750ml": 10
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 20,
+                "180ml": 30
             }
         },
         "AS01NC0696": {
             "Imperial Blue": {
-                "375ml": 100,
-                "180ml": 450
+                "180ml": 450,
+                "375ml": 100
             }
         },
         "WB23E7099": {
             "McDowell's Rum": {
-                "375ml": 100,
+                "750ml": 325,
                 "180ml": 800,
-                "750ml": 325
+                "375ml": 100
             },
             "Royal Challenge": {
-                "375ml": 75,
                 "180ml": 75,
+                "375ml": 75,
                 "750ml": 25
             },
             "Director's Special Black": {
                 "750ml": 15,
-                "375ml": 25,
-                "180ml": 10
+                "180ml": 10,
+                "375ml": 25
             }
         },
         "AS01KC2111": {
@@ -18145,14 +18145,14 @@
         },
         "AS25EC7464": {
             "Imperial Blue": {
-                "180ml": 450,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 450
             }
         },
         "AS01HC6690": {
             "Godfather Select": {
-                "Can": 300,
-                "Bottle": 380
+                "Bottle": 380,
+                "Can": 300
             }
         },
         "RJ52GA1125": {
@@ -18294,6 +18294,10 @@
     },
     "17-Aug-2026": {
         "AS01FC0035": {
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
+            },
             "Iconiq Hippy": {
                 "180ml": 150
             },
@@ -18305,18 +18309,14 @@
                 "750ml": 15,
                 "375ml": 50
             },
-            "Officer's Choice": {
-                "750ml": 120
-            },
             "Sterling B7": {
                 "180ml": 15
             },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 5,
-                "375ml": 15
-            },
             "Officer's Choice pet": {
                 "375ml": 100
+            },
+            "Officer's Choice": {
+                "750ml": 120
             }
         },
         "HP38H6771": {
@@ -18330,38 +18330,47 @@
             }
         },
         "AS01LC6508": {
-            "Director's Special Black": {
-                "180ml": 80,
-                "375ml": 40
-            },
             "Royal Challenge": {
-                "750ml": 50,
                 "375ml": 150,
+                "750ml": 50,
                 "180ml": 150
             },
             "Antiquity Blue Ultra": {
                 "375ml": 10,
-                "180ml": 15,
-                "750ml": 5
+                "750ml": 5,
+                "180ml": 15
+            },
+            "Director's Special Black": {
+                "375ml": 40,
+                "180ml": 80
             },
             "Signature": {
-                "375ml": 15,
+                "750ml": 15,
                 "180ml": 20,
-                "750ml": 15
+                "375ml": 15
             }
         },
         "AS01UC8440": {
             "AC Black Luxury": {
-                "750ml": 150,
+                "375ml": 150,
                 "180ml": 600,
-                "375ml": 150
+                "750ml": 150
             }
         },
         "AS01LC6322": {
-            "100 Pipers": {
-                "750ml": 4,
-                "180ml": 3,
-                "375ml": 3
+            "Blender's Pride Exclusive": {
+                "375ml": 25,
+                "750ml": 25,
+                "180ml": 25
+            },
+            "Royal Stag": {
+                "750ml": 115,
+                "375ml": 150
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 15,
+                "180ml": 20,
+                "750ml": 20
             },
             "Royal Stag Double Dark": {
                 "180ml": 10,
@@ -18369,28 +18378,19 @@
                 "375ml": 10
             },
             "Oaken Glow": {
-                "750ml": 10,
                 "375ml": 5,
-                "180ml": 5
+                "180ml": 5,
+                "750ml": 10
             },
-            "Blender's Pride Reserve": {
-                "750ml": 20,
-                "375ml": 15,
-                "180ml": 20
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 25,
-                "750ml": 25,
-                "180ml": 25
-            },
-            "Royal Stag": {
-                "375ml": 150,
-                "750ml": 115
+            "100 Pipers": {
+                "750ml": 4,
+                "375ml": 3,
+                "180ml": 3
             },
             "Royal Stag Barrel": {
-                "180ml": 50,
+                "750ml": 20,
                 "375ml": 25,
-                "750ml": 20
+                "180ml": 50
             }
         },
         "AS03BC8122": {
@@ -19648,15 +19648,23 @@
                 "Bottle": 200,
                 "Can": 110
             },
+            "Hoegaarden Witbier": {
+                "Pint": 20
+            },
             "Budweiser": {
-                "Pint": 100,
-                "Can": 100
+                "Can": 100,
+                "Pint": 100
             },
             "Corona": {
                 "Pint": 70
-            },
-            "Hoegaarden Witbier": {
-                "Pint": 20
+            }
+        },
+        "AS02CC8645": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "750ml": 75,
+                "375ml": 75,
+                "180ml": 400
             }
         }
     },
@@ -19685,7 +19693,6 @@
             }
         },
         "AS09AC6285": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
