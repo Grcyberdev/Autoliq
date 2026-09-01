@@ -705,6 +705,7 @@ SUPPLIER_NAME_MAPPING = {
     "MONIKA ALCOBEV LIMITED": "Monika AlcoBev",
     "PARSAN BROTHERS": "Parsan Brothers",
     "TASTAROMA FOOD AND BEVERAGES UNIT L": "Tastaroma",
+    "DR DIPANKAR LABORATORIES PVT LTD": "Dipankar Laboratories",
 
 }
 
