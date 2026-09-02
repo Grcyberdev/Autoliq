@@ -19801,9 +19801,15 @@
         },
         "AS01JC3244": {
             "Old Monk Vatted": {
-                "180ml": 400,
+                "750ml": 150,
                 "375ml": 150,
-                "750ml": 150
+                "180ml": 400
+            }
+        },
+        "AS01GC8997": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1400
             }
         }
     }
