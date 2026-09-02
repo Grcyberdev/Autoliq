@@ -19793,6 +19793,20 @@
                 "Bottle": 480,
                 "Can": 200
             }
+        },
+        "NL01AG7229": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "AS01JC3244": {
+            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
+            "Old Monk Vatted": {
+                "180ml": 400,
+                "375ml": 150,
+                "750ml": 150
+            }
         }
     }
 }
