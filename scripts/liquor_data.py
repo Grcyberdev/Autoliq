@@ -427,6 +427,7 @@ LIQUOR_NAME_MAPPING = {
     "PEDRERA MONASTRELL RED WINE": "Pedrera Monastrell Red Wine",
     "ZIVA RED WINE": "Ziva Red Wine",
     "HOLLONG9 TEA WINE CLASSIC": "Hollong9 Tea Wine",
+    "TI:PO PO:RO APONG": "Tipo Apong",
 
     # --- New Variations found in logs ---
     "SEAGRAMS IMPERIAL BLACK MASTERS SELECT GRAIN BLENDED WHISKY": "IB Black",
