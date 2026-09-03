@@ -19801,8 +19801,8 @@
         },
         "AS01JC3244": {
             "Old Monk Vatted": {
-                "750ml": 150,
                 "180ml": 400,
+                "750ml": 150,
                 "375ml": 150
             }
         },
@@ -19824,11 +19824,30 @@
             }
         },
         "AS01LC5954": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
                 "750ml": 300,
                 "180ml": 500,
                 "375ml": 100
+            }
+        },
+        "AS01UC3451": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "375ml": 175,
+                "750ml": 100,
+                "180ml": 625
+            }
+        },
+        "AS01KC7022": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "750ml": 25,
+                "180ml": 125
+            },
+            "Imperial Black": {
+                "180ml": 300,
+                "750ml": 25,
+                "375ml": 75
             }
         }
     }
