@@ -19790,8 +19790,8 @@
         },
         "NL01AF3952": {
             "Godfather Select": {
-                "Bottle": 480,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 480
             }
         },
         "NL01AG7229": {
@@ -19801,9 +19801,9 @@
         },
         "AS01JC3244": {
             "Old Monk Vatted": {
+                "750ml": 150,
                 "180ml": 400,
-                "375ml": 150,
-                "750ml": 150
+                "375ml": 150
             }
         },
         "AS01GC8997": {
@@ -19819,9 +19819,16 @@
             }
         },
         "AS03BC8122": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 700
+            }
+        },
+        "AS01LC5954": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "750ml": 300,
+                "180ml": 500,
+                "375ml": 100
             }
         }
     }
