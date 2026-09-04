@@ -19802,8 +19802,8 @@
         "AS01JC3244": {
             "Old Monk Vatted": {
                 "750ml": 150,
-                "180ml": 400,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 400
             }
         },
         "AS01GC8997": {
@@ -19825,26 +19825,26 @@
         },
         "AS01LC5954": {
             "McDowell's Rum": {
-                "750ml": 300,
+                "375ml": 100,
                 "180ml": 500,
-                "375ml": 100
+                "750ml": 300
             }
         },
         "AS01UC3451": {
             "AC Black Luxury": {
-                "750ml": 100,
+                "375ml": 175,
                 "180ml": 625,
-                "375ml": 175
+                "750ml": 100
             }
         },
         "AS01KC7022": {
+            "Imperial Black": {
+                "750ml": 25,
+                "180ml": 300,
+                "375ml": 75
+            },
             "Imperial Blue": {
                 "180ml": 125,
-                "750ml": 25
-            },
-            "Imperial Black": {
-                "180ml": 300,
-                "375ml": 75,
                 "750ml": 25
             }
         },
@@ -19862,19 +19862,14 @@
             }
         },
         "AS01TC1763": {
-            "Magic Moments Lemon": {
-                "180ml": 50,
-                "375ml": 30,
-                "750ml": 10
-            },
-            "Magic Moments": {
-                "375ml": 70,
-                "180ml": 100,
-                "750ml": 30
+            "After Dark": {
+                "750ml": 20,
+                "180ml": 90,
+                "375ml": 40
             },
             "Magic Moments Green Apple": {
-                "750ml": 10,
                 "180ml": 40,
+                "750ml": 10,
                 "375ml": 15
             },
             "8 PM Premium Black": {
@@ -19882,32 +19877,37 @@
                 "375ml": 15,
                 "180ml": 20
             },
-            "After Dark": {
-                "750ml": 20,
-                "180ml": 90,
-                "375ml": 40
+            "Magic Moments": {
+                "180ml": 100,
+                "375ml": 70,
+                "750ml": 30
+            },
+            "Magic Moments Lemon": {
+                "375ml": 30,
+                "180ml": 50,
+                "750ml": 10
             }
         }
     },
     "04-Sep-2026": {
         "AS01JC3625": {
+            "McDowell's Rum": {
+                "750ml": 100
+            },
+            "Director's Special Black": {
+                "180ml": 65,
+                "750ml": 15,
+                "375ml": 20
+            },
             "Signature": {
                 "180ml": 20,
                 "750ml": 10,
                 "375ml": 20
             },
-            "Director's Special Black": {
-                "750ml": 15,
-                "375ml": 20,
-                "180ml": 65
-            },
             "Royal Challenge": {
                 "375ml": 50,
-                "180ml": 75,
-                "750ml": 25
-            },
-            "McDowell's Rum": {
-                "750ml": 100
+                "750ml": 25,
+                "180ml": 75
             },
             "McDowell's Luxury": {
                 "750ml": 25,
@@ -19918,6 +19918,34 @@
             "Masti": {
                 "CA": 500,
                 "CS": 200
+            }
+        },
+        "AS01FC0045": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice Blue": {
+                "375ml": 10,
+                "180ml": 20
+            },
+            "Sterling B7": {
+                "180ml": 20
+            },
+            "Iconiq Vodka": {
+                "750ml": 25,
+                "375ml": 100
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 5,
+                "375ml": 15
+            },
+            "Jolly Roger Rum": {
+                "750ml": 5
+            },
+            "Officer's Choice pet": {
+                "180ml": 100,
+                "375ml": 50
             }
         }
     }
