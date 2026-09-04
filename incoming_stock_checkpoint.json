@@ -19843,8 +19843,8 @@
                 "750ml": 25
             },
             "Imperial Black": {
-                "375ml": 75,
                 "180ml": 300,
+                "375ml": 75,
                 "750ml": 25
             }
         },
@@ -19886,6 +19886,40 @@
                 "750ml": 20,
                 "180ml": 90,
                 "375ml": 40
+            }
+        }
+    },
+    "04-Sep-2026": {
+        "AS01JC3625": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Signature": {
+                "180ml": 20,
+                "750ml": 10,
+                "375ml": 20
+            },
+            "Director's Special Black": {
+                "750ml": 15,
+                "375ml": 20,
+                "180ml": 65
+            },
+            "Royal Challenge": {
+                "375ml": 50,
+                "180ml": 75,
+                "750ml": 25
+            },
+            "McDowell's Rum": {
+                "750ml": 100
+            },
+            "McDowell's Luxury": {
+                "750ml": 25,
+                "180ml": 125
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 500,
+                "CS": 200
             }
         }
     }
