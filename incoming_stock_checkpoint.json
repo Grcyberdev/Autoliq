@@ -19790,8 +19790,8 @@
         },
         "NL01AF3952": {
             "Godfather Select": {
-                "Bottle": 480,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 480
             }
         },
         "NL01AG7229": {
@@ -19801,9 +19801,9 @@
         },
         "AS01JC3244": {
             "Old Monk Vatted": {
-                "750ml": 150,
                 "180ml": 400,
-                "375ml": 150
+                "375ml": 150,
+                "750ml": 150
             }
         },
         "AS01GC8997": {
@@ -19826,25 +19826,25 @@
         "AS01LC5954": {
             "McDowell's Rum": {
                 "375ml": 100,
-                "180ml": 500,
-                "750ml": 300
+                "750ml": 300,
+                "180ml": 500
             }
         },
         "AS01UC3451": {
             "AC Black Luxury": {
-                "375ml": 175,
+                "750ml": 100,
                 "180ml": 625,
-                "750ml": 100
+                "375ml": 175
             }
         },
         "AS01KC7022": {
+            "Imperial Blue": {
+                "180ml": 125,
+                "750ml": 25
+            },
             "Imperial Black": {
                 "375ml": 75,
                 "180ml": 300,
-                "750ml": 25
-            },
-            "Imperial Blue": {
-                "180ml": 125,
                 "750ml": 25
             }
         },
@@ -19862,25 +19862,25 @@
             }
         },
         "AS01TC1763": {
-            "Magic Moments Green Apple": {
-                "375ml": 15,
-                "180ml": 40,
-                "750ml": 10
-            },
-            "After Dark": {
-                "375ml": 40,
-                "750ml": 20,
-                "180ml": 90
-            },
-            "8 PM Premium Black": {
-                "750ml": 10,
-                "180ml": 20,
-                "375ml": 15
-            },
             "Magic Moments": {
                 "750ml": 30,
                 "375ml": 70,
                 "180ml": 100
+            },
+            "After Dark": {
+                "180ml": 90,
+                "375ml": 40,
+                "750ml": 20
+            },
+            "8 PM Premium Black": {
+                "375ml": 15,
+                "180ml": 20,
+                "750ml": 10
+            },
+            "Magic Moments Green Apple": {
+                "375ml": 15,
+                "180ml": 40,
+                "750ml": 10
             },
             "Magic Moments Lemon": {
                 "750ml": 10,
@@ -19892,18 +19892,18 @@
     "04-Sep-2026": {
         "AS01JC3625": {
             "Director's Special Black": {
-                "180ml": 65,
                 "375ml": 20,
-                "750ml": 15
+                "750ml": 15,
+                "180ml": 65
+            },
+            "McDowell's Luxury": {
+                "180ml": 125,
+                "750ml": 25
             },
             "Royal Challenge": {
                 "180ml": 75,
                 "750ml": 25,
                 "375ml": 50
-            },
-            "McDowell's Luxury": {
-                "750ml": 25,
-                "180ml": 125
             },
             "Signature": {
                 "375ml": 20,
@@ -19921,6 +19921,17 @@
             }
         },
         "AS01FC0045": {
+            "Iconiq Vodka": {
+                "375ml": 100,
+                "750ml": 25
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
+            },
+            "Sterling B7": {
+                "180ml": 20
+            },
             "Jolly Roger Rum": {
                 "750ml": 5
             },
@@ -19928,30 +19939,19 @@
                 "375ml": 10,
                 "180ml": 20
             },
-            "Iconiq Vodka": {
-                "375ml": 100,
-                "750ml": 25
-            },
             "Officer's Choice pet": {
                 "375ml": 50,
                 "180ml": 100
             },
             "Iconiq Hippy": {
                 "180ml": 150
-            },
-            "Sterling B7": {
-                "180ml": 20
-            },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 5,
-                "375ml": 15
             }
         },
         "AS01TC2021": {
             "KD 50 Whiskey": {
+                "750ml": 150,
                 "180ml": 100,
-                "375ml": 150,
-                "750ml": 150
+                "375ml": 150
             }
         },
         "AS01RC2284": {
@@ -19965,86 +19965,85 @@
             }
         },
         "AS01NC1686": {
-            "Imperial Blue": {
-                "180ml": 175,
-                "375ml": 25
-            },
             "Imperial Black": {
                 "375ml": 50,
                 "180ml": 275,
                 "750ml": 25
+            },
+            "Imperial Blue": {
+                "180ml": 175,
+                "375ml": 25
             }
         }
     },
     "05-Sep-2026": {
         "AS27DC3767": {
-            "Magic Moments": {
-                "750ml": 20,
-                "180ml": 110,
-                "375ml": 20
-            },
             "Magic Moments Lemon": {
                 "375ml": 10,
-                "750ml": 5,
-                "180ml": 10
-            },
-            "Magic Moments Green Apple": {
-                "375ml": 5,
-                "180ml": 15,
+                "180ml": 10,
                 "750ml": 5
             },
+            "Magic Moments": {
+                "375ml": 20,
+                "180ml": 110,
+                "750ml": 20
+            },
             "8 PM Premium Black": {
-                "750ml": 5,
+                "180ml": 15,
                 "375ml": 5,
-                "180ml": 15
+                "750ml": 5
             },
             "After Dark": {
-                "375ml": 75,
                 "180ml": 200,
+                "375ml": 75,
                 "750ml": 50
+            },
+            "Magic Moments Green Apple": {
+                "750ml": 5,
+                "180ml": 15,
+                "375ml": 5
             }
         },
         "AS01PC2467": {
-            "_TelegramSupplier": "Bacardi India Pvt. Ltd.",
-            "Bombay Sapphire Gin": {
-                "750ml": 2
-            },
-            "Grey Goose": {
-                "Full": 3
-            },
-            "Teeling Whiskey": {
+            "Dewar's Portuguese Smooth": {
                 "Full": 2
             },
-            "Dewar's Portuguese Smooth": {
+            "Teeling Whiskey": {
                 "Full": 2
             },
             "Dewar's White Label": {
                 "750ml": 2,
                 "375ml": 2
             },
-            "Breezer Jamaican": {
-                "Stubby": 67
+            "Grey Goose": {
+                "Full": 3
             },
-            "Breezer Blueberry": {
-                "Stubby": 50
-            },
-            "Breezer Blackberry": {
-                "Stubby": 50
-            },
-            "Bacardi White Rum": {
-                "180ml": 5,
-                "375ml": 2,
-                "750ml": 3
-            },
-            "Bacardi Limon Rum": {
-                "180ml": 20,
-                "750ml": 10,
-                "375ml": 10
+            "Bombay Sapphire Gin": {
+                "750ml": 2
             },
             "Bacardi Mango Chilli Rum": {
                 "180ml": 10,
                 "375ml": 5,
                 "750ml": 5
+            },
+            "Bacardi Limon Rum": {
+                "375ml": 10,
+                "180ml": 20,
+                "750ml": 10
+            },
+            "Bacardi White Rum": {
+                "375ml": 2,
+                "180ml": 5,
+                "750ml": 3
+            },
+            "Breezer Blackberry": {
+                "Stubby": 50
+            },
+            "Breezer Jamaican": {
+                "Stubby": 67
+            },
+            "Breezer Blueberry": {
+                "Stubby": 50
             }
         }
     }
