@@ -19790,8 +19790,8 @@
         },
         "NL01AF3952": {
             "Godfather Select": {
-                "Can": 200,
-                "Bottle": 480
+                "Bottle": 480,
+                "Can": 200
             }
         },
         "NL01AG7229": {
@@ -19801,9 +19801,9 @@
         },
         "AS01JC3244": {
             "Old Monk Vatted": {
+                "750ml": 150,
                 "180ml": 400,
-                "375ml": 150,
-                "750ml": 150
+                "375ml": 150
             }
         },
         "AS01GC8997": {
@@ -19825,26 +19825,26 @@
         },
         "AS01LC5954": {
             "McDowell's Rum": {
-                "375ml": 100,
+                "180ml": 500,
                 "750ml": 300,
-                "180ml": 500
+                "375ml": 100
             }
         },
         "AS01UC3451": {
             "AC Black Luxury": {
-                "750ml": 100,
+                "375ml": 175,
                 "180ml": 625,
-                "375ml": 175
+                "750ml": 100
             }
         },
         "AS01KC7022": {
+            "Imperial Black": {
+                "750ml": 25,
+                "180ml": 300,
+                "375ml": 75
+            },
             "Imperial Blue": {
                 "180ml": 125,
-                "750ml": 25
-            },
-            "Imperial Black": {
-                "375ml": 75,
-                "180ml": 300,
                 "750ml": 25
             }
         },
@@ -19862,30 +19862,30 @@
             }
         },
         "AS01TC1763": {
-            "Magic Moments": {
-                "750ml": 30,
-                "375ml": 70,
-                "180ml": 100
-            },
-            "After Dark": {
-                "180ml": 90,
-                "375ml": 40,
-                "750ml": 20
-            },
-            "8 PM Premium Black": {
-                "375ml": 15,
-                "180ml": 20,
+            "Magic Moments Lemon": {
+                "180ml": 50,
+                "375ml": 30,
                 "750ml": 10
+            },
+            "Magic Moments": {
+                "375ml": 70,
+                "180ml": 100,
+                "750ml": 30
             },
             "Magic Moments Green Apple": {
-                "375ml": 15,
-                "180ml": 40,
-                "750ml": 10
-            },
-            "Magic Moments Lemon": {
                 "750ml": 10,
-                "180ml": 50,
-                "375ml": 30
+                "180ml": 40,
+                "375ml": 15
+            },
+            "8 PM Premium Black": {
+                "750ml": 10,
+                "375ml": 15,
+                "180ml": 20
+            },
+            "After Dark": {
+                "750ml": 20,
+                "180ml": 90,
+                "375ml": 40
             }
         }
     },
@@ -19916,8 +19916,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         },
         "AS01FC0045": {
@@ -20055,34 +20055,34 @@
             }
         },
         "AS01PC6347": {
-            "Glendronach 12 Yrs": {
-                "Full": 1
-            },
             "Jack Daniel's": {
-                "750ml": 9,
                 "375ml": 3,
+                "750ml": 9,
                 "Quarter": 5
             },
-            "Jagermeister": {
-                "PQ": 10
+            "Glendronach 12 Yrs": {
+                "Full": 1
             },
             "Toki Suntory": {
                 "Full": 2
             },
-            "Jack Daniel's Cinnamon": {
+            "Jack Daniel's Gentleman Jack": {
                 "750ml": 1
-            },
-            "Jager Liqeur Argentina 2026 Edition": {
-                "750ml": 3
             },
             "Jager Liqeur Brazil 2026 Edition": {
                 "750ml": 3
             },
-            "Jack Daniel's Gentleman Jack": {
+            "Jager Liqeur Argentina 2026 Edition": {
+                "750ml": 3
+            },
+            "Jack Daniel's Cinnamon": {
                 "750ml": 1
             },
             "Jack Daniel's Honey": {
                 "750ml": 2
+            },
+            "Jagermeister": {
+                "PQ": 10
             }
         },
         "AS01FC6139": {
@@ -20093,9 +20093,9 @@
         },
         "AS01KC9113": {
             "Imperial Blue": {
+                "750ml": 25,
                 "180ml": 450,
-                "375ml": 75,
-                "750ml": 25
+                "375ml": 75
             }
         },
         "AS11FC1912": {
@@ -20106,6 +20106,34 @@
         "AS03BC9029": {
             "Rhino No 1": {
                 "CA": 280
+            }
+        },
+        "UP38AT7876": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Aether Breweries Llp",
+            "Kingfisher Ultra": {
+                "Pint": 50,
+                "Can": 150,
+                "Bottle": 550
+            },
+            "Kingfisher Ultra Max": {
+                "Can": 150,
+                "Bottle": 500
+            }
+        },
+        "RJ14GG0036": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 800
+            },
+            "Tuborg Malt": {
+                "Can": 400
+            }
+        },
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CS": 200,
+                "CA": 500
             }
         }
     }
