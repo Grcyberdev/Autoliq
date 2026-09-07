@@ -20056,9 +20056,9 @@
         },
         "AS01PC6347": {
             "Jack Daniel's": {
+                "Quarter": 5,
                 "375ml": 3,
-                "750ml": 9,
-                "Quarter": 5
+                "750ml": 9
             },
             "Glendronach 12 Yrs": {
                 "Full": 1
@@ -20087,8 +20087,8 @@
         },
         "AS01FC6139": {
             "McDowell's Rum": {
-                "180ml": 700,
-                "750ml": 200
+                "750ml": 200,
+                "180ml": 700
             }
         },
         "AS01KC9113": {
@@ -20109,19 +20109,17 @@
             }
         },
         "UP38AT7876": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Aether Breweries Llp",
             "Kingfisher Ultra": {
                 "Pint": 50,
                 "Can": 150,
                 "Bottle": 550
             },
             "Kingfisher Ultra Max": {
-                "Can": 150,
-                "Bottle": 500
+                "Bottle": 500,
+                "Can": 150
             }
         },
         "RJ14GG0036": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg": {
                 "Bottle": 800
             },
@@ -20130,10 +20128,19 @@
             }
         },
         "AS03BC8122": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti Special": {
                 "CS": 200,
                 "CA": 500
+            }
+        },
+        "AS25EC4423": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice pet": {
+                "180ml": 350,
+                "375ml": 50
+            },
+            "Officer's Choice": {
+                "750ml": 100
             }
         }
     }
