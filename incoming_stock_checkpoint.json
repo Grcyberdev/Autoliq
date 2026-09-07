@@ -20055,6 +20055,12 @@
             }
         },
         "AS01PC6347": {
+            "Jack Daniel's Honey": {
+                "750ml": 2
+            },
+            "Jagermeister": {
+                "PQ": 10
+            },
             "Toki Suntory": {
                 "Full": 2
             },
@@ -20063,26 +20069,20 @@
             },
             "Jack Daniel's": {
                 "750ml": 9,
-                "375ml": 3,
-                "Quarter": 5
-            },
-            "Jack Daniel's Honey": {
-                "750ml": 2
-            },
-            "Jack Daniel's Gentleman Jack": {
-                "750ml": 1
-            },
-            "Jager Liqeur Argentina 2026 Edition": {
-                "750ml": 3
+                "Quarter": 5,
+                "375ml": 3
             },
             "Glendronach 12 Yrs": {
                 "Full": 1
             },
-            "Jagermeister": {
-                "PQ": 10
-            },
             "Jager Liqeur Brazil 2026 Edition": {
                 "750ml": 3
+            },
+            "Jager Liqeur Argentina 2026 Edition": {
+                "750ml": 3
+            },
+            "Jack Daniel's Gentleman Jack": {
+                "750ml": 1
             }
         },
         "AS01FC6139": {
@@ -20135,8 +20135,8 @@
         },
         "AS25EC4423": {
             "Officer's Choice pet": {
-                "180ml": 350,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 350
             },
             "Officer's Choice": {
                 "750ml": 100
@@ -20162,6 +20162,13 @@
             "Oaksmith International": {
                 "375ml": 110,
                 "750ml": 75
+            }
+        },
+        "AS01PC0693": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Rum": {
+                "180ml": 600,
+                "750ml": 300
             }
         }
     }
