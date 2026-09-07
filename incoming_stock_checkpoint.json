@@ -20053,6 +20053,53 @@
                 "CA": 400,
                 "CS": 300
             }
+        },
+        "AS01PC6347": {
+            "_TelegramSupplier": "Axis Enterprises",
+            "THE GLENDRONACH HIGHLAND SINGLE MALT SCOTCH WHISKY SHERRY CASK MATURED AGED 12 YEARS": {
+                "Full": 1
+            },
+            "Jack Daniel's": {
+                "750ml": 9,
+                "375ml": 3,
+                "Quarter": 5
+            },
+            "Jagermeister": {
+                "PQ": 10
+            },
+            "Jack Daniel's Honey": {
+                "750ml": 2
+            },
+            "Jager Liqeur Argentina 2026 Edition": {
+                "750ml": 3
+            },
+            "Jager Liqeur Brazil 2026 Edition": {
+                "750ml": 3
+            },
+            "Jack Daniel's Gentleman Jack": {
+                "750ml": 1
+            },
+            "Toki Suntory": {
+                "Full": 2
+            },
+            "Jack Daniel's Cinnamon": {
+                "750ml": 1
+            }
+        },
+        "AS01FC6139": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "180ml": 700,
+                "750ml": 200
+            }
+        },
+        "AS01KC9113": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "375ml": 75,
+                "180ml": 450,
+                "750ml": 25
+            }
         }
     }
 }
