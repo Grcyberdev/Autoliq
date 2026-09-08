@@ -20005,26 +20005,35 @@
             }
         },
         "AS01PC2467": {
-            "Dewar's Portuguese Smooth": {
-                "Full": 2
-            },
-            "Grey Goose": {
-                "Full": 3
-            },
-            "Bombay Sapphire Gin": {
-                "750ml": 2
-            },
-            "Teeling Whiskey": {
-                "Full": 2
-            },
             "Dewar's White Label": {
                 "750ml": 2,
                 "375ml": 2
             },
+            "Grey Goose": {
+                "Full": 3
+            },
+            "Dewar's Portuguese Smooth": {
+                "Full": 2
+            },
+            "Teeling Whiskey": {
+                "Full": 2
+            },
+            "Bombay Sapphire Gin": {
+                "750ml": 2
+            },
+            "Breezer Jamaican": {
+                "Stubby": 67
+            },
+            "Breezer Blueberry": {
+                "Stubby": 50
+            },
+            "Breezer Blackberry": {
+                "Stubby": 50
+            },
             "Bacardi White Rum": {
+                "180ml": 5,
                 "375ml": 2,
-                "750ml": 3,
-                "180ml": 5
+                "750ml": 3
             },
             "Bacardi Limon Rum": {
                 "180ml": 20,
@@ -20032,18 +20041,9 @@
                 "750ml": 10
             },
             "Bacardi Mango Chilli Rum": {
-                "180ml": 10,
                 "375ml": 5,
-                "750ml": 5
-            },
-            "Breezer Blueberry": {
-                "Stubby": 50
-            },
-            "Breezer Jamaican": {
-                "Stubby": 67
-            },
-            "Breezer Blackberry": {
-                "Stubby": 50
+                "750ml": 5,
+                "180ml": 10
             }
         }
     },
@@ -20055,26 +20055,6 @@
             }
         },
         "AS01PC6347": {
-            "Jack Daniel's": {
-                "375ml": 3,
-                "750ml": 9,
-                "Quarter": 5
-            },
-            "Jager Liqeur Argentina 2026 Edition": {
-                "750ml": 3
-            },
-            "Glendronach 12 Yrs": {
-                "Full": 1
-            },
-            "Jack Daniel's Cinnamon": {
-                "750ml": 1
-            },
-            "Jack Daniel's Honey": {
-                "750ml": 2
-            },
-            "Jagermeister": {
-                "PQ": 10
-            },
             "Jager Liqeur Brazil 2026 Edition": {
                 "750ml": 3
             },
@@ -20083,6 +20063,26 @@
             },
             "Toki Suntory": {
                 "Full": 2
+            },
+            "Jack Daniel's": {
+                "Quarter": 5,
+                "375ml": 3,
+                "750ml": 9
+            },
+            "Jack Daniel's Cinnamon": {
+                "750ml": 1
+            },
+            "Glendronach 12 Yrs": {
+                "Full": 1
+            },
+            "Jager Liqeur Argentina 2026 Edition": {
+                "750ml": 3
+            },
+            "Jagermeister": {
+                "PQ": 10
+            },
+            "Jack Daniel's Honey": {
+                "750ml": 2
             }
         },
         "AS01FC6139": {
@@ -20093,8 +20093,8 @@
         },
         "AS01KC9113": {
             "Imperial Blue": {
-                "375ml": 75,
                 "180ml": 450,
+                "375ml": 75,
                 "750ml": 25
             }
         },
@@ -20156,12 +20156,12 @@
             "Teachers 50": {
                 "750ml": 5
             },
-            "Oaksmith Gold": {
-                "375ml": 10
-            },
             "Oaksmith International": {
                 "375ml": 110,
                 "750ml": 75
+            },
+            "Oaksmith Gold": {
+                "375ml": 10
             }
         },
         "AS01PC0693": {
@@ -20174,9 +20174,26 @@
     "08-Sep-2026": {
         "AS03BC5273": {
             "Lords Whiskey": {
-                "750ml": 150,
                 "375ml": 150,
+                "750ml": 150,
                 "180ml": 50
+            }
+        },
+        "AS01TC6874": {
+            "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
+            "Vinho Porto Port Wine": {
+                "750ml": 5,
+                "375ml": 5
+            },
+            "White Magic Orange Gin": {
+                "180ml": 120,
+                "375ml": 20
+            }
+        },
+        "WB23C8700": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
