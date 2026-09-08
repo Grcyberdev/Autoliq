@@ -19983,31 +19983,28 @@
                 "375ml": 20,
                 "180ml": 110
             },
+            "Magic Moments Lemon": {
+                "375ml": 10,
+                "180ml": 10,
+                "750ml": 5
+            },
+            "After Dark": {
+                "750ml": 50,
+                "375ml": 75,
+                "180ml": 200
+            },
+            "8 PM Premium Black": {
+                "180ml": 15,
+                "750ml": 5,
+                "375ml": 5
+            },
             "Magic Moments Green Apple": {
                 "375ml": 5,
                 "180ml": 15,
                 "750ml": 5
-            },
-            "8 PM Premium Black": {
-                "750ml": 5,
-                "375ml": 5,
-                "180ml": 15
-            },
-            "Magic Moments Lemon": {
-                "750ml": 5,
-                "180ml": 10,
-                "375ml": 10
-            },
-            "After Dark": {
-                "375ml": 75,
-                "180ml": 200,
-                "750ml": 50
             }
         },
         "AS01PC2467": {
-            "Dewar's Portuguese Smooth": {
-                "Full": 2
-            },
             "Dewar's White Label": {
                 "750ml": 2,
                 "375ml": 2
@@ -20018,32 +20015,35 @@
             "Bombay Sapphire Gin": {
                 "750ml": 2
             },
-            "Teeling Whiskey": {
+            "Dewar's Portuguese Smooth": {
                 "Full": 2
             },
-            "Bacardi Limon Rum": {
-                "375ml": 10,
-                "750ml": 10,
-                "180ml": 20
-            },
-            "Bacardi Mango Chilli Rum": {
-                "180ml": 10,
-                "375ml": 5,
-                "750ml": 5
-            },
-            "Bacardi White Rum": {
-                "750ml": 3,
-                "375ml": 2,
-                "180ml": 5
-            },
-            "Breezer Blackberry": {
-                "Stubby": 50
+            "Teeling Whiskey": {
+                "Full": 2
             },
             "Breezer Jamaican": {
                 "Stubby": 67
             },
             "Breezer Blueberry": {
                 "Stubby": 50
+            },
+            "Breezer Blackberry": {
+                "Stubby": 50
+            },
+            "Bacardi White Rum": {
+                "180ml": 5,
+                "375ml": 2,
+                "750ml": 3
+            },
+            "Bacardi Limon Rum": {
+                "180ml": 20,
+                "375ml": 10,
+                "750ml": 10
+            },
+            "Bacardi Mango Chilli Rum": {
+                "180ml": 10,
+                "375ml": 5,
+                "750ml": 5
             }
         }
     },
@@ -20055,25 +20055,19 @@
             }
         },
         "AS01PC6347": {
-            "Toki Suntory": {
-                "Full": 2
-            },
-            "Jack Daniel's": {
-                "Quarter": 5,
-                "375ml": 3,
-                "750ml": 9
-            },
             "Glendronach 12 Yrs": {
                 "Full": 1
             },
-            "Jager Liqeur Argentina 2026 Edition": {
-                "750ml": 3
+            "Jack Daniel's": {
+                "750ml": 9,
+                "375ml": 3,
+                "Quarter": 5
+            },
+            "Jagermeister": {
+                "PQ": 10
             },
             "Jack Daniel's Honey": {
                 "750ml": 2
-            },
-            "Jack Daniel's Gentleman Jack": {
-                "750ml": 1
             },
             "Jack Daniel's Cinnamon": {
                 "750ml": 1
@@ -20081,21 +20075,27 @@
             "Jager Liqeur Brazil 2026 Edition": {
                 "750ml": 3
             },
-            "Jagermeister": {
-                "PQ": 10
+            "Jack Daniel's Gentleman Jack": {
+                "750ml": 1
+            },
+            "Toki Suntory": {
+                "Full": 2
+            },
+            "Jager Liqeur Argentina 2026 Edition": {
+                "750ml": 3
             }
         },
         "AS01FC6139": {
             "McDowell's Rum": {
-                "180ml": 700,
-                "750ml": 200
+                "750ml": 200,
+                "180ml": 700
             }
         },
         "AS01KC9113": {
             "Imperial Blue": {
-                "375ml": 75,
                 "750ml": 25,
-                "180ml": 450
+                "180ml": 450,
+                "375ml": 75
             }
         },
         "AS11FC1912": {
@@ -20110,9 +20110,9 @@
         },
         "UP38AT7876": {
             "Kingfisher Ultra": {
-                "Bottle": 550,
+                "Pint": 50,
                 "Can": 150,
-                "Pint": 50
+                "Bottle": 550
             },
             "Kingfisher Ultra Max": {
                 "Can": 150,
@@ -20138,8 +20138,8 @@
                 "750ml": 100
             },
             "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 350
+                "180ml": 350,
+                "375ml": 50
             }
         },
         "BR01GE1867": {
@@ -20154,14 +20154,14 @@
         },
         "AS01RC7739": {
             "Oaksmith International": {
-                "750ml": 75,
-                "375ml": 110
-            },
-            "Teachers 50": {
-                "750ml": 5
+                "375ml": 110,
+                "750ml": 75
             },
             "Oaksmith Gold": {
                 "375ml": 10
+            },
+            "Teachers 50": {
+                "750ml": 5
             }
         },
         "AS01PC0693": {
@@ -20174,15 +20174,15 @@
     "08-Sep-2026": {
         "AS03BC5273": {
             "Lords Whiskey": {
+                "180ml": 50,
                 "750ml": 150,
-                "375ml": 150,
-                "180ml": 50
+                "375ml": 150
             }
         },
         "AS01TC6874": {
             "White Magic Orange Gin": {
-                "180ml": 120,
-                "375ml": 20
+                "375ml": 20,
+                "180ml": 120
             },
             "Vinho Porto Port Wine": {
                 "750ml": 5,
@@ -20196,9 +20196,9 @@
         },
         "AS01JC3625": {
             "McDowell's Luxury": {
-                "180ml": 400,
                 "375ml": 125,
-                "750ml": 25
+                "750ml": 25,
+                "180ml": 400
             }
         },
         "AS02AC7187": {
@@ -20208,9 +20208,19 @@
         },
         "AS01HC0109": {
             "Imperial Black": {
-                "180ml": 450,
+                "375ml": 50,
                 "750ml": 50,
-                "375ml": 50
+                "180ml": 450
+            }
+        },
+        "NL01AF5037": {
+            "_TelegramSupplier": "Mohan Meakin Ltd. Tie-Up With CMJ Breweries Pvt. Ltd.",
+            "GOLDEN EAGLE EXTRA PREMIUM STRONG BEER": {
+                "Can": 100,
+                "Bottle": 300
+            },
+            "GOLDEN EAGLE PREMIUM STRONG BEER": {
+                "Can": 280
             }
         }
     }
