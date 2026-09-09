@@ -246,7 +246,8 @@ LIQUOR_NAME_MAPPING = {
     "BRO CODE ORIGINAL XV": "Bro Code XV",
     "DABANG PREMIUM STRONG BEER": "Dabang Strong",
     "DZI PREMIUM STRONG BEER": "Dzi Strong",
-
+    "GOLDEN EAGLE EXTRA PREMIUM STRONG BEER": "Golden Eagle Extra Strong",
+    "GOLDEN EAGLE PREMIUM STRONG BEER": "Golden Eagle Strong",
 
 
     # --- Newly Mapped Items (Exact Match Fixes) ---
