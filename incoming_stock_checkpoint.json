@@ -20290,9 +20290,6 @@
             }
         },
         "AS01FC0035": {
-            "Officer's Choice": {
-                "750ml": 50
-            },
             "Sterling B7": {
                 "180ml": 15
             },
@@ -20303,13 +20300,16 @@
                 "750ml": 20,
                 "375ml": 50
             },
+            "Officer's Choice": {
+                "750ml": 50
+            },
             "Sterling Reserve B7 Blended": {
                 "750ml": 20,
                 "375ml": 15
             },
             "Officer's Choice pet": {
-                "180ml": 150,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 150
             }
         },
         "AS03BC8122": {
@@ -20323,8 +20323,8 @@
         "AS01HC9069": {
             "McDowell's Rum": {
                 "180ml": 600,
-                "375ml": 200,
-                "750ml": 100
+                "750ml": 100,
+                "375ml": 200
             }
         },
         "AS09BC0737": {
@@ -20372,13 +20372,11 @@
             }
         },
         "BR01GE1895": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg": {
                 "Bottle": 1200
             }
         },
         "AS01TC5581": {
-            "_TelegramSupplier": "Pernod Ricard India Private Limited",
             "Jacob's Creek Shiraz Cabernet": {
                 "750ml": 7
             },
@@ -20395,6 +20393,12 @@
             },
             "Jameson": {
                 "750ml": 8
+            }
+        },
+        "RJ14GG0360": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
             }
         }
     }
