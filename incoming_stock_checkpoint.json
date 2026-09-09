@@ -20244,16 +20244,13 @@
             }
         },
         "AS25EC2957": {
-            "JW Double Black": {
-                "750ml": 5
-            },
-            "JW Black Label": {
-                "750ml": 5,
-                "Quarter": 3
-            },
             "JW Red Label": {
                 "750ml": 22,
                 "375ml": 10
+            },
+            "JW Black Label": {
+                "Quarter": 3,
+                "750ml": 5
             },
             "J & B": {
                 "750ml": 5
@@ -20266,6 +20263,9 @@
                 "180ml": 3,
                 "375ml": 2,
                 "750ml": 2
+            },
+            "JW Double Black": {
+                "750ml": 5
             },
             "Black Dog Triple Gold": {
                 "180ml": 2,
@@ -20332,6 +20332,13 @@
                 "750ml": 75,
                 "180ml": 700,
                 "375ml": 125
+            }
+        },
+        "AS11FC1918": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Brahmaputra Breweries Llp",
+            "Godfather Select": {
+                "Can": 300,
+                "Bottle": 380
             }
         }
     }
