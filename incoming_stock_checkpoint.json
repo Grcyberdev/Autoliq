@@ -20244,16 +20244,16 @@
             }
         },
         "AS25EC2957": {
-            "JW Red Label": {
-                "750ml": 22,
-                "375ml": 10
-            },
             "JW Double Black": {
                 "750ml": 5
             },
             "JW Black Label": {
                 "750ml": 5,
                 "Quarter": 3
+            },
+            "JW Red Label": {
+                "750ml": 22,
+                "375ml": 10
             },
             "J & B": {
                 "750ml": 5
@@ -20290,6 +20290,9 @@
             }
         },
         "AS01FC0035": {
+            "Iconiq Hippy": {
+                "180ml": 130
+            },
             "Iconiq Vodka": {
                 "750ml": 20,
                 "375ml": 50
@@ -20298,18 +20301,15 @@
                 "375ml": 15,
                 "750ml": 20
             },
-            "Officer's Choice pet": {
-                "180ml": 150,
-                "375ml": 50
+            "Officer's Choice": {
+                "750ml": 50
             },
             "Sterling B7": {
                 "180ml": 15
             },
-            "Iconiq Hippy": {
-                "180ml": 130
-            },
-            "Officer's Choice": {
-                "750ml": 50
+            "Officer's Choice pet": {
+                "180ml": 150,
+                "375ml": 50
             }
         },
         "AS03BC8122": {
@@ -20318,6 +20318,22 @@
             },
             "Masti No. 1": {
                 "CA": 100
+            }
+        },
+        "AS01HC9069": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Rum": {
+                "375ml": 200,
+                "750ml": 100,
+                "180ml": 600
+            }
+        },
+        "AS09BC0737": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "750ml": 75,
+                "180ml": 700,
+                "375ml": 125
             }
         }
     }
