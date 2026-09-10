@@ -20055,34 +20055,34 @@
             }
         },
         "AS01PC6347": {
-            "Jack Daniel's Cinnamon": {
-                "750ml": 1
+            "Toki Suntory": {
+                "Full": 2
             },
             "Jack Daniel's": {
-                "375ml": 3,
                 "Quarter": 5,
+                "375ml": 3,
                 "750ml": 9
             },
             "Glendronach 12 Yrs": {
                 "Full": 1
             },
-            "Jagermeister": {
-                "PQ": 10
+            "Jager Liqeur Argentina 2026 Edition": {
+                "750ml": 3
             },
             "Jack Daniel's Honey": {
                 "750ml": 2
             },
-            "Jager Liqeur Argentina 2026 Edition": {
-                "750ml": 3
+            "Jack Daniel's Gentleman Jack": {
+                "750ml": 1
+            },
+            "Jack Daniel's Cinnamon": {
+                "750ml": 1
             },
             "Jager Liqeur Brazil 2026 Edition": {
                 "750ml": 3
             },
-            "Jack Daniel's Gentleman Jack": {
-                "750ml": 1
-            },
-            "Toki Suntory": {
-                "Full": 2
+            "Jagermeister": {
+                "PQ": 10
             }
         },
         "AS01FC6139": {
@@ -20093,8 +20093,8 @@
         },
         "AS01KC9113": {
             "Imperial Blue": {
-                "750ml": 25,
                 "375ml": 75,
+                "750ml": 25,
                 "180ml": 450
             }
         },
@@ -20110,9 +20110,9 @@
         },
         "UP38AT7876": {
             "Kingfisher Ultra": {
+                "Bottle": 550,
                 "Can": 150,
-                "Pint": 50,
-                "Bottle": 550
+                "Pint": 50
             },
             "Kingfisher Ultra Max": {
                 "Can": 150,
@@ -20134,12 +20134,12 @@
             }
         },
         "AS25EC4423": {
+            "Officer's Choice": {
+                "750ml": 100
+            },
             "Officer's Choice pet": {
                 "375ml": 50,
                 "180ml": 350
-            },
-            "Officer's Choice": {
-                "750ml": 100
             }
         },
         "BR01GE1867": {
@@ -20244,14 +20244,18 @@
             }
         },
         "AS25EC2957": {
-            "Vat 69": {
-                "375ml": 2,
-                "750ml": 2,
-                "180ml": 3
+            "JW Red Label": {
+                "750ml": 22,
+                "375ml": 10
             },
             "Royal Challenge American Pride": {
                 "180ml": 3,
                 "375ml": 2
+            },
+            "Vat 69": {
+                "180ml": 3,
+                "375ml": 2,
+                "750ml": 2
             },
             "J & B": {
                 "750ml": 5
@@ -20262,10 +20266,6 @@
             },
             "JW Double Black": {
                 "750ml": 5
-            },
-            "JW Red Label": {
-                "375ml": 10,
-                "750ml": 22
             },
             "Smirnoff": {
                 "375ml": 5,
@@ -20290,15 +20290,15 @@
             }
         },
         "AS01FC0035": {
-            "Sterling B7": {
-                "180ml": 15
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 50
             },
             "Iconiq Hippy": {
                 "180ml": 130
             },
-            "Iconiq Vodka": {
-                "750ml": 20,
-                "375ml": 50
+            "Sterling B7": {
+                "180ml": 15
             },
             "Officer's Choice": {
                 "750ml": 50
@@ -20322,47 +20322,47 @@
         },
         "AS01HC9069": {
             "McDowell's Rum": {
+                "375ml": 200,
                 "180ml": 600,
-                "750ml": 100,
-                "375ml": 200
+                "750ml": 100
             }
         },
         "AS09BC0737": {
             "AC Black Luxury": {
-                "750ml": 75,
+                "375ml": 125,
                 "180ml": 700,
-                "375ml": 125
+                "750ml": 75
             }
         },
         "AS11FC1918": {
             "Godfather Select": {
-                "Bottle": 380,
-                "Can": 300
+                "Can": 300,
+                "Bottle": 380
             }
         },
         "AS27C7022": {
             "Signature": {
-                "180ml": 15,
                 "750ml": 15,
-                "375ml": 15
-            },
-            "Director's Special Black": {
-                "180ml": 40,
-                "375ml": 15
-            },
-            "Royal Challenge": {
-                "375ml": 25,
-                "750ml": 25,
-                "180ml": 50
+                "375ml": 15,
+                "180ml": 15
             },
             "Antiquity Blue Ultra": {
+                "180ml": 15,
                 "375ml": 5,
-                "750ml": 5,
-                "180ml": 15
+                "750ml": 5
+            },
+            "Royal Challenge": {
+                "180ml": 50,
+                "750ml": 25,
+                "375ml": 25
             },
             "McDowell's Rum": {
                 "180ml": 100,
                 "750ml": 225
+            },
+            "Director's Special Black": {
+                "180ml": 40,
+                "375ml": 15
             }
         },
         "NL01N5863": {
@@ -20377,22 +20377,22 @@
             }
         },
         "AS01TC5581": {
-            "Jacob's Creek Shiraz Cabernet": {
-                "750ml": 7
+            "Jameson": {
+                "750ml": 8
             },
-            "Beefeater": {
-                "750ml": 1
+            "Ballantines": {
+                "Quarter": 10,
+                "375ml": 10,
+                "750ml": 5
             },
             "Absolut": {
                 "750ml": 10
             },
-            "Ballantines": {
-                "750ml": 5,
-                "375ml": 10,
-                "Quarter": 10
+            "Beefeater": {
+                "750ml": 1
             },
-            "Jameson": {
-                "750ml": 8
+            "Jacob's Creek Shiraz Cabernet": {
+                "750ml": 7
             }
         },
         "RJ14GG0360": {
@@ -20403,19 +20403,48 @@
     },
     "10-Sep-2026": {
         "AS01PC6347": {
-            "_TelegramSupplier": "Parsan Brothers",
-            "Amrut Two Indies Rum": {
-                "750ml": 5
-            },
-            "Amrut Fusion": {
-                "750ml": 2
-            },
             "Amrut's Maqintosh": {
                 "750ml": 26,
                 "180ml": 15
             },
             "AMRUT AMALGAM MALT WHISKY": {
                 "750ml": 2
+            },
+            "Amrut Fusion": {
+                "750ml": 2
+            },
+            "Amrut Two Indies Rum": {
+                "750ml": 5
+            }
+        },
+        "AS01KC7088": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Blender's Pride Reserve": {
+                "180ml": 15,
+                "750ml": 10,
+                "375ml": 15
+            },
+            "Royal Stag Barrel": {
+                "180ml": 40,
+                "750ml": 20,
+                "375ml": 40
+            },
+            "Blender's Pride Four Elements": {
+                "180ml": 10,
+                "375ml": 10
+            },
+            "Royal Stag": {
+                "180ml": 100,
+                "750ml": 25,
+                "375ml": 150
+            },
+            "Blender's Pride Exclusive": {
+                "750ml": 20,
+                "180ml": 50,
+                "375ml": 30
+            },
+            "Oaken Glow": {
+                "180ml": 15
             }
         }
     }
