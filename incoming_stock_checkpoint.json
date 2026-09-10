@@ -20403,18 +20403,18 @@
     },
     "10-Sep-2026": {
         "AS01PC6347": {
-            "Amrut Amalgam": {
-                "750ml": 2
-            },
             "Amrut's Maqintosh": {
                 "750ml": 26,
                 "180ml": 15
             },
-            "Amrut Two Indies Rum": {
-                "750ml": 5
+            "Amrut Amalgam": {
+                "750ml": 2
             },
             "Amrut Fusion": {
                 "750ml": 2
+            },
+            "Amrut Two Indies Rum": {
+                "750ml": 5
             }
         },
         "AS01KC7088": {
@@ -20452,17 +20452,17 @@
             }
         },
         "AS01KC9112": {
+            "London High Vodka": {
+                "375ml": 4,
+                "180ml": 7
+            },
             "All Seasons Connoisseur": {
-                "375ml": 200,
                 "750ml": 100,
-                "180ml": 235
+                "180ml": 235,
+                "375ml": 200
             },
             "London High Lemon Vodka": {
                 "180ml": 4
-            },
-            "London High Vodka": {
-                "180ml": 7,
-                "375ml": 4
             }
         },
         "AS17B4164": {
@@ -20473,12 +20473,17 @@
             }
         },
         "AS01FC7435": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
-            "Kingfisher Lager": {
-                "Can": 200
-            },
             "Kingfisher Original Strong": {
                 "Bottle": 1200
+            },
+            "Kingfisher Lager": {
+                "Can": 200
+            }
+        },
+        "AS02AC7187": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
