@@ -20403,6 +20403,10 @@
     },
     "10-Sep-2026": {
         "AS01PC6347": {
+            "Amrut's Maqintosh": {
+                "750ml": 26,
+                "180ml": 15
+            },
             "Amrut Two Indies Rum": {
                 "750ml": 5
             },
@@ -20411,34 +20415,30 @@
             },
             "Amrut Amalgam": {
                 "750ml": 2
-            },
-            "Amrut's Maqintosh": {
-                "180ml": 15,
-                "750ml": 26
             }
         },
         "AS01KC7088": {
+            "Royal Stag": {
+                "375ml": 150,
+                "180ml": 100,
+                "750ml": 25
+            },
+            "Royal Stag Barrel": {
+                "750ml": 20,
+                "180ml": 40,
+                "375ml": 40
+            },
             "Blender's Pride Exclusive": {
                 "180ml": 50,
-                "750ml": 20,
-                "375ml": 30
-            },
-            "Oaken Glow": {
-                "180ml": 15
+                "375ml": 30,
+                "750ml": 20
             },
             "Blender's Pride Four Elements": {
                 "180ml": 10,
                 "375ml": 10
             },
-            "Royal Stag": {
-                "180ml": 100,
-                "750ml": 25,
-                "375ml": 150
-            },
-            "Royal Stag Barrel": {
-                "180ml": 40,
-                "750ml": 20,
-                "375ml": 40
+            "Oaken Glow": {
+                "180ml": 15
             },
             "Blender's Pride Reserve": {
                 "750ml": 10,
@@ -20447,16 +20447,14 @@
             }
         },
         "WB23C5237": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "AS01KC9112": {
-            "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Fastflow Dealer Pvt. Ltd.",
             "London High Vodka": {
-                "180ml": 7,
-                "375ml": 4
+                "375ml": 4,
+                "180ml": 7
             },
             "All Seasons Connoisseur": {
                 "750ml": 100,
@@ -20465,6 +20463,14 @@
             },
             "London High Lemon Vodka": {
                 "180ml": 4
+            }
+        },
+        "AS17B4164": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "750ml": 50,
+                "375ml": 50,
+                "180ml": 450
             }
         }
     }
