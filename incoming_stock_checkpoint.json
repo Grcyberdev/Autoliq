@@ -20055,11 +20055,23 @@
             }
         },
         "AS01PC6347": {
-            "Jagermeister": {
-                "PQ": 10
+            "Jager Liqeur Brazil 2026 Edition": {
+                "750ml": 3
+            },
+            "Jack Daniel's Gentleman Jack": {
+                "750ml": 1
             },
             "Jack Daniel's Honey": {
                 "750ml": 2
+            },
+            "Jack Daniel's Cinnamon": {
+                "750ml": 1
+            },
+            "Jager Liqeur Argentina 2026 Edition": {
+                "750ml": 3
+            },
+            "Jagermeister": {
+                "PQ": 10
             },
             "Jack Daniel's": {
                 "Quarter": 5,
@@ -20071,18 +20083,6 @@
             },
             "Glendronach 12 Yrs": {
                 "Full": 1
-            },
-            "Jack Daniel's Cinnamon": {
-                "750ml": 1
-            },
-            "Jack Daniel's Gentleman Jack": {
-                "750ml": 1
-            },
-            "Jager Liqeur Brazil 2026 Edition": {
-                "750ml": 3
-            },
-            "Jager Liqeur Argentina 2026 Edition": {
-                "750ml": 3
             }
         },
         "AS01FC6139": {
@@ -20093,9 +20093,9 @@
         },
         "AS01KC9113": {
             "Imperial Blue": {
-                "750ml": 25,
+                "375ml": 75,
                 "180ml": 450,
-                "375ml": 75
+                "750ml": 25
             }
         },
         "AS11FC1912": {
@@ -20135,8 +20135,8 @@
         },
         "AS25EC4423": {
             "Officer's Choice pet": {
-                "180ml": 350,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 350
             },
             "Officer's Choice": {
                 "750ml": 100
@@ -20166,8 +20166,8 @@
         },
         "AS01PC0693": {
             "McDowell's Rum": {
-                "750ml": 300,
-                "180ml": 600
+                "180ml": 600,
+                "750ml": 300
             }
         }
     },
@@ -20489,8 +20489,8 @@
     "11-Sep-2026": {
         "AS03BC9029": {
             "Lords Whiskey": {
-                "375ml": 150,
-                "750ml": 200
+                "750ml": 200,
+                "375ml": 150
             }
         },
         "AS05AC9317": {
@@ -20503,24 +20503,64 @@
             }
         },
         "AS25BC9705": {
+            "Officer's Choice Blue": {
+                "750ml": 10,
+                "180ml": 15,
+                "375ml": 15
+            },
+            "Iconiq Vodka": {
+                "750ml": 30,
+                "375ml": 100
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 25,
+                "375ml": 35
+            },
             "Iconiq Hippy": {
                 "180ml": 230
             },
             "Sterling B7": {
                 "180ml": 40
-            },
-            "Officer's Choice Blue": {
-                "375ml": 15,
-                "180ml": 15,
+            }
+        },
+        "AS01JC1967": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Blender's Pride Reserve": {
+                "375ml": 20,
+                "180ml": 40,
                 "750ml": 10
             },
-            "Iconiq Vodka": {
-                "375ml": 100,
+            "Royal Stag Barrel": {
+                "375ml": 20,
+                "750ml": 10,
+                "180ml": 30
+            },
+            "Blender's Pride Exclusive": {
+                "750ml": 25,
+                "375ml": 35,
+                "180ml": 40
+            },
+            "Oaken Glow": {
+                "180ml": 50,
+                "750ml": 10,
+                "375ml": 20
+            },
+            "Royal Stag Double Dark": {
+                "750ml": 10,
+                "375ml": 10,
+                "180ml": 10
+            },
+            "Royal Stag": {
+                "375ml": 150,
                 "750ml": 30
             },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 25,
-                "375ml": 35
+            "100 Pipers": {
+                "180ml": 9,
+                "750ml": 10,
+                "375ml": 6
+            },
+            "100 Pipers 12 Yrs": {
+                "750ml": 5
             }
         }
     }
