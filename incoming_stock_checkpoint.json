@@ -20485,5 +20485,14 @@
                 "Bottle": 1400
             }
         }
+    },
+    "11-Sep-2026": {
+        "AS03BC9029": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Lords Whiskey": {
+                "375ml": 150,
+                "750ml": 200
+            }
+        }
     }
 }
