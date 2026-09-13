@@ -20050,8 +20050,8 @@
     "07-Sep-2026": {
         "AS03BC8344": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         },
         "AS01PC6347": {
@@ -20625,6 +20625,17 @@
                 "375ml": 50,
                 "180ml": 150,
                 "750ml": 75
+            }
+        }
+    },
+    "13-Sep-2026": {
+        "AS01LC5925": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 500
+            },
+            "Masti Special": {
+                "CS": 200
             }
         }
     }
