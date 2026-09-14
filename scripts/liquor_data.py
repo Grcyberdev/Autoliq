@@ -250,6 +250,8 @@ LIQUOR_NAME_MAPPING = {
     "DZI PREMIUM STRONG BEER": "Dzi Strong",
     "GOLDEN EAGLE EXTRA PREMIUM STRONG BEER": "Golden Eagle Extra Strong",
     "GOLDEN EAGLE PREMIUM STRONG BEER": "Golden Eagle Strong",
+    "HAYWARDS 5000 STRONG SUPERIOR EXTRA STRONG BEER": "Haywards 5000",
+
 
 
     # --- Newly Mapped Items (Exact Match Fixes) ---
@@ -712,6 +714,8 @@ SUPPLIER_NAME_MAPPING = {
     "PARSAN BROTHERS": "Parsan Brothers",
     "TASTAROMA FOOD AND BEVERAGES UNIT L": "Tastaroma",
     "DR DIPANKAR LABORATORIES PVT LTD": "Dipankar Laboratories",
+    "ANHEUSER BUSCH INBEV INDIA LTD TIE-UP WITH BRAHMAPUTRA BREWERIES LLP": "Anheuser Busch",
+
 
 }
 
