@@ -20639,8 +20639,8 @@
         },
         "AS01LC0437": {
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         },
         "AS26AC1139": {
@@ -20666,6 +20666,19 @@
             "8 PM Premium Black": {
                 "180ml": 15,
                 "375ml": 5
+            }
+        }
+    },
+    "14-Sep-2026": {
+        "AS03BC5273": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino No 1": {
+                "CA": 155,
+                "CS": 25
+            },
+            "Rhino Whiskey": {
+                "CA": 50,
+                "CS": 50
             }
         }
     }
