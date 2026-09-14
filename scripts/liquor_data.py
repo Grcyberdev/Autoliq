@@ -169,6 +169,7 @@ LIQUOR_NAME_MAPPING = {
     "WOODFORD RESERVE KENTUCKY STRAIGHT BOURBON WHISKEY": "Woodford Reserve Kentucky",
     "THE GLENDRONACH HIGHLAND SINGLE MALT SCOTCH WHISKY SHERRY CASK MATURED AGED 12 YEARS": "Glendronach 12 Yrs",
     "AMRUT AMALGAM MALT WHISKY": "Amrut Amalgam",
+    "BUSHMILLS 15 YO SINGLE MALT IRISH WHISKEY": "Bushmills 15 Yrs",
     
     
     
@@ -431,6 +432,7 @@ LIQUOR_NAME_MAPPING = {
     "ZIVA RED WINE": "Ziva Red Wine",
     "HOLLONG9 TEA WINE CLASSIC": "Hollong9 Tea Wine",
     "TI:PO PO:RO APONG": "Tipo Apong",
+    "JINRO GREEN GRAPE WINE": "Jinro Green Grape Wine",
 
     # --- New Variations found in logs ---
     "SEAGRAMS IMPERIAL BLACK MASTERS SELECT GRAIN BLENDED WHISKY": "IB Black",
