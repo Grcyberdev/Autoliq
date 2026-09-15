@@ -20835,10 +20835,19 @@
             }
         },
         "AS22C9809": {
-            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Brahmaputra Breweries Llp",
             "Godfather Select": {
                 "Can": 380,
                 "Bottle": 300
+            }
+        },
+        "AS01UC8610": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
+                "180ml": 400,
+                "375ml": 50
+            },
+            "Imperial Blue": {
+                "180ml": 100
             }
         }
     }
