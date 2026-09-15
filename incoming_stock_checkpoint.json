@@ -20489,17 +20489,17 @@
     "11-Sep-2026": {
         "AS03BC9029": {
             "Lords Whiskey": {
-                "375ml": 150,
-                "750ml": 200
+                "750ml": 200,
+                "375ml": 150
             }
         },
         "AS05AC9317": {
+            "Officer's Choice pet": {
+                "375ml": 75,
+                "180ml": 325
+            },
             "Officer's Choice": {
                 "750ml": 100
-            },
-            "Officer's Choice pet": {
-                "180ml": 325,
-                "375ml": 75
             }
         },
         "AS25BC9705": {
@@ -20524,18 +20524,9 @@
             }
         },
         "AS01JC1967": {
-            "Royal Stag Double Dark": {
-                "375ml": 10,
-                "750ml": 10,
-                "180ml": 10
-            },
-            "Royal Stag": {
-                "750ml": 30,
-                "375ml": 150
-            },
-            "100 Pipers": {
-                "375ml": 6,
-                "180ml": 9,
+            "Blender's Pride Reserve": {
+                "375ml": 20,
+                "180ml": 40,
                 "750ml": 10
             },
             "Royal Stag Barrel": {
@@ -20553,10 +20544,19 @@
                 "750ml": 10,
                 "375ml": 20
             },
-            "Blender's Pride Reserve": {
-                "180ml": 40,
-                "375ml": 20,
-                "750ml": 10
+            "Royal Stag Double Dark": {
+                "750ml": 10,
+                "375ml": 10,
+                "180ml": 10
+            },
+            "Royal Stag": {
+                "375ml": 150,
+                "750ml": 30
+            },
+            "100 Pipers": {
+                "180ml": 9,
+                "750ml": 10,
+                "375ml": 6
             },
             "100 Pipers 12 Yrs": {
                 "750ml": 5
@@ -20576,9 +20576,9 @@
         },
         "AS01KC7022": {
             "Imperial Blue": {
+                "180ml": 350,
                 "750ml": 100,
-                "375ml": 100,
-                "180ml": 350
+                "375ml": 100
             }
         },
         "RJ14GG5202": {
@@ -20588,26 +20588,26 @@
         },
         "AS01CC4251": {
             "McDowell's Rum": {
-                "750ml": 250,
                 "375ml": 150,
-                "180ml": 500
+                "180ml": 500,
+                "750ml": 250
             }
         },
         "AS01LC7060": {
-            "Director's Special Black": {
-                "375ml": 50,
-                "750ml": 25,
-                "180ml": 145
-            },
             "Royal Challenge": {
                 "750ml": 50,
                 "180ml": 140,
                 "375ml": 90
             },
             "Signature": {
+                "750ml": 15,
                 "180ml": 20,
-                "375ml": 15,
-                "750ml": 15
+                "375ml": 15
+            },
+            "Director's Special Black": {
+                "375ml": 50,
+                "180ml": 145,
+                "750ml": 25
             }
         },
         "AS01RC2282": {
@@ -20616,15 +20616,15 @@
             }
         },
         "AS01HC0109": {
-            "Imperial Black": {
-                "375ml": 50,
-                "750ml": 25,
-                "180ml": 200
-            },
             "Imperial Blue": {
-                "375ml": 50,
+                "750ml": 75,
                 "180ml": 150,
-                "750ml": 75
+                "375ml": 50
+            },
+            "Imperial Black": {
+                "750ml": 25,
+                "180ml": 200,
+                "375ml": 50
             }
         }
     },
@@ -20805,20 +20805,20 @@
     },
     "15-Sep-2026": {
         "AS01GC6900": {
+            "After Dark": {
+                "180ml": 180,
+                "375ml": 20
+            },
             "8 PM Premium Black": {
                 "180ml": 10
-            },
-            "Magic Moments Lemon": {
-                "375ml": 20,
-                "180ml": 20
-            },
-            "After Dark": {
-                "375ml": 20,
-                "180ml": 180
             },
             "Magic Moments": {
                 "375ml": 20,
                 "180ml": 20
+            },
+            "Magic Moments Lemon": {
+                "180ml": 20,
+                "375ml": 20
             },
             "Magic Moments Green Apple": {
                 "180ml": 10
@@ -20826,9 +20826,9 @@
         },
         "AS01PC6347": {
             "Rockford Reserve": {
-                "375ml": 17,
+                "180ml": 15,
                 "750ml": 25,
-                "180ml": 15
+                "375ml": 17
             },
             "Singhasan": {
                 "750ml": 3
@@ -20855,8 +20855,16 @@
             }
         },
         "AS25EC2957": {
-            "Bacardi White Rum": {
-                "180ml": 3
+            "Breezer Blueberry": {
+                "Stubby": 20
+            },
+            "Breezer Blackberry": {
+                "Stubby": 20
+            },
+            "Dewar's White Label": {
+                "375ml": 4,
+                "180ml": 3,
+                "750ml": 5
             },
             "Bacardi Limon Rum": {
                 "180ml": 10,
@@ -20867,35 +20875,27 @@
                 "180ml": 2,
                 "750ml": 5
             },
-            "Breezer Blueberry": {
-                "Stubby": 20
-            },
-            "Breezer Blackberry": {
-                "Stubby": 20
+            "Breezer Watermelon": {
+                "Stubby": 15
             },
             "Breezer Jamaican": {
                 "Stubby": 20
             },
-            "Dewar's White Label": {
-                "375ml": 4,
-                "180ml": 3,
-                "750ml": 5
-            },
-            "Breezer Watermelon": {
-                "Stubby": 15
+            "Bacardi White Rum": {
+                "180ml": 3
             },
             "Bombay Sapphire Gin": {
                 "Quarter": 10,
                 "750ml": 2
             },
-            "Camino Tequila": {
-                "750ml": 4
+            "Dewar's Portuguese Smooth": {
+                "Full": 3
             },
             "Grey Goose": {
                 "Quarter": 4
             },
-            "Dewar's Portuguese Smooth": {
-                "Full": 3
+            "Camino Tequila": {
+                "750ml": 4
             }
         },
         "WB23L8899": {
@@ -20903,8 +20903,8 @@
                 "Bottle": 470
             },
             "Budweiser": {
-                "Can": 150,
-                "Bottle": 150
+                "Bottle": 150,
+                "Can": 150
             },
             "Hoegaarden Witbier": {
                 "Pint": 30
@@ -20912,8 +20912,13 @@
         },
         "AS01LC6322": {
             "Blender's Pride Exclusive": {
+                "375ml": 20,
+                "180ml": 20
+            },
+            "Royal Stag Barrel": {
                 "180ml": 20,
-                "375ml": 20
+                "750ml": 10,
+                "375ml": 25
             },
             "Blender's Pride Reserve": {
                 "750ml": 20,
@@ -20925,11 +20930,6 @@
                 "180ml": 20,
                 "750ml": 10
             },
-            "Royal Stag Barrel": {
-                "750ml": 10,
-                "375ml": 25,
-                "180ml": 20
-            },
             "Royal Stag": {
                 "375ml": 125,
                 "750ml": 75,
@@ -20939,20 +20939,37 @@
         "AS02CC8463": {
             "McDowell's Rum": {
                 "750ml": 300,
-                "180ml": 500,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 500
             }
         },
         "NL01L4489": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "AS03BC8122": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti Special": {
                 "CA": 700
+            }
+        },
+        "RJ52GA3015": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "AS27C7306": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 150,
+                "750ml": 50
+            },
+            "Imperial Black": {
+                "180ml": 100,
+                "375ml": 100,
+                "750ml": 100
             }
         }
     }
