@@ -20576,9 +20576,9 @@
         },
         "AS01KC7022": {
             "Imperial Blue": {
+                "375ml": 100,
                 "180ml": 350,
-                "750ml": 100,
-                "375ml": 100
+                "750ml": 100
             }
         },
         "RJ14GG5202": {
@@ -20588,21 +20588,21 @@
         },
         "AS01CC4251": {
             "McDowell's Rum": {
-                "375ml": 150,
+                "750ml": 250,
                 "180ml": 500,
-                "750ml": 250
+                "375ml": 150
             }
         },
         "AS01LC7060": {
-            "Royal Challenge": {
-                "750ml": 50,
-                "180ml": 140,
-                "375ml": 90
-            },
             "Signature": {
                 "750ml": 15,
                 "180ml": 20,
                 "375ml": 15
+            },
+            "Royal Challenge": {
+                "750ml": 50,
+                "180ml": 140,
+                "375ml": 90
             },
             "Director's Special Black": {
                 "375ml": 50,
@@ -20617,13 +20617,13 @@
         },
         "AS01HC0109": {
             "Imperial Blue": {
-                "750ml": 75,
+                "375ml": 50,
                 "180ml": 150,
-                "375ml": 50
+                "750ml": 75
             },
             "Imperial Black": {
-                "750ml": 25,
                 "180ml": 200,
+                "750ml": 25,
                 "375ml": 50
             }
         }
@@ -21006,6 +21006,13 @@
         "AS03BC8344": {
             "Masti": {
                 "CA": 700
+            }
+        },
+        "AS03BC4918": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Lords Whiskey": {
+                "375ml": 100,
+                "180ml": 75
             }
         }
     }
