@@ -19916,8 +19916,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         },
         "AS01FC0045": {
@@ -20129,8 +20129,8 @@
         },
         "AS03BC8122": {
             "Masti Special": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         },
         "AS25EC4423": {
@@ -20489,17 +20489,17 @@
     "11-Sep-2026": {
         "AS03BC9029": {
             "Lords Whiskey": {
-                "375ml": 150,
-                "750ml": 200
+                "750ml": 200,
+                "375ml": 150
             }
         },
         "AS05AC9317": {
+            "Officer's Choice pet": {
+                "375ml": 75,
+                "180ml": 325
+            },
             "Officer's Choice": {
                 "750ml": 100
-            },
-            "Officer's Choice pet": {
-                "180ml": 325,
-                "375ml": 75
             }
         },
         "AS25BC9705": {
@@ -20524,18 +20524,9 @@
             }
         },
         "AS01JC1967": {
-            "Royal Stag Double Dark": {
-                "375ml": 10,
-                "750ml": 10,
-                "180ml": 10
-            },
-            "Royal Stag": {
-                "750ml": 30,
-                "375ml": 150
-            },
-            "100 Pipers": {
-                "375ml": 6,
-                "180ml": 9,
+            "Blender's Pride Reserve": {
+                "375ml": 20,
+                "180ml": 40,
                 "750ml": 10
             },
             "Royal Stag Barrel": {
@@ -20553,10 +20544,19 @@
                 "750ml": 10,
                 "375ml": 20
             },
-            "Blender's Pride Reserve": {
-                "180ml": 40,
-                "375ml": 20,
-                "750ml": 10
+            "Royal Stag Double Dark": {
+                "750ml": 10,
+                "375ml": 10,
+                "180ml": 10
+            },
+            "Royal Stag": {
+                "375ml": 150,
+                "750ml": 30
+            },
+            "100 Pipers": {
+                "180ml": 9,
+                "750ml": 10,
+                "375ml": 6
             },
             "100 Pipers 12 Yrs": {
                 "750ml": 5
@@ -20576,9 +20576,9 @@
         },
         "AS01KC7022": {
             "Imperial Blue": {
+                "180ml": 350,
                 "750ml": 100,
-                "375ml": 100,
-                "180ml": 350
+                "375ml": 100
             }
         },
         "RJ14GG5202": {
@@ -20588,26 +20588,26 @@
         },
         "AS01CC4251": {
             "McDowell's Rum": {
-                "750ml": 250,
                 "375ml": 150,
-                "180ml": 500
+                "180ml": 500,
+                "750ml": 250
             }
         },
         "AS01LC7060": {
-            "Director's Special Black": {
-                "375ml": 50,
-                "750ml": 25,
-                "180ml": 145
-            },
             "Royal Challenge": {
                 "750ml": 50,
                 "180ml": 140,
                 "375ml": 90
             },
             "Signature": {
+                "750ml": 15,
                 "180ml": 20,
-                "375ml": 15,
-                "750ml": 15
+                "375ml": 15
+            },
+            "Director's Special Black": {
+                "375ml": 50,
+                "180ml": 145,
+                "750ml": 25
             }
         },
         "AS01RC2282": {
@@ -20616,31 +20616,31 @@
             }
         },
         "AS01HC0109": {
-            "Imperial Black": {
-                "375ml": 50,
-                "750ml": 25,
-                "180ml": 200
-            },
             "Imperial Blue": {
-                "375ml": 50,
+                "750ml": 75,
                 "180ml": 150,
-                "750ml": 75
+                "375ml": 50
+            },
+            "Imperial Black": {
+                "750ml": 25,
+                "180ml": 200,
+                "375ml": 50
             }
         }
     },
     "13-Sep-2026": {
         "AS01LC5925": {
-            "Masti Special": {
-                "CS": 200
-            },
             "Masti": {
                 "CA": 500
+            },
+            "Masti Special": {
+                "CS": 200
             }
         },
         "AS01LC0437": {
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         },
         "AS26AC1139": {
@@ -20671,13 +20671,13 @@
     },
     "14-Sep-2026": {
         "AS03BC5273": {
-            "Rhino No 1": {
-                "CA": 155,
-                "CS": 25
-            },
             "Rhino Whiskey": {
-                "CS": 50,
-                "CA": 50
+                "CA": 50,
+                "CS": 50
+            },
+            "Rhino No 1": {
+                "CS": 25,
+                "CA": 155
             }
         },
         "HR38AF3691": {
@@ -21010,15 +21010,15 @@
         },
         "AS03BC4918": {
             "Lords Whiskey": {
-                "375ml": 100,
-                "180ml": 75
+                "180ml": 75,
+                "375ml": 100
             }
         },
         "HR55AC3167": {
             "Royal Stag": {
                 "180ml": 350,
-                "750ml": 145,
-                "375ml": 325
+                "375ml": 325,
+                "750ml": 145
             },
             "Royal Stag Double Dark": {
                 "180ml": 15,
@@ -21031,8 +21031,8 @@
             },
             "Royal Stag Barrel": {
                 "375ml": 15,
-                "750ml": 20,
-                "180ml": 40
+                "180ml": 40,
+                "750ml": 20
             },
             "100 Pipers 12 Yrs": {
                 "750ml": 5
@@ -21056,6 +21056,17 @@
             }
         },
         "AS01GC6029": {
+            "Officer's Choice pet": {
+                "180ml": 525,
+                "375ml": 75
+            },
+            "Iconiq Vodka": {
+                "375ml": 50,
+                "750ml": 50
+            },
+            "Iconiq Hippy": {
+                "180ml": 110
+            },
             "Sterling Reserve B7 Blended": {
                 "750ml": 15,
                 "375ml": 10
@@ -21063,29 +21074,63 @@
             "Sterling B7": {
                 "180ml": 15
             },
-            "Iconiq Hippy": {
-                "180ml": 110
-            },
-            "Officer's Choice Blue": {
-                "180ml": 10,
-                "375ml": 5,
-                "750ml": 5
-            },
-            "Iconiq Vodka": {
-                "750ml": 50,
-                "375ml": 50
-            },
-            "Officer's Choice pet": {
-                "180ml": 525,
-                "375ml": 75
-            },
             "Officer's Choice": {
                 "750ml": 130
+            },
+            "Officer's Choice Blue": {
+                "750ml": 5,
+                "180ml": 10,
+                "375ml": 5
             }
         },
         "AS01GC0763": {
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "NL01AF1389": {
+            "_TelegramSupplier": "Mohan Meakin Ltd. Tie Up With NEFA Breweries Private Limited",
+            "OLD MONK THE ORIGINAL PLATINUM STRONG BEER": {
+                "Can": 680
+            }
+        },
+        "AS01PC8901": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Signature": {
+                "750ml": 20,
+                "375ml": 15,
+                "180ml": 10
+            },
+            "Royal Challenge": {
+                "180ml": 85,
+                "750ml": 50,
+                "375ml": 50
+            },
+            "Director's Special Black": {
+                "180ml": 100,
+                "375ml": 45,
+                "750ml": 10
+            },
+            "Antiquity Blue Ultra": {
+                "750ml": 5,
+                "375ml": 5,
+                "180ml": 5
+            },
+            "McDowell's Rum": {
+                "180ml": 150
+            }
+        },
+        "WB23C5237": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS01HC0109": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 400,
+                "CS": 300
             }
         }
     }
