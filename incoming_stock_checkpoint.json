@@ -20671,13 +20671,13 @@
     },
     "14-Sep-2026": {
         "AS03BC5273": {
-            "Rhino Whiskey": {
-                "CA": 50,
-                "CS": 50
-            },
             "Rhino No 1": {
-                "CS": 25,
-                "CA": 155
+                "CA": 155,
+                "CS": 25
+            },
+            "Rhino Whiskey": {
+                "CS": 50,
+                "CA": 50
             }
         },
         "HR38AF3691": {
@@ -21198,6 +21198,19 @@
                 "750ml": 5,
                 "180ml": 10,
                 "375ml": 10
+            }
+        }
+    },
+    "17-Sep-2026": {
+        "AS03BC8906": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino Limon": {
+                "CA": 75,
+                "CS": 50
+            },
+            "Rhino No 1": {
+                "CS": 125,
+                "CA": 30
             }
         }
     }
