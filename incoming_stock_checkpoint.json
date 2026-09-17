@@ -21213,14 +21213,6 @@
             }
         },
         "AS01PC0733": {
-            "Smirnoff": {
-                "375ml": 10,
-                "180ml": 20,
-                "750ml": 15
-            },
-            "Singleton 12 Yrs": {
-                "Full": 2
-            },
             "Smirnoff Minty Jamun Vodka": {
                 "750ml": 15,
                 "180ml": 25
@@ -21231,8 +21223,11 @@
             },
             "Black & White": {
                 "375ml": 5,
-                "750ml": 15,
-                "180ml": 10
+                "180ml": 10,
+                "750ml": 15
+            },
+            "Singleton 12 Yrs": {
+                "Full": 2
             },
             "Vat 69": {
                 "375ml": 3,
@@ -21253,6 +21248,19 @@
                 "Quarter": 5,
                 "375ml": 8,
                 "750ml": 15
+            },
+            "Smirnoff": {
+                "180ml": 20,
+                "750ml": 15,
+                "375ml": 10
+            }
+        },
+        "AS02CC8299": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "750ml": 75,
+                "180ml": 350,
+                "375ml": 125
             }
         }
     }
