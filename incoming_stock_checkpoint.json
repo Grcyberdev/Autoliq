@@ -20671,13 +20671,13 @@
     },
     "14-Sep-2026": {
         "AS03BC5273": {
+            "Rhino Whiskey": {
+                "CA": 50,
+                "CS": 50
+            },
             "Rhino No 1": {
                 "CA": 155,
                 "CS": 25
-            },
-            "Rhino Whiskey": {
-                "CS": 50,
-                "CA": 50
             }
         },
         "HR38AF3691": {
@@ -21203,13 +21203,13 @@
     },
     "17-Sep-2026": {
         "AS03BC8906": {
-            "Rhino Limon": {
-                "CA": 75,
-                "CS": 50
-            },
             "Rhino No 1": {
                 "CS": 125,
                 "CA": 30
+            },
+            "Rhino Limon": {
+                "CA": 75,
+                "CS": 50
             }
         },
         "AS01PC0733": {
@@ -21274,6 +21274,13 @@
                 "750ml": 25,
                 "180ml": 450,
                 "375ml": 75
+            }
+        },
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CS": 200,
+                "CA": 500
             }
         }
     }
