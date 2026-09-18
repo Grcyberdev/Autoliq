@@ -21285,11 +21285,16 @@
     },
     "18-Sep-2026": {
         "AS01LC5952": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
                 "180ml": 600,
                 "750ml": 200,
                 "375ml": 100
+            }
+        },
+        "WB23C5237": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1400
             }
         }
     }
