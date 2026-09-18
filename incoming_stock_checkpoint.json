@@ -21282,5 +21282,15 @@
                 "CA": 500
             }
         }
+    },
+    "18-Sep-2026": {
+        "AS01LC5952": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "180ml": 600,
+                "750ml": 200,
+                "375ml": 100
+            }
+        }
     }
 }
