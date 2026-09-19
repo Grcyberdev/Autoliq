@@ -20576,9 +20576,9 @@
         },
         "AS01KC7022": {
             "Imperial Blue": {
-                "375ml": 100,
                 "180ml": 350,
-                "750ml": 100
+                "750ml": 100,
+                "375ml": 100
             }
         },
         "RJ14GG5202": {
@@ -20589,25 +20589,25 @@
         "AS01CC4251": {
             "McDowell's Rum": {
                 "750ml": 250,
-                "180ml": 500,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 500
             }
         },
         "AS01LC7060": {
-            "Signature": {
-                "750ml": 15,
-                "180ml": 20,
-                "375ml": 15
-            },
-            "Royal Challenge": {
-                "750ml": 50,
-                "180ml": 140,
-                "375ml": 90
-            },
             "Director's Special Black": {
                 "375ml": 50,
                 "180ml": 145,
                 "750ml": 25
+            },
+            "Signature": {
+                "180ml": 20,
+                "375ml": 15,
+                "750ml": 15
+            },
+            "Royal Challenge": {
+                "180ml": 140,
+                "750ml": 50,
+                "375ml": 90
             }
         },
         "AS01RC2282": {
@@ -20617,13 +20617,13 @@
         },
         "AS01HC0109": {
             "Imperial Blue": {
-                "375ml": 50,
+                "750ml": 75,
                 "180ml": 150,
-                "750ml": 75
+                "375ml": 50
             },
             "Imperial Black": {
-                "180ml": 200,
                 "750ml": 25,
+                "180ml": 200,
                 "375ml": 50
             }
         }
@@ -21327,6 +21327,21 @@
             "Simba": {
                 "Bottle": 400,
                 "Can": 280
+            }
+        },
+        "AS01NC0393": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "180ml": 350,
+                "375ml": 150,
+                "750ml": 50
+            }
+        },
+        "AS01MC0215": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 700,
+                "Can": 700
             }
         }
     }
