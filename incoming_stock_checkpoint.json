@@ -21360,9 +21360,9 @@
     "22-Sep-2026": {
         "AS03BC5273": {
             "Lords Whiskey": {
+                "375ml": 150,
                 "180ml": 100,
-                "750ml": 100,
-                "375ml": 150
+                "750ml": 100
             }
         },
         "AS03BC8344": {
@@ -21372,24 +21372,24 @@
             }
         },
         "AS01RC8137": {
+            "Glenfiddich Original 12": {
+                "JQ": 15
+            },
+            "Monkey Shoulder": {
+                "Full": 6
+            },
             "Wild Turkey Bourbon": {
                 "750ml": 2
             },
             "Skyy Vodka": {
                 "750ml": 2
-            },
-            "Monkey Shoulder": {
-                "Full": 6
-            },
-            "Glenfiddich Original 12": {
-                "JQ": 15
             }
         },
         "AS01NC7524": {
             "Royal Stag": {
                 "750ml": 50,
-                "375ml": 100,
-                "180ml": 400
+                "180ml": 400,
+                "375ml": 100
             }
         },
         "NL01L4489": {
@@ -21404,30 +21404,30 @@
             "Officer's Choice": {
                 "750ml": 35
             },
-            "Officer's Choice pet": {
-                "180ml": 225,
-                "375ml": 25
+            "Iconiq Hippy": {
+                "180ml": 150
             },
             "Iconiq Vodka": {
                 "750ml": 20,
                 "375ml": 30
             },
-            "Iconiq Hippy": {
-                "180ml": 150
+            "Officer's Choice pet": {
+                "180ml": 225,
+                "375ml": 25
             }
         },
         "AS02AC3594": {
             "Kingfisher Original Strong": {
-                "Bottle": 700,
-                "Can": 700
+                "Can": 700,
+                "Bottle": 700
             }
         },
         "MH46AF3090": {
-            "Tuborg": {
-                "Bottle": 600
-            },
             "Tuborg Malt": {
                 "Can": 600
+            },
+            "Tuborg": {
+                "Bottle": 600
             }
         },
         "NL01AJ9761": {
@@ -21451,8 +21451,8 @@
             },
             "Magic Moments": {
                 "375ml": 35,
-                "750ml": 15,
-                "180ml": 75
+                "180ml": 75,
+                "750ml": 15
             },
             "8 PM Premium Black": {
                 "375ml": 15,
@@ -21469,13 +21469,21 @@
             }
         },
         "WB23L6699": {
-            "Budweiser": {
-                "Can": 100,
-                "Bottle": 150
-            },
             "Budweiser Magnum": {
                 "Can": 150,
                 "Bottle": 200
+            },
+            "Budweiser": {
+                "Bottle": 150,
+                "Can": 100
+            }
+        },
+        "AS01KC7915": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "750ml": 75,
+                "375ml": 75,
+                "180ml": 400
             }
         }
     }
