@@ -21359,18 +21359,31 @@
     },
     "22-Sep-2026": {
         "AS03BC5273": {
-            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
-                "375ml": 150,
                 "180ml": 100,
-                "750ml": 100
+                "750ml": 100,
+                "375ml": 150
             }
         },
         "AS03BC8344": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 400,
                 "CS": 300
+            }
+        },
+        "AS01RC8137": {
+            "_TelegramSupplier": "Northern Spirits Ltd.",
+            "Skyy Vodka": {
+                "750ml": 2
+            },
+            "Monkey Shoulder": {
+                "Full": 6
+            },
+            "Glenfiddich Original 12": {
+                "JQ": 15
+            },
+            "Wild Turkey Bourbon": {
+                "750ml": 2
             }
         }
     }
