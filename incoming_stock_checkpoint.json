@@ -20588,26 +20588,26 @@
         },
         "AS01CC4251": {
             "McDowell's Rum": {
-                "750ml": 250,
                 "375ml": 150,
-                "180ml": 500
+                "180ml": 500,
+                "750ml": 250
             }
         },
         "AS01LC7060": {
+            "Royal Challenge": {
+                "750ml": 50,
+                "180ml": 140,
+                "375ml": 90
+            },
+            "Signature": {
+                "750ml": 15,
+                "180ml": 20,
+                "375ml": 15
+            },
             "Director's Special Black": {
                 "375ml": 50,
                 "180ml": 145,
                 "750ml": 25
-            },
-            "Signature": {
-                "180ml": 20,
-                "375ml": 15,
-                "750ml": 15
-            },
-            "Royal Challenge": {
-                "180ml": 140,
-                "750ml": 50,
-                "375ml": 90
             }
         },
         "AS01RC2282": {
@@ -21372,25 +21372,30 @@
             }
         },
         "AS01RC8137": {
-            "Glenfiddich Original 12": {
-                "JQ": 15
+            "Monkey Shoulder": {
+                "Full": 6
             },
             "Wild Turkey Bourbon": {
                 "750ml": 2
             },
-            "Monkey Shoulder": {
-                "Full": 6
+            "Glenfiddich Original 12": {
+                "JQ": 15
             },
             "Skyy Vodka": {
                 "750ml": 2
             }
         },
         "AS01NC7524": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
-                "375ml": 100,
                 "180ml": 400,
+                "375ml": 100,
                 "750ml": 50
+            }
+        },
+        "NL01L4489": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
