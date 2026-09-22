@@ -21360,9 +21360,9 @@
     "22-Sep-2026": {
         "AS03BC5273": {
             "Lords Whiskey": {
-                "180ml": 100,
+                "375ml": 150,
                 "750ml": 100,
-                "375ml": 150
+                "180ml": 100
             }
         },
         "AS03BC8344": {
@@ -21372,11 +21372,11 @@
             }
         },
         "AS01RC8137": {
-            "Monkey Shoulder": {
-                "Full": 6
-            },
             "Wild Turkey Bourbon": {
                 "750ml": 2
+            },
+            "Monkey Shoulder": {
+                "Full": 6
             },
             "Glenfiddich Original 12": {
                 "JQ": 15
@@ -21387,15 +21387,41 @@
         },
         "AS01NC7524": {
             "Royal Stag": {
-                "180ml": 400,
+                "750ml": 50,
                 "375ml": 100,
-                "750ml": 50
+                "180ml": 400
             }
         },
         "NL01L4489": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "AS25EC4423": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice": {
+                "750ml": 35
+            },
+            "Officer's Choice pet": {
+                "180ml": 225,
+                "375ml": 25
+            },
+            "Sterling B7": {
+                "180ml": 15
+            },
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 30
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
+            }
+        },
+        "AS02AC3594": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 700,
+                "Can": 700
             }
         }
     }
