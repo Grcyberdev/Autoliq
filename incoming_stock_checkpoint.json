@@ -20129,8 +20129,8 @@
         },
         "AS03BC8122": {
             "Masti Special": {
-                "CS": 200,
-                "CA": 500
+                "CA": 500,
+                "CS": 200
             }
         },
         "AS25EC4423": {
@@ -20313,11 +20313,11 @@
             }
         },
         "AS03BC8122": {
-            "Masti Special": {
-                "CA": 600
-            },
             "Masti No. 1": {
                 "CA": 100
+            },
+            "Masti Special": {
+                "CA": 600
             }
         },
         "AS01HC9069": {
@@ -20639,8 +20639,8 @@
         },
         "AS01LC0437": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         },
         "AS26AC1139": {
@@ -20672,8 +20672,8 @@
     "14-Sep-2026": {
         "AS03BC5273": {
             "Rhino Whiskey": {
-                "CS": 50,
-                "CA": 50
+                "CA": 50,
+                "CS": 50
             },
             "Rhino No 1": {
                 "CS": 25,
@@ -21125,8 +21125,8 @@
         },
         "AS01HC0109": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         },
         "AS01CC7165": {
@@ -21204,8 +21204,8 @@
     "17-Sep-2026": {
         "AS03BC8906": {
             "Rhino Limon": {
-                "CS": 50,
-                "CA": 75
+                "CA": 75,
+                "CS": 50
             },
             "Rhino No 1": {
                 "CS": 125,
@@ -21278,8 +21278,8 @@
         },
         "AS03BC8122": {
             "Masti Special": {
-                "CA": 500,
-                "CS": 200
+                "CS": 200,
+                "CA": 500
             }
         }
     },
@@ -21433,6 +21433,12 @@
         "NL01AJ9761": {
             "Tuborg": {
                 "Bottle": 1200
+            }
+        },
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CA": 700
             }
         }
     }
