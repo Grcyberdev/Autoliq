@@ -20403,46 +20403,46 @@
     },
     "10-Sep-2026": {
         "AS01PC6347": {
+            "Amrut Two Indies Rum": {
+                "750ml": 5
+            },
+            "Amrut Fusion": {
+                "750ml": 2
+            },
             "Amrut's Maqintosh": {
                 "750ml": 26,
                 "180ml": 15
             },
             "Amrut Amalgam": {
                 "750ml": 2
-            },
-            "Amrut Fusion": {
-                "750ml": 2
-            },
-            "Amrut Two Indies Rum": {
-                "750ml": 5
             }
         },
         "AS01KC7088": {
-            "Royal Stag": {
-                "375ml": 150,
-                "180ml": 100,
-                "750ml": 25
-            },
-            "Royal Stag Barrel": {
-                "750ml": 20,
-                "180ml": 40,
-                "375ml": 40
-            },
-            "Blender's Pride Exclusive": {
-                "180ml": 50,
-                "375ml": 30,
-                "750ml": 20
-            },
             "Blender's Pride Four Elements": {
                 "180ml": 10,
                 "375ml": 10
             },
-            "Oaken Glow": {
-                "180ml": 15
+            "Royal Stag": {
+                "750ml": 25,
+                "375ml": 150,
+                "180ml": 100
+            },
+            "Blender's Pride Exclusive": {
+                "180ml": 50,
+                "750ml": 20,
+                "375ml": 30
+            },
+            "Royal Stag Barrel": {
+                "180ml": 40,
+                "750ml": 20,
+                "375ml": 40
             },
             "Blender's Pride Reserve": {
                 "750ml": 10,
                 "375ml": 15,
+                "180ml": 15
+            },
+            "Oaken Glow": {
                 "180ml": 15
             }
         },
@@ -20452,17 +20452,17 @@
             }
         },
         "AS01KC9112": {
-            "London High Vodka": {
-                "375ml": 4,
-                "180ml": 7
-            },
             "All Seasons Connoisseur": {
-                "750ml": 100,
+                "375ml": 200,
                 "180ml": 235,
-                "375ml": 200
+                "750ml": 100
             },
             "London High Lemon Vodka": {
                 "180ml": 4
+            },
+            "London High Vodka": {
+                "180ml": 7,
+                "375ml": 4
             }
         },
         "AS17B4164": {
@@ -20473,11 +20473,11 @@
             }
         },
         "AS01FC7435": {
-            "Kingfisher Original Strong": {
-                "Bottle": 1200
-            },
             "Kingfisher Lager": {
                 "Can": 200
+            },
+            "Kingfisher Original Strong": {
+                "Bottle": 1200
             }
         },
         "AS02AC7187": {
@@ -20576,9 +20576,9 @@
         },
         "AS01KC7022": {
             "Imperial Blue": {
-                "180ml": 350,
                 "750ml": 100,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 350
             }
         },
         "RJ14GG5202": {
@@ -20588,26 +20588,26 @@
         },
         "AS01CC4251": {
             "McDowell's Rum": {
+                "750ml": 250,
                 "375ml": 150,
-                "180ml": 500,
-                "750ml": 250
+                "180ml": 500
             }
         },
         "AS01LC7060": {
+            "Director's Special Black": {
+                "375ml": 50,
+                "750ml": 25,
+                "180ml": 145
+            },
             "Royal Challenge": {
                 "750ml": 50,
                 "180ml": 140,
                 "375ml": 90
             },
             "Signature": {
-                "750ml": 15,
                 "180ml": 20,
-                "375ml": 15
-            },
-            "Director's Special Black": {
-                "375ml": 50,
-                "180ml": 145,
-                "750ml": 25
+                "375ml": 15,
+                "750ml": 15
             }
         },
         "AS01RC2282": {
@@ -20616,15 +20616,15 @@
             }
         },
         "AS01HC0109": {
-            "Imperial Blue": {
-                "750ml": 75,
-                "180ml": 150,
-                "375ml": 50
-            },
             "Imperial Black": {
+                "375ml": 50,
                 "750ml": 25,
-                "180ml": 200,
-                "375ml": 50
+                "180ml": 200
+            },
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 150,
+                "750ml": 75
             }
         }
     },
@@ -21398,22 +21398,22 @@
             }
         },
         "AS25EC4423": {
-            "Officer's Choice pet": {
-                "375ml": 25,
-                "180ml": 225
-            },
             "Sterling B7": {
                 "180ml": 15
             },
             "Officer's Choice": {
                 "750ml": 35
             },
-            "Iconiq Hippy": {
-                "180ml": 150
+            "Officer's Choice pet": {
+                "180ml": 225,
+                "375ml": 25
             },
             "Iconiq Vodka": {
-                "375ml": 30,
-                "750ml": 20
+                "750ml": 20,
+                "375ml": 30
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
             }
         },
         "AS02AC3594": {
@@ -21441,23 +21441,23 @@
             }
         },
         "AS01UC9277": {
-            "Magic Moments Jamun": {
-                "180ml": 20,
-                "375ml": 30
-            },
-            "8 PM Premium Black": {
-                "750ml": 10,
-                "375ml": 15,
-                "180ml": 20
-            },
             "Magic Moments Lemon": {
                 "180ml": 30,
                 "375ml": 25
+            },
+            "Magic Moments Jamun": {
+                "375ml": 30,
+                "180ml": 20
             },
             "Magic Moments": {
                 "375ml": 35,
                 "750ml": 15,
                 "180ml": 75
+            },
+            "8 PM Premium Black": {
+                "375ml": 15,
+                "180ml": 20,
+                "750ml": 10
             },
             "After Dark": {
                 "180ml": 150,
@@ -21466,6 +21466,17 @@
             "Magic Moments Green Apple": {
                 "180ml": 40,
                 "375ml": 10
+            }
+        },
+        "WB23L6699": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser": {
+                "Can": 100,
+                "Bottle": 150
+            },
+            "Budweiser Magnum": {
+                "Can": 150,
+                "Bottle": 200
             }
         }
     }
