@@ -20403,46 +20403,46 @@
     },
     "10-Sep-2026": {
         "AS01PC6347": {
-            "Amrut Two Indies Rum": {
-                "750ml": 5
-            },
-            "Amrut Fusion": {
-                "750ml": 2
-            },
             "Amrut's Maqintosh": {
                 "750ml": 26,
                 "180ml": 15
             },
             "Amrut Amalgam": {
                 "750ml": 2
+            },
+            "Amrut Fusion": {
+                "750ml": 2
+            },
+            "Amrut Two Indies Rum": {
+                "750ml": 5
             }
         },
         "AS01KC7088": {
+            "Royal Stag": {
+                "375ml": 150,
+                "180ml": 100,
+                "750ml": 25
+            },
+            "Royal Stag Barrel": {
+                "750ml": 20,
+                "180ml": 40,
+                "375ml": 40
+            },
+            "Blender's Pride Exclusive": {
+                "180ml": 50,
+                "375ml": 30,
+                "750ml": 20
+            },
             "Blender's Pride Four Elements": {
                 "180ml": 10,
                 "375ml": 10
             },
-            "Royal Stag": {
-                "750ml": 25,
-                "375ml": 150,
-                "180ml": 100
-            },
-            "Blender's Pride Exclusive": {
-                "180ml": 50,
-                "750ml": 20,
-                "375ml": 30
-            },
-            "Royal Stag Barrel": {
-                "180ml": 40,
-                "750ml": 20,
-                "375ml": 40
+            "Oaken Glow": {
+                "180ml": 15
             },
             "Blender's Pride Reserve": {
                 "750ml": 10,
                 "375ml": 15,
-                "180ml": 15
-            },
-            "Oaken Glow": {
                 "180ml": 15
             }
         },
@@ -20452,17 +20452,17 @@
             }
         },
         "AS01KC9112": {
+            "London High Vodka": {
+                "375ml": 4,
+                "180ml": 7
+            },
             "All Seasons Connoisseur": {
-                "375ml": 200,
+                "750ml": 100,
                 "180ml": 235,
-                "750ml": 100
+                "375ml": 200
             },
             "London High Lemon Vodka": {
                 "180ml": 4
-            },
-            "London High Vodka": {
-                "180ml": 7,
-                "375ml": 4
             }
         },
         "AS17B4164": {
@@ -20473,11 +20473,11 @@
             }
         },
         "AS01FC7435": {
-            "Kingfisher Lager": {
-                "Can": 200
-            },
             "Kingfisher Original Strong": {
                 "Bottle": 1200
+            },
+            "Kingfisher Lager": {
+                "Can": 200
             }
         },
         "AS02AC7187": {
@@ -20489,17 +20489,17 @@
     "11-Sep-2026": {
         "AS03BC9029": {
             "Lords Whiskey": {
-                "750ml": 200,
-                "375ml": 150
+                "375ml": 150,
+                "750ml": 200
             }
         },
         "AS05AC9317": {
-            "Officer's Choice pet": {
-                "375ml": 75,
-                "180ml": 325
-            },
             "Officer's Choice": {
                 "750ml": 100
+            },
+            "Officer's Choice pet": {
+                "180ml": 325,
+                "375ml": 75
             }
         },
         "AS25BC9705": {
@@ -20524,9 +20524,18 @@
             }
         },
         "AS01JC1967": {
-            "Blender's Pride Reserve": {
-                "375ml": 20,
-                "180ml": 40,
+            "Royal Stag Double Dark": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 10
+            },
+            "Royal Stag": {
+                "750ml": 30,
+                "375ml": 150
+            },
+            "100 Pipers": {
+                "375ml": 6,
+                "180ml": 9,
                 "750ml": 10
             },
             "Royal Stag Barrel": {
@@ -20544,19 +20553,10 @@
                 "750ml": 10,
                 "375ml": 20
             },
-            "Royal Stag Double Dark": {
-                "750ml": 10,
-                "375ml": 10,
-                "180ml": 10
-            },
-            "Royal Stag": {
-                "375ml": 150,
-                "750ml": 30
-            },
-            "100 Pipers": {
-                "180ml": 9,
-                "750ml": 10,
-                "375ml": 6
+            "Blender's Pride Reserve": {
+                "180ml": 40,
+                "375ml": 20,
+                "750ml": 10
             },
             "100 Pipers 12 Yrs": {
                 "750ml": 5
@@ -21490,6 +21490,24 @@
         "WB23D2114": {
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "AS01GC6796": {
+            "_TelegramSupplier": "Raizel Industries",
+            "Castle Hill Dark Knight Whiskey": {
+                "750ml": 3
+            },
+            "WHITE MAGIC VODKA": {
+                "180ml": 35,
+                "750ml": 7
+            },
+            "WHITE MAGIC GIN PREMIUM DRY": {
+                "750ml": 5
+            },
+            "AC Black Luxury": {
+                "375ml": 200,
+                "180ml": 600,
+                "750ml": 100
             }
         }
     }
