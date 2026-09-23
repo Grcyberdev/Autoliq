@@ -20576,9 +20576,9 @@
         },
         "AS01KC7022": {
             "Imperial Blue": {
-                "180ml": 350,
                 "750ml": 100,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 350
             }
         },
         "RJ14GG5202": {
@@ -20588,26 +20588,26 @@
         },
         "AS01CC4251": {
             "McDowell's Rum": {
+                "750ml": 250,
                 "375ml": 150,
-                "180ml": 500,
-                "750ml": 250
+                "180ml": 500
             }
         },
         "AS01LC7060": {
+            "Director's Special Black": {
+                "375ml": 50,
+                "750ml": 25,
+                "180ml": 145
+            },
             "Royal Challenge": {
                 "750ml": 50,
                 "180ml": 140,
                 "375ml": 90
             },
             "Signature": {
-                "750ml": 15,
                 "180ml": 20,
-                "375ml": 15
-            },
-            "Director's Special Black": {
-                "375ml": 50,
-                "180ml": 145,
-                "750ml": 25
+                "375ml": 15,
+                "750ml": 15
             }
         },
         "AS01RC2282": {
@@ -20616,15 +20616,15 @@
             }
         },
         "AS01HC0109": {
-            "Imperial Blue": {
-                "750ml": 75,
-                "180ml": 150,
-                "375ml": 50
-            },
             "Imperial Black": {
+                "375ml": 50,
                 "750ml": 25,
-                "180ml": 200,
-                "375ml": 50
+                "180ml": 200
+            },
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 150,
+                "750ml": 75
             }
         }
     },
@@ -20911,11 +20911,6 @@
             }
         },
         "AS01LC6322": {
-            "Oaken Glow": {
-                "180ml": 20,
-                "375ml": 10,
-                "750ml": 10
-            },
             "Blender's Pride Reserve": {
                 "375ml": 20,
                 "750ml": 20,
@@ -20929,6 +20924,11 @@
                 "180ml": 20,
                 "375ml": 25,
                 "750ml": 10
+            },
+            "Oaken Glow": {
+                "750ml": 10,
+                "180ml": 20,
+                "375ml": 10
             },
             "Royal Stag": {
                 "180ml": 150,
@@ -21505,8 +21505,8 @@
             },
             "AC Black Luxury": {
                 "375ml": 200,
-                "180ml": 600,
-                "750ml": 100
+                "750ml": 100,
+                "180ml": 600
             }
         },
         "AS01PC0733": {
@@ -21545,15 +21545,15 @@
         },
         "PB13AW7367": {
             "McDowell's Rum": {
-                "750ml": 300,
-                "180ml": 1500
+                "180ml": 1500,
+                "750ml": 300
             }
         },
         "AS01TC4767": {
             "McDowell's Luxury": {
+                "750ml": 50,
                 "180ml": 400,
-                "375ml": 100,
-                "750ml": 50
+                "375ml": 100
             }
         },
         "AS01HC0109": {
@@ -21569,6 +21569,17 @@
             },
             "Dabang Strong": {
                 "Can": 330
+            }
+        },
+        "AS01HC8757": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
+                "180ml": 300,
+                "375ml": 75,
+                "750ml": 75
+            },
+            "Imperial Blue": {
+                "180ml": 100
             }
         }
     }
