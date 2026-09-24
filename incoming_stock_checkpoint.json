@@ -20681,72 +20681,72 @@
             }
         },
         "HR38AF3691": {
-            "Jinro Green Grape Wine": {
-                "SA": 2
+            "Jinro Strawberry Wine": {
+                "SA": 10
             },
-            "Bushmills 15 Yrs": {
-                "Full": 1
+            "Jinro Peach Wine": {
+                "SA": 5
             },
-            "Lucifer's Gold": {
-                "Full": 10
+            "Jinro Plum Wine": {
+                "SA": 1
             },
-            "Bushmills Original": {
-                "Full": 41
+            "Jose Cuervo Silver Tequila": {
+                "750ml": 2
             },
-            "Bushmills Black Bush Whisky": {
+            "Belenkaya Vodka": {
                 "Full": 2
             },
             "Bushmills 12 Yrs": {
                 "Full": 1
             },
-            "Belenkaya Vodka": {
+            "Bushmills Black Bush Whisky": {
                 "Full": 2
             },
-            "Jose Cuervo Silver Tequila": {
-                "750ml": 2
+            "Bushmills Original": {
+                "Full": 41
             },
-            "Jinro Plum Wine": {
-                "SA": 1
+            "Lucifer's Gold": {
+                "Full": 10
             },
-            "Jinro Peach Wine": {
-                "SA": 5
+            "Bushmills 15 Yrs": {
+                "Full": 1
             },
-            "Jinro Strawberry Wine": {
-                "SA": 10
+            "Jinro Green Grape Wine": {
+                "SA": 2
             },
             "Jinro Grapefruit Wine": {
                 "SA": 5
             },
-            "Outback Jack Shiraz": {
-                "750ml": 2
-            },
             "Jinro Chamisul Soju": {
                 "SA": 10
+            },
+            "Outback Jack Shiraz": {
+                "750ml": 2
             }
         },
         "AS25BC9705": {
-            "Sterling B7": {
-                "180ml": 10
-            },
-            "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 200
-            },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 5
-            },
-            "Officer's Choice": {
-                "750ml": 70
-            },
-            "Officer's Choice Blue": {
-                "180ml": 10,
-                "750ml": 5
-            },
             "Iconiq Hippy": {
                 "180ml": 130
             },
             "Iconiq Vodka": {
                 "750ml": 20
+            },
+            "Officer's Choice pet": {
+                "180ml": 200,
+                "375ml": 50
+            },
+            "Officer's Choice Blue": {
+                "750ml": 5,
+                "180ml": 10
+            },
+            "Sterling B7": {
+                "180ml": 10
+            },
+            "Officer's Choice": {
+                "750ml": 70
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 5
             }
         },
         "AS01HC6690": {
@@ -20756,9 +20756,9 @@
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "180ml": 750,
+                "750ml": 75,
                 "375ml": 75,
-                "750ml": 75
+                "180ml": 750
             }
         },
         "AS03CC3362": {
@@ -20767,34 +20767,34 @@
             }
         },
         "AS17C5063": {
-            "Raven Cabernet": {
-                "750ml": 30
-            },
             "Zumzin Peach Wine": {
                 "750ml": 175,
                 "375ml": 75
             },
             "Takin Red Wine": {
                 "750ml": 20
+            },
+            "Raven Cabernet": {
+                "750ml": 30
             }
         },
         "AS01LC5164": {
             "Imperial Blue": {
-                "375ml": 125,
+                "180ml": 350,
                 "750ml": 75,
-                "180ml": 350
+                "375ml": 125
             }
         },
         "AS01JC3625": {
+            "McDowell's Double Oak Barrel": {
+                "180ml": 125,
+                "750ml": 25,
+                "375ml": 50
+            },
             "McDowell's Luxury": {
                 "375ml": 100,
                 "180ml": 200,
                 "750ml": 50
-            },
-            "McDowell's Double Oak Barrel": {
-                "375ml": 50,
-                "180ml": 125,
-                "750ml": 25
             }
         },
         "AS02AC3594": {
@@ -20911,6 +20911,11 @@
             }
         },
         "AS01LC6322": {
+            "Oaken Glow": {
+                "180ml": 20,
+                "375ml": 10,
+                "750ml": 10
+            },
             "Blender's Pride Reserve": {
                 "375ml": 20,
                 "750ml": 20,
@@ -20924,11 +20929,6 @@
                 "180ml": 20,
                 "375ml": 25,
                 "750ml": 10
-            },
-            "Oaken Glow": {
-                "750ml": 10,
-                "180ml": 20,
-                "375ml": 10
             },
             "Royal Stag": {
                 "180ml": 150,
@@ -21586,8 +21586,8 @@
         "AS01GC6794": {
             "AC Black Luxury": {
                 "180ml": 750,
-                "375ml": 100,
-                "750ml": 50
+                "750ml": 50,
+                "375ml": 100
             }
         },
         "AS01LC5164": {
@@ -21607,47 +21607,141 @@
             }
         },
         "AS01NC7526": {
-            "Royal Stag": {
-                "750ml": 50,
-                "375ml": 100,
-                "180ml": 200
+            "Royal Stag Barrel": {
+                "375ml": 25,
+                "180ml": 25,
+                "750ml": 25
+            },
+            "Blender's Pride Four Elements": {
+                "375ml": 5
             },
             "Blender's Pride Reserve": {
                 "180ml": 10,
                 "750ml": 25,
                 "375ml": 15
             },
-            "Blender's Pride Four Elements": {
-                "375ml": 5
-            },
-            "Royal Stag Barrel": {
-                "750ml": 25,
-                "180ml": 25,
-                "375ml": 25
-            },
-            "Oaken Glow": {
-                "375ml": 10,
-                "750ml": 10,
-                "180ml": 5
+            "Royal Stag": {
+                "180ml": 200,
+                "375ml": 100,
+                "750ml": 50
             },
             "Blender's Pride Exclusive": {
                 "750ml": 15,
                 "375ml": 10,
                 "180ml": 20
+            },
+            "Oaken Glow": {
+                "750ml": 10,
+                "180ml": 5,
+                "375ml": 10
             }
         },
         "NL01L6323": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag Double Dark": {
+                "750ml": 5,
+                "375ml": 5,
+                "180ml": 10
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 30,
+                "750ml": 25
+            },
             "Royal Stag": {
-                "375ml": 125,
-                "750ml": 75,
-                "180ml": 350
+                "750ml": 135,
+                "180ml": 400,
+                "375ml": 125
+            },
+            "Oaken Glow": {
+                "375ml": 20,
+                "180ml": 50,
+                "750ml": 10
+            },
+            "Royal Stag Barrel": {
+                "750ml": 25,
+                "180ml": 50,
+                "375ml": 50
+            },
+            "Blender's Pride Exclusive": {
+                "180ml": 65,
+                "375ml": 40,
+                "750ml": 40
+            },
+            "100 Pipers": {
+                "180ml": 5,
+                "750ml": 6,
+                "375ml": 4
             }
         },
         "AS01RC2281": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "AS05BC0699": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 275
+            },
+            "Iconiq Vodka": {
+                "375ml": 30,
+                "750ml": 20
+            },
+            "Iconiq Hippy": {
+                "180ml": 50
+            },
+            "Officer's Choice": {
+                "750ml": 75
+            }
+        },
+        "ML05Z2670": {
+            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
+            "Simba": {
+                "Bottle": 1010,
+                "Can": 350
+            }
+        },
+        "AS17C3086": {
+            "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Fastflow Dealer Pvt. Ltd.",
+            "All Seasons Sir-E-Taj": {
+                "180ml": 20,
+                "750ml": 40,
+                "375ml": 40
+            },
+            "All Seasons Connoisseur": {
+                "750ml": 150,
+                "375ml": 150,
+                "180ml": 150
+            }
+        },
+        "AS01TC0557": {
+            "_TelegramSupplier": "Bacardi India Pvt. Ltd.",
+            "Teeling Whiskey": {
+                "Full": 3
+            },
+            "Grey Goose": {
+                "Full": 3
+            },
+            "Dewar's Portuguese Smooth": {
+                "Full": 2
+            },
+            "Breezer Jamaican": {
+                "Stubby": 60
+            },
+            "Breezer Blackberry": {
+                "Stubby": 30
+            },
+            "William Lawson": {
+                "750ml": 5
+            },
+            "BREEZER BOLD ULTRA PREMIUM GUAVA CHILLI": {
+                "Stubby": 25
+            },
+            "Bacardi Limon Rum": {
+                "180ml": 10
+            },
+            "BREEZER BOLD ULTRA PREMIUM GRAPEFRUIT YUZU": {
+                "Stubby": 12
             }
         }
     }
