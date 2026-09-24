@@ -20576,9 +20576,9 @@
         },
         "AS01KC7022": {
             "Imperial Blue": {
+                "180ml": 350,
                 "750ml": 100,
-                "375ml": 100,
-                "180ml": 350
+                "375ml": 100
             }
         },
         "RJ14GG5202": {
@@ -20588,26 +20588,26 @@
         },
         "AS01CC4251": {
             "McDowell's Rum": {
-                "750ml": 250,
                 "375ml": 150,
-                "180ml": 500
+                "180ml": 500,
+                "750ml": 250
             }
         },
         "AS01LC7060": {
-            "Director's Special Black": {
-                "375ml": 50,
-                "750ml": 25,
-                "180ml": 145
-            },
             "Royal Challenge": {
                 "750ml": 50,
                 "180ml": 140,
                 "375ml": 90
             },
             "Signature": {
+                "750ml": 15,
                 "180ml": 20,
-                "375ml": 15,
-                "750ml": 15
+                "375ml": 15
+            },
+            "Director's Special Black": {
+                "375ml": 50,
+                "180ml": 145,
+                "750ml": 25
             }
         },
         "AS01RC2282": {
@@ -20616,15 +20616,15 @@
             }
         },
         "AS01HC0109": {
-            "Imperial Black": {
-                "375ml": 50,
-                "750ml": 25,
-                "180ml": 200
-            },
             "Imperial Blue": {
-                "375ml": 50,
+                "750ml": 75,
                 "180ml": 150,
-                "750ml": 75
+                "375ml": 50
+            },
+            "Imperial Black": {
+                "750ml": 25,
+                "180ml": 200,
+                "375ml": 50
             }
         }
     },
@@ -20911,6 +20911,11 @@
             }
         },
         "AS01LC6322": {
+            "Oaken Glow": {
+                "180ml": 20,
+                "375ml": 10,
+                "750ml": 10
+            },
             "Blender's Pride Reserve": {
                 "375ml": 20,
                 "750ml": 20,
@@ -20924,11 +20929,6 @@
                 "180ml": 20,
                 "375ml": 25,
                 "750ml": 10
-            },
-            "Oaken Glow": {
-                "750ml": 10,
-                "180ml": 20,
-                "375ml": 10
             },
             "Royal Stag": {
                 "180ml": 150,
@@ -21579,6 +21579,16 @@
             },
             "Imperial Blue": {
                 "180ml": 100
+            }
+        }
+    },
+    "24-Sep-2026": {
+        "AS01GC6794": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "180ml": 750,
+                "750ml": 50,
+                "375ml": 100
             }
         }
     }
