@@ -21582,7 +21582,6 @@
             }
         },
         "AS01KC5889": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
                 "375ml": 85,
                 "180ml": 100,
@@ -21608,9 +21607,9 @@
     "24-Sep-2026": {
         "AS01GC6794": {
             "AC Black Luxury": {
-                "180ml": 750,
+                "375ml": 100,
                 "750ml": 50,
-                "375ml": 100
+                "180ml": 750
             }
         },
         "AS01LC5164": {
@@ -21619,34 +21618,26 @@
                 "375ml": 50
             },
             "Imperial Black": {
-                "750ml": 25,
-                "180ml": 125
+                "180ml": 125,
+                "750ml": 25
             }
         },
         "AS01UC3517": {
             "Goldflow Strong": {
-                "Can": 600,
-                "Bottle": 350
+                "Bottle": 350,
+                "Can": 600
             }
         },
         "AS01NC7526": {
-            "Royal Stag Barrel": {
-                "375ml": 25,
-                "180ml": 25,
-                "750ml": 25
-            },
-            "Blender's Pride Four Elements": {
-                "375ml": 5
-            },
             "Blender's Pride Reserve": {
                 "180ml": 10,
                 "750ml": 25,
                 "375ml": 15
             },
             "Royal Stag": {
-                "180ml": 200,
                 "375ml": 100,
-                "750ml": 50
+                "750ml": 50,
+                "180ml": 200
             },
             "Blender's Pride Exclusive": {
                 "750ml": 15,
@@ -21657,42 +21648,50 @@
                 "750ml": 10,
                 "180ml": 5,
                 "375ml": 10
+            },
+            "Royal Stag Barrel": {
+                "375ml": 25,
+                "180ml": 25,
+                "750ml": 25
+            },
+            "Blender's Pride Four Elements": {
+                "375ml": 5
             }
         },
         "NL01L6323": {
-            "Royal Stag Double Dark": {
-                "750ml": 5,
-                "375ml": 5,
-                "180ml": 10
+            "Oaken Glow": {
+                "180ml": 50,
+                "750ml": 10,
+                "375ml": 20
             },
-            "Blender's Pride Reserve": {
-                "375ml": 30,
-                "750ml": 25
+            "Royal Stag Double Dark": {
+                "375ml": 5,
+                "750ml": 5,
+                "180ml": 10
             },
             "Royal Stag": {
                 "750ml": 135,
                 "180ml": 400,
                 "375ml": 125
             },
-            "Oaken Glow": {
-                "375ml": 20,
-                "180ml": 50,
-                "750ml": 10
-            },
-            "Royal Stag Barrel": {
-                "750ml": 25,
-                "180ml": 50,
-                "375ml": 50
-            },
             "Blender's Pride Exclusive": {
-                "180ml": 65,
+                "750ml": 40,
                 "375ml": 40,
-                "750ml": 40
+                "180ml": 65
             },
             "100 Pipers": {
-                "180ml": 5,
+                "375ml": 4,
                 "750ml": 6,
-                "375ml": 4
+                "180ml": 5
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 30,
+                "750ml": 25
+            },
+            "Royal Stag Barrel": {
+                "375ml": 50,
+                "180ml": 50,
+                "750ml": 25
             }
         },
         "AS01RC2281": {
@@ -21705,33 +21704,33 @@
                 "375ml": 50,
                 "180ml": 275
             },
+            "Officer's Choice": {
+                "750ml": 75
+            },
             "Iconiq Vodka": {
                 "375ml": 30,
                 "750ml": 20
             },
             "Iconiq Hippy": {
                 "180ml": 50
-            },
-            "Officer's Choice": {
-                "750ml": 75
             }
         },
         "ML05Z2670": {
             "Simba": {
-                "Bottle": 1010,
-                "Can": 350
+                "Can": 350,
+                "Bottle": 1010
             }
         },
         "AS17C3086": {
             "All Seasons Sir-E-Taj": {
+                "375ml": 40,
                 "180ml": 20,
-                "750ml": 40,
-                "375ml": 40
+                "750ml": 40
             },
             "All Seasons Connoisseur": {
-                "750ml": 150,
                 "375ml": 150,
-                "180ml": 150
+                "180ml": 150,
+                "750ml": 150
             }
         },
         "AS01TC0557": {
@@ -21761,6 +21760,17 @@
             },
             "BREEZER BOLD ULTRA PREMIUM GRAPEFRUIT YUZU": {
                 "Stubby": 12
+            }
+        },
+        "AS01JC1967": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 50,
+                "375ml": 150,
+                "180ml": 300
+            },
+            "Blender's Pride Reserve": {
+                "180ml": 50
             }
         }
     }
