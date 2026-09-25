@@ -20805,33 +20805,33 @@
     },
     "15-Sep-2026": {
         "AS01GC6900": {
-            "Magic Moments Green Apple": {
-                "180ml": 10
-            },
-            "Magic Moments": {
-                "180ml": 20,
-                "375ml": 20
-            },
             "After Dark": {
-                "375ml": 20,
-                "180ml": 180
+                "180ml": 180,
+                "375ml": 20
             },
             "8 PM Premium Black": {
                 "180ml": 10
             },
+            "Magic Moments": {
+                "375ml": 20,
+                "180ml": 20
+            },
             "Magic Moments Lemon": {
                 "180ml": 20,
                 "375ml": 20
+            },
+            "Magic Moments Green Apple": {
+                "180ml": 10
             }
         },
         "AS01PC6347": {
+            "Rockford Reserve": {
+                "375ml": 17,
+                "750ml": 25,
+                "180ml": 15
+            },
             "Singhasan": {
                 "750ml": 3
-            },
-            "Rockford Reserve": {
-                "750ml": 25,
-                "375ml": 17,
-                "180ml": 15
             }
         },
         "AS22C9809": {
@@ -20841,12 +20841,12 @@
             }
         },
         "AS01UC8610": {
+            "Imperial Blue": {
+                "180ml": 100
+            },
             "Imperial Black": {
                 "375ml": 50,
                 "180ml": 400
-            },
-            "Imperial Blue": {
-                "180ml": 100
             }
         },
         "AS01FC4555": {
@@ -20855,6 +20855,20 @@
             }
         },
         "AS25EC2957": {
+            "Dewar's White Label": {
+                "375ml": 4,
+                "180ml": 3,
+                "750ml": 5
+            },
+            "William Lawson": {
+                "750ml": 5,
+                "180ml": 2
+            },
+            "Bacardi Limon Rum": {
+                "750ml": 10,
+                "375ml": 10,
+                "180ml": 10
+            },
             "Bacardi White Rum": {
                 "180ml": 3
             },
@@ -20864,25 +20878,15 @@
             "Breezer Blueberry": {
                 "Stubby": 20
             },
-            "Breezer Watermelon": {
-                "Stubby": 15
-            },
             "Breezer Jamaican": {
                 "Stubby": 20
             },
-            "Dewar's White Label": {
-                "375ml": 4,
-                "180ml": 3,
-                "750ml": 5
+            "Breezer Watermelon": {
+                "Stubby": 15
             },
-            "Bacardi Limon Rum": {
-                "375ml": 10,
-                "750ml": 10,
-                "180ml": 10
-            },
-            "William Lawson": {
-                "180ml": 2,
-                "750ml": 5
+            "Bombay Sapphire Gin": {
+                "750ml": 2,
+                "Quarter": 10
             },
             "Dewar's Portuguese Smooth": {
                 "Full": 3
@@ -20892,55 +20896,51 @@
             },
             "Camino Tequila": {
                 "750ml": 4
-            },
-            "Bombay Sapphire Gin": {
-                "Quarter": 10,
-                "750ml": 2
             }
         },
         "WB23L8899": {
             "Budweiser Magnum": {
                 "Bottle": 470
             },
+            "Hoegaarden Witbier": {
+                "Pint": 30
+            },
             "Budweiser": {
                 "Bottle": 150,
                 "Can": 150
-            },
-            "Hoegaarden Witbier": {
-                "Pint": 30
             }
         },
         "AS01LC6322": {
-            "Royal Stag": {
-                "750ml": 75,
-                "180ml": 150,
-                "375ml": 125
-            },
-            "Oaken Glow": {
-                "750ml": 10,
-                "375ml": 10,
-                "180ml": 20
-            },
             "Royal Stag Barrel": {
                 "375ml": 25,
                 "180ml": 20,
                 "750ml": 10
             },
-            "Blender's Pride Reserve": {
-                "180ml": 25,
-                "750ml": 20,
-                "375ml": 20
-            },
             "Blender's Pride Exclusive": {
                 "375ml": 20,
                 "180ml": 20
+            },
+            "Blender's Pride Reserve": {
+                "750ml": 20,
+                "375ml": 20,
+                "180ml": 25
+            },
+            "Oaken Glow": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 20
+            },
+            "Royal Stag": {
+                "180ml": 150,
+                "750ml": 75,
+                "375ml": 125
             }
         },
         "AS02CC8463": {
             "McDowell's Rum": {
-                "750ml": 300,
+                "375ml": 100,
                 "180ml": 500,
-                "375ml": 100
+                "750ml": 300
             }
         },
         "NL01L4489": {
@@ -20959,26 +20959,26 @@
             }
         },
         "AS27C7306": {
-            "Imperial Black": {
-                "375ml": 100,
-                "750ml": 100,
-                "180ml": 100
-            },
             "Imperial Blue": {
                 "375ml": 50,
-                "180ml": 150,
-                "750ml": 50
+                "750ml": 50,
+                "180ml": 150
+            },
+            "Imperial Black": {
+                "180ml": 100,
+                "750ml": 100,
+                "375ml": 100
             }
         },
         "AS01PC0732": {
-            "Oaksmith Gold": {
-                "375ml": 20,
-                "180ml": 10,
-                "750ml": 20
-            },
             "Oaksmith International": {
-                "750ml": 25,
-                "375ml": 110
+                "375ml": 110,
+                "750ml": 25
+            },
+            "Oaksmith Gold": {
+                "750ml": 20,
+                "375ml": 20,
+                "180ml": 10
             },
             "Teachers Highland Cream": {
                 "750ml": 15
@@ -20986,9 +20986,9 @@
         },
         "AS01FC6139": {
             "McDowell's Luxury": {
-                "375ml": 125,
                 "750ml": 75,
-                "180ml": 350
+                "180ml": 350,
+                "375ml": 125
             }
         }
     },
@@ -21841,8 +21841,24 @@
         },
         "AS12CC5133": {
             "Simba": {
-                "Can": 200,
-                "Bottle": 480
+                "Bottle": 480,
+                "Can": 200
+            }
+        },
+        "AS01JC3496": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Brahmaputra Breweries Llp",
+            "Godfather Select": {
+                "Bottle": 680
+            }
+        },
+        "ML10D4214": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd.",
+            "Six Fields Brute": {
+                "Bottle": 70,
+                "Can": 30
+            },
+            "Six Fields Cult": {
+                "Can": 30
             }
         }
     }
