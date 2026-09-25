@@ -21841,8 +21841,8 @@
         },
         "AS12CC5133": {
             "Simba": {
-                "Bottle": 480,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 480
             }
         },
         "AS01JC3496": {
@@ -21857,6 +21857,12 @@
             },
             "Six Fields Cult": {
                 "Can": 30
+            }
+        },
+        "AS01DD0037": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
