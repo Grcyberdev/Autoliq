@@ -21852,17 +21852,25 @@
         },
         "ML10D4214": {
             "Six Fields Brute": {
-                "Bottle": 70,
-                "Can": 30
+                "Can": 30,
+                "Bottle": 70
             },
             "Six Fields Cult": {
                 "Can": 30
             }
         },
         "AS01DD0037": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "BR01GE1867": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg Malt": {
+                "Can": 300
+            },
+            "Tuborg": {
+                "Bottle": 900
             }
         }
     }
