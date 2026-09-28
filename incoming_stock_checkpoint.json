@@ -22121,6 +22121,14 @@
             "He Man 9000": {
                 "Bottle": 1400
             }
+        },
+        "AS04CC0758": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Lords Whiskey": {
+                "375ml": 150,
+                "750ml": 150,
+                "180ml": 50
+            }
         }
     }
 }
