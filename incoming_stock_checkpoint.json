@@ -21923,8 +21923,8 @@
         },
         "WB23C5237": {
             "Kingfisher Original Strong": {
-                "Bottle": 700,
-                "Can": 700
+                "Can": 700,
+                "Bottle": 700
             }
         },
         "AS02AC3594": {
@@ -21938,15 +21938,15 @@
             }
         },
         "AS02CC9561": {
-            "Sterling B7": {
-                "180ml": 10
+            "Officer's Choice pet": {
+                "180ml": 325,
+                "375ml": 75
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 10
             },
-            "Officer's Choice pet": {
-                "180ml": 325,
-                "375ml": 75
+            "Sterling B7": {
+                "180ml": 10
             },
             "Officer's Choice": {
                 "750ml": 80
@@ -21954,9 +21954,9 @@
         },
         "AS01LC5952": {
             "McDowell's Luxury": {
+                "180ml": 350,
                 "375ml": 125,
-                "750ml": 75,
-                "180ml": 350
+                "750ml": 75
             }
         },
         "AS01KC9113": {
@@ -21966,84 +21966,91 @@
             },
             "Imperial Black": {
                 "375ml": 50,
-                "750ml": 50,
-                "180ml": 125
+                "180ml": 125,
+                "750ml": 50
             },
             "Mansion House": {
-                "750ml": 25,
-                "180ml": 25
+                "180ml": 25,
+                "750ml": 25
             }
         },
         "AS01MC3481": {
             "Teachers 50": {
+                "180ml": 1,
                 "375ml": 4,
-                "750ml": 5,
-                "180ml": 1
+                "750ml": 5
             },
             "Oaksmith International": {
+                "180ml": 190,
                 "750ml": 150,
-                "375ml": 150,
-                "180ml": 190
+                "375ml": 150
             }
         },
         "AS01TC1589": {
-            "Oaksmith Gold": {
-                "375ml": 5,
-                "750ml": 5,
-                "180ml": 15
-            },
             "Teachers Highland Cream": {
-                "375ml": 10,
                 "750ml": 10,
-                "180ml": 5
+                "180ml": 5,
+                "375ml": 10
+            },
+            "Oaksmith Gold": {
+                "180ml": 15,
+                "750ml": 5,
+                "375ml": 5
             }
         },
         "RJ14GG5400": {
-            "Tuborg": {
-                "Bottle": 900
-            },
             "Tuborg Malt": {
                 "Can": 300
+            },
+            "Tuborg": {
+                "Bottle": 900
             }
         },
         "AS01LC5954": {
-            "Director's Special Black": {
-                "180ml": 125,
-                "375ml": 25
+            "McDowell's Rum": {
+                "750ml": 100
             },
             "Signature": {
+                "180ml": 15,
                 "375ml": 15,
-                "750ml": 20,
-                "180ml": 15
-            },
-            "Royal Challenge": {
-                "375ml": 75,
-                "750ml": 25,
-                "180ml": 130
+                "750ml": 20
             },
             "Antiquity Blue Ultra": {
                 "750ml": 15,
                 "180ml": 5
             },
-            "McDowell's Rum": {
-                "750ml": 100
+            "Royal Challenge": {
+                "750ml": 25,
+                "180ml": 130,
+                "375ml": 75
+            },
+            "Director's Special Black": {
+                "375ml": 25,
+                "180ml": 125
             }
         },
         "WB23L4499": {
-            "Budweiser Magnum": {
-                "Can": 200,
-                "Bottle": 375
-            },
             "Budweiser": {
                 "Bottle": 150,
                 "Can": 200
             },
+            "Budweiser Magnum": {
+                "Can": 200,
+                "Bottle": 375
+            },
             "Corona": {
-                "Pint": 30,
-                "Can": 20
+                "Can": 20,
+                "Pint": 30
             },
             "Hoegaarden Witbier": {
                 "Pint": 25
+            }
+        },
+        "AS01JC3460": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "375ml": 150,
+                "180ml": 400
             }
         }
     },
