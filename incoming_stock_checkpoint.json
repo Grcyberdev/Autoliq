@@ -22276,34 +22276,34 @@
     },
     "29-Sep-2026": {
         "AS25FC2182": {
-            "Royal Stag": {
-                "375ml": 300,
-                "750ml": 115,
-                "180ml": 450
-            },
-            "Blender's Pride Reserve": {
-                "180ml": 35,
-                "375ml": 20,
-                "750ml": 20
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 5,
-                "750ml": 15,
-                "180ml": 15
-            },
             "Royal Stag Double Dark": {
                 "750ml": 10,
                 "375ml": 10,
                 "180ml": 15
+            },
+            "Blender's Pride Exclusive": {
+                "180ml": 15,
+                "750ml": 15,
+                "375ml": 5
+            },
+            "Royal Stag": {
+                "750ml": 115,
+                "180ml": 450,
+                "375ml": 300
+            },
+            "100 Pipers": {
+                "375ml": 5,
+                "750ml": 10
             },
             "Oaken Glow": {
                 "750ml": 20,
                 "180ml": 10,
                 "375ml": 10
             },
-            "100 Pipers": {
-                "375ml": 5,
-                "750ml": 10
+            "Blender's Pride Reserve": {
+                "180ml": 35,
+                "375ml": 20,
+                "750ml": 20
             },
             "Royal Stag Barrel": {
                 "750ml": 35
@@ -22336,6 +22336,16 @@
             }
         },
         "ML10D4214": {
+            "Absolut": {
+                "Quarter": 5,
+                "750ml": 2
+            },
+            "Jameson Black Barrel": {
+                "Full": 3
+            },
+            "Jameson": {
+                "750ml": 15
+            },
             "Ballantines": {
                 "375ml": 10,
                 "750ml": 3
@@ -22345,18 +22355,8 @@
             },
             "Xclamation Vodka": {
                 "750ml": 2,
-                "375ml": 1,
-                "180ml": 2
-            },
-            "Jameson": {
-                "750ml": 15
-            },
-            "Jameson Black Barrel": {
-                "Full": 3
-            },
-            "Absolut": {
-                "Quarter": 5,
-                "750ml": 2
+                "180ml": 2,
+                "375ml": 1
             }
         },
         "AS18C7825": {
@@ -22365,24 +22365,24 @@
             }
         },
         "AS01PC0693": {
-            "McDowell's Luxury": {
+            "Royal Challenge": {
+                "180ml": 50,
                 "750ml": 25,
-                "180ml": 200,
                 "375ml": 25
             },
             "Director's Special Black": {
                 "180ml": 75,
-                "375ml": 30,
-                "750ml": 20
+                "750ml": 20,
+                "375ml": 30
             },
             "Signature": {
                 "375ml": 15,
                 "750ml": 35,
                 "180ml": 15
             },
-            "Royal Challenge": {
-                "180ml": 50,
+            "McDowell's Luxury": {
                 "750ml": 25,
+                "180ml": 200,
                 "375ml": 25
             },
             "Antiquity Blue Ultra": {
@@ -22393,19 +22393,30 @@
         "AS25EC2957": {
             "Royal Green": {
                 "375ml": 15,
-                "180ml": 10,
-                "750ml": 25
+                "750ml": 25,
+                "180ml": 10
             },
             "Calenter Premium": {
-                "180ml": 60,
-                "750ml": 40
+                "750ml": 40,
+                "180ml": 60
             }
         },
         "AS12CC2139": {
-            "_TelegramSupplier": "Sona Beverages Pvt. Ltd. Tie Up With Sunit Breweries",
             "Simba": {
-                "Bottle": 380,
-                "Can": 300
+                "Can": 300,
+                "Bottle": 380
+            }
+        },
+        "AS01UC9277": {
+            "_TelegramSupplier": "Indospirit Beverages Pvt. Ltd. IMFL Wholesale Warehouse",
+            "Wingman": {
+                "750ml": 30
+            },
+            "Wingman Reserve": {
+                "180ml": 5
+            },
+            "Bro Code XV": {
+                "ZA": 265
             }
         }
     }
