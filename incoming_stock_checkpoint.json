@@ -21286,8 +21286,8 @@
     "18-Sep-2026": {
         "AS01LC5952": {
             "McDowell's Rum": {
-                "750ml": 200,
                 "180ml": 600,
+                "750ml": 200,
                 "375ml": 100
             }
         },
@@ -21316,9 +21316,9 @@
         },
         "AS01UC3810": {
             "Royal Stag": {
-                "750ml": 50,
+                "375ml": 100,
                 "180ml": 400,
-                "375ml": 100
+                "750ml": 50
             }
         }
     },
@@ -22276,21 +22276,6 @@
     },
     "29-Sep-2026": {
         "AS25FC2182": {
-            "Royal Stag Double Dark": {
-                "180ml": 15,
-                "375ml": 10,
-                "750ml": 10
-            },
-            "Blender's Pride Reserve": {
-                "375ml": 20,
-                "750ml": 20,
-                "180ml": 35
-            },
-            "Royal Stag": {
-                "180ml": 450,
-                "375ml": 300,
-                "750ml": 115
-            },
             "100 Pipers": {
                 "750ml": 10,
                 "375ml": 5
@@ -22303,10 +22288,31 @@
                 "375ml": 10,
                 "750ml": 20
             },
+            "Blender's Pride Reserve": {
+                "750ml": 20,
+                "375ml": 20,
+                "180ml": 35
+            },
+            "Royal Stag Double Dark": {
+                "375ml": 10,
+                "180ml": 15,
+                "750ml": 10
+            },
+            "Royal Stag": {
+                "180ml": 450,
+                "375ml": 300,
+                "750ml": 115
+            },
             "Blender's Pride Exclusive": {
                 "750ml": 15,
                 "180ml": 15,
                 "375ml": 5
+            }
+        },
+        "AS01JC2540": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
             }
         }
     }
