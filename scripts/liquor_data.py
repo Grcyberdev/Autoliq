@@ -201,6 +201,9 @@ LIQUOR_NAME_MAPPING = {
     "MCDOWELL`S NO.1 CELEBRATION RUM MATURED XXX RUM": "McDowell's Rum Old",
     "XCLAMATION RESERVE RUM": "Xclamation Rum",
     "OLD MONK LEMON PREMIUM ORIGINAL CITRUS RUM": "Old Monk Lemon Rum",
+    "BREEZER BOLD ULTRA PREMIUM GRAPEFRUIT YUZU": "Breezer Bold Grapefruit Yuzu",
+    "BREEZER BOLD ULTRA PREMIUM GUAVA CHILLI": "Breezer Bold Guava Chilli",
+    "BREEZER BOLD ULTRA PREMIUM LIME & LAGER": "Breezer Bold Lime & Lager",
 
     
 
@@ -339,6 +342,7 @@ LIQUOR_NAME_MAPPING = {
     "V21 ULTRA SMOOTH VODKA JAMUN": "V21 Jamun Vodka",
     "V21 ULTRA SMOOTH VODKA LEMON": "V21 Lemon Vodka",
     "M2 MAGIC MOMENTS REMIX CRANBERRY VIVID FLAVOURED VODKA": "Magic Moments Remix Cranberry",
+    "WHITE MAGIC VODKA": "White Magic Vodka",
 
 
     # --- Gin ---
@@ -363,6 +367,7 @@ LIQUOR_NAME_MAPPING = {
     "TEQUILA PATRON SILVER": "Patron Silver Tequila",
     "BLUE LAGOON GIN": "Blue Lagoon Gin",
     "BLUE LAGOON GIN LEMON": "Blue Lagoon Lemon Gin",
+    "WHITE MAGIC GIN PREMIUM DRY": "White Magic Gin",
 
 
 
