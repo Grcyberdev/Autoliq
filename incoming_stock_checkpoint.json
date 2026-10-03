@@ -21909,11 +21909,11 @@
             }
         },
         "AS04CC0758": {
-            "Rhino No 1": {
-                "CA": 100
-            },
             "Rhino Whiskey": {
                 "CA": 180
+            },
+            "Rhino No 1": {
+                "CA": 100
             }
         },
         "AS02BC0186": {
@@ -22641,6 +22641,17 @@
             },
             "Jim Beam": {
                 "180ml": 4
+            }
+        }
+    },
+    "03-Oct-2026": {
+        "AS04CC0758": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino No 1": {
+                "CS": 200
+            },
+            "Rhino Whiskey": {
+                "CS": 80
             }
         }
     }
