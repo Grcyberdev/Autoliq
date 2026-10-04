@@ -22610,14 +22610,14 @@
     },
     "01-Oct-2026": {
         "AS01KC2111": {
+            "KD 50 White Whiskey": {
+                "750ml": 25,
+                "375ml": 25
+            },
             "KD 50 Whiskey": {
                 "375ml": 100,
                 "180ml": 75,
                 "750ml": 175
-            },
-            "KD 50 White Whiskey": {
-                "375ml": 25,
-                "750ml": 25
             }
         },
         "AS18C7825": {
@@ -22627,20 +22627,20 @@
             }
         },
         "AS01DD3587": {
-            "Oaksmith International": {
-                "180ml": 400,
-                "750ml": 35,
-                "375ml": 50
+            "Teachers Highland Cream": {
+                "750ml": 2
             },
             "Teachers 50": {
-                "375ml": 1,
-                "750ml": 8
+                "750ml": 8,
+                "375ml": 1
+            },
+            "Oaksmith International": {
+                "750ml": 35,
+                "180ml": 400,
+                "375ml": 50
             },
             "Jim Beam": {
                 "180ml": 4
-            },
-            "Teachers Highland Cream": {
-                "750ml": 2
             }
         }
     },
@@ -22667,9 +22667,18 @@
     },
     "04-Oct-2026": {
         "AS01KC9113": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 700
+            }
+        },
+        "AS01UC8610": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "180ml": 300,
+                "375ml": 75
+            },
+            "Imperial Black": {
+                "180ml": 175
             }
         }
     }
