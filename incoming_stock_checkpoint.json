@@ -22646,11 +22646,11 @@
     },
     "03-Oct-2026": {
         "AS04CC0758": {
-            "Rhino Whiskey": {
-                "CS": 80
-            },
             "Rhino No 1": {
                 "CS": 200
+            },
+            "Rhino Whiskey": {
+                "CS": 80
             }
         },
         "AS03BC8401": {
@@ -22662,6 +22662,14 @@
             "Godfather Select": {
                 "Can": 280,
                 "Bottle": 400
+            }
+        }
+    },
+    "04-Oct-2026": {
+        "AS01KC9113": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 700
             }
         }
     }
