@@ -22610,37 +22610,37 @@
     },
     "01-Oct-2026": {
         "AS01KC2111": {
-            "KD 50 White Whiskey": {
-                "750ml": 25,
-                "375ml": 25
-            },
             "KD 50 Whiskey": {
+                "750ml": 175,
                 "375ml": 100,
-                "180ml": 75,
-                "750ml": 175
+                "180ml": 75
+            },
+            "KD 50 White Whiskey": {
+                "375ml": 25,
+                "750ml": 25
             }
         },
         "AS18C7825": {
             "Kingfisher Original Strong": {
-                "Bottle": 700,
-                "Can": 700
+                "Can": 700,
+                "Bottle": 700
             }
         },
         "AS01DD3587": {
+            "Jim Beam": {
+                "180ml": 4
+            },
+            "Oaksmith International": {
+                "750ml": 35,
+                "375ml": 50,
+                "180ml": 400
+            },
             "Teachers Highland Cream": {
                 "750ml": 2
             },
             "Teachers 50": {
                 "750ml": 8,
                 "375ml": 1
-            },
-            "Oaksmith International": {
-                "750ml": 35,
-                "180ml": 400,
-                "375ml": 50
-            },
-            "Jim Beam": {
-                "180ml": 4
             }
         }
     },
@@ -22673,8 +22673,8 @@
         },
         "AS01UC8610": {
             "Imperial Blue": {
-                "180ml": 300,
-                "375ml": 75
+                "375ml": 75,
+                "180ml": 300
             },
             "Imperial Black": {
                 "180ml": 175
@@ -22688,6 +22688,16 @@
             "Masti Special": {
                 "CS": 250,
                 "CA": 200
+            }
+        }
+    },
+    "05-Oct-2026": {
+        "AS03BC9029": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Lords Whiskey": {
+                "180ml": 100,
+                "750ml": 150,
+                "375ml": 100
             }
         }
     }
