@@ -22611,9 +22611,9 @@
     "01-Oct-2026": {
         "AS01KC2111": {
             "KD 50 Whiskey": {
-                "750ml": 175,
                 "375ml": 100,
-                "180ml": 75
+                "180ml": 75,
+                "750ml": 175
             },
             "KD 50 White Whiskey": {
                 "375ml": 25,
@@ -22622,25 +22622,25 @@
         },
         "AS18C7825": {
             "Kingfisher Original Strong": {
-                "Can": 700,
-                "Bottle": 700
+                "Bottle": 700,
+                "Can": 700
             }
         },
         "AS01DD3587": {
+            "Teachers 50": {
+                "375ml": 1,
+                "750ml": 8
+            },
             "Jim Beam": {
                 "180ml": 4
-            },
-            "Oaksmith International": {
-                "750ml": 35,
-                "375ml": 50,
-                "180ml": 400
             },
             "Teachers Highland Cream": {
                 "750ml": 2
             },
-            "Teachers 50": {
-                "750ml": 8,
-                "375ml": 1
+            "Oaksmith International": {
+                "375ml": 50,
+                "750ml": 35,
+                "180ml": 400
             }
         }
     },
@@ -22660,8 +22660,8 @@
         },
         "AS01MC5628": {
             "Godfather Select": {
-                "Can": 280,
-                "Bottle": 400
+                "Bottle": 400,
+                "Can": 280
             }
         }
     },
@@ -22695,8 +22695,27 @@
         "AS03BC9029": {
             "Lords Whiskey": {
                 "180ml": 100,
-                "750ml": 150,
-                "375ml": 100
+                "375ml": 100,
+                "750ml": 150
+            }
+        },
+        "AS01NC3869": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "180ml": 125,
+                "750ml": 100
+            },
+            "Director's Special Black": {
+                "375ml": 25,
+                "180ml": 75
+            },
+            "Royal Challenge": {
+                "375ml": 50,
+                "180ml": 100,
+                "750ml": 50
+            },
+            "Signature": {
+                "180ml": 25
             }
         }
     }
