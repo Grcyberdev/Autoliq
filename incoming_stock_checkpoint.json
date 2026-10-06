@@ -22610,14 +22610,14 @@
     },
     "01-Oct-2026": {
         "AS01KC2111": {
+            "KD 50 Whiskey": {
+                "375ml": 100,
+                "750ml": 175,
+                "180ml": 75
+            },
             "KD 50 White Whiskey": {
                 "750ml": 25,
                 "375ml": 25
-            },
-            "KD 50 Whiskey": {
-                "180ml": 75,
-                "375ml": 100,
-                "750ml": 175
             }
         },
         "AS18C7825": {
@@ -22627,6 +22627,9 @@
             }
         },
         "AS01DD3587": {
+            "Jim Beam": {
+                "180ml": 4
+            },
             "Teachers 50": {
                 "375ml": 1,
                 "750ml": 8
@@ -22638,9 +22641,6 @@
                 "375ml": 50,
                 "750ml": 35,
                 "180ml": 400
-            },
-            "Jim Beam": {
-                "180ml": 4
             }
         }
     },
@@ -22673,8 +22673,8 @@
         },
         "AS01UC8610": {
             "Imperial Blue": {
-                "180ml": 300,
-                "375ml": 75
+                "375ml": 75,
+                "180ml": 300
             },
             "Imperial Black": {
                 "180ml": 175
@@ -22694,24 +22694,24 @@
     "05-Oct-2026": {
         "AS03BC9029": {
             "Lords Whiskey": {
-                "180ml": 100,
                 "750ml": 150,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 100
             }
         },
         "AS01NC3869": {
             "Royal Challenge": {
-                "750ml": 50,
+                "180ml": 100,
                 "375ml": 50,
-                "180ml": 100
-            },
-            "Director's Special Black": {
-                "180ml": 75,
-                "375ml": 25
+                "750ml": 50
             },
             "McDowell's Rum": {
                 "180ml": 125,
                 "750ml": 100
+            },
+            "Director's Special Black": {
+                "375ml": 25,
+                "180ml": 75
             },
             "Signature": {
                 "180ml": 25
@@ -22719,14 +22719,14 @@
         },
         "AS09AC6285": {
             "Kingfisher Original Strong": {
-                "Can": 700,
-                "Bottle": 700
+                "Bottle": 700,
+                "Can": 700
             }
         },
         "AS02AC3594": {
             "Kingfisher Original Strong": {
-                "Can": 700,
-                "Bottle": 700
+                "Bottle": 700,
+                "Can": 700
             }
         },
         "NL01AJ9761": {
@@ -22743,12 +22743,46 @@
     "06-Oct-2026": {
         "AS01KC7088": {
             "Imperial Blue": {
+                "375ml": 50,
                 "750ml": 75,
-                "180ml": 225,
-                "375ml": 50
+                "180ml": 225
             },
             "Imperial Black": {
                 "180ml": 200
+            }
+        },
+        "AS01GC6796": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "750ml": 150,
+                "180ml": 650,
+                "375ml": 100
+            }
+        },
+        "AS01KC9112": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "Magic Moments Lemon": {
+                "180ml": 30,
+                "375ml": 15
+            },
+            "8 PM Premium Black": {
+                "180ml": 5,
+                "375ml": 10,
+                "750ml": 10
+            },
+            "After Dark": {
+                "750ml": 50,
+                "375ml": 75,
+                "180ml": 150
+            },
+            "Magic Moments": {
+                "750ml": 20,
+                "375ml": 50,
+                "180ml": 100
+            },
+            "Magic Moments Green Apple": {
+                "180ml": 25,
+                "375ml": 10
             }
         }
     }
