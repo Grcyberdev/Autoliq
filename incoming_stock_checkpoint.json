@@ -22612,12 +22612,12 @@
         "AS01KC2111": {
             "KD 50 Whiskey": {
                 "375ml": 100,
-                "750ml": 175,
-                "180ml": 75
+                "180ml": 75,
+                "750ml": 175
             },
             "KD 50 White Whiskey": {
-                "750ml": 25,
-                "375ml": 25
+                "375ml": 25,
+                "750ml": 25
             }
         },
         "AS18C7825": {
@@ -22627,20 +22627,20 @@
             }
         },
         "AS01DD3587": {
-            "Jim Beam": {
-                "180ml": 4
+            "Oaksmith International": {
+                "180ml": 400,
+                "750ml": 35,
+                "375ml": 50
             },
             "Teachers 50": {
                 "375ml": 1,
                 "750ml": 8
             },
+            "Jim Beam": {
+                "180ml": 4
+            },
             "Teachers Highland Cream": {
                 "750ml": 2
-            },
-            "Oaksmith International": {
-                "375ml": 50,
-                "750ml": 35,
-                "180ml": 400
             }
         }
     },
@@ -22694,16 +22694,20 @@
     "05-Oct-2026": {
         "AS03BC9029": {
             "Lords Whiskey": {
-                "180ml": 100,
                 "750ml": 150,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 100
             }
         },
         "AS01NC3869": {
             "Royal Challenge": {
-                "180ml": 100,
                 "750ml": 50,
+                "180ml": 100,
                 "375ml": 50
+            },
+            "McDowell's Rum": {
+                "180ml": 125,
+                "750ml": 100
             },
             "Director's Special Black": {
                 "180ml": 75,
@@ -22711,10 +22715,6 @@
             },
             "Signature": {
                 "180ml": 25
-            },
-            "McDowell's Rum": {
-                "750ml": 100,
-                "180ml": 125
             }
         },
         "AS09AC6285": {
@@ -22744,8 +22744,8 @@
         "AS01KC7088": {
             "Imperial Blue": {
                 "375ml": 50,
-                "180ml": 225,
-                "750ml": 75
+                "750ml": 75,
+                "180ml": 225
             },
             "Imperial Black": {
                 "180ml": 200
@@ -22753,45 +22753,57 @@
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "750ml": 150,
                 "375ml": 100,
+                "750ml": 150,
                 "180ml": 650
             }
         },
         "AS01KC9112": {
+            "Magic Moments": {
+                "750ml": 20,
+                "180ml": 100,
+                "375ml": 50
+            },
             "8 PM Premium Black": {
-                "180ml": 5,
                 "375ml": 10,
-                "750ml": 10
+                "750ml": 10,
+                "180ml": 5
             },
             "After Dark": {
-                "750ml": 50,
                 "180ml": 150,
-                "375ml": 75
-            },
-            "Magic Moments": {
-                "375ml": 50,
-                "180ml": 100,
-                "750ml": 20
-            },
-            "Magic Moments Lemon": {
-                "375ml": 15,
-                "180ml": 30
+                "375ml": 75,
+                "750ml": 50
             },
             "Magic Moments Green Apple": {
                 "180ml": 25,
                 "375ml": 10
+            },
+            "Magic Moments Lemon": {
+                "375ml": 15,
+                "180ml": 30
             }
         },
         "AS01JC3625": {
+            "McDowell's Luxury": {
+                "375ml": 50,
+                "750ml": 50,
+                "180ml": 350
+            },
             "McDowell's Double Oak Barrel": {
                 "750ml": 30,
                 "180ml": 70
-            },
-            "McDowell's Luxury": {
-                "180ml": 350,
+            }
+        },
+        "AS01HC0109": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
                 "375ml": 50,
-                "750ml": 50
+                "180ml": 225,
+                "750ml": 25
+            },
+            "Imperial Blue": {
+                "180ml": 200,
+                "375ml": 50
             }
         }
     }
