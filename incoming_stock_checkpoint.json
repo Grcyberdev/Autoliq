@@ -22610,14 +22610,14 @@
     },
     "01-Oct-2026": {
         "AS01KC2111": {
-            "KD 50 Whiskey": {
-                "750ml": 175,
-                "375ml": 100,
-                "180ml": 75
-            },
             "KD 50 White Whiskey": {
                 "750ml": 25,
                 "375ml": 25
+            },
+            "KD 50 Whiskey": {
+                "180ml": 75,
+                "375ml": 100,
+                "750ml": 175
             }
         },
         "AS18C7825": {
@@ -22627,9 +22627,6 @@
             }
         },
         "AS01DD3587": {
-            "Jim Beam": {
-                "180ml": 4
-            },
             "Teachers 50": {
                 "375ml": 1,
                 "750ml": 8
@@ -22641,6 +22638,9 @@
                 "375ml": 50,
                 "750ml": 35,
                 "180ml": 400
+            },
+            "Jim Beam": {
+                "180ml": 4
             }
         }
     },
@@ -22660,8 +22660,8 @@
         },
         "AS01MC5628": {
             "Godfather Select": {
-                "Bottle": 400,
-                "Can": 280
+                "Can": 280,
+                "Bottle": 400
             }
         }
     },
@@ -22694,24 +22694,24 @@
     "05-Oct-2026": {
         "AS03BC9029": {
             "Lords Whiskey": {
-                "375ml": 100,
+                "180ml": 100,
                 "750ml": 150,
-                "180ml": 100
+                "375ml": 100
             }
         },
         "AS01NC3869": {
-            "McDowell's Rum": {
-                "750ml": 100,
-                "180ml": 125
-            },
             "Royal Challenge": {
-                "375ml": 50,
                 "750ml": 50,
+                "375ml": 50,
                 "180ml": 100
             },
             "Director's Special Black": {
-                "375ml": 25,
-                "180ml": 75
+                "180ml": 75,
+                "375ml": 25
+            },
+            "McDowell's Rum": {
+                "180ml": 125,
+                "750ml": 100
             },
             "Signature": {
                 "180ml": 25
@@ -22719,8 +22719,8 @@
         },
         "AS09AC6285": {
             "Kingfisher Original Strong": {
-                "Bottle": 700,
-                "Can": 700
+                "Can": 700,
+                "Bottle": 700
             }
         },
         "AS02AC3594": {
@@ -22737,6 +22737,19 @@
         "RJ14GG0072": {
             "Tuborg": {
                 "Bottle": 1200
+            }
+        }
+    },
+    "06-Oct-2026": {
+        "AS01KC7088": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "750ml": 75,
+                "180ml": 225,
+                "375ml": 50
+            },
+            "Imperial Black": {
+                "180ml": 200
             }
         }
     }
