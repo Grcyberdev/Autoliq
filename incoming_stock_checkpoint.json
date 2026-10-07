@@ -22681,13 +22681,13 @@
             }
         },
         "AS01HC0109": {
-            "Masti No. 1": {
-                "CS": 100,
-                "CA": 150
-            },
             "Masti Special": {
                 "CS": 250,
                 "CA": 200
+            },
+            "Masti No. 1": {
+                "CA": 150,
+                "CS": 100
             }
         }
     },
@@ -22969,6 +22969,19 @@
             "Budweiser Magnum": {
                 "Bottle": 200,
                 "Can": 200
+            }
+        },
+        "AS25DC4191": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti No. 1": {
+                "CS": 50,
+                "CA": 150
+            },
+            "Masti Special": {
+                "CS": 200
+            },
+            "Masti": {
+                "CS": 300
             }
         }
     }
