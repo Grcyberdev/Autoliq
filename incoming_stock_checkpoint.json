@@ -22660,8 +22660,8 @@
         },
         "AS01MC5628": {
             "Godfather Select": {
-                "Can": 280,
-                "Bottle": 400
+                "Bottle": 400,
+                "Can": 280
             }
         }
     },
@@ -22700,27 +22700,27 @@
             }
         },
         "AS01NC3869": {
-            "McDowell's Rum": {
-                "180ml": 125,
-                "750ml": 100
-            },
-            "Royal Challenge": {
-                "750ml": 50,
-                "180ml": 100,
-                "375ml": 50
-            },
             "Director's Special Black": {
                 "180ml": 75,
                 "375ml": 25
             },
             "Signature": {
                 "180ml": 25
+            },
+            "Royal Challenge": {
+                "375ml": 50,
+                "750ml": 50,
+                "180ml": 100
+            },
+            "McDowell's Rum": {
+                "180ml": 125,
+                "750ml": 100
             }
         },
         "AS09AC6285": {
             "Kingfisher Original Strong": {
-                "Bottle": 700,
-                "Can": 700
+                "Can": 700,
+                "Bottle": 700
             }
         },
         "AS02AC3594": {
@@ -22742,66 +22742,66 @@
     },
     "06-Oct-2026": {
         "AS01KC7088": {
+            "Imperial Blue": {
+                "375ml": 50,
+                "750ml": 75,
+                "180ml": 225
+            },
             "Imperial Black": {
                 "180ml": 200
-            },
-            "Imperial Blue": {
-                "180ml": 225,
-                "375ml": 50,
-                "750ml": 75
             }
         },
         "AS01GC6796": {
             "AC Black Luxury": {
                 "180ml": 650,
-                "750ml": 150,
-                "375ml": 100
+                "375ml": 100,
+                "750ml": 150
             }
         },
         "AS01KC9112": {
-            "Magic Moments Green Apple": {
-                "375ml": 10,
-                "180ml": 25
-            },
-            "Magic Moments": {
-                "180ml": 100,
-                "375ml": 50,
-                "750ml": 20
-            },
-            "After Dark": {
-                "180ml": 150,
-                "750ml": 50,
-                "375ml": 75
-            },
             "8 PM Premium Black": {
                 "375ml": 10,
                 "180ml": 5,
                 "750ml": 10
             },
+            "Magic Moments": {
+                "375ml": 50,
+                "180ml": 100,
+                "750ml": 20
+            },
+            "After Dark": {
+                "750ml": 50,
+                "375ml": 75,
+                "180ml": 150
+            },
             "Magic Moments Lemon": {
                 "180ml": 30,
                 "375ml": 15
+            },
+            "Magic Moments Green Apple": {
+                "375ml": 10,
+                "180ml": 25
             }
         },
         "AS01JC3625": {
+            "McDowell's Double Oak Barrel": {
+                "180ml": 70,
+                "750ml": 30
+            },
             "McDowell's Luxury": {
                 "750ml": 50,
                 "180ml": 350,
                 "375ml": 50
-            },
-            "McDowell's Double Oak Barrel": {
-                "180ml": 70,
-                "750ml": 30
             }
         },
         "AS01HC0109": {
-            "Imperial Blue": {
-                "375ml": 50,
-                "180ml": 200
-            },
             "Imperial Black": {
                 "180ml": 225,
                 "750ml": 25,
+                "375ml": 50
+            },
+            "Imperial Blue": {
+                "180ml": 200,
                 "375ml": 50
             }
         }
@@ -22813,6 +22813,14 @@
             }
         },
         "AS24AC3190": {
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 200
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 5,
+                "375ml": 10
+            },
             "Sterling B7": {
                 "180ml": 10
             },
@@ -22826,16 +22834,20 @@
                 "375ml": 50,
                 "750ml": 35
             },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 10,
-                "750ml": 5
-            },
             "Officer's Choice": {
                 "750ml": 50
+            }
+        },
+        "AS01GC6785": {
+            "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
+            "White Magic Orange Gin": {
+                "180ml": 85,
+                "750ml": 5,
+                "375ml": 20
             },
-            "Officer's Choice pet": {
-                "180ml": 200,
-                "375ml": 50
+            "Vinho Porto Port Wine": {
+                "375ml": 10,
+                "750ml": 5
             }
         }
     }
