@@ -23007,13 +23007,18 @@
             }
         },
         "AS02BC2033": {
-            "Smirnoff Mirchi Mango": {
-                "750ml": 5,
-                "180ml": 15
+            "Smirnoff": {
+                "180ml": 10,
+                "750ml": 15,
+                "375ml": 10
             },
             "Smirnoff Minty Jamun Vodka": {
                 "180ml": 25,
                 "750ml": 10
+            },
+            "Smirnoff Mirchi Mango": {
+                "750ml": 5,
+                "180ml": 15
             },
             "Black & White": {
                 "375ml": 15,
@@ -23041,11 +23046,46 @@
                 "Quarter": 5,
                 "375ml": 10,
                 "750ml": 20
+            }
+        },
+        "AS01LC6322": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 40,
+                "180ml": 150,
+                "375ml": 50
             },
-            "Smirnoff": {
+            "Blender's Pride Four Elements": {
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Oaken Glow": {
+                "375ml": 20,
+                "750ml": 10,
+                "180ml": 15
+            },
+            "Blender's Pride Reserve": {
+                "180ml": 25,
+                "375ml": 25,
+                "750ml": 25
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 50,
+                "180ml": 50,
+                "750ml": 50
+            },
+            "Royal Stag Double Dark": {
+                "375ml": 10,
                 "180ml": 10,
-                "750ml": 15,
-                "375ml": 10
+                "750ml": 10
+            }
+        },
+        "AS01PC6347": {
+            "_TelegramSupplier": "Modi Distillery IMFL Wholesale Warehouse",
+            "Rockford Reserve": {
+                "375ml": 25,
+                "180ml": 20,
+                "750ml": 30
             }
         }
     }
