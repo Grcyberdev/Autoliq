@@ -22583,8 +22583,8 @@
     "01-Oct-2026": {
         "AS01KC2111": {
             "KD 50 Whiskey": {
-                "180ml": 75,
                 "375ml": 100,
+                "180ml": 75,
                 "750ml": 175
             },
             "KD 50 White Whiskey": {
@@ -22610,9 +22610,9 @@
                 "750ml": 2
             },
             "Oaksmith International": {
-                "375ml": 50,
+                "180ml": 400,
                 "750ml": 35,
-                "180ml": 400
+                "375ml": 50
             }
         }
     },
@@ -22645,8 +22645,8 @@
         },
         "AS01UC8610": {
             "Imperial Blue": {
-                "180ml": 300,
-                "375ml": 75
+                "375ml": 75,
+                "180ml": 300
             },
             "Imperial Black": {
                 "180ml": 175
@@ -22666,33 +22666,33 @@
     "05-Oct-2026": {
         "AS03BC9029": {
             "Lords Whiskey": {
-                "180ml": 100,
+                "750ml": 150,
                 "375ml": 100,
-                "750ml": 150
+                "180ml": 100
             }
         },
         "AS01NC3869": {
-            "McDowell's Rum": {
-                "750ml": 100,
-                "180ml": 125
+            "Director's Special Black": {
+                "180ml": 75,
+                "375ml": 25
+            },
+            "Signature": {
+                "180ml": 25
             },
             "Royal Challenge": {
                 "375ml": 50,
                 "750ml": 50,
                 "180ml": 100
             },
-            "Director's Special Black": {
-                "375ml": 25,
-                "180ml": 75
-            },
-            "Signature": {
-                "180ml": 25
+            "McDowell's Rum": {
+                "180ml": 125,
+                "750ml": 100
             }
         },
         "AS09AC6285": {
             "Kingfisher Original Strong": {
-                "Bottle": 700,
-                "Can": 700
+                "Can": 700,
+                "Bottle": 700
             }
         },
         "AS02AC3594": {
@@ -22715,9 +22715,9 @@
     "06-Oct-2026": {
         "AS01KC7088": {
             "Imperial Blue": {
-                "180ml": 225,
+                "375ml": 50,
                 "750ml": 75,
-                "375ml": 50
+                "180ml": 225
             },
             "Imperial Black": {
                 "180ml": 200
@@ -22726,51 +22726,51 @@
         "AS01GC6796": {
             "AC Black Luxury": {
                 "180ml": 650,
-                "750ml": 150,
-                "375ml": 100
+                "375ml": 100,
+                "750ml": 150
             }
         },
         "AS01KC9112": {
-            "Magic Moments Green Apple": {
-                "180ml": 25,
-                "375ml": 10
-            },
-            "Magic Moments Lemon": {
-                "375ml": 15,
-                "180ml": 30
-            },
-            "After Dark": {
-                "375ml": 75,
-                "750ml": 50,
-                "180ml": 150
-            },
             "8 PM Premium Black": {
-                "750ml": 10,
+                "375ml": 10,
                 "180ml": 5,
-                "375ml": 10
+                "750ml": 10
             },
             "Magic Moments": {
                 "375ml": 50,
                 "180ml": 100,
                 "750ml": 20
+            },
+            "After Dark": {
+                "750ml": 50,
+                "375ml": 75,
+                "180ml": 150
+            },
+            "Magic Moments Lemon": {
+                "180ml": 30,
+                "375ml": 15
+            },
+            "Magic Moments Green Apple": {
+                "375ml": 10,
+                "180ml": 25
             }
         },
         "AS01JC3625": {
+            "McDowell's Double Oak Barrel": {
+                "180ml": 70,
+                "750ml": 30
+            },
             "McDowell's Luxury": {
                 "750ml": 50,
                 "180ml": 350,
                 "375ml": 50
-            },
-            "McDowell's Double Oak Barrel": {
-                "180ml": 70,
-                "750ml": 30
             }
         },
         "AS01HC0109": {
             "Imperial Black": {
-                "375ml": 50,
+                "180ml": 225,
                 "750ml": 25,
-                "180ml": 225
+                "375ml": 50
             },
             "Imperial Blue": {
                 "180ml": 200,
@@ -22789,15 +22789,15 @@
                 "180ml": 200,
                 "375ml": 50
             },
-            "Officer's Choice": {
-                "750ml": 50
-            },
             "Iconiq Vodka": {
                 "750ml": 35,
                 "375ml": 50
             },
-            "Officer's Choice Blue": {
-                "180ml": 15
+            "Officer's Choice": {
+                "750ml": 50
+            },
+            "Iconiq Hippy": {
+                "180ml": 75
             },
             "Sterling Reserve B7 Blended": {
                 "375ml": 10,
@@ -22806,14 +22806,14 @@
             "Sterling B7": {
                 "180ml": 10
             },
-            "Iconiq Hippy": {
-                "180ml": 75
+            "Officer's Choice Blue": {
+                "180ml": 15
             }
         },
         "AS01GC6785": {
             "Vinho Porto Port Wine": {
-                "750ml": 5,
-                "375ml": 10
+                "375ml": 10,
+                "750ml": 5
             },
             "White Magic Orange Gin": {
                 "180ml": 85,
@@ -22823,28 +22823,28 @@
         },
         "AS01TC4767": {
             "Director's Special Black": {
-                "180ml": 100,
                 "375ml": 50,
+                "180ml": 100,
                 "750ml": 10
+            },
+            "Antiquity Blue Ultra": {
+                "750ml": 5,
+                "375ml": 5,
+                "180ml": 5
+            },
+            "Royal Challenge": {
+                "750ml": 25,
+                "375ml": 50,
+                "180ml": 100
+            },
+            "Signature": {
+                "375ml": 15,
+                "750ml": 20,
+                "180ml": 15
             },
             "McDowell's Rum": {
                 "180ml": 100,
                 "750ml": 50
-            },
-            "Royal Challenge": {
-                "375ml": 50,
-                "180ml": 100,
-                "750ml": 25
-            },
-            "Signature": {
-                "750ml": 20,
-                "180ml": 15,
-                "375ml": 15
-            },
-            "Antiquity Blue Ultra": {
-                "180ml": 5,
-                "750ml": 5,
-                "375ml": 5
             }
         },
         "AS01FC7083": {
@@ -22864,9 +22864,21 @@
             }
         },
         "WB23D0282": {
+            "Iconiq Vodka": {
+                "750ml": 25,
+                "375ml": 75
+            },
+            "Officer's Choice Blue": {
+                "750ml": 10,
+                "180ml": 25,
+                "375ml": 15
+            },
             "Sterling Reserve B7 Blended": {
-                "375ml": 15,
-                "750ml": 5
+                "750ml": 5,
+                "375ml": 15
+            },
+            "Sterling B7": {
+                "180ml": 20
             },
             "Officer's Choice pet": {
                 "180ml": 350,
@@ -22875,28 +22887,16 @@
             "Iconiq Hippy": {
                 "180ml": 210
             },
-            "Sterling B7": {
-                "180ml": 20
-            },
-            "Officer's Choice Blue": {
-                "750ml": 10,
-                "180ml": 25,
-                "375ml": 15
-            },
-            "Iconiq Vodka": {
-                "375ml": 75,
-                "750ml": 25
-            },
             "Officer's Choice": {
                 "750ml": 200
             }
         },
         "RJ14GG0360": {
-            "Tuborg Malt": {
-                "Can": 400
-            },
             "Tuborg": {
                 "Bottle": 800
+            },
+            "Tuborg Malt": {
+                "Can": 400
             }
         },
         "BR01GE1867": {
@@ -22906,41 +22906,41 @@
         },
         "AS01EC6249": {
             "McDowell's Rum": {
-                "375ml": 150,
+                "180ml": 550,
                 "750ml": 200,
-                "180ml": 550
+                "375ml": 150
             }
         },
         "AS01PC8901": {
             "Imperial Blue": {
+                "375ml": 75,
                 "750ml": 75,
-                "180ml": 400,
-                "375ml": 75
+                "180ml": 400
             }
         },
         "AS05FC6681": {
-            "Fame Whiskey": {
-                "750ml": 75,
-                "375ml": 100,
-                "180ml": 126
-            },
             "All Seasons Connoisseur": {
-                "750ml": 50,
+                "375ml": 70,
                 "180ml": 114,
-                "375ml": 70
+                "750ml": 50
             },
             "All Seasons Sir-E-Taj": {
                 "180ml": 15
+            },
+            "Fame Whiskey": {
+                "375ml": 100,
+                "750ml": 75,
+                "180ml": 126
             }
         },
         "AS01FC6159": {
             "Budweiser Magnum": {
-                "Bottle": 200,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 200
             },
             "Budweiser": {
-                "Bottle": 100,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 100
             }
         },
         "AS25DC4191": {
@@ -22956,44 +22956,55 @@
             }
         },
         "AS25EC2957": {
-            "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries",
             "Royal Green": {
-                "750ml": 15,
+                "180ml": 5,
                 "375ml": 5,
-                "180ml": 5
+                "750ml": 15
             },
             "Calenter Premium": {
-                "180ml": 75,
+                "375ml": 20,
                 "750ml": 30,
-                "375ml": 20
+                "180ml": 75
             }
         }
     },
     "08-Oct-2026": {
         "AS01FC5089": {
-            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
-            "8 PM Premium Black": {
-                "375ml": 15,
-                "180ml": 20,
-                "750ml": 10
-            },
-            "Magic Moments": {
-                "750ml": 20,
-                "375ml": 30,
-                "180ml": 75
-            },
             "Magic Moments Lemon": {
-                "750ml": 5,
                 "375ml": 20,
+                "750ml": 5,
                 "180ml": 25
             },
-            "After Dark": {
-                "750ml": 25,
-                "375ml": 65,
-                "180ml": 220
+            "Magic Moments": {
+                "180ml": 75,
+                "750ml": 20,
+                "375ml": 30
+            },
+            "8 PM Premium Black": {
+                "750ml": 10,
+                "375ml": 15,
+                "180ml": 20
             },
             "Magic Moments Green Apple": {
                 "180ml": 20
+            },
+            "After Dark": {
+                "375ml": 65,
+                "750ml": 25,
+                "180ml": 220
+            }
+        },
+        "AS23CC6611": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "180ml": 200,
+                "750ml": 50,
+                "375ml": 50
+            },
+            "Imperial Black": {
+                "180ml": 200,
+                "375ml": 25,
+                "750ml": 25
             }
         }
     }
