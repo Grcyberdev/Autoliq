@@ -22785,66 +22785,66 @@
             }
         },
         "AS24AC3190": {
-            "Officer's Choice pet": {
-                "180ml": 200,
-                "375ml": 50
-            },
-            "Iconiq Vodka": {
-                "750ml": 35,
-                "375ml": 50
-            },
-            "Officer's Choice": {
-                "750ml": 50
-            },
-            "Iconiq Hippy": {
-                "180ml": 75
-            },
             "Sterling Reserve B7 Blended": {
                 "375ml": 10,
                 "750ml": 5
             },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 200
+            },
             "Sterling B7": {
                 "180ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 75
+            },
+            "Iconiq Vodka": {
+                "375ml": 50,
+                "750ml": 35
+            },
+            "Officer's Choice": {
+                "750ml": 50
             },
             "Officer's Choice Blue": {
                 "180ml": 15
             }
         },
         "AS01GC6785": {
-            "Vinho Porto Port Wine": {
-                "375ml": 10,
-                "750ml": 5
-            },
             "White Magic Orange Gin": {
                 "180ml": 85,
-                "375ml": 20,
-                "750ml": 5
+                "750ml": 5,
+                "375ml": 20
+            },
+            "Vinho Porto Port Wine": {
+                "750ml": 5,
+                "375ml": 10
             }
         },
         "AS01TC4767": {
-            "Director's Special Black": {
-                "375ml": 50,
+            "Royal Challenge": {
                 "180ml": 100,
-                "750ml": 10
+                "750ml": 25,
+                "375ml": 50
+            },
+            "Signature": {
+                "180ml": 15,
+                "750ml": 20,
+                "375ml": 15
             },
             "Antiquity Blue Ultra": {
+                "180ml": 5,
                 "750ml": 5,
-                "375ml": 5,
-                "180ml": 5
+                "375ml": 5
             },
-            "Royal Challenge": {
-                "750ml": 25,
+            "Director's Special Black": {
+                "750ml": 10,
                 "375ml": 50,
                 "180ml": 100
             },
-            "Signature": {
-                "375ml": 15,
-                "750ml": 20,
-                "180ml": 15
-            },
             "McDowell's Rum": {
-                "180ml": 100,
-                "750ml": 50
+                "750ml": 50,
+                "180ml": 100
             }
         },
         "AS01FC7083": {
@@ -22859,26 +22859,26 @@
         },
         "NL01AF3952": {
             "Godfather Select": {
-                "Can": 200,
-                "Bottle": 480
+                "Bottle": 480,
+                "Can": 200
             }
         },
         "WB23D0282": {
-            "Iconiq Vodka": {
-                "750ml": 25,
-                "375ml": 75
-            },
             "Officer's Choice Blue": {
                 "750ml": 10,
                 "180ml": 25,
                 "375ml": 15
             },
+            "Iconiq Vodka": {
+                "375ml": 75,
+                "750ml": 25
+            },
             "Sterling Reserve B7 Blended": {
                 "750ml": 5,
                 "375ml": 15
             },
-            "Sterling B7": {
-                "180ml": 20
+            "Officer's Choice": {
+                "750ml": 200
             },
             "Officer's Choice pet": {
                 "180ml": 350,
@@ -22887,8 +22887,8 @@
             "Iconiq Hippy": {
                 "180ml": 210
             },
-            "Officer's Choice": {
-                "750ml": 200
+            "Sterling B7": {
+                "180ml": 20
             }
         },
         "RJ14GG0360": {
@@ -22914,33 +22914,33 @@
         "AS01PC8901": {
             "Imperial Blue": {
                 "375ml": 75,
-                "750ml": 75,
-                "180ml": 400
+                "180ml": 400,
+                "750ml": 75
             }
         },
         "AS05FC6681": {
+            "Fame Whiskey": {
+                "180ml": 126,
+                "750ml": 75,
+                "375ml": 100
+            },
             "All Seasons Connoisseur": {
+                "750ml": 50,
                 "375ml": 70,
-                "180ml": 114,
-                "750ml": 50
+                "180ml": 114
             },
             "All Seasons Sir-E-Taj": {
                 "180ml": 15
-            },
-            "Fame Whiskey": {
-                "375ml": 100,
-                "750ml": 75,
-                "180ml": 126
             }
         },
         "AS01FC6159": {
             "Budweiser Magnum": {
-                "Can": 200,
-                "Bottle": 200
+                "Bottle": 200,
+                "Can": 200
             },
             "Budweiser": {
-                "Can": 200,
-                "Bottle": 100
+                "Bottle": 100,
+                "Can": 200
             }
         },
         "AS25DC4191": {
@@ -22948,62 +22948,62 @@
                 "CS": 50,
                 "CA": 150
             },
-            "Masti Special": {
-                "CS": 200
-            },
             "Masti": {
                 "CS": 300
+            },
+            "Masti Special": {
+                "CS": 200
             }
         },
         "AS25EC2957": {
-            "Royal Green": {
-                "180ml": 5,
-                "375ml": 5,
-                "750ml": 15
-            },
             "Calenter Premium": {
-                "375ml": 20,
                 "750ml": 30,
+                "375ml": 20,
                 "180ml": 75
+            },
+            "Royal Green": {
+                "375ml": 5,
+                "180ml": 5,
+                "750ml": 15
             }
         }
     },
     "08-Oct-2026": {
         "AS01FC5089": {
-            "Magic Moments Lemon": {
-                "375ml": 20,
-                "750ml": 5,
-                "180ml": 25
-            },
             "Magic Moments": {
-                "750ml": 20,
                 "180ml": 75,
-                "375ml": 30
+                "375ml": 30,
+                "750ml": 20
             },
             "8 PM Premium Black": {
-                "375ml": 15,
                 "750ml": 10,
-                "180ml": 20
-            },
-            "After Dark": {
-                "750ml": 25,
-                "375ml": 65,
-                "180ml": 220
+                "180ml": 20,
+                "375ml": 15
             },
             "Magic Moments Green Apple": {
                 "180ml": 20
+            },
+            "After Dark": {
+                "375ml": 65,
+                "750ml": 25,
+                "180ml": 220
+            },
+            "Magic Moments Lemon": {
+                "180ml": 25,
+                "375ml": 20,
+                "750ml": 5
             }
         },
         "AS23CC6611": {
-            "Imperial Blue": {
-                "180ml": 450,
-                "375ml": 100,
-                "750ml": 100
-            },
             "Imperial Black": {
                 "375ml": 75,
                 "180ml": 350,
                 "750ml": 25
+            },
+            "Imperial Blue": {
+                "750ml": 100,
+                "180ml": 450,
+                "375ml": 100
             }
         },
         "AS02BC2033": {
@@ -23049,34 +23049,34 @@
             }
         },
         "AS01LC6322": {
+            "Oaken Glow": {
+                "375ml": 20,
+                "750ml": 10,
+                "180ml": 15
+            },
             "Blender's Pride Four Elements": {
                 "375ml": 5,
                 "750ml": 5
             },
-            "Oaken Glow": {
-                "375ml": 20,
-                "180ml": 15,
+            "Blender's Pride Reserve": {
+                "375ml": 25,
+                "750ml": 25,
+                "180ml": 25
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 50,
+                "180ml": 50,
+                "750ml": 50
+            },
+            "Royal Stag Double Dark": {
+                "375ml": 10,
+                "180ml": 10,
                 "750ml": 10
             },
             "Royal Stag": {
-                "375ml": 50,
                 "180ml": 150,
+                "375ml": 50,
                 "750ml": 40
-            },
-            "Blender's Pride Reserve": {
-                "750ml": 25,
-                "375ml": 25,
-                "180ml": 25
-            },
-            "Royal Stag Double Dark": {
-                "750ml": 10,
-                "180ml": 10,
-                "375ml": 10
-            },
-            "Blender's Pride Exclusive": {
-                "750ml": 50,
-                "180ml": 50,
-                "375ml": 50
             }
         },
         "AS01PC6347": {
@@ -23093,28 +23093,28 @@
         },
         "HR39E4738": {
             "Royal Stag": {
-                "180ml": 500,
                 "375ml": 200,
-                "750ml": 150
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 30,
-                "180ml": 45
-            },
-            "Blender's Pride Reserve": {
-                "750ml": 10,
-                "375ml": 10,
-                "180ml": 5
+                "750ml": 150,
+                "180ml": 500
             },
             "Oaken Glow": {
                 "375ml": 10,
                 "180ml": 30,
                 "750ml": 10
             },
+            "Blender's Pride Reserve": {
+                "180ml": 5,
+                "375ml": 10,
+                "750ml": 10
+            },
+            "Blender's Pride Exclusive": {
+                "180ml": 45,
+                "375ml": 30
+            },
             "Royal Stag Barrel": {
-                "180ml": 50,
                 "375ml": 25,
-                "750ml": 20
+                "750ml": 20,
+                "180ml": 50
             },
             "Blender's Pride Four Elements": {
                 "180ml": 5
@@ -23174,13 +23174,28 @@
             }
         },
         "AS02DC4961": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
             "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 300
+                "180ml": 300,
+                "375ml": 50
             },
             "Officer's Choice": {
                 "750ml": 150
+            }
+        },
+        "AS18C7825": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 700,
+                "Can": 700
+            }
+        },
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CS": 300
+            },
+            "Masti Special": {
+                "CA": 400
             }
         }
     }
