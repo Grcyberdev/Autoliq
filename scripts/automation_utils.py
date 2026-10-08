@@ -688,13 +688,14 @@ def load_cookies(driver, filepath, domain):
         print(f"⚠️ Failed to load cookies: {e}")
         return False
 
-def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
+def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header, combined_info_map=None):
     """
     Generates a list of formatted WhatsApp report strings with detailed liquor bifurcation (one per truck).
     Args:
         data_rows: List of rows [Date, Supplier, Truck, LiquorTypesStr, Quantity, ...]
         incoming_checkpoint: Dict { Date: { Truck: { LiquorName: { SizeSuffix: Qty } } } }
         report_header: Full header string (e.g. "Liqour Endorsements - 18 Oct")
+        combined_info_map: Optional dict { Truck: { "previous_qty": int, "total_qty": int, "diff_qty": int } }
     Returns:
         List of strings containing the reports.
     """
@@ -878,17 +879,37 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
         # Clean and shorten the supplier name for the header, keep full mapped name for the body
         short_supplier = get_clean_short_supplier(supplier_val)
         
+        # Check for combined endorsement info
+        clean_t = "".join(str(truck_val).split()).upper()
+        combined_info = None
+        if combined_info_map:
+            target_norm = norm(date_raw)
+            combined_info = (
+                combined_info_map.get(clean_t) or 
+                combined_info_map.get(f"{target_norm}|{clean_t}") or
+                combined_info_map.get(f"{date_raw}|{clean_t}") or
+                combined_info_map.get(truck_val)
+            )
+
         line = f"📅 *Date:* {clean_md(date_raw)}\n"
         if supplier_val:
             line += f"🏢 *Supplier:* {supplier_val}\n"
         line += f"🚛 *Truck:* `{truck_val}`\n"
-        line += f"📦 *Total Cases:* {qty_val}\n"
+        
+        if combined_info:
+            prev_cases = combined_info.get("previous_qty", 0)
+            tot_cases = combined_info.get("total_qty", qty_val)
+            line += f"📦 *Added Cases:* {qty_val}\n"
+            line += f"🔗 *Combined Truck:* Added to previous {prev_cases} cases truck (Total: {tot_cases} cases)\n"
+        else:
+            line += f"📦 *Total Cases:* {qty_val}\n"
         
         if detailed_data:
             # User requested 1 consistent order. Alphabetical sort on liquor names prevents random jumping.
             sorted_liquors = sorted([item for item in detailed_data.items() if item[0] != '_TelegramSupplier'], key=lambda x: x[0])
             
-            line += "\nDetails:\n"
+            details_header = f"\nDetails ({qty_val} Cases):\n" if combined_info else "\nDetails:\n"
+            line += details_header
             
             detail_lines = []
             for liquor_name, size_dict in sorted_liquors:
@@ -922,7 +943,8 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
         else:
             # Fallback to old string if detailed data missing
             liquor_val = row[3]
-            line += f"\nDetails:\n• *{liquor_val}*"
+            details_header = f"\nDetails ({qty_val} Cases):\n" if combined_info else "\nDetails:\n"
+            line += f"{details_header}• *{liquor_val}*"
             
         # Check if we are doing a Country Spirit endorsement
         is_cs = report_header and ("Country Spirit" in report_header or "CS" in report_header)
@@ -985,7 +1007,10 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header):
             if short_supplier:
                 parts.append(f"{prefix}{short_supplier}")
             if qty_val is not None:
-                parts.append(f"({qty_val} Cases)")
+                if combined_info:
+                    parts.append(f"({qty_val} Cases - Combined)")
+                else:
+                    parts.append(f"({qty_val} Cases)")
             
             display_header = " ".join(parts)
             if brands_part:
@@ -1153,3 +1178,127 @@ def get_checkpoint_details(checkpoint, date_raw, truck_val):
             if truck_val in checkpoint[cp_date]:
                 return checkpoint[cp_date][truck_val]
     return {}
+
+
+def is_plate_typo(plate1, plate2):
+    """
+    Returns True if plate1 and plate2 are likely a typo of each other.
+    Plates usually have format like AS03CC8606 vs AS03CC3606.
+    Length difference <= 1, and character differences <= 1 (or common OCR/keypad confusion).
+    Guaranteed not to raise an exception.
+    """
+    try:
+        if not plate1 or not plate2:
+            return False
+        p1 = "".join(str(plate1).split()).upper()
+        p2 = "".join(str(plate2).split()).upper()
+        if p1 == p2:
+            return True
+        # Commercial plates are at least 6 characters (e.g. AS01A1234)
+        if len(p1) < 6 or len(p2) < 6:
+            return False
+        if abs(len(p1) - len(p2)) > 1:
+            return False
+            
+        # Same length check
+        if len(p1) == len(p2):
+            diffs = sum(1 for a, b in zip(p1, p2) if a != b)
+            if diffs == 1:
+                return True
+            # Check common confusion pairs: (3, 8), (0, O), (1, I), (5, S), (8, B)
+            confusion_pairs = {
+                ('3', '8'), ('8', '3'), 
+                ('0', 'O'), ('O', '0'), 
+                ('1', 'I'), ('I', '1'), 
+                ('5', 'S'), ('S', '5'), 
+                ('8', 'B'), ('B', '8')
+            }
+            if diffs <= 2 and all((a, b) in confusion_pairs for a, b in zip(p1, p2) if a != b):
+                return True
+            return False
+            
+        # Single character insertion or deletion
+        if len(p1) < len(p2):
+            p1, p2 = p2, p1
+        for i in range(len(p1)):
+            if p1[:i] + p1[i+1:] == p2:
+                return True
+        return False
+    except Exception:
+        return False
+
+
+def find_fuzzy_truck_match(date_val, supplier_name, clean_truck, existing_data, scraped_trucks_on_date=None, scraped_qty=None, scraped_liquor=None):
+    """
+    Looks for an existing truck entry that is a likely typo match for clean_truck.
+    Conditions:
+    1. Same normalized date
+    2. Same short supplier name
+    3. The candidate truck plate was NOT scraped in the current run (meaning it disappeared from portal)
+    4. is_plate_typo(clean_truck, candidate_plate) is True
+    5. scraped_qty >= candidate_qty (if qty provided)
+    Guaranteed not to crash or raise an exception.
+    Returns: (matched_key, matched_entry) or (None, None)
+    """
+    try:
+        if not existing_data:
+            return None, None
+            
+        def norm_sup(name):
+            if not name:
+                return ""
+            try:
+                from liquor_data import get_short_supplier_name
+                s = get_short_supplier_name(name).lower()
+            except Exception:
+                s = str(name).lower()
+            for w in ["india", "pvt", "ltd", "private", "limited", "tie", "up", "with", "holder", "of"]:
+                s = s.replace(w, "")
+            return "".join(filter(str.isalnum, s))
+            
+        scraped_supplier_norm = norm_sup(supplier_name)
+        scraped_trucks_set = scraped_trucks_on_date or set()
+        
+        candidates = []
+        for k, entry in existing_data.items():
+            if entry.get('date') != date_val:
+                continue
+                
+            cand_truck = entry.get('truck', '')
+            if not cand_truck:
+                parts = k.split('|')
+                if len(parts) == 2:
+                    cand_truck = parts[1]
+                    
+            # If candidate truck is also currently scraped on this date,
+            # it is a real separate truck currently on portal, NOT a corrected typo
+            if cand_truck in scraped_trucks_set:
+                continue
+                
+            cand_supplier_norm = norm_sup(entry.get('supplier', ''))
+            # If supplier normalized doesn't match and neither is substring of another
+            if cand_supplier_norm != scraped_supplier_norm:
+                if not (scraped_supplier_norm and cand_supplier_norm and (scraped_supplier_norm in cand_supplier_norm or cand_supplier_norm in scraped_supplier_norm)):
+                    continue
+            
+            # Quantity guard: a combined or corrected endorsement will have >= quantity
+            if scraped_qty is not None:
+                try:
+                    cand_qty = int(str(entry.get('quantity', 0)).replace(',', ''))
+                    if int(scraped_qty) < cand_qty:
+                        continue
+                except Exception:
+                    pass
+                
+            if is_plate_typo(clean_truck, cand_truck):
+                dist = sum(1 for a, b in zip(clean_truck, cand_truck) if a != b) if len(clean_truck) == len(cand_truck) else 1
+                candidates.append((dist, k, entry))
+                
+        if candidates:
+            candidates.sort(key=lambda x: x[0])
+            return candidates[0][1], candidates[0][2]
+            
+        return None, None
+    except Exception:
+        return None, None
+

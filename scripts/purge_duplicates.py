@@ -162,6 +162,50 @@ def main():
             else:
                 best_row_for_key[key] = duplicates[0]
 
+        # Check for typo plate duplicates across keys on the same date and supplier
+        supplier_idx = header_idx_map.get("Supplier", -1)
+        try:
+            import automation_utils
+            from liquor_data import get_short_supplier_name
+        except Exception:
+            sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+            import automation_utils
+            from liquor_data import get_short_supplier_name
+
+        typo_merged_keys = {}
+        all_keys = list(best_row_for_key.keys())
+        for i in range(len(all_keys)):
+            k1 = all_keys[i]
+            if k1 in typo_merged_keys:
+                continue
+            r1 = best_row_for_key[k1]
+            parts1 = k1.split('|')
+            d1, t1 = parts1[0], parts1[1]
+            s1 = r1[supplier_idx] if supplier_idx != -1 and len(r1) > supplier_idx else ""
+            
+            for j in range(i + 1, len(all_keys)):
+                k2 = all_keys[j]
+                if k2 in typo_merged_keys:
+                    continue
+                r2 = best_row_for_key[k2]
+                parts2 = k2.split('|')
+                d2, t2 = parts2[0], parts2[1]
+                if d1 != d2:
+                    continue
+                s2 = r2[supplier_idx] if supplier_idx != -1 and len(r2) > supplier_idx else ""
+                
+                # Check supplier match and plate typo
+                if get_short_supplier_name(s1).lower() == get_short_supplier_name(s2).lower():
+                    if automation_utils.is_plate_typo(t1, t2):
+                        print(f"   🔍 Found typo plate duplicate: '{k1}' vs '{k2}'")
+                        score1 = get_row_score(r1, header_idx_map)
+                        score2 = get_row_score(r2, header_idx_map)
+                        if score2 > score1:
+                            typo_merged_keys[k1] = k2
+                        else:
+                            typo_merged_keys[k2] = k1
+                        duplicate_count += 1
+
         cleaned_rows = []
         seen_keys = set()
         
@@ -175,8 +219,10 @@ def main():
                 continue
                 
             key = f"{d_val}|{t_val}"
-            if key not in seen_keys:
-                cleaned_rows.append(best_row_for_key[key])
+            canonical_key = typo_merged_keys.get(key, key)
+            if canonical_key not in seen_keys:
+                cleaned_rows.append(best_row_for_key[canonical_key])
+                seen_keys.add(canonical_key)
                 seen_keys.add(key)
             else:
                 # Omit duplicate, keeping only the first chronological occurrence (but with the best data)

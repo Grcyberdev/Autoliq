@@ -276,7 +276,10 @@ def load_existing_data():
                 existing_data[k] = {
                     'row': i + 2, # 1-based index (Header is 1, so indices start at 2)
                     'quantity': record.get('TotalQuantity', 0),
-                    'liquor': record.get('LiqourTypes', '')
+                    'liquor': record.get('LiqourTypes', ''),
+                    'truck': clean_truck,
+                    'supplier': record.get('Supplier', ''),
+                    'date': date_val
                 }
         except Exception as e:
             print(f"⚠️ Warning: Could not process a row. Row: {record}, Error: {e}")
@@ -758,6 +761,7 @@ try:
     # Map headers to column indices (1-based)
     # EXPECTED_HEADERS = ["DateofEndorsement", "Supplier", "TruckNumber", "LiqourTypes", "TotalQuantity", ...]
     # Date (1), Supplier (2), Truck (3), Liquor (4), Qty (5), Bifurcation (9)
+    TRUCK_COL_IDX = 3
     LIQUOR_COL_IDX = 4
     QTY_COL_IDX = 5
     BIFURCATION_COL_IDX = 9
@@ -765,6 +769,15 @@ try:
     print("🔄 Comparing scraped data with existing sheet data...")
     
     sheet_rows_to_insert = []
+
+    # Track all trucks scraped in this session per normalized date
+    current_scraped_trucks_by_date = {}
+    for r in processed_data:
+        d = normalize_date_string(r[0])
+        t = "".join(str(r[2]).split()).upper()
+        if d not in current_scraped_trucks_by_date:
+            current_scraped_trucks_by_date[d] = set()
+        current_scraped_trucks_by_date[d].add(t)
 
     for r in processed_data:
         date_val = normalize_date_string(r[0])
@@ -778,17 +791,45 @@ try:
         # Slicing the row to remove TelegramSupplier before pushing it to Google sheets.
         sheet_row_to_insert = r[:9]
 
-        if key in existing_data:
+        existing_entry = existing_data.get(key)
+        matched_truck = clean_truck
+        is_typo_correction = False
+
+        if not existing_entry:
+            try:
+                matched_key, existing_entry = automation_utils.find_fuzzy_truck_match(
+                    date_val=date_val,
+                    supplier_name=r[1],
+                    clean_truck=clean_truck,
+                    existing_data=existing_data,
+                    scraped_trucks_on_date=current_scraped_trucks_by_date.get(date_val, set()),
+                    scraped_qty=scraped_qty
+                )
+                if existing_entry:
+                    matched_truck = existing_entry.get('truck', clean_truck)
+                    is_typo_correction = True
+                    print(f"   🔍 Found matching truck with plate correction: {matched_truck} ➔ {clean_truck} for {r[1]} on {date_val}")
+            except Exception as err:
+                print(f"   ⚠️ Typo match check safely skipped due to error: {err}")
+                existing_entry = None
+                matched_truck = clean_truck
+                is_typo_correction = False
+
+        if existing_entry:
             # Check for updates
-            existing_entry = existing_data[key]
             existing_qty = 0
             try:
                 existing_qty = int(str(existing_entry['quantity']).replace(',', ''))
             except: pass
             
-            # Update if Scraped Quantity is DIFFERENT (usually higher)
-            if scraped_qty != existing_qty:
-                print(f"   📝 Updating Row {existing_entry['row']} for {truck_val}: Qty {existing_qty} -> {scraped_qty}")
+            # If plate had a typo on portal that got corrected, update TruckNumber in sheet
+            if is_typo_correction:
+                print(f"   📝 Correcting TruckNumber in Row {existing_entry['row']}: {matched_truck} -> {clean_truck}")
+                updates_to_push.append(gspread.Cell(existing_entry['row'], TRUCK_COL_IDX, clean_truck))
+
+            # Update if Scraped Quantity is DIFFERENT (usually higher) or typo was corrected
+            if scraped_qty != existing_qty or is_typo_correction:
+                print(f"   📝 Updating Row {existing_entry['row']} for {clean_truck}: Qty {existing_qty} -> {scraped_qty}")
                 
                 # Add Cell objects for batch update
                 updates_to_push.append(gspread.Cell(existing_entry['row'], LIQUOR_COL_IDX, scraped_liquor))
@@ -802,16 +843,39 @@ try:
                     diff_record[4] = str(diff_qty)
                     
                     # Compute subtraction checkpoint for this specific truck update
+                    old_details = automation_utils.get_checkpoint_details(old_incoming_checkpoint, r[0], clean_truck)
+                    if not old_details and matched_truck != clean_truck:
+                        old_details = automation_utils.get_checkpoint_details(old_incoming_checkpoint, r[0], matched_truck)
+                    
+                    new_details = automation_utils.get_checkpoint_details(incoming_checkpoint, r[0], clean_truck)
+                    diff_details = automation_utils.subtract_checkpoint_details(new_details, old_details)
+
+                    if diff_details:
+                        diff_liquors = sorted(list(k for k in diff_details if k != '_TelegramSupplier'))
+                        if diff_liquors:
+                            diff_record[3] = ", ".join(diff_liquors)
+
                     diff_checkpoint = {}
-                    diff_details = automation_utils.subtract_checkpoint_details(
-                        automation_utils.get_checkpoint_details(incoming_checkpoint, r[0], truck_val),
-                        automation_utils.get_checkpoint_details(old_incoming_checkpoint, r[0], truck_val)
-                    )
                     if date_val not in diff_checkpoint:
                         diff_checkpoint[date_val] = {}
-                    diff_checkpoint[date_val][truck_val] = diff_details
+                    diff_checkpoint[date_val][clean_truck] = diff_details
+                    if r[0] not in diff_checkpoint:
+                        diff_checkpoint[r[0]] = {}
+                    diff_checkpoint[r[0]][clean_truck] = diff_details
                     
-                    updated_permit_messages_to_send.append((diff_record, diff_checkpoint))
+                    combined_meta = {
+                        "is_combined": True,
+                        "previous_qty": existing_qty,
+                        "total_qty": scraped_qty,
+                        "diff_qty": diff_qty
+                    }
+                    updated_permit_messages_to_send.append((diff_record, diff_checkpoint, combined_meta))
+
+            # Clean up the stale typo key from incoming_checkpoint if needed
+            if is_typo_correction and matched_truck != clean_truck:
+                for d_k in [date_val, r[0]]:
+                    if d_k in incoming_checkpoint and matched_truck in incoming_checkpoint[d_k]:
+                        incoming_checkpoint[d_k].pop(matched_truck, None)
         else:
             new_rows.append(r)
             sheet_rows_to_insert.append(sheet_row_to_insert)
@@ -983,7 +1047,8 @@ try:
                 # Sort updated permits for consistent order
                 enum_updated = list(enumerate(updated_permit_messages_to_send))
                 def sort_key_updated(item):
-                    orig_idx, (r, _) = item
+                    orig_idx, item_tuple = item
+                    r = item_tuple[0]
                     date_val = normalize_date_string(r[0])
                     key = f"{date_val}|{r[2]}"
                     row_idx = existing_data.get(key, {}).get('row', float('inf'))
@@ -991,9 +1056,18 @@ try:
                 enum_updated.sort(key=sort_key_updated)
                 sorted_updated_list = [item[1] for item in enum_updated]
                 
-                for diff_record, diff_checkpoint in sorted_updated_list:
-                    # Generate report as standard 'New Country Spirit Endorsement' with the diff info
-                    update_reports = automation_utils.generate_whatsapp_reports([diff_record], diff_checkpoint, "New Country Spirit Endorsement")
+                for item_tuple in sorted_updated_list:
+                    diff_record = item_tuple[0]
+                    diff_checkpoint = item_tuple[1]
+                    combined_meta = item_tuple[2] if len(item_tuple) > 2 else None
+                    combined_info_map = {diff_record[2]: combined_meta} if combined_meta else None
+                    # Generate report with diff info and combined endorsement notice
+                    update_reports = automation_utils.generate_whatsapp_reports(
+                        [diff_record], 
+                        diff_checkpoint, 
+                        "New Country Spirit Endorsement",
+                        combined_info_map=combined_info_map
+                    )
                     summary_texts.extend(update_reports)
             
             if summary_texts:

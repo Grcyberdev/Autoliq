@@ -97,5 +97,21 @@ def run_test():
     assert "Budweiser Magnum" not in reports[0], "Old permit brand should not be in the second permit report"
     print("\n✅ Report formatting assertion passed successfully!")
 
+    # 4. Also test with combined_info_map
+    combined_info_map = {
+        truck_val: {
+            "is_combined": True,
+            "previous_qty": existing_qty,
+            "total_qty": scraped_qty,
+            "diff_qty": diff_qty
+        }
+    }
+    combined_reports = automation_utils.generate_whatsapp_reports([diff_record], diff_checkpoint, "New Liqour Endorsement", combined_info_map=combined_info_map)
+    assert "*Anheuser Busch (500 Cases - Combined) - Budweiser, Corona, ...*" in combined_reports[0]
+    assert "📦 *Added Cases:* 500" in combined_reports[0]
+    assert "🔗 *Combined Truck:* Added to previous 500 cases truck (Total: 1000 cases)" in combined_reports[0]
+    assert "Details (500 Cases):" in combined_reports[0]
+    print("✅ Combined info report formatting assertion passed successfully!")
+
 if __name__ == "__main__":
     run_test()
