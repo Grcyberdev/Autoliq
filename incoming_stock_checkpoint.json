@@ -23050,9 +23050,9 @@
         },
         "AS01LC6322": {
             "Royal Stag": {
+                "375ml": 50,
                 "750ml": 40,
-                "180ml": 150,
-                "375ml": 50
+                "180ml": 150
             },
             "Blender's Pride Four Elements": {
                 "375ml": 5,
@@ -23084,6 +23084,12 @@
                 "375ml": 25,
                 "180ml": 20,
                 "750ml": 30
+            }
+        },
+        "NL01N6289": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
