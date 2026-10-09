@@ -23239,8 +23239,8 @@
         },
         "AS03BC5273": {
             "Lords Whiskey": {
-                "375ml": 100,
                 "180ml": 100,
+                "375ml": 100,
                 "750ml": 150
             }
         },
@@ -23281,6 +23281,15 @@
                 "750ml": 100,
                 "375ml": 200,
                 "180ml": 200
+            }
+        },
+        "MH46AF3028": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg Malt": {
+                "Can": 400
+            },
+            "Tuborg": {
+                "Bottle": 800
             }
         }
     }
