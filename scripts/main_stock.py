@@ -338,27 +338,27 @@ def scrape_data_for_user(driver_args, username, password, start_date, end_date, 
                             # Scrape Table
                             try:
                                 tables = wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "table")))
-                                f34_table = max(tables, key=lambda t: len(t.find_elements(By.TAG_NAME, "tr")))
-                                f34_rows = f34_table.find_elements(By.TAG_NAME, "tr")
-                                
-                                for f_row in f34_rows:
-                                    f_cols = f_row.find_elements(By.TAG_NAME, "td")
-                                    if len(f_cols) < 6 or not f_cols[0].text.strip().isdigit(): continue
+                                for f34_table in tables:
+                                    f34_rows = f34_table.find_elements(By.TAG_NAME, "tr")
                                     
-                                    # [Index, Code, Name, Cat, Size, Qty, ...]
-                                    raw_name = f_cols[2].text.strip()
-                                    size_val = f_cols[4].text.strip()
-                                    qty_str = f_cols[5].text.strip()
-                                    
-                                    if not raw_name: continue
-                                    try: qty = int(float(qty_str.replace(',', '')))
-                                    except: qty = 0
-                                    
-                                    if qty > 0:
-                                        short_name = get_short_name(raw_name)
-                                        key = f"{short_name} ({size_val})" if size_val else short_name
+                                    for f_row in f34_rows:
+                                        f_cols = f_row.find_elements(By.TAG_NAME, "td")
+                                        if len(f_cols) < 6 or not f_cols[0].text.strip().isdigit(): continue
                                         
-                                        daily_counts[key] = daily_counts.get(key, 0) + qty
+                                        # [Index, Code, Name, Cat, Size, Qty, ...]
+                                        raw_name = f_cols[2].text.strip()
+                                        size_val = f_cols[4].text.strip()
+                                        qty_str = f_cols[5].text.strip()
+                                        
+                                        if not raw_name: continue
+                                        try: qty = int(float(qty_str.replace(',', '')))
+                                        except: qty = 0
+                                        
+                                        if qty > 0:
+                                            short_name = get_short_name(raw_name)
+                                            key = f"{short_name} ({size_val})" if size_val else short_name
+                                            
+                                            daily_counts[key] = daily_counts.get(key, 0) + qty
 
                             except Exception as e:
                                 print(f"       ⚠️ Form 34 error: {e}")
