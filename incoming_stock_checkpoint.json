@@ -23219,7 +23219,15 @@
         "AS01PC8901": {
             "Imperial Blue": {
                 "750ml": 50,
-                "180ml": 400,
+                "375ml": 100,
+                "180ml": 400
+            }
+        },
+        "AS01UC3451": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "180ml": 725,
+                "750ml": 75,
                 "375ml": 100
             }
         }
