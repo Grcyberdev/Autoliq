@@ -23310,14 +23310,11 @@
         "NL01G6484": {
             "Royal Stag": {
                 "180ml": 650,
-                "375ml": 250,
-                "750ml": 200
+                "750ml": 200,
+                "375ml": 250
             }
         },
         "MH43BP7397": {
-            "SAMSARA CONTEMPORARY INDIAN GIN": {
-                "750ml": 6
-            },
             "MONARCH EXPERTLY CRAFTED FINE BRANDY LEGACY EDITION": {
                 "750ml": 2
             },
@@ -23327,6 +23324,19 @@
             "SAMSARA CONTEMPORARY INDIAN GIN NEW WORLD EXPERIMENTS THE CITY OF PINK": {
                 "180ml": 2,
                 "750ml": 13
+            },
+            "SAMSARA CONTEMPORARY INDIAN GIN": {
+                "750ml": 6
+            }
+        },
+        "AS01RC8137": {
+            "_TelegramSupplier": "Parsan Brothers",
+            "Amrut's Maqintosh": {
+                "180ml": 7,
+                "750ml": 40
+            },
+            "Amrut Fusion": {
+                "750ml": 3
             }
         }
     }
