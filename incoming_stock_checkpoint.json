@@ -23315,15 +23315,15 @@
             }
         },
         "MH43BP7397": {
+            "SAMSARA CONTEMPORARY INDIAN GIN NEW WORLD EXPERIMENTS THE CITY OF PINK": {
+                "180ml": 2,
+                "750ml": 13
+            },
             "MONARCH EXPERTLY CRAFTED FINE BRANDY LEGACY EDITION": {
                 "750ml": 2
             },
             "SEVEN ISLANDS PURE MALT WHISKY": {
                 "750ml": 2
-            },
-            "SAMSARA CONTEMPORARY INDIAN GIN NEW WORLD EXPERIMENTS THE CITY OF PINK": {
-                "180ml": 2,
-                "750ml": 13
             },
             "SAMSARA CONTEMPORARY INDIAN GIN": {
                 "750ml": 6
@@ -23336,6 +23336,13 @@
             },
             "Amrut Fusion": {
                 "750ml": 3
+            }
+        },
+        "WB23L3399": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser Magnum": {
+                "Bottle": 300,
+                "Can": 200
             }
         }
     }
