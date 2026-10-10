@@ -23309,9 +23309,25 @@
         },
         "NL01G6484": {
             "Royal Stag": {
-                "750ml": 200,
                 "180ml": 650,
-                "375ml": 250
+                "375ml": 250,
+                "750ml": 200
+            }
+        },
+        "MH43BP7397": {
+            "_TelegramSupplier": "Tilaknagar Industries Limited",
+            "SAMSARA CONTEMPORARY INDIAN GIN": {
+                "750ml": 6
+            },
+            "MONARCH EXPERTLY CRAFTED FINE BRANDY LEGACY EDITION": {
+                "750ml": 2
+            },
+            "SEVEN ISLANDS PURE MALT WHISKY": {
+                "750ml": 2
+            },
+            "SAMSARA CONTEMPORARY INDIAN GIN NEW WORLD EXPERIMENTS THE CITY OF PINK": {
+                "180ml": 2,
+                "750ml": 13
             }
         }
     }
