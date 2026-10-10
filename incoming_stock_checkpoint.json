@@ -22618,11 +22618,11 @@
     },
     "03-Oct-2026": {
         "AS04CC0758": {
-            "Rhino Whiskey": {
-                "CS": 80
-            },
             "Rhino No 1": {
                 "CS": 200
+            },
+            "Rhino Whiskey": {
+                "CS": 80
             }
         },
         "AS03BC8401": {
@@ -22654,8 +22654,8 @@
         },
         "AS01HC0109": {
             "Masti No. 1": {
-                "CA": 150,
-                "CS": 100
+                "CS": 100,
+                "CA": 150
             },
             "Masti Special": {
                 "CS": 250,
@@ -22948,11 +22948,11 @@
                 "CS": 50,
                 "CA": 150
             },
-            "Masti Special": {
-                "CS": 200
-            },
             "Masti": {
                 "CS": 300
+            },
+            "Masti Special": {
+                "CS": 200
             }
         },
         "AS25EC2957": {
@@ -23189,11 +23189,11 @@
             }
         },
         "AS03BC8122": {
-            "Masti": {
-                "CS": 300
-            },
             "Masti Special": {
                 "CA": 400
+            },
+            "Masti": {
+                "CS": 300
             }
         },
         "AS01RC2620": {
@@ -23296,6 +23296,16 @@
         "AS03BC8401": {
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "AS03AC8906": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino Limon": {
+                "CA": 75,
+                "CS": 75
+            },
+            "Rhino No 1": {
+                "CA": 130
             }
         }
     }
