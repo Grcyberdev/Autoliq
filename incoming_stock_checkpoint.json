@@ -23347,21 +23347,18 @@
     },
     "12-Oct-2026": {
         "AS01SC2893": {
-            "Calenter Premium": {
-                "375ml": 10,
-                "180ml": 25,
-                "750ml": 40
-            },
             "Royal Green": {
-                "750ml": 5,
                 "180ml": 10,
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Calenter Premium": {
+                "180ml": 25,
+                "750ml": 40,
                 "375ml": 10
             }
         },
         "AS25EC4423": {
-            "Iconiq Hippy": {
-                "180ml": 125
-            },
             "Officer's Choice pet": {
                 "375ml": 50,
                 "180ml": 175
@@ -23369,10 +23366,8 @@
             "Sterling B7": {
                 "180ml": 15
             },
-            "Jolly Roger Rum": {
-                "375ml": 15,
-                "750ml": 10,
-                "180ml": 25
+            "Officer's Choice": {
+                "750ml": 50
             },
             "Iconiq Vodka": {
                 "375ml": 10,
@@ -23381,8 +23376,13 @@
             "Sterling Reserve B7 Blended": {
                 "375ml": 10
             },
-            "Officer's Choice": {
-                "750ml": 50
+            "Jolly Roger Rum": {
+                "180ml": 25,
+                "750ml": 10,
+                "375ml": 15
+            },
+            "Iconiq Hippy": {
+                "180ml": 125
             }
         },
         "AS01VC6327": {
@@ -23391,6 +23391,17 @@
             }
         },
         "AS01PC6347": {
+            "Jack Daniel's": {
+                "750ml": 10,
+                "Quarter": 3,
+                "375ml": 2
+            },
+            "Jager Liqeur Brazil 2026 Edition": {
+                "750ml": 5
+            },
+            "EL JIMADOR TEQUILA REPOSADO": {
+                "750ml": 1
+            },
             "EL JIMADOR TEQUILA BLANCO": {
                 "750ml": 1
             },
@@ -23444,17 +23455,6 @@
             },
             "Moet Chandon Imperial Brut": {
                 "Full": 1
-            },
-            "Jack Daniel's": {
-                "Quarter": 3,
-                "375ml": 2,
-                "750ml": 10
-            },
-            "Jager Liqeur Brazil 2026 Edition": {
-                "750ml": 5
-            },
-            "EL JIMADOR TEQUILA REPOSADO": {
-                "750ml": 1
             }
         },
         "WB23C5237": {
@@ -23465,63 +23465,61 @@
         "AS01LC6538": {
             "Blender's Pride Reserve": {
                 "750ml": 25,
-                "180ml": 25,
-                "375ml": 25
-            },
-            "Royal Stag": {
-                "750ml": 50,
-                "180ml": 100
-            },
-            "Blender's Pride Exclusive": {
-                "750ml": 40,
-                "180ml": 50,
-                "375ml": 50
-            },
-            "Royal Stag Barrel": {
-                "180ml": 60,
-                "750ml": 25,
-                "375ml": 40
+                "375ml": 25,
+                "180ml": 25
             },
             "Oaken Glow": {
-                "180ml": 20,
+                "750ml": 10,
                 "375ml": 20,
-                "750ml": 10
+                "180ml": 20
             },
             "100 Pipers": {
-                "180ml": 5,
-                "750ml": 5
+                "750ml": 5,
+                "180ml": 5
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 50,
+                "180ml": 50,
+                "750ml": 40
+            },
+            "Royal Stag Barrel": {
+                "750ml": 25,
+                "180ml": 60,
+                "375ml": 40
+            },
+            "Royal Stag": {
+                "180ml": 100,
+                "750ml": 50
             }
         },
         "AS01LC5952": {
+            "Royal Challenge": {
+                "375ml": 100,
+                "180ml": 150,
+                "750ml": 65
+            },
             "Director's Special Black": {
                 "750ml": 20,
-                "180ml": 90,
-                "375ml": 30
+                "375ml": 30,
+                "180ml": 90
             },
             "Antiquity Blue Ultra": {
-                "180ml": 15,
                 "750ml": 10,
-                "375ml": 10
-            },
-            "Royal Challenge": {
-                "180ml": 150,
-                "375ml": 100,
-                "750ml": 65
+                "375ml": 10,
+                "180ml": 15
             },
             "Signature": {
                 "180ml": 20,
-                "750ml": 20,
-                "375ml": 20
+                "375ml": 20,
+                "750ml": 20
             }
         },
         "NL01AG7230": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg": {
                 "Bottle": 1200
             }
         },
         "RJ52GA2565": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg Malt": {
                 "Can": 400
             },
@@ -23530,7 +23528,6 @@
             }
         },
         "AS01UC3805": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
                 "375ml": 100,
                 "750ml": 50,
@@ -23538,15 +23535,6 @@
             }
         },
         "AS02CC9561": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
-            "Officer's Choice Blue": {
-                "375ml": 5,
-                "180ml": 15,
-                "750ml": 5
-            },
-            "Sterling B7": {
-                "180ml": 15
-            },
             "Sterling Reserve B7 Blended": {
                 "750ml": 10,
                 "375ml": 15
@@ -23559,21 +23547,53 @@
                 "375ml": 25,
                 "180ml": 160
             },
-            "Officer's Choice": {
-                "750ml": 50
-            },
             "Iconiq Hippy": {
                 "180ml": 100
             },
-            "THE INDIAN EDIT SUPER PREMIUM WHISKY": {
-                "750ml": 36,
+            "Officer's Choice Blue": {
+                "750ml": 5,
+                "375ml": 5,
                 "180ml": 15
+            },
+            "Officer's Choice": {
+                "750ml": 50
+            },
+            "Sterling B7": {
+                "180ml": 15
+            },
+            "THE INDIAN EDIT SUPER PREMIUM WHISKY": {
+                "180ml": 15,
+                "750ml": 36
             }
         },
         "AS01FC3252": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "AS03CC9902": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Lager": {
+                "Can": 130,
+                "Bottle": 50
+            },
+            "Kingfisher Original Strong": {
+                "Can": 500
+            }
+        },
+        "NL01N6289": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 700,
+                "Can": 700
+            }
+        },
+        "AS25EC1040": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Blue": {
+                "375ml": 100,
+                "750ml": 50,
+                "180ml": 400
             }
         }
     }
