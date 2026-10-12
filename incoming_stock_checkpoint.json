@@ -23349,30 +23349,16 @@
         "AS01SC2893": {
             "Royal Green": {
                 "180ml": 10,
-                "750ml": 5,
-                "375ml": 10
+                "375ml": 10,
+                "750ml": 5
             },
             "Calenter Premium": {
-                "180ml": 25,
                 "750ml": 40,
+                "180ml": 25,
                 "375ml": 10
             }
         },
         "AS25EC4423": {
-            "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 175
-            },
-            "Sterling B7": {
-                "180ml": 15
-            },
-            "Officer's Choice": {
-                "750ml": 50
-            },
-            "Iconiq Vodka": {
-                "375ml": 10,
-                "750ml": 15
-            },
             "Sterling Reserve B7 Blended": {
                 "375ml": 10
             },
@@ -23381,8 +23367,22 @@
                 "750ml": 10,
                 "375ml": 15
             },
+            "Sterling B7": {
+                "180ml": 15
+            },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 175
+            },
             "Iconiq Hippy": {
                 "180ml": 125
+            },
+            "Iconiq Vodka": {
+                "750ml": 15,
+                "375ml": 10
+            },
+            "Officer's Choice": {
+                "750ml": 50
             }
         },
         "AS01VC6327": {
@@ -23391,10 +23391,22 @@
             }
         },
         "AS01PC6347": {
+            "Jack Daniel's Cinnamon": {
+                "750ml": 2
+            },
+            "Jack Daniel's Apple": {
+                "750ml": 1
+            },
+            "Glenmorangie 12": {
+                "Full": 3
+            },
+            "Moet Chandon Imperial Brut": {
+                "Full": 1
+            },
             "Jack Daniel's": {
-                "750ml": 10,
                 "Quarter": 3,
-                "375ml": 2
+                "375ml": 2,
+                "750ml": 10
             },
             "Jager Liqeur Brazil 2026 Edition": {
                 "750ml": 5
@@ -23443,18 +23455,6 @@
             },
             "Jack Daniel's Honey": {
                 "750ml": 2
-            },
-            "Jack Daniel's Cinnamon": {
-                "750ml": 2
-            },
-            "Jack Daniel's Apple": {
-                "750ml": 1
-            },
-            "Glenmorangie 12": {
-                "Full": 3
-            },
-            "Moet Chandon Imperial Brut": {
-                "Full": 1
             }
         },
         "WB23C5237": {
@@ -23464,54 +23464,54 @@
         },
         "AS01LC6538": {
             "Blender's Pride Reserve": {
-                "750ml": 25,
+                "180ml": 25,
                 "375ml": 25,
-                "180ml": 25
-            },
-            "Oaken Glow": {
-                "750ml": 10,
-                "375ml": 20,
-                "180ml": 20
-            },
-            "100 Pipers": {
-                "750ml": 5,
-                "180ml": 5
+                "750ml": 25
             },
             "Blender's Pride Exclusive": {
-                "375ml": 50,
                 "180ml": 50,
+                "375ml": 50,
                 "750ml": 40
             },
-            "Royal Stag Barrel": {
-                "750ml": 25,
-                "180ml": 60,
-                "375ml": 40
+            "Oaken Glow": {
+                "180ml": 20,
+                "375ml": 20,
+                "750ml": 10
+            },
+            "100 Pipers": {
+                "180ml": 5,
+                "750ml": 5
             },
             "Royal Stag": {
                 "180ml": 100,
                 "750ml": 50
+            },
+            "Royal Stag Barrel": {
+                "750ml": 25,
+                "375ml": 40,
+                "180ml": 60
             }
         },
         "AS01LC5952": {
+            "Signature": {
+                "375ml": 20,
+                "750ml": 20,
+                "180ml": 20
+            },
+            "Antiquity Blue Ultra": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 15
+            },
+            "Director's Special Black": {
+                "375ml": 30,
+                "750ml": 20,
+                "180ml": 90
+            },
             "Royal Challenge": {
                 "375ml": 100,
                 "180ml": 150,
                 "750ml": 65
-            },
-            "Director's Special Black": {
-                "750ml": 20,
-                "375ml": 30,
-                "180ml": 90
-            },
-            "Antiquity Blue Ultra": {
-                "750ml": 10,
-                "375ml": 10,
-                "180ml": 15
-            },
-            "Signature": {
-                "180ml": 20,
-                "375ml": 20,
-                "750ml": 20
             }
         },
         "NL01AG7230": {
@@ -23529,37 +23529,37 @@
         },
         "AS01UC3805": {
             "Royal Stag": {
+                "180ml": 400,
                 "375ml": 100,
-                "750ml": 50,
-                "180ml": 400
+                "750ml": 50
             }
         },
         "AS02CC9561": {
-            "Sterling Reserve B7 Blended": {
-                "750ml": 10,
-                "375ml": 15
-            },
-            "Iconiq Vodka": {
-                "375ml": 30,
-                "750ml": 20
-            },
-            "Officer's Choice pet": {
-                "375ml": 25,
-                "180ml": 160
-            },
             "Iconiq Hippy": {
                 "180ml": 100
             },
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 30
+            },
+            "Officer's Choice pet": {
+                "180ml": 160,
+                "375ml": 25
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 10
+            },
             "Officer's Choice Blue": {
-                "750ml": 5,
+                "180ml": 15,
                 "375ml": 5,
+                "750ml": 5
+            },
+            "Sterling B7": {
                 "180ml": 15
             },
             "Officer's Choice": {
                 "750ml": 50
-            },
-            "Sterling B7": {
-                "180ml": 15
             },
             "THE INDIAN EDIT SUPER PREMIUM WHISKY": {
                 "180ml": 15,
@@ -23572,28 +23572,38 @@
             }
         },
         "AS03CC9902": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
-            "Kingfisher Lager": {
-                "Can": 130,
-                "Bottle": 50
-            },
             "Kingfisher Original Strong": {
                 "Can": 500
+            },
+            "Kingfisher Lager": {
+                "Bottle": 50,
+                "Can": 130
             }
         },
         "NL01N6289": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 700,
                 "Can": 700
             }
         },
         "AS25EC1040": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Imperial Blue": {
+                "180ml": 400,
                 "375ml": 100,
-                "750ml": 50,
-                "180ml": 400
+                "750ml": 50
+            }
+        },
+        "AS01JC3625": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Double Oak Barrel": {
+                "750ml": 10,
+                "180ml": 100,
+                "375ml": 90
+            },
+            "McDowell's Luxury": {
+                "375ml": 50,
+                "180ml": 275,
+                "750ml": 25
             }
         }
     }
