@@ -22822,29 +22822,29 @@
             }
         },
         "AS01TC4767": {
+            "Royal Challenge": {
+                "180ml": 100,
+                "750ml": 25,
+                "375ml": 50
+            },
+            "McDowell's Rum": {
+                "180ml": 100,
+                "750ml": 50
+            },
+            "Director's Special Black": {
+                "180ml": 100,
+                "375ml": 50,
+                "750ml": 10
+            },
+            "Antiquity Blue Ultra": {
+                "750ml": 5,
+                "375ml": 5,
+                "180ml": 5
+            },
             "Signature": {
                 "375ml": 15,
                 "180ml": 15,
                 "750ml": 20
-            },
-            "Royal Challenge": {
-                "750ml": 25,
-                "180ml": 100,
-                "375ml": 50
-            },
-            "Antiquity Blue Ultra": {
-                "375ml": 5,
-                "750ml": 5,
-                "180ml": 5
-            },
-            "Director's Special Black": {
-                "750ml": 10,
-                "375ml": 50,
-                "180ml": 100
-            },
-            "McDowell's Rum": {
-                "750ml": 50,
-                "180ml": 100
             }
         },
         "AS01FC7083": {
@@ -22864,16 +22864,6 @@
             }
         },
         "WB23D0282": {
-            "Sterling B7": {
-                "180ml": 20
-            },
-            "Iconiq Hippy": {
-                "180ml": 210
-            },
-            "Officer's Choice pet": {
-                "180ml": 350,
-                "375ml": 50
-            },
             "Officer's Choice Blue": {
                 "750ml": 10,
                 "180ml": 25,
@@ -22884,8 +22874,18 @@
                 "750ml": 25
             },
             "Sterling Reserve B7 Blended": {
-                "375ml": 15,
-                "750ml": 5
+                "750ml": 5,
+                "375ml": 15
+            },
+            "Sterling B7": {
+                "180ml": 20
+            },
+            "Officer's Choice pet": {
+                "180ml": 350,
+                "375ml": 50
+            },
+            "Iconiq Hippy": {
+                "180ml": 210
             },
             "Officer's Choice": {
                 "750ml": 200
@@ -22913,21 +22913,21 @@
         },
         "AS01PC8901": {
             "Imperial Blue": {
-                "180ml": 400,
                 "375ml": 75,
+                "180ml": 400,
                 "750ml": 75
             }
         },
         "AS05FC6681": {
             "All Seasons Connoisseur": {
-                "180ml": 114,
                 "375ml": 70,
-                "750ml": 50
+                "750ml": 50,
+                "180ml": 114
             },
             "Fame Whiskey": {
-                "375ml": 100,
+                "180ml": 126,
                 "750ml": 75,
-                "180ml": 126
+                "375ml": 100
             },
             "All Seasons Sir-E-Taj": {
                 "180ml": 15
@@ -22935,12 +22935,12 @@
         },
         "AS01FC6159": {
             "Budweiser": {
-                "Bottle": 100,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 100
             },
             "Budweiser Magnum": {
-                "Can": 200,
-                "Bottle": 200
+                "Bottle": 200,
+                "Can": 200
             }
         },
         "AS25DC4191": {
@@ -22956,15 +22956,15 @@
             }
         },
         "AS25EC2957": {
-            "Calenter Premium": {
-                "750ml": 30,
-                "375ml": 20,
-                "180ml": 75
-            },
             "Royal Green": {
-                "180ml": 5,
                 "375ml": 5,
+                "180ml": 5,
                 "750ml": 15
+            },
+            "Calenter Premium": {
+                "180ml": 75,
+                "375ml": 20,
+                "750ml": 30
             }
         }
     },
@@ -23347,15 +23347,49 @@
     },
     "12-Oct-2026": {
         "AS01SC2893": {
-            "Royal Green": {
-                "375ml": 10,
-                "180ml": 10,
-                "750ml": 5
-            },
             "Calenter Premium": {
                 "750ml": 40,
+                "375ml": 10,
+                "180ml": 25
+            },
+            "Royal Green": {
+                "375ml": 10,
+                "750ml": 5,
+                "180ml": 10
+            }
+        },
+        "AS25EC4423": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Jolly Roger Rum": {
                 "180ml": 25,
+                "750ml": 10,
+                "375ml": 15
+            },
+            "Sterling Reserve B7 Blended": {
                 "375ml": 10
+            },
+            "Iconiq Vodka": {
+                "750ml": 15,
+                "375ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 125
+            },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 175
+            },
+            "Sterling B7": {
+                "180ml": 15
+            },
+            "Officer's Choice": {
+                "750ml": 50
+            }
+        },
+        "AS01VC6327": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Brahmaputra Breweries Llp",
+            "Godfather Select": {
+                "Bottle": 680
             }
         }
     }
