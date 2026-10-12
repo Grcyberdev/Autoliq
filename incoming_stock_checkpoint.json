@@ -22785,6 +22785,20 @@
             }
         },
         "AS24AC3190": {
+            "Officer's Choice Blue": {
+                "180ml": 15
+            },
+            "Sterling B7": {
+                "180ml": 10
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 200
+            },
             "Iconiq Hippy": {
                 "180ml": 75
             },
@@ -22794,20 +22808,6 @@
             },
             "Officer's Choice": {
                 "750ml": 50
-            },
-            "Officer's Choice pet": {
-                "180ml": 200,
-                "375ml": 50
-            },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 5,
-                "375ml": 10
-            },
-            "Officer's Choice Blue": {
-                "180ml": 15
-            },
-            "Sterling B7": {
-                "180ml": 10
             }
         },
         "AS01GC6785": {
@@ -22822,20 +22822,20 @@
             }
         },
         "AS01TC4767": {
-            "Royal Challenge": {
-                "180ml": 100,
-                "375ml": 50,
-                "750ml": 25
-            },
             "Signature": {
+                "375ml": 15,
                 "180ml": 15,
-                "750ml": 20,
-                "375ml": 15
+                "750ml": 20
+            },
+            "Royal Challenge": {
+                "750ml": 25,
+                "180ml": 100,
+                "375ml": 50
             },
             "Antiquity Blue Ultra": {
-                "180ml": 5,
+                "375ml": 5,
                 "750ml": 5,
-                "375ml": 5
+                "180ml": 5
             },
             "Director's Special Black": {
                 "750ml": 10,
@@ -22864,31 +22864,31 @@
             }
         },
         "WB23D0282": {
-            "Iconiq Vodka": {
-                "375ml": 75,
-                "750ml": 25
+            "Sterling B7": {
+                "180ml": 20
             },
-            "Officer's Choice Blue": {
-                "180ml": 25,
-                "375ml": 15,
-                "750ml": 10
-            },
-            "Sterling Reserve B7 Blended": {
-                "750ml": 5,
-                "375ml": 15
-            },
-            "Officer's Choice": {
-                "750ml": 200
+            "Iconiq Hippy": {
+                "180ml": 210
             },
             "Officer's Choice pet": {
                 "180ml": 350,
                 "375ml": 50
             },
-            "Iconiq Hippy": {
-                "180ml": 210
+            "Officer's Choice Blue": {
+                "750ml": 10,
+                "180ml": 25,
+                "375ml": 15
             },
-            "Sterling B7": {
-                "180ml": 20
+            "Iconiq Vodka": {
+                "375ml": 75,
+                "750ml": 25
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
+            },
+            "Officer's Choice": {
+                "750ml": 200
             }
         },
         "RJ14GG0360": {
@@ -22906,37 +22906,37 @@
         },
         "AS01EC6249": {
             "McDowell's Rum": {
+                "180ml": 550,
                 "750ml": 200,
-                "375ml": 150,
-                "180ml": 550
+                "375ml": 150
             }
         },
         "AS01PC8901": {
             "Imperial Blue": {
-                "750ml": 75,
+                "180ml": 400,
                 "375ml": 75,
-                "180ml": 400
+                "750ml": 75
             }
         },
         "AS05FC6681": {
             "All Seasons Connoisseur": {
-                "375ml": 70,
                 "180ml": 114,
+                "375ml": 70,
                 "750ml": 50
-            },
-            "All Seasons Sir-E-Taj": {
-                "180ml": 15
             },
             "Fame Whiskey": {
                 "375ml": 100,
                 "750ml": 75,
                 "180ml": 126
+            },
+            "All Seasons Sir-E-Taj": {
+                "180ml": 15
             }
         },
         "AS01FC6159": {
             "Budweiser": {
-                "Can": 200,
-                "Bottle": 100
+                "Bottle": 100,
+                "Can": 200
             },
             "Budweiser Magnum": {
                 "Can": 200,
@@ -22956,15 +22956,15 @@
             }
         },
         "AS25EC2957": {
-            "Royal Green": {
-                "750ml": 15,
-                "180ml": 5,
-                "375ml": 5
-            },
             "Calenter Premium": {
-                "375ml": 20,
                 "750ml": 30,
+                "375ml": 20,
                 "180ml": 75
+            },
+            "Royal Green": {
+                "180ml": 5,
+                "375ml": 5,
+                "750ml": 15
             }
         }
     },
@@ -23342,6 +23342,21 @@
             "Budweiser Magnum": {
                 "Bottle": 300,
                 "Can": 200
+            }
+        }
+    },
+    "12-Oct-2026": {
+        "AS01SC2893": {
+            "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries",
+            "Royal Green": {
+                "375ml": 10,
+                "180ml": 10,
+                "750ml": 5
+            },
+            "Calenter Premium": {
+                "750ml": 40,
+                "180ml": 25,
+                "375ml": 10
             }
         }
     }
