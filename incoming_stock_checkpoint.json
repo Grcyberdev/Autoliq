@@ -23520,11 +23520,11 @@
             }
         },
         "RJ52GA2565": {
-            "Tuborg Malt": {
-                "Can": 400
-            },
             "Tuborg": {
                 "Bottle": 800
+            },
+            "Tuborg Malt": {
+                "Can": 400
             }
         },
         "AS01UC3805": {
@@ -23633,6 +23633,12 @@
             "Magic Moments Jamun": {
                 "375ml": 5,
                 "180ml": 20
+            }
+        },
+        "RJ14GG5004": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
             }
         }
     }
