@@ -7,6 +7,8 @@ import glob
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 import requests
 import urllib.parse
@@ -391,15 +393,30 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
         from selenium.webdriver.support.ui import WebDriverWait
         from selenium.webdriver.support import expected_conditions as EC
         
+        # Ensure login modal is open and inputs are visible
         try:
-            wait = WebDriverWait(driver, 30)
-            captcha_img = wait.until(EC.presence_of_element_located((By.ID, captcha_element_id)))
+            user_input = driver.find_elements(By.ID, "LoginForm_username")
+            if not user_input or not user_input[0].is_displayed():
+                login_btn = driver.find_elements(By.XPATH, "//button[contains(@class, 'header-login-btn') or contains(text(), 'Login')]")
+                if login_btn:
+                    driver.execute_script("arguments[0].click();", login_btn[0])
+                    time.sleep(1.5)
+        except: pass
+
+        wait = WebDriverWait(driver, 15)
+        try:
+            captcha_img = wait.until(EC.visibility_of_element_located((By.ID, captcha_element_id)))
         except:
             try:
-                captcha_img = driver.find_element(By.XPATH, "//img[contains(@src, 'captcha')]")
+                captcha_img = wait.until(EC.visibility_of_element_located((By.XPATH, "//img[contains(@src, 'captcha')]")))
             except:
-                 print("⚠️ Could not locate Captcha Image element (id='loginCaptcha' or src='captcha') for OCR.")
-                 return None
+                print("⚠️ Could not locate visible Captcha Image element for OCR.")
+                return None
+
+        for _ in range(6):
+            if captcha_img.is_displayed() and captcha_img.size.get('width', 0) > 10:
+                break
+            time.sleep(0.5)
 
         try:
             captcha_img.screenshot(screenshot_path)
