@@ -347,6 +347,9 @@ LIQUOR_NAME_MAPPING = {
     "V21 ULTRA SMOOTH VODKA LEMON": "V21 Lemon Vodka",
     "M2 MAGIC MOMENTS REMIX CRANBERRY VIVID FLAVOURED VODKA": "Magic Moments Remix Cranberry",
     "WHITE MAGIC VODKA": "White Magic Vodka",
+    "ELJIMADOR TEQUILA BLANCO": "El Jimador Blanco Tequila",
+    "ELJIMADOR TEQUILA REPOSADO": "El Jimador Reposado Tequila",
+
 
 
     # --- Gin ---
@@ -448,6 +451,15 @@ LIQUOR_NAME_MAPPING = {
     "HOLLONG9 TEA WINE CLASSIC": "Hollong9 Tea Wine",
     "TI:PO PO:RO APONG": "Tipo Apong",
     "JINRO GREEN GRAPE WINE": "Jinro Green Grape Wine",
+    "ARAUCO MERLOT RED WINE": "Arauco Merlot Red Wine",
+    "CASETTA BAROLO DOCG RED WINE": "Casetta Barolo Red Wine",
+    "LE GRAND NOIR CHARDONNAY WHITE WINE": "Le Grand Noir Chardonnay Wine",
+    "LE GRAND PINOT NOIR RED WINE": "Le Grand Pinot Noir Red Wine",
+    "MOET & CHANDON CHAMPAGNE IMPERIAL BRUT": "Moet Chandon Imperial Brut",
+    "RIUNITE LAMBRUSCO EMILIA SWEET RED WINE": "Riunite Lambrusco Emilia Red Wine",
+    "ROYAL SAINT EMILION RED BORDEAUX WINE": "Royal Saint Emilion Red Wine",
+    
+
 
     # --- New Variations found in logs ---
     "SEAGRAMS IMPERIAL BLACK MASTERS SELECT GRAIN BLENDED WHISKY": "IB Black",
