@@ -22970,47 +22970,52 @@
     },
     "08-Oct-2026": {
         "AS01FC5089": {
+            "8 PM Premium Black": {
+                "180ml": 20,
+                "375ml": 15,
+                "750ml": 10
+            },
             "Magic Moments Lemon": {
-                "375ml": 20,
                 "180ml": 25,
+                "375ml": 20,
                 "750ml": 5
             },
             "Magic Moments": {
+                "750ml": 20,
                 "375ml": 30,
-                "180ml": 75,
-                "750ml": 20
+                "180ml": 75
             },
-            "8 PM Premium Black": {
-                "750ml": 10,
-                "180ml": 20,
-                "375ml": 15
+            "After Dark": {
+                "180ml": 220,
+                "750ml": 25,
+                "375ml": 65
             },
             "Magic Moments Green Apple": {
                 "180ml": 20
-            },
-            "After Dark": {
-                "375ml": 65,
-                "750ml": 25,
-                "180ml": 220
             }
         },
         "AS23CC6611": {
             "Imperial Black": {
-                "375ml": 75,
                 "180ml": 350,
+                "375ml": 75,
                 "750ml": 25
             },
             "Imperial Blue": {
-                "375ml": 100,
                 "180ml": 450,
+                "375ml": 100,
                 "750ml": 100
             }
         },
         "AS02BC2033": {
             "JW Red Label": {
+                "375ml": 10,
                 "750ml": 20,
-                "Quarter": 5,
-                "375ml": 10
+                "Quarter": 5
+            },
+            "Smirnoff": {
+                "375ml": 10,
+                "750ml": 15,
+                "180ml": 10
             },
             "JW Black Label": {
                 "750ml": 5
@@ -23041,48 +23046,43 @@
             "Smirnoff Minty Jamun Vodka": {
                 "180ml": 25,
                 "750ml": 10
-            },
-            "Smirnoff": {
-                "180ml": 10,
-                "750ml": 15,
-                "375ml": 10
             }
         },
         "AS01LC6322": {
-            "Royal Stag Double Dark": {
-                "180ml": 10,
-                "375ml": 10,
-                "750ml": 10
-            },
-            "Blender's Pride Four Elements": {
-                "375ml": 5,
-                "750ml": 5
-            },
-            "Royal Stag": {
-                "750ml": 40,
-                "180ml": 150,
-                "375ml": 50
-            },
-            "Oaken Glow": {
-                "375ml": 20,
-                "750ml": 10,
-                "180ml": 15
-            },
             "Blender's Pride Reserve": {
-                "180ml": 25,
                 "375ml": 25,
-                "750ml": 25
+                "750ml": 25,
+                "180ml": 25
             },
             "Blender's Pride Exclusive": {
                 "375ml": 50,
                 "180ml": 50,
                 "750ml": 50
+            },
+            "Oaken Glow": {
+                "750ml": 10,
+                "180ml": 15,
+                "375ml": 20
+            },
+            "Royal Stag Double Dark": {
+                "375ml": 10,
+                "180ml": 10,
+                "750ml": 10
+            },
+            "Royal Stag": {
+                "180ml": 150,
+                "750ml": 40,
+                "375ml": 50
+            },
+            "Blender's Pride Four Elements": {
+                "750ml": 5,
+                "375ml": 5
             }
         },
         "AS01PC6347": {
             "Rockford Reserve": {
-                "375ml": 25,
                 "180ml": 20,
+                "375ml": 25,
                 "750ml": 30
             }
         },
@@ -23094,61 +23094,65 @@
         "HR39E4738": {
             "Royal Stag": {
                 "180ml": 500,
-                "750ml": 150,
-                "375ml": 200
-            },
-            "Oaken Glow": {
-                "375ml": 10,
-                "750ml": 10,
-                "180ml": 30
-            },
-            "Blender's Pride Four Elements": {
-                "180ml": 5
-            },
-            "Royal Stag Barrel": {
-                "750ml": 20,
-                "180ml": 50,
-                "375ml": 25
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 30,
-                "180ml": 45
+                "375ml": 200,
+                "750ml": 150
             },
             "Blender's Pride Reserve": {
-                "375ml": 10,
+                "180ml": 5,
                 "750ml": 10,
+                "375ml": 10
+            },
+            "Blender's Pride Exclusive": {
+                "180ml": 45,
+                "375ml": 30
+            },
+            "Royal Stag Barrel": {
+                "375ml": 25,
+                "180ml": 50,
+                "750ml": 20
+            },
+            "Oaken Glow": {
+                "180ml": 30,
+                "750ml": 10,
+                "375ml": 10
+            },
+            "Blender's Pride Four Elements": {
                 "180ml": 5
             }
         },
         "AS01RC2991": {
-            "Camino Tequila": {
-                "750ml": 3
-            },
-            "Grey Goose": {
-                "Full": 3
-            },
             "Dewar's White Label": {
                 "750ml": 3,
                 "375ml": 2
             },
-            "Bacardi Mango Chilli Rum": {
-                "180ml": 5,
-                "375ml": 3,
+            "Grey Goose": {
+                "Full": 3
+            },
+            "Camino Tequila": {
                 "750ml": 3
+            },
+            "William Lawson": {
+                "750ml": 5,
+                "180ml": 2
+            },
+            "Bacardi Limon Rum": {
+                "180ml": 25,
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Bacardi White Rum": {
+                "750ml": 6,
+                "375ml": 5,
+                "180ml": 8
+            },
+            "Bacardi Mango Chilli Rum": {
+                "750ml": 3,
+                "375ml": 3,
+                "180ml": 5
             },
             "Black By Bacardi Rum": {
                 "750ml": 10,
                 "375ml": 5
-            },
-            "Bacardi Limon Rum": {
-                "750ml": 5,
-                "375ml": 10,
-                "180ml": 25
-            },
-            "Bacardi White Rum": {
-                "375ml": 5,
-                "180ml": 8,
-                "750ml": 6
             },
             "Breezer Bold Guava Chilli": {
                 "Stubby": 10
@@ -23167,16 +23171,12 @@
             },
             "Breezer Jamaican": {
                 "Stubby": 40
-            },
-            "William Lawson": {
-                "750ml": 5,
-                "180ml": 2
             }
         },
         "AS02DC4961": {
             "Officer's Choice pet": {
-                "180ml": 300,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 300
             },
             "Officer's Choice": {
                 "750ml": 150
@@ -23204,8 +23204,8 @@
         },
         "AS01PC3391": {
             "Imperial Black": {
-                "375ml": 100,
                 "750ml": 50,
+                "375ml": 100,
                 "180ml": 400
             }
         }
@@ -23309,30 +23309,30 @@
         },
         "NL01G6484": {
             "Royal Stag": {
-                "750ml": 200,
                 "180ml": 650,
+                "750ml": 200,
                 "375ml": 250
             }
         },
         "MH43BP7397": {
-            "Samsara Gin": {
-                "750ml": 6
-            },
             "Samsara Pink Gin": {
-                "750ml": 13,
-                "180ml": 2
+                "180ml": 2,
+                "750ml": 13
+            },
+            "Monarch Brandy": {
+                "750ml": 2
             },
             "Seven Islands Whisky": {
                 "750ml": 2
             },
-            "Monarch Brandy": {
-                "750ml": 2
+            "Samsara Gin": {
+                "750ml": 6
             }
         },
         "AS01RC8137": {
             "Amrut's Maqintosh": {
-                "750ml": 40,
-                "180ml": 7
+                "180ml": 7,
+                "750ml": 40
             },
             "Amrut Fusion": {
                 "750ml": 3
@@ -23668,9 +23668,9 @@
         },
         "AS01TC2021": {
             "KD 50 Whiskey": {
-                "180ml": 150,
                 "375ml": 200,
-                "750ml": 300
+                "750ml": 300,
+                "180ml": 150
             },
             "KD 50 White Whiskey": {
                 "750ml": 25,
@@ -23679,8 +23679,8 @@
         },
         "AS05AC7304": {
             "Officer's Choice pet": {
-                "180ml": 400,
-                "375ml": 25
+                "375ml": 25,
+                "180ml": 400
             },
             "Officer's Choice": {
                 "750ml": 75
@@ -23692,39 +23692,62 @@
             }
         },
         "NL01AF5037": {
-            "Old Monk Coffee": {
-                "375ml": 15,
-                "180ml": 20,
-                "750ml": 5
-            },
-            "Old Monk Vatted": {
-                "750ml": 180,
-                "375ml": 200,
-                "180ml": 350
-            },
-            "Golden Oak": {
-                "180ml": 5,
-                "375ml": 5,
-                "750ml": 10
-            },
             "Old Monk The Legend": {
                 "750ml": 5
             },
+            "Golden Oak": {
+                "375ml": 5,
+                "750ml": 10,
+                "180ml": 5
+            },
             "Old Monk Supreme": {
+                "750ml": 5
+            },
+            "Old Monk Vatted": {
+                "375ml": 200,
+                "180ml": 350,
+                "750ml": 180
+            },
+            "Old Monk Coffee": {
+                "180ml": 20,
+                "375ml": 15,
                 "750ml": 5
             }
         },
         "AS28AC1534": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
-            "Imperial Black": {
-                "750ml": 25,
-                "180ml": 300,
-                "375ml": 50
-            },
             "Imperial Blue": {
                 "750ml": 25,
                 "180ml": 100,
                 "375ml": 50
+            },
+            "Imperial Black": {
+                "180ml": 300,
+                "375ml": 50,
+                "750ml": 25
+            }
+        },
+        "AS01KC7913": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Royal Challenge": {
+                "750ml": 25,
+                "180ml": 175,
+                "375ml": 50
+            },
+            "McDowell's Rum": {
+                "750ml": 75,
+                "180ml": 100
+            },
+            "Director's Special Black": {
+                "180ml": 105,
+                "375ml": 20
+            }
+        },
+        "AS02DC0229": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "750ml": 200,
+                "180ml": 600,
+                "375ml": 100
             }
         }
     }
