@@ -173,6 +173,7 @@ LIQUOR_NAME_MAPPING = {
     "KD 50 WHITE WHISKY": "KD 50 White Whiskey",
     "FAME MASTER BLENDER`S SUPERIOR COLLECTION BLENDED MATURED WHISKY": "Fame Whiskey",
     "SEVEN ISLANDS PURE MALT WHISKY": "Seven Islands Whisky",
+    "THE INDIAN EDIT SUPER PREMIUM WHISKY": "The Indian Edit Whiskey",
     
     
     
