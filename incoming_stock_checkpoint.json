@@ -23657,8 +23657,8 @@
         "AS03AC8906": {
             "Lords Whiskey": {
                 "750ml": 200,
-                "375ml": 100,
-                "180ml": 50
+                "180ml": 50,
+                "375ml": 100
             }
         },
         "AS03BC8344": {
@@ -23668,8 +23668,8 @@
         },
         "AS01TC2021": {
             "KD 50 Whiskey": {
-                "375ml": 200,
                 "180ml": 150,
+                "375ml": 200,
                 "750ml": 300
             },
             "KD 50 White Whiskey": {
@@ -23678,7 +23678,6 @@
             }
         },
         "AS05AC7304": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
             "Officer's Choice pet": {
                 "180ml": 400,
                 "375ml": 25
@@ -23688,33 +23687,44 @@
             }
         },
         "NL01L4489": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
             }
         },
         "NL01AF5037": {
-            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
+            "Old Monk Coffee": {
+                "375ml": 15,
+                "180ml": 20,
+                "750ml": 5
+            },
             "Old Monk Vatted": {
-                "180ml": 350,
+                "750ml": 180,
                 "375ml": 200,
-                "750ml": 180
+                "180ml": 350
+            },
+            "Golden Oak": {
+                "180ml": 5,
+                "375ml": 5,
+                "750ml": 10
             },
             "Old Monk The Legend": {
                 "750ml": 5
             },
-            "Golden Oak": {
-                "375ml": 5,
-                "750ml": 10,
-                "180ml": 5
-            },
-            "Old Monk Coffee": {
-                "180ml": 20,
-                "750ml": 5,
-                "375ml": 15
-            },
             "Old Monk Supreme": {
                 "750ml": 5
+            }
+        },
+        "AS28AC1534": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
+                "750ml": 25,
+                "180ml": 300,
+                "375ml": 50
+            },
+            "Imperial Blue": {
+                "750ml": 25,
+                "180ml": 100,
+                "375ml": 50
             }
         }
     }
