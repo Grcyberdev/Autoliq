@@ -23254,19 +23254,19 @@
         "AS11DC8689": {
             "Ballantines": {
                 "Quarter": 5,
-                "750ml": 10,
-                "375ml": 10
+                "375ml": 10,
+                "750ml": 10
+            },
+            "Royal Salute 21 Yrs": {
+                "Full": 1
             },
             "Jameson": {
-                "Quarter": 10,
-                "750ml": 31
+                "750ml": 31,
+                "Quarter": 10
             },
             "Chivas Regal 12 Yrs": {
                 "750ml": 5,
                 "Quarter": 1
-            },
-            "Royal Salute 21 Yrs": {
-                "Full": 1
             },
             "Absolut Raspberry": {
                 "750ml": 5,
@@ -23278,8 +23278,8 @@
         },
         "NL01AF7489": {
             "Oaksmith International": {
-                "375ml": 200,
                 "750ml": 100,
+                "375ml": 200,
                 "180ml": 200
             }
         },
@@ -23310,14 +23310,13 @@
         "NL01G6484": {
             "Royal Stag": {
                 "180ml": 650,
-                "750ml": 200,
-                "375ml": 250
+                "375ml": 250,
+                "750ml": 200
             }
         },
         "MH43BP7397": {
-            "Samsara Pink Gin": {
-                "180ml": 2,
-                "750ml": 13
+            "Samsara Gin": {
+                "750ml": 6
             },
             "Monarch Brandy": {
                 "750ml": 2
@@ -23325,23 +23324,24 @@
             "Seven Islands Whisky": {
                 "750ml": 2
             },
-            "Samsara Gin": {
-                "750ml": 6
+            "Samsara Pink Gin": {
+                "180ml": 2,
+                "750ml": 13
             }
         },
         "AS01RC8137": {
-            "Amrut's Maqintosh": {
-                "180ml": 7,
-                "750ml": 40
-            },
             "Amrut Fusion": {
                 "750ml": 3
+            },
+            "Amrut's Maqintosh": {
+                "750ml": 40,
+                "180ml": 7
             }
         },
         "WB23L3399": {
             "Budweiser Magnum": {
-                "Bottle": 300,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 300
             }
         }
     },
@@ -23776,9 +23776,9 @@
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "180ml": 750,
                 "750ml": 50,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 750
             }
         },
         "AS12BC1575": {
@@ -23789,8 +23789,8 @@
         "AS01DD1245": {
             "Royal Stag": {
                 "750ml": 100,
-                "180ml": 800,
-                "375ml": 200
+                "375ml": 200,
+                "180ml": 800
             }
         },
         "AS01KC7088": {
@@ -23804,9 +23804,9 @@
         },
         "AS01TC2295": {
             "Black & White": {
-                "180ml": 15,
                 "375ml": 10,
-                "750ml": 10
+                "750ml": 10,
+                "180ml": 15
             },
             "Royal Challenge American Pride": {
                 "180ml": 5
@@ -23839,24 +23839,27 @@
         },
         "AS11FC1912": {
             "Royal Stag": {
-                "180ml": 400,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 400
             }
         },
         "AS27C7255": {
+            "Breezer Watermelon": {
+                "Stubby": 10
+            },
             "Bacardi Mango Chilli Rum": {
+                "375ml": 10,
                 "180ml": 15,
-                "750ml": 5,
-                "375ml": 10
+                "750ml": 5
             },
             "Black By Bacardi Rum": {
-                "375ml": 5,
-                "750ml": 10
+                "750ml": 10,
+                "375ml": 5
             },
             "Bacardi Limon Rum": {
+                "375ml": 10,
                 "180ml": 20,
-                "750ml": 10,
-                "375ml": 10
+                "750ml": 10
             },
             "Dewar's White Label": {
                 "375ml": 1,
@@ -23867,9 +23870,6 @@
             },
             "Breezer Jamaican": {
                 "Stubby": 50
-            },
-            "Breezer Watermelon": {
-                "Stubby": 10
             },
             "Breezer Cranberry": {
                 "Stubby": 25
@@ -23886,18 +23886,18 @@
             "Breezer Bold Guava Chilli": {
                 "Stubby": 15
             },
-            "Teeling Whiskey": {
-                "Full": 2
-            },
             "Bombay Sapphire Gin": {
                 "750ml": 5
+            },
+            "Grey Goose": {
+                "Quarter": 1,
+                "Full": 2
             },
             "Aberfeldy 12 Yrs": {
                 "Full": 1
             },
-            "Grey Goose": {
-                "Full": 2,
-                "Quarter": 1
+            "Teeling Whiskey": {
+                "Full": 2
             }
         },
         "AS11FC1918": {
@@ -23922,35 +23922,22 @@
                 "750ml": 25
             },
             "McDowell's Double Oak Barrel": {
-                "180ml": 150,
+                "375ml": 135,
                 "750ml": 15,
-                "375ml": 135
+                "180ml": 150
             }
         },
         "AS03CC8888": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Imperial Blue": {
-                "750ml": 50,
+                "180ml": 450,
                 "375ml": 50,
-                "180ml": 450
+                "750ml": 50
             }
         },
         "AS01HC6631": {
-            "_TelegramSupplier": "Pernod Ricard India Private Limited",
-            "Absolut Raspberry": {
-                "750ml": 2,
-                "Quarter": 3
-            },
-            "Ballantines": {
-                "750ml": 5,
-                "Quarter": 2
-            },
             "Absolut": {
                 "Quarter": 3,
                 "750ml": 12
-            },
-            "Jacob's Creek Shiraz Cabernet": {
-                "750ml": 2
             },
             "Jameson Black Barrel": {
                 "Full": 3
@@ -23958,8 +23945,37 @@
             "100 Pipers": {
                 "750ml": 3
             },
+            "Jacob's Creek Shiraz Cabernet": {
+                "750ml": 2
+            },
+            "Absolut Raspberry": {
+                "Quarter": 3,
+                "750ml": 2
+            },
+            "Ballantines": {
+                "Quarter": 2,
+                "750ml": 5
+            },
             "Jameson": {
                 "750ml": 40
+            }
+        },
+        "NL01L6388": {
+            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
+            "Tuborg": {
+                "Bottle": 1200
+            }
+        },
+        "AS01GC4371": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Rum": {
+                "180ml": 600,
+                "750ml": 300
+            },
+            "McDowell's Luxury": {
+                "750ml": 100,
+                "180ml": 300,
+                "375ml": 150
             }
         }
     }
