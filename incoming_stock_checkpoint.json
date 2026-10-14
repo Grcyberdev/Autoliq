@@ -23189,11 +23189,11 @@
             }
         },
         "AS03BC8122": {
-            "Masti Special": {
-                "CA": 400
-            },
             "Masti": {
                 "CS": 300
+            },
+            "Masti Special": {
+                "CA": 400
             }
         },
         "AS01RC2620": {
@@ -23760,6 +23760,19 @@
         "NL01Q6339": {
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti No. 1": {
+                "CS": 50,
+                "CA": 150
+            },
+            "Masti Special": {
+                "CA": 250
+            },
+            "Masti": {
+                "CA": 250
             }
         }
     }
