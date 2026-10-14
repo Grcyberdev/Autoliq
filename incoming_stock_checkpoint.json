@@ -23776,9 +23776,15 @@
         },
         "AS01GC6796": {
             "AC Black Luxury": {
+                "180ml": 750,
                 "750ml": 50,
-                "375ml": 100,
-                "180ml": 750
+                "375ml": 100
+            }
+        },
+        "AS12BC1575": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
