@@ -23254,19 +23254,19 @@
         "AS11DC8689": {
             "Ballantines": {
                 "Quarter": 5,
-                "375ml": 10,
-                "750ml": 10
-            },
-            "Royal Salute 21 Yrs": {
-                "Full": 1
+                "750ml": 10,
+                "375ml": 10
             },
             "Jameson": {
-                "750ml": 31,
-                "Quarter": 10
+                "Quarter": 10,
+                "750ml": 31
             },
             "Chivas Regal 12 Yrs": {
                 "750ml": 5,
                 "Quarter": 1
+            },
+            "Royal Salute 21 Yrs": {
+                "Full": 1
             },
             "Absolut Raspberry": {
                 "750ml": 5,
@@ -23278,8 +23278,8 @@
         },
         "NL01AF7489": {
             "Oaksmith International": {
-                "750ml": 100,
                 "375ml": 200,
+                "750ml": 100,
                 "180ml": 200
             }
         },
@@ -23310,13 +23310,14 @@
         "NL01G6484": {
             "Royal Stag": {
                 "180ml": 650,
-                "375ml": 250,
-                "750ml": 200
+                "750ml": 200,
+                "375ml": 250
             }
         },
         "MH43BP7397": {
-            "Samsara Gin": {
-                "750ml": 6
+            "Samsara Pink Gin": {
+                "180ml": 2,
+                "750ml": 13
             },
             "Monarch Brandy": {
                 "750ml": 2
@@ -23324,24 +23325,23 @@
             "Seven Islands Whisky": {
                 "750ml": 2
             },
-            "Samsara Pink Gin": {
-                "180ml": 2,
-                "750ml": 13
+            "Samsara Gin": {
+                "750ml": 6
             }
         },
         "AS01RC8137": {
+            "Amrut's Maqintosh": {
+                "180ml": 7,
+                "750ml": 40
+            },
             "Amrut Fusion": {
                 "750ml": 3
-            },
-            "Amrut's Maqintosh": {
-                "750ml": 40,
-                "180ml": 7
             }
         },
         "WB23L3399": {
             "Budweiser Magnum": {
-                "Can": 200,
-                "Bottle": 300
+                "Bottle": 300,
+                "Can": 200
             }
         }
     },
@@ -23776,9 +23776,9 @@
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "375ml": 100,
+                "180ml": 750,
                 "750ml": 50,
-                "180ml": 750
+                "375ml": 100
             }
         },
         "AS12BC1575": {
@@ -23803,12 +23803,15 @@
             }
         },
         "AS01TC2295": {
-            "JW Red Label": {
-                "750ml": 10,
-                "375ml": 10
-            },
             "JW Black Label": {
                 "750ml": 4
+            },
+            "JW Red Label": {
+                "375ml": 10,
+                "750ml": 10
+            },
+            "Singleton 12 Yrs": {
+                "Full": 2
             },
             "Smirnoff": {
                 "375ml": 5,
@@ -23818,23 +23821,20 @@
                 "750ml": 10,
                 "180ml": 25
             },
-            "Tanqueray Gin": {
-                "750ml": 2
+            "Smirnoff Mirchi Mango": {
+                "750ml": 10,
+                "180ml": 20
+            },
+            "Black & White": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 15
             },
             "Royal Challenge American Pride": {
                 "180ml": 5
             },
-            "Black & White": {
-                "180ml": 15,
-                "750ml": 10,
-                "375ml": 10
-            },
-            "Singleton 12 Yrs": {
-                "Full": 2
-            },
-            "Smirnoff Mirchi Mango": {
-                "180ml": 20,
-                "750ml": 10
+            "Tanqueray Gin": {
+                "750ml": 2
             }
         },
         "AS11FC1912": {
@@ -23844,47 +23844,50 @@
             }
         },
         "AS27C7255": {
-            "Black By Bacardi Rum": {
-                "750ml": 10,
-                "375ml": 5
-            },
-            "Dewar's White Label": {
-                "375ml": 1,
-                "750ml": 3
-            },
-            "Bacardi Limon Rum": {
-                "180ml": 20,
-                "750ml": 10,
-                "375ml": 10
-            },
-            "Bacardi White Rum": {
-                "750ml": 5
-            },
-            "Bacardi Mango Chilli Rum": {
-                "750ml": 5,
-                "375ml": 10,
-                "180ml": 15
-            },
-            "Breezer Bold Guava Chilli": {
-                "Stubby": 15
-            },
-            "Breezer Bold Lime & Lager": {
-                "Stubby": 10
-            },
-            "Breezer Blackberry": {
-                "Stubby": 25
-            },
-            "Breezer Blueberry": {
-                "Stubby": 10
-            },
             "Breezer Cranberry": {
                 "Stubby": 25
             },
             "Breezer Watermelon": {
                 "Stubby": 10
             },
+            "Breezer Blackberry": {
+                "Stubby": 25
+            },
+            "Breezer Bold Lime & Lager": {
+                "Stubby": 10
+            },
+            "Breezer Bold Guava Chilli": {
+                "Stubby": 15
+            },
+            "Bacardi Limon Rum": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 20
+            },
+            "Black By Bacardi Rum": {
+                "375ml": 5,
+                "750ml": 10
+            },
+            "Bacardi Mango Chilli Rum": {
+                "180ml": 15,
+                "375ml": 10,
+                "750ml": 5
+            },
+            "Bacardi White Rum": {
+                "750ml": 5
+            },
+            "Dewar's White Label": {
+                "375ml": 1,
+                "750ml": 3
+            },
+            "Breezer Blueberry": {
+                "Stubby": 10
+            },
             "Breezer Jamaican": {
                 "Stubby": 50
+            },
+            "Aberfeldy 12 Yrs": {
+                "Full": 1
             },
             "Bombay Sapphire Gin": {
                 "750ml": 5
@@ -23893,26 +23896,36 @@
                 "Full": 2
             },
             "Grey Goose": {
-                "Quarter": 1,
-                "Full": 2
-            },
-            "Aberfeldy 12 Yrs": {
-                "Full": 1
+                "Full": 2,
+                "Quarter": 1
             }
         },
         "AS11FC1918": {
-            "Budweiser Magnum": {
-                "Bottle": 250
+            "Budweiser": {
+                "Can": 200,
+                "Bottle": 150
             },
             "Hoegaarden Witbier": {
                 "Pint": 30
             },
-            "Budweiser": {
-                "Bottle": 150,
-                "Can": 200
+            "Budweiser Magnum": {
+                "Bottle": 250
             },
             "Corona": {
                 "Pint": 70
+            }
+        },
+        "AS01HC1683": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "180ml": 550,
+                "375ml": 225,
+                "750ml": 25
+            },
+            "McDowell's Double Oak Barrel": {
+                "180ml": 150,
+                "375ml": 135,
+                "750ml": 15
             }
         }
     }
