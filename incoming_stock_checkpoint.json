@@ -23995,9 +23995,9 @@
         },
         "AS01JC1071": {
             "Imperial Black": {
-                "375ml": 50,
                 "750ml": 25,
-                "180ml": 325
+                "180ml": 325,
+                "375ml": 50
             },
             "Imperial Blue": {
                 "180ml": 125,
@@ -24006,16 +24006,41 @@
         },
         "NL01AF7489": {
             "After Dark": {
-                "750ml": 40,
-                "180ml": 260
+                "180ml": 260,
+                "750ml": 40
             }
         },
         "RJ11GB8608": {
-            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
             "AC Black Luxury": {
-                "750ml": 75,
                 "180ml": 750,
+                "750ml": 75,
                 "375ml": 75
+            }
+        },
+        "AS01MC3480": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Blender's Pride Reserve": {
+                "375ml": 20,
+                "750ml": 20,
+                "180ml": 30
+            },
+            "Royal Stag": {
+                "375ml": 100,
+                "750ml": 50,
+                "180ml": 200
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 30,
+                "750ml": 15,
+                "180ml": 30
+            },
+            "Oaken Glow": {
+                "750ml": 10,
+                "375ml": 15,
+                "180ml": 25
+            },
+            "Blender's Pride Four Elements": {
+                "180ml": 5
             }
         }
     }
