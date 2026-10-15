@@ -24159,13 +24159,11 @@
             }
         },
         "BR01GE1867": {
-            "_TelegramSupplier": "Carlsberg India Private Limited, Tie Up Unit: CMJ Breweries Pvt. Ltd.",
             "Tuborg": {
                 "Bottle": 1200
             }
         },
         "AS02DC0229": {
-            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "Signature Rare": {
                 "375ml": 5,
                 "750ml": 5,
@@ -24191,7 +24189,6 @@
             }
         },
         "AS03BC8344": {
-            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 400,
                 "CS": 300
