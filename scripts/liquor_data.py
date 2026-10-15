@@ -459,6 +459,8 @@ LIQUOR_NAME_MAPPING = {
     "MOET & CHANDON CHAMPAGNE IMPERIAL BRUT": "Moet Chandon Imperial Brut",
     "RIUNITE LAMBRUSCO EMILIA SWEET RED WINE": "Riunite Lambrusco Emilia Red Wine",
     "ROYAL SAINT EMILION RED BORDEAUX WINE": "Royal Saint Emilion Red Wine",
+    "CLASSIC REINA CHARDONNAY": "Classic Reina Chardonnay",
+    "CLASSIC REINA MERLOT": "Classic Reina Merlot",
     
 
 
