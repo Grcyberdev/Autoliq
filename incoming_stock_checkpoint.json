@@ -23309,39 +23309,39 @@
         },
         "NL01G6484": {
             "Royal Stag": {
-                "750ml": 200,
                 "180ml": 650,
-                "375ml": 250
+                "375ml": 250,
+                "750ml": 200
             }
         },
         "MH43BP7397": {
             "Samsara Gin": {
                 "750ml": 6
             },
-            "Samsara Pink Gin": {
-                "750ml": 13,
-                "180ml": 2
+            "Monarch Brandy": {
+                "750ml": 2
             },
             "Seven Islands Whisky": {
                 "750ml": 2
             },
-            "Monarch Brandy": {
-                "750ml": 2
+            "Samsara Pink Gin": {
+                "180ml": 2,
+                "750ml": 13
             }
         },
         "AS01RC8137": {
+            "Amrut Fusion": {
+                "750ml": 3
+            },
             "Amrut's Maqintosh": {
                 "750ml": 40,
                 "180ml": 7
-            },
-            "Amrut Fusion": {
-                "750ml": 3
             }
         },
         "WB23L3399": {
             "Budweiser Magnum": {
-                "Bottle": 300,
-                "Can": 200
+                "Can": 200,
+                "Bottle": 300
             }
         }
     },
@@ -23995,8 +23995,8 @@
         },
         "AS01JC1071": {
             "Imperial Black": {
-                "750ml": 25,
                 "180ml": 325,
+                "750ml": 25,
                 "375ml": 50
             },
             "Imperial Blue": {
@@ -24012,13 +24012,17 @@
         },
         "RJ11GB8608": {
             "AC Black Luxury": {
+                "375ml": 75,
                 "180ml": 750,
-                "750ml": 75,
-                "375ml": 75
+                "750ml": 75
             }
         },
         "AS01MC3480": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Blender's Pride Exclusive": {
+                "750ml": 15,
+                "180ml": 30,
+                "375ml": 30
+            },
             "Blender's Pride Reserve": {
                 "375ml": 20,
                 "750ml": 20,
@@ -24026,21 +24030,66 @@
             },
             "Royal Stag": {
                 "375ml": 100,
-                "750ml": 50,
-                "180ml": 200
-            },
-            "Blender's Pride Exclusive": {
-                "375ml": 30,
-                "750ml": 15,
-                "180ml": 30
+                "180ml": 200,
+                "750ml": 50
             },
             "Oaken Glow": {
                 "750ml": 10,
-                "375ml": 15,
-                "180ml": 25
+                "180ml": 25,
+                "375ml": 15
             },
             "Blender's Pride Four Elements": {
                 "180ml": 5
+            }
+        },
+        "AS01VC5877": {
+            "_TelegramSupplier": "Klassic Business Advisory Pvt. Ltd.",
+            "The Glenwalk Whisky": {
+                "JQ": 25
+            },
+            "Bistro Vodka": {
+                "Full": 1
+            },
+            "Kinross Pink Gin": {
+                "Full": 1
+            },
+            "Peach Soju": {
+                "SA": 10
+            },
+            "Blueberry Soju": {
+                "SA": 5
+            },
+            "Original Soju": {
+                "SA": 5
+            },
+            "CLASSIC REINA CHARDONNAY": {
+                "750ml": 1
+            },
+            "CLASSIC REINA MERLOT": {
+                "750ml": 2
+            }
+        },
+        "AS01MC3440": {
+            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse",
+            "Oaksmith International": {
+                "375ml": 200,
+                "750ml": 105,
+                "180ml": 100
+            },
+            "Teachers 50": {
+                "180ml": 2,
+                "375ml": 2,
+                "750ml": 6
+            },
+            "Teachers Highland Cream": {
+                "750ml": 10,
+                "375ml": 5,
+                "180ml": 5
+            },
+            "Oaksmith Gold": {
+                "750ml": 25,
+                "180ml": 10,
+                "375ml": 30
             }
         }
     }
