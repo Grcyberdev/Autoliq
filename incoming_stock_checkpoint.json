@@ -24211,58 +24211,58 @@
         },
         "NL01AF5037": {
             "Royal Stag": {
-                "750ml": 50,
+                "180ml": 400,
                 "375ml": 100,
-                "180ml": 400
+                "750ml": 50
             }
         },
         "AS02CC9561": {
-            "Officer's Choice": {
-                "750ml": 75
+            "Sterling Reserve B7 Blended": {
+                "375ml": 20,
+                "750ml": 20
             },
             "Officer's Choice Blue": {
-                "750ml": 10,
+                "375ml": 15,
                 "180ml": 20,
-                "375ml": 15
+                "750ml": 10
             },
-            "Sterling B7": {
-                "180ml": 15
+            "Officer's Choice pet": {
+                "375ml": 25,
+                "180ml": 150
+            },
+            "Iconiq Hippy": {
+                "180ml": 100
             },
             "Iconiq Vodka": {
                 "375ml": 30,
                 "750ml": 20
             },
-            "Iconiq Hippy": {
-                "180ml": 100
+            "Sterling B7": {
+                "180ml": 15
             },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 20,
-                "750ml": 20
-            },
-            "Officer's Choice pet": {
-                "180ml": 150,
-                "375ml": 25
+            "Officer's Choice": {
+                "750ml": 75
             }
         },
         "AS05AC5268": {
-            "Magic Moments Lemon": {
-                "375ml": 25,
-                "180ml": 15,
-                "750ml": 10
-            },
-            "After Dark": {
-                "180ml": 65,
-                "375ml": 40,
-                "750ml": 20
-            },
             "Magic Moments": {
-                "750ml": 15,
                 "180ml": 70,
-                "375ml": 15
+                "375ml": 15,
+                "750ml": 15
             },
             "Magic Moments Green Apple": {
-                "375ml": 5,
-                "180ml": 20
+                "180ml": 20,
+                "375ml": 5
+            },
+            "After Dark": {
+                "375ml": 40,
+                "750ml": 20,
+                "180ml": 65
+            },
+            "Magic Moments Lemon": {
+                "180ml": 15,
+                "375ml": 25,
+                "750ml": 10
             }
         },
         "AS01EC6249": {
@@ -24284,11 +24284,16 @@
             }
         },
         "AS01UC8610": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Blue": {
                 "180ml": 500,
                 "750ml": 25,
                 "375ml": 25
+            }
+        },
+        "NL01N6289": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
             }
         }
     }
