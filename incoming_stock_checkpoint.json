@@ -23189,11 +23189,11 @@
             }
         },
         "AS03BC8122": {
-            "Masti": {
-                "CS": 300
-            },
             "Masti Special": {
                 "CA": 400
+            },
+            "Masti": {
+                "CS": 300
             }
         },
         "AS01RC2620": {
@@ -23303,8 +23303,8 @@
                 "CA": 130
             },
             "Rhino Limon": {
-                "CA": 75,
-                "CS": 75
+                "CS": 75,
+                "CA": 75
             }
         },
         "NL01G6484": {
@@ -23763,12 +23763,12 @@
             }
         },
         "AS03BC8122": {
-            "Masti Special": {
-                "CA": 250
-            },
             "Masti No. 1": {
                 "CS": 50,
                 "CA": 150
+            },
+            "Masti Special": {
+                "CA": 250
             },
             "Masti": {
                 "CA": 250
@@ -24192,6 +24192,17 @@
             "Masti": {
                 "CA": 400,
                 "CS": 300
+            }
+        }
+    },
+    "16-Oct-2026": {
+        "AS03BC5273": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino Limon": {
+                "CA": 50
+            },
+            "Rhino No 1": {
+                "CA": 230
             }
         }
     }
