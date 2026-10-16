@@ -24217,7 +24217,6 @@
             }
         },
         "AS02CC9561": {
-            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
             "Officer's Choice": {
                 "750ml": 75
             },
@@ -24246,7 +24245,6 @@
             }
         },
         "AS05AC5268": {
-            "_TelegramSupplier": "Radico Khaitan Limited Tieup With Sifaruh Group Of Industries",
             "Magic Moments Lemon": {
                 "375ml": 25,
                 "180ml": 15,
@@ -24268,11 +24266,10 @@
             }
         },
         "AS01EC6249": {
-            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
             "McDowell's Luxury": {
                 "750ml": 75,
-                "375ml": 125,
-                "180ml": 250
+                "180ml": 250,
+                "375ml": 125
             },
             "McDowell's Double Oak Barrel": {
                 "750ml": 20,
@@ -24281,10 +24278,17 @@
             }
         },
         "NL01L6386": {
-            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Can": 1000,
                 "Bottle": 400
+            }
+        },
+        "AS01UC8610": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "180ml": 500,
+                "750ml": 25,
+                "375ml": 25
             }
         }
     }
