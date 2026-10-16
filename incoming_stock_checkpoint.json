@@ -23189,11 +23189,11 @@
             }
         },
         "AS03BC8122": {
-            "Masti Special": {
-                "CA": 400
-            },
             "Masti": {
                 "CS": 300
+            },
+            "Masti Special": {
+                "CA": 400
             }
         },
         "AS01RC2620": {
@@ -23299,12 +23299,12 @@
             }
         },
         "AS03AC8906": {
-            "Rhino No 1": {
-                "CA": 130
-            },
             "Rhino Limon": {
                 "CS": 75,
                 "CA": 75
+            },
+            "Rhino No 1": {
+                "CA": 130
             }
         },
         "NL01G6484": {
@@ -23767,10 +23767,10 @@
                 "CS": 50,
                 "CA": 150
             },
-            "Masti Special": {
+            "Masti": {
                 "CA": 250
             },
-            "Masti": {
+            "Masti Special": {
                 "CA": 250
             }
         },
@@ -24190,8 +24190,8 @@
         },
         "AS03BC8344": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         }
     },
@@ -24293,6 +24293,13 @@
         "NL01N6289": {
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "AS03BC8122": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti Special": {
+                "CS": 200,
+                "CA": 500
             }
         }
     }
