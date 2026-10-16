@@ -24210,11 +24210,81 @@
             }
         },
         "NL01AF5037": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
                 "750ml": 50,
-                "180ml": 400,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 400
+            }
+        },
+        "AS02CC9561": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Officer's Choice Blue": {
+                "750ml": 10,
+                "180ml": 20,
+                "375ml": 15
+            },
+            "Sterling B7": {
+                "180ml": 15
+            },
+            "Iconiq Vodka": {
+                "375ml": 30,
+                "750ml": 20
+            },
+            "Iconiq Hippy": {
+                "180ml": 100
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 20,
+                "750ml": 20
+            },
+            "Officer's Choice pet": {
+                "180ml": 150,
+                "375ml": 25
+            }
+        },
+        "AS05AC5268": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tieup With Sifaruh Group Of Industries",
+            "Magic Moments Lemon": {
+                "375ml": 25,
+                "180ml": 15,
+                "750ml": 10
+            },
+            "After Dark": {
+                "180ml": 65,
+                "375ml": 40,
+                "750ml": 20
+            },
+            "Magic Moments": {
+                "750ml": 15,
+                "180ml": 70,
+                "375ml": 15
+            },
+            "Magic Moments Green Apple": {
+                "375ml": 5,
+                "180ml": 20
+            }
+        },
+        "AS01EC6249": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "750ml": 75,
+                "375ml": 125,
+                "180ml": 250
+            },
+            "McDowell's Double Oak Barrel": {
+                "750ml": 20,
+                "375ml": 40,
+                "180ml": 40
+            }
+        },
+        "NL01L6386": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1000,
+                "Bottle": 400
             }
         }
     }
