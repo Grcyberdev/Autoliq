@@ -24307,5 +24307,30 @@
                 "CS": 300
             }
         }
+    },
+    "17-Oct-2026": {
+        "AS05AC4345": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Iconiq Vodka": {
+                "375ml": 60,
+                "750ml": 40
+            },
+            "Sterling B7": {
+                "180ml": 20
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Iconiq Hippy": {
+                "180ml": 300
+            },
+            "Officer's Choice pet": {
+                "375ml": 50
+            },
+            "Officer's Choice Blue": {
+                "180ml": 15
+            }
+        }
     }
 }
