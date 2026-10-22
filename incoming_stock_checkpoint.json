@@ -24387,11 +24387,23 @@
             }
         },
         "AS01DD3025": {
-            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
                 "180ml": 700,
                 "375ml": 300,
                 "750ml": 100
+            }
+        },
+        "AS01JC1071": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Imperial Black": {
+                "180ml": 350,
+                "750ml": 100,
+                "375ml": 50
+            },
+            "Mansion House": {
+                "375ml": 20,
+                "750ml": 15,
+                "180ml": 15
             }
         }
     }
