@@ -24395,9 +24395,9 @@
         },
         "AS01JC1071": {
             "Mansion House": {
-                "375ml": 20,
+                "750ml": 15,
                 "180ml": 15,
-                "750ml": 15
+                "375ml": 20
             },
             "Imperial Black": {
                 "375ml": 50,
@@ -24442,6 +24442,21 @@
             "Bombay Sapphire Gin": {
                 "750ml": 5
             },
+            "Bacardi White Rum": {
+                "375ml": 2,
+                "180ml": 1,
+                "750ml": 2
+            },
+            "William Lawson": {
+                "180ml": 2,
+                "750ml": 5
+            },
+            "Breezer Jamaican": {
+                "Stubby": 25
+            },
+            "Breezer Watermelon": {
+                "Stubby": 10
+            },
             "Breezer Cranberry": {
                 "Stubby": 28
             },
@@ -24457,30 +24472,24 @@
             "Breezer Bold Grapefruit Yuzu": {
                 "Stubby": 10
             },
-            "Bacardi White Rum": {
-                "180ml": 1,
-                "375ml": 2,
-                "750ml": 2
-            },
             "Bacardi Limon Rum": {
+                "180ml": 10,
                 "375ml": 15,
-                "750ml": 5,
-                "180ml": 10
+                "750ml": 5
             },
             "Bacardi Mango Chilli Rum": {
                 "180ml": 5,
                 "375ml": 5,
                 "750ml": 5
+            }
+        },
+        "WB23L4499": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Budweiser Magnum": {
+                "Bottle": 350
             },
-            "William Lawson": {
-                "750ml": 5,
-                "180ml": 2
-            },
-            "Breezer Jamaican": {
-                "Stubby": 25
-            },
-            "Breezer Watermelon": {
-                "Stubby": 10
+            "Budweiser": {
+                "Bottle": 150
             }
         }
     }
