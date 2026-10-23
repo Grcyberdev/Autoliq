@@ -24500,9 +24500,9 @@
                 "180ml": 100
             },
             "Imperial Black": {
-                "750ml": 50,
                 "375ml": 50,
-                "180ml": 150
+                "180ml": 150,
+                "750ml": 50
             }
         },
         "AS01GC6785": {
@@ -24517,7 +24517,9 @@
             }
         },
         "HR38Y0290": {
-            "_TelegramSupplier": "Monika Alcobev Limited",
+            "Bushmills 12 Yrs": {
+                "Full": 2
+            },
             "Bushmills 15 Yrs": {
                 "Full": 1
             },
@@ -24527,23 +24529,45 @@
             "Bushmills Black Bush Whisky": {
                 "Full": 2
             },
-            "Belenkaya Vodka": {
-                "Full": 2
-            },
             "Jinro Chamisul Soju": {
                 "SA": 15
             },
-            "Jinro Grapefruit Wine": {
-                "SA": 10
-            },
-            "Jinro Strawberry Wine": {
-                "SA": 10
+            "Belenkaya Vodka": {
+                "Full": 2
             },
             "Jinro Peach Wine": {
                 "SA": 35
             },
-            "Bushmills 12 Yrs": {
-                "Full": 2
+            "Jinro Strawberry Wine": {
+                "SA": 10
+            },
+            "Jinro Grapefruit Wine": {
+                "SA": 10
+            }
+        },
+        "AS01UC1125": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
+            }
+        },
+        "NL01AE7158": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "375ml": 185,
+                "180ml": 200,
+                "750ml": 150
+            },
+            "100 Pipers": {
+                "750ml": 5,
+                "180ml": 5,
+                "375ml": 5
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 700
             }
         }
     }
