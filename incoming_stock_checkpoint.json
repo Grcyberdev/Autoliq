@@ -24494,16 +24494,27 @@
     },
     "23-Oct-2026": {
         "NL01AL1759": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
-            "Imperial Blue": {
-                "375ml": 150,
-                "180ml": 100,
+            "Imperial Black": {
+                "180ml": 150,
+                "375ml": 50,
                 "750ml": 50
             },
-            "Imperial Black": {
+            "Imperial Blue": {
                 "750ml": 50,
-                "180ml": 150,
-                "375ml": 50
+                "375ml": 150,
+                "180ml": 100
+            }
+        },
+        "AS01GC6785": {
+            "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
+            "White Magic Orange Gin": {
+                "750ml": 5,
+                "180ml": 105,
+                "375ml": 10
+            },
+            "Vinho Porto Port Wine": {
+                "375ml": 10,
+                "750ml": 20
             }
         }
     }
