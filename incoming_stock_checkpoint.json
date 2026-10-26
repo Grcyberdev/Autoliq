@@ -24895,6 +24895,24 @@
                 "CA": 400,
                 "CS": 300
             }
+        },
+        "AS03AC8906": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Lords Whiskey": {
+                "180ml": 50,
+                "750ml": 200,
+                "375ml": 100
+            }
+        },
+        "AS25DC9946": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice": {
+                "750ml": 50
+            },
+            "Officer's Choice pet": {
+                "180ml": 400,
+                "375ml": 50
+            }
         }
     }
 }
