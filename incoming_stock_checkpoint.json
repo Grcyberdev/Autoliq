@@ -23767,10 +23767,10 @@
                 "CS": 50,
                 "CA": 150
             },
-            "Masti": {
+            "Masti Special": {
                 "CA": 250
             },
-            "Masti Special": {
+            "Masti": {
                 "CA": 250
             }
         },
@@ -24303,8 +24303,8 @@
         },
         "AS01LC5925": {
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
             }
         }
     },
@@ -24883,6 +24883,19 @@
         "AS03BC8401": {
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "AS09AC6285": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 1400
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 400,
+                "CS": 300
             }
         }
     }
