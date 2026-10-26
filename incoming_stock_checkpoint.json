@@ -24898,29 +24898,29 @@
         },
         "AS03AC8906": {
             "Lords Whiskey": {
+                "750ml": 200,
                 "180ml": 50,
-                "375ml": 100,
-                "750ml": 200
+                "375ml": 100
             }
         },
         "AS25DC9946": {
+            "Officer's Choice": {
+                "750ml": 50
+            },
             "Officer's Choice pet": {
                 "180ml": 400,
                 "375ml": 50
-            },
-            "Officer's Choice": {
-                "750ml": 50
             }
         },
         "AS01MC1021": {
-            "McDowell's Rum": {
-                "375ml": 150,
-                "180ml": 200
-            },
             "Director's Special Black": {
-                "180ml": 125,
+                "750ml": 25,
                 "375ml": 50,
-                "750ml": 25
+                "180ml": 125
+            },
+            "McDowell's Rum": {
+                "180ml": 200,
+                "375ml": 150
             }
         },
         "AS25FC2026": {
@@ -24970,8 +24970,8 @@
         "AS01LC1317": {
             "Royal Stag Barrel": {
                 "375ml": 30,
-                "180ml": 50,
-                "750ml": 20
+                "750ml": 20,
+                "180ml": 50
             },
             "Royal Stag": {
                 "750ml": 50,
@@ -24993,13 +24993,13 @@
             }
         },
         "AS01NC1686": {
-            "Imperial Black": {
+            "Imperial Blue": {
+                "375ml": 125,
+                "750ml": 25,
                 "180ml": 200
             },
-            "Imperial Blue": {
-                "180ml": 200,
-                "750ml": 25,
-                "375ml": 125
+            "Imperial Black": {
+                "180ml": 200
             }
         },
         "NL01AE7157": {
@@ -25018,32 +25018,16 @@
             }
         },
         "AS24AC3190": {
+            "Blue Lagoon Orange Gin": {
+                "375ml": 15,
+                "180ml": 60
+            },
             "Imperial Black": {
                 "180ml": 400,
                 "375ml": 75
-            },
-            "Blue Lagoon Orange Gin": {
-                "180ml": 60,
-                "375ml": 15
             }
         },
         "AS27C7255": {
-            "_TelegramSupplier": "Bacardi India Pvt. Ltd.",
-            "Dewar's White Label": {
-                "375ml": 1,
-                "750ml": 2
-            },
-            "Breezer Cranberry": {
-                "Stubby": 29
-            },
-            "Breezer Jamaican": {
-                "Stubby": 40
-            },
-            "Bacardi Limon Rum": {
-                "180ml": 25,
-                "375ml": 5,
-                "750ml": 10
-            },
             "Breezer Blackberry": {
                 "Stubby": 20
             },
@@ -25051,6 +25035,11 @@
                 "375ml": 5,
                 "750ml": 5,
                 "180ml": 5
+            },
+            "Bacardi Limon Rum": {
+                "375ml": 5,
+                "750ml": 10,
+                "180ml": 25
             },
             "Black By Bacardi Rum": {
                 "180ml": 15,
@@ -25061,12 +25050,28 @@
                 "180ml": 10,
                 "375ml": 5
             },
+            "Dewar's White Label": {
+                "375ml": 1,
+                "750ml": 2
+            },
+            "Breezer Jamaican": {
+                "Stubby": 40
+            },
+            "Breezer Cranberry": {
+                "Stubby": 29
+            },
             "Dewar's Portuguese Smooth": {
                 "Full": 3
             }
         },
         "AS01MC8629": {
-            "_TelegramSupplier": "Pernod Ricard India Private Limited",
+            "Absolut": {
+                "Quarter": 3,
+                "750ml": 5
+            },
+            "Jameson Black Barrel": {
+                "Full": 3
+            },
             "Glenlivet 12 Yrs": {
                 "Full": 2
             },
@@ -25076,13 +25081,27 @@
             },
             "Ballantines": {
                 "750ml": 2
+            }
+        },
+        "AS01TC4767": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's No 1 Old": {
+                "375ml": 100,
+                "180ml": 150,
+                "750ml": 50
             },
-            "Absolut": {
-                "750ml": 5,
-                "Quarter": 3
+            "Signature": {
+                "375ml": 20,
+                "750ml": 15,
+                "180ml": 15
             },
-            "Jameson Black Barrel": {
-                "Full": 3
+            "Royal Challenge": {
+                "180ml": 70,
+                "375ml": 60,
+                "750ml": 20
+            },
+            "McDowell's Rum": {
+                "750ml": 50
             }
         }
     }
