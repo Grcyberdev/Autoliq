@@ -25147,19 +25147,29 @@
             }
         },
         "AS25EC0764": {
-            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Mansion House Brandy": {
+                "180ml": 30,
                 "750ml": 35,
-                "375ml": 35,
-                "180ml": 30
-            },
-            "Imperial Black": {
-                "180ml": 250
+                "375ml": 35
             },
             "Imperial Blue": {
                 "180ml": 100,
                 "375ml": 75,
                 "750ml": 25
+            },
+            "Imperial Black": {
+                "180ml": 250
+            }
+        },
+        "AS01RC8137": {
+            "_TelegramSupplier": "Modi Distillery IMFL Wholesale Warehouse",
+            "Rockford Reserve": {
+                "375ml": 25,
+                "180ml": 10,
+                "750ml": 35
+            },
+            "THE ROCKFORD IMPERIAL RESERVE PREMIUM BLENDED WHISKY": {
+                "750ml": 5
             }
         }
     }
