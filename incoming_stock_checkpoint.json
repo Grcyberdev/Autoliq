@@ -25106,38 +25106,45 @@
     },
     "27-Oct-2026": {
         "AS01TC6107": {
-            "Glenfiddich Solera 15": {
-                "JQ": 5
+            "Skyy Vodka": {
+                "750ml": 1
             },
             "Glenfiddich 18": {
                 "JQ": 2
             },
-            "Hendrick's Gin": {
-                "Full": 1
-            },
-            "Skyy Vodka": {
+            "Wild Turkey Bourbon": {
                 "750ml": 1
-            },
-            "Glenfiddich Original 12": {
-                "JQ": 11
-            },
-            "Glen Grant": {
-                "Full": 1
-            },
-            "Grant's Triple Wood": {
-                "750ml": 8
             },
             "Monkey Shoulder": {
                 "Full": 10
             },
-            "Wild Turkey Bourbon": {
-                "750ml": 1
+            "Grant's Triple Wood": {
+                "750ml": 8
+            },
+            "Hendrick's Gin": {
+                "Full": 1
+            },
+            "Glen Grant": {
+                "Full": 1
+            },
+            "Glenfiddich Original 12": {
+                "JQ": 11
+            },
+            "Glenfiddich Solera 15": {
+                "JQ": 5
             }
         },
         "WB73E0881": {
-            "_TelegramSupplier": "Rhino Agencies Ltd.",
             "He Man 9000": {
                 "Bottle": 1400
+            }
+        },
+        "ML05X4921": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "375ml": 75,
+                "180ml": 450,
+                "750ml": 25
             }
         }
     }
