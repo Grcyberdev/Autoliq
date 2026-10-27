@@ -25141,65 +25141,65 @@
         },
         "ML05X4921": {
             "McDowell's Luxury": {
-                "750ml": 25,
+                "375ml": 75,
                 "180ml": 450,
-                "375ml": 75
+                "750ml": 25
             }
         },
         "AS25EC0764": {
             "Imperial Blue": {
                 "750ml": 25,
-                "180ml": 100,
-                "375ml": 75
+                "375ml": 75,
+                "180ml": 100
+            },
+            "Mansion House Brandy": {
+                "180ml": 30,
+                "375ml": 35,
+                "750ml": 35
             },
             "Imperial Black": {
                 "180ml": 250
-            },
-            "Mansion House Brandy": {
-                "750ml": 35,
-                "180ml": 30,
-                "375ml": 35
             }
         },
         "AS01RC8137": {
             "Rockford Reserve": {
                 "750ml": 35,
-                "180ml": 10,
-                "375ml": 25
+                "375ml": 25,
+                "180ml": 10
             },
             "THE ROCKFORD IMPERIAL RESERVE PREMIUM BLENDED WHISKY": {
                 "750ml": 5
             }
         },
         "AS01PC9781": {
+            "Royal Stag Double Dark": {
+                "180ml": 10
+            },
+            "100 Pipers": {
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Blender's Pride Reserve": {
+                "750ml": 20,
+                "375ml": 20,
+                "180ml": 35
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 75,
+                "750ml": 25,
+                "180ml": 50
+            },
+            "Royal Stag": {
+                "180ml": 100,
+                "375ml": 80,
+                "750ml": 60
+            },
             "Royal Stag Barrel": {
                 "180ml": 25,
                 "750ml": 25
             },
-            "Blender's Pride Exclusive": {
-                "750ml": 25,
-                "180ml": 50,
-                "375ml": 75
-            },
-            "Royal Stag Double Dark": {
-                "180ml": 10
-            },
             "Oaken Glow": {
                 "375ml": 15
-            },
-            "Blender's Pride Reserve": {
-                "180ml": 35,
-                "750ml": 20,
-                "375ml": 20
-            },
-            "Royal Stag": {
-                "750ml": 60,
-                "375ml": 80,
-                "180ml": 100
-            },
-            "100 Pipers": {
-                "750ml": 5,
-                "375ml": 5
             }
         },
         "AS01GC5998": {
@@ -25223,6 +25223,19 @@
         "BR01GE1895": {
             "Tuborg": {
                 "Bottle": 1200
+            }
+        },
+        "AS01UC8611": {
+            "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Fastflow Dealer Pvt. Ltd.",
+            "All Seasons Sir-E-Taj": {
+                "375ml": 15,
+                "180ml": 20,
+                "750ml": 15
+            },
+            "All Seasons Connoisseur": {
+                "750ml": 50,
+                "375ml": 150,
+                "180ml": 300
             }
         }
     }
