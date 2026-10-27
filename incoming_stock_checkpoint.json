@@ -25147,18 +25147,18 @@
             }
         },
         "AS25EC0764": {
-            "Imperial Blue": {
-                "750ml": 25,
-                "375ml": 75,
-                "180ml": 100
-            },
             "Mansion House Brandy": {
-                "180ml": 30,
                 "375ml": 35,
+                "180ml": 30,
                 "750ml": 35
             },
             "Imperial Black": {
                 "180ml": 250
+            },
+            "Imperial Blue": {
+                "180ml": 100,
+                "375ml": 75,
+                "750ml": 25
             }
         },
         "AS01RC8137": {
@@ -25226,7 +25226,6 @@
             }
         },
         "AS01UC8611": {
-            "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Fastflow Dealer Pvt. Ltd.",
             "All Seasons Sir-E-Taj": {
                 "375ml": 15,
                 "180ml": 20,
@@ -25236,6 +25235,23 @@
                 "750ml": 50,
                 "375ml": 150,
                 "180ml": 300
+            }
+        },
+        "AS02BC8221": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Ultra": {
+                "Bottle": 100,
+                "Can": 50
+            },
+            "UB BULLET 10000 MEGA STRONG BEER": {
+                "Can": 180
+            },
+            "Kingfisher Ultra Max": {
+                "Can": 50,
+                "Bottle": 150
+            },
+            "Kingfisher Original Strong": {
+                "Bottle": 150
             }
         }
     }
