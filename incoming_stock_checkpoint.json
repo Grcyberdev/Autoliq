@@ -25106,6 +25106,12 @@
     },
     "27-Oct-2026": {
         "AS01TC6107": {
+            "Glenfiddich Solera 15": {
+                "JQ": 5
+            },
+            "Glenfiddich 18": {
+                "JQ": 2
+            },
             "Hendrick's Gin": {
                 "Full": 1
             },
@@ -25115,23 +25121,23 @@
             "Glenfiddich Original 12": {
                 "JQ": 11
             },
-            "Glenfiddich Solera 15": {
-                "JQ": 5
-            },
             "Glen Grant": {
                 "Full": 1
+            },
+            "Grant's Triple Wood": {
+                "750ml": 8
             },
             "Monkey Shoulder": {
                 "Full": 10
             },
             "Wild Turkey Bourbon": {
                 "750ml": 1
-            },
-            "Glenfiddich 18": {
-                "JQ": 2
-            },
-            "Grant's Triple Wood": {
-                "750ml": 8
+            }
+        },
+        "WB73E0881": {
+            "_TelegramSupplier": "Rhino Agencies Ltd.",
+            "He Man 9000": {
+                "Bottle": 1400
             }
         }
     }
