@@ -23692,6 +23692,11 @@
             }
         },
         "NL01AF5037": {
+            "Old Monk Vatted": {
+                "180ml": 350,
+                "375ml": 200,
+                "750ml": 180
+            },
             "Old Monk The Legend": {
                 "750ml": 5
             },
@@ -23703,11 +23708,6 @@
             "Old Monk Supreme": {
                 "750ml": 5
             },
-            "Old Monk Vatted": {
-                "375ml": 200,
-                "750ml": 180,
-                "180ml": 350
-            },
             "Old Monk Coffee": {
                 "750ml": 5,
                 "375ml": 15,
@@ -23715,15 +23715,15 @@
             }
         },
         "AS28AC1534": {
-            "Imperial Blue": {
-                "750ml": 25,
-                "180ml": 100,
-                "375ml": 50
-            },
             "Imperial Black": {
-                "750ml": 25,
                 "375ml": 50,
+                "750ml": 25,
                 "180ml": 300
+            },
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 100,
+                "750ml": 25
             }
         },
         "AS01KC7913": {
@@ -23750,9 +23750,9 @@
         },
         "AS25EC7464": {
             "Calenter Premium": {
+                "375ml": 25,
                 "180ml": 200,
-                "750ml": 75,
-                "375ml": 25
+                "750ml": 75
             }
         }
     },
@@ -23776,9 +23776,9 @@
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "180ml": 750,
                 "750ml": 50,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 750
             }
         },
         "AS12BC1575": {
@@ -23788,21 +23788,32 @@
         },
         "AS01DD1245": {
             "Royal Stag": {
-                "180ml": 800,
                 "750ml": 100,
-                "375ml": 200
+                "375ml": 200,
+                "180ml": 800
             }
         },
         "AS01KC7088": {
+            "Imperial Black": {
+                "180ml": 325,
+                "375ml": 25
+            },
             "Imperial Blue": {
                 "180ml": 200
-            },
-            "Imperial Black": {
-                "375ml": 25,
-                "180ml": 325
             }
         },
         "AS01TC2295": {
+            "Black & White": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 15
+            },
+            "Royal Challenge American Pride": {
+                "180ml": 5
+            },
+            "Tanqueray Gin": {
+                "750ml": 2
+            },
             "JW Black Label": {
                 "750ml": 4
             },
@@ -23813,44 +23824,49 @@
             "Singleton 12 Yrs": {
                 "Full": 2
             },
-            "Tanqueray Gin": {
-                "750ml": 2
-            },
-            "Black & White": {
-                "180ml": 15,
-                "750ml": 10,
-                "375ml": 10
-            },
-            "Smirnoff Mirchi Mango": {
-                "180ml": 20,
-                "750ml": 10
+            "Smirnoff": {
+                "375ml": 5,
+                "180ml": 5
             },
             "Smirnoff Minty Jamun Vodka": {
-                "180ml": 25,
-                "750ml": 10
+                "750ml": 10,
+                "180ml": 25
             },
-            "Smirnoff": {
-                "180ml": 5,
-                "375ml": 5
-            },
-            "Royal Challenge American Pride": {
-                "180ml": 5
+            "Smirnoff Mirchi Mango": {
+                "750ml": 10,
+                "180ml": 20
             }
         },
         "AS11FC1912": {
             "Royal Stag": {
-                "180ml": 400,
-                "375ml": 150
+                "375ml": 150,
+                "180ml": 400
             }
         },
         "AS27C7255": {
-            "Bacardi White Rum": {
-                "750ml": 5
+            "Breezer Watermelon": {
+                "Stubby": 10
             },
             "Bacardi Mango Chilli Rum": {
-                "750ml": 5,
                 "375ml": 10,
-                "180ml": 15
+                "180ml": 15,
+                "750ml": 5
+            },
+            "Black By Bacardi Rum": {
+                "750ml": 10,
+                "375ml": 5
+            },
+            "Bacardi Limon Rum": {
+                "375ml": 10,
+                "180ml": 20,
+                "750ml": 10
+            },
+            "Dewar's White Label": {
+                "375ml": 1,
+                "750ml": 3
+            },
+            "Bacardi White Rum": {
+                "750ml": 5
             },
             "Breezer Jamaican": {
                 "Stubby": 50
@@ -23870,34 +23886,18 @@
             "Breezer Bold Guava Chilli": {
                 "Stubby": 15
             },
-            "Bacardi Limon Rum": {
-                "375ml": 10,
-                "750ml": 10,
-                "180ml": 20
+            "Bombay Sapphire Gin": {
+                "750ml": 5
             },
-            "Black By Bacardi Rum": {
-                "375ml": 5,
-                "750ml": 10
-            },
-            "Dewar's White Label": {
-                "375ml": 1,
-                "750ml": 3
-            },
-            "Breezer Watermelon": {
-                "Stubby": 10
+            "Grey Goose": {
+                "Quarter": 1,
+                "Full": 2
             },
             "Aberfeldy 12 Yrs": {
                 "Full": 1
             },
             "Teeling Whiskey": {
                 "Full": 2
-            },
-            "Bombay Sapphire Gin": {
-                "750ml": 5
-            },
-            "Grey Goose": {
-                "Full": 2,
-                "Quarter": 1
             }
         },
         "AS11FC1918": {
@@ -23905,14 +23905,14 @@
                 "Can": 200,
                 "Bottle": 150
             },
-            "Corona": {
-                "Pint": 70
+            "Hoegaarden Witbier": {
+                "Pint": 30
             },
             "Budweiser Magnum": {
                 "Bottle": 250
             },
-            "Hoegaarden Witbier": {
-                "Pint": 30
+            "Corona": {
+                "Pint": 70
             }
         },
         "AS01HC1683": {
@@ -23922,42 +23922,42 @@
                 "750ml": 25
             },
             "McDowell's Double Oak Barrel": {
-                "180ml": 150,
+                "375ml": 135,
                 "750ml": 15,
-                "375ml": 135
+                "180ml": 150
             }
         },
         "AS03CC8888": {
             "Imperial Blue": {
                 "180ml": 450,
-                "750ml": 50,
-                "375ml": 50
+                "375ml": 50,
+                "750ml": 50
             }
         },
         "AS01HC6631": {
-            "Absolut Raspberry": {
-                "Quarter": 3,
-                "750ml": 2
-            },
             "Absolut": {
-                "750ml": 12,
-                "Quarter": 3
+                "Quarter": 3,
+                "750ml": 12
             },
-            "Jacob's Creek Shiraz Cabernet": {
-                "750ml": 2
+            "Jameson Black Barrel": {
+                "Full": 3
             },
             "100 Pipers": {
                 "750ml": 3
             },
-            "Jameson": {
-                "750ml": 40
+            "Jacob's Creek Shiraz Cabernet": {
+                "750ml": 2
+            },
+            "Absolut Raspberry": {
+                "Quarter": 3,
+                "750ml": 2
             },
             "Ballantines": {
                 "Quarter": 2,
                 "750ml": 5
             },
-            "Jameson Black Barrel": {
-                "Full": 3
+            "Jameson": {
+                "750ml": 40
             }
         },
         "NL01L6388": {
@@ -23967,12 +23967,12 @@
         },
         "AS01GC4371": {
             "McDowell's Rum": {
-                "750ml": 300,
-                "180ml": 600
+                "180ml": 600,
+                "750ml": 300
             },
             "McDowell's Luxury": {
-                "180ml": 300,
                 "750ml": 100,
+                "180ml": 300,
                 "375ml": 150
             }
         }
@@ -25106,8 +25106,11 @@
     },
     "27-Oct-2026": {
         "AS01TC6107": {
-            "Skyy Vodka": {
-                "750ml": 1
+            "Hendrick's Gin": {
+                "Full": 1
+            },
+            "Glen Grant": {
+                "Full": 1
             },
             "Glenfiddich 18": {
                 "JQ": 2
@@ -25115,23 +25118,20 @@
             "Wild Turkey Bourbon": {
                 "750ml": 1
             },
-            "Monkey Shoulder": {
-                "Full": 10
+            "Skyy Vodka": {
+                "750ml": 1
             },
             "Grant's Triple Wood": {
                 "750ml": 8
             },
-            "Hendrick's Gin": {
-                "Full": 1
-            },
-            "Glen Grant": {
-                "Full": 1
+            "Glenfiddich Solera 15": {
+                "JQ": 5
             },
             "Glenfiddich Original 12": {
                 "JQ": 11
             },
-            "Glenfiddich Solera 15": {
-                "JQ": 5
+            "Monkey Shoulder": {
+                "Full": 10
             }
         },
         "WB73E0881": {
@@ -25143,6 +25143,22 @@
             "McDowell's Luxury": {
                 "375ml": 75,
                 "180ml": 450,
+                "750ml": 25
+            }
+        },
+        "AS25EC0764": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Mansion House Brandy": {
+                "750ml": 35,
+                "375ml": 35,
+                "180ml": 30
+            },
+            "Imperial Black": {
+                "180ml": 250
+            },
+            "Imperial Blue": {
+                "180ml": 100,
+                "375ml": 75,
                 "750ml": 25
             }
         }
