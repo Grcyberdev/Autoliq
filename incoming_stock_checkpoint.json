@@ -23776,9 +23776,9 @@
         },
         "AS01GC6796": {
             "AC Black Luxury": {
-                "180ml": 750,
                 "750ml": 50,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 750
             }
         },
         "AS12BC1575": {
@@ -23789,20 +23789,31 @@
         "AS01DD1245": {
             "Royal Stag": {
                 "750ml": 100,
-                "180ml": 800,
-                "375ml": 200
+                "375ml": 200,
+                "180ml": 800
             }
         },
         "AS01KC7088": {
+            "Imperial Black": {
+                "180ml": 325,
+                "375ml": 25
+            },
             "Imperial Blue": {
                 "180ml": 200
-            },
-            "Imperial Black": {
-                "375ml": 25,
-                "180ml": 325
             }
         },
         "AS01TC2295": {
+            "Black & White": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 15
+            },
+            "Royal Challenge American Pride": {
+                "180ml": 5
+            },
+            "Tanqueray Gin": {
+                "750ml": 2
+            },
             "JW Black Label": {
                 "750ml": 4
             },
@@ -23813,28 +23824,17 @@
             "Singleton 12 Yrs": {
                 "Full": 2
             },
-            "Tanqueray Gin": {
-                "750ml": 2
-            },
-            "Black & White": {
-                "180ml": 15,
-                "750ml": 10,
-                "375ml": 10
-            },
-            "Smirnoff Mirchi Mango": {
-                "180ml": 20,
-                "750ml": 10
+            "Smirnoff": {
+                "375ml": 5,
+                "180ml": 5
             },
             "Smirnoff Minty Jamun Vodka": {
-                "180ml": 25,
-                "750ml": 10
+                "750ml": 10,
+                "180ml": 25
             },
-            "Smirnoff": {
-                "180ml": 5,
-                "375ml": 5
-            },
-            "Royal Challenge American Pride": {
-                "180ml": 5
+            "Smirnoff Mirchi Mango": {
+                "750ml": 10,
+                "180ml": 20
             }
         },
         "AS11FC1912": {
@@ -23846,6 +23846,30 @@
         "AS27C7255": {
             "Breezer Watermelon": {
                 "Stubby": 10
+            },
+            "Bacardi Mango Chilli Rum": {
+                "375ml": 10,
+                "180ml": 15,
+                "750ml": 5
+            },
+            "Black By Bacardi Rum": {
+                "750ml": 10,
+                "375ml": 5
+            },
+            "Bacardi Limon Rum": {
+                "375ml": 10,
+                "180ml": 20,
+                "750ml": 10
+            },
+            "Dewar's White Label": {
+                "375ml": 1,
+                "750ml": 3
+            },
+            "Bacardi White Rum": {
+                "750ml": 5
+            },
+            "Breezer Jamaican": {
+                "Stubby": 50
             },
             "Breezer Cranberry": {
                 "Stubby": 25
@@ -23862,42 +23886,18 @@
             "Breezer Bold Guava Chilli": {
                 "Stubby": 15
             },
-            "Bacardi Limon Rum": {
-                "375ml": 10,
-                "750ml": 10,
-                "180ml": 20
-            },
-            "Black By Bacardi Rum": {
-                "375ml": 5,
-                "750ml": 10
-            },
-            "Bacardi Mango Chilli Rum": {
-                "180ml": 15,
-                "375ml": 10,
-                "750ml": 5
-            },
-            "Bacardi White Rum": {
-                "750ml": 5
-            },
-            "Dewar's White Label": {
-                "375ml": 1,
-                "750ml": 3
-            },
-            "Breezer Jamaican": {
-                "Stubby": 50
-            },
-            "Grey Goose": {
-                "Full": 2,
-                "Quarter": 1
-            },
-            "Teeling Whiskey": {
-                "Full": 2
-            },
             "Bombay Sapphire Gin": {
                 "750ml": 5
             },
+            "Grey Goose": {
+                "Quarter": 1,
+                "Full": 2
+            },
             "Aberfeldy 12 Yrs": {
                 "Full": 1
+            },
+            "Teeling Whiskey": {
+                "Full": 2
             }
         },
         "AS11FC1918": {
@@ -23905,59 +23905,59 @@
                 "Can": 200,
                 "Bottle": 150
             },
-            "Corona": {
-                "Pint": 70
+            "Hoegaarden Witbier": {
+                "Pint": 30
             },
             "Budweiser Magnum": {
                 "Bottle": 250
             },
-            "Hoegaarden Witbier": {
-                "Pint": 30
+            "Corona": {
+                "Pint": 70
             }
         },
         "AS01HC1683": {
             "McDowell's Luxury": {
-                "375ml": 225,
                 "180ml": 550,
+                "375ml": 225,
                 "750ml": 25
             },
             "McDowell's Double Oak Barrel": {
-                "180ml": 150,
                 "375ml": 135,
-                "750ml": 15
+                "750ml": 15,
+                "180ml": 150
             }
         },
         "AS03CC8888": {
             "Imperial Blue": {
+                "180ml": 450,
                 "375ml": 50,
-                "750ml": 50,
-                "180ml": 450
+                "750ml": 50
             }
         },
         "AS01HC6631": {
-            "Absolut Raspberry": {
-                "Quarter": 3,
-                "750ml": 2
-            },
             "Absolut": {
-                "750ml": 12,
-                "Quarter": 3
+                "Quarter": 3,
+                "750ml": 12
             },
-            "Jacob's Creek Shiraz Cabernet": {
-                "750ml": 2
+            "Jameson Black Barrel": {
+                "Full": 3
             },
             "100 Pipers": {
                 "750ml": 3
             },
-            "Jameson": {
-                "750ml": 40
+            "Jacob's Creek Shiraz Cabernet": {
+                "750ml": 2
+            },
+            "Absolut Raspberry": {
+                "Quarter": 3,
+                "750ml": 2
             },
             "Ballantines": {
-                "750ml": 5,
-                "Quarter": 2
+                "Quarter": 2,
+                "750ml": 5
             },
-            "Jameson Black Barrel": {
-                "Full": 3
+            "Jameson": {
+                "750ml": 40
             }
         },
         "NL01L6388": {
@@ -23971,8 +23971,8 @@
                 "750ml": 300
             },
             "McDowell's Luxury": {
-                "180ml": 300,
                 "750ml": 100,
+                "180ml": 300,
                 "375ml": 150
             }
         }
@@ -24042,54 +24042,54 @@
             }
         },
         "AS01MC3480": {
-            "Blender's Pride Reserve": {
-                "375ml": 20,
-                "750ml": 20,
+            "Blender's Pride Exclusive": {
+                "750ml": 15,
+                "375ml": 30,
                 "180ml": 30
             },
+            "Blender's Pride Reserve": {
+                "180ml": 30,
+                "750ml": 20,
+                "375ml": 20
+            },
             "Royal Stag": {
+                "750ml": 50,
                 "375ml": 100,
-                "180ml": 200,
-                "750ml": 50
+                "180ml": 200
             },
             "Oaken Glow": {
-                "750ml": 10,
+                "375ml": 15,
                 "180ml": 25,
-                "375ml": 15
-            },
-            "Blender's Pride Exclusive": {
-                "180ml": 30,
-                "750ml": 15,
-                "375ml": 30
+                "750ml": 10
             },
             "Blender's Pride Four Elements": {
                 "180ml": 5
             }
         },
         "AS01VC5877": {
-            "Kinross Pink Gin": {
-                "Full": 1
-            },
-            "Peach Soju": {
-                "SA": 10
-            },
-            "Original Soju": {
-                "SA": 5
+            "Classic Reina Merlot": {
+                "750ml": 2
             },
             "Classic Reina Chardonnay": {
                 "750ml": 1
             },
-            "Classic Reina Merlot": {
-                "750ml": 2
+            "Original Soju": {
+                "SA": 5
+            },
+            "Blueberry Soju": {
+                "SA": 5
+            },
+            "Peach Soju": {
+                "SA": 10
+            },
+            "Kinross Pink Gin": {
+                "Full": 1
             },
             "Bistro Vodka": {
                 "Full": 1
             },
             "The Glenwalk Whisky": {
                 "JQ": 25
-            },
-            "Blueberry Soju": {
-                "SA": 5
             }
         },
         "AS01MC3440": {
@@ -24120,42 +24120,42 @@
             }
         },
         "NL01AF7916": {
-            "Royal Stag Barrel": {
-                "375ml": 30,
-                "180ml": 55,
-                "750ml": 15
-            },
             "100 Pipers": {
+                "375ml": 7,
                 "750ml": 5,
-                "180ml": 3,
-                "375ml": 7
-            },
-            "Blender's Pride Reserve": {
-                "375ml": 15,
-                "750ml": 10,
-                "180ml": 25
-            },
-            "Royal Stag": {
-                "180ml": 80,
-                "375ml": 100,
-                "750ml": 70
-            },
-            "Royal Stag Double Dark": {
-                "375ml": 10,
-                "750ml": 5,
-                "180ml": 10
-            },
-            "Blender's Pride Exclusive": {
-                "180ml": 25,
-                "375ml": 30,
-                "750ml": 20
+                "180ml": 3
             },
             "100 Pipers 12 Yrs": {
                 "750ml": 10
             },
+            "Blender's Pride Exclusive": {
+                "750ml": 20,
+                "375ml": 30,
+                "180ml": 25
+            },
             "Oaken Glow": {
                 "375ml": 10,
                 "180ml": 15
+            },
+            "Royal Stag Barrel": {
+                "750ml": 15,
+                "180ml": 55,
+                "375ml": 30
+            },
+            "Blender's Pride Reserve": {
+                "180ml": 25,
+                "750ml": 10,
+                "375ml": 15
+            },
+            "Royal Stag Double Dark": {
+                "180ml": 10,
+                "750ml": 5,
+                "375ml": 10
+            },
+            "Royal Stag": {
+                "750ml": 70,
+                "375ml": 100,
+                "180ml": 80
             }
         },
         "BR01GE1867": {
@@ -24164,16 +24164,6 @@
             }
         },
         "AS02DC0229": {
-            "Signature Rare": {
-                "375ml": 5,
-                "750ml": 5,
-                "180ml": 5
-            },
-            "Signature": {
-                "750ml": 10,
-                "180ml": 15,
-                "375ml": 20
-            },
             "Director's Special Black": {
                 "375ml": 30,
                 "180ml": 100,
@@ -24184,8 +24174,18 @@
                 "375ml": 50,
                 "750ml": 25
             },
+            "Signature": {
+                "180ml": 15,
+                "375ml": 20,
+                "750ml": 10
+            },
             "McDowell's Luxury": {
                 "180ml": 140
+            },
+            "Signature Rare": {
+                "750ml": 5,
+                "180ml": 5,
+                "375ml": 5
             }
         },
         "AS03BC8344": {
@@ -25106,32 +25106,32 @@
     },
     "27-Oct-2026": {
         "AS01TC6107": {
-            "Glenfiddich Original 12": {
-                "JQ": 11
-            },
-            "Glenfiddich Solera 15": {
-                "JQ": 5
-            },
-            "Grant's Triple Wood": {
-                "750ml": 8
-            },
-            "Monkey Shoulder": {
-                "Full": 10
+            "Glenfiddich 18": {
+                "JQ": 2
             },
             "Wild Turkey Bourbon": {
                 "750ml": 1
             },
-            "Glenfiddich 18": {
-                "JQ": 2
+            "Monkey Shoulder": {
+                "Full": 10
+            },
+            "Grant's Triple Wood": {
+                "750ml": 8
+            },
+            "Glenfiddich Solera 15": {
+                "JQ": 5
+            },
+            "Glenfiddich Original 12": {
+                "JQ": 11
+            },
+            "Skyy Vodka": {
+                "750ml": 1
             },
             "Glen Grant": {
                 "Full": 1
             },
             "Hendrick's Gin": {
                 "Full": 1
-            },
-            "Skyy Vodka": {
-                "750ml": 1
             }
         },
         "WB73E0881": {
@@ -25147,59 +25147,59 @@
             }
         },
         "AS25EC0764": {
-            "Mansion House Brandy": {
-                "750ml": 35,
-                "180ml": 30,
-                "375ml": 35
-            },
             "Imperial Black": {
                 "180ml": 250
             },
+            "Mansion House Brandy": {
+                "750ml": 35,
+                "375ml": 35,
+                "180ml": 30
+            },
             "Imperial Blue": {
-                "180ml": 100,
+                "750ml": 25,
                 "375ml": 75,
-                "750ml": 25
+                "180ml": 100
             }
         },
         "AS01RC8137": {
-            "Rockford Reserve": {
-                "750ml": 35,
-                "375ml": 25,
-                "180ml": 10
-            },
             "THE ROCKFORD IMPERIAL RESERVE PREMIUM BLENDED WHISKY": {
                 "750ml": 5
+            },
+            "Rockford Reserve": {
+                "375ml": 25,
+                "750ml": 35,
+                "180ml": 10
             }
         },
         "AS01PC9781": {
-            "Royal Stag": {
-                "375ml": 80,
-                "180ml": 100,
-                "750ml": 60
-            },
-            "100 Pipers": {
-                "375ml": 5,
-                "750ml": 5
-            },
-            "Blender's Pride Reserve": {
-                "750ml": 20,
-                "180ml": 35,
-                "375ml": 20
-            },
-            "Blender's Pride Exclusive": {
-                "750ml": 25,
-                "180ml": 50,
-                "375ml": 75
-            },
             "Royal Stag Barrel": {
                 "750ml": 25,
                 "180ml": 25
             },
-            "Oaken Glow": {
-                "375ml": 15
+            "Royal Stag": {
+                "180ml": 100,
+                "375ml": 80,
+                "750ml": 60
+            },
+            "Blender's Pride Exclusive": {
+                "750ml": 25,
+                "375ml": 75,
+                "180ml": 50
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 20,
+                "180ml": 35,
+                "750ml": 20
             },
             "Royal Stag Double Dark": {
                 "180ml": 10
+            },
+            "Oaken Glow": {
+                "375ml": 15
+            },
+            "100 Pipers": {
+                "750ml": 5,
+                "375ml": 5
             }
         },
         "AS01GC5998": {
@@ -25208,11 +25208,11 @@
             }
         },
         "NL01AF0641": {
-            "Tuborg Malt": {
-                "Can": 600
-            },
             "Tuborg": {
                 "Bottle": 600
+            },
+            "Tuborg Malt": {
+                "Can": 600
             }
         },
         "RJ14GG0342": {
@@ -25226,53 +25226,91 @@
             }
         },
         "AS01UC8611": {
-            "All Seasons Sir-E-Taj": {
-                "375ml": 15,
-                "750ml": 15,
-                "180ml": 20
-            },
             "All Seasons Connoisseur": {
-                "750ml": 50,
                 "180ml": 300,
-                "375ml": 150
+                "375ml": 150,
+                "750ml": 50
+            },
+            "All Seasons Sir-E-Taj": {
+                "180ml": 20,
+                "375ml": 15,
+                "750ml": 15
             }
         },
         "AS02BC8221": {
-            "Kingfisher Original Strong": {
-                "Bottle": 150
-            },
-            "UB BULLET 10000 MEGA STRONG BEER": {
-                "Can": 180
+            "Kingfisher Ultra": {
+                "Can": 50,
+                "Bottle": 100
             },
             "Kingfisher Ultra Max": {
                 "Can": 50,
                 "Bottle": 150
             },
-            "Kingfisher Ultra": {
-                "Can": 50,
-                "Bottle": 100
+            "UB BULLET 10000 MEGA STRONG BEER": {
+                "Can": 180
+            },
+            "Kingfisher Original Strong": {
+                "Bottle": 150
             }
         },
         "AS01QC3237": {
-            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
             "Magic Moments Jamun": {
-                "375ml": 30,
                 "180ml": 20,
+                "375ml": 30,
                 "750ml": 10
             },
             "Magic Moments Lemon": {
-                "180ml": 45,
                 "375ml": 40,
-                "750ml": 5
-            },
-            "8 PM Premium Black": {
-                "750ml": 10,
-                "180ml": 20,
-                "375ml": 20
+                "750ml": 5,
+                "180ml": 45
             },
             "After Dark": {
+                "180ml": 80,
+                "375ml": 20
+            },
+            "8 PM Premium Black": {
                 "375ml": 20,
-                "180ml": 80
+                "180ml": 20,
+                "750ml": 10
+            }
+        },
+        "AS17C2024": {
+            "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries",
+            "Royal Green": {
+                "180ml": 15,
+                "750ml": 20,
+                "375ml": 20
+            },
+            "Calenter Premium": {
+                "750ml": 20,
+                "375ml": 5,
+                "180ml": 120
+            }
+        },
+        "AS01JC8419": {
+            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse",
+            "Oaksmith Gold": {
+                "180ml": 10,
+                "750ml": 10,
+                "375ml": 5
+            },
+            "Teachers 50": {
+                "180ml": 4,
+                "750ml": 10,
+                "375ml": 4
+            },
+            "Oaksmith International": {
+                "180ml": 55,
+                "750ml": 50
+            },
+            "Teachers Highland Cream": {
+                "750ml": 12,
+                "180ml": 4,
+                "375ml": 4
+            },
+            "Jim Beam": {
+                "750ml": 4,
+                "180ml": 3
             }
         }
     }
