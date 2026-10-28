@@ -129,7 +129,7 @@ jobs:
           xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
 
       - name: Run CS Automation
-        if: !cancelled() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'CS')
+        if: "always() && !cancelled() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'CS')"
         env:
           PORTAL_URL: ${{ secrets.PORTAL_URL }}
           CS_USERNAME: ${{ secrets.CS_USERNAME }}
@@ -143,7 +143,7 @@ jobs:
           xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
 
       - name: Commit and Push Checkpoint Changes
-        if: !cancelled() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'IMFL' || steps.mode.outputs.mode == 'CS')
+        if: "always() && !cancelled() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'IMFL' || steps.mode.outputs.mode == 'CS')"
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
