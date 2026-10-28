@@ -1,11 +1,15 @@
 name: run-automation
 
 on:
+  schedule:
+    # Runs every 30 minutes during IST operational hours (08:30 IST to 23:30 IST -> 03:00 to 18:00 UTC)
+    - cron: '*/30 3-18 * * *'
   workflow_dispatch:
     inputs:
       run_mode:
         description: 'Which automation to run?'
-        required: true
+        required: false
+        default: 'Auto'
         type: choice
         options:
           - Auto
@@ -14,18 +18,15 @@ on:
       start_date:
         description: 'Start date (DD-MM-YYYY) - Optional'
         required: false
-        type: string
         default: ''
       end_date:
         description: 'End date (DD-MM-YYYY) - Optional'
         required: false
-        type: string
         default: ''
       yesterday:
         description: 'Generate report for yesterday'
         required: false
-        type: boolean
-        default: false
+        default: 'false'
 
 permissions:
   contents: write
