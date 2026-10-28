@@ -25576,8 +25576,8 @@
         "NL01AE7811": {
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
             "McDowell's Luxury": {
-                "375ml": 75,
                 "180ml": 450,
+                "375ml": 75,
                 "750ml": 25
             }
         },
@@ -25585,6 +25585,13 @@
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "AS27C7022": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Rum": {
+                "750ml": 300,
+                "180ml": 600
             }
         }
     }
