@@ -33,7 +33,7 @@ permissions:
 jobs:
   run-automation:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     
     steps:
       - name: Checkout Code
@@ -45,6 +45,11 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
+      - name: Set up Google Chrome Stable
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
       - name: Install Xvfb (Virtual Framebuffer)
         run: |
           sudo apt-get update
@@ -54,6 +59,37 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Check Portal Reachability & Configure Fallback Proxy
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: |
+          echo "🔍 Testing direct connectivity to stateexcise.assam.gov.in..."
+          if curl -k -sI --connect-timeout 12 --max-time 18 https://stateexcise.assam.gov.in/index.php/site/login > /dev/null; then
+            echo "✅ Direct connection to portal succeeded."
+            echo "USE_TOR_PROXY=false" >> $GITHUB_ENV
+          elif [ -n "$SCRAPER_API_KEY" ]; then
+            echo "⚠️ Direct connection timed out, using configured SCRAPER_API_KEY (Indian IP) proxy."
+            echo "USE_TOR_PROXY=false" >> $GITHUB_ENV
+          else
+            echo "⚠️ Direct connection from US runner timed out. Installing Tor SOCKS5 fallback..."
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq tor netcat-openbsd
+            printf "\nControlPort 9051\nCookieAuthentication 0\nExcludeExitNodes {in}\n" | sudo tee -a /etc/tor/torrc > /dev/null
+            sudo service tor restart
+            echo "Waiting for Tor SOCKS5 port and 100% bootstrap..."
+            for i in $(seq 1 30); do
+              if nc -z 127.0.0.1 9050 2>/dev/null && nc -z 127.0.0.1 9051 2>/dev/null; then
+                BOOT=$(printf 'AUTHENTICATE ""\r\nGETINFO status/bootstrap-phase\r\nQUIT\r\n' | nc -w 2 127.0.0.1 9051 2>/dev/null || true)
+                if echo "$BOOT" | grep -q "PROGRESS=100"; then
+                  echo "✅ Tor SOCKS5 proxy listening on 127.0.0.1:9050 and 100% bootstrapped!"
+                  break
+                fi
+              fi
+              sleep 1
+            done
+            echo "USE_TOR_PROXY=true" >> $GITHUB_ENV
+          fi
 
       - name: Determine Run Mode
         id: mode
@@ -107,7 +143,6 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
-          USE_TOR_PROXY: "false"
         run: |
           xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
 
@@ -120,7 +155,6 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
-          USE_TOR_PROXY: "false"
         run: |
           xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
 
