@@ -219,7 +219,8 @@ def load_config():
         "IMFL_USERNAME", "IMFL_PASSWORD", 
         "CS_USERNAME", "CS_PASSWORD", 
         "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID", 
-        "SCRAPER_API_KEY", "USE_TOR_PROXY"
+        "SCRAPER_API_KEY", "USE_TOR_PROXY",
+        "INDIAN_PROXY", "USE_INDIAN_PROXY"
     ]
     
     for var in env_vars:
@@ -233,7 +234,7 @@ def load_config():
                  print(f"🔐 Using Environment Variable for: {var} (Value: {env_val})")
         else:
              # Only print warning if not already in config (from file) to avoid noise
-             if var not in config and var not in ["USE_TOR_PROXY", "SCRAPER_API_KEY"]: # Optional vars
+             if var not in config and var not in ["USE_TOR_PROXY", "SCRAPER_API_KEY", "INDIAN_PROXY", "USE_INDIAN_PROXY"]: # Optional vars
                  print(f"⚠️ Environment Variable {var} is missing.")
             
     return config
@@ -280,7 +281,12 @@ def setup_driver(headless=False):
                 }
             }
 
-    # TOR / SOCKS5 PROXY CONFIGURATION (Fallback only if ScraperAPI is not active)
+    # INDIAN PROXY / SOCKS5 / TOR CONFIGURATION
+    if os.environ.get("INDIAN_PROXY") or config.get("INDIAN_PROXY"):
+        indian_proxy = os.environ.get("INDIAN_PROXY") or config.get("INDIAN_PROXY")
+        print(f"🇮🇳 INDIAN PROXY ENABLED: Configuring Chrome to use {indian_proxy}")
+        chrome_options.add_argument(f"--proxy-server={indian_proxy}")
+        chrome_options.add_argument("--proxy-bypass-list=<-loopback>;127.0.0.1;localhost")
     elif os.environ.get("SOCKS5_PROXY"):
         socks_proxy = os.environ.get("SOCKS5_PROXY")
         print(f"🌐 SOCKS5 PROXY ENABLED: Configuring Chrome to use {socks_proxy}")

@@ -60,32 +60,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Check Portal Reachability & Configure Fallback Proxy
-        env:
-          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+      - name: Discover Verified Indian Proxy or Direct Connectivity
         run: |
-          echo "🔍 Testing direct connectivity to stateexcise.assam.gov.in..."
-          if curl -k -sI --connect-timeout 25 --max-time 45 https://stateexcise.assam.gov.in/index.php/site/login > /dev/null; then
-            echo "✅ Direct connection to portal succeeded."
-            echo "USE_TOR_PROXY=false" >> $GITHUB_ENV
-          elif [ -n "$SCRAPER_API_KEY" ]; then
-            echo "⚠️ Direct connection timed out, using configured SCRAPER_API_KEY (Indian IP) proxy."
-            echo "USE_TOR_PROXY=false" >> $GITHUB_ENV
-          else
-            echo "⚠️ Direct connection from US runner timed out (Geo-IP block). Installing Tor SOCKS5 fallback..."
-            sudo apt-get update -qq
-            sudo apt-get install -y -qq tor netcat-openbsd
-            printf "\nControlPort 9051\nCookieAuthentication 0\n" | sudo tee -a /etc/tor/torrc > /dev/null
-            sudo service tor restart
-            for i in $(seq 1 15); do
-              if nc -z 127.0.0.1 9050 2>/dev/null; then
-                echo "✅ Tor SOCKS5 proxy listening on 127.0.0.1:9050"
-                break
-              fi
-              sleep 1
-            done
-            echo "USE_TOR_PROXY=true" >> $GITHUB_ENV
-          fi
+          python -u scripts/find_indian_proxy.py
 
       - name: Determine Run Mode
         id: mode
@@ -139,6 +116,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+          INDIAN_PROXY: ${{ env.INDIAN_PROXY }}
+          USE_INDIAN_PROXY: ${{ env.USE_INDIAN_PROXY }}
         run: |
           xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
 
@@ -151,6 +130,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+          INDIAN_PROXY: ${{ env.INDIAN_PROXY }}
+          USE_INDIAN_PROXY: ${{ env.USE_INDIAN_PROXY }}
         run: |
           xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
 
