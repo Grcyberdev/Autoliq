@@ -55,39 +55,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install and Configure Tor Proxy
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y tor netcat-openbsd
-          
-          # Configure Tor ControlPort without dead {in} ExitNodes restriction
-          echo "ControlPort 9051" | sudo tee -a /etc/tor/torrc
-          echo "CookieAuthentication 0" | sudo tee -a /etc/tor/torrc
-          
-          sudo service tor restart
-          
-          # Robust wait for Tor to bootstrap (check ControlPort 9051 for PROGRESS=100)
-          echo "Waiting for Tor to finish bootstrapping circuits..."
-          for i in {1..45}; do
-            if nc -z localhost 9050 && printf 'AUTHENTICATE ""\r\nGETINFO status/bootstrap-phase\r\nQUIT\r\n' | nc localhost 9051 2>/dev/null | grep -q "PROGRESS=100"; then
-              echo "✅ Tor is 100% bootstrapped and SOCKS5 port is ready!"
-              break
-            fi
-            sleep 2
-          done
-          
-          # Pre-warm and verify a Tor exit circuit that can reach stateexcise.assam.gov.in
-          echo "Pre-warming Tor circuit to Assam Excise Portal..."
-          for attempt in {1..8}; do
-            if curl --socks5-hostname 127.0.0.1:9050 -k -sL --connect-timeout 12 --max-time 20 "https://stateexcise.assam.gov.in/index.php/site/login" | grep -qi "LoginForm\|Assam Excise"; then
-              echo "✅ Verified live Tor circuit to Assam Excise Portal on attempt $attempt!"
-              break
-            fi
-            echo "⚠️ Tor exit node on attempt $attempt could not reach portal; rotating circuit (SIGNAL NEWNYM)..."
-            printf 'AUTHENTICATE ""\r\nSIGNAL NEWNYM\r\nQUIT\r\n' | nc 127.0.0.1 9051 || true
-            sleep 10
-          done
-
       - name: Determine Run Mode
         id: mode
         run: |
@@ -142,16 +109,7 @@ jobs:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           USE_TOR_PROXY: "false"
         run: |
-          if curl -k -I -s --connect-timeout 15 --max-time 20 "$PORTAL_URL" >/dev/null; then
-            echo "✅ Direct connection to portal succeeded. Running with USE_TOR_PROXY=false..."
-            xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }} || {
-              echo "⚠️ Direct IMFL run failed; retrying with Tor proxy (USE_TOR_PROXY=true)..."
-              USE_TOR_PROXY="true" xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
-            }
-          else
-            echo "⚠️ Direct connection to portal timed out from runner IP. Enabling Tor proxy (USE_TOR_PROXY=true)..."
-            USE_TOR_PROXY="true" xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
-          fi
+          xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
 
       - name: Run CS Automation
         if: always() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'CS')
@@ -164,16 +122,7 @@ jobs:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           USE_TOR_PROXY: "false"
         run: |
-          if curl -k -I -s --connect-timeout 15 --max-time 20 "$PORTAL_URL" >/dev/null; then
-            echo "✅ Direct connection to portal succeeded. Running with USE_TOR_PROXY=false..."
-            xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }} || {
-              echo "⚠️ Direct CS run failed; retrying with Tor proxy (USE_TOR_PROXY=true)..."
-              USE_TOR_PROXY="true" xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
-            }
-          else
-            echo "⚠️ Direct connection to portal timed out from runner IP. Enabling Tor proxy (USE_TOR_PROXY=true)..."
-            USE_TOR_PROXY="true" xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
-          fi
+          xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
 
       - name: Commit and Push Checkpoint Changes
         if: always() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'IMFL' || steps.mode.outputs.mode == 'CS')

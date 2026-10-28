@@ -58,12 +58,12 @@ def reset_tor_identity():
             pass
     return False
 
-def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10, page_load_timeout=60):
+def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10, page_load_timeout=180):
     """
     Navigates to a URL with retry logic to handle transient network errors
     like ERR_CONNECTION_RESET or ERR_CONNECTION_TIMED_OUT.
     """
-    from selenium.common.exceptions import WebDriverException
+    from selenium.common.exceptions import WebDriverException, TimeoutException
     
     retryable_errors = (
         "connection_reset",
@@ -116,7 +116,7 @@ def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10, page_l
 
             return True
 
-        except WebDriverException as e:
+        except (WebDriverException, TimeoutException) as e:
             try:
                 driver.set_page_load_timeout(300)
             except Exception:
@@ -131,6 +131,10 @@ def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10, page_l
                 
                 if attempt < max_retries:
                     print(f"   ♻️ Retrying in {wait_time}s...")
+                    try:
+                        driver.execute_script("window.stop();")
+                    except Exception:
+                        pass
                     time.sleep(wait_time)
                 else:
                     print("   ❌ Max navigation retries reached.")
@@ -234,7 +238,7 @@ def setup_driver(headless=False):
     chrome_options.add_argument("--disable-extensions") # Speed up
     chrome_options.add_argument("--dns-prefetch-disable") # Speed up
     chrome_options.add_argument("--disable-software-rasterizer")
-    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36")
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
     chrome_options.add_argument("--ignore-certificate-errors")
 
     # SCRAPER_API_KEY CONFIGURATION
@@ -258,11 +262,11 @@ def setup_driver(headless=False):
             }
 
     # TOR PROXY CONFIGURATION (Fallback only if ScraperAPI is not active)
-    elif config.get("USE_TOR_PROXY") == "true":
+    elif config.get("USE_TOR_PROXY") == "true" or os.environ.get("USE_TOR_PROXY") == "true":
         print("🧅 TOR PROXY ENABLED: Configuring Chrome to use SOCKS5 127.0.0.1:9050")
         chrome_options.add_argument("--proxy-server=socks5://127.0.0.1:9050")
         # CRITICAL: Bypass proxy for localhost to allow ChromeDriver to talk to Chrome
-        chrome_options.add_argument("--proxy-bypass-list=127.0.0.1;localhost")
+        chrome_options.add_argument("--proxy-bypass-list=<-loopback>")
     
     # PAGE LOAD STRATEGY: Eager (Waits for DOM only, ignores slow images/styles)
     # This is critical for slow portals to avoid timeouts
@@ -285,9 +289,12 @@ def setup_driver(headless=False):
     # Suppress logging
     chrome_options.add_argument("--log-level=0") # Changed from 3 to 0
     
-    # Try finding system chrome first (Oracle Cloud / Linux)
-    # Priority: Chromium (Default on Ubuntu) -> Google Chrome
-    possible_bins = ["/usr/bin/chromium-browser", "/usr/bin/chromium", "/usr/bin/google-chrome-stable", "/usr/bin/google-chrome"]
+    # Try finding system chrome first
+    # On CI (GitHub Actions), prioritize google-chrome-stable / google-chrome over snap chromium-browser
+    if os.environ.get("CI"):
+        possible_bins = ["/usr/bin/google-chrome-stable", "/usr/bin/google-chrome", "/usr/bin/chromium-browser", "/usr/bin/chromium"]
+    else:
+        possible_bins = ["/usr/bin/chromium-browser", "/usr/bin/chromium", "/usr/bin/google-chrome-stable", "/usr/bin/google-chrome"]
     found_bin = None
     for b in possible_bins:
         if shutil.which(b): 
