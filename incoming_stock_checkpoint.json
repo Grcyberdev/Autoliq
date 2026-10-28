@@ -25532,17 +25532,17 @@
         "AS03BC5273": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
-                "180ml": 50,
+                "375ml": 150,
                 "750ml": 150,
-                "375ml": 150
+                "180ml": 50
             }
         },
         "AS01GC0763": {
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
+                "375ml": 190,
                 "180ml": 300,
-                "750ml": 135,
-                "375ml": 190
+                "750ml": 135
             },
             "Blender's Pride Exclusive": {
                 "180ml": 50,
@@ -25550,8 +25550,8 @@
             },
             "Blender's Pride Four Elements": {
                 "750ml": 5,
-                "180ml": 5,
-                "375ml": 5
+                "375ml": 5,
+                "180ml": 5
             },
             "Blender's Pride Reserve": {
                 "375ml": 35,
@@ -25576,9 +25576,9 @@
         "NL01AE7811": {
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
             "McDowell's Luxury": {
+                "375ml": 75,
                 "180ml": 450,
-                "750ml": 25,
-                "375ml": 75
+                "750ml": 25
             }
         },
         "AS02BC0186": {
@@ -25590,37 +25590,37 @@
         "AS27C7022": {
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
             "McDowell's Rum": {
-                "750ml": 300,
-                "180ml": 600
+                "180ml": 600,
+                "750ml": 300
             }
         },
         "AS02DC4961": {
             "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
             "Jolly Roger Rum": {
                 "750ml": 10,
-                "375ml": 10,
-                "180ml": 10
+                "180ml": 10,
+                "375ml": 10
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 10,
+                "375ml": 10
+            },
+            "Officer's Choice pet": {
+                "180ml": 100,
+                "375ml": 50
+            },
+            "Iconiq Vodka": {
+                "750ml": 15,
+                "375ml": 50
             },
             "Officer's Choice": {
                 "750ml": 50
             },
-            "Iconiq Vodka": {
-                "375ml": 50,
-                "750ml": 15
+            "Sterling B7": {
+                "180ml": 10
             },
             "Iconiq Hippy": {
                 "180ml": 175
-            },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 10,
-                "750ml": 10
-            },
-            "Officer's Choice pet": {
-                "375ml": 50,
-                "180ml": 100
-            },
-            "Sterling B7": {
-                "180ml": 10
             }
         },
         "AS03BC8344": {
@@ -25631,24 +25631,24 @@
         },
         "AS01UC3805": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
-            "Director's Special Black": {
-                "180ml": 50,
-                "750ml": 10,
-                "375ml": 30
-            },
-            "Royal Challenge": {
-                "375ml": 75,
-                "180ml": 100,
-                "750ml": 25
-            },
             "Signature": {
                 "375ml": 20,
-                "180ml": 20,
-                "750ml": 15
+                "750ml": 15,
+                "180ml": 20
             },
             "Antiquity Blue Ultra": {
                 "180ml": 10,
                 "375ml": 5
+            },
+            "Director's Special Black": {
+                "180ml": 50,
+                "375ml": 30,
+                "750ml": 10
+            },
+            "Royal Challenge": {
+                "750ml": 25,
+                "375ml": 75,
+                "180ml": 100
             },
             "McDowell's Rum": {
                 "180ml": 190
@@ -25657,9 +25657,26 @@
         "AS23BC8648": {
             "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
             "AC Black Luxury": {
+                "375ml": 50,
                 "180ml": 800,
-                "750ml": 50,
-                "375ml": 50
+                "750ml": 50
+            }
+        },
+        "WB23L4499": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Hoegaarden Witbier": {
+                "Can": 25
+            },
+            "Budweiser": {
+                "Can": 250,
+                "Bottle": 100
+            },
+            "Budweiser Magnum": {
+                "Can": 200,
+                "Bottle": 250
+            },
+            "Corona": {
+                "Can": 25
             }
         }
     }
