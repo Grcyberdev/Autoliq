@@ -68,19 +68,19 @@ jobs:
           
           sudo service tor restart
           
-          # Robust wait for Tor to bootstrap
-          echo "Waiting for Tor to bootstrap SOCKS5 port..."
-          for i in {1..20}; do
-            if nc -z localhost 9050; then
-              echo "✅ Tor SOCKS5 port is open!"
+          # Robust wait for Tor to bootstrap (check ControlPort 9051 forPROGRESS=100)
+          echo "Waiting for Tor to finish bootstrapping circuits..."
+          for i in {1..45}; do
+            if nc -z localhost 9050 && printf 'AUTHENTICATE ""\r\nGETINFO status/bootstrap-phase\r\nQUIT\r\n' | nc localhost 9051 2>/dev/null | grep -q "PROGRESS=100"; then
+              echo "✅ Tor is 100% bootstrapped and SOCKS5 port is ready!"
               break
             fi
-            sleep 1
+            sleep 2
           done
           
-          # Verify Tor connection and ensure we have an Indian IP
+          # Verify Tor connection and ensure we have an active circuit
           echo "Verifying Tor IP location..."
-          curl --socks5-hostname 127.0.0.1:9050 -s https://ipapi.co/json/ || echo "⚠️ Could not verify IP location, continuing..."
+          curl --socks5-hostname 127.0.0.1:9050 -s --max-time 15 https://ipapi.co/json/ || echo "⚠️ Could not verify IP location, continuing..."
 
       - name: Determine Run Mode
         id: mode
@@ -136,10 +136,19 @@ jobs:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           USE_TOR_PROXY: "false"
         run: |
-          xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
+          if curl -k -I -s --connect-timeout 15 --max-time 20 "$PORTAL_URL" >/dev/null; then
+            echo "✅ Direct connection to portal succeeded. Running with USE_TOR_PROXY=false..."
+            xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }} || {
+              echo "⚠️ Direct IMFL run failed; retrying with Tor proxy (USE_TOR_PROXY=true)..."
+              USE_TOR_PROXY="true" xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
+            }
+          else
+            echo "⚠️ Direct connection to portal timed out from runner IP. Enabling Tor proxy (USE_TOR_PROXY=true)..."
+            USE_TOR_PROXY="true" xvfb-run -a python -u scripts/main_imfl.py --auto ${{ steps.dates.outputs.args }}
+          fi
 
       - name: Run CS Automation
-        if: steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'CS'
+        if: always() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'CS')
         env:
           PORTAL_URL: ${{ secrets.PORTAL_URL }}
           CS_USERNAME: ${{ secrets.CS_USERNAME }}
@@ -149,7 +158,16 @@ jobs:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           USE_TOR_PROXY: "false"
         run: |
-          xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
+          if curl -k -I -s --connect-timeout 15 --max-time 20 "$PORTAL_URL" >/dev/null; then
+            echo "✅ Direct connection to portal succeeded. Running with USE_TOR_PROXY=false..."
+            xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }} || {
+              echo "⚠️ Direct CS run failed; retrying with Tor proxy (USE_TOR_PROXY=true)..."
+              USE_TOR_PROXY="true" xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
+            }
+          else
+            echo "⚠️ Direct connection to portal timed out from runner IP. Enabling Tor proxy (USE_TOR_PROXY=true)..."
+            USE_TOR_PROXY="true" xvfb-run -a python -u scripts/main_cs.py --auto ${{ steps.dates.outputs.args }}
+          fi
 
       - name: Commit and Push Checkpoint Changes
         if: always() && (steps.mode.outputs.mode == 'Auto' || steps.mode.outputs.mode == 'IMFL' || steps.mode.outputs.mode == 'CS')

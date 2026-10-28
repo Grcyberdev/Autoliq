@@ -203,6 +203,7 @@ def scrape_data_for_user(driver_args, username, password, start_date, end_date, 
 
         # 2. Login
         print(f"\n🚀 Starting session for {username}...")
+        max_login_retries = 15
         login_success = automation_utils.login_to_portal(driver, PORTAL_URL, username, password, max_retries=max_login_retries)
         if not login_success:
             raise Exception(f"Failed to login as {username} after multiple attempts.")
@@ -219,7 +220,7 @@ def scrape_data_for_user(driver_args, username, password, start_date, end_date, 
         except:
             print("   - Tile click failed, trying direct URL...")
             fallback_url = PORTAL_URL.replace("/site/login", "/Retailer/Retailer/Indentlist?param=stockdispatch")
-            driver.get(fallback_url)
+            automation_utils.navigate_to_url_with_retry(driver, fallback_url, max_retries=5, wait_time=5)
         
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, 
             "//input[@id='datepicker'] | //button[contains(., 'Search')]"
@@ -423,45 +424,6 @@ def scrape_data_for_user(driver_args, username, password, start_date, end_date, 
 
 # ----------------------------
 # Main Execution
-# ----------------------------
-# ----------------------------
-# Scraping Function
-# ----------------------------
-def scrape_data_for_user(driver_args, username, password, start_date, end_date, master_db):
-    """
-    Scrapes stock dispatch data for a single user over a date range.
-    Updates master_db and saves checkpoint.
-    Robustly handles session crashes by restarting driver.
-    """
-    # Ensure user key exists
-    if username not in master_db:
-        master_db[username] = {}
-
-    driver = None
-    wait = None
-    
-    current_date = start_date
-    retry_count = 0
-    MAX_RETRIES = 3 # Max retries per specific date before skipping
-
-    def start_session():
-        # ... (Same as before, abbreviated for brevity in replacement if unchanged, but I need to include it or keep it)
-        # To avoid replacing the huge function body, I will target the *lines around the save_data call* if possible?
-        # But 'scrape_data_for_user' calls 'save_data'. I need to import/use 'save_json' with OUTBOUND_FILE.
-        pass
-    
-    # ... (I need to replace the SAVE call inside).
-    # Since I can't partial replace nicely without context, I will replace the whole function structure.
-    # checking line 470 in previous view: `save_data(master_db)`
-    
-# Actually, I will just do a Multi Replace for the specific call sites if possible?
-# But `save_data` takes 1 arg (data), `save_json` takes 2 (file, data).
-# So I must change the call site.
-
-# Let's replace the whole `scrape_data_for_user` to be safe and clean.
-# Wait, `start_session` is nested.
-# I'll use multi-replace.
-
 # ----------------------------
 # Main Execution
 # ----------------------------

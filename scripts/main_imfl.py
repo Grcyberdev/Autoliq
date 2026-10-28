@@ -435,9 +435,6 @@ try:
     # Normal Scraping Logic
     # ----------------------------
     print("🚀 Opening portal:", PORTAL_URL)
-    automation_utils.navigate_to_url_with_retry(driver, PORTAL_URL)
-    if not args.headless:
-        driver.maximize_window()
     if not args.headless:
         driver.maximize_window()
     # time.sleep(15) # Removed: Normal strategy waits for load
@@ -454,7 +451,7 @@ try:
     print("📄 Navigating to Permits & Pass Reports...")
     try:
         reports_index_url = PORTAL_URL.replace("/site/login", "/report/index")
-        driver.get(reports_index_url)
+        automation_utils.navigate_to_url_with_retry(driver, reports_index_url, max_retries=5, wait_time=5)
         time.sleep(2)
         child_link = wait.until(EC.presence_of_element_located((By.XPATH, "//a[contains(@href,'Wholesale/reports/tpdet_stockrec')]")))
         driver.execute_script("arguments[0].click();", child_link)
@@ -549,6 +546,9 @@ try:
                 if short_supplier_name == original_supplier_name and original_supplier_name:
                     unmapped_suppliers.add(original_supplier_name)
                 
+                # --- NEW: Keep Original Name for Telegram ---
+                telegram_supplier_name = get_telegram_supplier_name(original_supplier_name)
+
                 # --- NEW: Reset Checkpoint Logic for this Truck ---
                 t_date_chk = row_data[7]
                 t_num_chk = "".join(row_data[6].split()).upper()
@@ -564,14 +564,13 @@ try:
                     # If it exists in the checkpoint (from a PREVIOUS run), we MUST clear it to avoid double counting.
                     if t_num_chk in incoming_checkpoint[t_date_chk]:
                          # Keep TelegramSupplier if we already caught it, else empty
-                         incoming_checkpoint[t_date_chk][t_num_chk] = {}
+                         incoming_checkpoint[t_date_chk][t_num_chk] = {
+                             "_TelegramSupplier": telegram_supplier_name
+                         }
                          # print(f"   ... [DEBUG] Cleared stale data for {t_num_chk} before re-scraping.")
                     
                     scraped_trucks_session.add(session_key)
                 # --------------------------------------------------
-
-                # --- NEW: Keep Original Name for Telegram ---
-                telegram_supplier_name = get_telegram_supplier_name(original_supplier_name)
 
                 current_supplier_info = { 
                     "Supplier": short_supplier_name, 
@@ -643,6 +642,8 @@ try:
                         incoming_checkpoint[t_date][t_num] = {
                             "_TelegramSupplier": current_supplier_info.get("TelegramSupplier", "")
                         }
+                    elif "_TelegramSupplier" not in incoming_checkpoint[t_date][t_num]:
+                        incoming_checkpoint[t_date][t_num]["_TelegramSupplier"] = current_supplier_info.get("TelegramSupplier", "")
                     
                     # Use clean_base_name for WhatsApp Report grouping to prevent "Kingfisher Bottle \n ↳ Can"
                     if clean_base_name not in incoming_checkpoint[t_date][t_num]: 

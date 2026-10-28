@@ -53,25 +53,53 @@ def reset_tor_identity():
         print(f"⚠️ Failed to reset Tor identity: {e}")
     return False
 
-def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10):
+def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10, page_load_timeout=60):
     """
     Navigates to a URL with retry logic to handle transient network errors
-    like ERR_CONNECTION_RESET.
+    like ERR_CONNECTION_RESET or ERR_CONNECTION_TIMED_OUT.
     """
     from selenium.common.exceptions import WebDriverException
+    
+    retryable_errors = (
+        "connection_reset",
+        "err_connection_closed",
+        "err_connection_timed_out",
+        "err_timed_out",
+        "timed_out",
+        "timed out",
+        "timeout",
+        "chrome error page",
+        "socks_connection_failed",
+        "socks_server_responded",
+        "err_empty_response",
+        "err_network_changed",
+        "err_tunnel_connection_failed",
+        "err_connection_refused",
+        "err_name_not_resolved",
+        "cannot determine loading status",
+        "read timed out",
+    )
     
     for attempt in range(1, max_retries + 1):
         try:
             print(f"   🚀 Navigating to {url} (Attempt {attempt}/{max_retries})...")
+            try:
+                driver.set_page_load_timeout(page_load_timeout)
+            except Exception:
+                pass
             driver.get(url)
+            try:
+                driver.set_page_load_timeout(300)
+            except Exception:
+                pass
             
             # CRITICAL: Check if we landed on a Chrome Error Page
             # Selenium driver.get() returns successful even if it's an internal error page.
             try:
                 page_src = driver.page_source
-                if "Copyright 2017 The Chromium Authors" in page_src or "ERR_" in page_src or "This site can’t be reached" in page_src:
+                if "Copyright 2017 The Chromium Authors" in page_src or "ERR_" in page_src or "This site can’t be reached" in page_src or "This site can't be reached" in page_src:
                      import re
-                     err_match = re.search(r'ERR_[A-Z_]+', page_src)
+                     err_match = re.search(r'ERR_[A-Z0-9_]+', page_src)
                      err_code = err_match.group(0) if err_match else "UNKNOWN_ERROR"
                      print(f"   ⚠️ Chrome Error Page Detected (Validation Failed). Title: '{driver.title}', Code: {err_code}")
                      raise WebDriverException(f"Chrome Error Page Detected (Code: {err_code}, Title: {driver.title})")
@@ -84,21 +112,21 @@ def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10):
             return True
 
         except WebDriverException as e:
+            try:
+                driver.set_page_load_timeout(300)
+            except Exception:
+                pass
             error_msg = str(e).lower()
-            # Added "socks_connection_failed" and "socks_server_responded" to the retry list
-            if "connection_reset" in error_msg or "err_connection_closed" in error_msg or "timeout" in error_msg or "chrome error page" in error_msg or "socks_connection_failed" in error_msg or "socks_server_responded" in error_msg:
+            if any(err_token in error_msg for err_token in retryable_errors):
                 print(f"   ⚠️ Navigation failed: {e}")
                 
                 # Request a new Tor IP before retrying
-                if os.environ.get("USE_TOR_PROXY") == "true":
+                if os.environ.get("USE_TOR_PROXY", "").lower() == "true":
                     reset_tor_identity()
                 
                 if attempt < max_retries:
                     print(f"   ♻️ Retrying in {wait_time}s...")
                     time.sleep(wait_time)
-                    # Refresh driver might help if stuck?
-                    try: driver.refresh()
-                    except: pass
                 else:
                     print("   ❌ Max navigation retries reached.")
                     raise e
@@ -521,24 +549,24 @@ def login_to_portal(driver, portal_url, username, password, max_retries=10):
             return True
 
         print(f"🔐 Login attempt {attempt + 1}/{max_retries} for user: {username}...")
-        navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=3)
-        time.sleep(2)
-
-        if is_logged_in(driver):
-            print(f"✅ Session active on {driver.current_url}.")
-            return True
-        
         try:
-            temp_user = driver.find_elements(By.ID, "LoginForm_username")
-            if not temp_user or not temp_user[0].is_displayed():
-                try:
-                    login_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'header-login-btn') or contains(text(), 'Login')]")))
-                    driver.execute_script("arguments[0].click();", login_btn)
-                    time.sleep(2)
-                except: pass
-        except: pass
+            navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=3)
+            time.sleep(2)
 
-        try:
+            if is_logged_in(driver):
+                print(f"✅ Session active on {driver.current_url}.")
+                return True
+            
+            try:
+                temp_user = driver.find_elements(By.ID, "LoginForm_username")
+                if not temp_user or not temp_user[0].is_displayed():
+                    try:
+                        login_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'header-login-btn') or contains(text(), 'Login')]")))
+                        driver.execute_script("arguments[0].click();", login_btn)
+                        time.sleep(2)
+                    except: pass
+            except: pass
+
             user_elem = wait.until(EC.presence_of_element_located((By.ID, "LoginForm_username")))
             user_elem.clear()
             user_elem.send_keys(username)
