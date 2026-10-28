@@ -90,9 +90,9 @@ def navigate_to_url_with_retry(driver, url, max_retries=5, wait_time=5, page_loa
     )
 
     if page_load_timeout is None:
-        # Use 60s timeout for login page so dead/blocked connections fail fast,
-        # and 240s for heavy authenticated portal queries (e.g. IMFL/CS reports).
-        page_load_timeout = 60 if "site/login" in (url or "").lower() else 240
+        # Use 120s timeout for login page (portal takes 40-50s to respond even natively),
+        # and 480s for heavy authenticated portal queries (e.g. IMFL/CS reports).
+        page_load_timeout = 120 if "site/login" in (url or "").lower() else 480
     
     for attempt in range(1, max_retries + 1):
         try:
@@ -579,7 +579,7 @@ def is_logged_in(driver):
         pass
     return False
 
-def login_to_portal(driver, portal_url, username, password, max_retries=12):
+def login_to_portal(driver, portal_url, username, password, max_retries=8):
     """
     Robust login implementation with up to max_retries attempts,
     OCR candidate validation, fast captcha refresh, and verified 2-step AJAX session checks.
@@ -610,10 +610,16 @@ def login_to_portal(driver, portal_url, username, password, max_retries=12):
             if modal_already_open and attempt > 0:
                 # Refresh captcha via AJAX button instead of reloading the full 575KB page
                 try:
-                    refresh_btns = driver.find_elements(By.ID, "refreshCaptcha")
+                    refresh_btns = [b for b in driver.find_elements(By.ID, "refreshCaptcha") if b.is_displayed()]
+                    captcha_imgs = [i for i in driver.find_elements(By.ID, "loginCaptcha") if i.is_displayed()]
+                    old_src = captcha_imgs[0].get_attribute("src") if captcha_imgs else None
                     if refresh_btns:
                         driver.execute_script("arguments[0].click();", refresh_btns[0])
-                        time.sleep(1.2)
+                        for _ in range(12):
+                            time.sleep(0.5)
+                            new_src = captcha_imgs[0].get_attribute("src") if captcha_imgs else None
+                            if new_src and new_src != old_src:
+                                break
                     else:
                         navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=4)
                         time.sleep(2)

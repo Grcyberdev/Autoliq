@@ -440,7 +440,7 @@ try:
     # time.sleep(15) # Removed: Normal strategy waits for load
 
 
-    login_success = automation_utils.login_to_portal(driver, PORTAL_URL, USERNAME, PASSWORD, max_retries=15)
+    login_success = automation_utils.login_to_portal(driver, PORTAL_URL, USERNAME, PASSWORD, max_retries=8)
 
     if not login_success:
         print("❌ Login Failed after retries.")

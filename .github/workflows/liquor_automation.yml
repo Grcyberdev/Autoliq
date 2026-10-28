@@ -65,7 +65,7 @@ jobs:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         run: |
           echo "🔍 Testing direct connectivity to stateexcise.assam.gov.in..."
-          if curl -k -sI --connect-timeout 12 --max-time 18 https://stateexcise.assam.gov.in/index.php/site/login > /dev/null; then
+          if curl -k -sI --connect-timeout 25 --max-time 45 https://stateexcise.assam.gov.in/index.php/site/login > /dev/null; then
             echo "✅ Direct connection to portal succeeded."
             echo "USE_TOR_PROXY=false" >> $GITHUB_ENV
           elif [ -n "$SCRAPER_API_KEY" ]; then
@@ -87,6 +87,16 @@ jobs:
                 fi
               fi
               sleep 1
+            done
+            echo "Verifying Tor circuit connectivity to portal..."
+            for t in 1 2 3; do
+              if curl --socks5-hostname 127.0.0.1:9050 -k -sI --connect-timeout 25 --max-time 60 https://stateexcise.assam.gov.in/index.php/site/login > /dev/null; then
+                echo "✅ Tor circuit verified responsive to Assam Excise portal!"
+                break
+              fi
+              echo "⚠️ Circuit attempt $t timed out. Signaling NEWNYM..."
+              printf 'AUTHENTICATE ""\r\nSIGNAL NEWNYM\r\nQUIT\r\n' | nc -w 2 127.0.0.1 9051 > /dev/null || true
+              sleep 6
             done
             echo "USE_TOR_PROXY=true" >> $GITHUB_ENV
           fi
