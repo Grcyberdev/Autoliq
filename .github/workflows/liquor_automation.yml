@@ -1,6 +1,12 @@
 name: run-automation
 
 on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
   schedule:
     # Runs every 30 minutes during IST operational hours (08:30 IST to 23:30 IST -> 03:00 to 18:00 UTC)
     - cron: '*/30 3-18 * * *'
@@ -68,10 +74,10 @@ jobs:
       - name: Determine Run Mode
         id: mode
         run: |
-          # If triggered by schedule, use 'Auto'
-          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+          # If triggered by schedule or push, default to 'Auto'
+          if [[ "${{ github.event_name }}" == "schedule" || "${{ github.event_name }}" == "push" ]]; then
             echo "mode=Auto" >> $GITHUB_OUTPUT
-            echo "Running in AUTO scheduled mode."
+            echo "Running in AUTO mode (${{ github.event_name }})."
           else
             echo "mode=${{ github.event.inputs.run_mode }}" >> $GITHUB_OUTPUT
             echo "Running in MANUAL mode: ${{ github.event.inputs.run_mode }}"
@@ -143,7 +149,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add incoming_stock_checkpoint.json stock_data_checkpoint.json || true
           if ! git diff --staged --quiet; then
-            git commit -m "Auto-update checkpoint data"
+            git commit -m "Auto-update checkpoint data [skip ci]"
             for i in {1..3}; do
               git pull --rebase origin main || git rebase --abort || true
               if git push origin main; then
