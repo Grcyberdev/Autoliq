@@ -46,11 +46,16 @@ def reset_tor_identity():
             response = s.recv(1024)
             if b"250" in response:
                 print("✅ Tor identity reset successful.")
-                time.sleep(3) # Wait for circuit to establish
+                time.sleep(6) # Wait for Tor NEWNYM cooldown and new circuit to establish
                 return True
         print(f"⚠️ Tor control port response: {response}")
     except Exception as e:
         print(f"⚠️ Failed to reset Tor identity: {e}")
+    finally:
+        try:
+            s.close()
+        except Exception:
+            pass
     return False
 
 def navigate_to_url_with_retry(driver, url, max_retries=10, wait_time=10, page_load_timeout=60):
@@ -441,9 +446,16 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
                 print("⚠️ Could not locate visible Captcha Image element for OCR.")
                 return None
 
-        for _ in range(6):
-            if captcha_img.is_displayed() and captcha_img.size.get('width', 0) > 10:
-                break
+        for _ in range(30):
+            try:
+                is_loaded = driver.execute_script(
+                    "return arguments[0].complete && typeof arguments[0].naturalWidth != 'undefined' && arguments[0].naturalWidth > 0;",
+                    captcha_img
+                )
+                if captcha_img.is_displayed() and captcha_img.size.get('width', 0) > 10 and is_loaded:
+                    break
+            except Exception:
+                pass
             time.sleep(0.5)
 
         try:
@@ -550,7 +562,7 @@ def login_to_portal(driver, portal_url, username, password, max_retries=10):
 
         print(f"🔐 Login attempt {attempt + 1}/{max_retries} for user: {username}...")
         try:
-            navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=3)
+            navigate_to_url_with_retry(driver, portal_url, max_retries=4, wait_time=4)
             time.sleep(2)
 
             if is_logged_in(driver):
