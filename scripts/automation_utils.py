@@ -90,9 +90,9 @@ def navigate_to_url_with_retry(driver, url, max_retries=5, wait_time=5, page_loa
     )
 
     if page_load_timeout is None:
-        # Use 120s timeout for login page (portal takes 40-50s to respond even natively),
+        # Use 60s timeout for login page so dead/blocked Tor circuits fail fast and rotate,
         # and 480s for heavy authenticated portal queries (e.g. IMFL/CS reports).
-        page_load_timeout = 120 if "site/login" in (url or "").lower() else 480
+        page_load_timeout = 60 if "site/login" in (url or "").lower() else 480
     
     for attempt in range(1, max_retries + 1):
         try:
@@ -579,7 +579,7 @@ def is_logged_in(driver):
         pass
     return False
 
-def login_to_portal(driver, portal_url, username, password, max_retries=8):
+def login_to_portal(driver, portal_url, username, password, max_retries=15):
     """
     Robust login implementation with up to max_retries attempts,
     OCR candidate validation, fast captcha refresh, and verified 2-step AJAX session checks.

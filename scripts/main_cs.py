@@ -445,7 +445,7 @@ try:
     if not args.headless:
         driver.maximize_window()
 
-    login_success = automation_utils.login_to_portal(driver, PORTAL_URL, USERNAME, PASSWORD, max_retries=8)
+    login_success = automation_utils.login_to_portal(driver, PORTAL_URL, USERNAME, PASSWORD, max_retries=15)
 
     if not login_success:
         print("❌ Login Failed after retries.")
@@ -527,17 +527,18 @@ try:
     headers = EXPECTED_HEADERS # <-- Use the correct headers
     
     try:
-        all_rows = driver.find_elements(By.XPATH, "//tbody/tr[./td]")
-        print(f"Found {len(all_rows)} data rows to process.")
+        # Fast batch DOM extraction: fetches all table cells in 1 JS call instead of 20,000+ slow Selenium IPC calls
+        all_rows_data = driver.execute_script(
+            "return Array.from(document.querySelectorAll('tbody tr')).map(tr => Array.from(tr.querySelectorAll('td')).map(td => (td.innerText || td.textContent || '').trim())).filter(r => r.length > 0);"
+        )
+        print(f"Found {len(all_rows_data)} data rows to process.")
         current_supplier_info = {} 
         liquor_types_for_current_truck = []
         
         # Track which trucks we have already reset in this session to avoid clearing them if they appear again (e.g. merge rows)
         scraped_trucks_session = set()
 
-        for row in all_rows:
-            cols = row.find_elements(By.TAG_NAME, "td")
-            row_data = [col.text.strip() for col in cols]
+        for row_data in all_rows_data:
 
             # --- UPDATED: No PassNumber ---
             # Check for start of a new truck entry (Row starts with a digit)
