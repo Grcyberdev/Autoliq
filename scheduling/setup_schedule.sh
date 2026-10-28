@@ -77,13 +77,11 @@ echo "🔄 Reloading LaunchAgent..."
 launchctl unload "$DEST_PLIST" 2>/dev/null
 launchctl load "$DEST_PLIST"
 
-# 3. Schedule Wake Up using pmset (if not already set)
-if pmset -g sched 2>/dev/null | grep -q "wake at 9:15PM every day"; then
-    echo "⏰ Daily wake-up at 9:15 PM is already active."
-else
-    echo "⏰ Scheduling daily wake up at 9:15 PM (requires sudo)..."
-    sudo pmset repeat wake MTWRFSU 21:15:00 2>/dev/null || echo "ℹ️ Note: pmset wake schedule requires administrator privileges."
-fi
+# 3. Schedule Wake Up using pmset
+# Note: This requires sudo.
+echo "⏰ Scheduling daily wake up at 9:15 PM..."
+echo "Enter your password if prompted:"
+sudo pmset repeat wake MTWRFSU 21:15:00
 
 echo "✅ Setup Complete!"
 echo "   - Script configured to run at 12:00 PM, 5:30 PM, and 9:20 PM daily."

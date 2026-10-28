@@ -79,24 +79,5 @@ else
 fi
 
 echo "-------------------------------------------" >> "$LOG_FILE"
-# Auto-sync checkpoint changes to GitHub
-cd "$PROJECT_ROOT"
-git add incoming_stock_checkpoint.json stock_data_checkpoint.json 2>/dev/null
-if ! git diff --staged --quiet; then
-    echo "💾 Checkpoint changes detected. Committing and pushing to GitHub..." >> "$LOG_FILE"
-    git commit -m "Auto-update checkpoint data" >> "$LOG_FILE" 2>&1
-    for i in 1 2 3; do
-        if git pull --rebase origin main >> "$LOG_FILE" 2>&1 && git push origin main >> "$LOG_FILE" 2>&1; then
-            echo "✅ Checkpoint changes pushed to GitHub successfully." >> "$LOG_FILE"
-            break
-        fi
-        echo "⚠️ Git push retry $i/3..." >> "$LOG_FILE"
-        sleep 2
-    done
-else
-    echo "ℹ️ No checkpoint changes to commit." >> "$LOG_FILE"
-fi
-
-echo "-------------------------------------------" >> "$LOG_FILE"
 echo "🏁 Automation Run Finished: $(date)" >> "$LOG_FILE"
 echo "===========================================" >> "$LOG_FILE"
