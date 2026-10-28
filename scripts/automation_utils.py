@@ -286,7 +286,7 @@ def setup_driver(headless=False):
         indian_proxy = os.environ.get("INDIAN_PROXY") or config.get("INDIAN_PROXY")
         print(f"🇮🇳 INDIAN PROXY ENABLED: Configuring Chrome to use {indian_proxy}")
         chrome_options.add_argument(f"--proxy-server={indian_proxy}")
-        chrome_options.add_argument("--proxy-bypass-list=<-loopback>;127.0.0.1;localhost")
+        chrome_options.add_argument("--proxy-bypass-list=<-loopback>")
     elif os.environ.get("SOCKS5_PROXY"):
         socks_proxy = os.environ.get("SOCKS5_PROXY")
         print(f"🌐 SOCKS5 PROXY ENABLED: Configuring Chrome to use {socks_proxy}")
@@ -737,6 +737,15 @@ def login_to_portal(driver, portal_url, username, password, max_retries=15):
         except Exception as e:
             short_err = str(e).splitlines()[0] if str(e) else str(e)
             print(f"⚠️ Error during login attempt {attempt + 1}: {short_err} (Current URL: {driver.current_url})")
+
+    if not login_success:
+        try:
+            os.makedirs("debug_screenshots", exist_ok=True)
+            screenshot_path = f"debug_screenshots/login_failed_{username}_{int(time.time())}.png"
+            driver.save_screenshot(screenshot_path)
+            print(f"📸 Saved failure screenshot: {screenshot_path}")
+        except Exception:
+            pass
 
     return login_success
 
