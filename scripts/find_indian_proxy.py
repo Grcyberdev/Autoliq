@@ -78,7 +78,8 @@ def verify_single_proxy(proxy_url):
     )
     t0 = time.time()
     try:
-        with opener.open(req, timeout=4) as resp:
+        # 8s timeout allows for transatlantic latency from US runner to Indian proxy and back
+        with opener.open(req, timeout=8) as resp:
             elapsed = time.time() - t0
             if resp.status == 200:
                 body = resp.read(1024).decode("utf-8", errors="ignore").lower()
@@ -88,29 +89,40 @@ def verify_single_proxy(proxy_url):
         pass
     return None
 
-def find_working_indian_proxy(max_candidates=60, max_workers=25):
+def find_working_indian_proxy(max_candidates=120, max_workers=35):
     candidates = fetch_candidate_proxies()
     if not candidates:
         print("❌ Could not retrieve any proxy candidates.")
         return None
 
-    test_batch = candidates[:max_candidates]
-    print(f"⚡ Concurrently testing {len(test_batch)} Indian proxies against portal (timeout=4s)...")
+    # Priority seeds known to have Indian endpoints
+    priority_seeds = [
+        "http://139.59.0.200:3128",
+        "http://150.107.253.62:1111",
+        "http://43.249.227.186:82",
+        "http://103.177.235.194:84",
+        "http://103.41.97.225:83",
+        "http://103.135.70.9:8080",
+        "http://103.148.39.10:84",
+        "http://203.192.217.6:8080",
+    ]
+    # Put priority seeds at the front
+    ordered_candidates = [p for p in priority_seeds if p in candidates] + [p for p in priority_seeds if p not in candidates]
+    ordered_candidates += [p for p in candidates if p not in priority_seeds]
+
+    test_batch = ordered_candidates[:max_candidates]
+    print(f"⚡ Concurrently testing {len(test_batch)} Indian proxies against portal (timeout=8s)...")
     
     verified = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = [executor.submit(verify_single_proxy, p) for p in test_batch]
+        futures = {executor.submit(verify_single_proxy, p): p for p in test_batch}
         for future in concurrent.futures.as_completed(futures):
             res = future.result()
             if res:
                 proxy_url, latency = res
                 print(f"   🎯 Live Indian Proxy verified: {proxy_url} (latency: {latency:.2f}s)")
                 verified.append(res)
-                # If we found at least 2 fast proxies, break early to save startup time
-                if len(verified) >= 2:
-                    # Cancel remaining futures
-                    for f in futures:
-                        f.cancel()
+                if len(verified) >= 3:
                     break
 
     if verified:
