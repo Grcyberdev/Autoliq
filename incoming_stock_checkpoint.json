@@ -25699,6 +25699,69 @@
             "Kingfisher Original Strong": {
                 "Can": 1400
             }
+        },
+        "AS01LC3031": {
+            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
+            "Old Monk The Legend": {
+                "750ml": 5,
+                "180ml": 5
+            },
+            "Old Monk Vatted": {
+                "180ml": 450,
+                "750ml": 140,
+                "375ml": 100
+            },
+            "Old Monk Coffee": {
+                "375ml": 15,
+                "180ml": 15,
+                "750ml": 5
+            },
+            "Old Monk Gold Reserve": {
+                "180ml": 20,
+                "750ml": 10,
+                "375ml": 15
+            },
+            "Old Monk Jamun & Mint Vodka": {
+                "750ml": 5,
+                "180ml": 15
+            }
+        },
+        "AS01TC2295": {
+            "_TelegramSupplier": "United Spirits Limited",
+            "Royal Challenge American Pride": {
+                "180ml": 10
+            },
+            "JW Black Label": {
+                "750ml": 5
+            },
+            "Vat 69": {
+                "180ml": 2,
+                "375ml": 2
+            },
+            "Black Dog Triple Gold": {
+                "180ml": 3,
+                "750ml": 4,
+                "375ml": 1
+            },
+            "Black Dog Centenary": {
+                "750ml": 2
+            },
+            "Black & White": {
+                "180ml": 11,
+                "750ml": 20,
+                "375ml": 10
+            },
+            "Smirnoff Mirchi Mango": {
+                "180ml": 20,
+                "750ml": 5
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 25
+            },
+            "Smirnoff": {
+                "180ml": 15,
+                "750ml": 10
+            }
         }
     }
 }
