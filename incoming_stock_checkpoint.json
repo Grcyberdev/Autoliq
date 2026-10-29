@@ -23361,8 +23361,8 @@
         "AS03AC8906": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Rhino Limon": {
-                "CS": 75,
-                "CA": 75
+                "CA": 75,
+                "CS": 75
             },
             "Rhino No 1": {
                 "CA": 130
@@ -23862,8 +23862,8 @@
         "AS03BC8122": {
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti No. 1": {
-                "CS": 50,
-                "CA": 150
+                "CA": 150,
+                "CS": 50
             },
             "Masti Special": {
                 "CA": 250
@@ -24853,12 +24853,12 @@
     "24-Oct-2026": {
         "AS03AC8906": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino Whiskey": {
+                "CS": 30
+            },
             "Rhino No 1": {
                 "CS": 150,
                 "CA": 100
-            },
-            "Rhino Whiskey": {
-                "CS": 30
             }
         },
         "AS01MC5628": {
@@ -25683,6 +25683,15 @@
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        }
+    },
+    "29-Oct-2026": {
+        "AS04CC0758": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino Limon": {
+                "CA": 180,
+                "CS": 100
             }
         }
     }
