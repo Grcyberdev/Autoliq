@@ -25865,5 +25865,21 @@
                 "750ml": 5
             }
         }
+    },
+    "30-Oct-2026": {
+        "NL01AB7197": {
+            "_TelegramSupplier": "M/S Army Welfare Project Limited",
+            "Takin Red Wine": {
+                "375ml": 15,
+                "750ml": 35
+            },
+            "Raven Cabernet": {
+                "750ml": 20
+            },
+            "Zumzin Peach Wine": {
+                "750ml": 150,
+                "375ml": 80
+            }
+        }
     }
 }
