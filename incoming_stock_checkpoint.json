@@ -24477,9 +24477,9 @@
         "AS01GC6794": {
             "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
             "AC Black Luxury": {
-                "180ml": 750,
                 "750ml": 50,
-                "375ml": 100
+                "375ml": 100,
+                "180ml": 750
             }
         },
         "AS01JC5133": {
@@ -24492,23 +24492,23 @@
         },
         "AS01UC5751": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Signature": {
+                "750ml": 30,
+                "375ml": 30,
+                "180ml": 30
+            },
             "Royal Challenge": {
+                "375ml": 100,
                 "180ml": 175,
-                "750ml": 75,
-                "375ml": 100
+                "750ml": 75
             },
             "Director's Special Black": {
                 "375ml": 75,
                 "180ml": 175
             },
-            "Signature": {
-                "180ml": 30,
-                "375ml": 30,
-                "750ml": 30
-            },
             "Antiquity Blue Ultra": {
-                "180ml": 10,
                 "750ml": 5,
+                "180ml": 10,
                 "375ml": 5
             },
             "McDowell's Rum": {
@@ -24646,27 +24646,27 @@
     "23-Oct-2026": {
         "NL01AL1759": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
-            "Imperial Blue": {
-                "180ml": 100,
-                "375ml": 150,
-                "750ml": 50
-            },
             "Imperial Black": {
                 "750ml": 50,
-                "375ml": 50,
-                "180ml": 150
+                "180ml": 150,
+                "375ml": 50
+            },
+            "Imperial Blue": {
+                "180ml": 100,
+                "750ml": 50,
+                "375ml": 150
             }
         },
         "AS01GC6785": {
             "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
+            "White Magic Orange Gin": {
+                "180ml": 105,
+                "750ml": 5,
+                "375ml": 10
+            },
             "Vinho Porto Port Wine": {
                 "750ml": 20,
                 "375ml": 10
-            },
-            "White Magic Orange Gin": {
-                "180ml": 105,
-                "375ml": 10,
-                "750ml": 5
             }
         },
         "HR38Y0290": {
@@ -24683,8 +24683,8 @@
             "Jinro Peach Wine": {
                 "SA": 35
             },
-            "Bushmills 15 Yrs": {
-                "Full": 1
+            "Belenkaya Vodka": {
+                "Full": 2
             },
             "Bushmills 12 Yrs": {
                 "Full": 2
@@ -24695,8 +24695,8 @@
             "Bushmills Original": {
                 "Full": 23
             },
-            "Belenkaya Vodka": {
-                "Full": 2
+            "Bushmills 15 Yrs": {
+                "Full": 1
             }
         },
         "AS01UC1125": {
@@ -24707,15 +24707,15 @@
         },
         "NL01AE7158": {
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
-            "Royal Stag": {
-                "750ml": 150,
-                "375ml": 185,
-                "180ml": 200
-            },
             "100 Pipers": {
                 "375ml": 5,
                 "750ml": 5,
                 "180ml": 5
+            },
+            "Royal Stag": {
+                "375ml": 185,
+                "180ml": 200,
+                "750ml": 150
             }
         },
         "AS03BC8344": {
@@ -24726,40 +24726,45 @@
         },
         "AS01SC8300": {
             "_TelegramSupplier": "Radico Khaitan Limited Tieup With Sifaruh Group Of Industries",
-            "Magic Moments": {
-                "180ml": 85,
-                "750ml": 20,
-                "375ml": 30
-            },
-            "Magic Moments Lemon": {
-                "750ml": 5,
-                "375ml": 10,
-                "180ml": 50
-            },
             "Magic Moments Green Apple": {
                 "750ml": 10,
                 "375ml": 15,
                 "180ml": 25
             },
+            "Magic Moments Lemon": {
+                "375ml": 10,
+                "180ml": 50,
+                "750ml": 5
+            },
             "After Dark": {
                 "375ml": 25,
                 "180ml": 25
+            },
+            "Magic Moments": {
+                "180ml": 85,
+                "375ml": 30,
+                "750ml": 20
             }
         },
         "AS01NC1686": {
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
             "McDowell's Rum": {
+                "375ml": 200,
                 "180ml": 500,
-                "750ml": 200,
-                "375ml": 200
+                "750ml": 200
             }
         },
         "AS01QC4009": {
             "_TelegramSupplier": "Pernod Ricard India Private Limited",
-            "Ballantines": {
-                "750ml": 5
+            "100 Pipers": {
+                "750ml": 3
             },
-            "Chivas Regal 12 Yrs": {
+            "Xclamation Rum": {
+                "750ml": 5,
+                "375ml": 8,
+                "180ml": 7
+            },
+            "Beefeater": {
                 "750ml": 5
             },
             "Jameson": {
@@ -24769,15 +24774,10 @@
             "Glenlivet 12 Yrs": {
                 "Full": 2
             },
-            "Xclamation Rum": {
-                "180ml": 7,
-                "375ml": 8,
+            "Ballantines": {
                 "750ml": 5
             },
-            "100 Pipers": {
-                "750ml": 3
-            },
-            "Beefeater": {
+            "Chivas Regal 12 Yrs": {
                 "750ml": 5
             }
         },
@@ -24796,8 +24796,8 @@
         "RJ52GA1125": {
             "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Brahmaputra Breweries Llp",
             "Godfather Select": {
-                "Can": 460,
-                "Bottle": 900
+                "Bottle": 900,
+                "Can": 460
             }
         },
         "AS01EC6249": {
@@ -24812,38 +24812,38 @@
         },
         "AS01HC9069": {
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
-            "McDowell's Double Oak Barrel": {
-                "750ml": 15,
-                "180ml": 125,
-                "375ml": 10
-            },
             "McDowell's Luxury": {
-                "180ml": 300,
+                "750ml": 50,
                 "375ml": 50,
-                "750ml": 50
+                "180ml": 300
+            },
+            "McDowell's Double Oak Barrel": {
+                "375ml": 10,
+                "750ml": 15,
+                "180ml": 125
             }
         },
         "AS15AC6646": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
-            "Antiquity Blue Ultra": {
-                "375ml": 5,
-                "180ml": 5,
+            "Signature": {
+                "180ml": 15,
+                "375ml": 15,
                 "750ml": 10
             },
-            "Signature": {
-                "375ml": 15,
-                "750ml": 10,
-                "180ml": 15
+            "Director's Special Black": {
+                "375ml": 50,
+                "750ml": 40,
+                "180ml": 110
             },
             "Royal Challenge": {
-                "375ml": 60,
                 "750ml": 30,
-                "180ml": 100
+                "180ml": 100,
+                "375ml": 60
             },
-            "Director's Special Black": {
-                "180ml": 110,
-                "750ml": 40,
-                "375ml": 50
+            "Antiquity Blue Ultra": {
+                "375ml": 5,
+                "750ml": 10,
+                "180ml": 5
             },
             "McDowell's Rum": {
                 "180ml": 100
@@ -25869,13 +25869,13 @@
     "30-Oct-2026": {
         "NL01AB7197": {
             "_TelegramSupplier": "M/S Army Welfare Project Limited",
-            "Zumzin Peach Wine": {
-                "750ml": 150,
-                "375ml": 80
-            },
             "Takin Red Wine": {
-                "750ml": 35,
-                "375ml": 15
+                "375ml": 15,
+                "750ml": 35
+            },
+            "Zumzin Peach Wine": {
+                "375ml": 80,
+                "750ml": 150
             },
             "Raven Cabernet": {
                 "750ml": 20
@@ -25912,6 +25912,19 @@
             },
             "Officer's Choice": {
                 "750ml": 50
+            }
+        },
+        "AS01KC6808": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Double Oak Barrel": {
+                "750ml": 20,
+                "180ml": 110,
+                "375ml": 70
+            },
+            "McDowell's Luxury": {
+                "180ml": 200,
+                "750ml": 50,
+                "375ml": 100
             }
         }
     }
