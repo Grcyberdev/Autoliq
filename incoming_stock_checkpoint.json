@@ -26042,15 +26042,25 @@
                 "750ml": 5
             },
             "AC Black Luxury": {
-                "180ml": 650,
                 "375ml": 175,
-                "750ml": 75
+                "750ml": 75,
+                "180ml": 650
             }
         },
         "NL01AF6253": {
             "_TelegramSupplier": "Aether Breweries Llp",
             "Goldflow Strong": {
                 "Can": 300
+            }
+        },
+        "AS01PC3391": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's Luxury": {
+                "375ml": 55,
+                "180ml": 400
+            },
+            "McDowell's Rum": {
+                "180ml": 95
             }
         }
     }
