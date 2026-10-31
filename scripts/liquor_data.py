@@ -175,6 +175,7 @@ LIQUOR_NAME_MAPPING = {
     "SEVEN ISLANDS PURE MALT WHISKY": "Seven Islands Whisky",
     "THE INDIAN EDIT SUPER PREMIUM WHISKY": "The Indian Edit Whiskey",
     "THE ROCKFORD IMPERIAL RESERVE PREMIUM BLENDED WHISKY": "Rockford Imperial Reserve Whiskey",
+    "TEELING WHISKEY SINGLE MALT THE SPIRIT OF DUBLIN": "Teeling Single Malt",
     
     
     
@@ -350,8 +351,8 @@ LIQUOR_NAME_MAPPING = {
     "V21 ULTRA SMOOTH VODKA LEMON": "V21 Lemon Vodka",
     "M2 MAGIC MOMENTS REMIX CRANBERRY VIVID FLAVOURED VODKA": "Magic Moments Remix Cranberry",
     "WHITE MAGIC VODKA": "White Magic Vodka",
-    "ELJIMADOR TEQUILA BLANCO": "El Jimador Blanco Tequila",
-    "ELJIMADOR TEQUILA REPOSADO": "El Jimador Reposado Tequila",
+    "EL JIMADOR TEQUILA BLANCO": "El Jimador Blanco Tequila",
+    "EL JIMADOR TEQUILA REPOSADO": "El Jimador Reposado Tequila",
     "OLD MONK JAMUN & MINT PREMIUM FLAVOURED VODKA": "Old Monk Jamun & Mint Vodka",
 
 
