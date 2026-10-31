@@ -26034,5 +26034,18 @@
                 "Bottle": 1200
             }
         }
+    },
+    "31-Oct-2026": {
+        "WB03D1667": {
+            "_TelegramSupplier": "Raizel Industries",
+            "White Magic Gin": {
+                "750ml": 5
+            },
+            "AC Black Luxury": {
+                "750ml": 75,
+                "180ml": 650,
+                "375ml": 175
+            }
+        }
     }
 }
