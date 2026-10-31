@@ -26055,12 +26055,43 @@
         },
         "AS01PC3391": {
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
-            "McDowell's Luxury": {
-                "375ml": 55,
-                "180ml": 400
-            },
             "McDowell's Rum": {
                 "180ml": 95
+            },
+            "McDowell's Luxury": {
+                "180ml": 400,
+                "375ml": 55
+            }
+        },
+        "AS05AC4345": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "The Indian Edit Whiskey": {
+                "180ml": 10
+            },
+            "Iconiq Vodka": {
+                "180ml": 50,
+                "750ml": 20,
+                "375ml": 20
+            },
+            "Officer's Choice": {
+                "750ml": 50
+            },
+            "Officer's Choice Blue": {
+                "180ml": 5,
+                "375ml": 5
+            },
+            "Officer's Choice pet": {
+                "180ml": 250,
+                "375ml": 25
+            },
+            "Sterling B7": {
+                "180ml": 10
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 5
+            },
+            "Iconiq Hippy": {
+                "180ml": 60
             }
         }
     }
