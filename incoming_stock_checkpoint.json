@@ -24323,11 +24323,11 @@
     "16-Oct-2026": {
         "AS03BC5273": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
-            "Rhino Limon": {
-                "CA": 50
-            },
             "Rhino No 1": {
                 "CA": 230
+            },
+            "Rhino Limon": {
+                "CA": 50
             }
         },
         "AS12CC2119": {
@@ -24853,12 +24853,12 @@
     "24-Oct-2026": {
         "AS03AC8906": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
-            "Rhino Whiskey": {
-                "CS": 30
-            },
             "Rhino No 1": {
                 "CS": 150,
                 "CA": 100
+            },
+            "Rhino Whiskey": {
+                "CS": 30
             }
         },
         "AS01MC5628": {
@@ -25073,8 +25073,8 @@
         "AS03BC8344": {
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         },
         "AS03AC8906": {
@@ -26172,6 +26172,13 @@
             },
             "Six Fields Pilsner": {
                 "Keg": 50
+            }
+        },
+        "AS01LC0437": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CS": 300,
+                "CA": 400
             }
         }
     }
