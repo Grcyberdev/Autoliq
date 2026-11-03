@@ -26135,20 +26135,20 @@
         },
         "AS25EC0149": {
             "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
-            "After Dark": {
-                "180ml": 200,
-                "750ml": 20,
-                "375ml": 55
-            },
             "Magic Moments": {
                 "375ml": 35,
                 "180ml": 145,
                 "750ml": 20
             },
+            "After Dark": {
+                "750ml": 20,
+                "180ml": 200,
+                "375ml": 55
+            },
             "Magic Moments Green Apple": {
                 "180ml": 40,
-                "750ml": 10,
-                "375ml": 25
+                "375ml": 25,
+                "750ml": 10
             }
         }
     },
@@ -26164,14 +26164,14 @@
             "Six Fields Cult": {
                 "Can": 15
             },
+            "Six Fields Brute": {
+                "Bottle": 10
+            },
             "Six Fields Pilsner": {
                 "Keg": 50
             },
             "Six Fields Blanche": {
                 "Keg": 50
-            },
-            "Six Fields Brute": {
-                "Bottle": 10
             }
         },
         "AS01LC0437": {
@@ -26185,8 +26185,8 @@
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
                 "750ml": 100,
-                "375ml": 150,
-                "180ml": 100
+                "180ml": 100,
+                "375ml": 150
             }
         }
     },
@@ -26213,8 +26213,8 @@
         "AS01RC7793": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
-                "750ml": 200,
-                "180ml": 300
+                "180ml": 300,
+                "750ml": 200
             },
             "McDowell's No 1 Old": {
                 "180ml": 50
@@ -26222,13 +26222,13 @@
         },
         "AS01LC6538": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's No 1 Old": {
+                "750ml": 25,
+                "180ml": 300,
+                "375ml": 100
+            },
             "Royal Challenge": {
                 "180ml": 75
-            },
-            "McDowell's No 1 Old": {
-                "180ml": 300,
-                "750ml": 25,
-                "375ml": 100
             },
             "Director's Special Black": {
                 "180ml": 50
@@ -26237,9 +26237,17 @@
         "AS01NC3318": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Black": {
+                "375ml": 75,
                 "750ml": 25,
-                "180ml": 450,
-                "375ml": 75
+                "180ml": 450
+            }
+        },
+        "AS01UC8611": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "375ml": 100,
+                "750ml": 50,
+                "180ml": 400
             }
         }
     }
