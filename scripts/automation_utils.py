@@ -1104,13 +1104,13 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header, com
             
             detail_lines = []
             for liquor_name, size_dict in sorted_liquors:
-                # Sort sizes intuitively based on generic volume sizes
+                # Sort sizes in standard excise order: Full -> Half -> Quarter
                 size_priority = {
-                    "Quarter": 1, "NN": 1, "CP": 1, "CR": 1, "CQ": 1, "180ml": 1,
+                    "Full": 1, "QQ": 1, "JM": 1, "QM": 1, "750ml": 1,
                     "Half": 2, "PP": 2, "375ml": 2,
-                    "Pint": 3, "UP": 3,
-                    "Stubby": 4, "GP": 4,
-                    "Full": 5, "QQ": 5, "JM": 5, "QM": 5, "750ml": 5,
+                    "Quarter": 3, "NN": 3, "CP": 3, "CR": 3, "CQ": 3, "180ml": 3,
+                    "Pint": 4, "UP": 4,
+                    "Stubby": 5, "GP": 5,
                     "Bottle": 6, "BS": 6,
                     "Can": 7, "AP": 7,
                     "Keg": 8, "TT": 8
@@ -1290,12 +1290,13 @@ def get_bifurcation_string(date_raw, truck_val, incoming_checkpoint):
     parts_list = []
     for liquor_name, size_dict in sorted_liquors:
         mapped_name = get_short_name(liquor_name)
+        # Sort sizes in standard excise order: Full -> Half -> Quarter
         size_priority = {
-            "Quarter": 1, "NN": 1, "CP": 1, "CR": 1, "CQ": 1, "180ml": 1,
+            "Full": 1, "QQ": 1, "JM": 1, "QM": 1, "750ml": 1,
             "Half": 2, "PP": 2, "375ml": 2,
-            "Pint": 3, "UP": 3,
-            "Stubby": 4, "GP": 4,
-            "Full": 5, "QQ": 5, "JM": 5, "QM": 5, "750ml": 5,
+            "Quarter": 3, "NN": 3, "CP": 3, "CR": 3, "CQ": 3, "180ml": 3,
+            "Pint": 4, "UP": 4,
+            "Stubby": 5, "GP": 5,
             "Bottle": 6, "BS": 6,
             "Can": 7, "AP": 7,
             "Keg": 8, "TT": 8
