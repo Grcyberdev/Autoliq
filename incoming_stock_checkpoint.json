@@ -26137,18 +26137,18 @@
             "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
             "Magic Moments": {
                 "375ml": 35,
-                "750ml": 20,
-                "180ml": 145
+                "180ml": 145,
+                "750ml": 20
             },
             "After Dark": {
                 "180ml": 200,
-                "375ml": 55,
-                "750ml": 20
+                "750ml": 20,
+                "375ml": 55
             },
             "Magic Moments Green Apple": {
-                "375ml": 25,
+                "180ml": 40,
                 "750ml": 10,
-                "180ml": 40
+                "375ml": 25
             }
         }
     },
@@ -26161,14 +26161,14 @@
         },
         "AS32C4703": {
             "_TelegramSupplier": "Devans Modern Breweries Ltd.",
-            "Six Fields Cult": {
-                "Can": 15
-            },
             "Six Fields Blanche": {
                 "Keg": 50
             },
             "Six Fields Brute": {
                 "Bottle": 10
+            },
+            "Six Fields Cult": {
+                "Can": 15
             },
             "Six Fields Pilsner": {
                 "Keg": 50
@@ -26179,6 +26179,14 @@
             "Masti": {
                 "CS": 300,
                 "CA": 400
+            }
+        },
+        "AS03BC9029": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Lords Whiskey": {
+                "375ml": 150,
+                "750ml": 100,
+                "180ml": 100
             }
         }
     }
