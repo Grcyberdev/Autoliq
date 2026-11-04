@@ -26161,14 +26161,14 @@
         },
         "AS32C4703": {
             "_TelegramSupplier": "Devans Modern Breweries Ltd.",
-            "Six Fields Brute": {
-                "Bottle": 10
-            },
             "Six Fields Pilsner": {
                 "Keg": 50
             },
             "Six Fields Cult": {
                 "Can": 15
+            },
+            "Six Fields Brute": {
+                "Bottle": 10
             },
             "Six Fields Blanche": {
                 "Keg": 50
@@ -26184,8 +26184,8 @@
         "AS03BC9029": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
-                "750ml": 100,
                 "180ml": 100,
+                "750ml": 100,
                 "375ml": 150
             }
         }
@@ -26212,12 +26212,12 @@
         },
         "AS01RC7793": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's Rum": {
+                "750ml": 200,
+                "180ml": 300
+            },
             "McDowell's No 1 Old": {
                 "180ml": 50
-            },
-            "McDowell's Rum": {
-                "180ml": 300,
-                "750ml": 200
             }
         },
         "AS01LC6538": {
@@ -26227,35 +26227,50 @@
                 "750ml": 25,
                 "180ml": 300
             },
-            "Director's Special Black": {
-                "180ml": 50
-            },
             "Royal Challenge": {
                 "180ml": 75
+            },
+            "Director's Special Black": {
+                "180ml": 50
             }
         },
         "AS01NC3318": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Black": {
                 "750ml": 25,
-                "180ml": 450,
-                "375ml": 75
+                "375ml": 75,
+                "180ml": 450
             }
         },
         "AS01UC8611": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Blue": {
-                "750ml": 50,
+                "180ml": 400,
                 "375ml": 100,
-                "180ml": 400
+                "750ml": 50
             }
         },
         "AS25FC5903": {
             "_TelegramSupplier": "Seven Sisters Trade And Distilleries Private Limited",
             "Queen's Crown": {
-                "750ml": 10,
+                "180ml": 65,
                 "375ml": 25,
-                "180ml": 65
+                "750ml": 10
+            }
+        }
+    },
+    "04-Nov-2026": {
+        "AS01FC3571": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
+            "Mansion House": {
+                "180ml": 20,
+                "750ml": 25,
+                "375ml": 20
+            },
+            "Imperial Black": {
+                "750ml": 25,
+                "180ml": 350,
+                "375ml": 110
             }
         }
     }
