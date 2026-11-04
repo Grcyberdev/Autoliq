@@ -26136,9 +26136,9 @@
         "AS25EC0149": {
             "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
             "Magic Moments": {
-                "750ml": 20,
+                "375ml": 35,
                 "180ml": 145,
-                "375ml": 35
+                "750ml": 20
             },
             "After Dark": {
                 "180ml": 200,
@@ -26146,9 +26146,9 @@
                 "750ml": 20
             },
             "Magic Moments Green Apple": {
-                "180ml": 40,
                 "375ml": 25,
-                "750ml": 10
+                "750ml": 10,
+                "180ml": 40
             }
         }
     },
@@ -26164,14 +26164,14 @@
             "Six Fields Pilsner": {
                 "Keg": 50
             },
-            "Six Fields Blanche": {
-                "Keg": 50
+            "Six Fields Brute": {
+                "Bottle": 10
             },
             "Six Fields Cult": {
                 "Can": 15
             },
-            "Six Fields Brute": {
-                "Bottle": 10
+            "Six Fields Blanche": {
+                "Keg": 50
             }
         },
         "AS01LC0437": {
@@ -26185,8 +26185,8 @@
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
                 "180ml": 100,
-                "375ml": 150,
-                "750ml": 100
+                "750ml": 100,
+                "375ml": 150
             }
         }
     },
@@ -26213,8 +26213,8 @@
         "AS01RC7793": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
-                "750ml": 200,
-                "180ml": 300
+                "180ml": 300,
+                "750ml": 200
             },
             "McDowell's No 1 Old": {
                 "180ml": 50
@@ -26222,13 +26222,13 @@
         },
         "AS01LC6538": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
-            "McDowell's No 1 Old": {
-                "375ml": 100,
-                "180ml": 300,
-                "750ml": 25
-            },
             "Director's Special Black": {
                 "180ml": 50
+            },
+            "McDowell's No 1 Old": {
+                "180ml": 300,
+                "375ml": 100,
+                "750ml": 25
             },
             "Royal Challenge": {
                 "180ml": 75
@@ -26253,9 +26253,9 @@
         "AS25FC5903": {
             "_TelegramSupplier": "Seven Sisters Trade And Distilleries Private Limited",
             "Queen's Crown": {
+                "180ml": 65,
                 "750ml": 10,
-                "375ml": 25,
-                "180ml": 65
+                "375ml": 25
             }
         }
     },
@@ -26279,6 +26279,27 @@
                 "750ml": 50,
                 "375ml": 100,
                 "180ml": 400
+            }
+        },
+        "AS01NC6417": {
+            "_TelegramSupplier": "United Spirits Limited",
+            "Smirnoff Mirchi Mango": {
+                "180ml": 15,
+                "750ml": 5
+            },
+            "Vat 69": {
+                "750ml": 5
+            },
+            "JW Red Label": {
+                "Quarter": 6,
+                "375ml": 3
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 20,
+                "750ml": 5
+            },
+            "JW Black Label": {
+                "750ml": 5
             }
         }
     }
