@@ -26136,19 +26136,19 @@
         "AS25EC0149": {
             "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
             "Magic Moments": {
-                "375ml": 35,
+                "750ml": 20,
                 "180ml": 145,
+                "375ml": 35
+            },
+            "After Dark": {
+                "180ml": 200,
+                "375ml": 55,
                 "750ml": 20
             },
             "Magic Moments Green Apple": {
+                "180ml": 40,
                 "375ml": 25,
-                "750ml": 10,
-                "180ml": 40
-            },
-            "After Dark": {
-                "375ml": 55,
-                "180ml": 200,
-                "750ml": 20
+                "750ml": 10
             }
         }
     },
@@ -26164,14 +26164,14 @@
             "Six Fields Pilsner": {
                 "Keg": 50
             },
+            "Six Fields Blanche": {
+                "Keg": 50
+            },
             "Six Fields Cult": {
                 "Can": 15
             },
             "Six Fields Brute": {
                 "Bottle": 10
-            },
-            "Six Fields Blanche": {
-                "Keg": 50
             }
         },
         "AS01LC0437": {
@@ -26185,8 +26185,8 @@
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
                 "180ml": 100,
-                "750ml": 100,
-                "375ml": 150
+                "375ml": 150,
+                "750ml": 100
             }
         }
     },
@@ -26206,8 +26206,8 @@
         "AS02CC8645": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Imperial Blue": {
-                "180ml": 500,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 500
             }
         },
         "AS01RC7793": {
@@ -26224,53 +26224,61 @@
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's No 1 Old": {
                 "375ml": 100,
-                "750ml": 25,
-                "180ml": 300
-            },
-            "Royal Challenge": {
-                "180ml": 75
+                "180ml": 300,
+                "750ml": 25
             },
             "Director's Special Black": {
                 "180ml": 50
+            },
+            "Royal Challenge": {
+                "180ml": 75
             }
         },
         "AS01NC3318": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Black": {
-                "750ml": 25,
                 "375ml": 75,
-                "180ml": 450
+                "180ml": 450,
+                "750ml": 25
             }
         },
         "AS01UC8611": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Blue": {
-                "180ml": 400,
+                "750ml": 50,
                 "375ml": 100,
-                "750ml": 50
+                "180ml": 400
             }
         },
         "AS25FC5903": {
             "_TelegramSupplier": "Seven Sisters Trade And Distilleries Private Limited",
             "Queen's Crown": {
-                "180ml": 65,
+                "750ml": 10,
                 "375ml": 25,
-                "750ml": 10
+                "180ml": 65
             }
         }
     },
     "04-Nov-2026": {
         "AS01FC3571": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
-            "Mansion House": {
-                "180ml": 20,
-                "750ml": 25,
-                "375ml": 20
-            },
             "Imperial Black": {
                 "750ml": 25,
                 "180ml": 350,
                 "375ml": 110
+            },
+            "Mansion House": {
+                "180ml": 20,
+                "375ml": 20,
+                "750ml": 25
+            }
+        },
+        "AS01HC9069": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Blue": {
+                "750ml": 50,
+                "375ml": 100,
+                "180ml": 400
             }
         }
     }
