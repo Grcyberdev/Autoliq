@@ -26161,17 +26161,17 @@
         },
         "AS32C4703": {
             "_TelegramSupplier": "Devans Modern Breweries Ltd.",
-            "Six Fields Blanche": {
-                "Keg": 50
-            },
             "Six Fields Pilsner": {
                 "Keg": 50
             },
-            "Six Fields Brute": {
-                "Bottle": 10
+            "Six Fields Blanche": {
+                "Keg": 50
             },
             "Six Fields Cult": {
                 "Can": 15
+            },
+            "Six Fields Brute": {
+                "Bottle": 10
             }
         },
         "AS01LC0437": {
@@ -26184,9 +26184,9 @@
         "AS03BC9029": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
+                "180ml": 100,
                 "750ml": 100,
-                "375ml": 150,
-                "180ml": 100
+                "375ml": 150
             }
         }
     },
@@ -26213,8 +26213,8 @@
         "AS01RC7793": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
             "McDowell's Rum": {
-                "750ml": 200,
-                "180ml": 300
+                "180ml": 300,
+                "750ml": 200
             },
             "McDowell's No 1 Old": {
                 "180ml": 50
@@ -26222,16 +26222,16 @@
         },
         "AS01LC6538": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Director's Special Black": {
+                "180ml": 50
+            },
             "McDowell's No 1 Old": {
+                "750ml": 25,
                 "375ml": 100,
-                "180ml": 300,
-                "750ml": 25
+                "180ml": 300
             },
             "Royal Challenge": {
                 "180ml": 75
-            },
-            "Director's Special Black": {
-                "180ml": 50
             }
         },
         "AS01NC3318": {
@@ -26245,9 +26245,9 @@
         "AS01UC8611": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Blue": {
-                "375ml": 100,
+                "180ml": 400,
                 "750ml": 50,
-                "180ml": 400
+                "375ml": 100
             }
         },
         "AS25FC5903": {
@@ -26393,55 +26393,93 @@
     "05-Nov-2026": {
         "AS01NC1686": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
-            "Imperial Blue": {
-                "180ml": 100,
-                "375ml": 50
-            },
             "Imperial Black": {
-                "180ml": 300,
                 "375ml": 80,
+                "180ml": 300,
                 "750ml": 20
+            },
+            "Imperial Blue": {
+                "375ml": 50,
+                "180ml": 100
             }
         },
         "NL01AE7158": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "McDowell's No 1 Old": {
+                "180ml": 160,
+                "375ml": 40,
+                "750ml": 10
+            },
             "Royal Challenge": {
+                "375ml": 75,
                 "180ml": 100,
-                "750ml": 25,
-                "375ml": 75
+                "750ml": 25
+            },
+            "Director's Special Black": {
+                "375ml": 20,
+                "750ml": 15,
+                "180ml": 65
             },
             "Signature": {
                 "750ml": 5,
-                "180ml": 20,
-                "375ml": 15
-            },
-            "Director's Special Black": {
-                "750ml": 15,
-                "375ml": 20,
-                "180ml": 65
-            },
-            "McDowell's No 1 Old": {
-                "375ml": 40,
-                "180ml": 160,
-                "750ml": 10
+                "375ml": 15,
+                "180ml": 20
             }
         },
         "AS09BC3166": {
             "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
+            "White Magic Orange Gin": {
+                "750ml": 10,
+                "375ml": 30,
+                "180ml": 85
+            },
             "Vinho Porto Port Wine": {
                 "375ml": 20,
                 "750ml": 5
-            },
-            "White Magic Orange Gin": {
-                "180ml": 85,
-                "750ml": 10,
-                "375ml": 30
             }
         },
         "AS02BC0186": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Bottle": 1400
+            }
+        },
+        "AS05BC0699": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice Blue": {
+                "375ml": 5,
+                "180ml": 20
+            },
+            "Sterling B7": {
+                "180ml": 5
+            },
+            "Jolly Roger Rum": {
+                "180ml": 25
+            },
+            "Iconiq Hippy": {
+                "180ml": 60
+            },
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 20
+            },
+            "Sterling Reserve B7 Blended": {
+                "750ml": 5,
+                "375ml": 15
+            },
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 200
+            }
+        },
+        "NL01N6289": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Bottle": 700,
+                "Can": 700
             }
         }
     }
