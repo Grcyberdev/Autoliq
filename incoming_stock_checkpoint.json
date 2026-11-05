@@ -26358,13 +26358,13 @@
         },
         "AS01VC0994": {
             "_TelegramSupplier": "United Spirits Limited",
+            "Smirnoff Mirchi Mango": {
+                "180ml": 15,
+                "750ml": 5
+            },
             "JW Red Label": {
                 "375ml": 3,
                 "Quarter": 6
-            },
-            "Smirnoff Minty Jamun Vodka": {
-                "180ml": 20,
-                "750ml": 5
             },
             "JW Black Label": {
                 "750ml": 5
@@ -26372,9 +26372,9 @@
             "Vat 69": {
                 "750ml": 5
             },
-            "Smirnoff Mirchi Mango": {
-                "180ml": 15,
-                "750ml": 5
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 5,
+                "180ml": 20
             }
         },
         "AS01PC2467": {
@@ -26393,14 +26393,37 @@
     "05-Nov-2026": {
         "AS01NC1686": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
-            "Imperial Black": {
-                "750ml": 20,
-                "375ml": 80,
-                "180ml": 300
-            },
             "Imperial Blue": {
-                "375ml": 50,
-                "180ml": 100
+                "180ml": 100,
+                "375ml": 50
+            },
+            "Imperial Black": {
+                "180ml": 300,
+                "375ml": 80,
+                "750ml": 20
+            }
+        },
+        "NL01AE7158": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Signature": {
+                "750ml": 5,
+                "375ml": 15,
+                "180ml": 20
+            },
+            "Director's Special Black": {
+                "750ml": 15,
+                "375ml": 20,
+                "180ml": 65
+            },
+            "Royal Challenge": {
+                "750ml": 25,
+                "180ml": 100,
+                "375ml": 75
+            },
+            "McDowell's No 1 Old": {
+                "375ml": 40,
+                "180ml": 160,
+                "750ml": 10
             }
         }
     }
