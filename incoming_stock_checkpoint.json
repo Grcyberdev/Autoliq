@@ -26603,8 +26603,8 @@
             },
             "Royal Stag Double Dark": {
                 "375ml": 15,
-                "750ml": 10,
-                "180ml": 5
+                "180ml": 5,
+                "750ml": 10
             },
             "Royal Stag": {
                 "180ml": 150,
@@ -26628,23 +26628,30 @@
                 "750ml": 10,
                 "375ml": 10
             },
-            "Singleton 12 Yrs": {
-                "Full": 6
-            },
             "Smirnoff": {
+                "180ml": 5,
                 "750ml": 5,
-                "375ml": 10,
-                "180ml": 5
+                "375ml": 10
             },
             "Smirnoff Green Apple": {
                 "180ml": 3,
                 "750ml": 2
+            },
+            "Singleton 12 Yrs": {
+                "Full": 6
             },
             "JW Gold Label": {
                 "Full": 1
             },
             "Baileys": {
                 "750ml": 3
+            }
+        },
+        "AS01GC8997": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 700,
+                "Bottle": 700
             }
         }
     }
