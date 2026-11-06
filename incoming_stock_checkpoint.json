@@ -26577,8 +26577,8 @@
                 "CA": 100
             },
             "Rhino No 1": {
-                "CA": 50,
-                "CS": 50
+                "CS": 50,
+                "CA": 50
             }
         },
         "AS01MC5509": {
@@ -26652,6 +26652,16 @@
             "Kingfisher Original Strong": {
                 "Can": 700,
                 "Bottle": 700
+            }
+        },
+        "AS03BC8344": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti No. 1": {
+                "CA": 100
+            },
+            "Masti Special": {
+                "CA": 300,
+                "CS": 300
             }
         }
     }
