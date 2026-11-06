@@ -26564,8 +26564,21 @@
         "AS01KC8177": {
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
-                "CA": 400,
-                "CS": 300
+                "CS": 300,
+                "CA": 400
+            }
+        }
+    },
+    "06-Nov-2026": {
+        "AS04CC0758": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino Whiskey": {
+                "CS": 80,
+                "CA": 100
+            },
+            "Rhino No 1": {
+                "CA": 50,
+                "CS": 50
             }
         }
     }
