@@ -26637,14 +26637,14 @@
                 "180ml": 3,
                 "750ml": 2
             },
-            "Singleton 12 Yrs": {
-                "Full": 6
+            "Baileys": {
+                "750ml": 3
             },
             "JW Gold Label": {
                 "Full": 1
             },
-            "Baileys": {
-                "750ml": 3
+            "Singleton 12 Yrs": {
+                "Full": 6
             }
         },
         "AS01GC8997": {
@@ -26662,6 +26662,12 @@
             "Masti Special": {
                 "CA": 300,
                 "CS": 300
+            }
+        },
+        "AS26AC1136": {
+            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse",
+            "Oaksmith International": {
+                "180ml": 500
             }
         }
     }
