@@ -26675,8 +26675,14 @@
         "AS03CC3451": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
-                "Bottle": 400,
-                "Can": 1000
+                "Can": 1000,
+                "Bottle": 400
+            }
+        },
+        "WB23C5237": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1400
             }
         }
     }
