@@ -26394,12 +26394,12 @@
         "AS01NC1686": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Blue": {
-                "180ml": 100,
-                "375ml": 50
+                "375ml": 50,
+                "180ml": 100
             },
             "Imperial Black": {
-                "180ml": 300,
                 "375ml": 80,
+                "180ml": 300,
                 "750ml": 20
             }
         },
@@ -26412,30 +26412,30 @@
             },
             "Director's Special Black": {
                 "375ml": 20,
-                "180ml": 65,
-                "750ml": 15
-            },
-            "McDowell's No 1 Old": {
-                "180ml": 160,
-                "750ml": 10,
-                "375ml": 40
+                "750ml": 15,
+                "180ml": 65
             },
             "Signature": {
                 "375ml": 15,
                 "750ml": 5,
                 "180ml": 20
+            },
+            "McDowell's No 1 Old": {
+                "375ml": 40,
+                "750ml": 10,
+                "180ml": 160
             }
         },
         "AS09BC3166": {
             "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
-            "White Magic Orange Gin": {
-                "180ml": 85,
-                "375ml": 30,
-                "750ml": 10
-            },
             "Vinho Porto Port Wine": {
                 "750ml": 5,
                 "375ml": 20
+            },
+            "White Magic Orange Gin": {
+                "180ml": 85,
+                "750ml": 10,
+                "375ml": 30
             }
         },
         "AS02BC0186": {
@@ -26446,6 +26446,25 @@
         },
         "AS05BC0699": {
             "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice Blue": {
+                "375ml": 5,
+                "180ml": 20
+            },
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
+            },
+            "Officer's Choice pet": {
+                "375ml": 50,
+                "180ml": 200
+            },
+            "Iconiq Vodka": {
+                "750ml": 20,
+                "375ml": 20
+            },
             "Sterling B7": {
                 "180ml": 5
             },
@@ -26454,25 +26473,6 @@
             },
             "Iconiq Hippy": {
                 "180ml": 60
-            },
-            "Officer's Choice Blue": {
-                "180ml": 20,
-                "375ml": 5
-            },
-            "Officer's Choice pet": {
-                "180ml": 200,
-                "375ml": 50
-            },
-            "Iconiq Vodka": {
-                "375ml": 20,
-                "750ml": 20
-            },
-            "Sterling Reserve B7 Blended": {
-                "375ml": 15,
-                "750ml": 5
-            },
-            "Officer's Choice": {
-                "750ml": 75
             }
         },
         "NL01N6289": {
@@ -26484,81 +26484,81 @@
         },
         "NL01AF6660": {
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's No 1 Old": {
+                "180ml": 325,
+                "375ml": 55,
+                "750ml": 20
+            },
             "McDowell's Rum": {
                 "750ml": 150
-            },
-            "McDowell's No 1 Old": {
-                "750ml": 20,
-                "375ml": 55,
-                "180ml": 325
             }
         },
         "AS01KC9631": {
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
+            "Old Monk Jamun & Mint Vodka": {
+                "750ml": 5
+            },
+            "Old Monk Vatted": {
+                "375ml": 335,
+                "750ml": 60,
+                "180ml": 350
+            },
+            "Old Monk Coffee": {
+                "180ml": 5,
+                "375ml": 15,
+                "750ml": 5
+            },
             "Old Monk The Legend": {
                 "180ml": 10,
                 "750ml": 5
             },
-            "Old Monk Coffee": {
-                "375ml": 15,
-                "750ml": 5,
-                "180ml": 5
-            },
-            "Old Monk Vatted": {
-                "180ml": 350,
-                "375ml": 335,
-                "750ml": 60
-            },
             "Golden Oak": {
                 "180ml": 5,
                 "375ml": 5
-            },
-            "Old Monk Jamun & Mint Vodka": {
-                "750ml": 5
             }
         },
         "AS26AC1048": {
             "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
-            "After Dark": {
-                "750ml": 25,
-                "180ml": 250,
-                "375ml": 25
-            },
-            "Magic Moments": {
-                "750ml": 20,
-                "180ml": 20,
-                "375ml": 40
-            },
-            "Magic Moments Green Apple": {
-                "180ml": 35,
-                "750ml": 5,
-                "375ml": 10
-            },
             "8 PM Premium Black": {
                 "750ml": 5,
                 "180ml": 15
             },
-            "Magic Moments Lemon": {
-                "375ml": 15,
-                "180ml": 30,
+            "Magic Moments Green Apple": {
+                "180ml": 35,
+                "375ml": 10,
                 "750ml": 5
             },
-            "Magic Moments Jamun": {
-                "375ml": 20,
+            "Magic Moments Lemon": {
+                "750ml": 5,
+                "375ml": 15,
                 "180ml": 30
+            },
+            "Magic Moments Jamun": {
+                "180ml": 30,
+                "375ml": 20
+            },
+            "Magic Moments": {
+                "180ml": 20,
+                "750ml": 20,
+                "375ml": 40
+            },
+            "After Dark": {
+                "750ml": 25,
+                "180ml": 250,
+                "375ml": 25
             }
         },
         "AS25EC2957": {
             "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries",
-            "Calenter Premium": {
-                "375ml": 15,
-                "750ml": 25,
-                "180ml": 125
-            },
             "Royal Green": {
-                "750ml": 5,
+                "180ml": 20,
                 "375ml": 10,
-                "180ml": 20
+                "750ml": 5
+            },
+            "Calenter Premium": {
+                "750ml": 25,
+                "180ml": 125,
+                "375ml": 15
             }
         },
         "AS01KC8177": {
@@ -26675,14 +26675,37 @@
         "AS03CC3451": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
-                "Can": 1000,
-                "Bottle": 400
+                "Bottle": 400,
+                "Can": 1000
             }
         },
         "WB23C5237": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
                 "Can": 1400
+            }
+        },
+        "AS01KC7022": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Blender's Pride Reserve": {
+                "750ml": 10,
+                "375ml": 30,
+                "180ml": 30
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 40,
+                "750ml": 40,
+                "180ml": 40
+            },
+            "Royal Stag Barrel": {
+                "750ml": 10
+            },
+            "Royal Stag": {
+                "180ml": 230,
+                "375ml": 110
+            },
+            "Oaken Glow": {
+                "750ml": 10
             }
         }
     }
