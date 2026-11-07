@@ -26690,22 +26690,22 @@
             "Royal Stag Barrel": {
                 "750ml": 10
             },
+            "Royal Stag": {
+                "180ml": 230,
+                "375ml": 110
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 30,
+                "180ml": 30,
+                "750ml": 10
+            },
             "Blender's Pride Exclusive": {
-                "180ml": 40,
+                "375ml": 40,
                 "750ml": 40,
-                "375ml": 40
+                "180ml": 40
             },
             "Oaken Glow": {
                 "750ml": 10
-            },
-            "Blender's Pride Reserve": {
-                "750ml": 10,
-                "180ml": 30,
-                "375ml": 30
-            },
-            "Royal Stag": {
-                "375ml": 110,
-                "180ml": 230
             }
         },
         "AS01RC2620": {
@@ -26719,9 +26719,46 @@
         "AS26AC1046": {
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
             "McDowell's Rum": {
-                "375ml": 100,
+                "750ml": 300,
                 "180ml": 500,
-                "750ml": 300
+                "375ml": 100
+            }
+        },
+        "AS01FC5089": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "8 PM Premium Black": {
+                "375ml": 15,
+                "180ml": 10,
+                "750ml": 5
+            },
+            "M2 MAGIC MOMENTS AAM PANNA VIVID FLAVOURED VODKA": {
+                "375ml": 25,
+                "180ml": 30,
+                "750ml": 20
+            },
+            "After Dark": {
+                "180ml": 25,
+                "750ml": 20,
+                "375ml": 25
+            },
+            "Magic Moments Green Apple": {
+                "750ml": 10,
+                "180ml": 45,
+                "375ml": 20
+            },
+            "Magic Moments Jamun": {
+                "180ml": 65,
+                "375ml": 20
+            },
+            "Magic Moments Lemon": {
+                "750ml": 5,
+                "180ml": 40,
+                "375ml": 20
+            },
+            "Magic Moments": {
+                "375ml": 25,
+                "750ml": 15,
+                "180ml": 110
             }
         }
     }
