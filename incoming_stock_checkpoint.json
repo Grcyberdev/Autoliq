@@ -26794,13 +26794,12 @@
                 "750ml": 5,
                 "375ml": 5
             },
-            "Officer's Choice pet": {
-                "375ml": 25,
-                "180ml": 250
-            },
             "Iconiq Vodka": {
-                "750ml": 15,
-                "375ml": 35
+                "375ml": 35,
+                "750ml": 15
+            },
+            "Iconiq Hippy": {
+                "180ml": 100
             },
             "Officer's Choice": {
                 "750ml": 50
@@ -26808,15 +26807,16 @@
             "Sterling B7": {
                 "180ml": 15
             },
-            "Iconiq Hippy": {
-                "180ml": 100
+            "Officer's Choice pet": {
+                "375ml": 25,
+                "180ml": 250
             }
         },
         "AS01EC5688": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
-                "Bottle": 700,
-                "Can": 700
+                "Can": 700,
+                "Bottle": 700
             }
         },
         "AS01KC8177": {
@@ -26877,6 +26877,36 @@
             },
             "Breezer Bold Guava Chilli": {
                 "Stubby": 10
+            }
+        },
+        "AS01UC3713": {
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
+            "Director's Special Black": {
+                "750ml": 15,
+                "180ml": 90,
+                "375ml": 35
+            },
+            "Antiquity Blue Ultra": {
+                "750ml": 5,
+                "375ml": 10,
+                "180ml": 10
+            },
+            "Signature": {
+                "750ml": 20,
+                "375ml": 20,
+                "180ml": 20
+            },
+            "McDowell's No 1 Old": {
+                "375ml": 30,
+                "750ml": 20
+            },
+            "Royal Challenge": {
+                "375ml": 65,
+                "750ml": 35,
+                "180ml": 125
+            },
+            "McDowell's Rum": {
+                "375ml": 50
             }
         }
     }
