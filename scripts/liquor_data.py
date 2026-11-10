@@ -351,9 +351,10 @@ LIQUOR_NAME_MAPPING = {
     "V21 ULTRA SMOOTH VODKA LEMON": "V21 Lemon Vodka",
     "M2 MAGIC MOMENTS REMIX CRANBERRY VIVID FLAVOURED VODKA": "Magic Moments Remix Cranberry",
     "WHITE MAGIC VODKA": "White Magic Vodka",
-    "EL JIMADOR TEQUILA BLANCO": "El Jimador Blanco Tequila",
-    "EL JIMADOR TEQUILA REPOSADO": "El Jimador Reposado Tequila",
+    "ELJIMADOR TEQUILA BLANCO": "El Jimador Blanco Tequila",
+    "ELJIMADOR TEQUILA REPOSADO": "El Jimador Reposado Tequila",
     "OLD MONK JAMUN & MINT PREMIUM FLAVOURED VODKA": "Old Monk Jamun & Mint Vodka",
+    "M2 MAGIC MOMENTS AAM PANNA VIVID FLAVOURED VODKA": "Magic Moments Aam Panna Vodka",
 
 
 
