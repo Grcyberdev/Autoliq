@@ -26935,8 +26935,8 @@
                 "750ml": 10
             },
             "Smirnoff": {
-                "375ml": 5,
-                "180ml": 10
+                "180ml": 10,
+                "375ml": 5
             }
         },
         "AS01FC6159": {
@@ -26988,27 +26988,27 @@
                 "750ml": 3
             },
             "Jameson": {
-                "750ml": 75,
-                "Quarter": 15
+                "Quarter": 15,
+                "750ml": 75
+            },
+            "Xclamation Vodka": {
+                "375ml": 5,
+                "180ml": 5
+            },
+            "Xclamation Rum": {
+                "750ml": 10,
+                "375ml": 10,
+                "180ml": 15
             },
             "Jameson Black Barrel": {
                 "Full": 1
-            },
-            "Xclamation Rum": {
-                "180ml": 15,
-                "750ml": 10,
-                "375ml": 10
-            },
-            "Xclamation Vodka": {
-                "180ml": 5,
-                "375ml": 5
             }
         },
         "AS01MC3480": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
-            "McDowell's Rum": {
-                "375ml": 50,
-                "180ml": 200
+            "McDowell's No 1 Old": {
+                "180ml": 50,
+                "375ml": 50
             },
             "Signature": {
                 "180ml": 10,
@@ -27022,9 +27022,16 @@
             "Royal Challenge": {
                 "180ml": 75
             },
-            "McDowell's No 1 Old": {
+            "McDowell's Rum": {
                 "375ml": 50,
-                "180ml": 50
+                "180ml": 200
+            }
+        },
+        "AS01NC0696": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
+                "180ml": 475,
+                "375ml": 75
             }
         }
     }
