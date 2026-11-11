@@ -26421,21 +26421,21 @@
                 "375ml": 40
             },
             "Signature": {
+                "180ml": 20,
                 "375ml": 15,
-                "750ml": 5,
-                "180ml": 20
+                "750ml": 5
             }
         },
         "AS09BC3166": {
             "_TelegramSupplier": "Radiant Manufacturers Pvt. Ltd. (Bottling Unit)",
-            "White Magic Orange Gin": {
-                "180ml": 85,
-                "375ml": 30,
-                "750ml": 10
-            },
             "Vinho Porto Port Wine": {
-                "750ml": 5,
-                "375ml": 20
+                "375ml": 20,
+                "750ml": 5
+            },
+            "White Magic Orange Gin": {
+                "375ml": 30,
+                "750ml": 10,
+                "180ml": 85
             }
         },
         "AS02BC0186": {
@@ -26446,6 +26446,10 @@
         },
         "AS05BC0699": {
             "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Officer's Choice Blue": {
+                "375ml": 5,
+                "180ml": 20
+            },
             "Sterling B7": {
                 "180ml": 5
             },
@@ -26455,31 +26459,27 @@
             "Iconiq Hippy": {
                 "180ml": 60
             },
-            "Officer's Choice Blue": {
-                "180ml": 20,
-                "375ml": 5
-            },
             "Officer's Choice pet": {
                 "180ml": 200,
                 "375ml": 50
+            },
+            "Officer's Choice": {
+                "750ml": 75
             },
             "Iconiq Vodka": {
                 "375ml": 20,
                 "750ml": 20
             },
             "Sterling Reserve B7 Blended": {
-                "375ml": 15,
-                "750ml": 5
-            },
-            "Officer's Choice": {
-                "750ml": 75
+                "750ml": 5,
+                "375ml": 15
             }
         },
         "NL01N6289": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
-                "Bottle": 700,
-                "Can": 700
+                "Can": 700,
+                "Bottle": 700
             }
         },
         "NL01AF6660": {
@@ -26495,23 +26495,23 @@
         },
         "AS01KC9631": {
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
+            "Old Monk Vatted": {
+                "375ml": 335,
+                "750ml": 60,
+                "180ml": 350
+            },
+            "Old Monk Coffee": {
+                "180ml": 5,
+                "375ml": 15,
+                "750ml": 5
+            },
             "Old Monk The Legend": {
                 "180ml": 10,
                 "750ml": 5
             },
-            "Old Monk Coffee": {
-                "375ml": 15,
-                "750ml": 5,
-                "180ml": 5
-            },
-            "Old Monk Vatted": {
-                "180ml": 350,
-                "375ml": 335,
-                "750ml": 60
-            },
             "Golden Oak": {
-                "180ml": 5,
-                "375ml": 5
+                "375ml": 5,
+                "180ml": 5
             },
             "Old Monk Jamun & Mint Vodka": {
                 "750ml": 5
@@ -26556,9 +26556,9 @@
                 "180ml": 125
             },
             "Royal Green": {
-                "750ml": 5,
                 "375ml": 10,
-                "180ml": 20
+                "180ml": 20,
+                "750ml": 5
             }
         },
         "AS01KC8177": {
@@ -26907,6 +26907,49 @@
             },
             "McDowell's Rum": {
                 "375ml": 50
+            }
+        }
+    },
+    "11-Nov-2026": {
+        "AS01UC3639": {
+            "_TelegramSupplier": "United Spirits Limited",
+            "Smirnoff Mirchi Mango": {
+                "180ml": 20
+            },
+            "Vat 69": {
+                "750ml": 2,
+                "180ml": 2
+            },
+            "Black Dog Triple Gold": {
+                "180ml": 3,
+                "750ml": 5,
+                "375ml": 1
+            },
+            "Smirnoff": {
+                "375ml": 5,
+                "180ml": 10
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "750ml": 10,
+                "180ml": 25
+            },
+            "Black Dog Centenary": {
+                "375ml": 1,
+                "750ml": 3,
+                "180ml": 1
+            }
+        },
+        "AS01FC6159": {
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited",
+            "Hoegaarden Witbier": {
+                "Pint": 20
+            },
+            "Corona": {
+                "Pint": 50,
+                "Can": 30
+            },
+            "Budweiser": {
+                "Can": 300
             }
         }
     }
