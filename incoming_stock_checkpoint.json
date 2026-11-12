@@ -27060,21 +27060,12 @@
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
                 "180ml": 400,
-                "375ml": 100,
-                "750ml": 50
+                "750ml": 50,
+                "375ml": 100
             }
         },
         "AS01LC6322": {
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
-            "Royal Stag Barrel": {
-                "180ml": 30,
-                "750ml": 10,
-                "375ml": 40
-            },
-            "Royal Stag Double Dark": {
-                "375ml": 10,
-                "180ml": 15
-            },
             "Xclamation Whiskey": {
                 "375ml": 15,
                 "180ml": 5
@@ -27095,9 +27086,26 @@
                 "750ml": 10,
                 "375ml": 20
             },
+            "Royal Stag Barrel": {
+                "750ml": 10,
+                "375ml": 40,
+                "180ml": 30
+            },
             "100 Pipers": {
                 "375ml": 2,
                 "180ml": 3
+            },
+            "Royal Stag Double Dark": {
+                "180ml": 15,
+                "375ml": 10
+            }
+        },
+        "AS01UC3451": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "375ml": 125,
+                "180ml": 700,
+                "750ml": 75
             }
         }
     }
