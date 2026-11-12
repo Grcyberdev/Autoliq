@@ -27066,9 +27066,27 @@
         },
         "AS01LC6322": {
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag Barrel": {
+                "180ml": 30,
+                "375ml": 40,
+                "750ml": 10
+            },
             "Oaken Glow": {
-                "750ml": 10,
-                "375ml": 20
+                "375ml": 20,
+                "750ml": 10
+            },
+            "100 Pipers": {
+                "375ml": 2,
+                "180ml": 3
+            },
+            "Blender's Pride Reserve": {
+                "375ml": 25,
+                "180ml": 20,
+                "750ml": 25
+            },
+            "Xclamation Whiskey": {
+                "180ml": 5,
+                "375ml": 15
             },
             "Royal Stag": {
                 "375ml": 200,
@@ -27077,35 +27095,17 @@
             "100 Pipers 12 Yrs": {
                 "750ml": 5
             },
-            "Blender's Pride Reserve": {
-                "180ml": 20,
-                "375ml": 25,
-                "750ml": 25
-            },
-            "Royal Stag Barrel": {
-                "375ml": 40,
-                "750ml": 10,
-                "180ml": 30
-            },
-            "100 Pipers": {
-                "375ml": 2,
-                "180ml": 3
-            },
-            "Xclamation Whiskey": {
-                "180ml": 5,
-                "375ml": 15
-            },
             "Royal Stag Double Dark": {
-                "375ml": 10,
-                "180ml": 15
+                "180ml": 15,
+                "375ml": 10
             }
         },
         "AS01UC3451": {
             "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
             "AC Black Luxury": {
                 "750ml": 75,
-                "375ml": 125,
-                "180ml": 700
+                "180ml": 700,
+                "375ml": 125
             }
         },
         "AS01KC9068": {
@@ -27115,16 +27115,16 @@
                 "375ml": 200,
                 "180ml": 450
             },
-            "Old Monk The Legend": {
-                "750ml": 5
+            "Old Monk Jamun & Mint Vodka": {
+                "750ml": 5,
+                "180ml": 20
             },
             "Old Monk Coffee": {
-                "750ml": 5,
+                "375ml": 15,
                 "180ml": 25,
-                "375ml": 15
+                "750ml": 5
             },
-            "Old Monk Jamun & Mint Vodka": {
-                "180ml": 20,
+            "Old Monk The Legend": {
                 "750ml": 5
             }
         },
@@ -27143,18 +27143,18 @@
         },
         "AS25EC1404": {
             "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Fastflow Dealer Pvt. Ltd.",
-            "All Seasons Sir-E-Taj": {
-                "750ml": 25,
-                "375ml": 30,
-                "180ml": 30
-            },
-            "All Seasons Connoisseur": {
-                "180ml": 40,
-                "750ml": 20,
-                "375ml": 40
-            },
             "Fame Whiskey": {
                 "180ml": 15
+            },
+            "All Seasons Sir-E-Taj": {
+                "180ml": 30,
+                "375ml": 30,
+                "750ml": 25
+            },
+            "All Seasons Connoisseur": {
+                "375ml": 40,
+                "750ml": 20,
+                "180ml": 40
             }
         },
         "AS12CC5652": {
@@ -27167,21 +27167,38 @@
         "AS11CC6001": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Imperial Blue": {
-                "375ml": 75,
                 "180ml": 450,
+                "375ml": 75,
                 "750ml": 25
             }
         },
         "WB23L8899": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Imperial Black": {
-                "375ml": 75,
+                "750ml": 25,
                 "180ml": 300,
-                "750ml": 25
+                "375ml": 75
             },
             "Imperial Blue": {
-                "180ml": 75,
-                "375ml": 75
+                "375ml": 75,
+                "180ml": 75
+            }
+        },
+        "AS01JC2804": {
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd.",
+            "McDowell's No 1 Old": {
+                "375ml": 90,
+                "750ml": 60,
+                "180ml": 300
+            },
+            "McDowell's Rum": {
+                "180ml": 350,
+                "375ml": 100
+            },
+            "McDowell's Double Oak Barrel": {
+                "375ml": 75,
+                "750ml": 25,
+                "180ml": 100
             }
         }
     }
