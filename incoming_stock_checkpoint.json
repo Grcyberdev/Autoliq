@@ -27092,8 +27092,8 @@
                 "180ml": 30
             },
             "100 Pipers": {
-                "375ml": 2,
-                "180ml": 3
+                "180ml": 3,
+                "375ml": 2
             },
             "Royal Stag Double Dark": {
                 "180ml": 15,
@@ -27103,9 +27103,29 @@
         "AS01UC3451": {
             "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
             "AC Black Luxury": {
-                "375ml": 125,
+                "750ml": 75,
                 "180ml": 700,
-                "750ml": 75
+                "375ml": 125
+            }
+        },
+        "AS01KC9068": {
+            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
+            "Old Monk Coffee": {
+                "180ml": 25,
+                "375ml": 15,
+                "750ml": 5
+            },
+            "Old Monk Vatted": {
+                "750ml": 75,
+                "375ml": 200,
+                "180ml": 450
+            },
+            "Old Monk The Legend": {
+                "750ml": 5
+            },
+            "Old Monk Jamun & Mint Vodka": {
+                "750ml": 5,
+                "180ml": 20
             }
         }
     }
