@@ -27066,46 +27066,46 @@
         },
         "AS01LC6322": {
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Oaken Glow": {
+                "750ml": 10,
+                "375ml": 20
+            },
+            "Royal Stag": {
+                "375ml": 200,
+                "750ml": 115
+            },
+            "100 Pipers 12 Yrs": {
+                "750ml": 5
+            },
             "Blender's Pride Reserve": {
-                "750ml": 25,
+                "180ml": 20,
                 "375ml": 25,
-                "180ml": 20
+                "750ml": 25
+            },
+            "Royal Stag Barrel": {
+                "375ml": 40,
+                "750ml": 10,
+                "180ml": 30
             },
             "100 Pipers": {
                 "375ml": 2,
                 "180ml": 3
             },
-            "Royal Stag Barrel": {
-                "750ml": 10,
-                "375ml": 40,
-                "180ml": 30
-            },
             "Xclamation Whiskey": {
                 "180ml": 5,
                 "375ml": 15
             },
-            "Oaken Glow": {
-                "375ml": 20,
-                "750ml": 10
-            },
             "Royal Stag Double Dark": {
                 "375ml": 10,
                 "180ml": 15
-            },
-            "100 Pipers 12 Yrs": {
-                "750ml": 5
-            },
-            "Royal Stag": {
-                "750ml": 115,
-                "375ml": 200
             }
         },
         "AS01UC3451": {
             "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
             "AC Black Luxury": {
+                "750ml": 75,
                 "375ml": 125,
-                "180ml": 700,
-                "750ml": 75
+                "180ml": 700
             }
         },
         "AS01KC9068": {
@@ -27149,8 +27149,8 @@
                 "180ml": 30
             },
             "All Seasons Connoisseur": {
-                "750ml": 20,
                 "180ml": 40,
+                "750ml": 20,
                 "375ml": 40
             },
             "Fame Whiskey": {
@@ -27167,8 +27167,20 @@
         "AS11CC6001": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Imperial Blue": {
+                "375ml": 75,
                 "180ml": 450,
-                "750ml": 25,
+                "750ml": 25
+            }
+        },
+        "WB23L8899": {
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
+            "Imperial Black": {
+                "375ml": 75,
+                "180ml": 300,
+                "750ml": 25
+            },
+            "Imperial Blue": {
+                "180ml": 75,
                 "375ml": 75
             }
         }
