@@ -27206,8 +27206,8 @@
         "AS01NC7524": {
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
-                "375ml": 150,
                 "180ml": 350,
+                "375ml": 150,
                 "750ml": 50
             }
         },
@@ -27222,9 +27222,9 @@
         "NL01AF1841": {
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
-                "750ml": 100,
+                "375ml": 250,
                 "180ml": 750,
-                "375ml": 250
+                "750ml": 100
             }
         },
         "AS25DC3767": {
@@ -27260,15 +27260,47 @@
         "AS01GC6794": {
             "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
             "AC Black Luxury": {
+                "375ml": 50,
                 "180ml": 800,
-                "750ml": 50,
-                "375ml": 50
+                "750ml": 50
             }
         },
         "AS03BC8344": {
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
                 "CA": 700
+            }
+        },
+        "AS05BC0699": {
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Sterling Reserve B7 Blended": {
+                "750ml": 5,
+                "375ml": 5
+            },
+            "Iconiq Hippy": {
+                "180ml": 150
+            },
+            "Iconiq Vodka": {
+                "375ml": 30,
+                "750ml": 20
+            },
+            "Jolly Roger Rum": {
+                "375ml": 20,
+                "180ml": 20,
+                "750ml": 10
+            },
+            "Officer's Choice pet": {
+                "180ml": 200
+            },
+            "Sterling B7": {
+                "180ml": 40
+            }
+        },
+        "AS01HC6690": {
+            "_TelegramSupplier": "Devans Modern Breweries Ltd. Tie Up With Brahmaputra Breweries Llp",
+            "Godfather Select": {
+                "Can": 380,
+                "Bottle": 300
             }
         }
     }
