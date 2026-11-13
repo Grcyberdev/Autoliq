@@ -27206,17 +27206,63 @@
         "AS01NC7524": {
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
             "Royal Stag": {
+                "375ml": 150,
                 "180ml": 350,
-                "750ml": 50,
-                "375ml": 150
+                "750ml": 50
             }
         },
         "AS04CC0758": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Lords Whiskey": {
-                "375ml": 200,
+                "180ml": 50,
                 "750ml": 100,
-                "180ml": 50
+                "375ml": 200
+            }
+        },
+        "NL01AF1841": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "750ml": 100,
+                "180ml": 750,
+                "375ml": 250
+            }
+        },
+        "AS25DC3767": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Blender's Pride Reserve": {
+                "750ml": 30,
+                "375ml": 30
+            },
+            "Blender's Pride Exclusive": {
+                "375ml": 45,
+                "750ml": 30,
+                "180ml": 45
+            },
+            "Royal Stag": {
+                "180ml": 200,
+                "375ml": 40
+            },
+            "100 Pipers": {
+                "750ml": 10
+            },
+            "Royal Stag Barrel": {
+                "375ml": 40,
+                "750ml": 20,
+                "180ml": 60
+            }
+        },
+        "AS01UC5753": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Original Strong": {
+                "Can": 1400
+            }
+        },
+        "AS01GC6794": {
+            "_TelegramSupplier": "Raizel Industries Tie Up Holder On Behalf Of JIL",
+            "AC Black Luxury": {
+                "180ml": 800,
+                "750ml": 50,
+                "375ml": 50
             }
         }
     }
