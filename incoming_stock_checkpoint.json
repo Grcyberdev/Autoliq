@@ -27339,6 +27339,19 @@
             "He Man 9000": {
                 "Bottle": 1400
             }
+        },
+        "WB23C5237": {
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
+            "Kingfisher Ultra Max": {
+                "Bottle": 100,
+                "Can": 50
+            },
+            "Kingfisher Original Strong": {
+                "Bottle": 1200
+            },
+            "Kingfisher Ultra": {
+                "Pint": 50
+            }
         }
     }
 }
