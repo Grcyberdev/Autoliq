@@ -27342,22 +27342,45 @@
         },
         "WB23C5237": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
-            "Kingfisher Ultra": {
-                "Pint": 50
+            "Kingfisher Ultra Max": {
+                "Bottle": 100,
+                "Can": 50
             },
             "Kingfisher Original Strong": {
                 "Bottle": 1200
             },
-            "Kingfisher Ultra Max": {
-                "Can": 50,
-                "Bottle": 100
+            "Kingfisher Ultra": {
+                "Pint": 50
             }
         },
         "AS02AC3594": {
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd.",
             "Kingfisher Original Strong": {
-                "Can": 700,
-                "Bottle": 700
+                "Bottle": 700,
+                "Can": 700
+            }
+        },
+        "AS01FC5089": {
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries",
+            "Magic Moments Lemon": {
+                "375ml": 20,
+                "180ml": 35
+            },
+            "Magic Moments": {
+                "375ml": 40,
+                "750ml": 20,
+                "180ml": 150
+            },
+            "After Dark": {
+                "375ml": 50,
+                "750ml": 25,
+                "180ml": 175
+            },
+            "8 PM Premium Black": {
+                "180ml": 15
+            },
+            "Magic Moments Green Apple": {
+                "180ml": 20
             }
         }
     }
