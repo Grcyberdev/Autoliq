@@ -26577,8 +26577,8 @@
                 "CA": 100
             },
             "Rhino No 1": {
-                "CS": 50,
-                "CA": 50
+                "CA": 50,
+                "CS": 50
             }
         },
         "AS01MC5509": {
@@ -26656,12 +26656,12 @@
         },
         "AS03BC8344": {
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
-            "Masti Special": {
-                "CS": 300,
-                "CA": 300
-            },
             "Masti No. 1": {
                 "CA": 100
+            },
+            "Masti Special": {
+                "CA": 300,
+                "CS": 300
             }
         },
         "AS26AC1136": {
@@ -27381,6 +27381,15 @@
             },
             "Magic Moments Green Apple": {
                 "180ml": 20
+            }
+        }
+    },
+    "15-Nov-2026": {
+        "AS01KC9113": {
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
+            "Masti": {
+                "CA": 400,
+                "CS": 300
             }
         }
     }
