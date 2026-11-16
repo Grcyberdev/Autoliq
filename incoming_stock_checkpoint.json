@@ -26177,8 +26177,8 @@
         "AS01LC0437": {
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         },
         "AS03BC9029": {
@@ -26564,8 +26564,8 @@
         "AS01KC8177": {
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)",
             "Masti": {
-                "CS": 300,
-                "CA": 400
+                "CA": 400,
+                "CS": 300
             }
         }
     },
@@ -26573,12 +26573,12 @@
         "AS04CC0758": {
             "_TelegramSupplier": "Associated Alcohol And Beverages Company",
             "Rhino Whiskey": {
-                "CS": 80,
-                "CA": 100
+                "CA": 100,
+                "CS": 80
             },
             "Rhino No 1": {
-                "CA": 50,
-                "CS": 50
+                "CS": 50,
+                "CA": 50
             }
         },
         "AS01MC5509": {
@@ -26774,22 +26774,26 @@
         "AS17B4164": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL",
             "Blue Lagoon Orange Gin": {
-                "375ml": 5,
+                "750ml": 5,
                 "180ml": 40,
-                "750ml": 5
-            },
-            "Imperial Blue": {
-                "180ml": 175,
-                "375ml": 50,
-                "750ml": 25
+                "375ml": 5
             },
             "Imperial Black": {
                 "180ml": 200,
+                "375ml": 50
+            },
+            "Imperial Blue": {
+                "750ml": 25,
+                "180ml": 175,
                 "375ml": 50
             }
         },
         "AS02CC9561": {
             "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
+            "Iconiq Vodka": {
+                "375ml": 35,
+                "750ml": 15
+            },
             "Sterling B7": {
                 "180ml": 15
             },
@@ -26801,15 +26805,11 @@
                 "375ml": 25,
                 "180ml": 250
             },
-            "Iconiq Vodka": {
-                "750ml": 15,
-                "375ml": 35
+            "Iconiq Hippy": {
+                "180ml": 100
             },
             "Officer's Choice": {
                 "750ml": 50
-            },
-            "Iconiq Hippy": {
-                "180ml": 100
             }
         },
         "AS01EC5688": {
@@ -26822,9 +26822,9 @@
         "AS01KC8177": {
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd.",
             "Mansion House Brandy": {
-                "375ml": 15,
                 "180ml": 25,
-                "750ml": 10
+                "750ml": 10,
+                "375ml": 15
             },
             "Imperial Blue": {
                 "180ml": 500
@@ -26847,6 +26847,9 @@
             },
             "Breezer Jamaican": {
                 "Stubby": 40
+            },
+            "Breezer Cranberry": {
+                "Stubby": 49
             },
             "Breezer Blueberry": {
                 "Stubby": 20
@@ -26874,31 +26877,28 @@
             "Bacardi White Rum": {
                 "750ml": 4,
                 "180ml": 1
-            },
-            "Breezer Cranberry": {
-                "Stubby": 49
             }
         },
         "AS01UC3713": {
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL",
-            "Director's Special Black": {
-                "750ml": 15,
-                "180ml": 90,
-                "375ml": 35
-            },
-            "Antiquity Blue Ultra": {
-                "750ml": 5,
-                "375ml": 10,
-                "180ml": 10
+            "McDowell's No 1 Old": {
+                "375ml": 30,
+                "750ml": 20
             },
             "Signature": {
                 "750ml": 20,
                 "375ml": 20,
                 "180ml": 20
             },
-            "McDowell's No 1 Old": {
-                "375ml": 30,
-                "750ml": 20
+            "Antiquity Blue Ultra": {
+                "750ml": 5,
+                "375ml": 10,
+                "180ml": 10
+            },
+            "Director's Special Black": {
+                "750ml": 15,
+                "180ml": 90,
+                "375ml": 35
             },
             "Royal Challenge": {
                 "375ml": 65,
@@ -27397,8 +27397,8 @@
         "AS01MC3440": {
             "_TelegramSupplier": "Bacardi India Pvt. Ltd.",
             "Bombay Sapphire Gin": {
-                "Quarter": 3,
-                "750ml": 4
+                "750ml": 4,
+                "Quarter": 3
             },
             "Dewar's Portuguese Smooth": {
                 "Full": 4
@@ -27411,44 +27411,65 @@
                 "Full": 4,
                 "Quarter": 3
             },
+            "Breezer Blackberry": {
+                "Stubby": 40
+            },
+            "William Lawson": {
+                "750ml": 3,
+                "180ml": 2
+            },
+            "Bacardi Mango Chilli Rum": {
+                "180ml": 20,
+                "375ml": 10,
+                "750ml": 5
+            },
+            "Breezer Jamaican": {
+                "Stubby": 55
+            },
+            "Breezer Watermelon": {
+                "Stubby": 10
+            },
+            "Breezer Cranberry": {
+                "Stubby": 20
+            },
+            "Breezer Blueberry": {
+                "Stubby": 25
+            },
+            "Bacardi White Rum": {
+                "375ml": 10,
+                "750ml": 10,
+                "180ml": 13
+            },
             "Bacardi Limon Rum": {
+                "375ml": 25,
                 "750ml": 5,
-                "180ml": 35,
-                "375ml": 25
+                "180ml": 35
             },
             "Black By Bacardi Rum": {
                 "180ml": 20,
                 "375ml": 15,
                 "750ml": 5
+            }
+        },
+        "AS01PC5102": {
+            "_TelegramSupplier": "Modi Distillery IMFL Wholesale Warehouse",
+            "Rockford Reserve": {
+                "180ml": 15,
+                "375ml": 25,
+                "750ml": 5
             },
-            "Bacardi Mango Chilli Rum": {
-                "375ml": 10,
-                "750ml": 5,
-                "180ml": 20
+            "Rockford Imperial Reserve Whiskey": {
+                "750ml": 5
+            }
+        },
+        "AS04BC1196": {
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company",
+            "Rhino No 1": {
+                "CA": 100,
+                "CS": 40
             },
-            "Bacardi White Rum": {
-                "750ml": 10,
-                "180ml": 13,
-                "375ml": 10
-            },
-            "William Lawson": {
-                "180ml": 2,
-                "750ml": 3
-            },
-            "Breezer Blackberry": {
-                "Stubby": 40
-            },
-            "Breezer Blueberry": {
-                "Stubby": 25
-            },
-            "Breezer Cranberry": {
-                "Stubby": 20
-            },
-            "Breezer Watermelon": {
-                "Stubby": 10
-            },
-            "Breezer Jamaican": {
-                "Stubby": 55
+            "Rhino Limon": {
+                "CS": 40
             }
         }
     }
