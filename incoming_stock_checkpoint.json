@@ -27513,13 +27513,13 @@
     "17-Nov-2026": {
         "AS01NC0427": {
             "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries",
-            "Officer's Choice": {
-                "750ml": 25
-            },
             "Jolly Roger Rum": {
                 "750ml": 5,
                 "180ml": 20,
                 "375ml": 15
+            },
+            "Officer's Choice": {
+                "750ml": 25
             },
             "Iconiq Hippy": {
                 "180ml": 50
@@ -27537,8 +27537,8 @@
                 "180ml": 10
             },
             "Iconiq Vodka": {
-                "375ml": 25,
-                "750ml": 20
+                "750ml": 20,
+                "375ml": 25
             },
             "The Indian Edit Whiskey": {
                 "750ml": 20,
@@ -27610,19 +27610,19 @@
         },
         "AS01KC8932": {
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery",
+            "Old Monk Coffee": {
+                "750ml": 10,
+                "180ml": 10,
+                "375ml": 5
+            },
             "Golden Oak": {
                 "750ml": 10,
                 "375ml": 10
             },
             "Old Monk Vatted": {
+                "375ml": 250,
                 "180ml": 450,
-                "750ml": 50,
-                "375ml": 250
-            },
-            "Old Monk Coffee": {
-                "375ml": 5,
-                "750ml": 10,
-                "180ml": 10
+                "750ml": 50
             },
             "Old Monk The Legend": {
                 "180ml": 5
@@ -27632,6 +27632,14 @@
             "_TelegramSupplier": "Carlsberg India Ltd. Tie Up With Brahmaputra Breweries Llp",
             "TUBORG STRONG SUPREME PREMIUM BEER": {
                 "Bottle": 1200
+            }
+        },
+        "AS01LC1317": {
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd.",
+            "Royal Stag": {
+                "375ml": 100,
+                "180ml": 400,
+                "750ml": 50
             }
         }
     }
