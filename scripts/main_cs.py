@@ -208,6 +208,7 @@ setup_conditional_formatting(sheet)
 # Selenium setup (remains the same)
 # ----------------------------
 args = automation_utils.parse_arguments()
+automation_utils.ensure_active_proxy(force_refresh=False)
 driver = automation_utils.setup_driver(headless=args.headless)
 wait = WebDriverWait(driver, 30)
 
@@ -279,7 +280,8 @@ def load_existing_data():
                     'liquor': record.get('LiqourTypes', ''),
                     'truck': clean_truck,
                     'supplier': record.get('Supplier', ''),
-                    'date': date_val
+                    'date': date_val,
+                    'bifurcation': record.get('Bifurcation', '')
                 }
         except Exception as e:
             print(f"⚠️ Warning: Could not process a row. Row: {record}, Error: {e}")
@@ -304,7 +306,7 @@ def load_incoming_checkpoint():
 def save_incoming_checkpoint(data):
     try:
         with open(INCOMING_CHECKPOINT_FILE, 'w') as f:
-            json.dump(data, f, indent=4)
+            json.dump(data, f, indent=4, sort_keys=True)
         print("💾 Incoming stock checkpoint saved.")
     except Exception as e:
         print(f"⚠️ Failed to save incoming checkpoint: {e}")
@@ -448,9 +450,19 @@ try:
     login_success = automation_utils.login_to_portal(driver, PORTAL_URL, USERNAME, PASSWORD, max_retries=15)
 
     if not login_success:
-        print("❌ Login Failed after retries.")
-        driver.quit()
-        sys.exit(1)
+        print("⚠️ Initial login failed. Rotating Indian proxy and retrying with fresh driver...")
+        try:
+            driver.quit()
+        except:
+            pass
+        automation_utils.ensure_active_proxy(force_refresh=True)
+        driver = automation_utils.setup_driver(headless=args.headless)
+        wait = WebDriverWait(driver, 30)
+        login_success = automation_utils.login_to_portal(driver, PORTAL_URL, USERNAME, PASSWORD, max_retries=15)
+        if not login_success:
+            print("❌ Login Failed after proxy rotation.")
+            driver.quit()
+            sys.exit(1)
     
     print("✅ Login form submitted successfully.")
 
@@ -509,8 +521,10 @@ try:
         day_element.click()
 
     print(f"🤖 Automating date selection for range: {start_of_month.strftime('%Y-%m-%d')} to {today.strftime('%Y-%m-%d')}")
-    wait.until(EC.element_to_be_clickable((By.ID, "datepicker"))).click(); time.sleep(0.8); select_date(start_of_month)
-    wait.until(EC.element_to_be_clickable((By.ID, "datepicker1"))).click(); time.sleep(0.8); select_date(today)
+    automation_utils.set_date_input(driver, wait, "datepicker", start_of_month)
+    time.sleep(0.5)
+    automation_utils.set_date_input(driver, wait, "datepicker1", today)
+    time.sleep(0.5)
     
     search_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@onclick='searchtext()']")))
     driver.execute_script("arguments[0].click();", search_button)
@@ -539,10 +553,24 @@ try:
         scraped_trucks_session = set()
 
         for row_data in all_rows_data:
+            # Skip empty or non-digit starting rows
+            if not row_data or not row_data[0].isdigit():
+                continue
+                
+            # Skip Form No. 1 column index row ["1", "2", "3", ..., "13"]
+            if len(row_data) > 2 and row_data[0] == "1" and row_data[1] == "2" and row_data[2] == "3":
+                continue
 
-            # --- UPDATED: No PassNumber ---
-            # Check for start of a new truck entry (Row starts with a digit)
-            if row_data and row_data[0].isdigit() and row_data[1]:
+            # Check for start of a new truck entry (Row starts with a digit, has supplier and valid date)
+            is_new_truck_row = False
+            if row_data[1] and len(row_data) > 7:
+                try:
+                    datetime.strptime(row_data[7].strip(), "%d-%b-%Y")
+                    is_new_truck_row = True
+                except (ValueError, IndexError):
+                    is_new_truck_row = False
+
+            if is_new_truck_row:
                 original_supplier_name = row_data[1]
                 short_supplier_name = get_short_supplier_name(original_supplier_name)
                 
@@ -798,12 +826,14 @@ try:
                     clean_truck=clean_truck,
                     existing_data=existing_data,
                     scraped_trucks_on_date=current_scraped_trucks_by_date.get(date_val, set()),
-                    scraped_qty=scraped_qty
+                    scraped_qty=scraped_qty,
+                    scraped_liquor=scraped_liquor,
+                    scraped_bifurcation=r[8]
                 )
                 if existing_entry:
                     matched_truck = existing_entry.get('truck', clean_truck)
                     is_typo_correction = True
-                    print(f"   🔍 Found matching truck with plate correction: {matched_truck} ➔ {clean_truck} for {r[1]} on {date_val}")
+                    print(f"   🔍 Found matching truck (plate update/replacement): {matched_truck} ➔ {clean_truck} for {r[1]} on {date_val}")
             except Exception as err:
                 print(f"   ⚠️ Typo match check safely skipped due to error: {err}")
                 existing_entry = None
@@ -908,6 +938,10 @@ try:
         
         sheet.append_rows(sheet_rows_to_insert, value_input_option="USER_ENTERED")
         print(f"✅ Appended {len(sheet_rows_to_insert)} new rows to Google Sheet.")
+
+    # 3. Auto-sort sheet: Status Z-A, DateArrived Z-A, DateofEndorsement Z-A
+    if updates_to_push or new_rows:
+        automation_utils.sort_endorsements_sheet(sheet)
 
     # ---------------------------------------------------------
     # --- WHATSAPP SUMMARY GENERATION (Smart Fallback) ---

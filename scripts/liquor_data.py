@@ -4,7 +4,6 @@
 # ----------------------------
 LIQUOR_NAME_MAPPING = {
     # --- Whiskies ---
-    "11": "N/A",
     "AFTER DARK BLUE RARE GRAIN WHISKY": "After Dark",
     "ALL SEASONS CONNOISSEUR`S COLLECTION RESERVE WHISKY": "All Seasons Connoisseur",
     "ANTIQUITY BLUE ULTRA PREMIUM WHISKY": "Antiquity Blue Ultra",
@@ -262,6 +261,8 @@ LIQUOR_NAME_MAPPING = {
     "HAYWARDS 5000 STRONG SUPERIOR EXTRA STRONG BEER": "Haywards 5000",
     "OLD MONK THE ORIGINAL PLATINUM STRONG BEER": "Old Monk Beer",
     "UB BULLET 10000 MEGA STRONG BEER": "Bullet 10000 Beer",
+    "TUBORG STRONG SUPREME PREMIUM BEER": "Tuborg Supreme",
+
 
 
 
@@ -610,6 +611,8 @@ def get_short_name(long_name):
 
     # If still no match, report it and return the original
     if long_name: # Don't add empty strings
+        if long_name.strip().startswith("[[") and long_name.strip().endswith("]]"):
+            return long_name
         unmapped_liquor_names.add(long_name)
     return long_name
 
@@ -652,6 +655,13 @@ SIZE_SUFFIX_MAPPING = {
     "UP": "Pint",
     "GP": "Stubby",
     "TT": "Keg",
+    "JQ": "Full",
+    "PQ": "Half",
+    "NQ": "Quarter",
+    "SA": "Bottle",
+    "ZA": "Pint",
+    "CA": "CA",
+    "CS": "CS",
 }
 
 # ----------------------------
@@ -683,6 +693,7 @@ SUPPLIER_NAME_MAPPING = {
     "RADICO KHAITAN LIMITED TIE UP WITH PRAGATI LIQUOR INDUSTRIES": "Pragati",
     "RADICO KHAITAN LIMITED TIE UP WITH SEVEN SISTERS": "Seven Sisters",
     "RADICO KHAITAN LIMITED TIEUP WITH SIFARUH GROUP OF INDUSTRIES": "Sifaruh",
+    "RADICO KHAITAN": "Radico Khaitan",
     "RADICO KHAITAN LTD": "Radico Khaitan",
     "RADIANT MANUFACTURERS PVT LTD": "Radiant",
     "RAIZEL BREWERIES": "Raizel",
@@ -721,7 +732,6 @@ SUPPLIER_NAME_MAPPING = {
     "GROVER ZAMPA VINEYARDS LTD TIE UP WITH FOUR SEASONS WINES LTD": "Grover Zampa Vineyards",
     "HIMALAYAN DISTILLERY PVT LTD": "Himalayan Distillery",
     "M/S DIVINE GRACE ENTERPRISE": "Divine Grace Enterprise",
-    "2": "N/A",
     "SULA VINEYARDS LIMITED": "Sula Vineyards",
     "KLASSIC BUSINESS ADVISORY PVT LTD": "Klassic Business Advisory",
     "M/S ARMY WELFARE PROJECT LIMITED": "Army Welfare Project",
@@ -750,8 +760,7 @@ SUPPLIER_NAME_MAPPING = {
     "ANHEUSER BUSCH INBEV INDIA LTD TIE-UP WITH BRAHMAPUTRA BREWERIES LLP": "Anheuser Busch",
     "MOHAN MEAKIN LTD TIE UP WITH NEFA BREWERIES PRIVATE LIMITED": "Nefa Breweries",
     "TILAKNAGAR INDUSTRIES LIMITED": "Tilaknagar Industries",
-
-
+    "CARLSBERG INDIA LTD TIE UP WITH BRAHMAPUTRA BREWERIES LLP": "Carlsberg",
 }
 
 unmapped_suppliers = set()
@@ -781,17 +790,12 @@ def get_short_supplier_name(long_name):
         return re.sub(r'[^a-zA-Z0-9]', '', s).lower()
 
     norm_long = clean_punc(long_name)
-    best_match = ''
     
-    for key in SUPPLIER_NAME_MAPPING:
+    # Sort keys by length descending so longest specific match wins
+    for key in sorted(SUPPLIER_NAME_MAPPING.keys(), key=len, reverse=True):
         norm_key = clean_punc(key)
         if norm_key and norm_key in norm_long:
-            # We want the longest key match to be specific
-            if len(key) > len(best_match):
-                best_match = key
-    
-    if best_match:
-        return SUPPLIER_NAME_MAPPING[best_match]
+            return SUPPLIER_NAME_MAPPING[key]
             
     unmapped_suppliers.add(long_name)
     return long_name

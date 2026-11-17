@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 Dynamic Indian Proxy Discovery & Pre-Flight Validator
-Finds and verifies working Indian SOCKS5 & HTTP proxies that can reach the Assam Excise portal.
+Finds and verifies working Indian SOCKS4, SOCKS5 & HTTP proxies that can reach the Assam Excise portal.
 """
 
 import sys
 import os
 import time
 import ssl
+import random
 import subprocess
 import urllib.request
 import concurrent.futures
@@ -18,11 +19,19 @@ PROXY_SOURCES = [
     "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/countries/IN/data.txt",
     "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=8000&country=IN",
     "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=8000&country=IN&ssl=all&anonymity=all",
+    "https://raw.githubusercontent.com/prxchk/proxy-list/main/http.txt",
+    "https://raw.githubusercontent.com/prxchk/proxy-list/main/socks5.txt",
 ]
 
 # High-reliability Indian seed proxies (Oracle Cloud Mumbai / DigitalOcean BLR)
 PRIORITY_SEEDS = [
+    "socks4://140.238.243.61:1080",
     "socks5://140.238.243.61:1080",
+    "http://103.48.71.166:83",
+    "socks4://103.26.10.23:2080",
+    "socks4://103.37.82.134:39873",
+    "socks4://123.253.124.28:5678",
+    "socks4://202.179.88.233:51951",
     "socks5://144.24.111.128:1088",
     "http://139.59.0.200:3128",
     "http://150.107.253.62:1111",
@@ -82,56 +91,40 @@ def fetch_candidate_proxies():
 def verify_single_proxy(proxy_url):
     """
     Verifies a proxy by fetching the Assam Excise portal login page.
-    Uses curl for native support of both SOCKS5 and HTTP proxies.
+    Native support for SOCKS4, SOCKS5, and HTTP proxies via curl.
     """
-    t0 = time.time()
     cmd = [
         "curl", "-k", "-s", "-L",
         "--connect-timeout", "4",
-        "-m", "7",
+        "-m", "8",
         "--proxy", proxy_url,
         PORTAL_URL
     ]
     try:
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=8)
+        t0 = time.time()
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=9)
         elapsed = time.time() - t0
         body = res.stdout.lower()
-        if "assam" in body or "excise" in body or "logincaptcha" in body or "loginform" in body:
+        if ("assam" in body or "excise" in body) and ("logincaptcha" in body or "loginform" in body or "username" in body):
             return (proxy_url, elapsed)
     except Exception:
         pass
 
-    # Fallback to urllib if proxy is HTTP and curl failed
-    if proxy_url.startswith("http://"):
-        try:
-            handler = urllib.request.ProxyHandler({"http": proxy_url, "https": proxy_url})
-            ctx = ssl._create_unverified_context()
-            opener = urllib.request.build_opener(handler)
-            req = urllib.request.Request(
-                PORTAL_URL,
-                headers={"User-Agent": "Mozilla/5.0"}
-            )
-            t0 = time.time()
-            with opener.open(req, timeout=6) as resp:
-                elapsed = time.time() - t0
-                if resp.status == 200:
-                    body = resp.read(1024).decode("utf-8", errors="ignore").lower()
-                    if "assam" in body or "excise" in body or "login" in body:
-                        return (proxy_url, elapsed)
-        except Exception:
-            pass
-
     return None
 
-def find_working_indian_proxy(max_candidates=120, max_workers=35):
+def find_working_indian_proxy(max_candidates=250, max_workers=40):
     candidates = fetch_candidate_proxies()
     
-    # Prioritize seeds
-    ordered_candidates = [p for p in PRIORITY_SEEDS if p in candidates] + [p for p in PRIORITY_SEEDS if p not in candidates]
-    ordered_candidates += [p for p in candidates if p not in PRIORITY_SEEDS]
+    # Shuffle candidate pool so concurrent GitHub runners distribute traffic across different proxies
+    random.shuffle(candidates)
+    
+    # Mix priority seeds with candidates
+    shuffled_seeds = list(PRIORITY_SEEDS)
+    random.shuffle(shuffled_seeds)
+    ordered_candidates = shuffled_seeds + [p for p in candidates if p not in PRIORITY_SEEDS]
 
     test_batch = ordered_candidates[:max_candidates]
-    print(f"⚡ Concurrently testing {len(test_batch)} Indian proxies against portal (timeout=7s)...")
+    print(f"⚡ Concurrently testing {len(test_batch)} Indian proxies against portal (timeout=8s, randomized pool)...")
     
     verified = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -142,13 +135,25 @@ def find_working_indian_proxy(max_candidates=120, max_workers=35):
                 proxy_url, latency = res
                 print(f"   🎯 Live Indian Proxy verified: {proxy_url} (latency: {latency:.2f}s)")
                 verified.append(res)
-                if len(verified) >= 3:
+                if len(verified) >= 8:
                     break
 
     if verified:
         verified.sort(key=lambda x: x[1])
-        best_proxy, best_time = verified[0]
-        print(f"🏆 Best Indian proxy selected: {best_proxy} (latency: {best_time:.2f}s)")
+        # Randomly choose among the top 5 lowest-latency verified proxies to eliminate single-proxy collisions
+        top_tier = verified[:min(5, len(verified))]
+        best_proxy, best_time = random.choice(top_tier)
+        print(f"🏆 Distributed Indian proxy selected: {best_proxy} (latency: {best_time:.2f}s, out of {len(verified)} verified)")
+        
+        # Save to local cache files
+        try:
+            with open(".active_proxy", "w") as f:
+                f.write(best_proxy.strip())
+            with open(".active_proxy_pool", "w") as f:
+                f.write("\n".join([v[0] for v in verified]))
+        except Exception:
+            pass
+            
         return best_proxy
 
     print("⚠️ No verified live proxies found in this batch.")

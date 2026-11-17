@@ -499,29 +499,54 @@ def solve_captcha_ocr(driver, captcha_element_id="loginCaptcha"):
                 pass
             time.sleep(0.5)
 
+        image_bytes = None
         try:
             captcha_img.screenshot(screenshot_path)
-            if not os.path.exists(screenshot_path) or os.path.getsize(screenshot_path) < 100:
+            if os.path.exists(screenshot_path) and os.path.getsize(screenshot_path) >= 100:
+                with open(screenshot_path, "rb") as f:
+                    image_bytes = f.read()
+            else:
                 raise Exception("Screenshot file missing or too small")
         except Exception as e_ss:
-            print(f"   ⚠️ Element screenshot failed: {e_ss}. Using Full Page Crop fallback...")
-            full_screenshot_path = "full_page_debug.png"
-            driver.save_screenshot(full_screenshot_path)
-            image = Image.open(full_screenshot_path)
+            # High-fidelity fallback 1: Canvas Base64 extraction directly from DOM memory
             try:
-                location = captcha_img.location
-                size = captcha_img.size
-                left = location['x'] - 5
-                top = location['y'] - 5
-                right = location['x'] + size['width'] + 5
-                bottom = location['y'] + size['height'] + 5
-                image = image.crop((left, int(top), int(right), int(bottom)))
-            except:
-                print("   ⚠️ Dynamic crop failed. Using fixed fallback box.")
-                image = image.crop((700, 300, 900, 400))
-            image.save(screenshot_path)
-            try: os.remove(full_screenshot_path) 
-            except: pass
+                import base64
+                b64_str = driver.execute_script("""
+                    var img = arguments[0];
+                    if (!img) return null;
+                    var canvas = document.createElement('canvas');
+                    canvas.width = img.naturalWidth || img.width || 120;
+                    canvas.height = img.naturalHeight || img.height || 40;
+                    var ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+                    return canvas.toDataURL('image/png').split(',')[1];
+                """, captcha_img)
+                if b64_str:
+                    image_bytes = base64.b64decode(b64_str)
+                    with open(screenshot_path, "wb") as f:
+                        f.write(image_bytes)
+            except Exception:
+                image_bytes = None
+
+            if not image_bytes:
+                print(f"   ⚠️ Element screenshot failed: {e_ss}. Using Full Page Crop fallback...")
+                full_screenshot_path = "full_page_debug.png"
+                driver.save_screenshot(full_screenshot_path)
+                image = Image.open(full_screenshot_path)
+                try:
+                    location = captcha_img.location
+                    size = captcha_img.size
+                    left = location['x'] - 5
+                    top = location['y'] - 5
+                    right = location['x'] + size['width'] + 5
+                    bottom = location['y'] + size['height'] + 5
+                    image = image.crop((left, int(top), int(right), int(bottom)))
+                except:
+                    print("   ⚠️ Dynamic crop failed. Using fixed fallback box.")
+                    image = image.crop((700, 300, 900, 400))
+                image.save(screenshot_path)
+                try: os.remove(full_screenshot_path) 
+                except: pass
         
         if not has_ddddocr:
             print(f"   🖼️  Captcha saved to: {os.path.abspath(screenshot_path)}")
@@ -596,6 +621,8 @@ def login_to_portal(driver, portal_url, username, password, max_retries=15):
 
     wait = WebDriverWait(driver, 20)
     login_success = False
+    last_ocr_code = None
+    consecutive_same_ocr = 0
 
     for attempt in range(max_retries):
         if is_logged_in(driver):
@@ -621,11 +648,17 @@ def login_to_portal(driver, portal_url, username, password, max_retries=15):
                     old_src = captcha_imgs[0].get_attribute("src") if captcha_imgs else None
                     if refresh_btns:
                         driver.execute_script("arguments[0].click();", refresh_btns[0])
-                        for _ in range(12):
-                            time.sleep(0.5)
+                        src_changed = False
+                        for _ in range(10):
+                            time.sleep(0.4)
                             new_src = captcha_imgs[0].get_attribute("src") if captcha_imgs else None
                             if new_src and new_src != old_src:
+                                src_changed = True
                                 break
+                        if not src_changed:
+                            print("   ⚠️ #refreshCaptcha did not update captcha src. Reloading page...")
+                            navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=4)
+                            time.sleep(2)
                     else:
                         navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=4)
                         time.sleep(2)
@@ -671,6 +704,19 @@ def login_to_portal(driver, portal_url, username, password, max_retries=15):
             
             code = solve_captcha_ocr(driver)
             if code:
+                if code == last_ocr_code:
+                    consecutive_same_ocr += 1
+                    if consecutive_same_ocr >= 2:
+                        print(f"   ⚠️ Stale captcha detected (code '{code}' repeated {consecutive_same_ocr + 1}x). Force reloading login page...")
+                        navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=4)
+                        time.sleep(2)
+                    if consecutive_same_ocr >= 4:
+                        print(f"   ❌ Captcha permanently stalled on current proxy. Aborting login.")
+                        break
+                else:
+                    last_ocr_code = code
+                    consecutive_same_ocr = 0
+
                 # Ensure password was not cleared by checkotprequire()
                 try:
                     if not pwd_box.get_attribute("value"):
@@ -754,6 +800,101 @@ def manual_login_fallback(driver, username, password):
     Handles login with manual fallback if OCR fails or is not used.
     """
     pass # Logic will be in the main scripts for flow control
+
+def ensure_active_proxy(force_refresh=False):
+    """
+    Verifies that the configured Indian proxy is alive and responsive to the Assam Excise portal.
+    If the proxy is dead or force_refresh is True, dynamically discovers and rotates to a fresh Indian proxy.
+    """
+    if os.environ.get("USE_INDIAN_PROXY") == "true":
+        try:
+            import find_indian_proxy
+        except ImportError:
+            import sys
+            sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+            import find_indian_proxy
+
+        current_proxy = os.environ.get("INDIAN_PROXY")
+        if current_proxy and not force_refresh:
+            try:
+                res = find_indian_proxy.verify_single_proxy(current_proxy)
+                if res:
+                    print(f"   🎯 Indian proxy is healthy ({current_proxy}, latency: {res[1]:.2f}s)")
+                    return current_proxy
+            except Exception:
+                pass
+            print(f"   ⚠️ Current Indian proxy ({current_proxy}) is unresponsive or timed out.")
+
+        print("   🔄 Discovering fresh live Indian proxy...")
+        try:
+            new_proxy = find_indian_proxy.find_working_indian_proxy(max_candidates=200, max_workers=35)
+            if new_proxy:
+                os.environ["INDIAN_PROXY"] = new_proxy
+                print(f"   🏆 Rotated to fresh Indian proxy: {new_proxy}")
+                return new_proxy
+        except Exception as e_find:
+            print(f"   ⚠️ Proxy rotation error: {e_find}")
+            
+    return os.environ.get("INDIAN_PROXY")
+
+def set_date_input(driver, wait, elem_id, target_date):
+    """Sets date input field directly via JS and falls back to UI datepicker if needed."""
+    date_str_fmt1 = target_date.strftime("%d-%b-%Y")
+    
+    set_success = False
+    try:
+        elem = driver.find_element(By.ID, elem_id)
+        driver.execute_script("arguments[0].removeAttribute('readonly')", elem)
+        driver.execute_script("arguments[0].value = arguments[1];", elem, date_str_fmt1)
+        driver.execute_script("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", elem)
+        driver.execute_script("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", elem)
+        driver.execute_script("arguments[0].dispatchEvent(new Event('blur', { bubbles: true }));", elem)
+        driver.execute_script("""
+            try {
+                if (window.jQuery) {
+                    var $el = jQuery(arguments[0]);
+                    $el.datepicker('update', arguments[1]);
+                    $el.trigger('changeDate');
+                }
+            } catch(e) {}
+        """, elem, date_str_fmt1)
+        time.sleep(0.3)
+        val = elem.get_attribute("value")
+        if val and (date_str_fmt1 in val or target_date.strftime("%d") in val):
+            set_success = True
+    except Exception as e:
+        print(f"   ⚠️ Direct date setting on #{elem_id} failed: {e}")
+        
+    if not set_success:
+        try:
+            elem = wait.until(EC.element_to_be_clickable((By.ID, elem_id)))
+            driver.execute_script("arguments[0].click();", elem)
+            time.sleep(0.5)
+            select_date_ui(driver, wait, target_date)
+        except Exception as e_ui:
+            print(f"   ⚠️ UI datepicker selection on #{elem_id} failed: {e_ui}")
+
+def select_date_ui(driver, wait, target_date):
+    """Automates datepicker selection on calendar UI."""
+    day_to_select = str(int(target_date.strftime('%d')))
+    try:
+        current_calendar_month_year = driver.find_element(By.CSS_SELECTOR, "div.datepicker-days .datepicker-switch").text
+    except Exception as e:
+        print("   ⚠️ Error reading datepicker view:", e)
+        return
+
+    target_month_year = target_date.strftime('%B %Y')
+    while target_month_year != current_calendar_month_year:
+        curr_dt_obj = datetime.strptime(current_calendar_month_year, '%B %Y')
+        if target_date.year < curr_dt_obj.year or (target_date.year == curr_dt_obj.year and target_date.month < curr_dt_obj.month):
+             driver.find_element(By.CSS_SELECTOR, "div.datepicker-days .prev").click()
+        else:
+             driver.find_element(By.CSS_SELECTOR, "div.datepicker-days .next").click()
+        time.sleep(0.5)
+        current_calendar_month_year = driver.find_element(By.CSS_SELECTOR, "div.datepicker-days .datepicker-switch").text
+
+    day_element_xpath = f"//div[contains(@class,'datepicker-days')]//td[not(contains(@class, 'old')) and not(contains(@class, 'new')) and text()='{day_to_select}']"
+    wait.until(EC.element_to_be_clickable((By.XPATH, day_element_xpath))).click()
 
 def send_telegram_message(message, bot_token, chat_id):
     """
@@ -901,11 +1042,14 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header, com
         "375ml": "Half (PP)",
         "750ml": "Full (QQ)",
         "180ml": "Quarter (NN)",
-        "Full": "Full (JM/QM)",
-        "Quarter": "Quarter (CP/CR/CQ)",
-        "Pint": "Pint (UP)",
+        "Full": "Full (JM/QM/JQ)",
+        "Quarter": "Quarter (CP/CR/CQ/NQ)",
+        "Half": "Half (PQ)",
+        "Pint": "Pint (UP/ZA)",
         "Stubby": "Stubby (GP)",
         "Keg": "Keg (TT)",
+        "CA": "CA",
+        "CS": "CS",
     }
     
     # Also handle the raw codes if they linger (just in case)
@@ -917,6 +1061,13 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header, com
         "NN": "Quarter (NN)",
         "JM": "Full (JM/QM)",
         "QM": "Full (JM/QM)",
+        "JQ": "Full (JQ)",
+        "PQ": "Half (PQ)",
+        "NQ": "Quarter (NQ)",
+        "SA": "Bottle (SA)",
+        "ZA": "Pint (ZA)",
+        "CA": "CA",
+        "CS": "CS",
         "CP": "Quarter (CP/CR/CQ)",
         "CR": "Quarter (CP/CR/CQ)",
         "CQ": "Quarter (CP/CR/CQ)",
@@ -1106,12 +1257,14 @@ def generate_whatsapp_reports(data_rows, incoming_checkpoint, report_header, com
             for liquor_name, size_dict in sorted_liquors:
                 # Sort sizes in standard excise order: Full -> Half -> Quarter
                 size_priority = {
-                    "Full": 1, "QQ": 1, "JM": 1, "QM": 1, "750ml": 1,
-                    "Half": 2, "PP": 2, "375ml": 2,
-                    "Quarter": 3, "NN": 3, "CP": 3, "CR": 3, "CQ": 3, "180ml": 3,
-                    "Pint": 4, "UP": 4,
+                    "Full": 1, "QQ": 1, "JM": 1, "QM": 1, "750ml": 1, "JQ": 1, "700ml": 1,
+                    "Half": 2, "PP": 2, "375ml": 2, "PQ": 2, "350ml": 2,
+                    "Quarter": 3, "NN": 3, "CP": 3, "CR": 3, "CQ": 3, "180ml": 3, "NQ": 3, "187ml": 3,
+                    "CA": 1,
+                    "CS": 2,
+                    "Pint": 4, "UP": 4, "ZA": 4, "330ml": 4,
                     "Stubby": 5, "GP": 5,
-                    "Bottle": 6, "BS": 6,
+                    "Bottle": 6, "BS": 6, "SA": 6, "360ml": 6,
                     "Can": 7, "AP": 7,
                     "Keg": 8, "TT": 8
                 }
@@ -1238,9 +1391,12 @@ def get_bifurcation_string(date_raw, truck_val, incoming_checkpoint):
         "180ml": "Quarter",
         "Full": "Full",
         "Quarter": "Quarter",
+        "Half": "Half",
         "Pint": "Pint",
         "Stubby": "Stubby",
         "Keg": "Keg",
+        "CA": "CA",
+        "CS": "CS",
     }
     RAW_CODE_MAPPING = {
         "AP": "Can",
@@ -1250,6 +1406,13 @@ def get_bifurcation_string(date_raw, truck_val, incoming_checkpoint):
         "NN": "Quarter",
         "JM": "Full",
         "QM": "Full",
+        "JQ": "Full",
+        "PQ": "Half",
+        "NQ": "Quarter",
+        "SA": "Bottle",
+        "ZA": "Pint",
+        "CA": "CA",
+        "CS": "CS",
         "CP": "Quarter",
         "CR": "Quarter",
         "CQ": "Quarter",
@@ -1292,12 +1455,14 @@ def get_bifurcation_string(date_raw, truck_val, incoming_checkpoint):
         mapped_name = get_short_name(liquor_name)
         # Sort sizes in standard excise order: Full -> Half -> Quarter
         size_priority = {
-            "Full": 1, "QQ": 1, "JM": 1, "QM": 1, "750ml": 1,
-            "Half": 2, "PP": 2, "375ml": 2,
-            "Quarter": 3, "NN": 3, "CP": 3, "CR": 3, "CQ": 3, "180ml": 3,
-            "Pint": 4, "UP": 4,
+            "Full": 1, "QQ": 1, "JM": 1, "QM": 1, "750ml": 1, "JQ": 1, "700ml": 1,
+            "Half": 2, "PP": 2, "375ml": 2, "PQ": 2, "350ml": 2,
+            "Quarter": 3, "NN": 3, "CP": 3, "CR": 3, "CQ": 3, "180ml": 3, "NQ": 3, "187ml": 3,
+            "CA": 1,
+            "CS": 2,
+            "Pint": 4, "UP": 4, "ZA": 4, "330ml": 4,
             "Stubby": 5, "GP": 5,
-            "Bottle": 6, "BS": 6,
+            "Bottle": 6, "BS": 6, "SA": 6, "360ml": 6,
             "Can": 7, "AP": 7,
             "Keg": 8, "TT": 8
         }
@@ -1420,15 +1585,31 @@ def is_plate_typo(plate1, plate2):
         return False
 
 
-def find_fuzzy_truck_match(date_val, supplier_name, clean_truck, existing_data, scraped_trucks_on_date=None, scraped_qty=None, scraped_liquor=None):
+def sort_endorsements_sheet(sheet):
     """
-    Looks for an existing truck entry that is a likely typo match for clean_truck.
-    Conditions:
-    1. Same normalized date
-    2. Same short supplier name
-    3. The candidate truck plate was NOT scraped in the current run (meaning it disappeared from portal)
-    4. is_plate_typo(clean_truck, candidate_plate) is True
-    5. scraped_qty >= candidate_qty (if qty provided)
+    Sorts Truck Endorsements or Country Spirit Endorsements worksheet:
+    1. Status (Col 6) DESCENDING (Z-A): Unloading -> Not Opened -> Not Arrived -> Completed
+    2. DateArrived (Col 7) DESCENDING (Z-A): Newest arrivals first, incident notes above empty cells
+    3. DateofEndorsement (Col 1) DESCENDING (Z-A): Newest endorsed trucks first
+    Preserves header row (Row 1).
+    """
+    try:
+        all_vals = sheet.get_all_values()
+        num_rows = len(all_vals)
+        if num_rows <= 2:
+            return
+        range_str = f"A2:I{num_rows}"
+        print(f"📊 Auto-sorting sheet '{sheet.title}' over range {range_str} (Status Z-A, DateArrived Z-A)...")
+        sheet.sort((6, 'des'), (7, 'des'), (1, 'des'), range=range_str)
+        print(f"✅ Successfully auto-sorted '{sheet.title}'.")
+    except Exception as e:
+        print(f"⚠️ Warning: Auto-sort on '{sheet.title}' failed safely: {e}")
+
+def find_fuzzy_truck_match(date_val, supplier_name, clean_truck, existing_data, scraped_trucks_on_date=None, scraped_qty=None, scraped_liquor=None, scraped_bifurcation=None):
+    """
+    Looks for an existing truck entry that is either:
+    1. A likely typo match (1-2 characters off, candidate disappeared from portal)
+    2. A whole-truck plate replacement (same date, same supplier, same qty, same bifurcation/liquor, candidate plate disappeared from portal)
     Guaranteed not to crash or raise an exception.
     Returns: (matched_key, matched_entry) or (None, None)
     """
@@ -1463,7 +1644,7 @@ def find_fuzzy_truck_match(date_val, supplier_name, clean_truck, existing_data, 
                     cand_truck = parts[1]
                     
             # If candidate truck is also currently scraped on this date,
-            # it is a real separate truck currently on portal, NOT a corrected typo
+            # it is a real separate truck currently on portal, NOT a replaced/corrected truck
             if cand_truck in scraped_trucks_set:
                 continue
                 
@@ -1473,14 +1654,28 @@ def find_fuzzy_truck_match(date_val, supplier_name, clean_truck, existing_data, 
                 if not (scraped_supplier_norm and cand_supplier_norm and (scraped_supplier_norm in cand_supplier_norm or cand_supplier_norm in scraped_supplier_norm)):
                     continue
             
-            # Quantity guard: a combined or corrected endorsement will have >= quantity
-            if scraped_qty is not None:
-                try:
-                    cand_qty = int(str(entry.get('quantity', 0)).replace(',', ''))
-                    if int(scraped_qty) < cand_qty:
-                        continue
-                except Exception:
-                    pass
+            # Check for Whole-Truck Plate Replacement (same qty and same cargo)
+            cand_qty = None
+            try:
+                cand_qty = int(str(entry.get('quantity', 0)).replace(',', ''))
+            except Exception:
+                pass
+
+            if scraped_qty is not None and cand_qty is not None and int(scraped_qty) == cand_qty:
+                cand_bifurcation = str(entry.get('bifurcation', '')).strip().lower()
+                scraped_bif_clean = str(scraped_bifurcation or '').strip().lower()
+                cand_liquor = str(entry.get('liquor', '')).strip().lower()
+                scraped_liq_clean = str(scraped_liquor or '').strip().lower()
+                
+                # If exact cargo match or exact bifurcation match
+                if (scraped_bif_clean and cand_bifurcation and scraped_bif_clean == cand_bifurcation) or \
+                   (scraped_liq_clean and cand_liquor and scraped_liq_clean == cand_liquor):
+                    print(f"   🔄 Whole-truck plate replacement identified: {cand_truck} -> {clean_truck} ({cand_qty} Cases, {supplier_name})")
+                    return k, entry
+
+            # Quantity guard for typos: a combined or corrected endorsement will have >= quantity
+            if scraped_qty is not None and cand_qty is not None and int(scraped_qty) < cand_qty:
+                continue
                 
             if is_plate_typo(clean_truck, cand_truck):
                 dist = sum(1 for a, b in zip(clean_truck, cand_truck) if a != b) if len(clean_truck) == len(cand_truck) else 1
