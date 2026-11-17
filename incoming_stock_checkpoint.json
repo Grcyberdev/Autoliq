@@ -13974,8 +13974,8 @@
     },
     "17-Nov-2026": {
         "AS01KC8932": {
-            "Old Monk Vatted": {
-                "180ml": 450
+            "Old Monk Coffee": {
+                "180ml": 10
             },
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
         },
@@ -13985,9 +13985,15 @@
             },
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
         },
+        "AS01MC1021": {
+            "Imperial Black": {
+                "750ml": 20
+            },
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL"
+        },
         "AS01MC3480": {
-            "Blender's Pride Four Elements": {
-                "750ml": 6
+            "Blender's Pride Exclusive": {
+                "750ml": 25
             },
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
         },
@@ -14029,7 +14035,7 @@
         },
         "WB23L6699": {
             "Imperial Blue": {
-                "750ml": 25
+                "375ml": 125
             },
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd."
         }
