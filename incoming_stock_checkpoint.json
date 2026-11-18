@@ -492,7 +492,7 @@
         },
         "AS01LC0437": {
             "Masti": {
-                "CA": 400
+                "CS": 300
             },
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
         },
@@ -2496,7 +2496,7 @@
     "05-Nov-2026": {
         "AS01KC8177": {
             "Masti": {
-                "CS": 300
+                "CA": 400
             },
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
         },
@@ -3530,14 +3530,14 @@
             "_TelegramSupplier": "United Spirits Limited"
         },
         "AS03BC8344": {
-            "Masti Special": {
-                "CA": 300
+            "Masti No. 1": {
+                "CA": 100
             },
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
         },
         "AS04CC0758": {
-            "Rhino No 1": {
-                "CS": 50
+            "Rhino Whiskey": {
+                "CS": 80
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
         },
@@ -11577,7 +11577,7 @@
     "15-Nov-2026": {
         "AS01KC9113": {
             "Masti": {
-                "CA": 400
+                "CS": 300
             },
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
         }
@@ -12858,8 +12858,8 @@
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL"
         },
         "AS01KC1976": {
-            "Masti Special": {
-                "CA": 500
+            "Masti No. 1": {
+                "CA": 100
             },
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
         },
@@ -12879,7 +12879,7 @@
             "_TelegramSupplier": "Modi Distillery IMFL Wholesale Warehouse"
         },
         "AS04BC1196": {
-            "Rhino Limon": {
+            "Rhino No 1": {
                 "CS": 40
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
@@ -15132,8 +15132,8 @@
             "_TelegramSupplier": "Parsan Brothers"
         },
         "AS03BC9029": {
-            "Rhino Limon": {
-                "CA": 50
+            "Rhino Whiskey": {
+                "CA": 30
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
         },
