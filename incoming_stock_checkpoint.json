@@ -492,7 +492,7 @@
         },
         "AS01LC0437": {
             "Masti": {
-                "CS": 300
+                "CA": 400
             },
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
         },
@@ -3536,8 +3536,8 @@
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
         },
         "AS04CC0758": {
-            "Rhino Whiskey": {
-                "CA": 100
+            "Rhino No 1": {
+                "CS": 50
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
         },
@@ -12858,8 +12858,8 @@
             "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL"
         },
         "AS01KC1976": {
-            "Masti No. 1": {
-                "CA": 100
+            "Masti Special": {
+                "CA": 500
             },
             "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
         },
@@ -12879,8 +12879,8 @@
             "_TelegramSupplier": "Modi Distillery IMFL Wholesale Warehouse"
         },
         "AS04BC1196": {
-            "Rhino No 1": {
-                "CA": 100
+            "Rhino Limon": {
+                "CS": 40
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
         },
@@ -15083,6 +15083,14 @@
                 "Bottle": 700,
                 "Can": 700
             }
+        }
+    },
+    "18-Nov-2026": {
+        "AS03BC9029": {
+            "Rhino Limon": {
+                "CA": 50
+            },
+            "_TelegramSupplier": "Associated Alcohol And Beverages Company"
         }
     },
     "18-Sep-2026": {
