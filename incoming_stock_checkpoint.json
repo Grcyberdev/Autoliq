@@ -15091,9 +15091,15 @@
                 "750ml": 25
             },
             "White Magic Vodka": {
-                "180ml": 15
+                "750ml": 5
             },
             "_TelegramSupplier": "Raizel Industries"
+        },
+        "AS01JC5435": {
+            "Old Monk Vatted": {
+                "375ml": 250
+            },
+            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
         },
         "AS01KC9112": {
             "Mansion House Brandy": {
@@ -15108,8 +15114,8 @@
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
         },
         "AS01PC6347": {
-            "THE MACALLAN 12 YEARS OLD SHERRY OAK COLLECTION HIGHLAND SINGLE MALT SCOTCH WHISKY": {
-                "Full": 2
+            "DANZKA VODKA": {
+                "750ml": 3
             },
             "_TelegramSupplier": "Spirits And Malts India Private Limited"
         },
@@ -15126,10 +15132,16 @@
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
         },
         "AS25FC7294": {
-            "After Dark": {
-                "180ml": 75
+            "Magic Moments Green Apple": {
+                "750ml": 10
             },
             "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries"
+        },
+        "AS28AC0488": {
+            "Kingfisher Original Strong": {
+                "Can": 530
+            },
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
         }
     },
     "18-Sep-2026": {
