@@ -15086,15 +15086,30 @@
         }
     },
     "18-Nov-2026": {
+        "AS01GC6796": {
+            "AC Black Luxury": {
+                "750ml": 25
+            },
+            "White Magic Vodka": {
+                "750ml": 5
+            },
+            "_TelegramSupplier": "Raizel Industries"
+        },
+        "AS01KC9112": {
+            "Mansion House Brandy": {
+                "750ml": 10
+            },
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd."
+        },
         "AS01PC6347": {
-            "DANZKA VODKA": {
-                "750ml": 3
+            "NIKKA COFFEY GRAIN WHISKY": {
+                "Full": 1
             },
             "_TelegramSupplier": "Spirits And Malts India Private Limited"
         },
         "AS01RC8137": {
             "Amrut's Maqintosh": {
-                "750ml": 25
+                "180ml": 13
             },
             "_TelegramSupplier": "Parsan Brothers"
         },
@@ -15103,6 +15118,12 @@
                 "CA": 50
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
+        },
+        "AS25FC7294": {
+            "Magic Moments Green Apple": {
+                "180ml": 45
+            },
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries"
         }
     },
     "18-Sep-2026": {
