@@ -15091,21 +15091,27 @@
                 "750ml": 25
             },
             "White Magic Vodka": {
-                "750ml": 5
+                "180ml": 15
             },
             "_TelegramSupplier": "Raizel Industries"
         },
         "AS01JC5435": {
             "Old Monk Vatted": {
-                "375ml": 250
+                "180ml": 550
             },
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
         },
         "AS01KC9112": {
-            "Mansion House Brandy": {
-                "750ml": 10
+            "Imperial Blue": {
+                "750ml": 25
             },
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd."
+        },
+        "AS01MC2766": {
+            "Royal Green": {
+                "375ml": 25
+            },
+            "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries"
         },
         "AS01MC5628": {
             "McDowell's Rum": {
@@ -15120,8 +15126,8 @@
             "_TelegramSupplier": "Spirits And Malts India Private Limited"
         },
         "AS01RC8137": {
-            "Amrut's Maqintosh": {
-                "180ml": 13
+            "Amrut Amalgam": {
+                "750ml": 2
             },
             "_TelegramSupplier": "Parsan Brothers"
         },
@@ -15132,20 +15138,20 @@
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
         },
         "AS25FC7294": {
-            "Magic Moments Green Apple": {
-                "750ml": 10
+            "Magic Moments Jamun": {
+                "180ml": 45
             },
             "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries"
         },
         "AS28AC0488": {
             "Kingfisher Ultra": {
-                "Bottle": 100
+                "Can": 50
             },
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
         },
         "WB23C3476": {
             "Kingfisher Original Strong": {
-                "Bottle": 700
+                "Can": 700
             },
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
         }
