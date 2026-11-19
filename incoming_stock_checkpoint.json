@@ -16922,6 +16922,23 @@
             }
         }
     },
+    "19-Nov-2026": {
+        "AS01JC3217": {
+            "McDowell's Rum": {
+                "180ml": 500,
+                "375ml": 100,
+                "750ml": 300
+            },
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
+        },
+        "AS03BC8344": {
+            "Masti": {
+                "CA": 400,
+                "CS": 300
+            },
+            "_TelegramSupplier": "Pragati Liquor Industries (A Unit Of J D Ventures Pvt. Ltd.)"
+        }
+    },
     "19-Sep-2026": {
         "AS01MC0215": {
             "Kingfisher Original Strong": {
