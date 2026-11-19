@@ -16931,6 +16931,30 @@
             },
             "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
         },
+        "AS01KC8941": {
+            "Director's Special Black": {
+                "180ml": 100,
+                "375ml": 25,
+                "750ml": 20
+            },
+            "Director's Special Regal": {
+                "180ml": 25
+            },
+            "McDowell's Rum": {
+                "180ml": 100,
+                "750ml": 175
+            },
+            "Royal Challenge": {
+                "180ml": 50,
+                "375ml": 25
+            },
+            "Signature": {
+                "180ml": 10,
+                "375ml": 10,
+                "750ml": 10
+            },
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL"
+        },
         "AS01MC5508": {
             "Golden Oak": {
                 "180ml": 5
