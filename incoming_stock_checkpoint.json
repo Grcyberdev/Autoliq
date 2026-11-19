@@ -16956,6 +16956,23 @@
             },
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
         },
+        "AS01QC3237": {
+            "8 PM Premium Black": {
+                "180ml": 15,
+                "375ml": 10,
+                "750ml": 10
+            },
+            "After Dark": {
+                "180ml": 150,
+                "375ml": 35,
+                "750ml": 15
+            },
+            "Magic Moments": {
+                "180ml": 35,
+                "375ml": 30
+            },
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries"
+        },
         "AS01RC2620": {
             "KD 50 Rum": {
                 "750ml": 25
@@ -16966,6 +16983,13 @@
                 "750ml": 100
             },
             "_TelegramSupplier": "Saaran Industries"
+        },
+        "AS01UC3713": {
+            "Royal Stag": {
+                "180ml": 500,
+                "375ml": 50
+            },
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
         },
         "AS03BC8344": {
             "Masti": {
