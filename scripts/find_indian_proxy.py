@@ -104,8 +104,8 @@ def verify_single_proxy(proxy_url):
         t0 = time.time()
         res = subprocess.run(cmd, capture_output=True, text=True, timeout=9)
         elapsed = time.time() - t0
-        body = res.stdout.lower()
-        if ("assam" in body or "excise" in body) and ("logincaptcha" in body or "loginform" in body or "username" in body):
+        body = (res.stdout or "").lower()
+        if res.returncode == 0 and ("assam" in body or "excise" in body) and "loginform" in body and "logincaptcha" in body:
             return (proxy_url, elapsed)
     except Exception:
         pass

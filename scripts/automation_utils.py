@@ -657,16 +657,16 @@ def login_to_portal(driver, portal_url, username, password, max_retries=15):
                                 break
                         if not src_changed:
                             print("   ⚠️ #refreshCaptcha did not update captcha src. Reloading page...")
-                            navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=4)
+                            navigate_to_url_with_retry(driver, portal_url, max_retries=2, wait_time=3, page_load_timeout=30)
                             time.sleep(2)
                     else:
-                        navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=4)
+                        navigate_to_url_with_retry(driver, portal_url, max_retries=2, wait_time=3, page_load_timeout=30)
                         time.sleep(2)
                 except Exception:
-                    navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=4)
+                    navigate_to_url_with_retry(driver, portal_url, max_retries=2, wait_time=3, page_load_timeout=30)
                     time.sleep(2)
             else:
-                navigate_to_url_with_retry(driver, portal_url, max_retries=3, wait_time=4)
+                navigate_to_url_with_retry(driver, portal_url, max_retries=2, wait_time=3, page_load_timeout=30)
                 time.sleep(2)
 
             if is_logged_in(driver):
@@ -783,6 +783,10 @@ def login_to_portal(driver, portal_url, username, password, max_retries=15):
         except Exception as e:
             short_err = str(e).splitlines()[0] if str(e) else str(e)
             print(f"⚠️ Error during login attempt {attempt + 1}: {short_err} (Current URL: {driver.current_url})")
+            err_upper = str(e).upper()
+            if any(tok in err_upper for tok in ("ERR_", "CHROME ERROR PAGE", "TIMED OUT", "TIMEOUT", "PROXY", "SOCKS", "CONNECTION_RESET", "CONNECTION_REFUSED", "CONNECTION_CLOSED", "EMPTY_RESPONSE")):
+                print("🔌 Network/Proxy failure detected during login — aborting current proxy immediately to rotate.")
+                break
 
     if not login_success:
         try:
@@ -844,6 +848,11 @@ def ensure_active_proxy(force_refresh=False):
                     res = find_indian_proxy.verify_single_proxy(cand)
                     if res:
                         os.environ["INDIAN_PROXY"] = cand
+                        try:
+                            with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".active_proxy"), "w") as af:
+                                af.write(cand)
+                        except Exception:
+                            pass
                         print(f"   🏆 Instant failover to pool Indian proxy: {cand} (latency: {res[1]:.2f}s)")
                         return cand
                     else:
