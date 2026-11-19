@@ -611,7 +611,7 @@ def get_short_name(long_name):
 
     # If still no match, report it and return the original
     if long_name: # Don't add empty strings
-        if long_name.strip().startswith("[[") and long_name.strip().endswith("]]"):
+        if "[[" in long_name and "]]" in long_name:
             return long_name
         unmapped_liquor_names.add(long_name)
     return long_name
@@ -761,6 +761,7 @@ SUPPLIER_NAME_MAPPING = {
     "MOHAN MEAKIN LTD TIE UP WITH NEFA BREWERIES PRIVATE LIMITED": "Nefa Breweries",
     "TILAKNAGAR INDUSTRIES LIMITED": "Tilaknagar Industries",
     "CARLSBERG INDIA LTD TIE UP WITH BRAHMAPUTRA BREWERIES LLP": "Carlsberg",
+    "SPIRITS AND MALTS INDIA PRIVATE LIMITED": "Spirits and Malts",
 }
 
 unmapped_suppliers = set()

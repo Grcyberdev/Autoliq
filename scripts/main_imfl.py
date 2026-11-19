@@ -444,20 +444,26 @@ try:
 
     login_success = automation_utils.login_to_portal(driver, PORTAL_URL, USERNAME, PASSWORD, max_retries=15)
 
-    if not login_success:
-        print("⚠️ Initial login failed. Rotating Indian proxy and retrying with fresh driver...")
+    for rot_attempt in range(1, 4):
+        if login_success:
+            break
+        print(f"⚠️ Login failed. Rotating Indian proxy (Rotation {rot_attempt}/3) and retrying with fresh driver...")
         try:
             driver.quit()
-        except:
+        except Exception:
             pass
         automation_utils.ensure_active_proxy(force_refresh=True)
         driver = automation_utils.setup_driver(headless=args.headless)
         wait = WebDriverWait(driver, 30)
         login_success = automation_utils.login_to_portal(driver, PORTAL_URL, USERNAME, PASSWORD, max_retries=15)
-        if not login_success:
-            print("❌ Login Failed after proxy rotation.")
+
+    if not login_success:
+        print("❌ Login Failed after 3 proxy rotations.")
+        try:
             driver.quit()
-            sys.exit(1)
+        except Exception:
+            pass
+        sys.exit(1)
 
      # Navigation continues...
     print("📄 Navigating to Permits & Pass Reports...")
@@ -547,8 +553,7 @@ try:
         scraped_trucks_session = set()
 
         for row_data in all_rows_data:
-            # Skip empty or non-digit starting rows
-            if not row_data or not row_data[0].isdigit():
+            if not row_data:
                 continue
                 
             # Skip Form No. 1 column index row ["1", "2", "3", ..., "13"]
@@ -557,7 +562,7 @@ try:
 
             # Check for start of a new truck entry (Row starts with a digit, has supplier and valid date)
             is_new_truck_row = False
-            if row_data[1] and len(row_data) > 7:
+            if row_data[0].isdigit() and len(row_data) > 7 and row_data[1]:
                 try:
                     datetime.strptime(row_data[7].strip(), "%d-%b-%Y")
                     is_new_truck_row = True

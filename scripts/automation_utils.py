@@ -801,10 +801,13 @@ def manual_login_fallback(driver, username, password):
     """
     pass # Logic will be in the main scripts for flow control
 
+_FAILED_PROXIES = set()
+
 def ensure_active_proxy(force_refresh=False):
     """
     Verifies that the configured Indian proxy is alive and responsive to the Assam Excise portal.
-    If the proxy is dead or force_refresh is True, dynamically discovers and rotates to a fresh Indian proxy.
+    If the proxy is dead or force_refresh is True, rotates through verified proxies in .active_proxy_pool
+    before falling back to a fresh scan, never re-picking an already failed proxy.
     """
     if os.environ.get("USE_INDIAN_PROXY") == "true":
         try:
@@ -815,7 +818,10 @@ def ensure_active_proxy(force_refresh=False):
             import find_indian_proxy
 
         current_proxy = os.environ.get("INDIAN_PROXY")
-        if current_proxy and not force_refresh:
+        if force_refresh and current_proxy:
+            _FAILED_PROXIES.add(current_proxy)
+
+        if current_proxy and not force_refresh and current_proxy not in _FAILED_PROXIES:
             try:
                 res = find_indian_proxy.verify_single_proxy(current_proxy)
                 if res:
@@ -824,10 +830,31 @@ def ensure_active_proxy(force_refresh=False):
             except Exception:
                 pass
             print(f"   ⚠️ Current Indian proxy ({current_proxy}) is unresponsive or timed out.")
+            _FAILED_PROXIES.add(current_proxy)
 
+        # 1. Try instant failover from pre-verified .active_proxy_pool
+        pool_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".active_proxy_pool")
+        if os.path.exists(pool_file):
+            try:
+                with open(pool_file, "r") as pf:
+                    pool_proxies = [line.strip() for line in pf if line.strip()]
+                for cand in pool_proxies:
+                    if cand in _FAILED_PROXIES:
+                        continue
+                    res = find_indian_proxy.verify_single_proxy(cand)
+                    if res:
+                        os.environ["INDIAN_PROXY"] = cand
+                        print(f"   🏆 Instant failover to pool Indian proxy: {cand} (latency: {res[1]:.2f}s)")
+                        return cand
+                    else:
+                        _FAILED_PROXIES.add(cand)
+            except Exception as e_pool:
+                print(f"   ⚠️ Pool failover error: {e_pool}")
+
+        # 2. Fallback: fresh scan
         print("   🔄 Discovering fresh live Indian proxy...")
         try:
-            new_proxy = find_indian_proxy.find_working_indian_proxy(max_candidates=200, max_workers=35)
+            new_proxy = find_indian_proxy.find_working_indian_proxy(max_candidates=250, max_workers=40)
             if new_proxy:
                 os.environ["INDIAN_PROXY"] = new_proxy
                 print(f"   🏆 Rotated to fresh Indian proxy: {new_proxy}")
@@ -1688,4 +1715,5 @@ def find_fuzzy_truck_match(date_val, supplier_name, clean_truck, existing_data, 
         return None, None
     except Exception:
         return None, None
+
 

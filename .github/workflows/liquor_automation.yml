@@ -52,6 +52,10 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
+      - name: Validate Python Syntax
+        run: |
+          python -m py_compile scripts/*.py
+
       - name: Set up Google Chrome Stable
         uses: browser-actions/setup-chrome@v1
         with:
