@@ -175,6 +175,9 @@ LIQUOR_NAME_MAPPING = {
     "THE INDIAN EDIT SUPER PREMIUM WHISKY": "The Indian Edit Whiskey",
     "THE ROCKFORD IMPERIAL RESERVE PREMIUM BLENDED WHISKY": "Rockford Imperial Reserve Whiskey",
     "TEELING WHISKEY SINGLE MALT THE SPIRIT OF DUBLIN": "Teeling Single Malt",
+    "GLEN VICTORY BLENDED SCOTCH WHISKY": "Glen Victory Whiskey",
+    "NIKKA COFFEY GRAIN WHISKY": "Nikka Coffey Grain Whiskey",
+    "THE MACALLAN 12 YEARS OLD SHERRY OAK COLLECTION HIGHLAND SINGLE MALT SCOTCH WHISKY": "Macallan 12 Yrs Sherry Oak",
     
     
     
@@ -356,6 +359,7 @@ LIQUOR_NAME_MAPPING = {
     "ELJIMADOR TEQUILA REPOSADO": "El Jimador Reposado Tequila",
     "OLD MONK JAMUN & MINT PREMIUM FLAVOURED VODKA": "Old Monk Jamun & Mint Vodka",
     "M2 MAGIC MOMENTS AAM PANNA VIVID FLAVOURED VODKA": "Magic Moments Aam Panna Vodka",
+    "DANZKA VODKA": "Danzka Vodka",
 
 
 
@@ -467,6 +471,7 @@ LIQUOR_NAME_MAPPING = {
     "ROYAL SAINT EMILION RED BORDEAUX WINE": "Royal Saint Emilion Red Wine",
     "CLASSIC REINA CHARDONNAY": "Classic Reina Chardonnay",
     "CLASSIC REINA MERLOT": "Classic Reina Merlot",
+    "BOTTEGA GOLD PROSECCO SPARKLING WINE": "Bottega Gold Prosecco Wine",
     
 
 
