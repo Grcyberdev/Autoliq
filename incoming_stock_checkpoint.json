@@ -15964,6 +15964,13 @@
             },
             "_TelegramSupplier": "Raizel Industries"
         },
+        "AS01JC5435": {
+            "Old Monk Vatted": {
+                "180ml": 550,
+                "375ml": 250
+            },
+            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
+        },
         "AS01KC9112": {
             "Imperial Blue": {
                 "180ml": 350,
@@ -15981,6 +15988,26 @@
                 "750ml": 10
             },
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd."
+        },
+        "AS01MC2766": {
+            "Calenter Premium": {
+                "180ml": 220,
+                "375ml": 10,
+                "750ml": 50
+            },
+            "Royal Green": {
+                "180ml": 25,
+                "375ml": 25,
+                "750ml": 20
+            },
+            "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries"
+        },
+        "AS01MC5628": {
+            "McDowell's Rum": {
+                "180ml": 700,
+                "750ml": 200
+            },
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
         },
         "AS01PC6347": {
             "BOTTEGA GOLD PROSECCO SPARKLING WINE": {
@@ -16049,6 +16076,23 @@
                 "750ml": 10
             },
             "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries"
+        },
+        "AS28AC0488": {
+            "Kingfisher Original Strong": {
+                "Can": 530
+            },
+            "Kingfisher Ultra": {
+                "Bottle": 100,
+                "Can": 50
+            },
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
+        },
+        "WB23C3476": {
+            "Kingfisher Original Strong": {
+                "Bottle": 700,
+                "Can": 700
+            },
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
         }
     },
     "18-Sep-2026": {
