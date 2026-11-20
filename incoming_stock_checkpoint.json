@@ -17863,6 +17863,34 @@
             }
         }
     },
+    "20-Nov-2026": {
+        "AS01LC6538": {
+            "Antiquity Blue Ultra": {
+                "180ml": 5,
+                "375ml": 5,
+                "750ml": 5
+            },
+            "Director's Special Black": {
+                "180ml": 100,
+                "375ml": 35,
+                "750ml": 15
+            },
+            "McDowell's Rum": {
+                "180ml": 200,
+                "750ml": 100
+            },
+            "Royal Challenge": {
+                "375ml": 30,
+                "750ml": 20
+            },
+            "Signature": {
+                "180ml": 10,
+                "375ml": 15,
+                "750ml": 10
+            },
+            "_TelegramSupplier": "United Spirit Limited Tieup Holder Of BBBPL"
+        }
+    },
     "20-Sep-2026": {
         "AS02DC0229": {
             "McDowell's Rum": {
