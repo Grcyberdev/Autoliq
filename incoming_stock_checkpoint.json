@@ -17864,6 +17864,35 @@
         }
     },
     "20-Nov-2026": {
+        "AS01KC3409": {
+            "Iconiq Hippy": {
+                "180ml": 175
+            },
+            "Iconiq Vodka": {
+                "375ml": 50,
+                "750ml": 25
+            },
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Officer's Choice Blue": {
+                "180ml": 20,
+                "375ml": 5,
+                "750ml": 10
+            },
+            "Officer's Choice pet": {
+                "180ml": 50,
+                "375ml": 50
+            },
+            "Sterling B7": {
+                "180ml": 20
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
+            },
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries"
+        },
         "AS01LC6538": {
             "Antiquity Blue Ultra": {
                 "180ml": 5,
@@ -17897,6 +17926,14 @@
                 "750ml": 75
             },
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
+        },
+        "AS01PC8521": {
+            "Calenter Premium": {
+                "180ml": 225,
+                "375ml": 25,
+                "750ml": 50
+            },
+            "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries"
         },
         "AS03BC5273": {
             "Lords Whiskey": {
