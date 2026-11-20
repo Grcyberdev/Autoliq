@@ -17864,6 +17864,18 @@
         }
     },
     "20-Nov-2026": {
+        "AS01JC1071": {
+            "Imperial Black": {
+                "180ml": 300,
+                "375ml": 50
+            },
+            "Imperial Blue": {
+                "180ml": 150,
+                "375ml": 25,
+                "750ml": 25
+            },
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie-Up With Centenary Distilleries Pvt. Ltd."
+        },
         "AS01KC3409": {
             "Iconiq Hippy": {
                 "180ml": 175
@@ -17942,6 +17954,16 @@
                 "750ml": 150
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
+        },
+        "AS26AC1050": {
+            "Oaken Glow": {
+                "180ml": 100
+            },
+            "Royal Stag": {
+                "180ml": 400,
+                "375ml": 50
+            },
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
         },
         "NL01AA6145": {
             "Old Monk Vatted": {
