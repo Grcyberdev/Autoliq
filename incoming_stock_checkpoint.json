@@ -20254,6 +20254,22 @@
             },
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
         },
+        "AS01UC8610": {
+            "All Seasons Connoisseur": {
+                "180ml": 250,
+                "375ml": 150,
+                "750ml": 80
+            },
+            "All Seasons Sir-E-Taj": {
+                "180ml": 15,
+                "375ml": 20,
+                "750ml": 15
+            },
+            "Fame Whiskey": {
+                "180ml": 20
+            },
+            "_TelegramSupplier": "Omsons Marketing Pvt. Ltd. Tie Up With Fastflow Dealer Pvt. Ltd."
+        },
         "AS03BC9029": {
             "Lords Whiskey": {
                 "180ml": 100,
@@ -20261,6 +20277,12 @@
                 "750ml": 125
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
+        },
+        "WB25D6689": {
+            "Kingfisher Original Strong": {
+                "Can": 1400
+            },
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
         }
     },
     "23-Oct-2026": {
