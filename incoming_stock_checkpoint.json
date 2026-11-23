@@ -20246,6 +20246,46 @@
             },
             "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
         },
+        "AS01JC3496": {
+            "McDowell's Double Oak Barrel": {
+                "180ml": 75
+            },
+            "McDowell's No 1 Old": {
+                "180ml": 125,
+                "375ml": 45,
+                "750ml": 30
+            },
+            "McDowell's Rum": {
+                "375ml": 125,
+                "750ml": 150
+            },
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
+        },
+        "AS01KC7022": {
+            "8 PM Premium Black": {
+                "180ml": 10,
+                "375ml": 15
+            },
+            "After Dark": {
+                "180ml": 75,
+                "375ml": 25
+            },
+            "Magic Moments": {
+                "180ml": 60,
+                "375ml": 20,
+                "750ml": 20
+            },
+            "Magic Moments Jamun": {
+                "180ml": 20,
+                "375ml": 15
+            },
+            "Magic Moments Lemon": {
+                "180ml": 25,
+                "375ml": 10,
+                "750ml": 5
+            },
+            "_TelegramSupplier": "Radico Khaitan Limited Tie Up With Pragati Liquor Industries"
+        },
         "AS01LC6322": {
             "Royal Stag": {
                 "180ml": 400,
