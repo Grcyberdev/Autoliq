@@ -188,6 +188,15 @@ def setup_conditional_formatting(worksheet):
             rule = { "addConditionalFormatRule": { "rule": { "ranges": [{"sheetId": worksheet.id, "startRowIndex": 1}], "booleanRule": { "condition": {"type": "CUSTOM_FORMULA", "values": [{"userEnteredValue": formula}]}, "format": {"backgroundColor": color}}}, "index": 0}}
             add_requests.append(rule)
 
+        # Clear any stray static backgroundColor fills on data rows so conditional formatting always wins
+        add_requests.append({
+            "repeatCell": {
+                "range": {"sheetId": worksheet.id, "startRowIndex": 1, "startColumnIndex": 0, "endColumnIndex": 9},
+                "cell": {"userEnteredFormat": {}},
+                "fields": "userEnteredFormat.backgroundColor"
+            }
+        })
+
         if add_requests:
             body = {"requests": add_requests}
             worksheet.spreadsheet.batch_update(body)
