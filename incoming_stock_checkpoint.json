@@ -21312,6 +21312,37 @@
                 "750ml": 75
             },
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
+        },
+        "WB23C7195": {
+            "Iconiq Hippy": {
+                "180ml": 200
+            },
+            "Iconiq Vodka": {
+                "375ml": 50,
+                "750ml": 25
+            },
+            "Jolly Roger Rum": {
+                "180ml": 80,
+                "375ml": 50,
+                "750ml": 20
+            },
+            "Officer's Choice": {
+                "750ml": 75
+            },
+            "Officer's Choice Blue": {
+                "180ml": 20,
+                "375ml": 5
+            },
+            "Officer's Choice pet": {
+                "180ml": 375,
+                "375ml": 50
+            },
+            "Sterling Reserve B7 Blended": {
+                "180ml": 20,
+                "375ml": 20,
+                "750ml": 10
+            },
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries"
         }
     },
     "24-Oct-2026": {
