@@ -21362,6 +21362,24 @@
                 "750ml": 10
             },
             "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries"
+        },
+        "WB23L4499": {
+            "Budweiser": {
+                "Bottle": 100,
+                "Can": 250,
+                "Pint": 50
+            },
+            "Budweiser Magnum": {
+                "Bottle": 150,
+                "Can": 210
+            },
+            "Corona": {
+                "Pint": 25
+            },
+            "Hoegaarden Witbier": {
+                "Pint": 15
+            },
+            "_TelegramSupplier": "Anheuser Busch Inbev India Limited"
         }
     },
     "24-Oct-2026": {
