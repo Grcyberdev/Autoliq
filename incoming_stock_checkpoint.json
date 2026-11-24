@@ -21258,6 +21258,53 @@
             },
             "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL"
         },
+        "AS25EC2957": {
+            "Bacardi Limon Rum": {
+                "180ml": 20,
+                "375ml": 20,
+                "750ml": 10
+            },
+            "Bacardi Mango Chilli Rum": {
+                "180ml": 5,
+                "375ml": 5
+            },
+            "Bacardi White Rum": {
+                "180ml": 5,
+                "375ml": 5
+            },
+            "Black By Bacardi Rum": {
+                "180ml": 10,
+                "375ml": 20,
+                "750ml": 5
+            },
+            "Bombay Sapphire Gin": {
+                "750ml": 3
+            },
+            "Breezer Blackberry": {
+                "Stubby": 20
+            },
+            "Breezer Bold Guava Chilli": {
+                "Stubby": 5
+            },
+            "Breezer Bold Lime & Lager": {
+                "Stubby": 5
+            },
+            "Breezer Cranberry": {
+                "Stubby": 15
+            },
+            "Breezer Jamaican": {
+                "Stubby": 15
+            },
+            "Dewar's White Label": {
+                "180ml": 2,
+                "375ml": 2,
+                "750ml": 2
+            },
+            "William Lawson": {
+                "750ml": 1
+            },
+            "_TelegramSupplier": "Bacardi India Pvt. Ltd."
+        },
         "NL01AF3952": {
             "Old Monk Vatted": {
                 "180ml": 450,
