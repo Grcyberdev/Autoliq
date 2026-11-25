@@ -22376,6 +22376,14 @@
         }
     },
     "25-Nov-2026": {
+        "AS01LC1226": {
+            "Old Monk Vatted": {
+                "180ml": 500,
+                "375ml": 200,
+                "750ml": 100
+            },
+            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
+        },
         "AS01PC8521": {
             "Calenter Premium": {
                 "180ml": 200,
@@ -22468,6 +22476,12 @@
                 "CA": 130
             },
             "_TelegramSupplier": "Associated Alcohol And Beverages Company"
+        },
+        "WB25D6689": {
+            "Kingfisher Original Strong": {
+                "Can": 1400
+            },
+            "_TelegramSupplier": "United Breweries Ltd. Tie Up With Sunit Breweries Pvt. Ltd."
         }
     },
     "25-Oct-2026": {
