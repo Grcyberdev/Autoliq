@@ -22389,6 +22389,44 @@
             },
             "_TelegramSupplier": "Ads Spirits Pvt. Ltd. Tie-Up Holder Of Pragati Liquor Industries"
         },
+        "AS01VC0994": {
+            "Black & White": {
+                "180ml": 10,
+                "375ml": 15,
+                "750ml": 25
+            },
+            "Black Dog Centenary": {
+                "375ml": 2,
+                "750ml": 3
+            },
+            "Black Dog Triple Gold": {
+                "180ml": 3,
+                "375ml": 2,
+                "750ml": 6
+            },
+            "Royal Challenge American Pride": {
+                "180ml": 4,
+                "375ml": 1
+            },
+            "Smirnoff": {
+                "180ml": 15,
+                "375ml": 5,
+                "750ml": 10
+            },
+            "Smirnoff Minty Jamun Vodka": {
+                "180ml": 15
+            },
+            "Smirnoff Mirchi Mango": {
+                "180ml": 5,
+                "750ml": 5
+            },
+            "Vat 69": {
+                "180ml": 1,
+                "375ml": 2,
+                "750ml": 2
+            },
+            "_TelegramSupplier": "United Spirits Limited"
+        },
         "AS04CC0758": {
             "Rhino Limon": {
                 "CA": 150
