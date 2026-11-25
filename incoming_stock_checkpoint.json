@@ -22392,6 +22392,27 @@
             },
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
         },
+        "AS01PC3217": {
+            "Absolut": {
+                "750ml": 5,
+                "Quarter": 5
+            },
+            "Absolut Raspberry": {
+                "Quarter": 3
+            },
+            "Jameson": {
+                "750ml": 70,
+                "Quarter": 34
+            },
+            "Jameson Black Barrel": {
+                "Full": 5
+            },
+            "Xclamation Rum": {
+                "375ml": 5,
+                "750ml": 3
+            },
+            "_TelegramSupplier": "Pernod Ricard India Private Limited"
+        },
         "AS01PC8521": {
             "Calenter Premium": {
                 "180ml": 200,
