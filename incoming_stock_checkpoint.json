@@ -23076,6 +23076,21 @@
             }
         }
     },
+    "26-Nov-2026": {
+        "AS19AC3686": {
+            "Old Monk Vatted": {
+                "180ml": 350,
+                "375ml": 150,
+                "750ml": 50
+            },
+            "Old Monk Vatted Premium": {
+                "180ml": 50,
+                "375ml": 50,
+                "750ml": 50
+            },
+            "_TelegramSupplier": "Anjali Alco Brew Llp"
+        }
+    },
     "26-Oct-2026": {
         "AS01LC1317": {
             "Blender's Pride Exclusive": {
