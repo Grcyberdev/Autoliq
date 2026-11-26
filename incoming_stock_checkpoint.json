@@ -23077,6 +23077,17 @@
         }
     },
     "26-Nov-2026": {
+        "AS01JC4829": {
+            "Imperial Black": {
+                "180ml": 150
+            },
+            "Imperial Blue": {
+                "180ml": 275,
+                "375ml": 100,
+                "750ml": 25
+            },
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL"
+        },
         "AS01KC9112": {
             "Royal Stag": {
                 "180ml": 350,
