@@ -24214,6 +24214,21 @@
             },
             "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
         },
+        "AS01LC5164": {
+            "McDowell's Double Oak Barrel": {
+                "180ml": 100,
+                "375ml": 50
+            },
+            "McDowell's No 1 Old": {
+                "180ml": 150,
+                "375ml": 70,
+                "750ml": 30
+            },
+            "McDowell's Rum": {
+                "180ml": 150
+            },
+            "_TelegramSupplier": "United Spirits Ltd. Tie Up Holder Of Spey Bottlers Pvt. Ltd."
+        },
         "AS01MC3480": {
             "Royal Stag": {
                 "180ml": 250,
@@ -24269,6 +24284,12 @@
                 "750ml": 5
             },
             "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries"
+        },
+        "AS05AC7855": {
+            "Oaksmith International": {
+                "750ml": 200
+            },
+            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse"
         },
         "NL01AJ9761": {
             "Tuborg Strong Supreme": {
