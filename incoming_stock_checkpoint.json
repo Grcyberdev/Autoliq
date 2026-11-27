@@ -24167,6 +24167,18 @@
             },
             "_TelegramSupplier": "Radico Khaitan Ltd. IMFL Wholesale Warehouse"
         },
+        "AS01KC9631": {
+            "Old Monk Coffee": {
+                "180ml": 15,
+                "375ml": 10
+            },
+            "Old Monk Vatted": {
+                "180ml": 500,
+                "375ml": 225,
+                "750ml": 50
+            },
+            "_TelegramSupplier": "Anjali Alco Brew LLP Tieup With Himalayan Distillery"
+        },
         "AS01MC3480": {
             "Royal Stag": {
                 "180ml": 250,
