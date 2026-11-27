@@ -24148,6 +24148,19 @@
         }
     },
     "27-Nov-2026": {
+        "AS01MC3480": {
+            "Royal Stag": {
+                "180ml": 250,
+                "375ml": 100,
+                "750ml": 50
+            },
+            "Royal Stag Barrel": {
+                "180ml": 35,
+                "375ml": 95,
+                "750ml": 20
+            },
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
+        },
         "AS01VC5877": {
             "V21 Green Apple Vodka": {
                 "180ml": 3,
