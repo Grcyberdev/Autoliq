@@ -24148,7 +24148,30 @@
         }
     },
     "27-Nov-2026": {
+        "AS01GC8465": {
+            "Oaksmith Gold": {
+                "180ml": 15,
+                "375ml": 10
+            },
+            "Oaksmith International": {
+                "180ml": 200,
+                "375ml": 200,
+                "750ml": 45
+            },
+            "Teachers 50": {
+                "375ml": 3
+            },
+            "Teachers Highland Cream": {
+                "180ml": 6,
+                "375ml": 10,
+                "750ml": 11
+            },
+            "_TelegramSupplier": "Beam Global Spirits & Wine ( India ) Private Limited Wholesale Warehouse"
+        },
         "AS01KC7529": {
+            "Bro Code XV": {
+                "Pint": 270
+            },
             "Jaisalmer Gin": {
                 "750ml": 1
             },
@@ -24164,6 +24187,18 @@
             },
             "Rampur Indian Single Malt Whiskey": {
                 "750ml": 1
+            },
+            "THE GLENGARRY BLENDED SCOTCH WHISKY": {
+                "Full": 2
+            },
+            "TOM & MEW LONDON DRY GIN": {
+                "Full": 3
+            },
+            "Wingman": {
+                "750ml": 25
+            },
+            "Wingman Reserve": {
+                "180ml": 10
             },
             "_TelegramSupplier": "Radico Khaitan Ltd. IMFL Wholesale Warehouse"
         },
@@ -24202,6 +24237,44 @@
                 "375ml": 15
             },
             "_TelegramSupplier": "Brewiz Ventures Private Limited"
+        },
+        "AS05AC7304": {
+            "Iconiq Hippy": {
+                "180ml": 100
+            },
+            "Iconiq Vodka": {
+                "375ml": 35,
+                "750ml": 15
+            },
+            "Jolly Roger Rum": {
+                "180ml": 55,
+                "375ml": 25,
+                "750ml": 20
+            },
+            "Officer's Choice": {
+                "750ml": 55
+            },
+            "Officer's Choice pet": {
+                "180ml": 150
+            },
+            "Sterling B7": {
+                "180ml": 5
+            },
+            "Sterling Reserve B7 Blended": {
+                "375ml": 15,
+                "750ml": 5
+            },
+            "The Indian Edit Whiskey": {
+                "180ml": 15,
+                "750ml": 5
+            },
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries"
+        },
+        "NL01AJ9761": {
+            "Tuborg Strong Supreme": {
+                "Bottle": 1200
+            },
+            "_TelegramSupplier": "Carlsberg India Ltd. Tie Up With Brahmaputra Breweries Llp"
         }
     },
     "27-Oct-2026": {
