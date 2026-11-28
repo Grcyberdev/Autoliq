@@ -25404,6 +25404,34 @@
             }
         }
     },
+    "28-Nov-2026": {
+        "AS01LC6322": {
+            "Blender's Pride Four Elements": {
+                "180ml": 5,
+                "375ml": 5
+            },
+            "Blender's Pride Reserve": {
+                "180ml": 25,
+                "375ml": 25,
+                "750ml": 15
+            },
+            "Oaken Glow": {
+                "375ml": 70,
+                "750ml": 30
+            },
+            "Royal Stag": {
+                "180ml": 200,
+                "375ml": 100,
+                "750ml": 25
+            },
+            "Royal Stag Double Dark": {
+                "180ml": 25,
+                "375ml": 15,
+                "750ml": 10
+            },
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
+        }
+    },
     "28-Oct-2026": {
         "AS01GC0763": {
             "100 Pipers": {
