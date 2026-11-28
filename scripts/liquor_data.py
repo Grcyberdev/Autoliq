@@ -178,6 +178,7 @@ LIQUOR_NAME_MAPPING = {
     "GLEN VICTORY BLENDED SCOTCH WHISKY": "Glen Victory Whiskey",
     "NIKKA COFFEY GRAIN WHISKY": "Nikka Coffey Grain Whiskey",
     "THE MACALLAN 12 YEARS OLD SHERRY OAK COLLECTION HIGHLAND SINGLE MALT SCOTCH WHISKY": "Macallan 12 Yrs Sherry Oak",
+    "THE GLENGARRY BLENDED SCOTCH WHISKY": "Glengarry Whiskey",
     
     
     
@@ -265,8 +266,6 @@ LIQUOR_NAME_MAPPING = {
     "OLD MONK THE ORIGINAL PLATINUM STRONG BEER": "Old Monk Beer",
     "UB BULLET 10000 MEGA STRONG BEER": "Bullet 10000 Beer",
     "TUBORG STRONG SUPREME PREMIUM BEER": "Tuborg Strong Supreme",
-
-
 
 
     # --- Newly Mapped Items (Exact Match Fixes) ---
@@ -388,6 +387,7 @@ LIQUOR_NAME_MAPPING = {
     "WHITE MAGIC GIN PREMIUM DRY": "White Magic Gin",
     "SAMSARA CONTEMPORARY INDIAN GIN": "Samsara Gin",
     "SAMSARA CONTEMPORARY INDIAN GIN NEW WORLD EXPERIMENTS THE CITY OF PINK": "Samsara Pink Gin",
+    "TOM & MEW LONDON DRY GIN": "Tom & Mew Gin",
 
 
 
@@ -767,6 +767,8 @@ SUPPLIER_NAME_MAPPING = {
     "TILAKNAGAR INDUSTRIES LIMITED": "Tilaknagar Industries",
     "CARLSBERG INDIA LTD TIE UP WITH BRAHMAPUTRA BREWERIES LLP": "Carlsberg",
     "SPIRITS AND MALTS INDIA PRIVATE LIMITED": "Spirits and Malts",
+    "ANJALI ALCO BREW LLP": "Anjali Alco Brew LLP",
+    "BREWIZ VENTURES PRIVATE LIMITED": "Brewiz Ventures",
 }
 
 unmapped_suppliers = set()
