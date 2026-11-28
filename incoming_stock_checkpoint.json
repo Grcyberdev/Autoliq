@@ -25405,6 +25405,18 @@
         }
     },
     "28-Nov-2026": {
+        "AS01LC1317": {
+            "Blender's Pride Exclusive": {
+                "180ml": 75,
+                "375ml": 30,
+                "750ml": 25
+            },
+            "Royal Stag": {
+                "180ml": 250,
+                "375ml": 170
+            },
+            "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
+        },
         "AS01LC6322": {
             "Blender's Pride Four Elements": {
                 "180ml": 5,
@@ -25430,6 +25442,16 @@
                 "750ml": 10
             },
             "_TelegramSupplier": "Pernod Ricard India Pvt. Ltd. Tie Up With Aroma India Pvt. Ltd."
+        },
+        "AS02CC9561": {
+            "Officer's Choice": {
+                "750ml": 50
+            },
+            "Officer's Choice pet": {
+                "180ml": 375,
+                "375ml": 75
+            },
+            "_TelegramSupplier": "Allied Blenders And Distillers Limited Tieup With Saaran Industries"
         }
     },
     "28-Oct-2026": {
