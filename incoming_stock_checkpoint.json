@@ -25405,6 +25405,19 @@
         }
     },
     "28-Nov-2026": {
+        "AS01KC7913": {
+            "Imperial Black": {
+                "180ml": 125,
+                "375ml": 50,
+                "750ml": 25
+            },
+            "Imperial Blue": {
+                "180ml": 250,
+                "375ml": 50,
+                "750ml": 50
+            },
+            "_TelegramSupplier": "Tilaknagar Industries Ltd. Tie Up With NEDPL"
+        },
         "AS01LC1317": {
             "Blender's Pride Exclusive": {
                 "180ml": 75,
